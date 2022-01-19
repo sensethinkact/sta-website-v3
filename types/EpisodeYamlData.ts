@@ -1,4 +1,4 @@
-type Episode = {
+type EpisodeYamlData = {
   guests: string[];
   title: string;
   description: {
@@ -29,4 +29,4 @@ type Episode = {
   }
 }
 
-export default Episode;
+export default EpisodeYamlData;
