@@ -16,9 +16,8 @@ type EpisodeYamlData = {
     url: string;
   }[];
   publicationDate: string;
-  filePaths: {
+  filePaths?: Partial<{
     mp3: string;
-  } & Partial<{
     coverArt: string;
     outline: string;
     transcript: string;
