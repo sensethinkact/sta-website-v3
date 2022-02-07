@@ -1,22 +1,23 @@
-import { join } from 'path'
-import type PodcastConfig from '../types/PodcastConfig'
+import {join} from 'path'
+import type { PodcastConfig } from '@sta-podcast/post-loader'
 
 const siteUrl = 'https://sensethinkact.com/'
-const feedFile = 'itunes.xml';
-const feedUrl = join(siteUrl, feedFile);
+const feedFile = 'itunes.xml'
+const feedUrl = join(siteUrl, feedFile)
 
 const podcastConfig: PodcastConfig = {
-  title: 'Sense Think Act Podcast',
-  subtitle: 'Accessible Robotics interviews',
-  description: 'An accessible, long-form podcast about all areas of robotics that is hosted by Audrow Nash and sponsored by Open Robotics.',
+  name: 'Sense Think Act Podcast',
+  tagline: 'Conversations about robotics',
+  description:
+    'An accessible, long-form podcast about all areas of robotics that is hosted by Audrow Nash and sponsored by Open Robotics.',
   copyright: `© ${new Date().getFullYear()} Open Source Robotics Foundation`,
   owner: {
     name: 'Open Robotics',
     email: 'sensethinkact@googlegroups.com',
   },
   github: {
-    organization: 'sensethinkact', // Usually your GitHub org/user name.
-    repository: 'www.sensethinkact.com', // Usually your repo name.
+    organization: 'sensethinkact',
+    repository: 'www.sensethinkact.com',
   },
   itunes: {
     feedFile,
@@ -26,6 +27,10 @@ const podcastConfig: PodcastConfig = {
     type: 'episodic',
     image: 'https://www.sensethinkact.com/assets/img/cover.jpg',
     language: 'en-us',
+  },
+  hosting: {
+    baseMp3Url:
+      'https://ftp.osuosl.org/pub/ros/download.ros.org/sensethinkact/episodes/',
   },
   siteUrl,
   links: {
@@ -65,7 +70,7 @@ const podcastConfig: PodcastConfig = {
         url: 'https://discourse.ros.org/c/sensethinkact/71',
       },
     ],
-  }
+  },
 }
 
 export default podcastConfig

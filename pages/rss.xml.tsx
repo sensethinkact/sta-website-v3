@@ -1,24 +1,27 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
-import { getSortedEpisodeData } from '../lib/episodes'
-import podcast from 'podcast'
-import { getFileSizeAtUrl } from '../lib/get-file-size-at-url'
+import createPostLoader from '@sta-podcast/post-loader'
+import podcastConfig from '../podcast.config'
+import { join } from 'path'
 
 const RssFeed: React.FC = () => null
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
-    const episodes = getSortedEpisodeData()
-    const url = "https://ftp.osuosl.org/pub/ros/download.ros.org/sensethinkact/episodes/STA%20Ep%2010%20-%20Brett%20Aldrich.mp3"
-    const fileSize = await getFileSizeAtUrl(url)
+    const postsDirectory = join(process.cwd(), 'posts')
+    const postLoader = await createPostLoader(
+      postsDirectory,
+      podcastConfig,
+    )
+    const allPosts = postLoader.getPosts()
 
     res.setHeader('Content-Type', 'text/text')
-    // res.setHeader('Content-Type', 'text/xml')
     res.write(`<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${episodes.map(e => e.slug).join('; ')}
-      ${fileSize}
-    </urlset>`)
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${allPosts.map(p => p.slug).join('; ')}
+  ${allPosts.map(p => p.publishDate).join('; ')}
+  ${postLoader.getTags().join('; ')}
+</urlset>`)
     res.end()
   }
   return {
