@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sta-podcast/post-loader": "^1.4.0",
     "next": "12.0.8",
     "node-fetch": "^3.1.1",
     "podcast": "^2.0.0",
@@ -16,8 +17,10 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "@sta-podcast/types": "^1.0.7",
     "@types/node": "17.0.9",
     "@types/react": "17.0.38",
+    "endent": "^2.1.0",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
     "typescript": "4.5.4"
