@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sta-podcast/post-loader": "^1.4.0",
+    "@sta-podcast/post-loader": "^1.4.1",
     "dayjs": "^1.10.7",
     "next": "12.0.8",
     "node-fetch": "^3.1.1",
