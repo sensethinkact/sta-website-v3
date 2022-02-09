@@ -1,23 +1,19 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
 import getPostLoader from '../lib/get-post-loader'
+import getRssFeed from '../lib/get-rss-feed'
 import endent from 'endent'
+import podcastConfig from '../podcast.config'
 
 const RssFeed: React.FC = () => null
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     const postLoader = await getPostLoader()
-    const allPosts = postLoader.getPosts()
+    const rssFeed = getRssFeed(podcastConfig, postLoader)
 
-    res.setHeader('Content-Type', 'text/text')
-    res.write(endent`
-      <?xml version="1.0" encoding="UTF-8"?>
-      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        ${allPosts.map(p => p.slug).join('; ')}
-        ${allPosts.map(p => p.publishDate).join('; ')}
-        ${postLoader.getTags().join('; ')}
-      </urlset>`)
+    res.setHeader('Content-Type', 'text/xml')
+    res.write(rssFeed)
     res.end()
   }
   return {
