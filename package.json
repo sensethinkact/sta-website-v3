@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@sta-podcast/post-loader": "^1.4.0",
-    "next": "12.0.8",
+    "next": "12.0.9",
     "node-fetch": "^3.1.1",
     "podcast": "^2.0.0",
     "react": "17.0.2",
