@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@sta-podcast/types": "^1.0.7",
-    "@types/node": "17.0.9",
+    "@types/node": "17.0.16",
     "@types/proper-url-join": "^2.1.1",
     "@types/react": "17.0.38",
     "endent": "^2.1.0",
