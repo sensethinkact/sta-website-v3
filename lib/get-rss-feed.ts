@@ -71,7 +71,7 @@ export default function getRssFeed(podcastConfig: PodcastConfig, postLoader: Pos
     })
     const itemOptions: ItemOptions = {
       title: post.title,
-      description: post.description,
+      description: description,
       url: urlJoin(podcastConfig.siteUrl, 'episodes', post.slug),
       date: post.publishDate as string,
       enclosure: {
@@ -81,7 +81,7 @@ export default function getRssFeed(podcastConfig: PodcastConfig, postLoader: Pos
       },
       itunesAuthor: podcastConfig.owner.name,
       itunesExplicit: podcastConfig.itunes.isExplicit,
-      itunesSummary: description,
+      itunesSummary: post.description,
       itunesImage: podcastConfig.itunes.image,
       itunesDuration: toTimestampString(post.duration),
     }
