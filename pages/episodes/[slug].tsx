@@ -5,6 +5,9 @@ import Head from "next/head"
 import getPostLoader from "../../lib/get-post-loader"
 import type { SerializedPost } from "@sta-podcast/types"
 
+import Layout from "../../components/layout"
+import podcastConfig from "../../podcast.config"
+
 type Props = {
   post: SerializedPost
 }
@@ -15,15 +18,15 @@ const Post = ({ post }: Props) => {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <>
+    <Layout>
       <Head>
-        <title>{post.title}</title>
+        <title>{post.title} | {podcastConfig.name}</title>
       </Head>
       <div className="container">
         <h1 className="title">{post.title}</h1>
         <p>{post.description}</p>
       </div>
-    </>
+    </Layout>
   )
 }
 

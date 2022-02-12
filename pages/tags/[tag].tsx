@@ -6,6 +6,8 @@ import Link from 'next/link'
 import getPostLoader from "../../lib/get-post-loader"
 import type { SerializedPost } from "@sta-podcast/types"
 
+import Layout from "../../components/layout"
+
 type Props = {
   posts: SerializedPost[]
   tag: string
@@ -17,7 +19,7 @@ const PostsWithTag = ({ posts, tag }: Props) => {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <>
+    <Layout>
       <Head>
         <title>{`Posts with the ${tag} tag`}</title>
       </Head>
@@ -45,7 +47,7 @@ const PostsWithTag = ({ posts, tag }: Props) => {
           ))}
         </ul>
       </div>
-    </>
+    </Layout>
   )
 }
 

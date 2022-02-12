@@ -6,7 +6,7 @@ import getPostLoader from '../lib/get-post-loader'
 import { truncateWords, listToString } from "../lib/utils"
 import { toTimestampString } from "@sta-podcast/timestamp-tools"
 
-import Footer from '../components/footer'
+import Layout from '../components/layout'
 
 import type { SerializedPost } from '@sta-podcast/types'
 
@@ -20,7 +20,7 @@ const Home = ({ posts }: Props) => {
   const logoSizePx = 350
   const maxPreviewWords = 30
   return (
-    <>
+    <Layout>
       <Head>
         <title>{podcastConfig.name}</title>
         <meta name="description" content={podcastConfig.description} />
@@ -178,10 +178,7 @@ const Home = ({ posts }: Props) => {
           </section>
         </div>
       </main>
-      <footer className="footer">
-        <Footer copyright={podcastConfig.copyright} />
-      </footer>
-    </>
+    </Layout>
   )
 }
 

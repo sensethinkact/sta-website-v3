@@ -2,7 +2,6 @@ import { GetServerSideProps } from 'next'
 import React from 'react'
 import getPostLoader from '../lib/get-post-loader'
 import getRssFeed from '../lib/get-rss-feed'
-import endent from 'endent'
 import podcastConfig from '../podcast.config'
 
 const RssFeed: React.FC = () => null

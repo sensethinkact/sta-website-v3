@@ -1,7 +1,7 @@
 TODO
 ====
 
-- [ ] Make a layout page
+- [x] Make a layout page
 - [ ] Add discourse comments
 - [ ] Add Google Analytics
 - [ ] Make several components

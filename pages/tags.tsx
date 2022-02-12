@@ -4,13 +4,15 @@ import Link from 'next/link'
 import getPostLoader from '../lib/get-post-loader'
 import podcastConfig from '../podcast.config'
 
+import Layout from '../components/layout'
+
 type Props = {
   tags: string[]
 }
 
 const Tags = ({ tags }: Props) => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>{podcastConfig.name}</title>
         <meta name="description" content={podcastConfig.description} />
@@ -35,7 +37,7 @@ const Tags = ({ tags }: Props) => {
           </ul>
         </div>
       </main>
-    </>
+    </Layout>
   )
 }
 
