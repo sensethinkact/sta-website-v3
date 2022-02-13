@@ -1,5 +1,7 @@
 import {join} from 'path'
 import type { PodcastConfig as PodcastConfigImported } from '@sta-podcast/types'
+import { imageUrl } from './lib/constants'
+import urlJoin from 'proper-url-join'
 
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'
@@ -12,7 +14,6 @@ const youtubeClipsUrl = 'https://www.youtube.com/channel/UChfnCpNwZzYtZ32J-pZvND
 const googleUrl = 'https://podcasts.google.com/feed/aHR0cHM6Ly9zZW5zZXRoaW5rYWN0LmNvbS9pdHVuZXMueG1s'
 const overcastUrl = 'https://overcast.fm/itunes1582090036/sense-think-act'
 const pocketcastsUrl = 'https://pca.st/g667w2c4'
-const imageDir = join('/img')
 
 export type PodcastConfig = {
   availableOn: {[site: string]: {url: string, iconUrl: string}}
@@ -38,7 +39,7 @@ const podcastConfig: PodcastConfig = {
     categories: ['Technology'],
     isExplicit: false,
     type: 'episodic',
-    image: 'https://www.sensethinkact.com/assets/img/cover.jpg',
+    image: urlJoin(siteUrl, imageUrl, 'cover.jpg'),
     language: 'en-us',
   },
   hosting: {
@@ -87,31 +88,31 @@ const podcastConfig: PodcastConfig = {
   availableOn: {
     apple: {
       url: appleUrl,
-      iconUrl: join(imageDir, 'apple.svg'),
+      iconUrl: urlJoin(imageUrl, 'apple.svg'),
     },
     spotify: {
       url: spotifyUrl,
-      iconUrl: join(imageDir, 'spotify.svg'),
+      iconUrl: urlJoin(imageUrl, 'spotify.svg'),
     },
     google: {
       url: googleUrl,
-      iconUrl: join(imageDir, 'google.svg'),
+      iconUrl: urlJoin(imageUrl, 'google.svg'),
     },
     overcast: {
       url: overcastUrl,
-      iconUrl: join(imageDir, 'overcast.svg'),
+      iconUrl: urlJoin(imageUrl, 'overcast.svg'),
     },
     pcaUrl: {
       url: pocketcastsUrl,
-      iconUrl: join(imageDir, 'pocketcasts.svg'),
+      iconUrl: urlJoin(imageUrl, 'pocketcasts.svg'),
     },
     youtube: {
       url: youtubeUrl,
-      iconUrl: join(imageDir, 'youtube.svg'),
+      iconUrl: urlJoin(imageUrl, 'youtube.svg'),
     },
     rss: {
       url: feedUrl,
-      iconUrl: join(imageDir, 'rss.svg'),
+      iconUrl: urlJoin(imageUrl, 'rss.svg'),
     }
   },
 }

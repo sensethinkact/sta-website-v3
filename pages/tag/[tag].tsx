@@ -1,49 +1,31 @@
 import { useRouter } from "next/router"
 import ErrorPage from 'next/error'
-import Head from "next/head"
-import Link from 'next/link'
-import Image from "next/image"
 
 import getPostLoader from "../../lib/get-post-loader"
+import { isDebug } from "../../lib/constants"
+
 import type { SerializedPost } from "@sta-podcast/types"
 
 import Layout from "../../components/layout"
 import podcastConfig from "../../podcast.config"
-import PostPreview from "../../components/post-preview"
+import EpisodePreview from "../../components/episode-preview"
+import LogoNav from "../../components/logo-nav"
 
 type Props = {
   posts: SerializedPost[]
   tag: string
+  isDebug?: boolean
 }
 
-const PostsWithTag = ({ posts, tag }: Props) => {
+const PostsWithTag = ({ posts, tag, isDebug=false }: Props) => {
   const router = useRouter()
   if (!router.isFallback && posts.length === 0) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout>
-
-      <Head>
-        <title>{`${tag} tag | ${podcastConfig.name}`}</title>
-      </Head>
-
+    <Layout title={`${tag} tag | ${podcastConfig.name}`}>
       <div className="container">
-        <nav aria-label="main navigation">
-          <div className="navbar-brand">
-            <Link href="/">
-              <a>
-                <Image
-                  className="navbar-logo"
-                  src="/img/logo-with-name.png"
-                  width={1900 / 5} height={400 / 5}
-                  alt="STA Logo"
-                />
-              </a>
-            </Link>
-          </div>
-        </nav>
-
+        <LogoNav/>
         <section className="section">
           <div className="columns is-centered">
             <div className="column is-8-tablet is-desktop-7 is-fullhd-6">
@@ -56,7 +38,12 @@ const PostsWithTag = ({ posts, tag }: Props) => {
                 </h2>
                 <div className="content">
                   {posts.map((post) => (
-                    <PostPreview post={post} maxPreviewWords={100} key={post.slug} />
+                    <EpisodePreview
+                      key={post.slug}
+                      post={post}
+                      isDebug={isDebug}
+                      maxPreviewWords={100}
+                    />
                   ))}
                 </div>
               </article>
@@ -87,7 +74,7 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params) {
+export async function getStaticProps({ params }: Params): Promise<{ props: Props }> {
   const postLoader = await getPostLoader()
   const slugs = postLoader.getSlugsByTag(params.tag)
   const posts = slugs.map(slug => postLoader.getPostBySlug(slug)) as SerializedPost[]
@@ -95,6 +82,7 @@ export async function getStaticProps({ params }: Params) {
     props: {
       posts,
       tag: params.tag,
+      isDebug
     }
   }
 }

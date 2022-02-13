@@ -6,20 +6,22 @@ import { toTimestampString } from "@sta-podcast/timestamp-tools"
 import TagsList from "./tags-list"
 
 import type { SerializedPost } from "@sta-podcast/types"
+import { episodesUrl, copyableContentUrl } from "../lib/constants"
+import CopyableContentLink from "./copyable-content-link"
 
 type Props = {
   post: SerializedPost
   maxPreviewWords?: number
+  isDebug?: boolean
 }
 
-const PostPreview = ({ post, maxPreviewWords=350 }: Props) => {
+const EpisodePreview = ({ post, maxPreviewWords=350, isDebug}: Props) => {
   return (
-
     <div key={post.slug} className='column is-12'>
       <article>
         <div className="media">
           <div className="media-content">
-            <Link href="/episodes/[slug]" as={`/episodes/${post.slug}`}>
+            <Link href={`${episodesUrl}/[slug]`} as={`${episodesUrl}/${post.slug}`}>
               <a>
                 <p className="is-5 is-marginless">
                   <span className='title is-5'>
@@ -32,6 +34,7 @@ const PostPreview = ({ post, maxPreviewWords=350 }: Props) => {
                 </p>
               </a>
             </Link>
+            { isDebug && <CopyableContentLink slug={post.slug}/>}
             <p className="content is-marginless">
               {
                 truncateWords(post.description, maxPreviewWords)
@@ -50,4 +53,4 @@ const PostPreview = ({ post, maxPreviewWords=350 }: Props) => {
   )
 }
 
-export default PostPreview
+export default EpisodePreview

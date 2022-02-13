@@ -1,12 +1,6 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-
-import { useState } from 'react'
 
 import getPostLoader from '../lib/get-post-loader'
-import { truncateWords, listToString } from "../lib/utils"
-import { toTimestampString } from "@sta-podcast/timestamp-tools"
 
 import type { SerializedPost } from '@sta-podcast/types'
 
@@ -15,32 +9,31 @@ import podcastConfig from '../podcast.config'
 import TagsList from '../components/tags-list'
 import Layout from '../components/layout'
 import ReadMore from '../components/read-more'
-import PostPreview from '../components/post-preview'
+import EpisodePreview from '../components/episode-preview'
+
+import { isDebug, imageUrl } from "../lib/constants"
 
 
 type Props = {
   posts: SerializedPost[]
   tags: string[]
+  isDebug?: boolean
 }
 
-const Home = ({ posts, tags }: Props) => {
+const Home = ({ posts, tags, isDebug=false }: Props) => {
 
   const logoSizePx = 350
   const maxPreviewWords = 30
 
   return (
-    <Layout>
-      <Head>
-        <title>{podcastConfig.name}</title>
-      </Head>
-
+    <Layout title={podcastConfig.name}>
       <main>
         <div className="container">
           <section className="section">
             <div className="columns is-desktop is-centered is-variable is-6">
               <div className="column is-narrow">
                 <figure className="field has-text-centered has-text-right-desktop">
-                  <Image className="logo" src='/img/cover.jpg' alt="STA logo" width={logoSizePx} height={logoSizePx} />
+                  <Image className="logo" src={`${imageUrl}/cover.jpg`} alt="STA logo" width={logoSizePx} height={logoSizePx} />
                 </figure>
               </div>
               <div className="column is-7-desktop is-6-widescreen">
@@ -98,7 +91,12 @@ const Home = ({ posts, tags }: Props) => {
                   </div>
                   <div className="columns is-centered is-multiline">
                     {posts.map(post => (
-                      <PostPreview key={post.slug} post={post} maxPreviewWords={maxPreviewWords} />
+                      <EpisodePreview
+                        key={post.slug}
+                        post={post}
+                        maxPreviewWords={maxPreviewWords}
+                        isDebug={isDebug}
+                      />
                     ))}
                   </div>
                 </div>
@@ -117,6 +115,7 @@ export const getStaticProps = async () => {
     props: {
       posts: postLoader.getPosts(),
       tags: postLoader.getTags(),
+      isDebug,
     }
   }
 }

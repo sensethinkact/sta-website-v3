@@ -5,12 +5,13 @@ import podcastConfig from '../podcast.config'
 
 type Props = {
   children: React.ReactNode
+  title?: string
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, title }: Props) => {
   return (
     <>
-      <Meta />
+      <Meta title={title}/>
       <div className="min-h-screen">
         <main>{children}</main>
       </div>

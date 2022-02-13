@@ -1,8 +1,5 @@
 import { useRouter } from "next/router"
 import ErrorPage from 'next/error'
-import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 import YouTube from "react-youtube"
 
 import getPostLoader from "../../lib/get-post-loader"
@@ -13,39 +10,26 @@ import podcastConfig from "../../podcast.config"
 import Layout from "../../components/layout"
 import Comments from "../../components/comments"
 import TagsList from "../../components/tags-list"
+import CopyableContentLink from "../../components/copyable-content-link"
 
 import type { SerializedPost } from "@sta-podcast/types"
+import LogoNav from "../../components/logo-nav"
+import { isDebug } from "../../lib/constants"
 
 type Props = {
   post: SerializedPost
+  isDebug?: boolean
 }
 
-const Post = ({ post }: Props) => {
+const Post = ({ post, isDebug }: Props) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout>
-      <Head>
-        <title>{post.title} | {podcastConfig.name}</title>
-      </Head>
+    <Layout title={`${post.title} | ${podcastConfig.name}`}>
       <div className="container">
-
-        <nav aria-label="main navigation">
-          <div className="navbar-brand">
-            <Link href="/">
-              <a>
-                <Image
-                  className="navbar-logo"
-                  src="/img/logo-with-name.png"
-                  width={1900/5} height={400/5}
-                  alt="STA Logo"
-                />
-              </a>
-            </Link>
-          </div>
-        </nav>
+        <LogoNav/>
 
         <section className="section">
           <div className="columns is-centered">
@@ -65,6 +49,7 @@ const Post = ({ post }: Props) => {
                   <span>{' · '}</span>
                   {toTimestampString(post.duration)}
                 </div>
+                {isDebug && <CopyableContentLink slug={post.slug} />}
                 <div className="content">
                   <TagsList tags={post.tags} />
                 </div>
@@ -178,11 +163,12 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params) {
+export async function getStaticProps({ params }: Params): Promise<{ props: Props }> {
   const postLoader = await getPostLoader()
   return {
     props: {
-      post: postLoader.getPostBySlug(params.slug),
+      post: postLoader.getPostBySlug(params.slug) as SerializedPost,
+      isDebug,
     }
   }
 }
