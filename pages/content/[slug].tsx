@@ -5,10 +5,19 @@ import { ChangeEventHandler } from "react";
 import { useState } from "react";
 
 import getPostLoader from "../../lib/get-post-loader"
+import getRobohubPost from "../../lib/content-maker/robohub"
+import { getTitle, checkYoutubeTitle } from "../../lib/content-maker/common";
+import {
+  getYoutubeInterviewDescription,
+  getYoutubeClipTitles,
+  getYoutubeClipDescription,
+} from "../../lib/content-maker/youtube";
+import { maxTitleLength } from "../../lib/constants";
 
 import Layout from "../../components/layout";
 
 import type { SerializedPost } from "@sta-podcast/types"
+import podcastConfig from "../../podcast.config";
 
 type Props = {
   post: SerializedPost
@@ -21,12 +30,31 @@ const PostContentHelper = ({ post }: Props) => {
     return <ErrorPage statusCode={404} />
   }
 
+  const title = getTitle(podcastConfig, post)
+  checkYoutubeTitle(title, maxTitleLength)
+
   return (
     <Layout title={`Copy Content for ${post.title}`}>
       <div className="container">
         <h1 className="title">{post.title} Content</h1>
         <h2 className="subtitle">Youtube</h2>
-        <TextAreaWithCopy startingText={'some text'} />
+        <TextAreaWithCopy startingText={title} />
+        <TextAreaWithCopy startingText={getYoutubeInterviewDescription(podcastConfig, post)} />
+        {
+          post.youtube.clips && (
+            <>
+              {
+                getYoutubeClipTitles(podcastConfig, post).map(title => (
+                  <TextAreaWithCopy key={title} startingText={title} />
+                ))
+              }
+              <TextAreaWithCopy startingText={getYoutubeClipDescription(podcastConfig, post)}/>
+            </>
+          )
+        }
+
+        <h2 className="subtitle">Robohub</h2>
+        <TextAreaWithCopy startingText={getRobohubPost(podcastConfig, post)} />
       </div>
     </Layout>
   )
@@ -43,9 +71,7 @@ const TextAreaWithCopy = ({ startingText}: { startingText: string}) => {
     <>
       <div className="columns is-centered">
         <div className="column is-8">
-          <textarea onChange={handleChange} rows={4} style={{ width: "100%" }}>
-            {startingText}
-          </textarea>
+          <textarea onChange={handleChange} rows={4} style={{ width: "100%" }} defaultValue={startingText}/>
         </div>
         <div className="column is-4">
           <CopyToClipboard text={text}>

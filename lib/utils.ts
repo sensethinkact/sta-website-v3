@@ -6,7 +6,7 @@ export function truncateWords(str: string, maxNumberOfWords: number) {
   return str.split(/\s/).slice(0, maxNumberOfWords).join(' ') + '...'
 }
 
-export function listToString(list: string | string[]) {
+export function listToString(list: string | string[], andStr = 'and') {
   if (typeof list === 'string') {
     return list
   }
@@ -17,6 +17,6 @@ export function listToString(list: string | string[]) {
   } else if (list.length === 2) {
     return `${list[0]} and ${list[1]}`
   } else {
-    return `${list.slice(0, -1).join(', ')}, and ${list.slice(-1)}`
+    return `${list.slice(0, -1).join(', ')}, ${andStr} ${list.slice(-1)}`
   }
 }

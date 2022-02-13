@@ -17,10 +17,12 @@ const pocketcastsUrl = 'https://pca.st/g667w2c4'
 
 export type PodcastConfig = {
   availableOn: {[site: string]: {url: string, iconUrl: string}}
+  host: string
 } & PodcastConfigImported
 
 const podcastConfig: PodcastConfig = {
   name: 'Sense Think Act Podcast',
+  host: 'Audrow Nash',
   tagline: 'Conversations about robotics',
   description:
     'An accessible, long-form podcast about all areas of robotics that is hosted by Audrow Nash and sponsored by Open Robotics.',

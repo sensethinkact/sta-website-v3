@@ -7,12 +7,13 @@ TODO
 - [x] Style the pages
 - [x] Generate content in debug mode
 - [ ] Markup post content
-  - [ ] YouTube
-  - [ ] YouTube clips
-  - [ ] Robohub
+  - [x] YouTube
+  - [x] YouTube clips
+  - [x] Robohub
   - [ ] Irish Tech
   - [ ] Twitter
   - [ ] Script
+- Use a schema to validate posts
 - [ ] Combine transcript and outline
 - [ ] Add discourse comments
 - [ ] Add Google Analytics
