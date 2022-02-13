@@ -113,7 +113,7 @@ const podcastConfig: PodcastConfig = {
       iconUrl: urlJoin(imageUrl, 'youtube.svg'),
     },
     rss: {
-      url: feedUrl,
+      url: `/${feedFile}`,
       iconUrl: urlJoin(imageUrl, 'rss.svg'),
     }
   },
