@@ -5,7 +5,8 @@
     "dev": "next dev",
     "debug": "DEBUG=true next dev",
     "build": "npm run build:rss && next build",
-    "build:rss": "ts-node --project tsconfig.scripts.json scripts/generate-rss.ts",
+    "script": "ts-node --project tsconfig.scripts.json",
+    "build:rss": "npm run script -- scripts/generate-rss.ts",
     "start": "next start",
     "lint": "next lint"
   },
