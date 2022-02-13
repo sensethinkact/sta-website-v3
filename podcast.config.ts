@@ -1,9 +1,22 @@
 import {join} from 'path'
-import type { PodcastConfig } from '@sta-podcast/types'
+import type { PodcastConfig as PodcastConfigImported } from '@sta-podcast/types'
 
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'
 const feedUrl = join(siteUrl, feedFile)
+
+const appleUrl = 'https://podcasts.apple.com/us/podcast/sense-think-act/id1582090036'
+const spotifyUrl = 'https://open.spotify.com/show/52wK4oMDvgijRk6E82tC5d'
+const youtubeUrl = 'https://www.youtube.com/c/SenseThinkActPodcast'
+const youtubeClipsUrl = 'https://www.youtube.com/channel/UChfnCpNwZzYtZ32J-pZvNDg'
+const googleUrl = 'https://podcasts.google.com/feed/aHR0cHM6Ly9zZW5zZXRoaW5rYWN0LmNvbS9pdHVuZXMueG1s'
+const overcastUrl = 'https://overcast.fm/itunes1582090036/sense-think-act'
+const pocketcastsUrl = 'https://pca.st/g667w2c4'
+const imageDir = join('/img')
+
+export type PodcastConfig = {
+  availableOn: {[site: string]: {url: string, iconUrl: string}}
+} & PodcastConfigImported
 
 const podcastConfig: PodcastConfig = {
   name: 'Sense Think Act Podcast',
@@ -41,11 +54,11 @@ const podcastConfig: PodcastConfig = {
       },
       {
         name: 'Apple Podcasts',
-        url: 'https://podcasts.apple.com/us/podcast/sense-think-act/id1582090036',
+        url: appleUrl,
       },
       {
         name: 'Spotify',
-        url: 'https://open.spotify.com/show/52wK4oMDvgijRk6E82tC5d',
+        url: spotifyUrl,
       },
       {
         name: 'RSS',
@@ -53,11 +66,11 @@ const podcastConfig: PodcastConfig = {
       },
       {
         name: 'Full episodes',
-        url: 'https://www.youtube.com/c/SenseThinkActPodcast',
+        url: youtubeUrl,
       },
       {
         name: 'Clips',
-        url: 'https://www.youtube.com/channel/UChfnCpNwZzYtZ32J-pZvNDg',
+        url: youtubeClipsUrl,
       },
     ],
     social: [
@@ -70,6 +83,36 @@ const podcastConfig: PodcastConfig = {
         url: 'https://discourse.ros.org/c/sensethinkact/71',
       },
     ],
+  },
+  availableOn: {
+    apple: {
+      url: appleUrl,
+      iconUrl: join(imageDir, 'apple.svg'),
+    },
+    spotify: {
+      url: spotifyUrl,
+      iconUrl: join(imageDir, 'spotify.svg'),
+    },
+    google: {
+      url: googleUrl,
+      iconUrl: join(imageDir, 'google.svg'),
+    },
+    overcast: {
+      url: overcastUrl,
+      iconUrl: join(imageDir, 'overcast.svg'),
+    },
+    pcaUrl: {
+      url: pocketcastsUrl,
+      iconUrl: join(imageDir, 'pocketcasts.svg'),
+    },
+    youtube: {
+      url: youtubeUrl,
+      iconUrl: join(imageDir, 'youtube.svg'),
+    },
+    rss: {
+      url: feedUrl,
+      iconUrl: join(imageDir, 'rss.svg'),
+    }
   },
 }
 

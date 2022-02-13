@@ -11,14 +11,17 @@ import Layout from '../components/layout'
 import type { SerializedPost } from '@sta-podcast/types'
 
 import podcastConfig from '../podcast.config'
+import TagsList from '../components/tags'
 
 type Props = {
   posts: SerializedPost[]
 }
 
 const Home = ({ posts }: Props) => {
+
   const logoSizePx = 350
   const maxPreviewWords = 30
+
   return (
     <Layout>
       <Head>
@@ -65,67 +68,32 @@ const Home = ({ posts }: Props) => {
                     </div>
                   </div>
                 </article>
-                <Link href="/tags">
-                  <a>View all tags</a>
-                </Link>
+
                 <div className="block">
                   <h2 className="title is-4">Available on</h2>
                   <div className="columns is-mobile is-multiline is-variable is-2">
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.apple-podcasts }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/apple.svg" layout='fill' alt="Apple Podcast logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.spotify }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/spotify.svg" layout='fill' alt="Spotify logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.google-podcasts }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/google.svg" layout='fill' alt="Google Podcasts Logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.overcast }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/overcast.svg" layout='fill' alt="Overcast Logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.pocketcasts }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/pocketcasts.svg" layout='fill' alt="Pocketcasts Logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="{{ site.sites.youtube }}" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/youtube.svg" layout='fill' alt="Youtube Logo" />
-                        </figure>
-                      </a>
-                    </div>
-                    <div className="column is-narrow">
-                      <a href="/itunes.xml" target="_blank">
-                        <figure className="image is-48x48">
-                          <Image src="/img/rss.svg" layout='fill' alt="RSS Logo" />
-                        </figure>
-                      </a>
-                    </div>
+                    {
+                      Object.entries(podcastConfig.availableOn).map(([platform, { url, iconUrl }]) => (
+                        <div key={platform} className="column is-narrow">
+                          <a href={url} target="_blank" rel="noreferrer">
+                            <figure className="image is-48x48">
+                              <Image src={iconUrl} layout='fill' alt={`${platform} logo`} />
+                            </figure>
+                          </a>
+                        </div>
+                      ))
+                    }
                   </div>
                 </div>
 
                 <div className="block">
                   <h2 className="title is-4">Episodes</h2>
 
+                  <div className="content">
+                    <Link href="/tags">
+                      <a >View all tags</a>
+                    </Link>
+                  </div>
                   <div className="columns is-centered is-multiline">
                     {posts.map(post => (
                       <div key={post.slug} className='column is-12'>
@@ -157,15 +125,7 @@ const Home = ({ posts }: Props) => {
                                 <span>{' · '}</span>
                                 {toTimestampString(post.duration)}
                               </div>
-                              <div>
-                                {post.tags.map(tag => (
-                                  <Link key={tag} href="/tags/[tag]" as={`/tags/${tag}`}>
-                                  <a className="button is-info is-outlined is-small">
-                                    {tag}
-                                  </a>
-                                  </Link>
-                                ))}
-                              </div>
+                              <TagsList tags={post.tags} />
                             </div>
                           </div>
                         </article>

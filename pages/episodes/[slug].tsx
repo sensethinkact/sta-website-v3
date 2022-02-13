@@ -12,6 +12,7 @@ import podcastConfig from "../../podcast.config"
 
 import Layout from "../../components/layout"
 import Comments from "../../components/comments"
+import TagsList from "../../components/tags"
 
 import type { SerializedPost } from "@sta-podcast/types"
 
@@ -38,7 +39,7 @@ const Post = ({ post }: Props) => {
                 <Image
                   className="navbar-logo"
                   src="/img/logo-with-name.png"
-                  width={500} height={100}
+                  width={1900/5} height={400/5}
                   alt="STA Logo"
                 />
               </a>
@@ -63,6 +64,9 @@ const Post = ({ post }: Props) => {
                   {post.publishDate}
                   <span>{' · '}</span>
                   {toTimestampString(post.duration)}
+                </div>
+                <div className="content">
+                  <TagsList tags={post.tags} />
                 </div>
                 <YouTube videoId={post.youtube.mainContentId} />
                 <br/>
