@@ -15,7 +15,7 @@ import podcastConfig from '../podcast.config'
 import TagsList from '../components/tags-list'
 import Layout from '../components/layout'
 import ReadMore from '../components/read-more'
-import { PostLoader } from '@sta-podcast/post-loader'
+import PostPreview from '../components/post-preview'
 
 
 type Props = {
@@ -32,8 +32,6 @@ const Home = ({ posts, tags }: Props) => {
     <Layout>
       <Head>
         <title>{podcastConfig.name}</title>
-        <meta name="description" content={podcastConfig.description} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
@@ -100,38 +98,7 @@ const Home = ({ posts, tags }: Props) => {
                   </div>
                   <div className="columns is-centered is-multiline">
                     {posts.map(post => (
-                      <div key={post.slug} className='column is-12'>
-                        <article>
-                          <div className="media">
-                            <div className="media-content">
-                              <Link href="/episodes/[slug]" as={`/episodes/${post.slug}`}>
-                                <a>
-                                  <p className="is-5 is-marginless">
-                                    <span className='title is-5'>
-                                      {post.number && post.number?.toString() + ". "}
-                                      {post.title}
-                                    </span>
-                                    <span className='subtitle is-5'>
-                                      {post.guests && `, with ${listToString(post.guests)}`}
-                                    </span>
-                                  </p>
-                                </a>
-                              </Link>
-                              <p className="content is-marginless">
-                                {
-                                  truncateWords(post.description, maxPreviewWords)
-                                }
-                              </p>
-                              <div className="content is-small">
-                                {post.publishDate}
-                                <span>{' · '}</span>
-                                {toTimestampString(post.duration)}
-                              </div>
-                              <TagsList tags={post.tags} />
-                            </div>
-                          </div>
-                        </article>
-                      </div>
+                      <PostPreview key={post.slug} post={post} maxPreviewWords={maxPreviewWords} />
                     ))}
                   </div>
                 </div>

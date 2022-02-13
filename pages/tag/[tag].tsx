@@ -2,11 +2,14 @@ import { useRouter } from "next/router"
 import ErrorPage from 'next/error'
 import Head from "next/head"
 import Link from 'next/link'
+import Image from "next/image"
 
 import getPostLoader from "../../lib/get-post-loader"
 import type { SerializedPost } from "@sta-podcast/types"
 
 import Layout from "../../components/layout"
+import podcastConfig from "../../podcast.config"
+import PostPreview from "../../components/post-preview"
 
 type Props = {
   posts: SerializedPost[]
@@ -20,32 +23,46 @@ const PostsWithTag = ({ posts, tag }: Props) => {
   }
   return (
     <Layout>
+
       <Head>
-        <title>{`Posts with the ${tag} tag`}</title>
+        <title>{`${tag} tag | ${podcastConfig.name}`}</title>
       </Head>
+
       <div className="container">
-        <ul>
-          <li>
+        <nav aria-label="main navigation">
+          <div className="navbar-brand">
             <Link href="/">
-              <a>Home</a>
+              <a>
+                <Image
+                  className="navbar-logo"
+                  src="/img/logo-with-name.png"
+                  width={1900 / 5} height={400 / 5}
+                  alt="STA Logo"
+                />
+              </a>
             </Link>
-          </li>
-          <li>
-            <Link href="/tags">
-              <a>All tags</a>
-            </Link>
-          </li>
-        </ul>
-        <h1 className='title'>{`Posts with the ${tag} tag`}</h1>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.slug}>
-              <Link href="/episodes/[slug]" as={`/episodes/${post.slug}`}>
-                <a>{post.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+          </div>
+        </nav>
+
+        <section className="section">
+          <div className="columns is-centered">
+            <div className="column is-8-tablet is-desktop-7 is-fullhd-6">
+              <article>
+                <h2 className="subtitle">
+                  {
+                    posts.length === 1 ? "1 post" : `${posts.length} posts`
+                  }
+                  {' '} with the <b><i>{tag}</i></b> tag
+                </h2>
+                <div className="content">
+                  {posts.map((post) => (
+                    <PostPreview post={post} maxPreviewWords={100} key={post.slug} />
+                  ))}
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </div>
     </Layout>
   )
