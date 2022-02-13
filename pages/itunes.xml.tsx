@@ -11,7 +11,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     const postLoader = await getPostLoader()
     const rssFeed = getRssFeed(podcastConfig, postLoader)
 
-    res.setHeader('Content-Type', 'text/xml')
+    res.setHeader('Content-Type', 'text/text')
     res.write(rssFeed)
     res.end()
   }
