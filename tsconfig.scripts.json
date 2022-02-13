@@ -1,0 +1,7 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scripts/generate-rss.ts"],
+}

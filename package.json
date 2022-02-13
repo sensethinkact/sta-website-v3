@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "debug": "DEBUG=true next dev",
-    "build": "next build",
+    "build": "npm run build:rss && next build",
+    "build:rss": "ts-node --project tsconfig.scripts.json scripts/generate-rss.ts",
     "start": "next start",
     "lint": "next lint"
   },
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@sta-podcast/types": "^1.0.7",
+    "@tsconfig/node16": "^1.0.2",
     "@types/node": "17.0.9",
     "@types/proper-url-join": "^2.1.1",
     "@types/react": "17.0.38",
