@@ -107,10 +107,8 @@ const Home = ({ posts, tags }: Props) => {
                               <Link href="/episodes/[slug]" as={`/episodes/${post.slug}`}>
                                 <a>
                                   <p className="is-5 is-marginless">
-                                    <span className='subtitle is-4'>
-                                      {post.number && post.number?.toString() + ". "}
-                                    </span>
                                     <span className='title is-5'>
+                                      {post.number && post.number?.toString() + ". "}
                                       {post.title}
                                     </span>
                                     <span className='subtitle is-5'>
