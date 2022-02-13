@@ -4,9 +4,9 @@ TODO
 - [x] Make a layout page
 - [x] Add tags page
 - [x] Make the about button hide text
-- [ ] Style the pages
+- [x] Style the pages
   - [x] Post
-  - [ ] Tag
+  - [x] Tag
 - [ ] Generate content in debug mode
 - [ ] Add discourse comments
 - [ ] Add Google Analytics
