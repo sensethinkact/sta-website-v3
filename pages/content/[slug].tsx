@@ -6,12 +6,18 @@ import { useState } from "react";
 
 import getPostLoader from "../../lib/get-post-loader"
 import getRobohubPost from "../../lib/content-maker/robohub"
+import getIrishTechNewsPost from "../../lib/content-maker/irish-tech-news";
 import { getTitle, checkYoutubeTitle } from "../../lib/content-maker/common";
 import {
   getYoutubeInterviewDescription,
   getYoutubeClipTitles,
   getYoutubeClipDescription,
 } from "../../lib/content-maker/youtube";
+import {
+  getTweet,
+  getLinkedIn,
+} from "../../lib/content-maker/social-media";
+import getGluetext from "../../lib/content-maker/gluetext";
 import { maxTitleLength } from "../../lib/constants";
 
 import Layout from "../../components/layout";
@@ -38,8 +44,13 @@ const PostContentHelper = ({ post }: Props) => {
       <div className="container">
         <h1 className="title">{post.title} Content</h1>
         <h2 className="subtitle">Youtube</h2>
+        <h3 className="subtitle is-6">Title</h3>
         <TextAreaWithCopy startingText={title} />
+
+        <h3 className="subtitle is-6">Description</h3>
         <TextAreaWithCopy startingText={getYoutubeInterviewDescription(podcastConfig, post)} />
+
+        <h3 className="subtitle is-6">Clip titles</h3>
         {
           post.youtube.clips && (
             <>
@@ -48,13 +59,26 @@ const PostContentHelper = ({ post }: Props) => {
                   <TextAreaWithCopy key={title} startingText={title} />
                 ))
               }
+              <h3 className="subtitle is-6">Clip description</h3>
               <TextAreaWithCopy startingText={getYoutubeClipDescription(podcastConfig, post)}/>
             </>
           )
         }
 
-        <h2 className="subtitle">Robohub</h2>
+        <h2 className="subtitle">Crossposting</h2>
+        <h3 className="subtitle is-6">Robohub</h3>
         <TextAreaWithCopy startingText={getRobohubPost(podcastConfig, post)} />
+        <h3 className="subtitle is-6">Irish Tech News</h3>
+        <TextAreaWithCopy startingText={getIrishTechNewsPost(podcastConfig, post)} />
+
+        <h2 className="subtitle">Gluetext</h2>
+        <TextAreaWithCopy startingText={getGluetext(podcastConfig, post)} />
+
+        <h2 className="subtitle">Social Media</h2>
+        <h3 className="subtitle is-6">Twitter</h3>
+        <TextAreaWithCopy startingText={getTweet(podcastConfig, post)} />
+        <h3 className="subtitle is-6">LinkedIn</h3>
+        <TextAreaWithCopy startingText={getLinkedIn(podcastConfig, post)} />
       </div>
     </Layout>
   )

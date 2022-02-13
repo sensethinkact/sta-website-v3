@@ -5,6 +5,7 @@ import { checkYoutubeTitle } from "./common";
 import { listToString } from "../utils";
 import endent from "endent";
 import { toTimestampString } from "@sta-podcast/timestamp-tools";
+import { getYoutubeUrlFromVideoId } from "./common";
 import { maxTitleLength } from "../constants";
 
 export function getYoutubeInterviewDescription(pod: PodcastConfig, ep: SerializedPost) {
@@ -52,7 +53,8 @@ function getClipTitle(
 
 export function getYoutubeClipDescription(pod: PodcastConfig, ep: SerializedPost) {
   return endent`
-    Sense Think Act Podcast full episode: ${ep.youtube.mainContentId}
+    Sense Think Act Podcast full episode:
+    ${getYoutubeUrlFromVideoId(ep.youtube.mainContentId)}
 
     GUEST BIO:
     ${ep.excerpt}

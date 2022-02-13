@@ -4,13 +4,13 @@ import { getYoutubeUrlFromVideoId } from "./common";
 
 import endent from "endent";
 
-function getRobohubPost(pod: PodcastConfig, ep: SerializedPost) {
+function getIrishTechNewsPost(pod: PodcastConfig, ep: SerializedPost) {
   return endent`
+    ${getYoutubeUrlFromVideoId(ep.youtube.mainContentId)}
+
     ${ep.description}
 
     <!--more-->
-
-    ${getYoutubeUrlFromVideoId(ep.youtube.mainContentId)}
 
     <strong>Episode Links</strong>
     <ul>
@@ -32,4 +32,4 @@ function getRobohubPost(pod: PodcastConfig, ep: SerializedPost) {
   `;
 }
 
-export default getRobohubPost;
+export default getIrishTechNewsPost;

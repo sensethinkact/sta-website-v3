@@ -6,15 +6,13 @@ TODO
 - [x] Make the about button hide text
 - [x] Style the pages
 - [x] Generate content in debug mode
-- [ ] Markup post content
+- [x] Markup post content
   - [x] YouTube
   - [x] YouTube clips
   - [x] Robohub
-  - [ ] Irish Tech
-  - [ ] Twitter
-  - [ ] Script
-- Use a schema to validate posts
-- [ ] Combine transcript and outline
+  - [x] Irish Tech
+  - [x] Social media
+  - [x] Clips
 - [ ] Add discourse comments
 - [ ] Add Google Analytics
 - [ ] Port all posts
@@ -22,4 +20,17 @@ TODO
 Version 4
 ---------
 
-- [ ] Move podcast config out of post-loader
+- [ ] Move podcast config out of post-loader + create a better separation
+- [ ] Add post photos to preview
+- [ ] Use a schema to validate posts
+- [ ] Combine transcript and outline
+- [ ] Link outline to transcript
+- [ ] Link transcript and outline to video
+- [ ] Better handle checking the title
+- [ ] Add social media info into posts
+
+### Possible
+
+- [ ] Dark mode
+- [ ] Better share buttons
+- [ ] Create debug pages for creating posts
