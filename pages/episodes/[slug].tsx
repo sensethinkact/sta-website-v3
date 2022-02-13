@@ -12,7 +12,7 @@ import podcastConfig from "../../podcast.config"
 
 import Layout from "../../components/layout"
 import Comments from "../../components/comments"
-import TagsList from "../../components/tags"
+import TagsList from "../../components/tags-list"
 
 import type { SerializedPost } from "@sta-podcast/types"
 

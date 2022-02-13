@@ -14,3 +14,8 @@ TODO
 - [ ] Make the about button hide text
 - [ ] Generate content in debug mode
 - [ ] Port all posts
+
+Version 4
+---------
+
+- [ ] Move podcast config out of post-loader

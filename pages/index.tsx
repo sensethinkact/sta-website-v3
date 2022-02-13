@@ -2,22 +2,28 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { useState } from 'react'
+
 import getPostLoader from '../lib/get-post-loader'
 import { truncateWords, listToString } from "../lib/utils"
 import { toTimestampString } from "@sta-podcast/timestamp-tools"
 
-import Layout from '../components/layout'
-
 import type { SerializedPost } from '@sta-podcast/types'
 
 import podcastConfig from '../podcast.config'
-import TagsList from '../components/tags'
+
+import TagsList from '../components/tags-list'
+import Layout from '../components/layout'
+import ReadMore from '../components/read-more'
+import { PostLoader } from '@sta-podcast/post-loader'
+
 
 type Props = {
   posts: SerializedPost[]
+  tags: string[]
 }
 
-const Home = ({ posts }: Props) => {
+const Home = ({ posts, tags }: Props) => {
 
   const logoSizePx = 350
   const maxPreviewWords = 30
@@ -52,20 +58,18 @@ const Home = ({ posts }: Props) => {
                       <a href="https://www.openrobotics.org/" target="_blank" rel="noreferrer">
                         Open Robotics</a>.
                     </p>
-                    <div id="more">
-                      <p>
-                        One way to think about a robot is as a machine that senses the world, thinks about what it sees, and then
-                        acts in the world.
-                        Our podcast seeks to explore the world of robotics - that is, machines that sense, think, and act - through
-                        long-form interviews.
-                        We’ll cover a diverse range of topics: from hardware to software, from design to ethics, and from government
-                        to startups, and everything in between.
-                        Also, we want to make this podcast accessible to anyone interested in robotics.
-                        To do this, we’ll explain each new concept in the interview as it comes up, to help roboticists and non
-                        roboticists alike to follow and enjoy our content.
-                        We hope you enjoy exploring the world of machines that sense, think, and act with us!
-                      </p>
-                    </div>
+                    <ReadMore isStartExpanded={false}>
+                      One way to think about a robot is as a machine that senses the world, thinks about what it sees, and then
+                      acts in the world.
+                      Our podcast seeks to explore the world of robotics - that is, machines that sense, think, and act - through
+                      long-form interviews.
+                      We’ll cover a diverse range of topics: from hardware to software, from design to ethics, and from government
+                      to startups, and everything in between.
+                      Also, we want to make this podcast accessible to anyone interested in robotics.
+                      To do this, we’ll explain each new concept in the interview as it comes up, to help roboticists and non
+                      roboticists alike to follow and enjoy our content.
+                      We hope you enjoy exploring the world of machines that sense, think, and act with us!
+                    </ReadMore>
                   </div>
                 </article>
 
@@ -90,9 +94,9 @@ const Home = ({ posts }: Props) => {
                   <h2 className="title is-4">Episodes</h2>
 
                   <div className="content">
-                    <Link href="/tags">
-                      <a >View all tags</a>
-                    </Link>
+                    <ReadMore isStartExpanded={false} showText="See tags" hideText='Hide tags'>
+                      <TagsList tags={tags} />
+                    </ReadMore>
                   </div>
                   <div className="columns is-centered is-multiline">
                     {posts.map(post => (
@@ -146,7 +150,8 @@ export const getStaticProps = async () => {
   const postLoader = await getPostLoader()
   return {
     props: {
-      posts: postLoader.getPosts()
+      posts: postLoader.getPosts(),
+      tags: postLoader.getTags(),
     }
   }
 }
