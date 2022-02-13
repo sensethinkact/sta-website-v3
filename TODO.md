@@ -2,17 +2,14 @@ TODO
 ====
 
 - [x] Make a layout page
+- [x] Add tags page
+- [x] Make the about button hide text
+- [ ] Style the pages
+  - [x] Post
+  - [ ] Tag
+- [ ] Generate content in debug mode
 - [ ] Add discourse comments
 - [ ] Add Google Analytics
-- [ ] Make several components
-  - [ ] PostPreview
-  - [ ] Tag
-- [ ] Style the pages
-  - [ ] Posts
-  - [ ] Tag
-  - [ ] Tags
-- [ ] Make the about button hide text
-- [ ] Generate content in debug mode
 - [ ] Port all posts
 
 Version 4
