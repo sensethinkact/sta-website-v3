@@ -7,4 +7,4 @@ export const INTERNAL_PUBLIC_URL = '/public'
 export const MAX_TITLE_LENGTH = 100
 
 export const IS_DEBUG = process.env.DEBUG === 'true'
-export const GA_TRACKING_ID = process.env.GA_TRACKING_ID
+export const GA_TRACKING_ID = process.env.GA_TRACKING_ID || 'YOUR_GOOGLE_TRACKING_ID'
