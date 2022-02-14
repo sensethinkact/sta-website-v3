@@ -13,8 +13,9 @@ TODO
   - [x] Irish Tech
   - [x] Social media
   - [x] Clips
-- [ ] Add discourse comments
+- [x] Add discourse comments
 - [ ] Add Google Analytics
+- [ ] Update README
 - [ ] Port all posts
 
 Version 4
