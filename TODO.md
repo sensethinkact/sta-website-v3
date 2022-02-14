@@ -14,8 +14,8 @@ TODO
   - [x] Social media
   - [x] Clips
 - [x] Add discourse comments
-- [ ] Add Google Analytics
-- [ ] Update README
+- [x] Add Google Analytics
+- [x] Update README
 - [ ] Port all posts
 
 Version 4
