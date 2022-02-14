@@ -19,7 +19,7 @@ export function getYoutubeInterviewDescription(pod: PodcastConfig, ep: Serialize
     ${pod.links.podcast.map((l) => `- ${l.name}: ${l.url}`).join("\n")}
 
     OUTLINE:
-    ${ep.includes?.outline?.map(o => `- (${toTimestampString(o.timeStamp)})${o.title}`).join("\n")})}`;
+    ${ep.includes?.outline?.map(o => `- (${toTimestampString(o.timeStamp)}) ${o.title}`).join("\n")})}`;
 }
 
 export function getYoutubeClipTitles(
