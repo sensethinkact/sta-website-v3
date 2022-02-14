@@ -83,7 +83,7 @@ const Post = ({ post, isDebug }: Props) => {
                       Comments
                     </h3>
 
-                    {/* <Comments pageUrl={post.url} /> */}
+                    <Comments pageUrl={post.url} />
 
                     {
                       post.includes?.outline && (
