@@ -11,7 +11,7 @@ import Layout from '../components/layout'
 import ReadMore from '../components/read-more'
 import EpisodePreview from '../components/episode-preview'
 
-import { isDebug, imageUrl } from "../lib/constants"
+import { IS_DEBUG, IMAGES_URL } from "../lib/constants"
 
 
 type Props = {
@@ -33,7 +33,7 @@ const Home = ({ posts, tags, isDebug=false }: Props) => {
             <div className="columns is-desktop is-centered is-variable is-6">
               <div className="column is-narrow">
                 <figure className="field has-text-centered has-text-right-desktop">
-                  <Image className="logo" src={`${imageUrl}/cover.jpg`} alt="STA logo" width={logoSizePx} height={logoSizePx} />
+                  <Image className="logo" src={`${IMAGES_URL}/cover.jpg`} alt="STA logo" width={logoSizePx} height={logoSizePx} />
                 </figure>
               </div>
               <div className="column is-7-desktop is-6-widescreen">
@@ -111,11 +111,18 @@ const Home = ({ posts, tags, isDebug=false }: Props) => {
 
 export const getStaticProps = async () => {
   const postLoader = await getPostLoader()
+
+  // Remove the includes for performance reasons
+  const posts = postLoader.getPosts().map(post => {
+    const {includes, ...postWithoutIncludes } = post
+    return postWithoutIncludes as SerializedPost
+  })
+
   return {
     props: {
-      posts: postLoader.getPosts(),
+      posts: posts,
       tags: postLoader.getTags(),
-      isDebug,
+      isDebug: IS_DEBUG,
     }
   }
 }

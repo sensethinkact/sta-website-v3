@@ -18,7 +18,7 @@ import {
   getLinkedIn,
 } from "../../lib/content-maker/social-media";
 import getGluetext from "../../lib/content-maker/gluetext";
-import { maxTitleLength } from "../../lib/constants";
+import { MAX_TITLE_LENGTH } from "../../lib/constants";
 
 import Layout from "../../components/layout";
 
@@ -37,7 +37,7 @@ const PostContentHelper = ({ post }: Props) => {
   }
 
   const title = getTitle(podcastConfig, post)
-  checkYoutubeTitle(title, maxTitleLength)
+  checkYoutubeTitle(title, MAX_TITLE_LENGTH)
 
   return (
     <Layout title={`Copy Content for ${post.title}`}>

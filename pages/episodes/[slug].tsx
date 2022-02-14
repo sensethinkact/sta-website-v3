@@ -14,7 +14,7 @@ import CopyableContentLink from "../../components/copyable-content-link"
 
 import type { SerializedPost } from "@sta-podcast/types"
 import LogoNav from "../../components/logo-nav"
-import { isDebug } from "../../lib/constants"
+import { IS_DEBUG } from "../../lib/constants"
 
 type Props = {
   post: SerializedPost
@@ -168,7 +168,7 @@ export async function getStaticProps({ params }: Params): Promise<{ props: Props
   return {
     props: {
       post: postLoader.getPostBySlug(params.slug) as SerializedPost,
-      isDebug,
+      isDebug: IS_DEBUG,
     }
   }
 }

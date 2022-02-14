@@ -6,7 +6,7 @@ import { listToString } from "../utils";
 import endent from "endent";
 import { toTimestampString } from "@sta-podcast/timestamp-tools";
 import { getYoutubeUrlFromVideoId } from "./common";
-import { maxTitleLength } from "../constants";
+import { MAX_TITLE_LENGTH } from "../constants";
 
 export function getYoutubeInterviewDescription(pod: PodcastConfig, ep: SerializedPost) {
   return endent`
@@ -47,7 +47,7 @@ function getClipTitle(
   const people = [...(ep.guests as string[]), pod.host];
   const peopleString = listToString(people, "and");
   const title = `${clipTitle} | ${peopleString}`;
-  checkYoutubeTitle(title, maxTitleLength);
+  checkYoutubeTitle(title, MAX_TITLE_LENGTH);
   return title;
 }
 

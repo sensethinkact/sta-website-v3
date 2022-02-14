@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import {imageUrl} from '../lib/constants'
+import {IMAGES_URL} from '../lib/constants'
 
 const LogoNav = () => {
   const scale = 0.2
@@ -13,7 +13,7 @@ const LogoNav = () => {
             <a>
               <Image
                 className="navbar-logo"
-                src={`${imageUrl}/logo-with-name.png`}
+                src={`${IMAGES_URL}/logo-with-name.png`}
                 width={1900 * scale} height={400 * scale}
                 alt="STA Logo"
               />

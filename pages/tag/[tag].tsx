@@ -2,7 +2,7 @@ import { useRouter } from "next/router"
 import ErrorPage from 'next/error'
 
 import getPostLoader from "../../lib/get-post-loader"
-import { isDebug } from "../../lib/constants"
+import { IS_DEBUG } from "../../lib/constants"
 
 import type { SerializedPost } from "@sta-podcast/types"
 
@@ -82,7 +82,7 @@ export async function getStaticProps({ params }: Params): Promise<{ props: Props
     props: {
       posts,
       tag: params.tag,
-      isDebug
+      isDebug: IS_DEBUG
     }
   }
 }

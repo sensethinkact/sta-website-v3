@@ -6,7 +6,7 @@ import { toTimestampString } from "@sta-podcast/timestamp-tools"
 import TagsList from "./tags-list"
 
 import type { SerializedPost } from "@sta-podcast/types"
-import { episodesUrl, copyableContentUrl } from "../lib/constants"
+import { EPISODES_URL, COPYABLE_CONTENT_URL } from "../lib/constants"
 import CopyableContentLink from "./copyable-content-link"
 
 type Props = {
@@ -21,7 +21,7 @@ const EpisodePreview = ({ post, maxPreviewWords=350, isDebug}: Props) => {
       <article>
         <div className="media">
           <div className="media-content">
-            <Link href={`${episodesUrl}/[slug]`} as={`${episodesUrl}/${post.slug}`}>
+            <Link href={`${EPISODES_URL}/[slug]`} as={`${EPISODES_URL}/${post.slug}`}>
               <a>
                 <p className="is-5 is-marginless">
                   <span className='title is-5'>

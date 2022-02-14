@@ -1,6 +1,6 @@
 import {join} from 'path'
 import type { PodcastConfig as PodcastConfigImported } from '@sta-podcast/types'
-import { imageUrl } from './lib/constants'
+import { IMAGES_URL } from './lib/constants'
 import urlJoin from 'proper-url-join'
 
 const siteUrl = 'https://sensethinkact.com/'
@@ -41,7 +41,7 @@ const podcastConfig: PodcastConfig = {
     categories: ['Technology'],
     isExplicit: false,
     type: 'episodic',
-    image: urlJoin(siteUrl, imageUrl, 'cover.jpg'),
+    image: urlJoin(siteUrl, IMAGES_URL, 'cover.jpg'),
     language: 'en-us',
   },
   hosting: {
@@ -90,31 +90,31 @@ const podcastConfig: PodcastConfig = {
   availableOn: {
     apple: {
       url: appleUrl,
-      iconUrl: urlJoin(imageUrl, 'apple.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'apple.svg'),
     },
     spotify: {
       url: spotifyUrl,
-      iconUrl: urlJoin(imageUrl, 'spotify.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'spotify.svg'),
     },
     google: {
       url: googleUrl,
-      iconUrl: urlJoin(imageUrl, 'google.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'google.svg'),
     },
     overcast: {
       url: overcastUrl,
-      iconUrl: urlJoin(imageUrl, 'overcast.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'overcast.svg'),
     },
     pcaUrl: {
       url: pocketcastsUrl,
-      iconUrl: urlJoin(imageUrl, 'pocketcasts.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'pocketcasts.svg'),
     },
     youtube: {
       url: youtubeUrl,
-      iconUrl: urlJoin(imageUrl, 'youtube.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'youtube.svg'),
     },
     rss: {
       url: `/${feedFile}`,
-      iconUrl: urlJoin(imageUrl, 'rss.svg'),
+      iconUrl: urlJoin(IMAGES_URL, 'rss.svg'),
     }
   },
 }
