@@ -3,6 +3,8 @@ import type { PodcastConfig as PodcastConfigImported } from '@sta-podcast/types'
 import { IMAGES_URL } from './lib/constants'
 import urlJoin from 'proper-url-join'
 
+import type { Link } from '@sta-podcast/types'
+
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'
 const feedUrl = join(siteUrl, feedFile)
@@ -15,8 +17,15 @@ const googleUrl = 'https://podcasts.google.com/feed/aHR0cHM6Ly9zZW5zZXRoaW5rYWN0
 const overcastUrl = 'https://overcast.fm/itunes1582090036/sense-think-act'
 const pocketcastsUrl = 'https://pca.st/g667w2c4'
 
+const twitterUrl = 'https://twitter.com/sense_think_act'
+const discourseUrl = 'https://discourse.ros.org/c/sensethinkact/71'
+const staEmail = 'sensethinkact@googlegroups.com'
+const staEmailUrl = `mailto:${staEmail}`
+
+
 export type PodcastConfig = {
   availableOn: {[site: string]: {url: string, iconUrl: string}}
+  footer: Link[]
   host: string
 } & PodcastConfigImported
 
@@ -29,7 +38,7 @@ const podcastConfig: PodcastConfig = {
   copyright: `© ${new Date().getFullYear()} Open Source Robotics Foundation`,
   owner: {
     name: 'Open Robotics',
-    email: 'sensethinkact@googlegroups.com',
+    email: staEmail,
   },
   github: {
     organization: 'sensethinkact',
@@ -79,11 +88,11 @@ const podcastConfig: PodcastConfig = {
     social: [
       {
         name: 'Twitter',
-        url: 'https://twitter.com/sense_think_act',
+        url: twitterUrl,
       },
       {
         name: 'Discourse',
-        url: 'https://discourse.ros.org/c/sensethinkact/71',
+        url: discourseUrl,
       },
     ],
   },
@@ -117,6 +126,20 @@ const podcastConfig: PodcastConfig = {
       iconUrl: urlJoin(IMAGES_URL, 'rss.svg'),
     }
   },
+  footer: [
+    {
+      name: 'Twitter',
+      url: twitterUrl,
+    },
+    {
+      name: 'Discourse',
+      url: discourseUrl,
+    },
+    {
+      name: 'Contact',
+      url: staEmailUrl,
+    }
+  ]
 }
 
 export default podcastConfig

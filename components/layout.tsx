@@ -15,7 +15,7 @@ const Layout = ({ children, title }: Props) => {
       <div className="min-h-screen">
         <main>{children}</main>
       </div>
-      <Footer copyright={podcastConfig.copyright}/>
+      <Footer />
     </>
   )
 }

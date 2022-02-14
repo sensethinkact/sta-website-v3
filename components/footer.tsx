@@ -1,23 +1,22 @@
-type Props = {
-  copyright: string
-}
-const Footer = ({copyright}: Props) => {
+import podcastConfig from '../podcast.config'
+const Footer = () => {
   return (
     <>
       <nav className="content has-text-centered">
         <div className="columns is-variable is-3 is-multiline is-centered">
-          <div className="column is-narrow">
-            <a href="{{site.sites.twitter}}" target="_blank">
-              Twitter
-            </a>
-          </div>
-          <div className="column is-narrow">
-            <a href="mailto:sensethinkact@googlegroups.com" target="_blank" rel="noreferrer">
-              Contact
-            </a>
-          </div>
+          {
+            podcastConfig.footer.map(link => {
+              return (
+                <div key={link.name} className="column is-narrow">
+                  <a href={link.url} target="_blank" rel="noreferrer">
+                    {link.name}
+                  </a>
+                </div>
+              )
+            })
+          }
           <div className="column is-12">
-            {copyright}
+            {podcastConfig.copyright}
           </div>
         </div>
       </nav>
