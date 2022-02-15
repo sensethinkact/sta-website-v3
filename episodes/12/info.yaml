@@ -1,0 +1,31 @@
+guests: Matt Robinson
+title: Accelerating Industrial Workflows with Open Source
+description: |
+  In this episode, Audrow Nash speaks to Matt Robinson, Program Manager for ROS-Industrial Americas at the Southwest Research Institute.
+  ROS Industrial is a group that seeks to help industrial users, for example factories, leverage ROS and its ecosystem.
+  In this conversation, they talk about Matt’s background, the need for the ROS-Industrial group and what problems they’re working to solve, ROS-Industrial’s consortium, and ROS-Industrial’s new working group.
+excerpt: Matt Robinson is a Program Manager for ROS-Industrial Americas at the Southwest Research Institute.
+duration:
+  hours: 1
+  minutes: 27
+  seconds: 32
+tags:
+  - industry
+  - working group
+  - education
+links:
+  - name: ROS-Industrial
+    url: https://rosindustrial.org/
+  - name: ROS-Industrial's Twitter
+    url: https://twitter.com/rosindustrial
+  - name: ROS-Industrial's Discourse
+    url: https://discourse.ros.org/c/ros-industrial/39
+  - name: Southwest Research Institute
+    url: https://www.swri.org/
+mp3SizeBytes: 173095872
+publishDate: 2022-01-25
+youtube:
+  mainContentId: K1-7xp2INVg
+  clips:
+    - title: Rising Tide Lifts All Boats
+      videoId: mQUlJmZHSPI

@@ -1,0 +1,34 @@
+guests: Steve Macenski
+title: Open Source Robot Navigation
+description: |
+  In this episode, Audrow Nash speaks to Steve Macenski, who is the Open Source Robotics Engineering Lead at Samsung Research America.
+  Steve leads the Nav2 project, which is an open source robot navigation framework.
+  In this conversation, they talk about the problem and challenges of robot navigation, how Nav2 works at a high level, hybrid planners, and about Steve’s experience working with the Nav2 community.
+excerpt: Steve Macenski is the Open Source Robotics Engineering Lead at Samsung Research America.
+duration:
+  hours: 1
+  minutes: 25
+  seconds: 58
+tags:
+  - industry
+  - open-source
+  - navigation
+  - education
+links:
+  - name: Nav2's Website
+    url: https://navigation.ros.org/
+  - name: Steve's Website
+    url: https://www.steve.macenski.com/
+  - name: Steve's LinkedIn
+    url: https://www.linkedin.com/in/steve-macenski-41a985101/
+  - name: Samsung Research's Website
+    url: https://research.samsung.com/
+mp3SizeBytes: 170012519
+publishDate: 2022-02-08
+youtube:
+  mainContentId: opLHFBa4Gxo
+  clips:
+    - title: Dive Into Your Career
+      videoId: RsXYzbScY44
+    - title: Path Planning Heuristics
+      videoId: lN54j7HFii4
