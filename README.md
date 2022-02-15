@@ -23,7 +23,11 @@ Setup
 
 1. Install [NodeJS 16](https://nodejs.org/en/).
 2. Clone this repository
-3. Go to the cloned directory and run the following command:
+3. Go into the cloned directory and get the large files (images)
+   ```bash
+   git lfs install && git lfs pull
+   ```
+4. Then run the following command:
    ```bash
    npm ci
    ```
