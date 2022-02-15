@@ -1,0 +1,5394 @@
+1
+00:00:04,740 --> 00:00:07,590
+Audrow Nash: Hi, everyone,
+welcome to the sense think act
+
+2
+00:00:07,620 --> 00:00:12,420
+podcast. I'm your host Audrow
+Nash. Today I speak with Melonee
+
+3
+00:00:12,420 --> 00:00:16,620
+Wise, former CEO of Fetch
+Robotics and now VP of Robotics
+
+4
+00:00:16,620 --> 00:00:19,710
+Automation at Zebra
+Technologies. We talked about
+
+5
+00:00:19,710 --> 00:00:22,890
+her experience with Fetch
+robotics, the differences and
+
+6
+00:00:22,890 --> 00:00:26,760
+similarities between mobile
+route robots and a factory
+
+7
+00:00:26,760 --> 00:00:31,740
+setting, and autonomous cars,
+and her outlook on the future of
+
+8
+00:00:31,740 --> 00:00:35,520
+robotics. I really enjoyed this
+interview. First, it was really
+
+9
+00:00:35,520 --> 00:00:39,120
+nice getting to know Melonee.
+And also I found it very
+
+10
+00:00:39,120 --> 00:00:42,210
+interesting to hear about the
+different stages that FX fetch
+
+11
+00:00:42,210 --> 00:00:47,670
+robotics went through before
+being acquired. Specifically,
+
+12
+00:00:47,670 --> 00:00:50,730
+they started as a hardware
+company building the robots,
+
+13
+00:00:50,760 --> 00:00:54,480
+which only lasted five months or
+so. And then they were a
+
+14
+00:00:54,480 --> 00:00:58,530
+software company. And now,
+Melanie is describing them as a
+
+15
+00:00:58,530 --> 00:01:03,270
+data company is very
+interesting. With that, I hope
+
+16
+00:01:03,270 --> 00:01:08,820
+you enjoy. Hi, Melanie, would
+you introduce yourself?
+
+17
+00:01:09,210 --> 00:01:12,750
+Melonee Wise: Yeah, I'm Melonee
+Wise. I'm the former CEO of
+
+18
+00:01:12,750 --> 00:01:16,410
+Fetch Robotics now the VP of
+Automation, Robotics Automation
+
+19
+00:01:16,410 --> 00:01:17,070
+at Zebra,
+
+20
+00:01:20,190 --> 00:01:22,620
+Audrow Nash: So that's really
+exciting. Would you tell me a
+
+21
+00:01:22,620 --> 00:01:24,570
+bit how Fetch and Zebra are
+related?
+
+22
+00:01:25,380 --> 00:01:28,890
+Melonee Wise: Yeah, so I started
+fetch robotics about seven years
+
+23
+00:01:28,890 --> 00:01:35,100
+ago. And this week, we actually
+closed on an acquisition of
+
+24
+00:01:35,100 --> 00:01:39,540
+zebra acquiring fetch robotics.
+And so Zebra Technologies
+
+25
+00:01:39,780 --> 00:01:43,290
+acquired fetch to create a new
+robotics automation division.
+
+26
+00:01:43,320 --> 00:01:46,710
+and fetch makes autonomous
+mobile robots for the logistics
+
+27
+00:01:46,710 --> 00:01:48,270
+and manufacturing industries.
+
+28
+00:01:50,730 --> 00:01:54,510
+Audrow Nash: So going into fetch
+a bit more congrats on being
+
+29
+00:01:54,540 --> 00:01:57,990
+acquired. That's so exciting.
+And you said it was ahead of
+
+30
+00:01:57,990 --> 00:02:02,490
+your timeline, your 10 year,
+whatever being your highlight,
+
+31
+00:02:03,660 --> 00:02:09,030
+it was actually acquired in
+seven years. Would you tell me a
+
+32
+00:02:09,030 --> 00:02:13,170
+bit more about fetch. So it's
+for warehouse related robots,
+
+33
+00:02:13,200 --> 00:02:17,760
+but just I guess, background
+information on the company.
+
+34
+00:02:18,150 --> 00:02:21,060
+Melonee Wise: Yeah. And to be
+clear, when I said I had a 10
+
+35
+00:02:21,060 --> 00:02:23,460
+year vision, What I meant is
+when I, when they first started
+
+36
+00:02:23,460 --> 00:02:28,200
+talking about it, fetch robotics
+to investors, I kind of I kind
+
+37
+00:02:28,200 --> 00:02:30,510
+of made sure that they were in
+it for the long haul, because
+
+38
+00:02:30,510 --> 00:02:33,960
+robotics is such a hard problem.
+So I was like, Hey, you realize
+
+39
+00:02:33,960 --> 00:02:37,440
+that this is a 10 year problem,
+it's not like you're gonna get
+
+40
+00:02:37,440 --> 00:02:40,470
+an acquisition, like you would
+in a software company and, you
+
+41
+00:02:40,470 --> 00:02:44,460
+know, pump a couple dollars into
+flip into an IPO or an
+
+42
+00:02:44,460 --> 00:02:48,600
+acquisition a couple years. And
+so, so that's there wasn't
+
+43
+00:02:48,600 --> 00:02:51,090
+really like, I was like, Oh, I'm
+gonna sell the company in 10
+
+44
+00:02:51,090 --> 00:02:56,160
+years, it was more like, you
+know, when you go and try and
+
+45
+00:02:56,160 --> 00:02:59,070
+convince people that robotics is
+something interesting to invest
+
+46
+00:02:59,070 --> 00:03:03,780
+in, you need to help temper
+their expectations. Because, you
+
+47
+00:03:03,780 --> 00:03:05,670
+know, if you look at the car
+industry, we've been saying,
+
+48
+00:03:05,670 --> 00:03:11,670
+since, I don't know, 20, or 27,
+like 2007, that we're gonna have
+
+49
+00:03:11,700 --> 00:03:15,150
+autonomous cars next year. And
+we've been saying that every
+
+50
+00:03:15,150 --> 00:03:18,600
+year for the last, you know, 14
+years.
+
+51
+00:03:18,869 --> 00:03:19,619
+Audrow Nash: That's crazy.
+
+52
+00:03:19,000 --> 00:03:25,870
+Melonee Wise: So I so seven
+years ago, I started Fetch and I
+
+53
+00:03:25,870 --> 00:03:30,250
+started the company with three
+other co founders, Derek King,
+
+54
+00:03:30,280 --> 00:03:33,490
+Eric Dyer, and Michael Ferguson
+and we all worked at Willow
+
+55
+00:03:33,490 --> 00:03:38,770
+Garage together. We were part of
+the robot development team had
+
+56
+00:03:38,830 --> 00:03:43,660
+at Willow Garage. It's a team
+that that basically for about a
+
+57
+00:03:43,660 --> 00:03:47,050
+two year period built a lot of
+different robotic prototypes to
+
+58
+00:03:48,310 --> 00:03:53,440
+look at different industries
+that that were of interest to
+
+59
+00:03:53,440 --> 00:03:58,300
+Willow Garage because but two
+years before it ended, the
+
+60
+00:03:58,300 --> 00:04:01,510
+founder that started Willow kind
+of said, well, what's next?
+
+61
+00:04:01,510 --> 00:04:04,900
+Congratulations, you did open
+source, although that's kind of
+
+62
+00:04:04,900 --> 00:04:07,510
+a funny statement to make. But
+he kind of said Congratulations,
+
+63
+00:04:07,510 --> 00:04:12,310
+you did some open source. Now
+what you know and, and Steve
+
+64
+00:04:12,310 --> 00:04:16,270
+cousins at the time said, Hey,
+we need to go look at you know,
+
+65
+00:04:16,540 --> 00:04:21,520
+the home and then industrial
+applications. And it's really
+
+66
+00:04:21,520 --> 00:04:25,900
+funny when you look at you know,
+the people that worked at Willow
+
+67
+00:04:25,900 --> 00:04:30,850
+Garage and, and the companies
+that were then formed by the
+
+68
+00:04:30,850 --> 00:04:34,750
+former employees of Willow
+Garage, they all kind of reflect
+
+69
+00:04:34,840 --> 00:04:38,260
+the different areas that we
+investigated in the last two
+
+70
+00:04:38,260 --> 00:04:41,140
+years. And we investigated
+everything from like grocery
+
+71
+00:04:41,140 --> 00:04:44,800
+retail to manufacturing to
+hotels, for example, Steve went
+
+72
+00:04:44,800 --> 00:04:51,040
+and started savvy oak and did
+hotels and, and the guys in AI
+
+73
+00:04:51,040 --> 00:04:58,750
+that started fetch robotics. We
+we looked at at the
+
+74
+00:04:58,750 --> 00:05:01,720
+manufacturing and logistic
+verticals and we saw it as a an
+
+75
+00:05:01,810 --> 00:05:08,170
+interesting problem to solve.
+And, and when you look at that
+
+76
+00:05:08,200 --> 00:05:10,810
+the reason that was interesting
+to us is we thought it was
+
+77
+00:05:10,810 --> 00:05:15,760
+attractive, tractable problem,
+like most warehouses and most
+
+78
+00:05:15,760 --> 00:05:18,100
+manufacturing facilities are
+what you might call semi
+
+79
+00:05:18,100 --> 00:05:25,270
+structured. But there's also a
+large, like, dynamic happening
+
+80
+00:05:25,270 --> 00:05:29,950
+in the industry where finding
+new employees is very hard. And
+
+81
+00:05:29,950 --> 00:05:33,760
+even before the pandemic, there
+was a large labor shortage.
+
+82
+00:05:34,180 --> 00:05:35,740
+Audrow Nash: You mean for
+factories?
+
+83
+00:05:35,980 --> 00:05:36,790
+Melonee Wise: Yeah, yeah.
+
+84
+00:05:37,090 --> 00:05:37,540
+Audrow Nash: Okay.
+
+85
+00:05:38,080 --> 00:05:41,020
+Melonee Wise: Yeah. For
+factories and warehouses. Before
+
+86
+00:05:41,020 --> 00:05:45,580
+the pandemic, there was about a
+600,000 person shortage. So
+
+87
+00:05:45,580 --> 00:05:48,400
+there were 600,000 open jobs,
+
+88
+00:05:48,490 --> 00:05:51,220
+Audrow Nash: How many people in
+the industry overall?
+
+89
+00:05:51,940 --> 00:05:54,850
+Melonee Wise: I don't know that
+statistic off the top my head,
+
+90
+00:05:54,850 --> 00:05:59,680
+but I do know, before the
+pandemic there were, there were
+
+91
+00:05:59,680 --> 00:06:05,980
+about 6 million jobs available.
+And the job openings in the
+
+92
+00:06:06,010 --> 00:06:09,190
+manufacturing and logistics
+industry represented about 10%
+
+93
+00:06:09,190 --> 00:06:14,050
+of all open jobs in the United
+States. Yeah, crazy. Yeah. And
+
+94
+00:06:14,050 --> 00:06:19,900
+for a long time, the United
+States was running at a deficit
+
+95
+00:06:19,900 --> 00:06:25,120
+for labor, right? So we had, for
+a long time, we only had about
+
+96
+00:06:25,120 --> 00:06:28,870
+five or 6 million people
+unemployed, and we only had
+
+97
+00:06:29,230 --> 00:06:33,670
+about five, we had about five or
+6 million jobs available. And so
+
+98
+00:06:33,970 --> 00:06:37,300
+it was a close thing. There were
+actually we were running what
+
+99
+00:06:37,300 --> 00:06:39,910
+you might call a negative
+employment rate, where there
+
+100
+00:06:39,910 --> 00:06:43,330
+just weren't enough jobs, there
+weren't enough people for all
+
+101
+00:06:43,330 --> 00:06:44,230
+the jobs.
+
+102
+00:06:46,540 --> 00:06:50,890
+Audrow Nash: So that's
+interesting. I mean, you hear
+
+103
+00:06:50,890 --> 00:06:53,830
+about robots taking jobs and
+things like this. In this case,
+
+104
+00:06:53,830 --> 00:06:56,830
+it's the complete opposite. It's
+there are not people for that.
+
+105
+00:06:57,430 --> 00:07:01,810
+But we need more people to fill
+out the roles so that the
+
+106
+00:07:01,810 --> 00:07:04,480
+companies can be more efficient.
+That's very interesting.
+
+107
+00:07:05,129 --> 00:07:08,129
+Melonee Wise: And I think that's
+one of the key reasons why over
+
+108
+00:07:08,129 --> 00:07:11,009
+the last couple of decades,
+there's been this strong push
+
+109
+00:07:11,009 --> 00:07:16,559
+for automation. And why you're
+seeing in a lot of
+
+110
+00:07:16,949 --> 00:07:21,389
+industrialized nations, you're
+seeing a lot of push to get more
+
+111
+00:07:21,389 --> 00:07:23,549
+and more automation so that they
+can stay competitive so that
+
+112
+00:07:23,549 --> 00:07:28,469
+they can grow their GDP, etc,
+etc, etc. And so that led us to
+
+113
+00:07:28,469 --> 00:07:33,539
+be interested in creating fetch
+and how know the
+
+114
+00:07:33,570 --> 00:07:36,870
+Audrow Nash: so that that is the
+case now, just before COVID.
+
+115
+00:07:37,770 --> 00:07:42,930
+Fetch is seven years old, or so.
+Was that the case then, too? And
+
+116
+00:07:42,930 --> 00:07:44,580
+how has that changed over time?
+
+117
+00:07:45,000 --> 00:07:48,330
+Melonee Wise: Yeah, so that that
+trend was very much true before.
+
+118
+00:07:48,480 --> 00:07:53,310
+before when we started fetch,
+there was just a huge labor gap
+
+119
+00:07:53,340 --> 00:07:57,300
+in the industry. And it what's
+even worse is it's coupled with
+
+120
+00:07:57,300 --> 00:08:00,330
+a turnover rate of about 40%. So
+super
+
+121
+00:08:00,330 --> 00:08:05,730
+Audrow Nash: high, basically.
+What kinds of jobs are these?
+
+122
+00:08:05,760 --> 00:08:09,480
+Like? What are the what is a
+person and these jobs do further
+
+123
+00:08:09,480 --> 00:08:10,410
+day at work?
+
+124
+00:08:10,709 --> 00:08:13,199
+Melonee Wise: Yeah, so they,
+they can do anything from like
+
+125
+00:08:13,199 --> 00:08:18,389
+packing out a box to walking
+around in 110 degree warehouse
+
+126
+00:08:18,389 --> 00:08:20,429
+picking boxes off the shelf?
+Yeah,
+
+127
+00:08:20,880 --> 00:08:22,950
+Audrow Nash: turnover. So yeah,
+
+128
+00:08:24,030 --> 00:08:26,250
+Melonee Wise: they can be
+assembling small parts or
+
+129
+00:08:26,250 --> 00:08:31,200
+machinery they can be. I mean,
+our robots are doing the
+
+130
+00:08:31,200 --> 00:08:34,590
+delivery task of someone's job
+and that and that's the other
+
+131
+00:08:34,590 --> 00:08:39,000
+thing that conflate some of the
+problems is if you look at it,
+
+132
+00:08:40,020 --> 00:08:43,470
+when they're looking at
+automation to offset labor, it's
+
+133
+00:08:43,470 --> 00:08:47,490
+not typically like this robot is
+going to play replace this
+
+134
+00:08:47,490 --> 00:08:51,450
+person 100% there's just there
+really isn't the possibility to
+
+135
+00:08:51,450 --> 00:09:01,020
+do that in most cases today. And
+so we're why exactly um because
+
+136
+00:09:01,050 --> 00:09:03,960
+if you look at it, there's
+there's a lot of tasks that make
+
+137
+00:09:03,960 --> 00:09:13,680
+up your job. So if you look at
+say, me think a pickers job, if
+
+138
+00:09:13,680 --> 00:09:15,420
+we look at what a picker does,
+
+139
+00:09:15,900 --> 00:09:18,360
+Audrow Nash: are those a person
+that picks things out of bins
+
+140
+00:09:18,360 --> 00:09:21,450
+and then puts them into boxes,
+like an Amazon person?
+
+141
+00:09:21,840 --> 00:09:24,450
+Melonee Wise: Yeah, that's
+that's the overall they fulfill
+
+142
+00:09:24,450 --> 00:09:28,440
+orders from customers. And so
+there's, there's a lot of parts
+
+143
+00:09:28,440 --> 00:09:32,430
+of their job. So there's the
+part of the job where they first
+
+144
+00:09:32,430 --> 00:09:36,720
+prepare all the boxes, and then
+they put them on a cart. And
+
+145
+00:09:36,720 --> 00:09:40,830
+then they push that cart to a
+location in a warehouse where
+
+146
+00:09:40,830 --> 00:09:43,980
+there's a shelf and they pull
+something out of a box, and they
+
+147
+00:09:43,980 --> 00:09:48,210
+put it into a box on that cart.
+And they're like scanning each
+
+148
+00:09:48,210 --> 00:09:51,630
+of those locations to make sure
+that that thing that they're
+
+149
+00:09:51,720 --> 00:09:55,560
+they're picking is correct, etc.
+And they do that through an
+
+150
+00:09:55,560 --> 00:09:58,410
+entire warehouse and then they
+come back and they typically
+
+151
+00:09:58,410 --> 00:10:05,280
+offload the boxes from that cart
+on to an area where either
+
+152
+00:10:05,760 --> 00:10:09,210
+separate person or that same
+person packs it out. So they
+
+153
+00:10:09,450 --> 00:10:14,130
+take it from those boxes,
+confirm that all the the items
+
+154
+00:10:14,130 --> 00:10:18,030
+in it are correct, and then get
+it ready for shipping. And that
+
+155
+00:10:18,030 --> 00:10:22,410
+means putting like paperwork in
+it and basically shoving it down
+
+156
+00:10:22,410 --> 00:10:27,120
+a line. So someone can put a
+label on it and tape it. But if
+
+157
+00:10:27,120 --> 00:10:30,180
+you look at it, the picking task
+is very hard. It's not like
+
+158
+00:10:30,210 --> 00:10:32,730
+there's a lot of robots today,
+they can just wander up to a
+
+159
+00:10:32,730 --> 00:10:36,420
+shelf and pull an item out of a
+box, especially when they're,
+
+160
+00:10:36,600 --> 00:10:40,320
+let's say they're their t
+shirts. And they're, I don't
+
+161
+00:10:40,320 --> 00:10:44,760
+know, baby onesies. And they're
+packed in a box, you know, that
+
+162
+00:10:44,760 --> 00:10:48,090
+is probably only meant to hold
+50. But there's 500 of them in
+
+163
+00:10:48,090 --> 00:10:54,720
+there. And so it's a pretty
+complicated task from a robotic
+
+164
+00:10:54,720 --> 00:10:58,800
+standpoint, whether it's
+manipulation or vision. And so
+
+165
+00:10:58,830 --> 00:11:03,390
+we today can't do all of the
+task. And so there's some things
+
+166
+00:11:03,390 --> 00:11:07,680
+that we replaced completely,
+like we don't have them walk all
+
+167
+00:11:07,680 --> 00:11:10,470
+that distance, they'll meet the
+robot or something like that,
+
+168
+00:11:11,130 --> 00:11:17,910
+or, or we change the roles like
+the now if you have a robot that
+
+169
+00:11:18,240 --> 00:11:21,360
+where the person used to
+configure the cart and put all
+
+170
+00:11:21,360 --> 00:11:25,290
+the boxes on the cart, maybe one
+person now is just responsible
+
+171
+00:11:25,290 --> 00:11:30,120
+for doing that for every robot,
+as opposed to that person
+
+172
+00:11:30,120 --> 00:11:34,050
+individually beer sponsor
+responsible for their cart. And
+
+173
+00:11:34,050 --> 00:11:39,120
+so the the jobs change what the
+roles are change, and and
+
+174
+00:11:39,120 --> 00:11:43,530
+really, it's about taking out
+the part of their job or the set
+
+175
+00:11:43,530 --> 00:11:47,760
+of tasks that they do that can
+be done by a robot. And I, I
+
+176
+00:11:47,760 --> 00:11:50,970
+think that there's good
+analogues in kind of the
+
+177
+00:11:50,970 --> 00:11:54,780
+technical world, you know, if
+you if you look at, if you look
+
+178
+00:11:54,780 --> 00:11:59,370
+at maybe writers, or
+journalists, they previously had
+
+179
+00:11:59,370 --> 00:12:01,830
+researchers, and they had
+secretaries, and they had all
+
+180
+00:12:01,830 --> 00:12:06,150
+these, all these other tools or
+resources available to them. And
+
+181
+00:12:06,150 --> 00:12:10,680
+now, many journalists, their
+entire job has been reduced down
+
+182
+00:12:10,680 --> 00:12:13,770
+to doing all those things
+themselves. But now the tool
+
+183
+00:12:13,770 --> 00:12:19,620
+they have instead of a person.
+is Google, or, or some search
+
+184
+00:12:19,620 --> 00:12:23,850
+tool. Yeah. Yeah. And, and so I
+think there there's plenty of
+
+185
+00:12:23,850 --> 00:12:29,280
+analogues for kind of this
+transition from people doing
+
+186
+00:12:29,280 --> 00:12:34,560
+tasks or part of our jobs for us
+to us now using automated tools.
+
+187
+00:12:34,620 --> 00:12:38,730
+Audrow Nash: Yep. So if I
+understand correctly, basically,
+
+188
+00:12:38,730 --> 00:12:42,060
+the shipping process has a whole
+bunch of different components
+
+189
+00:12:42,060 --> 00:12:45,120
+that must get done on the way.
+And what you do is you say, oh,
+
+190
+00:12:45,120 --> 00:12:49,470
+a robot might be very good at
+this one spot. And so by adding
+
+191
+00:12:49,470 --> 00:12:53,100
+robots into the system, you free
+up people from doing that one
+
+192
+00:12:53,100 --> 00:12:58,290
+task. But it's kind of it's not
+like saying a robot replaces a
+
+193
+00:12:58,290 --> 00:13:02,940
+person. Because the there are
+other things that the people can
+
+194
+00:13:02,940 --> 00:13:08,700
+focus more on, when the robot
+frees up that one, that one area
+
+195
+00:13:09,390 --> 00:13:11,340
+with this kind of thing. So
+that's why it's like apples to
+
+196
+00:13:11,340 --> 00:13:15,150
+oranges to say one robot in is
+not one human out, kind of
+
+197
+00:13:15,540 --> 00:13:18,810
+Melonee Wise: it? It typically
+isn't. I mean, and a
+
+198
+00:13:18,809 --> 00:13:21,029
+Audrow Nash: gigantic shortage,
+so you can just shift the people
+
+199
+00:13:21,029 --> 00:13:23,339
+elsewhere? Probably.
+
+200
+00:13:23,730 --> 00:13:25,440
+Melonee Wise: Yeah, that's the
+other thing is, is when you have
+
+201
+00:13:25,440 --> 00:13:29,490
+such a labor shortage, you
+you're not displacing anyone,
+
+202
+00:13:29,490 --> 00:13:31,410
+you're just trying to fill in
+the gaps.
+
+203
+00:13:31,740 --> 00:13:35,190
+Audrow Nash: Mm hmm. Yeah. And
+make the few people that are
+
+204
+00:13:35,190 --> 00:13:40,050
+there as efficient as possible.
+So that they can you can get as
+
+205
+00:13:40,050 --> 00:13:45,150
+much work done as possible,
+socially? How did you guys find
+
+206
+00:13:45,180 --> 00:13:50,940
+the So you mentioned kind of the
+detailed process of finding or
+
+207
+00:13:50,940 --> 00:13:55,230
+of what occurs in sending out
+pick and place this kind of
+
+208
+00:13:55,230 --> 00:13:59,760
+thing? or picking products out?
+How did you find the exact part
+
+209
+00:13:59,760 --> 00:14:02,700
+of that where you thought a
+robot would be a good fit?
+
+210
+00:14:04,080 --> 00:14:06,570
+Melonee Wise: Yeah, I think that
+you know, if you look at it,
+
+211
+00:14:06,570 --> 00:14:09,360
+some of this stuff that that we
+did, it will Oh, it became clear
+
+212
+00:14:09,360 --> 00:14:12,870
+that that when you look at
+manufacturing and logistics,
+
+213
+00:14:12,870 --> 00:14:15,960
+whether it's picking or it's
+it's assembling something,
+
+214
+00:14:16,230 --> 00:14:20,760
+there's always a process in
+which material has to come from
+
+215
+00:14:20,850 --> 00:14:25,530
+some obnoxious Lee faraway part
+of the facility to another part.
+
+216
+00:14:27,000 --> 00:14:30,240
+And it became very clear that
+there was a high transportation
+
+217
+00:14:30,240 --> 00:14:34,560
+cost. And there's been plenty of
+studies done for like labor
+
+218
+00:14:34,560 --> 00:14:39,240
+analysis, looking at different
+different jobs, like the
+
+219
+00:14:39,240 --> 00:14:42,810
+fulfillment job that I just
+described, or a manufacturing
+
+220
+00:14:42,810 --> 00:14:48,780
+job. And typically walking time
+or transport represents upwards
+
+221
+00:14:48,780 --> 00:14:53,010
+of 50% of the person's total
+time. And so that's a that's a
+
+222
+00:14:53,010 --> 00:14:56,940
+very compelling statistics when
+statistic when you're looking at
+
+223
+00:14:58,050 --> 00:14:59,940
+Should I make a mobile transport
+robot
+
+224
+00:15:00,659 --> 00:15:04,169
+Audrow Nash: It seems like to me
+that seems like almost a simple
+
+225
+00:15:04,169 --> 00:15:08,459
+way of identifying low hanging
+fruit that can be solved with
+
+226
+00:15:08,459 --> 00:15:11,519
+robotics things. I'm thinking of
+like nurses spend a large period
+
+227
+00:15:11,519 --> 00:15:14,729
+of their time commuting from
+patient to patient, and then
+
+228
+00:15:15,719 --> 00:15:20,459
+company, hello t robotics, where
+did an internship previously,
+
+229
+00:15:20,819 --> 00:15:24,149
+they were saying how a huge they
+would have physical therapy or
+
+230
+00:15:24,689 --> 00:15:29,159
+caretakers come to people's
+homes in Norway, and they spent
+
+231
+00:15:29,159 --> 00:15:32,519
+like 60% of their time commuting
+from home to home. And these
+
+232
+00:15:32,519 --> 00:15:35,579
+seems like it seemed like really
+good robotics applications to me
+
+233
+00:15:35,579 --> 00:15:37,979
+if you can just put a robot in
+there and have it do the
+
+234
+00:15:37,979 --> 00:15:41,909
+commuting wabbit do away with
+their commuting in some way.
+
+235
+00:15:43,169 --> 00:15:48,359
+Okay, so you looked at this, and
+you saw this number? 660? He
+
+236
+00:15:48,359 --> 00:15:54,179
+said, 50% of their time walking?
+Yeah. Which is crazy. So you
+
+237
+00:15:54,179 --> 00:15:55,739
+started there? And
+
+238
+00:15:56,760 --> 00:16:00,150
+Melonee Wise: then we started
+with building mobile robots? Uh
+
+239
+00:16:00,150 --> 00:16:04,650
+huh. And then and then it came
+down to now you have a mobile
+
+240
+00:16:04,650 --> 00:16:08,040
+robot, you have a base now what
+do you have to put on it to make
+
+241
+00:16:08,040 --> 00:16:10,980
+it productive for the
+application. And if you look at
+
+242
+00:16:10,980 --> 00:16:17,670
+fetch today, we offer three
+major platforms, and have
+
+243
+00:16:17,670 --> 00:16:21,840
+different payload capacity. So
+100 kilograms, 500 kilograms and
+
+244
+00:16:21,840 --> 00:16:27,510
+1500 kilograms. And then we put
+tops on it to basically attack
+
+245
+00:16:27,660 --> 00:16:32,580
+the, the different problems in
+the warehouse. So we have, for
+
+246
+00:16:32,580 --> 00:16:35,820
+our small and big robots, we
+have cart Connect, which allows
+
+247
+00:16:35,820 --> 00:16:39,960
+us to move around carts, we have
+roller top accessory, which
+
+248
+00:16:39,960 --> 00:16:42,990
+allows us to interface with
+conveyor, we have standard
+
+249
+00:16:42,990 --> 00:16:46,110
+shelving, it's kind of boring,
+but you know, like the shelf
+
+250
+00:16:46,110 --> 00:16:50,070
+with the touchscreen on it.
+Stuff like that. I mean, it
+
+251
+00:16:50,070 --> 00:16:52,680
+really comes down to the
+accessories for the hardware. I
+
+252
+00:16:52,680 --> 00:16:57,780
+mean, if you look at that, and
+like, the vision and and what we
+
+253
+00:16:57,780 --> 00:17:02,340
+were trying to build from, from
+day one, you know, we started as
+
+254
+00:17:02,340 --> 00:17:06,210
+a hardware company, and as all
+robotics companies go, you
+
+255
+00:17:06,240 --> 00:17:08,580
+quickly become software
+companies. I mean, we spent like
+
+256
+00:17:08,580 --> 00:17:13,620
+a hot five seconds as a hardware
+company. And I mean, you work in
+
+257
+00:17:13,620 --> 00:17:16,320
+open robotics, and like the
+whole business, their software.
+
+258
+00:17:17,640 --> 00:17:22,800
+Yeah. And so we spent a large
+part of our middle years as a
+
+259
+00:17:22,800 --> 00:17:25,770
+software company in over the
+last couple of years, we've been
+
+260
+00:17:25,770 --> 00:17:29,040
+transitioning more towards being
+a data company as well.
+
+261
+00:17:29,040 --> 00:17:33,000
+Audrow Nash: So Wow, that's the
+next level. Yeah. And so
+
+262
+00:17:33,000 --> 00:17:33,360
+building
+
+263
+00:17:33,360 --> 00:17:35,310
+Melonee Wise: out our data
+platforms, building out our data
+
+264
+00:17:35,310 --> 00:17:39,090
+capabilities, things like that.
+But that's still an ongoing
+
+265
+00:17:39,390 --> 00:17:42,300
+process, because you know, you
+have to build a pretty large
+
+266
+00:17:42,300 --> 00:17:45,240
+data like to do anything.
+
+267
+00:17:49,020 --> 00:17:51,510
+Audrow Nash: So I imagine a lot
+of like interest in cloud
+
+268
+00:17:51,660 --> 00:17:54,930
+robotics at the moment with this
+is what you mean with the data?
+
+269
+00:17:55,200 --> 00:17:55,590
+Yeah,
+
+270
+00:17:55,620 --> 00:17:58,500
+Melonee Wise: also. So if you
+look at it, if you if you look
+
+271
+00:17:58,500 --> 00:18:01,200
+at it, the middle years, when we
+were becoming a software
+
+272
+00:18:01,200 --> 00:18:03,540
+company, that's when we became
+we built our cloud robotics
+
+273
+00:18:03,540 --> 00:18:08,850
+platform. So all of our robots
+are actually controlled from the
+
+274
+00:18:08,850 --> 00:18:11,640
+cloud, they have their
+autonomous units. But if you
+
+275
+00:18:11,640 --> 00:18:13,620
+want to tell them to like, go
+from point
+
+276
+00:18:13,620 --> 00:18:17,400
+Audrow Nash: A to decision
+making, the lower level control
+
+277
+00:18:17,400 --> 00:18:18,660
+is done on the robot problem
+
+278
+00:18:18,690 --> 00:18:20,910
+Melonee Wise: was safety,
+navigation stuff is done on the
+
+279
+00:18:20,910 --> 00:18:24,660
+robot. But the task level
+commands like yeah, go here, do
+
+280
+00:18:24,660 --> 00:18:30,420
+this come from the cloud. And we
+did that, because it makes
+
+281
+00:18:30,480 --> 00:18:34,980
+getting set up on site a lot
+easier. If you, if you look at
+
+282
+00:18:34,980 --> 00:18:38,010
+like many of these facilities,
+they're kind of out in the
+
+283
+00:18:38,010 --> 00:18:41,820
+boonies, they don't have good IT
+support, stuff like that. And if
+
+284
+00:18:41,820 --> 00:18:43,980
+you come along with a very
+complex thing, like a robot, and
+
+285
+00:18:43,980 --> 00:18:47,130
+you're like it Oh, by the way,
+where do we install the server?
+
+286
+00:18:48,390 --> 00:18:52,650
+It kind of adds a lot. So we
+went off to the cloud. But one
+
+287
+00:18:52,650 --> 00:18:57,210
+of the advantages of that is, we
+also save the robot data. And
+
+288
+00:18:57,210 --> 00:19:01,410
+we're building capabilities on
+top of that data. So forklift
+
+289
+00:19:01,440 --> 00:19:04,200
+tection, we can tell when
+forklifts are speeding, we can
+
+290
+00:19:04,200 --> 00:19:08,220
+tell when, when they get too
+close to people, things like
+
+291
+00:19:08,220 --> 00:19:11,850
+that. And so those are some of
+the capabilities that we're
+
+292
+00:19:11,850 --> 00:19:15,990
+starting to build on top of our
+data platform. But the important
+
+293
+00:19:15,990 --> 00:19:19,080
+thing is, is you need a lot of
+training data, you need a lot of
+
+294
+00:19:19,080 --> 00:19:25,290
+real world data to do anything.
+And I think it's it's one of the
+
+295
+00:19:25,290 --> 00:19:29,160
+reasons why when people talk
+about autonomous cars, I don't
+
+296
+00:19:29,160 --> 00:19:34,290
+think they understand the scale
+and the scope of what we're
+
+297
+00:19:34,290 --> 00:19:37,110
+talking about when they when
+they talk about like, Oh, yeah,
+
+298
+00:19:37,110 --> 00:19:44,760
+it'll just machine learn it.
+It's like Yeah. Yeah. Or they
+
+299
+00:19:44,760 --> 00:19:48,240
+they'll say like, the car has
+the AI if I if I hear AI one
+
+300
+00:19:48,240 --> 00:19:49,560
+more time, right now
+
+301
+00:19:49,560 --> 00:19:54,270
+Audrow Nash: I know. It's true
+for so I want to go back and
+
+302
+00:19:54,270 --> 00:19:57,210
+talk about the hardware company
+but just tying in this for the
+
+303
+00:19:57,210 --> 00:20:01,140
+data company and talking about
+kind of this of the challenge
+
+304
+00:20:01,140 --> 00:20:05,610
+for for autonomous cars. So you
+mentioned warehouses, semi
+
+305
+00:20:05,610 --> 00:20:08,640
+structured environments is
+probably your data is a lot
+
+306
+00:20:08,640 --> 00:20:11,820
+nicer than what you get. Would
+you just talk a bit about the
+
+307
+00:20:11,820 --> 00:20:15,000
+difference between the data
+you're getting and the type of
+
+308
+00:20:15,000 --> 00:20:19,020
+data needed for like an
+autonomous car? And how much how
+
+309
+00:20:19,020 --> 00:20:20,370
+difficult that will be?
+
+310
+00:20:20,670 --> 00:20:23,880
+Melonee Wise: Probably. So I
+think I think the thing is, is
+
+311
+00:20:23,910 --> 00:20:26,280
+is, I wouldn't say that the
+problem we're solving is any
+
+312
+00:20:26,280 --> 00:20:30,270
+less difficult than that of
+autonomous cars. I would say
+
+313
+00:20:30,270 --> 00:20:32,580
+they have unique idiosyncrasies,
+
+314
+00:20:32,610 --> 00:20:35,310
+Audrow Nash: what is the problem
+you're solving.
+
+315
+00:20:35,670 --> 00:20:39,420
+Melonee Wise: So we're basically
+building a ton of indoor cars
+
+316
+00:20:39,420 --> 00:20:43,170
+for the warehouse. The
+differences is we don't have
+
+317
+00:20:43,170 --> 00:20:48,060
+weather, they have weather, but
+they typically their sensor
+
+318
+00:20:48,060 --> 00:20:52,290
+package costs about $200,000.
+Our sensor package costs about
+
+319
+00:20:52,320 --> 00:20:59,520
+18 $100. So there's order of
+magnitude difference in the cost
+
+320
+00:20:59,520 --> 00:21:01,920
+and capability of the sensors
+that we use.
+
+321
+00:21:01,950 --> 00:21:04,440
+Audrow Nash: So that becomes a
+massive difference your sensors,
+
+322
+00:21:04,440 --> 00:21:06,570
+is it like a LIDAR and a few
+cameras? Or
+
+323
+00:21:06,570 --> 00:21:08,370
+Melonee Wise: what is the LIDAR
+in two cameras?
+
+324
+00:21:09,390 --> 00:21:11,700
+Audrow Nash: Okay, is that 1800?
+And it's like, okay, that's one
+
+325
+00:21:11,700 --> 00:21:12,300
+LIDAR and through?
+
+326
+00:21:13,530 --> 00:21:17,220
+Melonee Wise: Well, that's, the
+bigger robot has to LIDAR and
+
+327
+00:21:17,220 --> 00:21:22,170
+eight cameras. But yeah, I mean,
+it's still not a $70,000
+
+328
+00:21:22,170 --> 00:21:27,330
+velodyne, you know, and so so
+there's, there's that there's
+
+329
+00:21:27,330 --> 00:21:32,700
+one, the the kind of sensing
+tools that we have, are very
+
+330
+00:21:32,700 --> 00:21:37,440
+different. And so although
+although they have somewhat of a
+
+331
+00:21:38,160 --> 00:21:41,220
+harder problem to solve from
+weather and some other aspects,
+
+332
+00:21:41,730 --> 00:21:46,530
+they have better budgets, and
+sensing tools and fidelity, to
+
+333
+00:21:46,530 --> 00:21:49,620
+deal with some of those
+environments that we we don't.
+
+334
+00:21:51,090 --> 00:21:53,730
+The other thing that's very
+unique about our environment,
+
+335
+00:21:53,730 --> 00:21:56,880
+that's not true for cars is our
+environments are far more
+
+336
+00:21:56,880 --> 00:22:01,830
+dynamic in some ways. While
+while roads can be very dynamic,
+
+337
+00:22:01,830 --> 00:22:07,050
+and, and things like that, it's,
+yeah, they have lots of rules of
+
+338
+00:22:07,050 --> 00:22:11,010
+the road. And pedestrians don't
+just end up in major highways on
+
+339
+00:22:11,010 --> 00:22:15,540
+a regular basis. Whereas if you
+look at warehouses, there's like
+
+340
+00:22:15,570 --> 00:22:20,220
+main highways, but people walk
+into them all the time. The
+
+341
+00:22:20,220 --> 00:22:23,490
+other the other, the other thing
+that you have to understand is
+
+342
+00:22:23,490 --> 00:22:29,700
+that our vehicles typically go
+around 1.5 to two meters per
+
+343
+00:22:29,700 --> 00:22:32,850
+second. So we're talking like
+three to four miles an hour. But
+
+344
+00:22:32,850 --> 00:22:35,220
+some of the vehicles we have to
+operate around like forklifts
+
+345
+00:22:35,220 --> 00:22:39,210
+can go up to eight or nine miles
+an hour, or even faster. And so
+
+346
+00:22:39,210 --> 00:22:43,050
+it's very, it's a very difficult
+problem when you are in a
+
+347
+00:22:43,050 --> 00:22:46,680
+scenario in which vehicles
+around you are going much faster
+
+348
+00:22:46,680 --> 00:22:50,640
+than you. And then there is the
+forklift problem.
+
+349
+00:22:52,500 --> 00:22:54,630
+Audrow Nash: So sounds ominous.
+So
+
+350
+00:22:54,960 --> 00:22:57,780
+Melonee Wise: cars don't have to
+deal with this notion of of a
+
+351
+00:22:57,780 --> 00:23:02,400
+piece of equipment being around
+them, that has tines that are
+
+352
+00:23:02,430 --> 00:23:03,960
+very thin, very
+
+353
+00:23:04,020 --> 00:23:06,660
+Audrow Nash: hard to detect the
+like probes at the top of
+
+354
+00:23:07,619 --> 00:23:09,809
+Melonee Wise: the fork of the
+tines before, and they can be at
+
+355
+00:23:09,809 --> 00:23:12,059
+any height at any time. And
+
+356
+00:23:12,570 --> 00:23:15,030
+Audrow Nash: so they're super
+hard to sense probably to Yeah,
+
+357
+00:23:15,030 --> 00:23:15,210
+they're
+
+358
+00:23:15,210 --> 00:23:18,180
+Melonee Wise: super hard to
+sense. They can be at any
+
+359
+00:23:18,180 --> 00:23:21,870
+height. And there's a lot of
+things like we don't, cars don't
+
+360
+00:23:21,870 --> 00:23:24,450
+have to deal with a lot of
+overhanging things. Roads are
+
+361
+00:23:24,450 --> 00:23:27,960
+built such that nothing is going
+to be hanging in the middle of
+
+362
+00:23:27,960 --> 00:23:31,740
+the road. It's not like that in
+manufacturing. So
+
+363
+00:23:32,220 --> 00:23:35,790
+Audrow Nash: what are you just
+taking a plane or whatever. So
+
+364
+00:23:35,790 --> 00:23:38,940
+that makes it super difficult to
+do a lot with computer vision?
+
+365
+00:23:39,030 --> 00:23:41,490
+Probably. Yeah. And that's
+challenging, because you have to
+
+366
+00:23:41,490 --> 00:23:43,530
+recognize all these different
+circumstances.
+
+367
+00:23:43,920 --> 00:23:46,950
+Melonee Wise: Yeah. And so I'm
+not saying that that the
+
+368
+00:23:46,950 --> 00:23:49,950
+autonomous car problem isn't
+hard. I'm saying it's very hard.
+
+369
+00:23:49,950 --> 00:23:53,670
+But I think sometimes people
+tend to look at the problem
+
+370
+00:23:53,670 --> 00:23:56,250
+we're looking at, it's like,
+well, it's got to be easier than
+
+371
+00:23:56,280 --> 00:24:01,230
+autonomous cars. And it's like,
+well, it's it's not it. It's
+
+372
+00:24:01,230 --> 00:24:05,880
+different. And, and there's
+things that constrain our
+
+373
+00:24:05,880 --> 00:24:09,030
+problem solving, and things like
+that. And then the other thing
+
+374
+00:24:09,030 --> 00:24:14,250
+that is is very true, is our
+industry is heavily regulated
+
+375
+00:24:14,250 --> 00:24:19,500
+from a safety perspective. And
+autonomous cars are not yet.
+
+376
+00:24:19,830 --> 00:24:24,930
+They're not heavily regulated
+yet. I mean, there's some
+
+377
+00:24:24,930 --> 00:24:27,810
+regulation, but there's no,
+there's no you have to do this
+
+378
+00:24:27,810 --> 00:24:30,450
+test to prove that your
+autonomous car is safe, etc,
+
+379
+00:24:30,450 --> 00:24:35,220
+etc. Sorry, I actually need to
+stop and take this call really
+
+380
+00:24:35,220 --> 00:24:37,260
+quick. Okay.
+
+381
+00:24:39,060 --> 00:24:43,860
+Audrow Nash: So we were talking
+about the differences between
+
+382
+00:24:43,860 --> 00:24:48,660
+the data and that basically the
+problem of autonomous cars
+
+383
+00:24:48,660 --> 00:24:57,060
+versus for manufacturing,
+logistics. Can you tell me a bit
+
+384
+00:24:57,060 --> 00:25:01,170
+more about the data differences
+From these perspectives,
+
+385
+00:25:01,620 --> 00:25:05,490
+Melonee Wise: yeah, I will say
+that from a, you know, data
+
+386
+00:25:05,490 --> 00:25:08,340
+perspective, you know,
+autonomous cars are using a lot
+
+387
+00:25:08,340 --> 00:25:13,650
+more data, that's what makes us
+a little bit more open to, to
+
+388
+00:25:14,640 --> 00:25:17,970
+being able to port and move all
+of our data to the cloud. And
+
+389
+00:25:17,970 --> 00:25:20,970
+you do like algorithms and some
+of these things in the cloud,
+
+390
+00:25:20,970 --> 00:25:25,110
+which a car may not have some of
+the luxury of doing. I mean,
+
+391
+00:25:25,110 --> 00:25:29,040
+that's, I think one of the big
+things that's going to happen in
+
+392
+00:25:29,040 --> 00:25:32,520
+the next decade or two is we
+realize what it's going to take
+
+393
+00:25:32,520 --> 00:25:38,310
+to make the practical deployment
+of autonomous cars real is the
+
+394
+00:25:38,310 --> 00:25:41,880
+sheer amount of data, you need
+to just store, the map of the
+
+395
+00:25:41,880 --> 00:25:46,200
+local area drive there that you
+drive on a daily basis is, is
+
+396
+00:25:46,200 --> 00:25:52,020
+massive, and what data networks
+are going to support just that
+
+397
+00:25:52,020 --> 00:25:56,100
+capability, you know, everyone's
+going to have to have, you know,
+
+398
+00:25:56,310 --> 00:26:00,120
+fiber to their house,
+practically, to be able to like
+
+399
+00:26:00,150 --> 00:26:04,740
+overnight, download the local
+area updates and things like
+
+400
+00:26:04,740 --> 00:26:08,490
+that. And then, if you want to
+go on a long trip, you know,
+
+401
+00:26:08,490 --> 00:26:13,770
+say, from San Jose to Tahoe, I
+can only imagine what the
+
+402
+00:26:13,770 --> 00:26:17,850
+strategies are going to be for,
+like a four hour drive. So for
+
+403
+00:26:17,850 --> 00:26:22,380
+four and a half hour drive, the
+the data strategy is gonna have
+
+404
+00:26:22,380 --> 00:26:26,880
+to be to do that the nice thing
+for warehousing and in our
+
+405
+00:26:26,880 --> 00:26:29,880
+robots is it's a million square
+feet, that's about as big as the
+
+406
+00:26:29,880 --> 00:26:38,280
+problem gets. And so we
+definitely, we we have, we're
+
+407
+00:26:38,280 --> 00:26:42,090
+running into the multiple source
+problem. And I think right now,
+
+408
+00:26:42,390 --> 00:26:45,000
+in the autonomous car space,
+they're still struggling with
+
+409
+00:26:45,000 --> 00:26:47,610
+the single source problem of how
+do you get just data out of one
+
+410
+00:26:47,610 --> 00:26:51,720
+car, and we're dealing with,
+okay, the data that we have to
+
+411
+00:26:51,720 --> 00:26:58,140
+move isn't ginormous, but we
+have 3050 100 500 robots that
+
+412
+00:26:58,140 --> 00:27:02,370
+we're, we're transmitting data
+from. And that's a lot of data.
+
+413
+00:27:02,430 --> 00:27:04,680
+And so it's a pipe problem.
+
+414
+00:27:05,280 --> 00:27:08,160
+Audrow Nash: Yep. So with
+autonomous cars, they're just
+
+415
+00:27:08,160 --> 00:27:11,310
+now thinking how to locally do
+it. So how can I make this one
+
+416
+00:27:11,310 --> 00:27:16,230
+car do drive from one place to
+another autonomously, and you're
+
+417
+00:27:16,230 --> 00:27:19,710
+going, we have these robots
+driving around this entire
+
+418
+00:27:19,740 --> 00:27:23,940
+environment. They're all doing
+some sort of mapping of this
+
+419
+00:27:23,940 --> 00:27:27,330
+environment. Like what maybe
+there's an obstacle that has
+
+420
+00:27:27,330 --> 00:27:31,020
+occurred. And so then they all
+coordinate based on this, they
+
+421
+00:27:31,020 --> 00:27:33,390
+go, Oh, that one path is
+blocked, I'm gonna have to go
+
+422
+00:27:33,390 --> 00:27:34,740
+around, and then it reroutes
+
+423
+00:27:36,060 --> 00:27:38,490
+Melonee Wise: that, yes, as part
+of our coordination, we also use
+
+424
+00:27:38,580 --> 00:27:42,480
+peer to peer Bluetooth. But I
+was just speaking more from the
+
+425
+00:27:42,480 --> 00:27:45,990
+sheer amount of like, loading
+the data, and then post
+
+426
+00:27:45,990 --> 00:27:50,400
+processing. If you if you will
+get today I think most companies
+
+427
+00:27:50,430 --> 00:27:55,410
+Google way Mo, all those guys
+use, quote, unquote, sneakernet,
+
+428
+00:27:55,440 --> 00:27:58,830
+which is putting a hard drive in
+a mailbox and sending it in the
+
+429
+00:27:58,830 --> 00:27:59,340
+mail.
+
+430
+00:27:59,820 --> 00:28:04,710
+Audrow Nash: Oh, yes. That's
+crazy. The heart? What do you
+
+431
+00:28:04,710 --> 00:28:07,530
+mean exactly? Where are they
+doing that? So like, well,
+
+432
+00:28:07,560 --> 00:28:11,370
+Melonee Wise: so you say,
+company has 30 autonomous cars
+
+433
+00:28:11,370 --> 00:28:12,870
+that their field testing?
+
+434
+00:28:13,890 --> 00:28:16,470
+Audrow Nash: Oh, rather than
+actually putting it on the cloud
+
+435
+00:28:16,470 --> 00:28:19,170
+and sending it and uploading it,
+they actually just physically
+
+436
+00:28:19,170 --> 00:28:21,660
+mailed the device because of
+bandwidth constraints.
+
+437
+00:28:21,750 --> 00:28:23,610
+Melonee Wise: They take out the
+hard drives and mail them.
+
+438
+00:28:24,300 --> 00:28:25,770
+That's crazy. sneakernet
+
+439
+00:28:26,010 --> 00:28:27,750
+Audrow Nash: Yeah, we're walking
+it.
+
+440
+00:28:28,110 --> 00:28:31,410
+Melonee Wise: Yeah, I heard I
+heard some companies are
+
+441
+00:28:31,410 --> 00:28:37,830
+uploading more than 40 or 50
+terabytes a week? Wow. Yeah. So
+
+442
+00:28:37,830 --> 00:28:38,940
+a lot of data.
+
+443
+00:28:40,830 --> 00:28:46,230
+Audrow Nash: So you, so um, what
+it sounds like, to me, you have
+
+444
+00:28:46,230 --> 00:28:49,560
+a good bit of faith in these
+machine learning approaches in
+
+445
+00:28:49,560 --> 00:28:56,490
+the long game. So like 1020
+years from now, for? Is that
+
+446
+00:28:56,490 --> 00:28:59,790
+what you think? Or because I
+mean, data is not terribly
+
+447
+00:28:59,790 --> 00:29:03,480
+important if you're going to do
+classical approaches for things,
+
+448
+00:29:03,480 --> 00:29:05,700
+but you're finding in the
+warehouse setting that it is
+
+449
+00:29:05,700 --> 00:29:09,030
+important to have a lot of data.
+Just Can you talk a little bit
+
+450
+00:29:09,030 --> 00:29:09,750
+about this?
+
+451
+00:29:09,930 --> 00:29:14,730
+Melonee Wise: Yeah, I think that
+there are are some types of
+
+452
+00:29:14,820 --> 00:29:19,800
+semantic behaviors that we care
+about, that we need models for.
+
+453
+00:29:19,800 --> 00:29:25,920
+So we need to know what the
+thing is. And the problem is, is
+
+454
+00:29:25,920 --> 00:29:30,630
+that there's a lot of variation
+in the world. And so if you
+
+455
+00:29:30,630 --> 00:29:34,380
+tried to build a classically
+trained model for every object
+
+456
+00:29:34,380 --> 00:29:38,460
+in your, you know, I guess
+traversable space, it would be
+
+457
+00:29:38,460 --> 00:29:39,240
+very hard.
+
+458
+00:29:39,510 --> 00:29:42,690
+Audrow Nash: And by classically
+trained, would you talk about
+
+459
+00:29:42,720 --> 00:29:43,740
+about what that means?
+
+460
+00:29:44,220 --> 00:29:50,850
+Melonee Wise: You have 1000
+images and data examples of say
+
+461
+00:29:50,850 --> 00:29:57,810
+a Volkswagen bug from 1976. And
+you put that all into an
+
+462
+00:29:57,810 --> 00:30:01,050
+algorithm and it spits out a
+model and And it's really good
+
+463
+00:30:01,050 --> 00:30:05,460
+that one detector is really good
+at processing Volkswagen bugs.
+
+464
+00:30:06,960 --> 00:30:11,880
+And so if you were to look at
+like the most, I guess you might
+
+465
+00:30:11,880 --> 00:30:17,580
+call it asinine way of
+approaching the problem is you
+
+466
+00:30:17,580 --> 00:30:22,410
+could say, I'm going to build a
+specific model for every car on
+
+467
+00:30:22,410 --> 00:30:28,530
+the road every year because they
+change year to year. And I'm
+
+468
+00:30:28,530 --> 00:30:32,520
+then going to spin up parallel
+detectors for all of these
+
+469
+00:30:32,520 --> 00:30:37,260
+things. And, and maybe want to
+know, the car model, maybe you
+
+470
+00:30:37,260 --> 00:30:40,020
+don't, but maybe there is some
+material reason why you want to
+
+471
+00:30:40,020 --> 00:30:43,680
+know this. Right now, I think
+they reduce it down to car,
+
+472
+00:30:43,680 --> 00:30:51,570
+truck or other. But But say you
+want to do this this thing, then
+
+473
+00:30:51,570 --> 00:30:54,030
+the problem is, is you're
+probably going to have some set
+
+474
+00:30:54,030 --> 00:30:57,570
+of detectors that all say that
+they found the thing, right, so
+
+475
+00:30:57,570 --> 00:31:01,560
+if you have 1000 detectors, and
+15 of them, say I found the
+
+476
+00:31:01,560 --> 00:31:05,160
+thing, then you need to put it
+through another set of detectors
+
+477
+00:31:05,190 --> 00:31:08,730
+and voting system to decide
+which one of the things that
+
+478
+00:31:08,730 --> 00:31:10,350
+says they found the thing is
+right,
+
+479
+00:31:11,430 --> 00:31:14,160
+Audrow Nash: or some approach to
+figure out exactly what is the
+
+480
+00:31:14,160 --> 00:31:17,220
+one you listen to? Or what's
+most likely. Okay.
+
+481
+00:31:18,090 --> 00:31:22,140
+Melonee Wise: And so the the
+challenge with that is it takes
+
+482
+00:31:22,140 --> 00:31:26,070
+massive amounts of data. And
+that's why people are very old,
+
+483
+00:31:26,070 --> 00:31:28,710
+Audrow Nash: like 1000 detectors
+or something like this, because
+
+484
+00:31:28,710 --> 00:31:31,590
+it's that one problem. But
+there's a lot more and you have
+
+485
+00:31:31,590 --> 00:31:35,610
+to make distinctions between
+that or is it the first model,
+
+486
+00:31:35,610 --> 00:31:38,100
+but just a bunch of times?
+Because you could probably do
+
+487
+00:31:38,100 --> 00:31:40,200
+that too, and then just have a
+confidence and wait to
+
+488
+00:31:40,200 --> 00:31:40,980
+confidence?
+
+489
+00:31:41,010 --> 00:31:44,460
+Melonee Wise: Yeah, those those
+models aren't as good because so
+
+490
+00:31:44,940 --> 00:31:47,460
+Audrow Nash: you want it all in
+one model, basically, yeah. So
+
+491
+00:31:47,460 --> 00:31:49,740
+it learns the discrimination
+between I think
+
+492
+00:31:49,740 --> 00:31:54,000
+Melonee Wise: the problem is, is
+if you look at it like a good a
+
+493
+00:31:54,000 --> 00:31:57,000
+good way to think about, like,
+our way that we've been doing
+
+494
+00:31:57,000 --> 00:32:01,800
+learning for a long time, is,
+for a very long time, we built
+
+495
+00:32:01,800 --> 00:32:05,100
+models, and systems where we
+said, this is the thing you care
+
+496
+00:32:05,100 --> 00:32:07,200
+about, this is the thing you
+care about, we kept showing it,
+
+497
+00:32:07,440 --> 00:32:10,170
+the thing they cared about from
+all angles. But if you look at
+
+498
+00:32:10,170 --> 00:32:13,890
+the way people learn, it's a
+little bit different. We we
+
+499
+00:32:13,890 --> 00:32:17,550
+learn, this is the thing that
+you care about. But we also see
+
+500
+00:32:17,550 --> 00:32:20,790
+on a regular basis 1000s of
+examples of this is not the
+
+501
+00:32:20,790 --> 00:32:26,430
+thing you care about. Hmm,
+interesting. Yeah. And so but
+
+502
+00:32:26,430 --> 00:32:29,400
+there's a problem of trying to
+prove the negative when the
+
+503
+00:32:29,400 --> 00:32:31,560
+space of things that you're
+trying to prove the negative on
+
+504
+00:32:31,560 --> 00:32:36,930
+is, is infinite, right. And, and
+so this is one of the problems
+
+505
+00:32:36,930 --> 00:32:41,640
+with, like machine learning in
+general. And, and even if you
+
+506
+00:32:41,640 --> 00:32:45,930
+want to show, this is the thing
+that you care about, say we
+
+507
+00:32:45,930 --> 00:32:49,740
+wanted to show a phone, right,
+this is the thing you care
+
+508
+00:32:49,740 --> 00:32:53,160
+about, and specifically this
+phone. So it's blue, it has some
+
+509
+00:32:53,160 --> 00:32:58,380
+yellow buttons. You know, a
+person probably only has the
+
+510
+00:32:58,380 --> 00:33:02,790
+tolerance to take 50 pictures
+100 pictures of this phone, ad
+
+511
+00:33:02,790 --> 00:33:06,990
+nauseum. Yeah. And one of the
+reasons that convolution neural
+
+512
+00:33:06,990 --> 00:33:11,880
+nets are so interesting is is it
+It allows us to take the 100
+
+513
+00:33:11,880 --> 00:33:16,770
+images and make it into like
+10,000 images. Because that's
+
+514
+00:33:16,770 --> 00:33:20,430
+what it is, the purpose of it is
+it basically allows us to take
+
+515
+00:33:20,430 --> 00:33:23,670
+the pieces of all these things,
+split them up, put them back
+
+516
+00:33:23,670 --> 00:33:28,470
+together and use them to train
+to train systems. And that's why
+
+517
+00:33:28,470 --> 00:33:32,250
+so it's a way of artificially
+creating more data. And it's
+
+518
+00:33:32,250 --> 00:33:36,570
+found that that artificial data
+that we create results in high,
+
+519
+00:33:37,110 --> 00:33:40,680
+high confidence confidently
+trained models, typically, now,
+
+520
+00:33:40,680 --> 00:33:43,530
+okay, there's a lot of tuning
+and a lot of mumbo jumbo. Yeah,
+
+521
+00:33:43,560 --> 00:33:49,860
+it's kind of a flasher, but
+definitely the same time. But a
+
+522
+00:33:49,860 --> 00:33:54,390
+lot of those systems, again, are
+only trained on positive
+
+523
+00:33:54,390 --> 00:33:58,080
+examples. I'm positive. And and
+this is this is in general, a
+
+524
+00:33:58,080 --> 00:34:01,260
+bigger problem, theoretically,
+with all of robotics is because
+
+525
+00:34:02,010 --> 00:34:05,580
+the negative examples that can
+be very bad, they can have very
+
+526
+00:34:05,580 --> 00:34:09,960
+bad outcomes, like how do you
+teach a robot not to hit someone
+
+527
+00:34:09,960 --> 00:34:14,370
+when hitting them could kill a
+person, right? So, so not it?
+
+528
+00:34:14,520 --> 00:34:20,070
+Whether or not training with
+only positive reinforcement is
+
+529
+00:34:20,070 --> 00:34:23,880
+good. Sometimes you can't
+produce negative reinforcement
+
+530
+00:34:23,880 --> 00:34:28,110
+data, although I have seen work
+coming out more and more on how
+
+531
+00:34:28,110 --> 00:34:30,930
+you build simulation models to
+create negative reinforcement
+
+532
+00:34:30,930 --> 00:34:33,360
+data, for example. But
+
+533
+00:34:34,590 --> 00:34:36,690
+Audrow Nash: probably that got
+us all the way there, because
+
+534
+00:34:36,690 --> 00:34:38,940
+you can overfit the simulator
+pretty heavily.
+
+535
+00:34:38,970 --> 00:34:42,360
+Melonee Wise: Yeah, yeah. And so
+that's the problem. As far as
+
+536
+00:34:42,360 --> 00:34:46,740
+all sorts of problems
+overfitting weird edge cases,
+
+537
+00:34:46,740 --> 00:34:48,360
+you know, things like
+
+538
+00:34:49,050 --> 00:34:53,850
+Audrow Nash: and so how this
+relates. So, if I understand
+
+539
+00:34:53,850 --> 00:34:58,440
+quite correctly, how this
+relates in the autonomous car
+
+540
+00:34:58,440 --> 00:35:05,070
+problem or in the way Your house
+problem, you are using some sort
+
+541
+00:35:05,070 --> 00:35:09,600
+as you get all of this data, and
+you train different models on
+
+542
+00:35:09,600 --> 00:35:13,530
+it. And you use that effectively
+for perception to help the robot
+
+543
+00:35:13,530 --> 00:35:16,890
+understand the world and what's
+going on around it.
+
+544
+00:35:17,220 --> 00:35:20,100
+Melonee Wise: So I didn't know
+say that a person is a person.
+
+545
+00:35:20,100 --> 00:35:23,460
+And so then the robot can
+exhibit different behaviors
+
+546
+00:35:23,490 --> 00:35:29,100
+appropriate for that person. So,
+for example, the one thing
+
+547
+00:35:29,100 --> 00:35:32,130
+that's the most mature in our
+navigation stack is robot, the
+
+548
+00:35:32,130 --> 00:35:38,730
+robot detection. So we know when
+something is another robot. And
+
+549
+00:35:38,760 --> 00:35:41,850
+that allows us to implement
+certain behaviors within the
+
+550
+00:35:41,850 --> 00:35:48,900
+robot that make them more
+effective. They they will, one
+
+551
+00:35:48,930 --> 00:35:52,050
+give priority to other robots
+based on what those robots are
+
+552
+00:35:52,050 --> 00:35:54,360
+doing. They will, you know,
+
+553
+00:35:54,960 --> 00:35:58,350
+Audrow Nash: really cool. So
+it's going, Oh, it's a robot.
+
+554
+00:35:58,350 --> 00:36:01,980
+But it's also going, Oh, I can
+understand from the context of
+
+555
+00:36:01,980 --> 00:36:04,830
+what I can sense what this robot
+is doing. And that's a higher
+
+556
+00:36:04,830 --> 00:36:08,010
+priority than me, kind of thing.
+That's interesting.
+
+557
+00:36:08,550 --> 00:36:11,700
+Melonee Wise: And until then,
+that extends into things like a
+
+558
+00:36:11,700 --> 00:36:14,310
+forklift. One of the things we
+were talking about earlier, it's
+
+559
+00:36:14,310 --> 00:36:17,580
+forklifts are very difficult.
+Well, one of the more difficult
+
+560
+00:36:17,580 --> 00:36:20,910
+scenarios with a forklift is the
+tines can be all the way up in
+
+561
+00:36:20,910 --> 00:36:23,880
+the air, they can be 15 feet up
+in the air well above the robot,
+
+562
+00:36:24,270 --> 00:36:28,020
+and the robot can't see it. Of
+course, it can't, it's very high
+
+563
+00:36:28,020 --> 00:36:32,790
+up near. Now, if you know what's
+a forklift, you can know not to
+
+564
+00:36:32,790 --> 00:36:38,100
+drive into that area. Even if
+you can't see what's there. And
+
+565
+00:36:38,100 --> 00:36:42,300
+so that's one of the examples in
+which, if you can know what
+
+566
+00:36:42,300 --> 00:36:46,410
+things are, if you submit to
+glean know that this is a person
+
+567
+00:36:46,410 --> 00:36:49,770
+Audrow Nash: you can inform your
+policies of don't drive right in
+
+568
+00:36:49,770 --> 00:36:53,190
+the spot where the tongs made
+come down, right, this kind of
+
+569
+00:36:53,190 --> 00:36:53,550
+thing.
+
+570
+00:36:53,670 --> 00:36:57,810
+Melonee Wise: Yeah. And that,
+that is that is what the
+
+571
+00:36:57,810 --> 00:37:00,870
+majority of applications for
+machine learning autonomous cars
+
+572
+00:37:00,870 --> 00:37:04,350
+are also for is semantic
+understanding. This is a ramp,
+
+573
+00:37:04,530 --> 00:37:07,650
+this is a person, this is a
+crosswalk, this is a stop sign.
+
+574
+00:37:08,400 --> 00:37:11,730
+Audrow Nash: Now there's one
+thing that I've seen, which is
+
+575
+00:37:11,730 --> 00:37:16,830
+interesting to me, is ontologies
+and ontologies. It's like a map
+
+576
+00:37:16,860 --> 00:37:19,950
+that shows how all of the
+different parts that you might
+
+577
+00:37:19,950 --> 00:37:22,980
+see in an environment relate to
+each other. So if I was an
+
+578
+00:37:22,980 --> 00:37:26,220
+autonomous car, it could be
+like, this is a road, this is a
+
+579
+00:37:26,220 --> 00:37:30,060
+sidewalk, the sidewalk might
+have a person or a dog on it, or
+
+580
+00:37:30,060 --> 00:37:34,380
+something like this. So then
+it'd be like road road has a
+
+581
+00:37:34,380 --> 00:37:37,500
+sidewalk, sidewalk has a person,
+this kind of thing. It's a
+
+582
+00:37:37,500 --> 00:37:42,330
+relationship between all these,
+do you? And this is kind of a
+
+583
+00:37:42,330 --> 00:37:47,040
+manual way to specify all the
+different components. Yeah. Do
+
+584
+00:37:47,040 --> 00:37:50,430
+you guys use ontologies? Or? So
+is it interesting?
+
+585
+00:37:50,760 --> 00:37:52,920
+Melonee Wise: If you look at
+that, and topologies in our
+
+586
+00:37:52,920 --> 00:37:55,800
+environment, our district and
+this is one of the problems I
+
+587
+00:37:55,800 --> 00:38:00,030
+was saying is like, there's a
+shelf, there's a ioway next to
+
+588
+00:38:00,030 --> 00:38:03,270
+it, but people and everything
+else can be in a box can be in a
+
+589
+00:38:03,270 --> 00:38:07,650
+trash can be in it. person can
+be in it. So it's a very flat
+
+590
+00:38:07,920 --> 00:38:16,440
+ontology. This is a shelf. This
+is a floor. Yeah, so i think i
+
+591
+00:38:16,470 --> 00:38:20,550
+think i agree that ontologies
+can be very, very helpful for
+
+592
+00:38:20,550 --> 00:38:25,890
+creating kind of semantic maps
+and relationships. But they they
+
+593
+00:38:25,890 --> 00:38:27,990
+don't always apply well in our
+environments.
+
+594
+00:38:27,990 --> 00:38:30,360
+Audrow Nash: Unfortunately, it's
+very complex. Yeah, yeah.
+
+595
+00:38:30,900 --> 00:38:35,580
+Gotcha. Okay, going back a
+little bit. No, it's cool. This
+
+596
+00:38:35,580 --> 00:38:39,600
+is all very interesting. Going
+back to being a hardware
+
+597
+00:38:39,600 --> 00:38:42,930
+company. Yeah. Can you tell me a
+bit about when you guys started
+
+598
+00:38:42,930 --> 00:38:44,130
+when you were a hardware
+company?
+
+599
+00:38:44,310 --> 00:38:47,670
+Melonee Wise: Oh, yeah. Yeah. I
+mean, we were hard. We were a
+
+600
+00:38:47,670 --> 00:38:50,610
+hardware company for about five
+months.
+
+601
+00:38:52,050 --> 00:38:55,020
+Audrow Nash: In the seven years
+that have been so fun, yes.
+
+602
+00:38:55,020 --> 00:38:56,160
+Crazy. Because
+
+603
+00:38:56,160 --> 00:38:58,170
+Melonee Wise: that's, that's
+when we didn't have any robots.
+
+604
+00:38:58,410 --> 00:39:01,710
+So we had to make the robot.
+Yeah, we had to make the robots.
+
+605
+00:39:02,460 --> 00:39:07,380
+The good thing is, is we had a
+really stellar team of co
+
+606
+00:39:07,380 --> 00:39:12,150
+founders who, who all knew a lot
+about hardware. And it was
+
+607
+00:39:12,150 --> 00:39:17,460
+really funny. I think one of the
+more kind of interesting
+
+608
+00:39:17,460 --> 00:39:21,660
+experiences for me is is and I
+think for a lot of the the guys
+
+609
+00:39:21,660 --> 00:39:24,330
+they started competing with is,
+you know, we while we were will
+
+610
+00:39:24,330 --> 00:39:27,840
+abroad, we probably build five
+or six different types of robots
+
+611
+00:39:27,840 --> 00:39:31,050
+together. And, you know, we
+learned a lot of lessons
+
+612
+00:39:31,050 --> 00:39:33,300
+sometimes they didn't power on
+sometimes they have problems.
+
+613
+00:39:34,740 --> 00:39:35,460
+Audrow Nash: All the things.
+
+614
+00:39:35,490 --> 00:39:38,640
+Melonee Wise: Yeah, yeah, all
+the things. But when we, when we
+
+615
+00:39:38,640 --> 00:39:42,960
+started fetch, we had so much
+experience like when we built
+
+616
+00:39:42,960 --> 00:39:46,320
+the hardware, while we design
+the hardware, we sent it to his
+
+617
+00:39:46,320 --> 00:39:49,110
+job. It came back from the shop
+we put together turned on it
+
+618
+00:39:49,110 --> 00:39:53,460
+worked fine. And what was really
+funny is there were some
+
+619
+00:39:53,460 --> 00:39:56,280
+employees who had been in other
+robotics companies who had been
+
+620
+00:39:56,280 --> 00:39:59,970
+at other hardware companies. And
+like, we're like, what do you
+
+621
+00:40:00,000 --> 00:40:04,230
+Like, this timeline is insane.
+All of this assumes that the
+
+622
+00:40:04,230 --> 00:40:07,710
+hardware is going to turn on and
+work and not catch on fire. And
+
+623
+00:40:07,710 --> 00:40:10,440
+we're like, Well, first, it will
+never catch on fire. We're not
+
+624
+00:40:10,440 --> 00:40:16,110
+that bad. But second, second,
+we'll be fine. And it was, it
+
+625
+00:40:16,110 --> 00:40:19,050
+was an interesting thing,
+because I think one of the
+
+626
+00:40:19,050 --> 00:40:21,780
+things that I had developed is a
+somewhat like, what you might
+
+627
+00:40:21,780 --> 00:40:24,540
+call robotics amnesia, where it
+kind of started forgetting that,
+
+628
+00:40:24,810 --> 00:40:31,740
+that hardware could ever really
+be kind of shitty. And so and so
+
+629
+00:40:31,740 --> 00:40:31,950
+like,
+
+630
+00:40:31,950 --> 00:40:34,020
+Audrow Nash: give us a nice
+position to be in when you
+
+631
+00:40:34,020 --> 00:40:36,720
+really are like, you're like,
+Oh, I'm surprised that this
+
+632
+00:40:36,720 --> 00:40:39,210
+didn't work. Yes, everything has
+just been working.
+
+633
+00:40:39,750 --> 00:40:42,360
+Melonee Wise: Yeah. And so it
+was, it was definitely an
+
+634
+00:40:42,360 --> 00:40:46,890
+interesting juxtaposition. As,
+as the four co founders were
+
+635
+00:40:46,890 --> 00:40:49,380
+kind of like, Oh, you know, we
+got this, this isn't going to be
+
+636
+00:40:49,380 --> 00:40:52,230
+a problem. And then some of the
+new employees that we hired
+
+637
+00:40:52,260 --> 00:40:59,340
+early on, were kinda like, this
+rodeo before. And never, it's
+
+638
+00:40:59,340 --> 00:41:05,340
+never this move. So it was, it
+was cool. We were a hardware
+
+639
+00:41:05,340 --> 00:41:09,000
+company for a very short amount
+of time early on me then
+
+640
+00:41:09,000 --> 00:41:12,060
+eventually cycled back and we
+built the bigger robots, we
+
+641
+00:41:12,060 --> 00:41:16,770
+became a hardware company
+briefly again. But the part of
+
+642
+00:41:16,770 --> 00:41:19,080
+the company became a hardware
+company. It wasn't like,
+
+643
+00:41:19,350 --> 00:41:21,960
+everyone there full time was
+just doing fucked.
+
+644
+00:41:22,890 --> 00:41:29,130
+Audrow Nash: Yeah. So then, how
+did you go about, like, the
+
+645
+00:41:29,130 --> 00:41:32,850
+manufacturing process and
+everything for like, so once you
+
+646
+00:41:32,850 --> 00:41:37,890
+worked out the designs, how do
+you go into actually making lots
+
+647
+00:41:37,890 --> 00:41:41,160
+of the robots? Like I assume
+that that's quite a big thing?
+
+648
+00:41:42,420 --> 00:41:47,130
+Melonee Wise: It's actually
+relatively simple. Because it's
+
+649
+00:41:47,130 --> 00:41:51,570
+not like we're bending metal,
+someone else does all of that
+
+650
+00:41:51,570 --> 00:41:54,720
+stuff. Like they build the sheet
+metal. So you do the all the CAD
+
+651
+00:41:54,720 --> 00:41:58,170
+designs, you do all the
+drawings, you send it out to a
+
+652
+00:41:58,170 --> 00:42:02,220
+shop, they fabricate it. And
+really what you're doing at a
+
+653
+00:42:02,220 --> 00:42:05,250
+robotics company, if you're
+doing assembly is you're doing
+
+654
+00:42:05,280 --> 00:42:09,660
+assembly and test. And not to
+say that we're not
+
+655
+00:42:09,810 --> 00:42:14,220
+manufacturing, but we're not
+bending metal. And so yep, the
+
+656
+00:42:14,220 --> 00:42:17,130
+parts are putting together Yeah,
+we're putting them together, and
+
+657
+00:42:17,130 --> 00:42:20,610
+then upgrading them, and then
+making sure that they turn on.
+
+658
+00:42:21,120 --> 00:42:27,090
+And so it's, it's actually
+relatively easy to build or
+
+659
+00:42:27,090 --> 00:42:31,710
+assemble, let's call it, robot
+hardware, especially in the in
+
+660
+00:42:31,710 --> 00:42:35,220
+the case of the smaller robots,
+the larger robots get a lot more
+
+661
+00:42:35,220 --> 00:42:38,730
+complicated because of the
+safety systems and things like
+
+662
+00:42:38,730 --> 00:42:43,170
+that, that are required. But for
+smaller robots, almost all the
+
+663
+00:42:43,350 --> 00:42:48,210
+parts in in smaller remotes are
+custom. And so we have a lot of
+
+664
+00:42:48,210 --> 00:42:51,960
+control over it and comes in, we
+put together and worked.
+
+665
+00:42:52,829 --> 00:42:56,309
+Audrow Nash: Gotcha. That's
+interesting. I've heard some
+
+666
+00:42:56,309 --> 00:42:59,009
+companies that I've talked to
+I've had a lot of difficulties,
+
+667
+00:42:59,009 --> 00:43:02,009
+like finding suppliers and
+working with it. And I've heard
+
+668
+00:43:02,009 --> 00:43:07,379
+things like the CEO will fly
+every rec to or some some person
+
+669
+00:43:07,379 --> 00:43:10,289
+in the company will fly every
+three months to say, the
+
+670
+00:43:10,289 --> 00:43:15,509
+Schengen area of China, and work
+with them on the manufacturing.
+
+671
+00:43:15,539 --> 00:43:18,359
+Did you guys have to do these
+kinds of things? Or?
+
+672
+00:43:18,690 --> 00:43:21,780
+Melonee Wise: No, we
+predominantly made everything in
+
+673
+00:43:21,780 --> 00:43:24,360
+the United States. And anything
+that wasn't made in the United
+
+674
+00:43:24,360 --> 00:43:26,640
+States, we had us partners that
+handle all
+
+675
+00:43:26,640 --> 00:43:30,570
+Audrow Nash: that. Interesting.
+Can you speak a bit about that
+
+676
+00:43:30,570 --> 00:43:33,630
+the manufacturing in the US
+because I'm not honestly
+
+677
+00:43:33,630 --> 00:43:39,090
+terribly aware of many robotics.
+things being made in the US?
+
+678
+00:43:41,070 --> 00:43:42,750
+Yeah, sure. new info to me.
+
+679
+00:43:43,110 --> 00:43:45,630
+Melonee Wise: Yeah. So if you if
+you look at it, if you look at
+
+680
+00:43:45,630 --> 00:43:52,740
+the freight 100 or 100 kilogram
+platform, it has, it has about
+
+681
+00:43:53,160 --> 00:44:05,250
+300 total parts about 100 unique
+parts. And the the things that
+
+682
+00:44:05,250 --> 00:44:08,130
+are made not in the United
+States are things like the laser
+
+683
+00:44:08,130 --> 00:44:14,610
+scanner that's made in Germany
+by the, the skins, those are
+
+684
+00:44:14,610 --> 00:44:18,480
+injection molded in in China,
+but they're designed in the
+
+685
+00:44:18,480 --> 00:44:20,670
+United States, actually, the
+molds are designed in the United
+
+686
+00:44:20,670 --> 00:44:26,790
+States. And then they're built
+in China, but and then our wheel
+
+687
+00:44:26,790 --> 00:44:29,850
+motors are based off of a hub
+motor that you see in like
+
+688
+00:44:29,850 --> 00:44:33,150
+scooters and stuff like that.
+And that was clever. Yeah. And
+
+689
+00:44:33,150 --> 00:44:36,510
+we did the we do the engineering
+design in the United States with
+
+690
+00:44:36,510 --> 00:44:41,040
+a company that we use their
+their Sai motors, they make
+
+691
+00:44:41,340 --> 00:44:46,920
+custom motors, and then they own
+parts of factories in China. So
+
+692
+00:44:46,920 --> 00:44:50,010
+in terms of the extent of the
+componentry, that's like
+
+693
+00:44:50,010 --> 00:44:52,980
+fabricated or made not in the
+United States outside of the
+
+694
+00:44:52,980 --> 00:44:58,230
+computer, let's call it it's all
+made in the United States. So we
+
+695
+00:44:58,230 --> 00:45:02,850
+designed our own PCBs, though.
+prefabricated at a PCB
+
+696
+00:45:02,850 --> 00:45:06,780
+fabrication place in actually
+California. All the sheet metal
+
+697
+00:45:06,780 --> 00:45:12,420
+is bent in, in many, I mean, the
+bay area has a lot of
+
+698
+00:45:12,870 --> 00:45:17,040
+manufacturing capabilities. And
+all of the sheet metal is I
+
+699
+00:45:17,040 --> 00:45:20,220
+mean, one of the shemale vendors
+is literally blocked from our
+
+700
+00:45:20,220 --> 00:45:27,960
+office. They they kind of
+scooted down the road. And so
+
+701
+00:45:27,960 --> 00:45:32,160
+all of all that in the paint,
+you know, the any of the other
+
+702
+00:45:32,160 --> 00:45:36,540
+things like powder coating,
+stuff like that, it's all done
+
+703
+00:45:36,540 --> 00:45:41,970
+locally. So if you if you look
+at it, unfortunately, the the a
+
+704
+00:45:42,360 --> 00:45:49,980
+US commerce defines defined in
+the USA by cost of goods. So
+
+705
+00:45:50,250 --> 00:45:54,060
+because we have a laser scanner
+that's made in Germany, it we
+
+706
+00:45:54,060 --> 00:45:57,270
+can't call the robot made in the
+USA, we can say design in the
+
+707
+00:45:57,270 --> 00:46:00,840
+United States, but but if you
+look at it on a per
+
+708
+00:46:02,760 --> 00:46:05,070
+Audrow Nash: like because the
+laser scanner is such a large
+
+709
+00:46:05,070 --> 00:46:10,440
+component of the whole robots
+cost. Yes. Yeah. Can you can you
+
+710
+00:46:10,440 --> 00:46:13,320
+tell how much one of the robots
+costs? No. Okay.
+
+711
+00:46:14,430 --> 00:46:18,120
+Melonee Wise: Sorry. That's a
+closely guarded secret. Okay.
+
+712
+00:46:18,120 --> 00:46:21,840
+Okay. Yeah. But if you look at
+it from a total part count,
+
+713
+00:46:22,230 --> 00:46:26,070
+sense, the majority of the parts
+are made in the United States.
+
+714
+00:46:27,360 --> 00:46:32,250
+And so most of the labor and
+things like that, and the jobs
+
+715
+00:46:32,250 --> 00:46:36,210
+are being created in the United
+States. But there's this
+
+716
+00:46:36,210 --> 00:46:39,930
+technical way of judging. You
+know, if
+
+717
+00:46:39,930 --> 00:46:42,000
+Audrow Nash: you can call what
+you can call it, that makes
+
+718
+00:46:42,000 --> 00:46:46,080
+sense. Although, it'd be nice if
+it was by item
+
+719
+00:46:46,950 --> 00:46:48,720
+Melonee Wise: would be, it'd be
+really nice.
+
+720
+00:46:49,770 --> 00:46:52,440
+Audrow Nash: Because honestly,
+before talking to you about
+
+721
+00:46:52,440 --> 00:46:56,490
+this, just now, I didn't realize
+robotics manufacturer was done
+
+722
+00:46:56,490 --> 00:46:58,980
+in the US to any real extent.
+
+723
+00:46:59,610 --> 00:47:02,550
+Melonee Wise: There's lots of
+companies out there fabrication
+
+724
+00:47:02,550 --> 00:47:05,520
+and assembly in the United
+States, you'd be surprised.
+
+725
+00:47:05,880 --> 00:47:08,640
+Audrow Nash: I am. interested.
+Interesting. Okay. I want to
+
+726
+00:47:08,640 --> 00:47:13,620
+learn more about that. Yeah. So
+now, moving on to the next
+
+727
+00:47:13,620 --> 00:47:16,830
+stage. So after five months, or
+whatever it was, you were a
+
+728
+00:47:16,830 --> 00:47:17,760
+software company?
+
+729
+00:47:17,790 --> 00:47:20,340
+Melonee Wise: Yes, we were. Tell
+me a bit about that. Yeah. So
+
+730
+00:47:20,340 --> 00:47:24,660
+that's, that's building all this
+software for the robotic side
+
+731
+00:47:24,660 --> 00:47:33,120
+and the server side. And so when
+we first started, we, we, you
+
+732
+00:47:33,120 --> 00:47:37,290
+know, we kind of heavily heavily
+modified the raw stack to
+
+733
+00:47:37,290 --> 00:47:43,650
+support our needs. Eventually,
+we ended up basically, kind of
+
+734
+00:47:43,650 --> 00:47:47,880
+drawing the line where we were
+going to use a lot bra stack. So
+
+735
+00:47:47,880 --> 00:47:50,850
+we use it, basically, for
+message passing, and all the
+
+736
+00:47:50,850 --> 00:47:55,800
+libraries and visualization. But
+we no longer base any of our
+
+737
+00:47:55,800 --> 00:47:59,160
+navigation and slam on top of
+the Ross stack.
+
+738
+00:48:02,670 --> 00:48:06,030
+Audrow Nash: With that, would
+that change with Ross? Two out
+
+739
+00:48:06,030 --> 00:48:08,250
+of curiosity? No, no, no,
+
+740
+00:48:08,849 --> 00:48:11,999
+Melonee Wise: no, I think that,
+you know, we definitely are
+
+741
+00:48:11,999 --> 00:48:15,029
+going to move to Ross, two in
+the future. We're trying to
+
+742
+00:48:15,029 --> 00:48:22,229
+figure out the right time to do
+it. But the the roster,
+
+743
+00:48:22,349 --> 00:48:26,009
+navigation stack is a research
+stack that really wasn't meant
+
+744
+00:48:26,009 --> 00:48:28,079
+to scale for the type of
+applications that we're
+
+745
+00:48:28,079 --> 00:48:31,259
+deploying it in today. And the
+same is true for kind of the
+
+746
+00:48:31,259 --> 00:48:37,679
+slant algorithms. It doesn't say
+anything negative about the Ross
+
+747
+00:48:37,679 --> 00:48:39,779
+navigation capabilities or
+anything like that. It's just
+
+748
+00:48:39,779 --> 00:48:41,759
+not well suited for our
+application.
+
+749
+00:48:41,790 --> 00:48:44,580
+Audrow Nash: Yeah, you said
+million square foot warehouses,
+
+750
+00:48:44,580 --> 00:48:47,190
+like, I'm not terribly surprised
+that it doesn't scale to that.
+
+751
+00:48:47,520 --> 00:48:47,910
+Yeah.
+
+752
+00:48:50,100 --> 00:48:52,200
+Melonee Wise: And then, you
+know, then we also built the
+
+753
+00:48:52,200 --> 00:48:57,420
+server side componentry. So this
+is stuff that that I think now
+
+754
+00:48:57,420 --> 00:48:59,760
+you're starting to see more
+attention to in Ross with, like
+
+755
+00:48:59,760 --> 00:49:04,860
+Ross web tools. But But
+previously, there wasn't as much
+
+756
+00:49:04,860 --> 00:49:09,420
+focused on, you know, user
+interfaces, tool chains for
+
+757
+00:49:09,420 --> 00:49:13,530
+editing and modifying the map
+and, and things like that. And
+
+758
+00:49:13,530 --> 00:49:18,210
+so fetch builds all that
+software stack for, for
+
+759
+00:49:18,210 --> 00:49:21,510
+basically allowing users who
+know nothing about robots to use
+
+760
+00:49:21,510 --> 00:49:22,080
+robot.
+
+761
+00:49:22,230 --> 00:49:24,240
+Audrow Nash: Yep. So they can
+have a nice interface, and the
+
+762
+00:49:24,240 --> 00:49:30,060
+interface kind of helps them use
+the application. Yeah. I think
+
+763
+00:49:30,060 --> 00:49:32,160
+that's an important thing to add
+into Ross.
+
+764
+00:49:32,520 --> 00:49:35,370
+Melonee Wise: Yeah, Ross was
+ecosystem. Yeah, the Ross
+
+765
+00:49:35,370 --> 00:49:40,560
+ecosystem being is missing like
+this entire kind of dev tools.
+
+766
+00:49:40,950 --> 00:49:42,240
+Robot chain.
+
+767
+00:49:43,980 --> 00:49:46,590
+Audrow Nash: That what do you
+mean the actual robot chain?
+
+768
+00:49:47,010 --> 00:49:49,500
+Melonee Wise: So like, there's a
+lot of deployment tools for
+
+769
+00:49:49,500 --> 00:49:52,350
+robots that are missing like
+there's no way to there's no
+
+770
+00:49:52,350 --> 00:49:55,740
+good open source packages for
+deploying software to lots of
+
+771
+00:49:55,740 --> 00:50:02,310
+robots. There's no good open
+source tools for monitoring lots
+
+772
+00:50:02,310 --> 00:50:03,990
+of robots concurrently there
+
+773
+00:50:03,990 --> 00:50:07,710
+Audrow Nash: you looked at? I
+don't know. I haven't used it.
+
+774
+00:50:07,710 --> 00:50:11,130
+Have you tried Amazon
+Greengrass, and they're open
+
+775
+00:50:11,130 --> 00:50:15,240
+sourced? No, no, you said no.
+Open Source. Yeah. No
+
+776
+00:50:15,240 --> 00:50:20,160
+Melonee Wise: open source. Yes.
+Yeah. I mean, there's plenty of
+
+777
+00:50:20,160 --> 00:50:22,770
+people who are willing to charge
+you money for these services.
+
+778
+00:50:22,770 --> 00:50:28,110
+But for me, the thing that the
+thing that sparked all of the
+
+779
+00:50:28,110 --> 00:50:34,860
+explosion in in companies for
+robotics and using Ross was that
+
+780
+00:50:35,310 --> 00:50:40,740
+there was no cost burden to get
+started. And so those are some
+
+781
+00:50:40,740 --> 00:50:43,020
+of the tools that are missing
+from the community.
+
+782
+00:50:43,920 --> 00:50:46,860
+Audrow Nash: What would you say
+explicitly I mean, I'm, I'm the
+
+783
+00:50:46,860 --> 00:50:53,160
+Ross boss for the humble to
+release in a year. And so I'm
+
+784
+00:50:53,160 --> 00:50:56,580
+interested in to see what like
+we're still building the
+
+785
+00:50:56,580 --> 00:50:57,840
+roadmap, basically.
+
+786
+00:50:58,350 --> 00:51:01,650
+Melonee Wise: I mean, if you ask
+my team today what they want
+
+787
+00:51:01,680 --> 00:51:03,420
+they just want documentation
+like
+
+788
+00:51:03,930 --> 00:51:06,390
+Audrow Nash: that's that's the
+biggest priority so far for
+
+789
+00:51:06,390 --> 00:51:09,660
+humble I totally agree with you
+on that Yeah. And
+
+790
+00:51:09,660 --> 00:51:11,550
+Melonee Wise: you're talking to
+the person who used to be the
+
+791
+00:51:11,550 --> 00:51:12,870
+Ross Wikis are so
+
+792
+00:51:14,730 --> 00:51:16,260
+Audrow Nash: back in the day
+Yeah.
+
+793
+00:51:16,289 --> 00:51:17,999
+Melonee Wise: Well, all the
+tutorials I wrote are still the
+
+794
+00:51:17,999 --> 00:51:19,229
+details for us.
+
+795
+00:51:19,440 --> 00:51:25,080
+Audrow Nash: That's crazy when
+so so this the Willow Garage
+
+796
+00:51:25,080 --> 00:51:28,200
+days, or this is the early Ross
+days, yeah, milestone
+
+797
+00:51:28,200 --> 00:51:33,450
+Melonee Wise: three of Ross, and
+will abroad was documentation.
+
+798
+00:51:33,780 --> 00:51:39,900
+And during that time, I wrote
+about 200 Ross tutorials. So all
+
+799
+00:51:39,900 --> 00:51:43,920
+the big tutorials like it's
+still all your work. Any
+
+800
+00:51:44,070 --> 00:51:47,310
+anything you see with like
+turtle sim I wrote.
+
+801
+00:51:47,970 --> 00:51:50,790
+Audrow Nash: That's so funny.
+And now in Ross two, it's the
+
+802
+00:51:50,790 --> 00:51:54,240
+same thing. They're just derived
+from the old ones. Yeah. So you
+
+803
+00:51:54,240 --> 00:51:57,210
+probably like I remember writing
+that. That's Yeah, Faria.
+
+804
+00:51:57,300 --> 00:52:00,420
+Melonee Wise: Actually, when she
+was converting, like asked me
+
+805
+00:52:00,420 --> 00:52:02,910
+questions about him. She's like,
+your names at the bottom of all
+
+806
+00:52:02,910 --> 00:52:07,590
+these pages? And I was like,
+yeah, cuz I wrote. Uh huh.
+
+807
+00:52:07,650 --> 00:52:11,100
+Audrow Nash: And Marya is the
+former, she's no longer at open
+
+808
+00:52:11,100 --> 00:52:15,330
+robotics. But she was like the
+documentation lead for the Ross
+
+809
+00:52:15,330 --> 00:52:17,010
+two initiative, as far as I
+understand.
+
+810
+00:52:17,130 --> 00:52:20,280
+Melonee Wise: Yeah. And she,
+she, I think she ported a lot of
+
+811
+00:52:20,280 --> 00:52:22,320
+the Ross one tutorials to Ross
+Who?
+
+812
+00:52:23,310 --> 00:52:26,580
+Audrow Nash: Definitely. Okay,
+so that's interesting. So you
+
+813
+00:52:26,580 --> 00:52:30,420
+built your own nav stack. And
+then on the server side, so you
+
+814
+00:52:30,420 --> 00:52:34,860
+can control the robots. Those
+are two things that are really
+
+815
+00:52:35,250 --> 00:52:39,510
+not the nav stack. But the
+server side, the building user
+
+816
+00:52:39,510 --> 00:52:42,810
+interfaces are about web tools,
+these kinds of things. These
+
+817
+00:52:42,810 --> 00:52:44,910
+would be good to see. And Ross,
+do you think, right?
+
+818
+00:52:45,210 --> 00:52:46,860
+Melonee Wise: Yeah, I think I
+think from an open source
+
+819
+00:52:46,860 --> 00:52:49,290
+perspective, yes, I think the
+biggest challenge
+
+820
+00:52:49,290 --> 00:52:50,370
+Audrow Nash: is deployment.
+
+821
+00:52:51,000 --> 00:52:54,270
+Melonee Wise: Yeah, deployment,
+robot monitoring, but all of
+
+822
+00:52:54,270 --> 00:52:58,140
+that. I mean, those are huge
+undertakings and letter, whether
+
+823
+00:52:58,140 --> 00:53:01,590
+anyone's willing to fund it or
+support it. I mean, because many
+
+824
+00:53:01,590 --> 00:53:05,310
+companies like Amazon are
+building Greengrass, close
+
+825
+00:53:05,310 --> 00:53:08,970
+sourced tool chains that, you
+know, they want to get you
+
+826
+00:53:09,000 --> 00:53:12,300
+hooked on their platforms.
+
+827
+00:53:13,200 --> 00:53:15,690
+Audrow Nash: Woody. So did you
+guys build your own? Or do you
+
+828
+00:53:15,690 --> 00:53:16,920
+use one of these? Oh, yeah.
+
+829
+00:53:17,519 --> 00:53:20,639
+Melonee Wise: I mean, it was
+early two, it was really early,
+
+830
+00:53:20,699 --> 00:53:27,929
+I mean, in orbit, and forment.
+And what are the other six other
+
+831
+00:53:27,929 --> 00:53:31,589
+guys that are all doing kind of
+those things? All started two or
+
+832
+00:53:31,589 --> 00:53:34,109
+three years after fetch started
+as a company.
+
+833
+00:53:35,070 --> 00:53:36,900
+Audrow Nash: So you had to?
+
+834
+00:53:37,470 --> 00:53:40,140
+Melonee Wise: Yeah, I mean, it's
+it's why, you know, it's it's
+
+835
+00:53:40,140 --> 00:53:46,110
+the same thing that a lot of
+people ask why Ross didn't base
+
+836
+00:53:46,110 --> 00:53:51,390
+their communication layer off of
+protobuf exists. Yeah, it didn't
+
+837
+00:53:51,390 --> 00:53:57,510
+exist when? When Ross started,
+you know? And then DBS wasn't as
+
+838
+00:53:57,510 --> 00:54:01,530
+mature A long time ago. So
+there's just lots of questions
+
+839
+00:54:01,530 --> 00:54:06,720
+like, I think, why not? Yeah,
+but what do you want? It didn't
+
+840
+00:54:06,720 --> 00:54:07,140
+exist?
+
+841
+00:54:08,430 --> 00:54:10,170
+Audrow Nash: It didn't exist.
+And we've been building on top
+
+842
+00:54:10,170 --> 00:54:16,320
+of what we have this whole time.
+Yeah. Okay. And then, then
+
+843
+00:54:16,320 --> 00:54:20,760
+you've any what were what were
+some of the hardest challenges,
+
+844
+00:54:20,940 --> 00:54:25,470
+I would say with the software
+company that you had for before
+
+845
+00:54:25,470 --> 00:54:30,480
+becoming a data company? Yeah, I
+mean, so million foot square
+
+846
+00:54:30,480 --> 00:54:32,610
+foot warehouse. Sounds really
+tough. Yeah, that
+
+847
+00:54:32,610 --> 00:54:36,420
+Melonee Wise: was hard. Um, I
+would actually say that that
+
+848
+00:54:36,450 --> 00:54:41,430
+many of the challenges that we
+ran into were with forklifts. I
+
+849
+00:54:41,430 --> 00:54:52,260
+hate forklifts. Getting safety
+right. That's really hard. I
+
+850
+00:54:52,260 --> 00:55:00,420
+think in general helping to help
+customers. Understand Then what
+
+851
+00:55:00,420 --> 00:55:03,180
+is capable and what's or what is
+possible and what's not
+
+852
+00:55:03,180 --> 00:55:03,930
+possible?
+
+853
+00:55:04,200 --> 00:55:05,820
+Audrow Nash: Just like what
+you're saying at the beginning
+
+854
+00:55:05,820 --> 00:55:08,520
+with the tempering expectations?
+Yeah, kind of thing.
+
+855
+00:55:08,880 --> 00:55:15,480
+Melonee Wise: Yeah, I mean, I,
+you know, I think so. So, you
+
+856
+00:55:15,480 --> 00:55:18,150
+know a fair bit about robotics
+and you probably know that,
+
+857
+00:55:18,150 --> 00:55:21,630
+like, the robot footprint really
+matters, right? Like, as the
+
+858
+00:55:21,630 --> 00:55:24,420
+robot travels through the world,
+it needs to know how big it is,
+
+859
+00:55:24,420 --> 00:55:29,670
+right? One of the most common
+asks from any customer is Can't
+
+860
+00:55:29,670 --> 00:55:35,520
+we just, that's how it always
+starts. Can't we just overhang
+
+861
+00:55:35,520 --> 00:55:42,570
+the footprint by an inch, or
+three inches or 15 inch is? And
+
+862
+00:55:42,690 --> 00:55:47,100
+it's like no robot doesn't know
+how big is the robot doesn't
+
+863
+00:55:47,130 --> 00:55:52,320
+can't see those things. But
+that's one of the hardest things
+
+864
+00:55:52,320 --> 00:55:56,700
+with with kind of people's
+understanding or lack of
+
+865
+00:55:56,700 --> 00:56:01,170
+understanding of robotics and
+also their kind of expectations
+
+866
+00:56:01,170 --> 00:56:05,220
+as they see it from really
+killer. You know, videos like
+
+867
+00:56:05,220 --> 00:56:08,010
+Boston Dynamics. I mean, those
+are amazing. Yeah, yeah,
+
+868
+00:56:08,010 --> 00:56:11,190
+they're, they're super amazing.
+But you know, I would load up
+
+869
+00:56:11,190 --> 00:56:16,920
+the expectations to upload the
+40,000 or, you know, retakes
+
+870
+00:56:16,950 --> 00:56:19,740
+before they got the backflip to
+work that one time.
+
+871
+00:56:20,100 --> 00:56:22,410
+Audrow Nash: I couldn't believe
+that when that occurred, like
+
+872
+00:56:22,410 --> 00:56:25,290
+watching that video was like, Oh
+my god, what is that? That's
+
+873
+00:56:25,290 --> 00:56:28,950
+crazy. I was in a legged
+locomotion lab at the time. And
+
+874
+00:56:28,950 --> 00:56:32,280
+it was like super crazy. We're
+just getting nothing to walk.
+
+875
+00:56:32,520 --> 00:56:33,420
+Different backflips.
+
+876
+00:56:33,630 --> 00:56:36,720
+Melonee Wise: Yeah. But you
+know, you and I both know as
+
+877
+00:56:36,720 --> 00:56:40,800
+roboticist like that. There's a
+real, there's a blooper reel.
+
+878
+00:56:40,800 --> 00:56:46,230
+And it's really huge, right?
+Yeah. And so one of the bigger
+
+879
+00:56:46,230 --> 00:56:51,060
+things about about software, as
+you know, is lots of things are
+
+880
+00:56:51,060 --> 00:56:53,700
+possible. But the time to
+implement those things can be
+
+881
+00:56:53,700 --> 00:56:56,700
+very long. And they can be very
+weird. They're hidden, they can
+
+882
+00:56:56,700 --> 00:56:59,820
+also contain very weird edge
+cases and things like that. If
+
+883
+00:56:59,820 --> 00:57:02,520
+you were doing legged
+locomotion, then you definitely
+
+884
+00:57:02,520 --> 00:57:04,680
+know how bad edge cases are.
+
+885
+00:57:04,890 --> 00:57:07,470
+Audrow Nash: Oh, it's very
+spiky, the optimization space,
+
+886
+00:57:07,500 --> 00:57:10,950
+it would like work, great work,
+great fall down. Like it would
+
+887
+00:57:10,950 --> 00:57:14,940
+very, very tough to tune
+parameters. But yeah, yeah.
+
+888
+00:57:14,970 --> 00:57:18,420
+Melonee Wise: And so. So those,
+I think are some of the bigger
+
+889
+00:57:18,450 --> 00:57:24,150
+things that we ran into, over
+the time of building software,
+
+890
+00:57:24,150 --> 00:57:29,430
+and just figuring out how to
+support some level of
+
+891
+00:57:29,460 --> 00:57:34,050
+adaptability of the system, or
+customization without basically
+
+892
+00:57:34,050 --> 00:57:37,410
+writing one off code for every
+customer that ever wants
+
+893
+00:57:37,410 --> 00:57:38,040
+anything.
+
+894
+00:57:38,430 --> 00:57:41,940
+Audrow Nash: Yes, totally. Yeah,
+that's hard. Because it's, it's
+
+895
+00:57:41,940 --> 00:57:45,060
+tough to make the software
+flexible, in a good way. Like, I
+
+896
+00:57:45,060 --> 00:57:47,790
+mean, it's good software design,
+but it's hard to predict. And
+
+897
+00:57:47,790 --> 00:57:49,470
+it'll be like, Oh, they want
+this little thing that's
+
+898
+00:57:49,470 --> 00:57:52,740
+slightly different. That
+requires a major assumption that
+
+899
+00:57:52,740 --> 00:57:57,750
+the whole thing was built upon
+to be J. That can be painful and
+
+900
+00:57:57,750 --> 00:58:02,220
+difficult. Yeah, we just want
+this other little thing. Like,
+
+901
+00:58:02,670 --> 00:58:03,330
+no,
+
+902
+00:58:03,599 --> 00:58:06,419
+Melonee Wise: okay. We went
+through this whole exercise for
+
+903
+00:58:06,419 --> 00:58:10,289
+our car Connect like and we
+basically got the biggest cart
+
+904
+00:58:10,289 --> 00:58:15,479
+we could absolutely move around
+with this robot. And, and like,
+
+905
+00:58:15,779 --> 00:58:18,839
+in the field, everyone's loving
+it and then like about six
+
+906
+00:58:18,839 --> 00:58:21,689
+months in, then we start getting
+the request. Can't we just make
+
+907
+00:58:21,689 --> 00:58:26,819
+it an inch bigger? answer's no,
+we made it as big as we possibly
+
+908
+00:58:26,819 --> 00:58:29,819
+can. You know, there's no more
+
+909
+00:58:31,890 --> 00:58:36,240
+Audrow Nash: Oh, funny one inch.
+Can't we just What a funny
+
+910
+00:58:36,270 --> 00:58:38,340
+you're like, Oh, no. Oh, no,
+every time
+
+911
+00:58:38,340 --> 00:58:42,390
+Melonee Wise: I hear it, can't
+we just are would it be so hard
+
+912
+00:58:42,390 --> 00:58:43,980
+if? Or
+
+913
+00:58:45,120 --> 00:58:51,420
+Audrow Nash: these? Yeah.
+Always. Yeah. So let's see.
+
+914
+00:58:51,450 --> 00:58:55,860
+Okay, so we talked a little bit
+about the data before and I'd
+
+915
+00:58:55,860 --> 00:58:58,230
+love to learn a little bit
+because we're running out of
+
+916
+00:58:58,230 --> 00:59:01,830
+time. Sorry about that. No, it's
+all been very interesting. But
+
+917
+00:59:01,830 --> 00:59:06,270
+I'd love to hear a little bit
+about the acquisition process
+
+918
+00:59:06,300 --> 00:59:08,070
+with you but I know you're still
+going through it.
+
+919
+00:59:09,300 --> 00:59:14,220
+Melonee Wise: It just closed
+like in 30 minutes. I mean, we
+
+920
+00:59:14,220 --> 00:59:18,900
+announced a complete a couple
+days ago but the money came into
+
+921
+00:59:18,900 --> 00:59:19,740
+the bank today.
+
+922
+00:59:20,220 --> 00:59:28,650
+Audrow Nash: Oh, what like what
+a breaking interview just so can
+
+923
+00:59:28,650 --> 00:59:30,990
+you talk a bit about the
+experience. I've heard horror
+
+924
+00:59:30,990 --> 00:59:35,190
+stories with acquisitions. If I
+understand correctly, they had
+
+925
+00:59:35,190 --> 00:59:38,910
+say 5% or something stake in
+your company and then they just
+
+926
+00:59:38,910 --> 00:59:41,250
+bought the rest out? Or
+
+927
+00:59:41,580 --> 00:59:46,170
+Melonee Wise: Yeah, I mean,
+acquisition process like they
+
+928
+00:59:46,170 --> 00:59:49,980
+had been a previous investor. We
+went through an acquisition
+
+929
+00:59:49,980 --> 00:59:56,970
+process we engaged with other
+potential acquirers but never
+
+930
+00:59:56,970 --> 00:59:59,460
+really seemed like the best fit
+for us. And one of the things
+
+931
+00:59:59,460 --> 01:00:06,690
+that really got me excited about
+zebra acquisition is in January,
+
+932
+01:00:06,690 --> 01:00:10,260
+they actually hired Jim Lawton.
+He's been in the robotics
+
+933
+01:00:10,260 --> 01:00:14,820
+industry for a while he worked
+at rethink robotics. He, he
+
+934
+01:00:14,820 --> 01:00:18,240
+worked at Universal robots. And
+he done a variety of different
+
+935
+01:00:18,240 --> 01:00:22,050
+startups, things like that, and
+you have a good reputation. And
+
+936
+01:00:22,050 --> 01:00:25,080
+it's signaled to me that they
+were very serious about robotics
+
+937
+01:00:25,080 --> 01:00:26,340
+and robotics, automation.
+
+938
+01:00:26,550 --> 01:00:28,590
+Audrow Nash: They've done their
+homework, they made a good pick,
+
+939
+01:00:28,620 --> 01:00:29,520
+they brought someone
+
+940
+01:00:29,820 --> 01:00:34,440
+Melonee Wise: and someone was
+working. Yeah. And, and you
+
+941
+01:00:34,440 --> 01:00:37,290
+know, when you when you look at
+it, as you said, there's always
+
+942
+01:00:37,290 --> 01:00:40,200
+this this fear of the
+acquisition going terrible, like
+
+943
+01:00:40,200 --> 01:00:43,080
+someone buying your company and
+then saying, you know, what, we
+
+944
+01:00:43,080 --> 01:00:45,180
+want to do home robots or
+something like that, I think
+
+945
+01:00:45,180 --> 01:00:50,610
+that would have been soul
+crushing to me. Like, forget all
+
+946
+01:00:50,610 --> 01:00:53,400
+this stuff you've been working
+on for the last half decade or
+
+947
+01:00:53,400 --> 01:01:01,050
+so why don't we just go work on
+you know, vacuums. And so, so,
+
+948
+01:01:01,260 --> 01:01:04,470
+you know, the, the zebra
+acquisition was really for me
+
+949
+01:01:04,470 --> 01:01:08,910
+about finding good fit, I mean,
+obviously, money is a factor,
+
+950
+01:01:08,940 --> 01:01:12,480
+but making sure that the visions
+are aligned, the outcomes are
+
+951
+01:01:12,480 --> 01:01:17,700
+well aligned. And, and I felt
+like, zebra was a good fit for
+
+952
+01:01:17,700 --> 01:01:21,870
+us, if you, if you look at some
+of the things that were
+
+953
+01:01:21,870 --> 01:01:25,740
+happening before that, so after
+they invested in us, we started
+
+954
+01:01:25,740 --> 01:01:27,960
+partnering on some things, and
+one of the cool things that we
+
+955
+01:01:27,960 --> 01:01:32,580
+did, um, about a year and a half
+ago is, is so they make
+
+956
+01:01:32,580 --> 01:01:35,220
+camscanner so you can scan a
+barcode and it like tells you
+
+957
+01:01:35,220 --> 01:01:37,950
+what this thing is, or you you
+know, it goes to a system and
+
+958
+01:01:37,950 --> 01:01:41,580
+does one thing, we a year and a
+half ago made it easy to
+
+959
+01:01:41,580 --> 01:01:44,220
+integrate their hand scanners
+with our robots. So like someone
+
+960
+01:01:44,220 --> 01:01:47,160
+could scan a barcode and a robot
+would like automatically appear.
+
+961
+01:01:48,480 --> 01:01:52,110
+And so that was that was a super
+cool integration because if you
+
+962
+01:01:52,110 --> 01:01:54,840
+look in manufacturing some guys
+building something right? You
+
+963
+01:01:54,840 --> 01:01:57,720
+know, he's, he's assembling
+something, and maybe he runs out
+
+964
+01:01:57,720 --> 01:02:00,930
+of screws, or maybe he runs out
+of something, you can just scan
+
+965
+01:02:00,930 --> 01:02:05,220
+a barcode in a robot with a cart
+shows up and says, Here's your
+
+966
+01:02:05,220 --> 01:02:10,320
+thing, you know, and, and so
+that that was very powerful for
+
+967
+01:02:10,320 --> 01:02:14,070
+some of our customers, and they,
+they really liked it. And we've
+
+968
+01:02:14,070 --> 01:02:18,450
+been slowly expanding our
+platform to integrate with, with
+
+969
+01:02:18,450 --> 01:02:22,560
+like, all the other industrial
+IoT devices out there, we
+
+970
+01:02:22,560 --> 01:02:26,190
+actually created a partnership
+with sec as well for this kind
+
+971
+01:02:26,190 --> 01:02:33,240
+of application. And so that, you
+know, we that was really cool,
+
+972
+01:02:33,240 --> 01:02:36,810
+we had experience working with
+them, we knew it wasn't like the
+
+973
+01:02:36,810 --> 01:02:41,070
+worst thing in the world. And it
+was easy to work with them get
+
+974
+01:02:41,070 --> 01:02:44,130
+things done, and we got things
+done. Because that's the other
+
+975
+01:02:44,130 --> 01:02:47,160
+thing that you could you could
+run into is you you get acquired
+
+976
+01:02:47,160 --> 01:02:51,960
+and nothing happens Do you do
+the quintessential rest invest?
+
+977
+01:02:52,260 --> 01:02:57,390
+And however rushed invest? It's
+it's a term that people throw
+
+978
+01:02:57,390 --> 01:03:01,350
+around in startups, after you
+get acquired. You doesn't if you
+
+979
+01:03:01,350 --> 01:03:05,580
+don't like what the company's
+doing or you you don't like you
+
+980
+01:03:05,580 --> 01:03:09,060
+just know you stick around and
+you just rest invest.
+
+981
+01:03:12,420 --> 01:03:14,040
+Audrow Nash: Rest while you're
+
+982
+01:03:14,519 --> 01:03:17,129
+Melonee Wise: vesting the rest
+of your options or shares. Yeah,
+
+983
+01:03:17,459 --> 01:03:18,239
+I mean, I
+
+984
+01:03:18,539 --> 01:03:21,359
+Audrow Nash: typically Yeah,
+you're not investing?
+
+985
+01:03:21,420 --> 01:03:24,870
+Melonee Wise: No, but but I
+didn't that was one of my goals.
+
+986
+01:03:24,870 --> 01:03:27,690
+I didn't want to end up at a
+company where that was my main
+
+987
+01:03:27,690 --> 01:03:28,530
+bag, you know?
+
+988
+01:03:28,560 --> 01:03:34,470
+Audrow Nash: Oh, definitely.
+Yeah. Okay, and then how did you
+
+989
+01:03:34,500 --> 01:03:38,790
+so it's just interesting to me
+to find a good fit it probably
+
+990
+01:03:38,790 --> 01:03:41,820
+means that there were other
+companies that looked into
+
+991
+01:03:41,820 --> 01:03:43,020
+buying you guys
+
+992
+01:03:43,050 --> 01:03:45,090
+Melonee Wise: yeah, I can't I
+can't speak to the whole process
+
+993
+01:03:45,090 --> 01:03:47,310
+in that regards. But yeah, I
+like
+
+994
+01:03:47,310 --> 01:03:49,560
+Audrow Nash: that you found a
+good fit for this kind of thing.
+
+995
+01:03:49,590 --> 01:03:54,330
+Like we found a good fit.
+Awesome. So with just a few
+
+996
+01:03:54,330 --> 01:03:58,260
+minutes left, I was hoping for
+more time for this because you
+
+997
+01:03:58,260 --> 01:04:03,750
+have an interesting perspective.
+But what's the so if you if
+
+998
+01:04:03,750 --> 01:04:07,380
+you're projecting like five or
+10 years down the road, where do
+
+999
+01:04:07,380 --> 01:04:10,920
+you think we're going to be with
+robotics? And you can speak to
+
+1000
+01:04:10,920 --> 01:04:13,200
+warehouses or anything else?
+
+1001
+01:04:14,640 --> 01:04:20,640
+Melonee Wise: Not much further
+than we are today. Yeah, I I,
+
+1002
+01:04:21,240 --> 01:04:27,030
+you know, a couple years ago
+actually at a Ross con, the CEO
+
+1003
+01:04:27,030 --> 01:04:31,320
+of of Ubuntu or canonical got up
+and he said, you know, the the
+
+1004
+01:04:31,320 --> 01:04:34,620
+thing about success is it it
+takes 10 years to have an
+
+1005
+01:04:34,620 --> 01:04:42,030
+overnight success. And, and
+robotics is is a slow moving
+
+1006
+01:04:42,030 --> 01:04:48,780
+train. I think that a lot of
+people probably know fetch and
+
+1007
+01:04:48,780 --> 01:04:53,280
+you know me, don't or may not
+have realized or remembered that
+
+1008
+01:04:53,280 --> 01:04:56,670
+we're seven year old company,
+right and it's taken seven years
+
+1009
+01:04:56,670 --> 01:05:00,690
+to get to this success point and
+we we have done a lot In that
+
+1010
+01:05:00,690 --> 01:05:02,070
+seven years, and we were
+
+1011
+01:05:02,309 --> 01:05:05,129
+Audrow Nash: involved in Willow
+and everything before that,
+
+1012
+01:05:05,459 --> 01:05:08,189
+Melonee Wise: yeah. And, and so
+if you if you look at it from
+
+1013
+01:05:08,189 --> 01:05:11,639
+the time I came out here in
+2007, it's been a long time,
+
+1014
+01:05:11,639 --> 01:05:15,599
+right? And it's not saying that
+incremental advancement won't
+
+1015
+01:05:15,599 --> 01:05:19,289
+happen over these 10 years. I
+just don't see us having like
+
+1016
+01:05:19,289 --> 01:05:24,779
+this big, light switch moment in
+robotics. I mean, everything
+
+1017
+01:05:24,779 --> 01:05:28,439
+will kind of just incrementally
+trickle. But if you were to ask
+
+1018
+01:05:28,439 --> 01:05:32,489
+me about autonomous cars, I
+think we're 20 to 40 years out
+
+1019
+01:05:32,489 --> 01:05:37,349
+on autonomous. Oh, yeah. Like,
+that's all we're saying that
+
+1020
+01:05:37,439 --> 01:05:42,269
+Tesla is going to be driving on
+the BS. I mean, anyone who says
+
+1021
+01:05:42,269 --> 01:05:46,889
+that needs to go like, yeah, go
+do it for a couple years and
+
+1022
+01:05:46,889 --> 01:05:49,169
+figure out how hard the goddamn
+problem is.
+
+1023
+01:05:51,030 --> 01:05:51,840
+Unknown: For sure.
+
+1024
+01:05:52,680 --> 01:05:58,860
+Melonee Wise: Um, and so I, I
+don't know, I mean, I think the
+
+1025
+01:05:58,890 --> 01:06:02,580
+the one thing that I could see
+that could be game changing for
+
+1026
+01:06:02,580 --> 01:06:08,160
+indoor robotics in the next 10
+years, is the new wireless
+
+1027
+01:06:08,160 --> 01:06:11,610
+standards that are coming out
+for localization to kind of
+
+1028
+01:06:11,610 --> 01:06:16,110
+solve this, where's my robot
+problem? I think that could be
+
+1029
+01:06:16,110 --> 01:06:19,260
+really game changing if that
+technology takes off like ultra
+
+1030
+01:06:19,260 --> 01:06:24,720
+wideband location, more of the
+Wi Fi six standard that includes
+
+1031
+01:06:24,750 --> 01:06:30,090
+local local location information
+as part of the Wi Fi like
+
+1032
+01:06:30,120 --> 01:06:34,290
+packet. That's something that
+can be super game changing, I
+
+1033
+01:06:34,290 --> 01:06:39,270
+think could have a wide sweeping
+effect in in robotics because
+
+1034
+01:06:39,780 --> 01:06:43,470
+now really, then the problem
+comes down to how good can your
+
+1035
+01:06:43,470 --> 01:06:48,960
+navigation be? Not Where the
+hell are you all the time? I
+
+1036
+01:06:48,960 --> 01:06:54,360
+think that we'll see good
+improvement in look like a
+
+1037
+01:06:55,050 --> 01:06:59,520
+bipedal locomotion robots? I
+don't think we'll get anything
+
+1038
+01:06:59,520 --> 01:07:05,100
+really practical out there in
+the world. I mean, you worked on
+
+1039
+01:07:05,100 --> 01:07:10,350
+it, you know, how how, how spiky
+it is, let's call it true. I
+
+1040
+01:07:10,350 --> 01:07:14,670
+think that one thing we might
+see, though, from the autonomous
+
+1041
+01:07:14,670 --> 01:07:18,510
+car space, which I'm kind of
+interested in seeing is I think
+
+1042
+01:07:18,510 --> 01:07:26,430
+that that players like neuro and
+those smaller will local
+
+1043
+01:07:26,430 --> 01:07:29,940
+distribution, autonomy vehicles
+that are more like little smart
+
+1044
+01:07:29,940 --> 01:07:35,340
+cars with, with delivery baskets
+in them on the roadways, could
+
+1045
+01:07:35,340 --> 01:07:40,080
+be game changing. But they it's
+not full autonomy. And it's kind
+
+1046
+01:07:40,080 --> 01:07:44,700
+of you know, side streets, not
+highway driving, for delivery of
+
+1047
+01:07:44,700 --> 01:07:47,430
+groceries and things like that.
+I think there's promise there.
+
+1048
+01:07:47,430 --> 01:07:50,100
+And I think that might be
+something we might be able to
+
+1049
+01:07:50,100 --> 01:07:54,090
+deliver on inside of 10 years.
+Because the complexity of the
+
+1050
+01:07:54,090 --> 01:07:57,570
+autonomy is localized. And
+limited.
+
+1051
+01:07:58,320 --> 01:08:01,320
+Audrow Nash: Do you think? Do we
+get further with like human
+
+1052
+01:08:01,320 --> 01:08:05,070
+robot hybrid models where a
+human takes control? If the
+
+1053
+01:08:05,070 --> 01:08:08,550
+robot gets into a situation, it
+doesn't have high confidence
+
+1054
+01:08:08,550 --> 01:08:09,390
+about navigating?
+
+1055
+01:08:09,990 --> 01:08:12,120
+Melonee Wise: Absolutely, we're
+already doing that today. The
+
+1056
+01:08:12,120 --> 01:08:16,140
+question is, is how far can we
+push the safety boundaries of
+
+1057
+01:08:16,140 --> 01:08:21,120
+that? So far, it's not clear
+that we have much of a good
+
+1058
+01:08:21,150 --> 01:08:25,020
+clear idea of what that means.
+But like, if you have an
+
+1059
+01:08:25,050 --> 01:08:28,440
+autonomous view of a truck
+that's being driven remotely by
+
+1060
+01:08:28,440 --> 01:08:30,450
+a person and the Wi Fi cuts out
+it's
+
+1061
+01:08:31,980 --> 01:08:32,700
+Audrow Nash: terrifying.
+
+1062
+01:08:32,879 --> 01:08:37,019
+Melonee Wise: Yeah, terrifying.
+Keywords terrifying. Now, if you
+
+1063
+01:08:37,019 --> 01:08:40,589
+look at fetch and plus one and
+lots of other companies we all
+
+1064
+01:08:40,589 --> 01:08:46,709
+have remote monitoring in some
+way to assist the robots but we
+
+1065
+01:08:46,739 --> 01:08:54,119
+we greatly rely on autonomy it's
+like 99.5% autonomy point 5%
+
+1066
+01:08:54,119 --> 01:08:59,519
+human I don't know where that'll
+if that'll start spectrum wise
+
+1067
+01:08:59,519 --> 01:09:07,829
+going more towards the 90%. But
+it's it's hard to provide return
+
+1068
+01:09:07,829 --> 01:09:10,769
+on investment with a lot of
+human in the loop autonomy
+
+1069
+01:09:10,769 --> 01:09:15,689
+because of just the time
+expensive and time to time to
+
+1070
+01:09:15,689 --> 01:09:17,249
+accomplish it. Like time to
+recover.
+
+1071
+01:09:17,700 --> 01:09:23,550
+Audrow Nash: Oh, I see. Gotcha.
+Okay. So let's see wrapping up.
+
+1072
+01:09:24,510 --> 01:09:28,590
+Do you have any public like
+social media or company blog or
+
+1073
+01:09:28,590 --> 01:09:30,420
+anything that you'd like to
+share with our listeners if
+
+1074
+01:09:30,420 --> 01:09:33,690
+they'd like to learn more or
+Sure,
+
+1075
+01:09:33,750 --> 01:09:36,180
+Melonee Wise: I mean, if people
+want to learn more, I mean the
+
+1076
+01:09:36,180 --> 01:09:39,210
+biggest thing you just need to
+know is how to spell my name.
+
+1077
+01:09:39,570 --> 01:09:45,570
+It's me yellow, and E. I'm very
+unique and very, I've great SEO.
+
+1078
+01:09:47,820 --> 01:09:50,970
+I have a Twitter that's just
+Melanie wise I have. Everything
+
+1079
+01:09:50,970 --> 01:09:53,520
+is just Melanie wise. So if you
+Google, Melanie wise, you'll
+
+1080
+01:09:53,520 --> 01:09:57,660
+find my Instagram, my, my
+Twitter, my LinkedIn, all of
+
+1081
+01:09:57,660 --> 01:10:02,370
+that very easily. I will say
+some some of my channels are
+
+1082
+01:10:02,370 --> 01:10:05,760
+pretty fragmented. Some of them
+are only personal stuff. So if
+
+1083
+01:10:05,760 --> 01:10:08,670
+you go to my Instagram, there's
+no robots there. It really is
+
+1084
+01:10:08,670 --> 01:10:12,450
+just beer in travel. But, you
+know,
+
+1085
+01:10:12,480 --> 01:10:18,030
+Audrow Nash: it's a human to
+Yeah. Okay, is that it for
+
+1086
+01:10:18,030 --> 01:10:21,720
+those? deaf? Okay. Well, I've
+enjoyed speaking with you. Thank
+
+1087
+01:10:21,720 --> 01:10:22,200
+you. It's been
+
+1088
+01:10:22,200 --> 01:10:23,670
+Melonee Wise: great. Thank you
+very much. I appreciate your
+
+1089
+01:10:23,670 --> 01:10:23,970
+time.
+
+1090
+01:10:28,470 --> 01:10:30,390
+Audrow Nash: That's all we have
+for you today. If you enjoyed
+
+1091
+01:10:30,390 --> 01:10:34,110
+this interview, consider
+subscribing to comment on this
+
+1092
+01:10:34,110 --> 01:10:36,960
+interview or to give us general
+feedback, especially while we're
+
+1093
+01:10:36,960 --> 01:10:41,340
+just getting started. Go to
+sense think act calm, or you can
+
+1094
+01:10:41,340 --> 01:10:45,210
+find us on the Ross discourse.
+We'll be back in two weeks time.
+
+1095
+01:10:45,390 --> 01:10:46,170
+Goodbye, everyone.
+

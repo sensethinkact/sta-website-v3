@@ -1,0 +1,5388 @@
+1
+00:00:02,730 --> 00:00:05,010
+Audrow Nash: Hi, everyone,
+welcome to the Sense Think Act
+
+2
+00:00:05,010 --> 00:00:09,180
+Podcast. I'm the host Audrow
+Nash. And in today's episode I
+
+3
+00:00:09,180 --> 00:00:13,590
+interview Ryan Gariepy, Chief
+Technology Officer of Clearpath
+
+4
+00:00:13,590 --> 00:00:17,340
+robotics. Clearpath robotics
+makes several mobile robotics
+
+5
+00:00:17,340 --> 00:00:21,390
+platforms that are used by
+researchers and corporations. We
+
+6
+00:00:21,390 --> 00:00:25,410
+talk about the origin of
+Clearpath robotics, how they
+
+7
+00:00:25,410 --> 00:00:30,720
+have focused on making extremely
+robust robots, how Clearpath
+
+8
+00:00:30,720 --> 00:00:37,890
+uses ROS 1 and ROS 2, and on the
+future of robotics, I thought it
+
+9
+00:00:37,890 --> 00:00:40,830
+was very interesting to see how
+clear path as a company has
+
+10
+00:00:40,830 --> 00:00:45,600
+matured with expectations and
+the robotics industry. And I
+
+11
+00:00:45,600 --> 00:00:49,860
+really enjoyed hearing what Ryan
+thinks will be the future of
+
+12
+00:00:49,860 --> 00:00:54,540
+robotics in the next two to five
+years. As always, big thank you
+
+13
+00:00:54,570 --> 00:00:57,840
+to our founding sponsor, Open
+Robotics, and I hope you enjoy
+
+14
+00:00:57,840 --> 00:00:58,530
+the episode.
+
+15
+00:01:00,480 --> 00:01:04,650
+So to start, I would love to
+have you just introduce yourself
+
+16
+00:01:05,070 --> 00:01:07,290
+and tell us a bit about
+ClearPath, too.
+
+17
+00:01:08,760 --> 00:01:12,090
+Ryan Gariepy: Of course, the My
+name is Ryan Gariepy. I'm the
+
+18
+00:01:12,120 --> 00:01:16,530
+CTO and co founder of Clearpath
+robotics. And I have been stuck
+
+19
+00:01:16,560 --> 00:01:19,290
+in my office for about a year
+and a half and counting.
+
+20
+00:01:22,680 --> 00:01:25,590
+Audrow Nash: All right, and so
+tell me a bit more about
+
+21
+00:01:25,590 --> 00:01:29,820
+Clearpath. What's the kind of
+mission that you guys are going
+
+22
+00:01:29,820 --> 00:01:32,880
+for? And how long has the
+company been around?
+
+23
+00:01:34,470 --> 00:01:38,940
+Clearpath has been around for
+just over 12 years, probably 12
+
+24
+00:01:38,940 --> 00:01:45,420
+years, 12 years, one month and
+21 days, I believe, as of today.
+
+25
+00:01:45,000 --> 00:01:46,980
+Twenty one days!
+
+26
+00:01:47,640 --> 00:01:53,550
+Something like that, the we
+started, we started as the
+
+27
+00:01:53,550 --> 00:01:58,260
+company with an intent to be the
+company to go to when you had a
+
+28
+00:01:58,290 --> 00:02:03,330
+robotics problem, and you didn't
+know where to go to solve it, or
+
+29
+00:02:03,330 --> 00:02:08,010
+you had ideas on a problem that
+you thought you could solve with
+
+30
+00:02:08,010 --> 00:02:10,110
+robots, but you weren't quite
+sure you weren't, you didn't
+
+31
+00:02:10,110 --> 00:02:14,310
+know where to go. And it wasn't
+necessarily a consultancy, it
+
+32
+00:02:14,310 --> 00:02:17,010
+was about building some of these
+products, these baseline
+
+33
+00:02:17,010 --> 00:02:19,590
+products and hardware and
+software because it didn't exist
+
+34
+00:02:19,590 --> 00:02:24,780
+at the time. And that's
+certainly been the case, we have
+
+35
+00:02:24,840 --> 00:02:28,890
+seen the robotics market grow
+beyond our wildest dreams. And
+
+36
+00:02:28,950 --> 00:02:33,030
+six years ago, we also started a
+sister company called auto
+
+37
+00:02:33,030 --> 00:02:38,010
+motors, which is a more
+vertically integrated supplier
+
+38
+00:02:38,010 --> 00:02:41,820
+of production grade autonomous
+materials, but autonomous mobile
+
+39
+00:02:41,820 --> 00:02:44,760
+robots to the materials handling
+industry. And that's also been
+
+40
+00:02:44,760 --> 00:02:48,090
+exciting. we've, we've actually
+driven, you know, millions and
+
+41
+00:02:48,090 --> 00:02:51,720
+millions of hours unsupervised,
+fully autonomous on that side of
+
+42
+00:02:51,720 --> 00:02:55,410
+the business, which I'm sure for
+all of the roboticists listening
+
+43
+00:02:55,410 --> 00:02:58,740
+out there, they they appreciate
+the challenges inherent in that.
+
+44
+00:03:00,960 --> 00:03:06,210
+Okay, so you started ClearPath
+wanting it to be for solving
+
+45
+00:03:06,210 --> 00:03:11,430
+general robotics problems. How
+do you do approach like that?
+
+46
+00:03:11,430 --> 00:03:13,440
+How did you approach making it
+so you could solve general
+
+47
+00:03:13,440 --> 00:03:14,490
+robotics problems?
+
+48
+00:03:16,530 --> 00:03:20,580
+Well, when we were started, or
+when we, when we got started,
+
+49
+00:03:20,580 --> 00:03:26,040
+there was no standard way to
+build a robot or no standard way
+
+50
+00:03:26,040 --> 00:03:29,490
+to build software, anyone doing
+research, whether it's
+
+51
+00:03:29,520 --> 00:03:33,510
+theoretical, very academic
+research, or applications level
+
+52
+00:03:33,510 --> 00:03:37,140
+Industrial Research, or
+government research, you were
+
+53
+00:03:37,140 --> 00:03:40,230
+always building everything from
+scratch, the hardware,
+
+54
+00:03:40,230 --> 00:03:44,490
+obviously, but also all of the
+software, right there, there was
+
+55
+00:03:44,490 --> 00:03:47,520
+open source robotic software,
+but it wasn't really well used.
+
+56
+00:03:48,210 --> 00:03:52,020
+And we want it to be that
+company, where you could go to
+
+57
+00:03:52,020 --> 00:03:55,050
+and describe your problem,
+whether it's the research, the
+
+58
+00:03:55,050 --> 00:03:57,900
+research problems, or the
+application you were trying to
+
+59
+00:03:57,900 --> 00:04:02,280
+investigate. And that we would
+help you move forward without
+
+60
+00:04:02,280 --> 00:04:05,760
+having to build your own
+expertise in robotics from the
+
+61
+00:04:05,760 --> 00:04:09,060
+ground up, before you even
+started. You want, you know,
+
+62
+00:04:09,060 --> 00:04:12,840
+researchers want to research or
+entrepreneurs want to want to
+
+63
+00:04:12,840 --> 00:04:16,170
+test ideas. They don't want to
+be, you know, they don't want to
+
+64
+00:04:16,170 --> 00:04:18,510
+be caught up in a year of
+learning how to build a robot
+
+65
+00:04:18,510 --> 00:04:21,450
+before they even get started on
+what their idea is. It's
+
+66
+00:04:21,990 --> 00:04:24,630
+demoralizing and frustrating.
+Hmm.
+
+67
+00:04:25,440 --> 00:04:30,360
+And so Clearpath you guys have a
+bunch of general platforms
+
+68
+00:04:30,600 --> 00:04:33,120
+effectively that people can
+build off of for their different
+
+69
+00:04:33,120 --> 00:04:36,420
+applications, like on different
+surfaces and things.
+
+70
+00:04:37,620 --> 00:04:42,000
+Yeah, we started we started in
+the OCR space. And that was
+
+71
+00:04:42,000 --> 00:04:48,180
+because we'd realized and this
+this was back in 2008 2009. We
+
+72
+00:04:48,210 --> 00:04:54,180
+realized that outdoors was where
+the really valuable use cases
+
+73
+00:04:54,180 --> 00:04:58,350
+were going to start appearing.
+Were the new valuable use cases
+
+74
+00:04:58,350 --> 00:05:00,660
+we're going to start appearing
+at least That's where the
+
+75
+00:05:00,660 --> 00:05:05,910
+research was being done. And on
+top of that, on top of that, the
+
+76
+00:05:07,410 --> 00:05:11,160
+on top of that, there was a lot
+of recent progress around things
+
+77
+00:05:11,160 --> 00:05:14,250
+like sensors. For example, when
+I started my undergraduate
+
+78
+00:05:14,250 --> 00:05:21,240
+degree it cost probably $3,000
+to buy a an IMU, which was,
+
+79
+00:05:21,270 --> 00:05:23,400
+which was half decent, which
+could tell you basically which
+
+80
+00:05:23,400 --> 00:05:26,520
+way was up. And then through the
+end of my, under the end of my
+
+81
+00:05:26,520 --> 00:05:30,930
+undergraduate, it was, you know,
+30 bucks. Now wide, ours were
+
+82
+00:05:30,930 --> 00:05:33,330
+still blindingly expensive at
+the time, but we were starting
+
+83
+00:05:33,330 --> 00:05:38,460
+to see those prices drop we, for
+example, the the U r, g o four,
+
+84
+00:05:38,460 --> 00:05:42,570
+which was the first really
+affordable navigation grade
+
+85
+00:05:42,570 --> 00:05:45,990
+LIDAR, you know, small one about
+that big that that appeared
+
+86
+00:05:45,990 --> 00:05:48,240
+through the end of my, if I
+recall, correctly through the,
+
+87
+00:05:48,510 --> 00:05:50,370
+through the end of my
+undergraduate time. So we're
+
+88
+00:05:50,370 --> 00:05:54,840
+starting to see this significant
+drop in sensors as well as a
+
+89
+00:05:54,840 --> 00:05:58,950
+significant increase in the
+power capabilities of the
+
+90
+00:05:58,950 --> 00:06:02,550
+robots. So now off road was all
+of a sudden possible, and it was
+
+91
+00:06:02,550 --> 00:06:04,320
+this brand new space and
+research
+
+92
+00:06:04,560 --> 00:06:08,520
+just for scale. How much do you
+think you could get a comparable
+
+93
+00:06:08,520 --> 00:06:14,100
+IMU or Inertial Measurement
+Unit? For today? Like the same
+
+94
+00:06:14,100 --> 00:06:17,220
+quality? Would it be like, my
+guess would be like 10 bucks or
+
+95
+00:06:17,220 --> 00:06:18,750
+something? Or what do you think
+it would be?
+
+96
+00:06:19,230 --> 00:06:22,020
+On the volume Far, far, far
+cheaper, for cheaper, the the
+
+97
+00:06:22,020 --> 00:06:25,230
+most expensive part these days
+would be the engineering effort
+
+98
+00:06:25,230 --> 00:06:29,850
+to stick it on the PCB. That's
+crazy, like between the IMU
+
+99
+00:06:29,880 --> 00:06:32,700
+between the IMU themselves and
+all of the filtering software
+
+100
+00:06:32,700 --> 00:06:34,710
+that now exists, and the
+processing software that now
+
+101
+00:06:34,710 --> 00:06:38,070
+exists, like, your cell phone is
+probably better than those first
+
+102
+00:06:38,070 --> 00:06:39,240
+time use we were using.
+
+103
+00:06:39,840 --> 00:06:45,000
+Yeah, that's absolutely crazy.
+And then so outdoor, how did you
+
+104
+00:06:45,000 --> 00:06:49,230
+identify that most? Or that
+there was a lot of potential
+
+105
+00:06:49,230 --> 00:06:54,660
+interesting things for outdoor
+robotics applications? Like what
+
+106
+00:06:54,660 --> 00:06:55,200
+were you looking at?
+
+107
+00:06:56,370 --> 00:07:00,120
+Yeah, if we start from the
+research space, it was because
+
+108
+00:07:00,390 --> 00:07:04,860
+there just weren't any research
+platforms out there. Or just
+
+109
+00:07:04,890 --> 00:07:07,710
+there weren't many there were
+very very few research platforms
+
+110
+00:07:07,770 --> 00:07:11,190
+out there, which could handle a
+reasonable outdoor terrain.
+
+111
+00:07:11,550 --> 00:07:14,700
+There was a lot of indoor
+platforms like you know, there
+
+112
+00:07:14,700 --> 00:07:17,760
+was a bunch of still a bunch of
+old like, our wi indoor
+
+113
+00:07:17,760 --> 00:07:23,910
+platforms around there was is
+that is that a company? Or was
+
+114
+00:07:23,940 --> 00:07:29,490
+Yeah, that was real real
+interface. Okay. And you had you
+
+115
+00:07:29,490 --> 00:07:32,400
+know, the at the time it was
+mobile robots then became adept
+
+116
+00:07:32,400 --> 00:07:35,640
+mobile robots and is now Homer
+on but you had there, the
+
+117
+00:07:35,640 --> 00:07:41,190
+Pioneer three, three, dx was a
+very, very much a workhorse. You
+
+118
+00:07:41,190 --> 00:07:44,340
+had people who are hacking
+roombas around and the first
+
+119
+00:07:44,340 --> 00:07:47,610
+create was being used, but these
+were all indoor platforms. And
+
+120
+00:07:47,640 --> 00:07:50,280
+the researchers there were
+obvious there obviously, there
+
+121
+00:07:50,280 --> 00:07:52,740
+was Outdoor Research happening,
+right, like the CMU robotics
+
+122
+00:07:52,740 --> 00:07:55,500
+Institute was, you know, had
+been doing outdoor robotics
+
+123
+00:07:55,560 --> 00:08:00,870
+research for for decades. But it
+wasn't a very common thing. And
+
+124
+00:08:01,410 --> 00:08:03,810
+we that's where we said it,
+that's where we're gonna get
+
+125
+00:08:03,810 --> 00:08:05,610
+started. That's we're gonna make
+our mark by building these
+
+126
+00:08:05,610 --> 00:08:08,760
+really solid robots that could
+unlock entirely brand new fields
+
+127
+00:08:08,790 --> 00:08:11,490
+of field robotics work. That's
+really where we got started.
+
+128
+00:08:11,850 --> 00:08:14,910
+It's almost ironic that auto was
+that when we started auto, it's
+
+129
+00:08:14,910 --> 00:08:17,520
+almost entirely focused on
+indoors. But that's that's
+
+130
+00:08:17,520 --> 00:08:18,180
+another story.
+
+131
+00:08:19,800 --> 00:08:23,850
+Yeah, that is funny. Okay, so
+you were working on these
+
+132
+00:08:23,880 --> 00:08:26,940
+platforms? And just Can you give
+me a sense of what they look
+
+133
+00:08:26,940 --> 00:08:30,180
+like overall, like a lot of the
+platforms that are used for
+
+134
+00:08:30,180 --> 00:08:32,730
+outdoor use? What do they look
+like?
+
+135
+00:08:34,140 --> 00:08:36,840
+You know, generally most of the
+platforms we have their their
+
+136
+00:08:36,840 --> 00:08:41,910
+black and yellow and they have
+four wheels. Yeah. And it's one
+
+137
+00:08:41,910 --> 00:08:43,770
+of those and research is
+probably one of ours.
+
+138
+00:08:44,250 --> 00:08:48,480
+Yeah. And they so they mostly
+they it's like a big flat spot
+
+139
+00:08:48,510 --> 00:08:51,030
+on the top where you can attach
+different things that you might
+
+140
+00:08:51,030 --> 00:08:53,550
+more cameras more, anything
+else.
+
+141
+00:08:54,540 --> 00:08:57,570
+So yeah, that was generally what
+we wanted to build. I mean, we
+
+142
+00:08:57,570 --> 00:09:01,230
+knew that the software space in
+robotics wasn't quite ready for
+
+143
+00:09:01,230 --> 00:09:03,630
+the software platform yet, but
+we knew the world was ready for
+
+144
+00:09:03,630 --> 00:09:07,380
+physical platforms and we took
+that somewhat literally. So
+
+145
+00:09:07,410 --> 00:09:08,340
+building some big
+
+146
+00:09:09,240 --> 00:09:10,800
+software platform, what do you
+mean,
+
+147
+00:09:11,460 --> 00:09:14,310
+the worldwide software platform
+I would mean something you know,
+
+148
+00:09:14,310 --> 00:09:17,850
+like the iPhone where you have,
+you can write software, right
+
+149
+00:09:17,850 --> 00:09:20,850
+you don't need to change any
+hardware. We're now at the port
+
+150
+00:09:20,850 --> 00:09:24,330
+Now further along that curve.
+But yeah, we we tried to make it
+
+151
+00:09:24,330 --> 00:09:29,010
+really easy for us to integrate
+things we tried to make it easy
+
+152
+00:09:29,010 --> 00:09:32,010
+for our customers to integrate
+things the sort of robots that
+
+153
+00:09:32,010 --> 00:09:34,560
+if you decided that you're in
+the field and something needed
+
+154
+00:09:34,560 --> 00:09:37,290
+to work and you could take a
+hammer to it, you could take a
+
+155
+00:09:37,290 --> 00:09:40,980
+drill to it that it would work
+you can you know, pack it
+
+156
+00:09:40,980 --> 00:09:44,130
+together and get it out do your
+research and get it back in the
+
+157
+00:09:44,130 --> 00:09:47,610
+field we to the point where we
+would I don't know if we still
+
+158
+00:09:47,610 --> 00:09:51,300
+sell these but we would sell
+replacement top plates only for
+
+159
+00:09:51,300 --> 00:09:55,080
+when someone just wanted to, you
+know drill and tap the top plate
+
+160
+00:09:55,410 --> 00:09:59,310
+for some research gear and then
+later they realize either they
+
+161
+00:09:59,310 --> 00:10:01,860
+made a mistake. They really like
+it. And you can take the top
+
+162
+00:10:01,860 --> 00:10:04,050
+plate with all your sensors, you
+could put it on the shelf and
+
+163
+00:10:04,050 --> 00:10:06,990
+you could you could share the
+asset around right that's that's
+
+164
+00:10:07,020 --> 00:10:11,190
+that was actually a very well,
+it's still a really common thing
+
+165
+00:10:11,190 --> 00:10:13,980
+now that you have self driving
+vehicles where you would get a,
+
+166
+00:10:14,340 --> 00:10:18,960
+you have a dozen researchers but
+only one physical robot, right?
+
+167
+00:10:18,960 --> 00:10:24,570
+Because you could only afford
+one, one sensor setup. Now
+
+168
+00:10:24,600 --> 00:10:27,750
+there's research labs where you
+can have things like, you'll
+
+169
+00:10:27,750 --> 00:10:30,930
+have things ranging from, you
+know, the turtlebot, three, all
+
+170
+00:10:30,930 --> 00:10:34,140
+the way up to like our, our war
+hog and moose platforms, for
+
+171
+00:10:34,140 --> 00:10:37,650
+example, which are on a larger
+size. But it was it was very
+
+172
+00:10:37,650 --> 00:10:41,850
+much like, Well, you know, at
+the time, you had the PRT robots
+
+173
+00:10:42,000 --> 00:10:44,730
+in the field, and there you have
+an entire research lab, which
+
+174
+00:10:44,730 --> 00:10:48,120
+was around those PR twos. But
+even for the labs, which
+
+175
+00:10:48,120 --> 00:10:51,210
+couldn't afford that, they were
+still bought, they would buy
+
+176
+00:10:51,210 --> 00:10:53,850
+like our Husky platform, which
+was our first and actually one
+
+177
+00:10:53,850 --> 00:10:58,170
+of the most iconic platforms we
+make. And you'd have to share
+
+178
+00:10:58,170 --> 00:11:00,540
+it, right you have this this
+little robot, it's got a bunch
+
+179
+00:11:00,540 --> 00:11:02,760
+of sensors, you need to share it
+among all your students.
+
+180
+00:11:04,470 --> 00:11:08,040
+That is nice. It's clever to
+just replace the top plate. That
+
+181
+00:11:08,040 --> 00:11:12,300
+seems like a good solution. So
+let's see, are there any
+
+182
+00:11:12,750 --> 00:11:16,620
+particularly interesting Apple,
+I'm sure that people are using
+
+183
+00:11:16,620 --> 00:11:18,870
+your platforms for tons of
+things, but are there any that
+
+184
+00:11:18,870 --> 00:11:23,280
+were like, particularly
+interesting or surprising uses?
+
+185
+00:11:24,870 --> 00:11:29,190
+Well, if I go outside the if I
+if I ignore some of the
+
+186
+00:11:29,190 --> 00:11:36,120
+confidential stuff, there's the
+one which I saw most recently,
+
+187
+00:11:36,150 --> 00:11:39,300
+which, which surprised me and I
+didn't I didn't actually know
+
+188
+00:11:39,300 --> 00:11:45,360
+about this one until I saw it in
+the news, but was a college
+
+189
+00:11:45,390 --> 00:11:50,520
+which was using the boxer which
+is a industrial autonomous
+
+190
+00:11:50,760 --> 00:11:53,460
+mobile robot that Clearpath
+sells, which is actually a
+
+191
+00:11:53,460 --> 00:11:59,400
+variant of the auto Amr. So it's
+a boat, 100 kilos, 100 kilos
+
+192
+00:11:59,400 --> 00:12:03,570
+built, like it can survive a
+factory because it can, and it
+
+193
+00:12:03,570 --> 00:12:07,350
+was used, it was being used for
+robotics or applications
+
+194
+00:12:07,350 --> 00:12:12,420
+research at St. Clair college, I
+believe. By recently, obviously,
+
+195
+00:12:12,420 --> 00:12:15,660
+people have needed to do all
+sorts of, you know, working
+
+196
+00:12:15,660 --> 00:12:18,870
+remotely schooling remotely and
+what have you. And they rigged
+
+197
+00:12:18,870 --> 00:12:24,600
+it up as a, they may rigged it
+up as a moving clothes, horse or
+
+198
+00:12:24,600 --> 00:12:27,840
+clothes, or like clothing model
+for lack of a better term, where
+
+199
+00:12:27,840 --> 00:12:31,470
+they had a fashion, they have a
+fashion program at the school.
+
+200
+00:12:32,100 --> 00:12:36,060
+And it was very important for
+them to see to see how the
+
+201
+00:12:36,060 --> 00:12:40,290
+clothes would move. Like how
+like how they would drape when
+
+202
+00:12:40,290 --> 00:12:44,790
+they would move and they get the
+and it's like you can't you're
+
+203
+00:12:44,820 --> 00:12:47,820
+you're doing all this judging
+and exhibiting remotely and you
+
+204
+00:12:47,820 --> 00:12:51,540
+can't you're not just gonna set
+them all up and mannequins and
+
+205
+00:12:51,540 --> 00:12:53,760
+leave it like that and have the
+judges look at it so they would
+
+206
+00:12:53,760 --> 00:12:58,470
+actually swap out these I can't
+exactly remember how they how
+
+207
+00:12:58,470 --> 00:13:01,380
+they held the clothes on top the
+robotic It was a mannequin or
+
+208
+00:13:01,770 --> 00:13:05,190
+mannequin or something else. But
+they would they would swap them
+
+209
+00:13:05,190 --> 00:13:08,040
+out and and run the fashion show
+like that. I thought that was
+
+210
+00:13:08,040 --> 00:13:10,410
+just you know, that was really
+really interesting. I mean,
+
+211
+00:13:10,410 --> 00:13:13,110
+everyone hears about everyone.
+Here's what the disinfection
+
+212
+00:13:13,110 --> 00:13:15,510
+robots that people built in the
+last year like I don't know how
+
+213
+00:13:15,510 --> 00:13:17,580
+many have been built on our
+platform, but everyone hears
+
+214
+00:13:17,580 --> 00:13:20,400
+about those but you never hear
+about these. These little like
+
+215
+00:13:20,400 --> 00:13:23,100
+that. Yes, the clothes modeling
+robot.
+
+216
+00:13:23,490 --> 00:13:28,860
+That's hilarious. What a great
+youth. Oh, yeah. Okay, and then
+
+217
+00:13:29,190 --> 00:13:32,130
+one thing that's been very
+interesting to me from your
+
+218
+00:13:32,130 --> 00:13:36,180
+previous talks and things, your
+robots they're designed to be
+
+219
+00:13:36,180 --> 00:13:40,230
+super reliable, like go forever.
+Can you talk a bit about this
+
+220
+00:13:42,180 --> 00:13:46,470
+from the from the beginning, we
+would, we would joke with our,
+
+221
+00:13:46,500 --> 00:13:50,820
+with our prospects that that the
+reliability standard standard
+
+222
+00:13:50,820 --> 00:13:55,650
+for our robots is is outlast the
+researchers. That was the that
+
+223
+00:13:55,650 --> 00:13:58,800
+was the idea. Even at the clear
+path, even at the Clearpath
+
+224
+00:13:58,800 --> 00:14:02,580
+robotics side of things where
+the standards are not as high as
+
+225
+00:14:02,580 --> 00:14:07,380
+on the on the industrial front.
+But that was the goal it was you
+
+226
+00:14:07,380 --> 00:14:11,730
+should never have to you should
+never have to cut short your
+
+227
+00:14:11,760 --> 00:14:16,200
+field robotics research because
+of frankly, bad weather. And I
+
+228
+00:14:16,200 --> 00:14:20,250
+think that comes from that comes
+from us all us all being
+
+229
+00:14:20,280 --> 00:14:23,550
+Canadian are all the early the
+founders and the early employees
+
+230
+00:14:23,550 --> 00:14:26,430
+all being Canadian, is that when
+you're out there testing your
+
+231
+00:14:26,430 --> 00:14:30,990
+robots like one half of the
+effective school year the winter
+
+232
+00:14:30,990 --> 00:14:35,280
+term, it's sort of slow and when
+the snow leaves it gets replaced
+
+233
+00:14:35,280 --> 00:14:39,450
+by mud. So we really wanted to
+not get in the way and not have
+
+234
+00:14:39,450 --> 00:14:43,260
+to worry about not have to worry
+about the snow or not have to
+
+235
+00:14:43,260 --> 00:14:45,060
+worry about the rain. So that
+was that was our initial
+
+236
+00:14:45,060 --> 00:14:48,990
+standard. And then we've kept
+pushing from there and this was
+
+237
+00:14:48,990 --> 00:14:54,030
+a very interesting time for
+robotics because the this we
+
+238
+00:14:54,030 --> 00:14:58,290
+were able to mature along with
+the market expectations. These
+
+239
+00:14:58,290 --> 00:15:01,740
+days if you're starting robotics
+calm It's just got to work.
+
+240
+00:15:02,010 --> 00:15:05,670
+Like, you know, you're compared
+against, you know, robots like,
+
+241
+00:15:05,940 --> 00:15:09,480
+like ours are fetches as they
+are now, you're not compared
+
+242
+00:15:09,480 --> 00:15:14,670
+against the robots that we had
+10 years ago. But that's that's
+
+243
+00:15:14,670 --> 00:15:15,630
+what the market does.
+
+244
+00:15:16,440 --> 00:15:23,250
+Yeah, it matures. That is
+interesting. So it's really
+
+245
+00:15:23,250 --> 00:15:28,800
+changed as the market has grown.
+And people expect a product now,
+
+246
+00:15:28,950 --> 00:15:32,400
+what do you guys do differently,
+to make it so that your robots
+
+247
+00:15:32,400 --> 00:15:35,490
+are even more reliable than they
+were in the past, which was
+
+248
+00:15:35,490 --> 00:15:36,600
+still super reliable.
+
+249
+00:15:38,040 --> 00:15:41,010
+The thing that's really helped
+is the fact that the rest of the
+
+250
+00:15:41,010 --> 00:15:46,410
+world has now caught on to the
+potential power of robotics. So
+
+251
+00:15:46,410 --> 00:15:51,870
+it means that it's easier for us
+to build partnerships with other
+
+252
+00:15:51,870 --> 00:15:54,690
+companies who have a lot of some
+of the who have some of this
+
+253
+00:15:54,690 --> 00:15:58,440
+fundamental fundamental
+expertise, like sensors,
+
+254
+00:15:58,470 --> 00:16:02,190
+sensors, or actuators, or
+simulation systems. I think
+
+255
+00:16:02,190 --> 00:16:05,670
+that's been that's been really
+helpful. So even a lot of the
+
+256
+00:16:05,670 --> 00:16:09,000
+larger robots, for example, like
+Clearpath, robotics cells are
+
+257
+00:16:09,000 --> 00:16:12,330
+built in partnership with
+vehicle suppliers. So where the
+
+258
+00:16:12,330 --> 00:16:15,150
+robotics experts, but we
+actually work with other vehicle
+
+259
+00:16:15,150 --> 00:16:20,190
+experts, or, or even more
+recently, more recently, it was
+
+260
+00:16:20,610 --> 00:16:23,010
+very, you know, well covered in
+the robotics media that we did
+
+261
+00:16:23,010 --> 00:16:26,490
+a, we're doing a we have rather
+a partnership with, with Boston
+
+262
+00:16:26,490 --> 00:16:30,360
+Dynamics for the research space.
+And that just makes sense,
+
+263
+00:16:30,360 --> 00:16:33,780
+right? Boston Dynamics is, is
+one of the leading if not the
+
+264
+00:16:33,780 --> 00:16:39,090
+leading manufacturer of legged
+robots in the world. And we're
+
+265
+00:16:39,090 --> 00:16:42,630
+the world's leading integrator
+and solver of these problems. So
+
+266
+00:16:42,630 --> 00:16:47,340
+it was it just made sense that,
+that our clients in the world
+
+267
+00:16:47,340 --> 00:16:51,930
+needed more legged robots. And
+now that that's possible. And
+
+268
+00:16:52,020 --> 00:16:54,270
+why would we try to do that
+ourselves? Right, work with
+
+269
+00:16:54,570 --> 00:16:55,560
+those who've already picked it
+
+270
+00:16:55,560 --> 00:17:01,140
+up? Yeah. Interesting. So going
+back to working with the vehicle
+
+271
+00:17:01,350 --> 00:17:05,730
+companies, so do take advantage
+of their existing supply chain
+
+272
+00:17:05,730 --> 00:17:10,230
+and their existing processes? Or
+reps, how does that work? Ah,
+
+273
+00:17:10,470 --> 00:17:10,770
+yeah,
+
+274
+00:17:10,800 --> 00:17:13,980
+well, ya know, they go hand in
+some cases, the vehicle in some
+
+275
+00:17:13,980 --> 00:17:18,060
+cases, the vehicle shows up,
+like at our door, where it's
+
+276
+00:17:18,060 --> 00:17:21,060
+been a repurposed vehicle where
+they've remanufactured parts of
+
+277
+00:17:21,060 --> 00:17:27,630
+it, and then we will take it and
+turn it from, you know, a, what
+
+278
+00:17:27,630 --> 00:17:31,290
+might be described as a giant
+remote control car into this ROS
+
+279
+00:17:31,290 --> 00:17:35,820
+enabled fully integrated
+research platform, you know,
+
+280
+00:17:35,820 --> 00:17:40,710
+upgraded power systems, upgraded
+power systems, onboard compute
+
+281
+00:17:40,920 --> 00:17:44,160
+all of the sensor options that
+we might have all of the
+
+282
+00:17:44,160 --> 00:17:47,460
+customization options that we've
+got. So just like early days,
+
+283
+00:17:47,460 --> 00:17:51,420
+you could call us up, you know,
+10 years ago and say that my
+
+284
+00:17:51,420 --> 00:17:54,510
+research, hypothetically, my
+research is in, you know, mobile
+
+285
+00:17:54,510 --> 00:17:56,880
+manipulation and unknown
+environments. And we would turn
+
+286
+00:17:56,880 --> 00:18:00,960
+around and say, Okay, well,
+maybe if your budget is x, then
+
+287
+00:18:01,380 --> 00:18:04,530
+you can't do the 3d LIDAR. But
+you can get an arm like this,
+
+288
+00:18:04,530 --> 00:18:08,670
+and you can get a camera. We've
+got that same, we've got that
+
+289
+00:18:08,670 --> 00:18:16,620
+same. That same political
+experience for for everything
+
+290
+00:18:16,620 --> 00:18:19,770
+else we do. It's really about
+providing like I said, this
+
+291
+00:18:20,430 --> 00:18:22,770
+conference, one of the last
+conferences, I was actually able
+
+292
+00:18:22,770 --> 00:18:26,730
+to speak out in person that are
+we do have very reliable robots.
+
+293
+00:18:26,730 --> 00:18:31,050
+But in the end, what we, what we
+sell, is, is the ability to
+
+294
+00:18:31,050 --> 00:18:33,000
+speed up the robotics
+development cycle.
+
+295
+00:18:33,180 --> 00:18:40,020
+Hmm, definitely not true. And
+just out of curiosity, where are
+
+296
+00:18:40,020 --> 00:18:42,660
+most of the manufacturers that
+actually build the robots you
+
+297
+00:18:42,660 --> 00:18:43,260
+guys make?
+
+298
+00:18:44,880 --> 00:18:48,090
+There's a lot we work with, in
+Well, in Ontario, Ontario has a
+
+299
+00:18:48,090 --> 00:18:52,170
+lot of vehicle manufacturers,
+we've been we've been broadening
+
+300
+00:18:52,170 --> 00:18:56,940
+that. So traditionally, we've
+been very heavy on still
+
+301
+00:18:56,940 --> 00:19:01,740
+building our own vehicles. And
+where we've really got the
+
+302
+00:19:01,740 --> 00:19:05,100
+broadest reach will be in the
+manipulation and setting spaces
+
+303
+00:19:05,100 --> 00:19:08,490
+because those markets have been
+more mature for a while. In
+
+304
+00:19:08,490 --> 00:19:12,450
+those in those you can really,
+you can imagine the countries in
+
+305
+00:19:12,450 --> 00:19:15,120
+particular like you know,
+Germany and Japan are the two
+
+306
+00:19:15,450 --> 00:19:18,690
+probably largest companies on
+those fronts, but that's
+
+307
+00:19:18,720 --> 00:19:23,970
+probably not a surprise to
+anyone. America, Denmark, I
+
+308
+00:19:23,970 --> 00:19:28,800
+mean, you are we were we had we
+worked with universal robots on
+
+309
+00:19:28,800 --> 00:19:33,630
+a custom skew for ourselves and
+our clients. I don't know how
+
+310
+00:19:33,870 --> 00:19:37,920
+you go, this was what sorry,
+stock keeping unit. It's a sort
+
+311
+00:19:37,920 --> 00:19:41,520
+of custom configuration of their
+arm. So you're typically when
+
+312
+00:19:41,520 --> 00:19:45,630
+you bought a universal robot
+arm, you needed to and you want
+
+313
+00:19:45,630 --> 00:19:48,990
+it to do research with it. The
+Universal robot arm would have
+
+314
+00:19:48,990 --> 00:19:52,200
+you'd have the arm and then you
+would have a control box which
+
+315
+00:19:52,200 --> 00:19:55,620
+is a giant control box meant for
+industrial relatively decent
+
+316
+00:19:55,620 --> 00:19:58,920
+size meant for industrial floors
+and it had three boards in it.
+
+317
+00:19:58,920 --> 00:20:03,720
+It had an A power supply board,
+which was effectively a, you
+
+318
+00:20:03,720 --> 00:20:09,090
+know, transformer and step down,
+or interactive rectifier and
+
+319
+00:20:09,090 --> 00:20:14,100
+step down transformer. And so
+getting the power, yeah, power
+
+320
+00:20:14,100 --> 00:20:17,640
+regulator, yeah, then you'd have
+a Safety Safety Board and a
+
+321
+00:20:17,640 --> 00:20:22,260
+controller board and have that
+you have this giant enclosure,
+
+322
+00:20:22,530 --> 00:20:26,640
+and a big power supply. But it
+turns out that most of our large
+
+323
+00:20:26,640 --> 00:20:30,930
+vehicles, supply the power
+already supply the power at the
+
+324
+00:20:30,930 --> 00:20:35,040
+spec needed, because they have a
+big DC, they have a big DC buses
+
+325
+00:20:35,100 --> 00:20:38,790
+on them for power. So if you
+wanted to, if you wanted to
+
+326
+00:20:38,820 --> 00:20:43,650
+integrate a mobile or AI, your
+robot onto a mobile robot, you
+
+327
+00:20:43,650 --> 00:20:49,950
+would have to put in a an
+inverter like you would you
+
+328
+00:20:49,950 --> 00:20:55,200
+would need an inverter to go up
+to AC, and then you would end up
+
+329
+00:20:55,230 --> 00:20:59,040
+what would end up happening
+inside this black box, which was
+
+330
+00:20:59,040 --> 00:21:03,600
+also kind of large was that then
+then it would end up losing more
+
+331
+00:21:03,600 --> 00:21:05,730
+power, because you're just
+stepping it all the way down to
+
+332
+00:21:05,730 --> 00:21:08,010
+DC. So we had a race
+
+333
+00:21:09,660 --> 00:21:11,730
+to AC and then back to DC
+
+334
+00:21:11,760 --> 00:21:14,940
+and then back to DC, right,
+which is generally a waste. Yep.
+
+335
+00:21:15,090 --> 00:21:19,470
+So it's wasted amount of wasted
+space. And, and just extra cost.
+
+336
+00:21:19,470 --> 00:21:23,190
+So we came to an agreement with
+them where we would, we would go
+
+337
+00:21:23,190 --> 00:21:25,890
+by the arms and by the two
+boards, and then we would mount
+
+338
+00:21:25,890 --> 00:21:30,330
+them ourselves. And you were you
+used to have this this ratchet,
+
+339
+00:21:30,330 --> 00:21:33,690
+just huge package, that package
+was no longer there because we
+
+340
+00:21:33,690 --> 00:21:37,080
+could mount the components
+inside of inside of the the
+
+341
+00:21:37,080 --> 00:21:40,080
+chassis itself. And that was
+great. So that was the court
+
+342
+00:21:40,080 --> 00:21:44,250
+sort of partnerships, which we
+were always forging, which was
+
+343
+00:21:44,250 --> 00:21:48,330
+to open up these brand new
+markets for these partners, and
+
+344
+00:21:48,420 --> 00:21:51,870
+serve our customers really cool
+in time because like we're
+
+345
+00:21:51,870 --> 00:21:54,240
+already we've already got our
+hands full building the basis,
+
+346
+00:21:54,240 --> 00:21:55,650
+we're not going to build the
+arms too.
+
+347
+00:21:56,190 --> 00:22:00,300
+Yeah. So you said that you guys
+kind of your core competence
+
+348
+00:22:00,300 --> 00:22:03,840
+would be like as an integrator,
+if I understood correctly of
+
+349
+00:22:04,920 --> 00:22:09,450
+basically taking the platform
+and then adding pieces to it so
+
+350
+00:22:09,450 --> 00:22:12,030
+that the robotics community or
+anyone who wanted to do
+
+351
+00:22:12,030 --> 00:22:14,760
+something with the robot could
+use it. Right?
+
+352
+00:22:15,030 --> 00:22:18,060
+Or more, more and more. So I
+mean, we're, we're very good at
+
+353
+00:22:18,060 --> 00:22:22,560
+vehicle design. Yeah, but you
+know, we have been, there's just
+
+354
+00:22:22,590 --> 00:22:26,850
+now that the world is picking
+up. These, you know, now that
+
+355
+00:22:26,850 --> 00:22:29,790
+the world is really engaging
+with the robotics space in the
+
+356
+00:22:29,790 --> 00:22:33,270
+automation space. It's, it's
+just, there's just more demand
+
+357
+00:22:33,270 --> 00:22:36,540
+that we can almost deal with,
+like, it's one thing to maintain
+
+358
+00:22:36,540 --> 00:22:39,450
+a vehicle demand, like a vehicle
+portfolio of a half dozen to a
+
+359
+00:22:39,450 --> 00:22:42,660
+dozen vehicles, which is what we
+have, and we're proud of every
+
+360
+00:22:42,660 --> 00:22:47,280
+single one of them. But there's
+so many different opportunities
+
+361
+00:22:47,280 --> 00:22:51,480
+out there that we've had to,
+we've had to really partner in
+
+362
+00:22:51,480 --> 00:22:55,080
+order to keep everyone keep
+growing to keep focused on what
+
+363
+00:22:55,080 --> 00:22:59,850
+we're good at. Yeah. And then
+and so in this role, it's a lot
+
+364
+00:22:59,850 --> 00:23:02,850
+of taking an existing platform
+and you retrofit it with
+
+365
+00:23:02,850 --> 00:23:08,340
+components and software, or how
+would you think of that? Like,
+
+366
+00:23:08,340 --> 00:23:10,770
+what do you do when you get a
+new platform, or it's probably
+
+367
+00:23:10,770 --> 00:23:13,440
+quite case by case. But yeah,
+it's
+
+368
+00:23:13,440 --> 00:23:16,140
+very case by case I mean, you we
+don't want to, we don't usually
+
+369
+00:23:16,140 --> 00:23:20,490
+just, you know, buy some random,
+some like, I don't know, buy a
+
+370
+00:23:20,490 --> 00:23:24,120
+car off the lot and customize
+it, we, we want to make sure
+
+371
+00:23:24,150 --> 00:23:27,210
+that we want to make sure that
+we can provide this continual
+
+372
+00:23:28,230 --> 00:23:31,770
+discontinuous solution for
+people, which means that we'll
+
+373
+00:23:31,800 --> 00:23:34,530
+we'll usually have already
+spoken to the manufacturer,
+
+374
+00:23:34,530 --> 00:23:38,190
+we've we've come to some kind of
+agreement with them, the you
+
+375
+00:23:38,190 --> 00:23:41,580
+know, the degree of which is is
+always case by case, but we're
+
+376
+00:23:41,580 --> 00:23:45,210
+not trying to guess at things
+right, we don't want to, we
+
+377
+00:23:45,210 --> 00:23:49,830
+don't want to do something a
+little bit Renegade, where, you
+
+378
+00:23:49,830 --> 00:23:53,490
+know, you you buy a, you know,
+you buy an ATV off the lot, and
+
+379
+00:23:53,490 --> 00:23:57,450
+then you kind of hope it works.
+Because the customers, the
+
+380
+00:23:57,450 --> 00:24:00,420
+customers expect it to be
+maintainable and for, you know,
+
+381
+00:24:00,420 --> 00:24:03,060
+spare parts to be available.
+That's, that's the other reason
+
+382
+00:24:03,060 --> 00:24:07,320
+why people will, will work with
+us is because when all of their
+
+383
+00:24:07,320 --> 00:24:10,230
+grad students have left or when
+their research projects have
+
+384
+00:24:10,230 --> 00:24:14,490
+gone on to, to production, those
+robots will still be there. And
+
+385
+00:24:14,490 --> 00:24:17,280
+they want to, they want the next
+set of researchers in the next
+
+386
+00:24:17,280 --> 00:24:21,720
+set of robotics developers to be
+able to, to just, you know, jump
+
+387
+00:24:21,720 --> 00:24:24,840
+on board, for sure. Now,
+
+388
+00:24:25,080 --> 00:24:31,410
+you mentioned how customers come
+to you with problems and then
+
+389
+00:24:31,410 --> 00:24:34,530
+kind of you see if you can find
+something that fits the how has
+
+390
+00:24:34,530 --> 00:24:38,910
+that changed while you've grown
+over the last 12 years?
+
+391
+00:24:41,280 --> 00:24:47,670
+The problems are a lot more the
+problems are a lot more diverse.
+
+392
+00:24:48,240 --> 00:24:53,490
+And what people are looking for
+mannequin the Yeah. Well, that
+
+393
+00:24:53,490 --> 00:24:55,380
+one was good. We need to know
+about that one. They just they
+
+394
+00:24:55,380 --> 00:25:01,440
+just did it. But on the plus
+side, I think they're is a
+
+395
+00:25:01,440 --> 00:25:06,600
+growing appreciation for a
+growing appreciation for what
+
+396
+00:25:06,600 --> 00:25:11,010
+robots can and can't do. Right?
+Like when we started the even
+
+397
+00:25:11,010 --> 00:25:14,940
+the concept of a drone that you
+could just casually buy, it
+
+398
+00:25:14,940 --> 00:25:20,250
+wasn't a thing. One of the, the,
+the company I, company I
+
+399
+00:25:20,250 --> 00:25:24,600
+internship I interned at was
+called aireon Labs, and they've
+
+400
+00:25:24,600 --> 00:25:27,900
+just been purchased by FLIR and
+they sold drones for first
+
+401
+00:25:27,900 --> 00:25:31,830
+responders. And at the time that
+they had started, you couldn't
+
+402
+00:25:31,830 --> 00:25:34,680
+buy an autonomous drone for
+autonomous quadcopter. There
+
+403
+00:25:34,680 --> 00:25:37,020
+there was, there was no money
+that you could pay to the
+
+404
+00:25:37,020 --> 00:25:39,600
+market, which would get you a
+reliable autonomous quadcopter,
+
+405
+00:25:39,600 --> 00:25:42,810
+short of funding an entire
+robotics company yourself. So
+
+406
+00:25:42,810 --> 00:25:45,690
+that was that was where we were
+right. And self driving cars.
+
+407
+00:25:46,440 --> 00:25:49,440
+You know, the the urban
+challenge was, was just one at
+
+408
+00:25:49,440 --> 00:25:51,270
+the time, I can't even remember
+what year the the urban
+
+409
+00:25:51,270 --> 00:25:54,960
+challenge was. But that was just
+around that timeframe, like
+
+410
+00:25:54,990 --> 00:25:58,830
+autonomous cars weren't a thing.
+So there was still a little bit
+
+411
+00:25:58,830 --> 00:26:01,770
+of a sense of robots could
+either do nothing, or they could
+
+412
+00:26:01,770 --> 00:26:05,340
+do everything. So early on,
+there was a lot more need to
+
+413
+00:26:05,340 --> 00:26:13,140
+reset expectations. And on top
+of that, there was wood on top
+
+414
+00:26:13,140 --> 00:26:13,800
+of that,
+
+415
+00:26:14,280 --> 00:26:18,870
+or, yeah, so you're saying
+people would either think they
+
+416
+00:26:18,870 --> 00:26:22,170
+could do everything or nothing,
+kind of like useless or they
+
+417
+00:26:22,170 --> 00:26:26,100
+will just be the Jetsons Butler
+kind of thing effectively? Yeah,
+
+418
+00:26:26,430 --> 00:26:29,430
+gotcha. And so bring people down
+to the level that robots
+
+419
+00:26:29,430 --> 00:26:34,080
+actually can do. And kind of
+show them how they can be useful
+
+420
+00:26:34,080 --> 00:26:37,140
+still, with what they have? Or
+is that we that's, that's where
+
+421
+00:26:37,140 --> 00:26:37,680
+we are right
+
+422
+00:26:37,680 --> 00:26:42,990
+now. Right? Like, you can. In
+when, when we had when we were
+
+423
+00:26:42,990 --> 00:26:47,190
+starting, you know, there there
+would be there were probably a
+
+424
+00:26:47,190 --> 00:26:51,330
+few 1000 people in the world,
+who knew who could reasonably
+
+425
+00:26:51,450 --> 00:26:53,820
+describe the state of the self
+driving vehicle market, like
+
+426
+00:26:53,820 --> 00:26:56,760
+where the technology readiness
+level of the self driving
+
+427
+00:26:56,760 --> 00:27:01,200
+vehicle market. But now, I would
+charitably guess that there are
+
+428
+00:27:01,200 --> 00:27:03,960
+millions of people on earth who
+can generally describe what a
+
+429
+00:27:03,960 --> 00:27:06,570
+self driving vehicle is. And
+isn't, they know what it is. And
+
+430
+00:27:06,570 --> 00:27:09,180
+they know it's not taking you to
+Starbucks anytime soon. Without
+
+431
+00:27:09,180 --> 00:27:12,270
+a a well paid test driver in the
+front, are you still paying 10?
+
+432
+00:27:12,270 --> 00:27:17,100
+Yeah. But that's that's not how
+it works. So you'd have, you'd
+
+433
+00:27:17,100 --> 00:27:20,790
+either be, you know, selling to
+someone because you knew there's
+
+434
+00:27:20,790 --> 00:27:24,330
+an opportunity there, and they
+didn't really think that it was
+
+435
+00:27:24,330 --> 00:27:27,840
+possible, or they would come to
+you with an opportunity. Now,
+
+436
+00:27:27,840 --> 00:27:30,360
+this is beyond the researchers,
+this is when the commercial
+
+437
+00:27:30,540 --> 00:27:33,090
+demand started to take an
+uptake. But you'd have people
+
+438
+00:27:33,090 --> 00:27:36,390
+coming in and saying, Yeah,
+like, Can I pay, you know,
+
+439
+00:27:36,390 --> 00:27:42,390
+$5,000 to automate my old,
+clunky gas powered lawnmower,
+
+440
+00:27:42,480 --> 00:27:45,300
+and have it run completely
+unsupervised, through the middle
+
+441
+00:27:45,300 --> 00:27:50,220
+of a park in a crowded day.
+There was a lot more requests
+
+442
+00:27:50,220 --> 00:27:53,910
+like that, huh, there are still
+there. Just to be clear, there
+
+443
+00:27:53,910 --> 00:27:58,500
+are still requests like that.
+But they are. But there are far
+
+444
+00:27:58,500 --> 00:28:01,320
+more requests, where the people
+who come in the door are already
+
+445
+00:28:01,320 --> 00:28:04,440
+conditioned, and already
+educated about what robots can
+
+446
+00:28:04,440 --> 00:28:06,780
+and can't do. And I think
+that's, that's a that's just
+
+447
+00:28:06,780 --> 00:28:09,750
+wonderful for everybody, right?
+Like, that's saves everyone a
+
+448
+00:28:09,750 --> 00:28:10,500
+whole lot of time.
+
+449
+00:28:13,260 --> 00:28:15,660
+And so if you're getting
+requests like that, where
+
+450
+00:28:15,660 --> 00:28:19,110
+they're coming in and asking if
+this is possible, and how much
+
+451
+00:28:19,110 --> 00:28:22,710
+it would be, that means that you
+guys have to be extremely
+
+452
+00:28:22,710 --> 00:28:25,740
+knowledgeable about the state of
+the art in probably a lot of
+
+453
+00:28:25,740 --> 00:28:27,810
+different areas. Because I mean,
+there's the hardware, there's
+
+454
+00:28:27,810 --> 00:28:32,760
+the software component, and all
+the specific things that are no
+
+455
+00:28:32,790 --> 00:28:37,410
+sensors how to estimate things.
+Like you guys kind of have to be
+
+456
+00:28:37,410 --> 00:28:40,140
+broadly competent in a lot of
+robotics. Yes.
+
+457
+00:28:40,860 --> 00:28:48,240
+Yeah. It's a it's a challenge.
+Um, but the thing that gives us
+
+458
+00:28:48,870 --> 00:28:51,750
+that's been interesting, well,
+and I'll speaking for me
+
+459
+00:28:51,750 --> 00:28:54,360
+personally, and it's one of the
+reasons I love this work so
+
+460
+00:28:54,360 --> 00:28:59,310
+much, is because every day
+there's a new, there's some new
+
+461
+00:28:59,310 --> 00:29:01,740
+development out in the world, in
+the robotics space that's gonna
+
+462
+00:29:01,740 --> 00:29:05,130
+make that's gonna make a new
+application possible. It's a new
+
+463
+00:29:05,130 --> 00:29:09,000
+technology and like, every day,
+there's something new that I've
+
+464
+00:29:09,000 --> 00:29:12,570
+that I can learn. Like, I just
+actually right before this, I
+
+465
+00:29:12,570 --> 00:29:16,020
+was I was reading a paper or
+reading a paper put together
+
+466
+00:29:16,020 --> 00:29:19,530
+that's, that's, um, I don't know
+if it's been accepted or if it's
+
+467
+00:29:19,530 --> 00:29:22,050
+been final submissions for iros,
+which is a big robotics
+
+468
+00:29:22,050 --> 00:29:25,710
+conference. And it's, it's
+authored by people who work for
+
+469
+00:29:25,710 --> 00:29:28,830
+Clearpath that's, that's just
+great. And I reading through the
+
+470
+00:29:28,830 --> 00:29:31,830
+paper and realizing that my math
+has really gone down the drain.
+
+471
+00:29:31,920 --> 00:29:36,690
+But anyway, I digress. Um, the
+The other thing, which I mean,
+
+472
+00:29:36,690 --> 00:29:39,150
+it sounds kind of intimidating,
+which is like our job is to stay
+
+473
+00:29:39,150 --> 00:29:41,850
+up to date with everything in
+the field, which is robotics at
+
+474
+00:29:41,850 --> 00:29:47,340
+all times. But it's as, as odd
+as it sounds. It's not that
+
+475
+00:29:47,340 --> 00:29:52,530
+challenging, because we don't
+have to do any catch up. Like if
+
+476
+00:29:52,530 --> 00:29:55,500
+you're starting a robotics
+company now. You have a lot of
+
+477
+00:29:55,500 --> 00:30:01,230
+catching up to do. Right like
+you have decades. of progress
+
+478
+00:30:01,290 --> 00:30:06,360
+and you have all sorts of you
+know labs to track you, you need
+
+479
+00:30:06,360 --> 00:30:09,120
+to know where to pay attention
+who to pay attention to which
+
+480
+00:30:09,120 --> 00:30:12,630
+conferences to go to like all of
+it, you need to catch up with
+
+481
+00:30:12,630 --> 00:30:14,880
+the state of the art and I had
+that as you're doing that the
+
+482
+00:30:14,880 --> 00:30:17,940
+state of the art always
+changing. But you know, we got
+
+483
+00:30:17,940 --> 00:30:21,510
+to do that work before this the
+field before the the the
+
+484
+00:30:21,510 --> 00:30:25,110
+robotics field really blew up.
+So now it's just it's it's day
+
+485
+00:30:25,110 --> 00:30:25,710
+for day.
+
+486
+00:30:25,980 --> 00:30:28,620
+So you wrote rode the wave,
+basically. And now you're still
+
+487
+00:30:28,620 --> 00:30:29,130
+on it,
+
+488
+00:30:29,190 --> 00:30:32,340
+which is fantastic. We're just
+we're just holding on now. But
+
+489
+00:30:32,340 --> 00:30:35,730
+it's, it's a lot easier than
+then, than trying to catch it
+
+490
+00:30:35,760 --> 00:30:36,870
+from nothing right now.
+
+491
+00:30:37,110 --> 00:30:40,050
+How do you? Do you structure
+your team with like experts in
+
+492
+00:30:40,050 --> 00:30:43,020
+specific areas? Or is it the
+team of generalists? Or how do
+
+493
+00:30:43,020 --> 00:30:44,220
+you how would you think about
+it?
+
+494
+00:30:46,050 --> 00:30:51,420
+So my team? Yeah, we're the team
+as a whole if you include the
+
+495
+00:30:51,420 --> 00:30:55,980
+auto motors business unit, which
+is a large portion and, you
+
+496
+00:30:55,980 --> 00:30:58,200
+know, sharing services and
+everything like that. We're
+
+497
+00:30:58,200 --> 00:31:03,540
+about 200 to eight 280 to 300
+people were in there. That range
+
+498
+00:31:03,540 --> 00:31:03,960
+right now,
+
+499
+00:31:04,140 --> 00:31:11,190
+are you all in Waterloo, Toronto
+area, or were in the bay, I
+
+500
+00:31:11,190 --> 00:31:12,060
+believe, you
+
+501
+00:31:13,530 --> 00:31:17,790
+know, we, our offices, our
+physical offices, we have four
+
+502
+00:31:17,790 --> 00:31:23,340
+facilities in, in the Kitchener
+Waterloo Region. So if you know
+
+503
+00:31:23,340 --> 00:31:25,170
+the area, there's one in
+Waterloo, there's two in
+
+504
+00:31:25,170 --> 00:31:29,100
+Kitchener, and there's one on
+the near side of Cambridge, and
+
+505
+00:31:29,160 --> 00:31:33,120
+everything else is everything
+else is remote work. And
+
+506
+00:31:33,180 --> 00:31:36,660
+actually, a lot of that was like
+all of our sales team. And a lot
+
+507
+00:31:36,660 --> 00:31:39,210
+of our field team were remote
+before even the pandemic hit
+
+508
+00:31:39,240 --> 00:31:41,820
+that was had some, you know,
+engineers working remote here
+
+509
+00:31:41,820 --> 00:31:48,690
+and there. But overall, you
+know, overall, Canada is
+
+510
+00:31:48,690 --> 00:31:51,810
+probably you know, if I don't
+know these numbers offhand, but
+
+511
+00:31:51,810 --> 00:31:57,060
+I would guess 90 to 95% of the
+people that we have our, you
+
+512
+00:31:57,060 --> 00:32:00,060
+know, live live in Canada live
+in, you know, southwestern
+
+513
+00:32:00,060 --> 00:32:04,050
+Ontario. And then though there's
+the next percentage, there'll be
+
+514
+00:32:04,980 --> 00:32:08,580
+a rounding error of people who
+are full time around the world.
+
+515
+00:32:08,580 --> 00:32:10,890
+So there's someone who's in
+someone in Mexico right now,
+
+516
+00:32:10,890 --> 00:32:14,160
+there's someone in Spain, we
+have a full time member of our
+
+517
+00:32:14,160 --> 00:32:17,670
+team in Japan, and then everyone
+else, everyone else is in the
+
+518
+00:32:17,670 --> 00:32:20,790
+US. So there's a lot of a lot of
+salespeople in the US field
+
+519
+00:32:20,790 --> 00:32:25,410
+service tax systems, engineers,
+people like that. Because
+
+520
+00:32:25,410 --> 00:32:29,250
+there's really obviously a big
+export market for us is PS
+
+521
+00:32:29,250 --> 00:32:31,350
+autonomous systems into the US.
+So
+
+522
+00:32:32,970 --> 00:32:39,150
+gotcha. And then for like, Is it
+about the specialized versus
+
+523
+00:32:39,150 --> 00:32:40,830
+generalist approach? Oh, yeah.
+
+524
+00:32:40,830 --> 00:32:46,710
+Yeah. There's so there's,
+there's probably about there's
+
+525
+00:32:46,710 --> 00:32:51,180
+under 20 people at the company
+who would have had robotics
+
+526
+00:32:51,180 --> 00:32:52,920
+experience before they joined
+us,
+
+527
+00:32:52,950 --> 00:32:56,820
+that would be Wow, my guess
+that's great. Okay. So whether
+
+528
+00:32:56,820 --> 00:32:59,220
+that's whether that's mobile
+robotics experience, like, you
+
+529
+00:32:59,220 --> 00:33:03,060
+know, AGV deployment in
+industry, or, you know, a
+
+530
+00:33:03,060 --> 00:33:07,020
+Master's or PhD, it's, it's
+probably around that number. I
+
+531
+00:33:07,020 --> 00:33:10,860
+know, the the autonomy group in
+the auto space, the on the, the
+
+532
+00:33:10,860 --> 00:33:15,630
+auto business unit has 14, I
+believe, 14 people, it's all
+
+533
+00:33:15,630 --> 00:33:19,050
+masters and PhDs, doing various
+sorts of product development and
+
+534
+00:33:19,050 --> 00:33:23,280
+research, for example. But
+beyond that, we really try to
+
+535
+00:33:23,280 --> 00:33:26,820
+bring in experts and experienced
+people in their fields, whether
+
+536
+00:33:26,820 --> 00:33:31,020
+that's, you know, operations,
+manufacturing, finance, sales,
+
+537
+00:33:31,320 --> 00:33:35,460
+wherever, and then even in
+engineering, like I have, I
+
+538
+00:33:35,460 --> 00:33:39,000
+think it's seven people who
+report to me right now, not a
+
+539
+00:33:39,000 --> 00:33:43,560
+single one, not a single one
+started in a robotic space, and
+
+540
+00:33:43,560 --> 00:33:47,310
+only one of them had any
+experience in robotics before
+
+541
+00:33:47,310 --> 00:33:51,930
+joining this. Wow. So it really
+is, and, but people learn really
+
+542
+00:33:51,930 --> 00:33:56,340
+quickly, right? Like we as we've
+got this foundation is, you
+
+543
+00:33:56,340 --> 00:34:00,660
+know, foundation of technology.
+The the analogy I often make is,
+
+544
+00:34:00,750 --> 00:34:04,590
+if you go to, you know, you look
+at a company like Audi, for
+
+545
+00:34:04,590 --> 00:34:07,410
+example, or you know, any
+established high tech company,
+
+546
+00:34:07,560 --> 00:34:11,550
+how many people go into that
+high tech company with expertise
+
+547
+00:34:11,550 --> 00:34:14,040
+in that the thing that makes
+that high tech company special,
+
+548
+00:34:14,040 --> 00:34:17,340
+like, how many people work at
+SpaceX, and of those, how many
+
+549
+00:34:17,340 --> 00:34:20,160
+are rocket scientists? Yeah,
+like how many people work at
+
+550
+00:34:20,190 --> 00:34:22,800
+Audi and of those, how many
+people actually know how to
+
+551
+00:34:22,800 --> 00:34:24,180
+build an engine? Right? Like,
+
+552
+00:34:25,530 --> 00:34:29,700
+definitely, that seems like
+something like as a result of
+
+553
+00:34:29,700 --> 00:34:33,030
+the robotics field maturing, I
+feel like like at the beginning,
+
+554
+00:34:33,030 --> 00:34:36,000
+it was probably a lot more
+roboticists and now it's, people
+
+555
+00:34:36,000 --> 00:34:38,760
+have other specializations that
+can contribute, because it's
+
+556
+00:34:38,760 --> 00:34:41,550
+large enough that they can focus
+on something that they have
+
+557
+00:34:41,550 --> 00:34:42,270
+skills for.
+
+558
+00:34:43,800 --> 00:34:46,410
+Yeah, well, and that was
+actually a big thing for us when
+
+559
+00:34:46,410 --> 00:34:52,140
+we decided to start getting into
+getting into the industrial
+
+560
+00:34:52,140 --> 00:34:56,850
+space in general was hiring
+people who weren't roboticists,
+
+561
+00:34:56,850 --> 00:35:00,240
+because you know this. This has
+changed over the years, but You
+
+562
+00:35:00,240 --> 00:35:03,180
+know, back when we were
+starting, you know, maybe 10% of
+
+563
+00:35:03,180 --> 00:35:06,360
+roboticist could write any kind
+of decent code that you would
+
+564
+00:35:06,360 --> 00:35:08,550
+want running in a production
+application. And I'm probably
+
+565
+00:35:08,550 --> 00:35:13,380
+being, I'm probably being
+generous there. And that's not
+
+566
+00:35:13,380 --> 00:35:16,380
+an insult, because I don't think
+I'd count myself as one of those
+
+567
+00:35:16,380 --> 00:35:20,820
+10%. But when we started really
+going after the industrial
+
+568
+00:35:20,820 --> 00:35:23,220
+market, it was important to hire
+people who had written good
+
+569
+00:35:23,220 --> 00:35:27,360
+software. So that's, that's what
+we did. And these days, I'd say
+
+570
+00:35:27,390 --> 00:35:33,300
+our ratio is for every person
+who writes, for every three
+
+571
+00:35:33,300 --> 00:35:36,480
+people who write software,
+there's one roboticist and one
+
+572
+00:35:36,480 --> 00:35:39,630
+tester, that's probably the
+rough ratio that we have.
+
+573
+00:35:39,990 --> 00:35:45,240
+Gotcha. Very interesting. Let's
+see. So moving into software,
+
+574
+00:35:46,890 --> 00:35:52,530
+you at Clearpath. Were some
+early adopters and supporter of
+
+575
+00:35:52,560 --> 00:35:56,010
+the robot operating system. Ros,
+would you tell me a bit about
+
+576
+00:35:56,010 --> 00:35:56,190
+that
+
+577
+00:35:56,190 --> 00:36:02,580
+work? Yeah, I can still remember
+a lot of those discussions like
+
+578
+00:36:02,580 --> 00:36:07,770
+they were yesterday, we started,
+we started the company formally
+
+579
+00:36:07,770 --> 00:36:13,650
+in 2009. And at that point, we
+had the philosophy that there
+
+580
+00:36:13,650 --> 00:36:16,800
+was always going to be more
+smart people outside of the
+
+581
+00:36:16,800 --> 00:36:19,500
+company than inside a company.
+That's, that's almost like a
+
+582
+00:36:19,500 --> 00:36:22,110
+statement of fact, for any
+company, no matter how big. And
+
+583
+00:36:22,110 --> 00:36:24,930
+we said, we're going to start
+with, we're gonna start with
+
+584
+00:36:24,930 --> 00:36:29,190
+open source. And that was number
+one for that, that general
+
+585
+00:36:29,190 --> 00:36:32,010
+observation I just outlined. And
+the other one is that one of our
+
+586
+00:36:32,010 --> 00:36:35,190
+largest competitors at the time,
+really, really charged a lot of
+
+587
+00:36:35,190 --> 00:36:38,730
+researchers money for this
+expensive autonomy package. Like
+
+588
+00:36:38,730 --> 00:36:41,730
+if you wanted to buy a laser,
+you also needed to buy this
+
+589
+00:36:41,730 --> 00:36:44,370
+really expensive autonomy
+package. And we did market
+
+590
+00:36:44,370 --> 00:36:47,610
+surveys of the early early
+researchers to those people who
+
+591
+00:36:47,610 --> 00:36:51,030
+were who participated in that 12
+year, 12 year old market survey,
+
+592
+00:36:51,030 --> 00:36:54,420
+thank you. And almost every one
+of them said they didn't like
+
+593
+00:36:54,420 --> 00:36:56,100
+paying for the software because
+they were going to write it
+
+594
+00:36:56,100 --> 00:37:01,920
+themselves anyway. So I said,
+Okay, we will start with a small
+
+595
+00:37:02,730 --> 00:37:06,510
+open source software package
+called player stage, because
+
+596
+00:37:06,510 --> 00:37:11,940
+eba, which was a combination of
+three player, which is you can
+
+597
+00:37:11,940 --> 00:37:15,660
+look at that as an equivalent to
+ROS stage, which is a 2d
+
+598
+00:37:15,660 --> 00:37:18,300
+simulation environment meant for
+multi robot simulations and
+
+599
+00:37:18,300 --> 00:37:21,030
+gazebo, which most people still
+know, because it's still around.
+
+600
+00:37:21,870 --> 00:37:25,710
+simulation. And yeah, so we
+started with player was a
+
+601
+00:37:25,710 --> 00:37:29,760
+message passing precursor to
+ROS. Right, right. This kind of
+
+602
+00:37:29,760 --> 00:37:32,310
+thing. Okay, so you started with
+those.
+
+603
+00:37:33,000 --> 00:37:37,500
+We started with those. And then
+in in 2010, we went to our first
+
+604
+00:37:37,590 --> 00:37:43,830
+official trade show, which was
+ekra 2010. In the in Anchorage,
+
+605
+00:37:43,860 --> 00:37:47,820
+Alaska. Oh, wow. The say we'll
+just say that those trade shows
+
+606
+00:37:47,820 --> 00:37:53,280
+are a lot classier now. But we
+saw and met the crew from Willow
+
+607
+00:37:53,280 --> 00:37:56,610
+Garage. And one of the things
+which was really interesting,
+
+608
+00:37:56,610 --> 00:37:58,800
+and they had their PR two out,
+and they were doing all sorts of
+
+609
+00:37:58,800 --> 00:38:01,080
+fancy stuff, and they're way,
+way better funded than we have.
+
+610
+00:38:02,370 --> 00:38:08,400
+But the thing that really was
+impressive is that if you've
+
+611
+00:38:08,400 --> 00:38:14,040
+ever installed player stage,
+it's a bit of a challenge. And,
+
+612
+00:38:15,420 --> 00:38:20,670
+and the Willow Garage team had
+put so much effort into making
+
+613
+00:38:20,670 --> 00:38:25,680
+ROS not only just a good piece
+of software, but also well
+
+614
+00:38:25,680 --> 00:38:29,520
+documented and easy to install.
+And it just seemed like the way
+
+615
+00:38:29,520 --> 00:38:33,420
+to go. And we knew that people
+from the player stage community
+
+616
+00:38:33,420 --> 00:38:37,650
+had gone over to the, you know,
+being supported by were part of
+
+617
+00:38:37,650 --> 00:38:39,660
+Willow Garage are being
+supported by Willow Garage like
+
+618
+00:38:39,660 --> 00:38:44,490
+Brian querque, first and
+foremost. And then, so we said
+
+619
+00:38:44,490 --> 00:38:46,740
+that, okay, this is going to be
+the way it's going to go. Right?
+
+620
+00:38:46,740 --> 00:38:50,700
+This is the only place which is
+actually funding, not just some
+
+621
+00:38:50,700 --> 00:38:53,490
+software, but the community
+around the software. So we
+
+622
+00:38:53,490 --> 00:38:57,630
+basically turned at the drop of
+the hat and said, you know,
+
+623
+00:38:57,630 --> 00:39:00,630
+probably that that would have
+been April, May and 2010. and I
+
+624
+00:39:00,630 --> 00:39:05,520
+are going back to going back to
+Mike who's our first engineer,
+
+625
+00:39:05,940 --> 00:39:09,150
+first engineer at the company
+saying like we need to, we need
+
+626
+00:39:09,150 --> 00:39:11,730
+to start this supporting this
+ROS thing is starting to talk to
+
+627
+00:39:11,730 --> 00:39:14,700
+our customers about it. So to
+the best of my knowledge, we
+
+628
+00:39:14,700 --> 00:39:18,030
+were the first company. We're
+the first company in the world
+
+629
+00:39:18,030 --> 00:39:24,090
+that probably made money off off
+of something tied to ROS. That's
+
+630
+00:39:24,090 --> 00:39:27,180
+awesome. And that was the case
+for a very long time for years.
+
+631
+00:39:27,360 --> 00:39:29,640
+A bunch of these other companies
+in the space, we're just having
+
+632
+00:39:29,640 --> 00:39:32,670
+an HIE and I'm like we need to
+support ROS and that you could
+
+633
+00:39:32,700 --> 00:39:36,060
+you could get these other robots
+to be supported but it was
+
+634
+00:39:36,060 --> 00:39:39,420
+always some third party some
+third party like a library
+
+635
+00:39:39,420 --> 00:39:42,000
+written by a grad student who
+happened to have that robot in
+
+636
+00:39:42,000 --> 00:39:46,620
+the shop. You can like dross and
+these these days and then you
+
+637
+00:39:46,620 --> 00:39:49,590
+know things continue to progress
+from there we have been talking
+
+638
+00:39:49,890 --> 00:39:54,390
+no early days about the creation
+of at the time was called the
+
+639
+00:39:54,390 --> 00:39:57,420
+ROS foundation. That was the the
+name for it. But now you know it
+
+640
+00:39:57,420 --> 00:39:59,760
+is the open source robotics
+foundation. So that got founded
+
+641
+00:40:00,300 --> 00:40:04,230
+I joined the board for that. The
+turtle bot turtle bot was an
+
+642
+00:40:04,230 --> 00:40:08,550
+interesting story. So that that
+was obviously created by by
+
+643
+00:40:08,550 --> 00:40:13,200
+Melanie wise, you know, at
+fetcher, I guess they were just
+
+644
+00:40:13,200 --> 00:40:16,920
+acquired. So congratulations to
+them. And intelli foot is still
+
+645
+00:40:16,920 --> 00:40:19,770
+at the store with open robotics.
+And they created this turtle bot
+
+646
+00:40:19,770 --> 00:40:25,290
+thing, which is a really cool
+idea. And we had a smaller, a
+
+647
+00:40:25,290 --> 00:40:28,560
+more extensible, but more
+expensive, but more far more
+
+648
+00:40:28,560 --> 00:40:33,600
+expensive educational platform
+available at the time, and said
+
+649
+00:40:33,630 --> 00:40:37,410
+no, like this is and the other
+thing that happened around the
+
+650
+00:40:37,410 --> 00:40:40,110
+turtlebot was that the Microsoft
+Kinect came out, it was just the
+
+651
+00:40:40,110 --> 00:40:43,560
+perfect sensor. Like that was
+the first commercially available
+
+652
+00:40:43,560 --> 00:40:45,600
+RGB sensor. So
+
+653
+00:40:46,350 --> 00:40:49,380
+then there's a camera and depth.
+
+654
+00:40:50,340 --> 00:40:54,060
+Camera. Yes. And, and that meant
+that you never needed to worry
+
+655
+00:40:54,060 --> 00:40:55,920
+about LIDAR, right? Like you
+didn't have to worry about the
+
+656
+00:40:55,920 --> 00:40:58,710
+laser, at least for small scale
+stuff. So that was really cool.
+
+657
+00:40:59,100 --> 00:41:02,820
+And it turns out that Melanie
+and Talia were tired of putting
+
+658
+00:41:02,820 --> 00:41:08,910
+turtle bots together by hand. So
+we, we had a conversation and
+
+659
+00:41:08,910 --> 00:41:12,660
+ended up that we we supplied
+Willow Garage with a ton of
+
+660
+00:41:12,660 --> 00:41:16,470
+turtle quads, and then became
+the first manufacturer. First
+
+661
+00:41:16,470 --> 00:41:19,230
+manufacturer turtle bots in the
+world. I can't I can't remember
+
+662
+00:41:19,530 --> 00:41:23,430
+who else was there? There was
+Bill Morris from the company. He
+
+663
+00:41:23,430 --> 00:41:25,650
+has his own business called I
+heard robots, or I heard
+
+664
+00:41:25,650 --> 00:41:28,170
+engineering, I think it's
+changed between those names. And
+
+665
+00:41:28,170 --> 00:41:30,420
+I think there was a third
+company at the time, I think
+
+666
+00:41:30,420 --> 00:41:32,550
+they were they're off in Europe,
+but I can't remember who it was.
+
+667
+00:41:32,820 --> 00:41:36,060
+And it was like that was like 10
+years ago. But that was also a
+
+668
+00:41:36,060 --> 00:41:39,090
+really interesting thing at the
+time that, you know, we decided
+
+669
+00:41:39,090 --> 00:41:41,550
+we kill their own product,
+because we think of the
+
+670
+00:41:41,550 --> 00:41:44,070
+turtlebot was going to gain
+momentum in it. It certainly
+
+671
+00:41:44,070 --> 00:41:50,160
+did. And then yeah, other stuff
+around like ROSCon i was, that
+
+672
+00:41:50,160 --> 00:41:53,580
+was what 2012 was the first
+ROSCon. So we helped, we helped
+
+673
+00:41:53,580 --> 00:41:57,240
+found that. And that's still
+going strong. I know literally
+
+674
+00:41:57,240 --> 00:42:01,200
+right before the right before
+the we got on this call here. I
+
+675
+00:42:01,200 --> 00:42:05,010
+just finished my finished mice
+my share of the reviews for
+
+676
+00:42:05,010 --> 00:42:07,290
+ROSCon 2021.
+
+677
+00:42:07,320 --> 00:42:10,680
+So we Orleans in this year, New
+Orleans, that'll be a blast.
+
+678
+00:42:11,610 --> 00:42:15,570
+But it's been exciting, right?
+Like the ROS community was huge,
+
+679
+00:42:15,600 --> 00:42:19,530
+or it's it just completely mind
+blowing, the sort of things that
+
+680
+00:42:19,530 --> 00:42:23,700
+we've seen here like we when,
+when you started when we started
+
+681
+00:42:23,760 --> 00:42:26,400
+both pockets when we started
+there, ROS was out there. But
+
+682
+00:42:26,400 --> 00:42:30,090
+even when we started supporting
+ROS, no manufacturer was out
+
+683
+00:42:30,090 --> 00:42:32,550
+there supporting ROS and knows,
+like every sensor that you
+
+684
+00:42:32,550 --> 00:42:35,910
+needed to get into ROS here it
+was written by, you know, Willow
+
+685
+00:42:35,910 --> 00:42:38,940
+Garage, it was written by us, it
+was written by some grad student
+
+686
+00:42:38,940 --> 00:42:42,660
+halfway around the world like,
+but now now you get a sensor or
+
+687
+00:42:42,660 --> 00:42:46,320
+you get a robot from any
+reputable manufacturer, and
+
+688
+00:42:46,320 --> 00:42:49,920
+there's probably a ROS driver
+for it. I remember getting a new
+
+689
+00:42:49,920 --> 00:42:52,530
+prototype sensor from a, we'll
+just say it's a well known
+
+690
+00:42:52,530 --> 00:42:56,550
+manufacturer. And the only
+instructions on how to use the
+
+691
+00:42:56,550 --> 00:43:01,740
+sensor was was like install the
+package we gave you. And it's
+
+692
+00:43:01,770 --> 00:43:06,450
+ROS launch this. Yeah, that was
+the instruction. And Previous to
+
+693
+00:43:06,450 --> 00:43:09,570
+that, and previous to that, like
+every sensor manufacturer had
+
+694
+00:43:09,570 --> 00:43:13,920
+their own their own, usually
+Java implemented sensor
+
+695
+00:43:13,920 --> 00:43:16,860
+visualization package. Some
+still do, and I don't blame
+
+696
+00:43:16,860 --> 00:43:19,050
+them. But it's been this, that's
+the sort of thing which is
+
+697
+00:43:19,050 --> 00:43:22,620
+really interesting is, you know,
+first they would go from what's
+
+698
+00:43:22,620 --> 00:43:25,680
+ROS from, you know, they just
+didn't know what it was they
+
+699
+00:43:25,680 --> 00:43:29,790
+didn't care. And then later we
+would, you know, be trying to
+
+700
+00:43:29,790 --> 00:43:31,800
+lean on them a little bit and
+say, Well, if you want us to
+
+701
+00:43:31,800 --> 00:43:34,740
+sell this new sensor you have
+make it easier for us to build a
+
+702
+00:43:34,740 --> 00:43:37,830
+ROS driver or like release your
+package online or do something.
+
+703
+00:43:38,280 --> 00:43:41,430
+You know, at that point. It's
+like you I can I can almost
+
+704
+00:43:41,430 --> 00:43:43,920
+guarantee you that your own
+engineers have a ROS driver if
+
+705
+00:43:43,920 --> 00:43:48,390
+you go and ask them. So just put
+that on. Yeah. Yeah. And and now
+
+706
+00:43:48,390 --> 00:43:50,970
+we're at the point where the
+sensors just you just come out
+
+707
+00:43:50,970 --> 00:43:54,270
+of the box, you don't need to
+ask. And that's huge, right? Mm
+
+708
+00:43:54,270 --> 00:43:54,660
+hmm.
+
+709
+00:43:55,920 --> 00:44:00,630
+Let's see. So and you use ROS
+for everything connecting
+
+710
+00:44:00,630 --> 00:44:06,030
+everything on your system, even
+early on. Is it true? Yeah.
+
+711
+00:44:06,750 --> 00:44:10,260
+That's awesome. And so now how
+are you guys involved in the
+
+712
+00:44:10,260 --> 00:44:12,990
+community with ROS? So you're
+obviously still a part of it?
+
+713
+00:44:14,100 --> 00:44:15,120
+Yeah, definitely.
+
+714
+00:44:15,120 --> 00:44:18,960
+Well, you know, still on the
+still on the board still running
+
+715
+00:44:18,990 --> 00:44:24,090
+ROSCon. Our ability to stay up
+to date with all the recent
+
+716
+00:44:24,090 --> 00:44:26,760
+versions ebbs and flows. So I
+apologize to anyone in the
+
+717
+00:44:26,760 --> 00:44:31,770
+community who is or who, when we
+get when we caught a little get
+
+718
+00:44:31,770 --> 00:44:34,080
+caught a little bit behind the
+ball on whatever the recent
+
+719
+00:44:34,080 --> 00:44:39,420
+releases. All of the auto
+autonomy code is all based on
+
+720
+00:44:39,420 --> 00:44:42,270
+ROS and uses the ROS middleware,
+it's on our fleet manager as
+
+721
+00:44:42,270 --> 00:44:50,820
+well. Our inter fleet and robot
+comms on the, on the, for auto
+
+722
+00:44:50,820 --> 00:44:53,550
+for our industrial Amr, or
+mobile robots. That's all
+
+723
+00:44:53,550 --> 00:44:56,160
+process to now. So we've started
+to
+
+724
+00:44:57,750 --> 00:44:59,100
+all the costs of their autos.
+
+725
+00:44:59,990 --> 00:45:05,420
+Yeah, so all the autos all the
+autos talking to our fleet, our
+
+726
+00:45:05,420 --> 00:45:08,690
+fleet manager, that's all based
+on ROS two, since that's
+
+727
+00:45:08,690 --> 00:45:12,560
+exciting three, four years back.
+And we were the, to the best of
+
+728
+00:45:12,560 --> 00:45:14,570
+my knowledge, we were one of the
+first people to actually use
+
+729
+00:45:14,570 --> 00:45:17,300
+production or ROS to in a
+production environment where,
+
+730
+00:45:17,330 --> 00:45:21,560
+you know, if it failed, you
+would have angry phone calls. It
+
+731
+00:45:21,560 --> 00:45:24,110
+was, you know, it wasn't through
+the entire stack, right? Like
+
+732
+00:45:24,110 --> 00:45:28,010
+our autonomy system is still
+very ROS one based. Didn't
+
+733
+00:45:28,010 --> 00:45:30,710
+that's just like a legacy thing.
+So we're talking about migration
+
+734
+00:45:30,710 --> 00:45:36,380
+plans now. But, but we actually
+did an independent investigation
+
+735
+00:45:36,380 --> 00:45:38,600
+when we needed to really scale
+up the amount of robots at a
+
+736
+00:45:38,600 --> 00:45:42,590
+given factory. And we found that
+DDS was actually pretty good,
+
+737
+00:45:43,400 --> 00:45:46,010
+that DDS was a good direction to
+go in and we said, okay, well
+
+738
+00:45:46,010 --> 00:45:49,040
+for if DDS is what's coming out
+of this, then let's use ROS,
+
+739
+00:45:49,040 --> 00:45:52,040
+too. So we did that. And it's
+Yeah, it's been great.
+
+740
+00:45:53,810 --> 00:45:58,130
+See, I'm looking, I always
+forget what DDS stands for. data
+
+741
+00:45:58,130 --> 00:46:01,550
+distribution service, data
+distribution service, and it's a
+
+742
+00:46:01,580 --> 00:46:03,950
+really, it's a flexible
+middleware that allows you to
+
+743
+00:46:03,950 --> 00:46:09,020
+kind of interpolate between TCP,
+which is lossless or not, like
+
+744
+00:46:09,020 --> 00:46:14,150
+it doesn't lose data, and UDP
+which can lose data, but useful
+
+745
+00:46:14,150 --> 00:46:17,210
+for like walking robots and this
+kind of thing, where you don't
+
+746
+00:46:17,210 --> 00:46:20,960
+want to hold it up if you miss
+data. Things
+
+747
+00:46:21,530 --> 00:46:23,990
+Unknown: Yeah, so there's
+there's a bunch of stuff in
+
+748
+00:46:23,990 --> 00:46:28,010
+there which is just which was
+already implemented, right? Like
+
+749
+00:46:28,010 --> 00:46:31,940
+quality of service quality of
+service is a big thing. Some of
+
+750
+00:46:31,940 --> 00:46:34,820
+the other stuff was just more of
+like how it was implemented. So
+
+751
+00:46:34,820 --> 00:46:43,610
+for example, with with ROS one,
+both the c++ language, the c++
+
+752
+00:46:43,610 --> 00:46:48,500
+language bindings, or the c++
+library and the Python library,
+
+753
+00:46:48,800 --> 00:46:52,280
+they both independently
+implemented the ROS 1 protocol.
+
+754
+00:46:52,490 --> 00:46:59,000
+So it meant the with like so it
+meant that 20 was sometimes
+
+755
+00:46:59,000 --> 00:47:02,120
+babies well twice as much
+maintain and then sometimes you
+
+756
+00:47:02,120 --> 00:47:04,730
+had gotchas like especially
+early on where it's like oh that
+
+757
+00:47:04,730 --> 00:47:07,460
+function and that function and
+subscribe well that only works
+
+758
+00:47:07,460 --> 00:47:11,990
+if you use Python great well, or
+vice versa. And so that was like
+
+759
+00:47:11,990 --> 00:47:14,810
+another big change that went
+with ROS to was you know,
+
+760
+00:47:14,810 --> 00:47:18,770
+implementing everything at a you
+know, implement, implementing
+
+761
+00:47:18,770 --> 00:47:21,140
+everything at a sink or the
+bindings on top of DDS at a
+
+762
+00:47:21,140 --> 00:47:23,900
+single layer or a single
+language then and then building
+
+763
+00:47:23,900 --> 00:47:25,850
+on top of that and then the
+other thing that's nice about
+
+764
+00:47:25,850 --> 00:47:30,170
+that is that now it does make it
+easier to notionally migrate to
+
+765
+00:47:30,170 --> 00:47:32,930
+some newer libraries like I know
+rust has been talked about a lot
+
+766
+00:47:32,960 --> 00:47:37,790
+in the rust community these days
+but yeah, there's there's all
+
+767
+00:47:37,790 --> 00:47:40,610
+sorts of other you know, little
+things like ROS one was really
+
+768
+00:47:40,610 --> 00:47:44,510
+only built for a single very
+complicated robot like one robot
+
+769
+00:47:44,510 --> 00:47:47,360
+that's doing very complicated
+things and specifically the PRT
+
+770
+00:47:48,080 --> 00:47:50,570
+but then people started using it
+for fleets and robots really
+
+771
+00:47:50,570 --> 00:47:54,860
+quickly or the other thing is
+that people want it people want
+
+772
+00:47:54,860 --> 00:47:56,990
+to start running ROS on
+microcontrollers for obvious
+
+773
+00:47:56,990 --> 00:48:03,350
+reasons and it's it's far easier
+to shrink bras to down and then
+
+774
+00:48:04,100 --> 00:48:06,920
+I think yeah well they're
+they're definitely
+
+775
+00:48:06,920 --> 00:48:09,470
+implementations of rosu that can
+run on a microcontroller I'm not
+
+776
+00:48:09,470 --> 00:48:12,350
+sure how public they are it's
+always difficult to remember
+
+777
+00:48:12,350 --> 00:48:16,250
+that so I won't mention any
+right now but yeah, you can you
+
+778
+00:48:16,250 --> 00:48:19,100
+can fit like you can do a lot of
+ROS on a microcontroller which
+
+779
+00:48:19,100 --> 00:48:23,090
+is now really interesting with
+the ROS one days you would have
+
+780
+00:48:23,090 --> 00:48:26,420
+a package called ROS serial for
+example which if you wanted to
+
+781
+00:48:26,420 --> 00:48:29,450
+talk to an Arduino you needed
+you put this like lightweight
+
+782
+00:48:29,450 --> 00:48:33,710
+serial protocol on the ROS or on
+the Arduino or you know any AVR
+
+783
+00:48:33,710 --> 00:48:36,560
+chip and you would basically
+tell it that he was allowed to
+
+784
+00:48:36,560 --> 00:48:40,760
+use these know a few of these
+language or a few of these these
+
+785
+00:48:40,760 --> 00:48:44,150
+message types but it wasn't
+really ROS so now we're able to
+
+786
+00:48:44,150 --> 00:48:48,110
+do a lot more but there's a lot
+more consideration as well for
+
+787
+00:48:48,140 --> 00:48:51,620
+you know real time real time
+nature of it which opens up the
+
+788
+00:48:51,620 --> 00:48:57,200
+door to which opens up the door
+to you know safety critical ROS
+
+789
+00:48:57,620 --> 00:49:00,200
+safety critical ROS
+implementation is you know, hard
+
+790
+00:49:00,200 --> 00:49:02,330
+real time guarantees there's all
+sorts of interesting stuff
+
+791
+00:49:02,330 --> 00:49:02,630
+there.
+
+792
+00:49:03,590 --> 00:49:07,010
+Audrow Nash: I would say I mean
+and I read it, would you talk a
+
+793
+00:49:07,010 --> 00:49:10,940
+bit about the safety critical
+ROS just kind of thing I don't
+
+794
+00:49:10,940 --> 00:49:15,260
+know too much about it. Right
+says is it using standards
+
+795
+00:49:15,290 --> 00:49:17,630
+around cross where you see you
+can guarantee some sort of
+
+796
+00:49:17,630 --> 00:49:21,620
+performance and if it's real
+time you can deterministically
+
+797
+00:49:21,620 --> 00:49:25,850
+say this is going to happen at
+this time or we know that this
+
+798
+00:49:25,850 --> 00:49:27,380
+task will complete and this kind
+of thing.
+
+799
+00:49:28,610 --> 00:49:34,940
+Unknown: The the thing which is
+so obviously there's various
+
+800
+00:49:34,940 --> 00:49:40,580
+levels of you know, safety of
+safety guarantees and up until
+
+801
+00:49:40,580 --> 00:49:43,730
+now and this is actually
+including including our products
+
+802
+00:49:43,730 --> 00:49:48,950
+for example, a lot of the safety
+happens at a lower layer under
+
+803
+00:49:48,980 --> 00:49:51,590
+ROS right on the motor
+controllers are their safety
+
+804
+00:49:51,590 --> 00:49:54,980
+relays or their safety PLCs or
+safety controllers programmed
+
+805
+00:49:54,980 --> 00:50:00,230
+and you know, some some safe art
+for your jobs or whatever and
+
+806
+00:50:00,230 --> 00:50:05,030
+That's not that's usually not in
+ROS now obviously your benefits
+
+807
+00:50:05,060 --> 00:50:07,490
+in so many reasons there are so
+many ways to not having to do
+
+808
+00:50:07,490 --> 00:50:13,700
+that and the nice thing is so
+Russ to on its own right now you
+
+809
+00:50:13,700 --> 00:50:18,230
+know it's not certified it's not
+certified it's not you know if
+
+810
+00:50:18,230 --> 00:50:22,010
+you use everything there in ROS
+you're going to be able to do
+
+811
+00:50:22,010 --> 00:50:26,540
+things like sort of like like
+under a like a you know under
+
+812
+00:50:26,540 --> 00:50:31,070
+the ages need some sort or yeah
+MISRA C language standards or
+
+813
+00:50:31,070 --> 00:50:36,650
+c++ or like ISO 26262 or IEC 61
+508 like basically if you love
+
+814
+00:50:36,650 --> 00:50:38,990
+the standard libraries then you
+you probably know what I'm
+
+815
+00:50:38,990 --> 00:50:45,560
+talking about do dash 178 is the
+aerospace one so I need ROS ROS
+
+816
+00:50:45,620 --> 00:50:50,480
+to on its own because it
+supports by definition so many
+
+817
+00:50:50,480 --> 00:50:54,800
+different languages like or so
+many functions in full c++ then
+
+818
+00:50:54,800 --> 00:50:58,760
+it's not going to be certified
+on its own right because you can
+
+819
+00:50:58,760 --> 00:51:03,530
+do things with c++ which are
+considered not safe if you
+
+820
+00:51:03,530 --> 00:51:07,730
+really really try to be specific
+like and you're trying to write
+
+821
+00:51:07,730 --> 00:51:11,300
+something that's you know safety
+readable very high levels like
+
+822
+00:51:11,330 --> 00:51:15,440
+you know can run a nuclear power
+plant levels and and what have
+
+823
+00:51:15,440 --> 00:51:18,290
+you that you need to avoid
+things like any kind of dynamic
+
+824
+00:51:18,290 --> 00:51:24,830
+memory allocation ever. And so
+obviously, if you if you if the
+
+825
+00:51:24,830 --> 00:51:29,300
+ROS community built a toolset
+that didn't ever let you use any
+
+826
+00:51:29,300 --> 00:51:33,230
+dynamic memory allocation then
+that would we'll just say not be
+
+827
+00:51:33,440 --> 00:51:37,250
+adopted because there's a lot of
+places where that doesn't
+
+828
+00:51:37,250 --> 00:51:41,870
+matter. We actually built safety
+rated systems and we have we've
+
+829
+00:51:41,870 --> 00:51:46,010
+made certain choices that
+optimize towards time to market
+
+830
+00:51:46,130 --> 00:51:48,920
+at the expense of a little bit
+of extra cost on the safety
+
+831
+00:51:48,920 --> 00:51:52,550
+system right but that means that
+we can use the full gamut of c++
+
+832
+00:51:52,550 --> 00:51:56,180
+or Python functions now but
+there are companies and there
+
+833
+00:51:56,180 --> 00:52:02,660
+are initiatives out there where
+they have been able to trim it
+
+834
+00:52:02,660 --> 00:52:07,460
+down but the benefit of ROS 2 is
+that it was is that you can at
+
+835
+00:52:07,460 --> 00:52:11,060
+least trim it down with ROS 1
+that was just it was just on
+
+836
+00:52:11,060 --> 00:52:13,730
+tenable like you couldn't even
+consider it but now you can't
+
+837
+00:52:13,730 --> 00:52:17,090
+like it's it's it's much more
+technically possible thing to
+
+838
+00:52:17,090 --> 00:52:20,510
+build you know flight capable
+control software that uses ROS 2
+
+839
+00:52:20,510 --> 00:52:23,510
+as a as a messaging pass as a
+message passion framework
+
+840
+00:52:23,510 --> 00:52:27,470
+Audrow Nash: for example. And
+then so you guys are migrating
+
+841
+00:52:27,500 --> 00:52:32,450
+your Clearpath robot, you
+primarily run your ClearPath
+
+842
+00:52:32,450 --> 00:52:34,640
+robots with ROS 2 correct
+
+843
+00:52:35,630 --> 00:52:37,970
+Unknown: Yeah all the all the
+all the custom software we do is
+
+844
+00:52:37,970 --> 00:52:38,660
+ROS one right now
+
+845
+00:52:39,380 --> 00:52:42,440
+Audrow Nash: Is ROS 1. Any so
+and you mentioned the auto where
+
+846
+00:52:42,440 --> 00:52:44,210
+you guys are using ROS 2
+
+847
+00:52:44,210 --> 00:52:49,820
+Ryan Gariepy: Sorry, sorry.
+autoware as in the Sofer
+
+848
+00:52:49,820 --> 00:52:53,480
+autoware as in the community
+initiative, we don't use that
+
+849
+00:52:54,230 --> 00:52:57,410
+what I was referring to was the
+autonomous code that are auto
+
+850
+00:52:58,010 --> 00:53:04,400
+Ott Oh, autonomous mobile robots
+use gotcha so that's like
+
+851
+00:53:05,120 --> 00:53:09,920
+everything there is remains you
+know ROS one for the time being
+
+852
+00:53:10,310 --> 00:53:15,080
+I believe we have will be will
+start supporting ROS 2 will
+
+853
+00:53:15,080 --> 00:53:18,890
+start supporting ROS 2 on some
+research platforms in the near
+
+854
+00:53:18,890 --> 00:53:22,430
+future. But since I don't have
+the schedule up in front of me,
+
+855
+00:53:22,430 --> 00:53:25,100
+I'm not going to I'm not going
+to actually say those dates
+
+856
+00:53:25,610 --> 00:53:31,340
+because I like to support my
+engineering team the the I don't
+
+857
+00:53:31,340 --> 00:53:33,650
+have a Twitter account where I
+just I just randomly named
+
+858
+00:53:33,650 --> 00:53:39,770
+things on the on the the side of
+our of our autonomy software, we
+
+859
+00:53:39,770 --> 00:53:42,650
+use ROS 2 for comms and we're
+started we are starting to
+
+860
+00:53:42,650 --> 00:53:45,470
+consider the the migration
+process we just finished the
+
+861
+00:53:45,470 --> 00:53:48,950
+Python three migration. So next
+up is the ROS 1 to ROS 2
+
+862
+00:53:48,950 --> 00:53:52,610
+migration. But as you can
+imagine, as you can imagine,
+
+863
+00:53:52,610 --> 00:53:56,420
+when you have several dozen and
+software engineers writing code,
+
+864
+00:53:56,450 --> 00:54:00,350
+and you know, in this code is
+also all going out to the
+
+865
+00:54:00,350 --> 00:54:04,070
+factories, you we can't stop
+everything and just do a
+
+866
+00:54:04,070 --> 00:54:06,110
+migration of, you know,
+
+867
+00:54:06,170 --> 00:54:08,210
+Audrow Nash: five systems
+business continues
+
+868
+00:54:09,350 --> 00:54:12,680
+of engineering. So I've been
+talking with a lot of that stuff
+
+869
+00:54:12,680 --> 00:54:15,950
+if we and of course if we find
+any, you know, shortcuts along
+
+870
+00:54:15,950 --> 00:54:18,290
+the way we'll we'll definitely
+be short sharing them with the
+
+871
+00:54:18,290 --> 00:54:21,200
+community because I'm sure
+there's other people in our, in
+
+872
+00:54:21,200 --> 00:54:22,190
+our situation,
+
+873
+00:54:22,940 --> 00:54:28,370
+for sure. Are you getting
+comments from customers, or
+
+874
+00:54:28,400 --> 00:54:32,330
+people that are coming to you?
+Or they're asking for ROS to or
+
+875
+00:54:32,840 --> 00:54:33,650
+how's the community?
+
+876
+00:54:34,550 --> 00:54:37,100
+Unknown: Common? Yeah, it's
+becoming more and more common I
+
+877
+00:54:37,100 --> 00:54:44,480
+can say from I can say from
+generally looking at from
+
+878
+00:54:44,480 --> 00:54:48,620
+generally looking at you know,
+the interests at ROSCon there's
+
+879
+00:54:48,620 --> 00:54:52,160
+a lot of people developing in
+ROS tooth right now. And they're
+
+880
+00:54:52,160 --> 00:54:55,190
+developing you know, very real,
+very serious things in ROS two.
+
+881
+00:54:56,060 --> 00:54:59,060
+We're and we're definitely
+getting interest with ours. You
+
+882
+00:54:59,060 --> 00:55:02,450
+know, for example, One of the
+very things, which is ROS 2,
+
+883
+00:55:02,510 --> 00:55:04,820
+which is very clearly ROS 2 is
+that if you are going to
+
+884
+00:55:04,850 --> 00:55:09,800
+interact the API to our indoor
+autonomy software, for example,
+
+885
+00:55:09,890 --> 00:55:13,190
+which is what runs all of our
+industrial self driving vehicles
+
+886
+00:55:13,190 --> 00:55:16,280
+or industrial mobile robots.
+That's all ROS. That's, that's
+
+887
+00:55:16,280 --> 00:55:20,120
+the API. So if you want to go
+and talk to one of our talk to
+
+888
+00:55:20,120 --> 00:55:22,850
+one of our autos, ROS, who is
+your only option?
+
+889
+00:55:24,480 --> 00:55:29,490
+Audrow Nash: Gotcha. Now, let's
+see worse, I would love to talk
+
+890
+00:55:29,490 --> 00:55:32,520
+about some other things. But
+seeing that we don't have that
+
+891
+00:55:32,520 --> 00:55:37,620
+much time left, if we're trying
+to hit an hour, I would love to
+
+892
+00:55:37,620 --> 00:55:39,810
+ask you some kind of larger
+questions and get your
+
+893
+00:55:39,810 --> 00:55:46,320
+perspective on a few things. So
+the first, you are saying you
+
+894
+00:55:46,320 --> 00:55:50,610
+caught the wave of robotics,
+really, and you guys have stayed
+
+895
+00:55:50,610 --> 00:55:54,750
+on top of it now. And also, it
+seems to me from talking now,
+
+896
+00:55:54,870 --> 00:55:57,360
+you guys also caught the open
+source wave, which is really
+
+897
+00:55:57,360 --> 00:56:01,530
+exciting to be on both of those,
+like, just you invested in open
+
+898
+00:56:01,530 --> 00:56:03,930
+source and the community and the
+amount of code out there. And
+
+899
+00:56:03,930 --> 00:56:08,160
+the quality of code is just
+grown and grown. How would you?
+
+900
+00:56:09,030 --> 00:56:14,010
+What advice would you give to a
+startup that is looking to do a
+
+901
+00:56:14,010 --> 00:56:18,120
+hardware robotics startup, and
+they're just beginning now, and
+
+902
+00:56:18,120 --> 00:56:21,570
+they don't have all this
+infrastructure, or expertise.
+
+903
+00:56:22,530 --> 00:56:28,320
+So the first, the first bit of
+advice I'd give is to not is to
+
+904
+00:56:28,320 --> 00:56:31,650
+know what you want, know what
+value you're bringing to the
+
+905
+00:56:31,650 --> 00:56:39,390
+world. And partner as much as
+possible around that value. And
+
+906
+00:56:39,390 --> 00:56:44,520
+what that means is, when we
+started our auto division, we
+
+907
+00:56:44,520 --> 00:56:46,710
+had to build the robots from
+scratch, we had to build the
+
+908
+00:56:46,710 --> 00:56:50,100
+autonomy from scratch, the fleet
+manager, the UI, all of our
+
+909
+00:56:50,100 --> 00:56:52,890
+continuous integration systems,
+we did a bunch of like internal
+
+910
+00:56:52,890 --> 00:56:56,310
+upgrades to like gazebo to make
+it fit in continuous integration
+
+911
+00:56:56,310 --> 00:57:00,690
+systems. Like control software,
+a lot like all of this stuff, we
+
+912
+00:57:00,690 --> 00:57:05,370
+did all that from scratch. But
+now you can basically partner or
+
+913
+00:57:05,370 --> 00:57:11,070
+buy a lot of that stuff off the
+shelf. And I would really
+
+914
+00:57:11,070 --> 00:57:14,100
+encourage any new startup in
+robotics to start with that and
+
+915
+00:57:14,130 --> 00:57:16,740
+not try to build everything from
+scratch, have a very good idea
+
+916
+00:57:16,740 --> 00:57:20,460
+of what they're bringing to the
+table. And if I look at a Yeah,
+
+917
+00:57:20,490 --> 00:57:23,610
+if I look at the way, you know,
+a typical startup, you're either
+
+918
+00:57:23,610 --> 00:57:27,420
+bringing a new technology to an
+existing market, or you're
+
+919
+00:57:27,420 --> 00:57:30,750
+bringing a new market, or you're
+you're, you're taking an
+
+920
+00:57:30,750 --> 00:57:34,680
+existing technology and applying
+it to a new market. And so the
+
+921
+00:57:34,680 --> 00:57:37,800
+Airbnb and the Uber, for
+example, like they were
+
+922
+00:57:37,800 --> 00:57:41,370
+bringing, they were, they had a
+market hypothesis, and they were
+
+923
+00:57:41,370 --> 00:57:43,680
+bringing some some pretty
+standard technology there. Like
+
+924
+00:57:43,680 --> 00:57:47,160
+at the time everyone had
+smartphones. And obviously, we
+
+925
+00:57:47,160 --> 00:57:51,060
+all still have smartphones. But
+us we had we had a newer
+
+926
+00:57:51,060 --> 00:57:53,520
+technology, which was being
+brought to an existing market,
+
+927
+00:57:53,520 --> 00:57:56,280
+which was materials handling,
+right? And I'm using the auto
+
+928
+00:57:56,340 --> 00:58:06,510
+example here. And the but you
+want to pick one, right? So are
+
+929
+00:58:06,510 --> 00:58:09,780
+you. And these days, there's
+just so much technology out
+
+930
+00:58:09,780 --> 00:58:12,990
+there. And really, I think a lot
+of the opportunity is all these
+
+931
+00:58:12,990 --> 00:58:19,410
+new markets where you can apply
+robotics. Yeah. And that means
+
+932
+00:58:19,440 --> 00:58:22,410
+not inventing the wheel along
+the way. And, you know, part of
+
+933
+00:58:22,410 --> 00:58:25,980
+this I we spent a ton of time
+earlier on in this conversation
+
+934
+00:58:25,980 --> 00:58:28,770
+talking about the ways that that
+ClearPath engages with people.
+
+935
+00:58:28,770 --> 00:58:31,890
+So obviously we can support
+those, those sorts of customers,
+
+936
+00:58:31,890 --> 00:58:35,430
+we've supported startups along
+the way. If and, you know, what,
+
+937
+00:58:35,430 --> 00:58:38,100
+if if they're working with us,
+and then the startup turns
+
+938
+00:58:38,100 --> 00:58:41,790
+around and says, You know what,
+I've got an order for 1000. And
+
+939
+00:58:41,790 --> 00:58:44,460
+we're going to go and outsource
+that stuff to let's say, jaybo,
+
+940
+00:58:44,460 --> 00:58:47,190
+for example, and because they're
+going to give us the best deal.
+
+941
+00:58:47,430 --> 00:58:49,710
+Hey, that's cool. I don't I
+don't have a problem with that.
+
+942
+00:58:49,740 --> 00:58:52,500
+Thank you. I'm glad you're
+succeeding, right. But there are
+
+943
+00:58:52,500 --> 00:58:55,500
+companies like us, and then
+there's all sorts of off the
+
+944
+00:58:55,500 --> 00:58:58,680
+shelf technology out there as
+well, that can help you along
+
+945
+00:58:58,680 --> 00:59:01,680
+the way. So that would be the
+real thing. I'd say to those new
+
+946
+00:59:01,680 --> 00:59:04,080
+robotics startups, like don't
+try to do all the hardware and
+
+947
+00:59:04,080 --> 00:59:06,060
+all the autonomy and all the fee
+management and all the
+
+948
+00:59:06,060 --> 00:59:09,960
+information that shows what you
+can use what you can't like I
+
+949
+00:59:09,960 --> 00:59:14,310
+have I have spent those budgets.
+I know how much it costs. And I
+
+950
+00:59:14,310 --> 00:59:17,310
+know Yeah, I know the stresses
+that it brings you. And it's
+
+951
+00:59:17,340 --> 00:59:20,520
+it's not worth it. There's other
+ways to do it. Now at least.
+
+952
+00:59:21,750 --> 00:59:25,170
+What do you think about this
+idea as like platform as a
+
+953
+00:59:25,170 --> 00:59:27,930
+service or something like this
+for a business model? And what I
+
+954
+00:59:27,930 --> 00:59:32,700
+mean by that would be, if I am a
+robotics company, I'm going to
+
+955
+00:59:32,700 --> 00:59:35,760
+buy someone else's robot but my
+own code on it, and then have it
+
+956
+00:59:35,760 --> 00:59:39,330
+do something useful. Do you
+think that will be a reasonable
+
+957
+00:59:39,330 --> 00:59:41,100
+business model in the future
+
+958
+00:59:41,160 --> 00:59:46,350
+for robotics startups? Like
+basically, so which are which
+
+959
+00:59:46,350 --> 00:59:48,720
+side is the startup honor? And
+are they on this side of writing
+
+960
+00:59:48,720 --> 00:59:49,290
+the app?
+
+961
+00:59:49,740 --> 00:59:52,080
+Yes. Basically an app. Yeah,
+right, I
+
+962
+00:59:52,080 --> 00:59:55,650
+think. Yeah, absolutely. I think
+that's going to be I think
+
+963
+00:59:55,650 --> 00:59:59,850
+that's going to be the case, I
+think, early on. It's going to
+
+964
+00:59:59,850 --> 01:00:06,240
+be combination of the app and
+some tooling, not perhaps not as
+
+965
+01:00:06,240 --> 01:00:09,060
+complex as a robot, but that
+you're going to get the
+
+966
+01:00:09,060 --> 01:00:12,060
+combination of the app and the
+tooling. But I definitely think
+
+967
+01:00:12,060 --> 01:00:14,370
+that's going to be the case. And
+we've seen this actually,
+
+968
+01:00:16,110 --> 01:00:18,930
+through the through the recent,
+you know, year and a half, we've
+
+969
+01:00:18,930 --> 01:00:22,740
+seen a lot of companies with no
+robotics expertise whatsoever
+
+970
+01:00:22,740 --> 01:00:26,850
+been able to build disinfection
+applications, right. And that's
+
+971
+01:00:26,850 --> 01:00:29,700
+what they've done right? Is they
+built a new application. They
+
+972
+01:00:29,700 --> 01:00:32,430
+built a new application. They
+built some hardware, they've
+
+973
+01:00:32,430 --> 01:00:36,750
+stuck it on a robot, and they're
+good. So yeah, it's it's huge. I
+
+974
+01:00:36,750 --> 01:00:39,780
+think, I think, right? I think
+for now, you're going to see it
+
+975
+01:00:39,810 --> 01:00:43,590
+as you're not going to
+necessarily see app, like just
+
+976
+01:00:43,590 --> 01:00:48,570
+someone who writes apps and
+makes money off the app. Or was
+
+977
+01:00:48,570 --> 01:00:50,670
+there even the app plus tooling,
+I think there's still going to
+
+978
+01:00:50,670 --> 01:00:54,960
+be like, app plus tooling, plus,
+you know, a sales effort on its
+
+979
+01:00:54,960 --> 01:00:57,210
+own right? Like you're, if
+you're selling, if you make a
+
+980
+01:00:57,210 --> 01:00:59,910
+disinfection robot, can you've
+done the app, you've built the
+
+981
+01:00:59,910 --> 01:01:02,460
+hardware, and then you're going
+and you're going to sell it?
+
+982
+01:01:02,670 --> 01:01:05,490
+Right? So I don't think we're
+yet as disser meat
+
+983
+01:01:05,550 --> 01:01:10,440
+disintermediate disintermediated
+as Apple, Apple is, for example,
+
+984
+01:01:10,440 --> 01:01:13,920
+where they also bring you the
+customers. But I definitely
+
+985
+01:01:13,920 --> 01:01:19,530
+think that the time for getting
+a robot off the shelf and just
+
+986
+01:01:19,530 --> 01:01:22,260
+putting like, and just talking
+to its API and throwing some
+
+987
+01:01:22,260 --> 01:01:26,400
+tools on it. That time is now
+like, I think that is now two
+
+988
+01:01:26,400 --> 01:01:29,100
+years ago, it wasn't then but
+but in the last year or so I
+
+989
+01:01:29,100 --> 01:01:31,230
+think we're over that tipping
+point, which is really exciting.
+
+990
+01:01:33,060 --> 01:01:35,580
+I mean, I wouldn't I there's,
+you're still there's still going
+
+991
+01:01:35,580 --> 01:01:39,870
+to be lacking in that the caveat
+there is not every space, right?
+
+992
+01:01:39,870 --> 01:01:43,080
+Like there's no autonomy out
+there, which can take like, you
+
+993
+01:01:43,080 --> 01:01:46,860
+know, what, a one or two killer
+robot and run it around children
+
+994
+01:01:46,860 --> 01:01:50,340
+safely. I think that's not an
+off the shelf tool yet. But
+
+995
+01:01:50,340 --> 01:01:53,100
+around a factory around a mine.
+Now you can do that right now.
+
+996
+01:01:54,480 --> 01:01:59,340
+That's awesome. So you're saying
+like two years ago, it wasn't
+
+997
+01:01:59,340 --> 01:02:02,760
+the case that we could do this?
+Now? It seems to be good. Where
+
+998
+01:02:02,760 --> 01:02:07,350
+do you think it's going kind of
+projecting out? Say the next two
+
+999
+01:02:07,350 --> 01:02:10,410
+years, next five years, 10
+years, whatever it might be?
+
+1000
+01:02:10,440 --> 01:02:11,880
+Where do you think the community
+is going?
+
+1001
+01:02:13,770 --> 01:02:18,060
+Well, I think in general, I
+mean, I think in general, it's
+
+1002
+01:02:18,090 --> 01:02:20,220
+this is funny, because I
+actually asked a very similar
+
+1003
+01:02:20,220 --> 01:02:23,070
+question, when I interview
+people, for for jobs at our
+
+1004
+01:02:23,070 --> 01:02:28,350
+company send out the tables have
+turned, I think, I think in two
+
+1005
+01:02:28,350 --> 01:02:32,550
+years, we're definitely gonna
+see areas specific markets, like
+
+1006
+01:02:32,880 --> 01:02:37,980
+us ours, for example, factories,
+where putting robots in, or
+
+1007
+01:02:38,010 --> 01:02:41,370
+mobile robots and, or
+collaborative robots in is going
+
+1008
+01:02:41,370 --> 01:02:45,840
+to be a pure business decision.
+We have already seen this now,
+
+1009
+01:02:45,870 --> 01:02:48,630
+where people have stopped asking
+us to prove that the
+
+1010
+01:02:48,630 --> 01:02:51,600
+localization is going to work,
+for example, right? Like we
+
+1011
+01:02:51,600 --> 01:02:55,290
+either say localization works,
+and it does, or we say that it's
+
+1012
+01:02:55,290 --> 01:02:57,450
+probably not going to work, and
+we won't sell them, or we won't
+
+1013
+01:02:57,510 --> 01:03:00,840
+try to sell it, right. Like
+that's, but more and more, it's
+
+1014
+01:03:00,840 --> 01:03:09,390
+going to be the same calculation
+of always, it's just like, it's
+
+1015
+01:03:09,390 --> 01:03:12,330
+just gonna be a business
+decision, right? Like, robots
+
+1016
+01:03:12,330 --> 01:03:15,030
+are just something that I buy
+off the shelf. just purely
+
+1017
+01:03:15,030 --> 01:03:18,480
+pragmatic, which to a lesser
+extent, it's kind of that way
+
+1018
+01:03:18,480 --> 01:03:21,720
+with robot arms still. But in
+both cases, the other thing that
+
+1019
+01:03:21,720 --> 01:03:24,720
+makes that possible, is the
+significant decrease in
+
+1020
+01:03:24,720 --> 01:03:29,040
+integration time. And cost. And
+robot arms will still have a
+
+1021
+01:03:29,040 --> 01:03:33,300
+little bit of a challenge there,
+although many companies are
+
+1022
+01:03:33,300 --> 01:03:39,690
+starting to are starting to work
+around that. But you're going to
+
+1023
+01:03:39,690 --> 01:03:42,210
+see very low integration times.
+And because of that, it's going
+
+1024
+01:03:42,210 --> 01:03:45,750
+to be a lot more commodity like
+to just put some robots out in
+
+1025
+01:03:45,750 --> 01:03:49,560
+the out in the world. Five
+years, I mean, five years, I
+
+1026
+01:03:49,560 --> 01:03:52,470
+think we're really going to
+start to see robots in earnest
+
+1027
+01:03:52,710 --> 01:03:55,650
+within the general public.
+Again, maybe not, you know,
+
+1028
+01:03:55,650 --> 01:03:59,520
+maybe not in the daycare, but
+you are going to see them out in
+
+1029
+01:03:59,520 --> 01:04:02,190
+earnest in the general public
+doing useful things. So I don't
+
+1030
+01:04:02,190 --> 01:04:04,980
+mean in science fair projects, I
+don't mean little things like
+
+1031
+01:04:04,980 --> 01:04:08,130
+that. And I know that there are
+various trials, there are
+
+1032
+01:04:08,130 --> 01:04:12,000
+various trials of delivery
+robots and things like this, but
+
+1033
+01:04:12,000 --> 01:04:18,270
+I think it'll be a there'll be
+much more pervasive, much, much
+
+1034
+01:04:18,270 --> 01:04:21,990
+more pervasive. And we will be
+able to say that in certain
+
+1035
+01:04:21,990 --> 01:04:25,770
+cases, and probably not on road
+self driving, sorry to say, but
+
+1036
+01:04:25,890 --> 01:04:30,030
+concerning cases, the safety
+story is effectively salt, I
+
+1037
+01:04:30,030 --> 01:04:34,140
+think we'll be able to say that.
+And when you're there, you know,
+
+1038
+01:04:34,140 --> 01:04:36,960
+what that means is over that,
+that two to five year timeframe.
+
+1039
+01:04:37,140 --> 01:04:41,550
+That's where the real app like
+that, you know, the ecosystem
+
+1040
+01:04:41,550 --> 01:04:45,030
+becomes really powerful. Because
+you know, now we're at the point
+
+1041
+01:04:45,030 --> 01:04:47,670
+where you can write apps for our
+robots in a factory right now.
+
+1042
+01:04:47,970 --> 01:04:50,280
+But first, you need to get into
+the factory, but you can write
+
+1043
+01:04:50,280 --> 01:04:54,090
+it right now. And but now, you
+know, two years, five years from
+
+1044
+01:04:54,090 --> 01:04:57,480
+now, they're really going to be
+in front of everybody. So you'll
+
+1045
+01:04:57,480 --> 01:05:00,780
+be able to script against one of
+those robots. As as much as
+
+1046
+01:05:00,780 --> 01:05:05,160
+everything else, and maybe what
+I'll say is people might look at
+
+1047
+01:05:05,160 --> 01:05:07,620
+this and say, Well, you know,
+why are we saying this now?
+
+1048
+01:05:07,620 --> 01:05:10,440
+Right? Like, didn't people say
+this 10 years ago and 20 years
+
+1049
+01:05:10,440 --> 01:05:12,360
+ago, whatever it like,
+absolutely, they did, right.
+
+1050
+01:05:12,360 --> 01:05:17,640
+Like there was a glut of robot
+App Store companies. You know,
+
+1051
+01:05:17,880 --> 01:05:21,300
+eight years ago, nine years ago,
+roughly, around the time of the
+
+1052
+01:05:21,300 --> 01:05:24,090
+turtlebot, one launch. And then
+there was, you know, Microsoft
+
+1053
+01:05:24,090 --> 01:05:26,820
+heavily invested in robotics
+with Microsoft robotic studio.
+
+1054
+01:05:26,820 --> 01:05:31,230
+And that was, that was a 2000s.
+I think that was, but one of the
+
+1055
+01:05:31,230 --> 01:05:35,880
+things that's happening now is
+that all of those apps couldn't
+
+1056
+01:05:35,880 --> 01:05:41,430
+rely on safe, reliable autonomy.
+And then, and sort of think
+
+1057
+01:05:41,430 --> 01:05:42,690
+about his assault
+
+1058
+01:05:42,720 --> 01:05:45,360
+kind of thing. That's the that's
+the bad word, right? Like,
+
+1059
+01:05:46,770 --> 01:05:50,100
+yeah, you couldn't you couldn't,
+you need to have a target, which
+
+1060
+01:05:50,100 --> 01:05:56,160
+is useful, like a device target,
+which is useful. And now, that
+
+1061
+01:05:56,160 --> 01:05:57,870
+didn't used to be the case,
+right? Like when these app
+
+1062
+01:05:57,870 --> 01:06:00,720
+stores started, started up,
+you're just kind of assuming
+
+1063
+01:06:00,720 --> 01:06:03,630
+that a bunch of people on their
+own, we're each going to come up
+
+1064
+01:06:03,630 --> 01:06:07,320
+with safe, reliable autonomy.
+And that's, that's hard when
+
+1065
+01:06:07,320 --> 01:06:10,890
+you're moving, you know,
+hundreds of kilos around. But
+
+1066
+01:06:10,890 --> 01:06:13,530
+now now, no, I think we're in a
+much better place like that
+
+1067
+01:06:13,530 --> 01:06:17,850
+autonomy is well, I have, you
+know, many million reasons,
+
+1068
+01:06:18,540 --> 01:06:22,590
+million hours of operation to
+say that this is possible,
+
+1069
+01:06:22,620 --> 01:06:22,920
+right?
+
+1070
+01:06:23,910 --> 01:06:31,560
+Hmm. That is exciting. So
+wrapping up, do you have any? Do
+
+1071
+01:06:31,560 --> 01:06:35,520
+you have a Twitter or how can
+people find you or any any
+
+1072
+01:06:35,520 --> 01:06:38,310
+public links, you'd like to
+share anything?
+
+1073
+01:06:39,090 --> 01:06:43,830
+They can find me on LinkedIn? I
+unfortunately, do not. I am not
+
+1074
+01:06:43,830 --> 01:06:47,340
+part of the the Twitter,
+whatever, whatever, whatever
+
+1075
+01:06:47,340 --> 01:06:49,290
+it's being called. But yeah, I'm
+not on Twitter. I'm not on
+
+1076
+01:06:49,290 --> 01:06:53,160
+Instagram, but they can find me
+on LinkedIn. And in my email,
+
+1077
+01:06:53,160 --> 01:06:56,820
+which which will be needed to
+connect is Ryan at clear
+
+1078
+01:06:56,820 --> 01:07:00,690
+path.ai. So they can also find
+me on that email. But LinkedIn
+
+1079
+01:07:00,690 --> 01:07:01,740
+would be preferred, I believe.
+
+1080
+01:07:02,850 --> 01:07:05,010
+Awesome. Okay, I've enjoyed
+this. Thank you.
+
+1081
+01:07:06,210 --> 01:07:07,260
+Thank you very much.
+
+1082
+01:07:09,420 --> 01:07:13,080
+That's all we have for you
+today. I enjoyed Ryan's answer
+
+1083
+01:07:13,080 --> 01:07:16,860
+to where thinks robotics will be
+in two to five years. Where do
+
+1084
+01:07:16,860 --> 01:07:19,380
+you think robotics will be in
+two to five years? Let us know
+
+1085
+01:07:19,380 --> 01:07:23,910
+in the comments on sensing
+gackt.com or discourse. Thank
+
+1086
+01:07:23,910 --> 01:07:26,700
+you again to open robotics for
+being our founding sponsor.
+
+1087
+01:07:27,090 --> 01:07:27,780
+Unknown: Bye, everyone.
+

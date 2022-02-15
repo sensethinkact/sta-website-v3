@@ -1,0 +1,6672 @@
+1
+00:00:02,580 --> 00:00:04,410
+Audrow Nash: Hi, everyone.
+Welcome to the Sensing Think
+
+2
+00:00:04,410 --> 00:00:08,280
+Act Podcast. I'm the host Audrow
+Nash. And in this episode I
+
+3
+00:00:08,280 --> 00:00:12,900
+interview Adrian Macneil, co
+founder and CEO of Foxglove,
+
+4
+00:00:13,170 --> 00:00:16,320
+Foxglove makes Foxglove Studio,
+which is an open source
+
+5
+00:00:16,320 --> 00:00:20,610
+visualization debugging tool for
+robotics. In this interview,
+
+6
+00:00:20,610 --> 00:00:24,540
+Adrian and I talk about the
+origin of Foxglove, Foxglove's
+
+7
+00:00:24,690 --> 00:00:29,310
+business model, web technologies
+and robotics, the timeline for
+
+8
+00:00:29,310 --> 00:00:32,700
+autonomous cars, and Adrian
+gives advice for those
+
+9
+00:00:32,700 --> 00:00:36,090
+interested in getting more
+involved in robotics. I really
+
+10
+00:00:36,090 --> 00:00:39,150
+enjoyed talking to Adrian, he
+has an interesting perspective
+
+11
+00:00:39,150 --> 00:00:42,090
+on technology and seems to be
+involved in interesting
+
+12
+00:00:42,090 --> 00:00:45,510
+technologies, right as they're
+coming up. For example, He was
+
+13
+00:00:45,510 --> 00:00:52,080
+an early employee at Coinbase,
+and Cruise. As always, a big
+
+14
+00:00:52,080 --> 00:00:55,290
+thank you to our founding
+sponsor, Open Robotics, and I
+
+15
+00:00:55,290 --> 00:00:55,980
+hope you enjoy.
+
+16
+00:00:58,230 --> 00:01:02,670
+Hi, Adrian, would you introduce
+yourself? Hi, I'm
+
+17
+00:01:02,670 --> 00:01:05,730
+Adrian Macneil: Adrian Macneil,
+founder and CEO of Foxglove.
+
+18
+00:01:06,900 --> 00:01:11,460
+Audrow Nash: Now, tell me a bit
+about foxglove what it does and
+
+19
+00:01:11,460 --> 00:01:13,500
+what problem it's solving. And
+then I'd love to get into the
+
+20
+00:01:13,500 --> 00:01:14,790
+backstory of that after.
+
+21
+00:01:16,590 --> 00:01:19,230
+Adrian Macneil: Yeah,
+definitely. So foxglove is a
+
+22
+00:01:19,230 --> 00:01:24,060
+developer tools company for
+robotics. We have our main
+
+23
+00:01:24,090 --> 00:01:27,000
+product right now is an open
+source visualization platform
+
+24
+00:01:27,030 --> 00:01:31,410
+for robotics. And it's browser
+based cross platform. We can
+
+25
+00:01:31,410 --> 00:01:34,620
+allow you to really dive into
+your robotics data understanding
+
+26
+00:01:34,620 --> 00:01:38,040
+of your sense of editing and
+planning, visualize things like
+
+27
+00:01:38,040 --> 00:01:43,080
+point clouds, images, overlays,
+markers, bounding boxes, plots,
+
+28
+00:01:43,500 --> 00:01:45,210
+and drill into kind of raw
+messages
+
+29
+00:01:45,240 --> 00:01:48,270
+Audrow Nash: and you guys you
+interface tightly with the robot
+
+30
+00:01:48,270 --> 00:01:51,090
+operating system or Ross
+ecosystem, correct?
+
+31
+00:01:52,110 --> 00:01:55,830
+Adrian Macneil: Right? Yeah,
+correct. So we we work very well
+
+32
+00:01:55,830 --> 00:01:59,400
+with Ross. We don't we're not
+strictly limited to Russell
+
+33
+00:01:59,400 --> 00:02:02,220
+though. That's definitely our
+best supported platform right
+
+34
+00:02:02,220 --> 00:02:06,450
+now. We do allow you to connect
+other types of data sources like
+
+35
+00:02:06,450 --> 00:02:09,810
+for example, we can connect just
+to a velodyne LIDAR and and talk
+
+36
+00:02:09,810 --> 00:02:12,150
+directly to that sensor and
+visualize data coming off the
+
+37
+00:02:12,150 --> 00:02:15,750
+sensor. But when you're in a
+Ross environment, we can
+
+38
+00:02:15,750 --> 00:02:18,210
+obviously make a connection to
+Ross and then we have a lot of
+
+39
+00:02:18,960 --> 00:02:21,690
+custom visualizations that help
+you understand Ross messages
+
+40
+00:02:21,690 --> 00:02:24,420
+like point clouds and images and
+other things like
+
+41
+00:02:24,420 --> 00:02:27,720
+Audrow Nash: how does it compare
+to existing Ross tools like ARV
+
+42
+00:02:27,720 --> 00:02:31,290
+is our Ross visualizer for
+visualization?
+
+43
+00:02:31,650 --> 00:02:35,430
+Adrian Macneil: Yeah, so yeah,
+so we have I would say the
+
+44
+00:02:35,430 --> 00:02:39,420
+biggest difference is that it's
+cross platform and using a web
+
+45
+00:02:39,420 --> 00:02:42,030
+based stack that was something
+you know, we can get into the
+
+46
+00:02:42,030 --> 00:02:46,020
+origin a little bit that that
+was something that was kind of a
+
+47
+00:02:46,050 --> 00:02:48,900
+key underpinning of building
+this technology is that we
+
+48
+00:02:48,900 --> 00:02:52,260
+wanted to work with a browser
+based stack which means that
+
+49
+00:02:52,260 --> 00:02:55,110
+they can run cross platform we
+actually have desktop apps that
+
+50
+00:02:55,110 --> 00:02:58,290
+you can install on your computer
+that run on Mac Windows and
+
+51
+00:02:58,290 --> 00:03:01,350
+Linux equally well and then you
+can also access it in the
+
+52
+00:03:01,350 --> 00:03:06,180
+browser. So that you know that
+makes it like very easy to just
+
+53
+00:03:06,180 --> 00:03:09,660
+jump into an environment and
+start debugging it also kind of
+
+54
+00:03:09,660 --> 00:03:12,960
+unlocks that something that I
+think is as important to me as
+
+55
+00:03:12,960 --> 00:03:16,410
+breaking robotics development
+out of being stuck with like
+
+56
+00:03:16,410 --> 00:03:20,940
+Linux desktops and you know
+Linux is great but a lot of
+
+57
+00:03:20,940 --> 00:03:24,420
+robotics development now is very
+the software the developing is
+
+58
+00:03:24,420 --> 00:03:27,030
+like very tied to the platform
+that you're developing on and
+
+59
+00:03:27,030 --> 00:03:30,900
+you know if you're using Ross
+Vision X you know Ross galactic
+
+60
+00:03:30,900 --> 00:03:35,820
+you need to be using Ubuntu 2004
+and you know that's the only
+
+61
+00:03:35,820 --> 00:03:38,130
+choice you have you pretty much
+stuck with that for your
+
+62
+00:03:38,160 --> 00:03:39,720
+development handle and get
+developed well
+
+63
+00:03:39,719 --> 00:03:42,899
+Audrow Nash: it does work so
+galactic and many of the other
+
+64
+00:03:42,899 --> 00:03:48,749
+Ross two distributions also work
+on Windows not very well I think
+
+65
+00:03:48,749 --> 00:03:53,069
+tier three support for Mac this
+kind of thing Yeah, but
+
+66
+00:03:53,279 --> 00:03:56,369
+Adrian Macneil: yeah, it's
+getting there I did say yeah,
+
+67
+00:03:56,369 --> 00:03:56,879
+you're right.
+
+68
+00:03:57,120 --> 00:04:00,690
+Audrow Nash: But this was this
+was definitely which was kind of
+
+69
+00:04:00,690 --> 00:04:06,900
+the origin of like foxglove was
+a rough one. Or Weber's Yeah, we
+
+70
+00:04:06,900 --> 00:04:10,320
+Adrian Macneil: support both
+Ross one roster Yeah. But yeah,
+
+71
+00:04:10,320 --> 00:04:13,380
+for sure our windows support is
+out there. Although you know,
+
+72
+00:04:13,380 --> 00:04:15,720
+most of the people I've seen
+doing Ross development on
+
+73
+00:04:15,720 --> 00:04:19,050
+windows are using the windows
+subsystem for Linux so they're
+
+74
+00:04:19,050 --> 00:04:21,990
+actually still running you know,
+the actual Linux version. Oh,
+
+75
+00:04:22,020 --> 00:04:26,250
+that's fine. And then yeah, and
+then Mac actually you know, Mac
+
+76
+00:04:26,610 --> 00:04:28,740
+came out I think Ross two
+initially came out and said
+
+77
+00:04:28,740 --> 00:04:33,630
+we're gonna suppose a lot of
+work. Yeah. Like no one kind of
+
+78
+00:04:33,630 --> 00:04:40,620
+stepped up to volunteer. Yeah,
+so the and the actual you know,
+
+79
+00:04:40,620 --> 00:04:42,990
+code that you're writing big
+Linux only is fine, right? Oh,
+
+80
+00:04:42,990 --> 00:04:45,630
+we want to break out of as the
+developer tools so there's no
+
+81
+00:04:45,630 --> 00:04:48,450
+reason that you can't be on a
+Mac developing inside a Docker
+
+82
+00:04:48,450 --> 00:04:52,620
+container. But But your actual
+tools to like visualizing
+
+83
+00:04:52,620 --> 00:04:55,200
+things, it's, you know, those
+graphical tools are going to be
+
+84
+00:04:55,200 --> 00:04:57,630
+easier if you can just connect
+to them from a browser or
+
+85
+00:04:57,630 --> 00:04:59,970
+connect or, you know, fire up a
+native emulator.
+
+86
+00:05:00,000 --> 00:05:03,180
+Audrow Nash: what's the what's
+the big win? Or what are some of
+
+87
+00:05:03,180 --> 00:05:08,100
+the big wins doing it browser
+based as opposed to like qT? or
+
+88
+00:05:08,100 --> 00:05:09,990
+something, which is what ARV is
+uses?
+
+89
+00:05:10,080 --> 00:05:13,920
+Adrian Macneil: Yeah. Yeah,
+yeah. And I think I should jump
+
+90
+00:05:13,920 --> 00:05:17,040
+into some of the other things to
+talk to the browser based thing.
+
+91
+00:05:17,040 --> 00:05:18,930
+And then also some of the other
+things that kind of
+
+92
+00:05:18,930 --> 00:05:22,560
+differentiate us with with
+Office and Matthew two things.
+
+93
+00:05:23,550 --> 00:05:26,370
+browser based, I think, you
+know, there's a few points
+
+94
+00:05:26,370 --> 00:05:30,000
+there. One is that it's it's
+inherently cross platform, you
+
+95
+00:05:30,000 --> 00:05:32,640
+know, the browser is a really
+great environment where, you
+
+96
+00:05:32,640 --> 00:05:34,860
+know, as long as you fire up
+your browser and go to a
+
+97
+00:05:34,860 --> 00:05:37,530
+website, you can pretty much
+expect the same experience,
+
+98
+00:05:37,530 --> 00:05:41,850
+regardless of what platform
+you're on. That makes it really
+
+99
+00:05:41,850 --> 00:05:45,150
+good as you're scaling a
+robotics team. You know, if you
+
+100
+00:05:45,150 --> 00:05:47,310
+start out with just one or two
+people, you're working on a
+
+101
+00:05:47,460 --> 00:05:50,430
+project, that's, that's, you
+know, it's fine if you've got a
+
+102
+00:05:50,490 --> 00:05:53,610
+pretty custom environment set up
+on your computer. But as you
+
+103
+00:05:53,610 --> 00:05:56,130
+scale up that team, you want
+people to just be able to, you
+
+104
+00:05:56,130 --> 00:06:00,000
+know, on board start working on
+the code base, you know, being
+
+105
+00:06:00,000 --> 00:06:02,400
+able to like visit a URL and
+look at things directly is
+
+106
+00:06:02,400 --> 00:06:09,030
+really great. And then another
+point there is that it makes it
+
+107
+00:06:09,030 --> 00:06:13,950
+really easy for you to access
+remote data as well, right? So
+
+108
+00:06:14,490 --> 00:06:16,830
+we can, you know, get into
+talking about data storage a
+
+109
+00:06:16,830 --> 00:06:20,520
+little bit as well. But a lot of
+the times, you know, the state
+
+110
+00:06:20,520 --> 00:06:23,400
+of the art and robotics today, a
+lot of people are just storing,
+
+111
+00:06:23,430 --> 00:06:26,760
+you know, huge 100 gig bag files
+on a computer, and then I've
+
+112
+00:06:26,760 --> 00:06:29,700
+been trying to debug it. And
+that's Ross bag. You want to
+
+113
+00:06:29,700 --> 00:06:31,590
+share this, my friend? Yeah.
+
+114
+00:06:31,650 --> 00:06:36,030
+Audrow Nash: And Ross, too. It's
+an SQL lite database. Right. And
+
+115
+00:06:36,030 --> 00:06:37,440
+I forget what it is in Roscoe,
+and
+
+116
+00:06:39,180 --> 00:06:41,940
+Adrian Macneil: yeah, it's just
+a custom format, bag. Bag file
+
+117
+00:06:41,940 --> 00:06:45,240
+format. That's just basically
+your Ross message. But having
+
+118
+00:06:45,240 --> 00:06:48,720
+Audrow Nash: a big monolithic
+data storage, basically.
+
+119
+00:06:49,200 --> 00:06:50,040
+Massive.
+
+120
+00:06:50,130 --> 00:06:52,770
+Adrian Macneil: Yeah, yeah,
+yeah. And so those can get
+
+121
+00:06:52,770 --> 00:06:55,560
+really huge if you're dealing
+with multiple cameras,
+
+122
+00:06:55,560 --> 00:06:58,290
+especially if you start getting
+into LIDAR and point clouds and
+
+123
+00:06:58,290 --> 00:07:01,410
+radars and sensors, bossier.
+We're also recording all of the
+
+124
+00:07:01,410 --> 00:07:05,400
+other messages that Ross is
+sending back and forth. And so,
+
+125
+00:07:05,880 --> 00:07:07,530
+you know, a lot of people are
+working with these files
+
+126
+00:07:07,560 --> 00:07:10,530
+locally. But sharing that among
+team members is really
+
+127
+00:07:10,530 --> 00:07:14,220
+challenging. It's, you know, a
+case of like, either just get
+
+128
+00:07:14,220 --> 00:07:18,090
+someone to wait here over and
+have a look at your desk. Or you
+
+129
+00:07:18,090 --> 00:07:21,210
+know, you can't, you can't just
+like share a link in slack and
+
+130
+00:07:21,210 --> 00:07:23,580
+have someone else click on that
+and immediately start looking at
+
+131
+00:07:23,580 --> 00:07:27,600
+it. So that's, that's where we
+kind of see the browser's really
+
+132
+00:07:27,600 --> 00:07:29,730
+unlocking these workflows where
+you can just click on data.
+
+133
+00:07:29,730 --> 00:07:32,160
+Audrow Nash: And is that talking
+about having data storage
+
+134
+00:07:32,190 --> 00:07:33,270
+happening in the browser?
+
+135
+00:07:35,130 --> 00:07:38,190
+Adrian Macneil: Yeah, yeah. So
+not always, I mean, the data
+
+136
+00:07:38,190 --> 00:07:43,410
+storage happening on a server?
+Yeah. For sure, yeah. Yeah. But
+
+137
+00:07:44,190 --> 00:07:46,740
+yeah, once you get to having a
+data stored in a centralized
+
+138
+00:07:46,740 --> 00:07:49,830
+location, and the browser can
+just easily be streaming that,
+
+139
+00:07:50,400 --> 00:07:52,500
+you know, it just makes the
+whole internet experience
+
+140
+00:07:52,500 --> 00:07:54,180
+really, really compelling.
+
+141
+00:07:55,080 --> 00:07:57,420
+Audrow Nash: Let's see. So I
+feel like this is a good time to
+
+142
+00:07:57,420 --> 00:08:01,470
+get into the origin story of
+foxglove. So can you tell me
+
+143
+00:08:01,470 --> 00:08:02,160
+where it started?
+
+144
+00:08:04,020 --> 00:08:08,340
+Adrian Macneil: Yeah, sure. So I
+spent the last five years prior
+
+145
+00:08:08,340 --> 00:08:13,680
+to this cruise, building self
+driving cars. And I led
+
+146
+00:08:13,680 --> 00:08:16,200
+basically all of the developer
+tools and infrastructure there.
+
+147
+00:08:16,230 --> 00:08:19,560
+So when I joined, it was, you
+know, a very small company,
+
+148
+00:08:19,560 --> 00:08:24,450
+maybe 40 4050 people or so over
+the over that period, we grew
+
+149
+00:08:24,450 --> 00:08:27,120
+into the sort of 1000 plus
+range, I think it was around
+
+150
+00:08:27,150 --> 00:08:32,850
+1700, when I left out, and you
+know, over that time, or the
+
+151
+00:08:32,850 --> 00:08:37,110
+engineering team grew right
+from, from 20 people to well
+
+152
+00:08:37,110 --> 00:08:42,090
+over 1000. And so, you know,
+they they started, as you know,
+
+153
+00:08:42,090 --> 00:08:44,550
+I'm sure a lot of our products
+company, so it was a Ross stack
+
+154
+00:08:44,550 --> 00:08:49,410
+originally, on Ross one, and you
+have a bunch of people just, you
+
+155
+00:08:49,410 --> 00:08:52,650
+know, contributing code,
+building features, testing
+
+156
+00:08:52,650 --> 00:08:56,400
+things out. But as you scale
+that and 100 and 1000 plus
+
+157
+00:08:56,400 --> 00:08:58,830
+engineers, do you really need to
+start getting a lot more
+
+158
+00:08:58,830 --> 00:09:01,980
+disciplined around the developer
+productivity? What tools are you
+
+159
+00:09:01,980 --> 00:09:04,350
+making available to people? What
+are the workflows that you
+
+160
+00:09:04,350 --> 00:09:10,800
+encourage people to do? You
+know, the less you standardize
+
+161
+00:09:10,800 --> 00:09:13,050
+things, I guess the more pain
+you're in for as you start
+
+162
+00:09:13,050 --> 00:09:17,070
+getting into 1000 plus engineers
+contributing to a project.
+
+163
+00:09:18,269 --> 00:09:22,499
+Audrow Nash: Yeah. And so crews
+had an internal effort to make
+
+164
+00:09:22,499 --> 00:09:25,919
+something for visualization,
+rather than using the standard
+
+165
+00:09:25,919 --> 00:09:30,629
+Ross one arvis. Or our Qt graph.
+Yeah. Anything?
+
+166
+00:09:30,660 --> 00:09:33,690
+Adrian Macneil: Yeah, for sure.
+It started out as as visit
+
+167
+00:09:33,690 --> 00:09:36,900
+Accutane. As I mentioned, they
+started out on a Ross one
+
+168
+00:09:36,900 --> 00:09:40,200
+platform, positive Ross
+definitely gotten kind of
+
+169
+00:09:40,200 --> 00:09:42,690
+switched out over time and
+replaced with in house things.
+
+170
+00:09:43,950 --> 00:09:46,890
+But in the early days, everyone
+was just using, you know, the
+
+171
+00:09:46,890 --> 00:09:52,770
+standard tools like ours. And
+the project that we that we
+
+172
+00:09:52,800 --> 00:09:55,170
+kicked off with visualization
+there. I think we started back
+
+173
+00:09:55,170 --> 00:09:59,160
+in about 2017. It came out of a
+hackathon actually it was not
+
+174
+00:09:59,190 --> 00:10:02,130
+instead of a top down approach
+of you know, this is something
+
+175
+00:10:02,130 --> 00:10:05,490
+we think we need to invest in,
+it was just something that some
+
+176
+00:10:05,490 --> 00:10:08,250
+engineers really felt needed to
+exist and really felt would
+
+177
+00:10:08,310 --> 00:10:13,770
+would kind of streamline the
+workflow. So yeah, that was kind
+
+178
+00:10:13,770 --> 00:10:17,220
+of the origin of width is which,
+you know, some people may be
+
+179
+00:10:17,220 --> 00:10:22,110
+familiar with, they presented
+with us at Ross con in 2019, I
+
+180
+00:10:22,110 --> 00:10:26,340
+think it was eventually open
+sourced in 2019. But back in
+
+181
+00:10:26,340 --> 00:10:31,050
+2017, it really just started as,
+you know, some engineers on the
+
+182
+00:10:31,050 --> 00:10:34,170
+team feeling that that we could,
+you know, we could do better on
+
+183
+00:10:34,170 --> 00:10:38,220
+a couple of aspects. One is, you
+know, bringing these tools to
+
+184
+00:10:38,220 --> 00:10:41,520
+the web where it's a lot easier
+for, for, you know, people to
+
+185
+00:10:41,520 --> 00:10:43,590
+contribute to, like easier to
+find engineers.
+
+186
+00:10:45,029 --> 00:10:49,199
+Audrow Nash: Easier to
+contribute to it or easier to,
+
+187
+00:10:49,649 --> 00:10:52,859
+for people, why is web easier
+for people to contribute to?
+
+188
+00:10:53,880 --> 00:10:56,820
+Adrian Macneil: Yeah, I mean, I
+guess, you know, that could be a
+
+189
+00:10:56,820 --> 00:10:58,830
+bit of a loaded statement,
+because obviously, if you're
+
+190
+00:10:58,830 --> 00:11:02,520
+familiar with c++ development
+and development, then it's going
+
+191
+00:11:02,520 --> 00:11:05,160
+to be a lot harder for you
+personally, to contribute to but
+
+192
+00:11:05,190 --> 00:11:08,340
+you know, on a scale of, of
+larger commercial engineering
+
+193
+00:11:08,340 --> 00:11:14,850
+teams, it's, on average, a lot
+easier to find front end and
+
+194
+00:11:14,850 --> 00:11:19,290
+JavaScript engineers who can
+build web applications. There's
+
+195
+00:11:19,290 --> 00:11:21,930
+just, you know, a much larger
+pool of people that you can draw
+
+196
+00:11:21,930 --> 00:11:24,780
+Audrow Nash: from, would you
+guess the order? Is there like,
+
+197
+00:11:24,780 --> 00:11:27,090
+there's 10 times more people
+that are familiar with
+
+198
+00:11:27,090 --> 00:11:32,670
+JavaScript than c++ or I mean,
+just ballpark for these kinds of
+
+199
+00:11:32,670 --> 00:11:37,950
+jobs? Yeah, I think it's 10. Or,
+like this order of magnitude,
+
+200
+00:11:37,950 --> 00:11:39,600
+Adrian Macneil: probably in the
+Bay Area. That wouldn't be far
+
+201
+00:11:39,600 --> 00:11:44,940
+off. Yeah. Yeah. Yeah. Yeah. I
+haven't seen any numbers
+
+202
+00:11:44,940 --> 00:11:49,020
+specifically on it. But yeah,
+anecdotally going out to hire a
+
+203
+00:11:49,020 --> 00:11:55,170
+front end engineer versus a c++
+engineer who has experience
+
+204
+00:11:55,500 --> 00:11:58,320
+experience. Yeah, Qt experience
+and things like that. Like for
+
+205
+00:11:58,320 --> 00:12:00,840
+sure there's a lot of really
+talented c++ engineers out
+
+206
+00:12:00,840 --> 00:12:04,530
+there, but not so much. On the
+visualization side, there's this
+
+207
+00:12:04,530 --> 00:12:06,900
+argument that I've, you know,
+done game development and things
+
+208
+00:12:06,900 --> 00:12:11,880
+like that. But yeah, just just
+much easier for, especially once
+
+209
+00:12:11,880 --> 00:12:15,600
+your company, you start building
+a lot of internal tools, usually
+
+210
+00:12:15,600 --> 00:12:19,140
+a lot of internal tools are web
+based. And I don't want to push
+
+211
+00:12:19,140 --> 00:12:22,980
+on, on being easy to contribute
+to is like, the main thing, but
+
+212
+00:12:22,980 --> 00:12:25,800
+it's that combined with the fact
+that anyone at the company can
+
+213
+00:12:25,800 --> 00:12:28,020
+just hit a URL and access that
+you don't need to worry about
+
+214
+00:12:28,020 --> 00:12:32,460
+like deploying this app across
+your team. And also, you know,
+
+215
+00:12:32,460 --> 00:12:35,220
+there was something that was
+important to us was being able
+
+216
+00:12:35,220 --> 00:12:38,460
+to like unify these various
+tools into one interface. So
+
+217
+00:12:38,820 --> 00:12:40,890
+Audrow Nash: you mean are? Like,
+
+218
+00:12:41,970 --> 00:12:44,190
+Adrian Macneil: yeah, yeah,
+exactly. So are you able to
+
+219
+00:12:44,190 --> 00:12:44,430
+bring
+
+220
+00:12:44,429 --> 00:12:46,439
+Audrow Nash: speak to what each
+does just a little bit?
+
+221
+00:12:48,059 --> 00:12:52,829
+Adrian Macneil: Yeah, yeah. So
+avars is primarily a 3d based
+
+222
+00:12:52,829 --> 00:12:56,909
+visualization tool. So you can
+go in and you can, you can open
+
+223
+00:12:56,909 --> 00:12:59,069
+up some data, and you can look
+at where your model is sitting
+
+224
+00:12:59,069 --> 00:13:03,059
+in the world. And you can see
+sensor data. And you can see,
+
+225
+00:13:03,059 --> 00:13:06,059
+you know, three name markers, 3d
+bounding boxes, and things like
+
+226
+00:13:06,059 --> 00:13:10,409
+that. You can see things like
+your transforms like the shape
+
+227
+00:13:10,409 --> 00:13:14,129
+of your robot, and you know,
+where your robot is relative to
+
+228
+00:13:14,129 --> 00:13:15,629
+something that it's trying to
+act on.
+
+229
+00:13:16,080 --> 00:13:18,930
+Audrow Nash: And if I understand
+correctly, it's not a 3d
+
+230
+00:13:18,930 --> 00:13:22,260
+simulator. It's more just 3d
+visualization. There's no
+
+231
+00:13:22,260 --> 00:13:24,300
+physics engine associated with
+it.
+
+232
+00:13:24,330 --> 00:13:27,240
+Adrian Macneil: Right? Right.
+Right, exactly. So it's purely
+
+233
+00:13:27,270 --> 00:13:30,450
+taking necessarily information
+from a robot, and then just
+
+234
+00:13:30,450 --> 00:13:33,690
+showing you, you know, how your
+robot is thinking, and the world
+
+235
+00:13:33,690 --> 00:13:39,450
+is gonna have an insight into
+your robot. And then you have,
+
+236
+00:13:39,480 --> 00:13:43,050
+you know, acuity is sort of a
+collection of tools that you can
+
+237
+00:13:43,050 --> 00:13:46,230
+open a standard one on Windows,
+or you can kind of open them in
+
+238
+00:13:46,230 --> 00:13:50,040
+a sort of attached panel
+configuration. And it comes with
+
+239
+00:13:50,040 --> 00:13:53,730
+a handful of other tools, which
+can give you things like reading
+
+240
+00:13:53,730 --> 00:13:56,310
+diagnostics, from a robot
+reading direct messages from a
+
+241
+00:13:56,310 --> 00:14:00,360
+robot, reading plots from a
+robot or reading plots, but
+
+242
+00:14:00,360 --> 00:14:05,430
+displaying plots based on data
+from your robot. And then you
+
+243
+00:14:05,430 --> 00:14:08,430
+start seeing that there's other
+tools in law recently that have
+
+244
+00:14:08,490 --> 00:14:11,610
+come out like plot juggler and
+things, you know, a separate
+
+245
+00:14:11,610 --> 00:14:16,530
+again. And so yeah, that was
+kind of one of our insights, I
+
+246
+00:14:16,529 --> 00:14:20,009
+Audrow Nash: guess, cruise to
+combine them.
+
+247
+00:14:20,429 --> 00:14:22,859
+Adrian Macneil: And one of my
+early in one of my early days
+
+248
+00:14:22,859 --> 00:14:26,009
+there I have a vivid memory of
+attending we so we had Friday
+
+249
+00:14:26,009 --> 00:14:29,639
+demos, basically, every weekend,
+people could jump up and kind of
+
+250
+00:14:29,639 --> 00:14:33,509
+just show something called what
+they've built. And someone from
+
+251
+00:14:33,509 --> 00:14:36,599
+the QA team jumped up and demoed
+the script that they've written
+
+252
+00:14:36,719 --> 00:14:41,789
+that would basically take a bag
+file and then open it, start
+
+253
+00:14:41,789 --> 00:14:44,969
+Ross in the background, and then
+launch about like 12 different
+
+254
+00:14:44,969 --> 00:14:47,819
+windows on your screen and
+rearrange them into position so
+
+255
+00:14:47,819 --> 00:14:53,999
+that you'd be ready to start
+debugging. And I was like, you
+
+256
+00:14:53,999 --> 00:14:56,309
+know, and they got a standing
+ovation for that right because
+
+257
+00:14:56,309 --> 00:15:00,449
+it was so much. Such a massive
+time saver compared to Compared
+
+258
+00:15:00,449 --> 00:15:02,759
+to like, manually going through
+that process and you know,
+
+259
+00:15:02,759 --> 00:15:05,309
+taking a backfile and wanting
+Ross and then opening these
+
+260
+00:15:05,309 --> 00:15:09,419
+various windows, you know, I
+just remember that so vividly
+
+261
+00:15:09,419 --> 00:15:13,469
+because it's, it's, it's, you
+know, like seeing the pain of
+
+262
+00:15:13,469 --> 00:15:15,809
+how difficult it is just to get
+to the point where you're
+
+263
+00:15:15,809 --> 00:15:18,779
+actually getting your work done.
+It's like, this is not, this is
+
+264
+00:15:18,779 --> 00:15:20,369
+just like admin before you
+actually get
+
+265
+00:15:21,059 --> 00:15:23,999
+Audrow Nash: 20 minutes of work
+before you can start work.
+
+266
+00:15:24,330 --> 00:15:27,720
+Adrian Macneil: Right. Right.
+And, you know, and that's
+
+267
+00:15:27,720 --> 00:15:29,790
+actually sort of another
+difference that another point of
+
+268
+00:15:29,790 --> 00:15:34,140
+differentiation we took is that,
+you know, the tools like others
+
+269
+00:15:34,200 --> 00:15:37,950
+are, they're very coupled with
+Ross. So you have to have Ross,
+
+270
+00:15:37,980 --> 00:15:41,190
+you run Ross, in the background,
+you stone, your Ross stack, and
+
+271
+00:15:41,190 --> 00:15:44,100
+then you start others, and
+others will talk to Ross, and
+
+272
+00:15:44,100 --> 00:15:46,530
+it'll show you kind of exactly
+what's happening. And if you
+
+273
+00:15:46,530 --> 00:15:49,620
+want to play back a bag file,
+playback recording that you
+
+274
+00:15:49,620 --> 00:15:55,110
+have, then you need to play that
+back into Ross. And then kind of
+
+275
+00:15:55,110 --> 00:15:57,180
+you'll see it as like a
+byproduct of
+
+276
+00:15:58,170 --> 00:16:00,270
+Audrow Nash: going over the Ross
+network, basically.
+
+277
+00:16:00,510 --> 00:16:02,430
+Adrian Macneil: Right, right.
+Everything's kind of going over
+
+278
+00:16:02,430 --> 00:16:05,850
+the Ross network. And, again,
+when you start thinking about
+
+279
+00:16:05,850 --> 00:16:08,550
+different workflows across the
+company, you have QA engineers,
+
+280
+00:16:08,910 --> 00:16:11,070
+and they have a look at right.
+
+281
+00:16:11,670 --> 00:16:15,120
+Audrow Nash: So they want to
+talk up to good quality, and
+
+282
+00:16:15,120 --> 00:16:16,020
+we're doing things well.
+
+283
+00:16:17,040 --> 00:16:19,230
+Adrian Macneil: Okay, right,
+right, exactly. And if they're
+
+284
+00:16:19,230 --> 00:16:21,660
+taking let's say, there's an
+incident where, you know,
+
+285
+00:16:21,660 --> 00:16:24,510
+something that happened on the
+road, right? We pulled out this
+
+286
+00:16:24,510 --> 00:16:27,240
+or not, we got too close to a
+cyclist, or we, you know,
+
+287
+00:16:27,240 --> 00:16:31,590
+whatever we did, and you've been
+assigned to triage, an engineer
+
+288
+00:16:31,590 --> 00:16:34,260
+has been assigned to that kind
+of triage this and figure out,
+
+289
+00:16:34,710 --> 00:16:38,460
+maybe not like, what is the root
+cause just yet, but where do we
+
+290
+00:16:38,460 --> 00:16:42,690
+think the likely root causes?
+You want to be able to just
+
+291
+00:16:42,690 --> 00:16:45,690
+like, open that kind of incident
+directly and start looking at
+
+292
+00:16:45,690 --> 00:16:45,990
+it? You
+
+293
+00:16:45,990 --> 00:16:50,340
+Audrow Nash: know, you're saying
+that the incident? Yeah, yes.
+
+294
+00:16:50,940 --> 00:16:53,010
+rosbank file or okay.
+
+295
+00:16:53,610 --> 00:16:55,890
+Adrian Macneil: Right, right.
+But you want to, like, what you
+
+296
+00:16:55,890 --> 00:17:00,420
+actually want to do is get into
+visualizing that incident as
+
+297
+00:17:00,420 --> 00:17:03,450
+quickly as possible. And you
+don't, you know, the fact that
+
+298
+00:17:03,450 --> 00:17:05,610
+there steps like downloading a
+bag file,
+
+299
+00:17:05,609 --> 00:17:09,749
+Audrow Nash: which is huge.
+codebase, which is huge,
+
+300
+00:17:09,749 --> 00:17:12,119
+probably. So it probably takes
+
+301
+00:17:12,120 --> 00:17:13,860
+Adrian Macneil: a while to like
+100 gigabyte
+
+302
+00:17:15,360 --> 00:17:19,110
+Audrow Nash: uploads are often
+slow. You get it from a thumb
+
+303
+00:17:19,110 --> 00:17:19,410
+drive.
+
+304
+00:17:20,159 --> 00:17:23,729
+Adrian Macneil: Okay, yeah, tell
+you all about No. So it's just a
+
+305
+00:17:23,729 --> 00:17:26,039
+process, right, kind of take
+that back file, and you bring it
+
+306
+00:17:26,039 --> 00:17:28,139
+down to your computer, and then
+you open up, you know, check out
+
+307
+00:17:28,139 --> 00:17:30,539
+the code base, and you go back
+to the version of the code base
+
+308
+00:17:30,539 --> 00:17:32,849
+that you had last week that was
+actually running on and then you
+
+309
+00:17:32,849 --> 00:17:35,669
+launch Ross launch hours, and
+like, now you're looking at the
+
+310
+00:17:35,669 --> 00:17:39,089
+data. And, you know, we just
+wanted to simplify the whole
+
+311
+00:17:39,089 --> 00:17:41,339
+process. So it's like, you click
+on the link, and then you're
+
+312
+00:17:41,339 --> 00:17:42,389
+looking at it immediately.
+
+313
+00:17:45,060 --> 00:17:47,880
+Audrow Nash: Yeah, that is way
+easier, where you can just open
+
+314
+00:17:47,880 --> 00:17:51,300
+it. And so you, and then this
+gets into the cross platform and
+
+315
+00:17:51,300 --> 00:17:55,410
+everything because they could be
+on any computer. And they don't
+
+316
+00:17:55,410 --> 00:17:58,500
+need to spend their money for OS
+installed. And they don't need
+
+317
+00:17:58,500 --> 00:18:00,030
+to have Ross bag installed.
+
+318
+00:18:01,980 --> 00:18:03,750
+Adrian Macneil: Just run it on a
+Chromebook or something and
+
+319
+00:18:03,750 --> 00:18:05,820
+just, you know, immediately jump
+into things.
+
+320
+00:18:06,630 --> 00:18:11,340
+Audrow Nash: Gotcha. Okay, so
+then I see the motivation for
+
+321
+00:18:11,340 --> 00:18:15,690
+this quite clearly. So you were
+at cruise, and you were working
+
+322
+00:18:15,690 --> 00:18:19,710
+on web servers. And you had this
+experience where someone
+
+323
+00:18:19,710 --> 00:18:23,670
+automated some of the setup that
+they might go through when
+
+324
+00:18:24,300 --> 00:18:29,340
+trying to do some debugging. And
+that was like an aha moment for
+
+325
+00:18:29,340 --> 00:18:31,650
+you. And then is that how web is
+started?
+
+326
+00:18:33,420 --> 00:18:38,700
+Adrian Macneil: Yeah, and, you
+know, to clarify, I guess I, I
+
+327
+00:18:38,700 --> 00:18:41,790
+was the director of engineering,
+so I didn't like contribute
+
+328
+00:18:42,840 --> 00:18:45,720
+much, or anything to the webfest
+card itself that the team was
+
+329
+00:18:45,720 --> 00:18:50,220
+under me, but all the talented
+engineers did the work not, not
+
+330
+00:18:50,220 --> 00:18:56,280
+me. But you know, I very much
+agreed with the vision of of
+
+331
+00:18:56,280 --> 00:18:59,250
+what they were trying to achieve
+there. And I think, you know,
+
+332
+00:18:59,250 --> 00:19:02,190
+we, the team that was working on
+that there was some really
+
+333
+00:19:02,190 --> 00:19:06,120
+talented engineers, they kind of
+made a proof of concept. Like I
+
+334
+00:19:06,120 --> 00:19:09,210
+said, at a hackathon. They went
+around, you know, a handful of
+
+335
+00:19:09,210 --> 00:19:13,830
+different teams, and kind of
+went team by him and said, Hey,
+
+336
+00:19:13,830 --> 00:19:15,990
+you know, what problems you're
+having with your tools? How can
+
+337
+00:19:15,990 --> 00:19:18,840
+we solve them with your
+visualization, and just
+
+338
+00:19:18,840 --> 00:19:21,750
+incorporated all of the various
+workflows that were happening
+
+339
+00:19:21,750 --> 00:19:26,190
+across the company into this one
+tool. And so, you know, over
+
+340
+00:19:26,190 --> 00:19:29,970
+that period of a year or so, it
+just became kind of an
+
+341
+00:19:29,970 --> 00:19:33,210
+indispensable that everyone was
+using at the company. And that
+
+342
+00:19:33,210 --> 00:19:38,490
+really just opened my eyes up to
+you know, how much of a
+
+343
+00:19:38,490 --> 00:19:41,880
+productivity boost a good
+quality visualization tool could
+
+344
+00:19:41,880 --> 00:19:46,380
+be. And, you know, that's what
+ultimately led us to consulting.
+
+345
+00:19:46,950 --> 00:19:54,060
+Audrow Nash: Gotcha. And so you
+open sourced web is and then now
+
+346
+00:19:54,060 --> 00:19:58,230
+you are with foxglove. Can you
+tell me a bit about that
+
+347
+00:19:58,230 --> 00:19:58,860
+transition
+
+348
+00:20:00,000 --> 00:20:03,750
+Adrian Macneil: Yeah, yeah, for
+sure. So we open sourced my
+
+349
+00:20:03,750 --> 00:20:08,760
+visit cruise in around 2019. The
+goal there was to, you know,
+
+350
+00:20:08,760 --> 00:20:13,530
+give back to the community. And,
+you know, also just to put some
+
+351
+00:20:13,530 --> 00:20:16,890
+of that code out there as as,
+you know, engineers working on
+
+352
+00:20:16,890 --> 00:20:20,610
+projects that companies quite
+often you want to just put, you
+
+353
+00:20:20,610 --> 00:20:25,500
+know, anything that's not sort
+of like, tied critical IP to the
+
+354
+00:20:25,500 --> 00:20:28,230
+company. Yeah, yeah, critical
+company secrets, it's always
+
+355
+00:20:28,230 --> 00:20:30,570
+nice to be able to publish
+things. And we published a lot
+
+356
+00:20:30,570 --> 00:20:33,270
+of open source code occurs
+around, you know, even just
+
+357
+00:20:33,270 --> 00:20:35,610
+unrelated things, like how we're
+managing our Kubernetes
+
+358
+00:20:35,610 --> 00:20:39,510
+infrastructure and things like
+that. But, you know, we put
+
+359
+00:20:39,690 --> 00:20:41,880
+those out there, and it was
+available for the community to
+
+360
+00:20:41,880 --> 00:20:46,710
+use. And, you know, they
+presented a Roscommon 2019, I
+
+361
+00:20:46,710 --> 00:20:50,640
+think, and, you know, picked up
+a bit of steam. Certainly people
+
+362
+00:20:50,640 --> 00:20:55,890
+were out there using it. But I
+guess, you know, here's where I
+
+363
+00:20:55,890 --> 00:21:00,690
+would draw differentiation
+between non open source coders
+
+364
+00:21:00,690 --> 00:21:03,570
+create an equal, I guess there's
+a difference between kind of
+
+365
+00:21:03,810 --> 00:21:06,690
+code that is public versus
+actual communities that are
+
+366
+00:21:06,690 --> 00:21:11,490
+being built. And, you know, I
+don't vote Cruz for this in any
+
+367
+00:21:11,490 --> 00:21:14,760
+way. I think Chris is absolutely
+making the right decisions for
+
+368
+00:21:14,760 --> 00:21:17,910
+their own prioritization and
+things. But, I mean, I was like
+
+369
+00:21:17,910 --> 00:21:22,500
+part of these decision making
+but but Chris doesn't have time
+
+370
+00:21:22,560 --> 00:21:26,160
+to build features and weathers
+that are not useful to crews,
+
+371
+00:21:26,430 --> 00:21:28,980
+for example, you know, they have
+the project out there, but like,
+
+372
+00:21:28,980 --> 00:21:31,470
+no one is building Ross to
+support and the weapons are
+
+373
+00:21:31,470 --> 00:21:31,920
+known as
+
+374
+00:21:32,220 --> 00:21:34,680
+Audrow Nash: their stack is rock
+one, or
+
+375
+00:21:36,150 --> 00:21:38,250
+Adrian Macneil: stack now. I
+mean, the stacks kind of, you
+
+376
+00:21:38,250 --> 00:21:43,050
+know, hitting off in a different
+direction entirely. So, you
+
+377
+00:21:43,050 --> 00:21:45,510
+know, it's the code was out
+there, and it was available for
+
+378
+00:21:45,510 --> 00:21:49,320
+people to use, but there was
+never a kind of a pretense that
+
+379
+00:21:49,320 --> 00:21:52,710
+crews wanted to sort of invest
+heavily in building a community
+
+380
+00:21:52,710 --> 00:21:55,740
+and adding features that were
+like, not useful to them at all.
+
+381
+00:21:56,160 --> 00:21:58,950
+Like I say, this is, you know,
+absolutely the right decision.
+
+382
+00:21:58,950 --> 00:22:02,010
+If you're, if you're, the
+purpose of your company, is get
+
+383
+00:22:02,010 --> 00:22:04,590
+a self driving car going in San
+Francisco, you know, the purpose
+
+384
+00:22:04,590 --> 00:22:07,830
+of the company is not build
+unrelated kind of open source
+
+385
+00:22:07,830 --> 00:22:10,920
+communities and invest heavily
+in that sometimes that happens,
+
+386
+00:22:10,920 --> 00:22:15,630
+you know, if you're a company
+the size of Facebook, and then
+
+387
+00:22:15,630 --> 00:22:18,900
+you build something like react
+exactly like, shot, you have
+
+388
+00:22:18,900 --> 00:22:21,990
+hundreds of 1000s of employees,
+and you can spare a small team
+
+389
+00:22:21,990 --> 00:22:24,780
+of 30 to work on XYZ thing, but
+
+390
+00:22:25,020 --> 00:22:27,240
+Audrow Nash: it's crazy. It's
+really that small. Yeah, that
+
+391
+00:22:27,240 --> 00:22:30,210
+makes sense. But yeah, I didn't
+know. It could Yeah, or
+
+392
+00:22:30,210 --> 00:22:31,620
+something. Was that just guess
+yeah.
+
+393
+00:22:31,620 --> 00:22:34,620
+Adrian Macneil: But yeah, it's
+Yeah, it's, it's when you're a
+
+394
+00:22:34,620 --> 00:22:37,830
+sufficiently large company, you
+can kind of afford to make those
+
+395
+00:22:37,830 --> 00:22:41,280
+bets. But for the majority of
+companies out there, you're, you
+
+396
+00:22:41,280 --> 00:22:44,730
+know, when they're open sourcing
+code, it's usually sort of isn't
+
+397
+00:22:44,730 --> 00:22:48,390
+code that we wrote, use it if
+you like it, but we're not
+
+398
+00:22:48,390 --> 00:22:52,950
+supporting it. still focused on
+my internal needs. Yeah. Makes
+
+399
+00:22:52,950 --> 00:22:56,790
+sense. Yeah. So that's, you
+know, that's what ultimately led
+
+400
+00:22:56,790 --> 00:23:00,990
+to foxglove. We had a lot of
+chances, the windows team with
+
+401
+00:23:00,990 --> 00:23:04,800
+courage and leadership and
+several other weapons team are
+
+402
+00:23:04,800 --> 00:23:09,360
+working Foxcroft now. But we
+wanted to make a clean break, I
+
+403
+00:23:09,360 --> 00:23:14,460
+guess we, you know, another bit
+of context, as to the weapons,
+
+404
+00:23:14,580 --> 00:23:17,520
+as it exists today is pretty
+tightly coupled with a lot of
+
+405
+00:23:17,520 --> 00:23:22,140
+internal crew systems. So the
+open source version of weapons
+
+406
+00:23:23,730 --> 00:23:27,000
+is only you know, only about
+half of the code and weapons is
+
+407
+00:23:27,000 --> 00:23:30,390
+actually open source, right. And
+the rest of it is special custom
+
+408
+00:23:30,600 --> 00:23:34,350
+source that exists inside our
+crews. And those two are quite
+
+409
+00:23:34,380 --> 00:23:40,170
+tightly intertwined. It's not
+sort of super easy. For us, as
+
+410
+00:23:40,260 --> 00:23:42,990
+founding foxglove, it's not
+super easy for us to go and kind
+
+411
+00:23:42,990 --> 00:23:46,800
+of contribute back to that
+project without having access to
+
+412
+00:23:46,800 --> 00:23:51,180
+all of the closed source things.
+Yep. Makes sense. So we made the
+
+413
+00:23:51,180 --> 00:23:53,940
+decision, when we founded Fox
+five at the start of this year
+
+414
+00:23:53,940 --> 00:23:58,950
+that we wanted to kind of carry
+on weathers in spirit. And you
+
+415
+00:23:58,950 --> 00:24:02,490
+know, we use the we forked the
+code base originally, which
+
+416
+00:24:02,490 --> 00:24:04,890
+means we took that code base,
+and we're basically saying, you
+
+417
+00:24:04,890 --> 00:24:07,830
+know, where versus here, it's,
+it's the open source version of
+
+418
+00:24:07,830 --> 00:24:11,280
+web, this is not really
+undergoing a lot of significant
+
+419
+00:24:11,280 --> 00:24:14,580
+changes. Right now, most of the
+team that still works on that
+
+420
+00:24:14,580 --> 00:24:19,230
+occurs is primarily focused on
+career specific additions that
+
+421
+00:24:19,230 --> 00:24:22,500
+are not open source yet. But you
+know, we said we're gonna, we're
+
+422
+00:24:22,500 --> 00:24:25,080
+gonna just, you know, we want to
+continue this in the spirit, but
+
+423
+00:24:25,080 --> 00:24:27,660
+we're going to, it's going to
+become a different product over
+
+424
+00:24:27,660 --> 00:24:32,430
+time. And we don't want to sort
+of create kind of confusion
+
+425
+00:24:32,430 --> 00:24:35,010
+there. We just want to say, Hey,
+we're building Foxtrot. We're
+
+426
+00:24:35,010 --> 00:24:36,990
+using some of the stuff that was
+done in the past. we're
+
+427
+00:24:36,990 --> 00:24:39,360
+incorporating a whole bunch of
+Elon ideas, but we're not kind
+
+428
+00:24:39,360 --> 00:24:44,250
+of being held back by what's of
+company technical. Yeah,
+
+429
+00:24:44,250 --> 00:24:47,040
+exactly, like company interests,
+or just like, you know,
+
+430
+00:24:47,070 --> 00:24:50,970
+technical limitations around how
+how projects are kind of tied to
+
+431
+00:24:50,970 --> 00:24:51,810
+internal code.
+
+432
+00:24:51,959 --> 00:24:56,969
+Audrow Nash: Yep. And how did
+you decide to form a company
+
+433
+00:24:56,969 --> 00:25:01,199
+around this as opposed to any of
+these Other things that you
+
+434
+00:25:01,199 --> 00:25:03,959
+could have done like you could
+have just been a side project or
+
+435
+00:25:04,049 --> 00:25:07,589
+like, decide to jump on and run?
+Yeah,
+
+436
+00:25:07,620 --> 00:25:10,200
+Adrian Macneil: I guess? Yeah,
+that's a really good question. I
+
+437
+00:25:10,200 --> 00:25:15,270
+think, I believe very strongly
+in the future of robotics. I
+
+438
+00:25:15,270 --> 00:25:18,270
+think, you know, there's an
+enormous industry out there for
+
+439
+00:25:18,330 --> 00:25:20,790
+our enormous opportunity out
+there for robotics to just
+
+440
+00:25:20,790 --> 00:25:25,110
+completely change. What our
+economy looks like, what society
+
+441
+00:25:25,110 --> 00:25:28,050
+looks like, I think, you know, I
+think people are massively under
+
+442
+00:25:28,050 --> 00:25:31,080
+estimating how much robotics is
+going to impact the next 10 or
+
+443
+00:25:31,080 --> 00:25:38,910
+20 years of kind of human life.
+And I also really believe that
+
+444
+00:25:39,810 --> 00:25:43,140
+high quality, you know, I love
+engineering, productivity,
+
+445
+00:25:43,140 --> 00:25:46,620
+development, productivity, I
+believe that high quality tools
+
+446
+00:25:47,430 --> 00:25:50,310
+can help people focus on doing
+what they do best. And I've
+
+447
+00:25:50,310 --> 00:25:53,490
+seen, you know, I've seen that
+kurzen and other companies I've
+
+448
+00:25:53,490 --> 00:25:58,830
+seen, really talented engineers
+are, like deep, deep domain
+
+449
+00:25:58,830 --> 00:26:03,060
+experts struggle and spend 80%
+of their time fighting with
+
+450
+00:26:03,060 --> 00:26:05,310
+something that they don't
+properly understand. Because
+
+451
+00:26:05,310 --> 00:26:09,930
+it's not, it's not their
+expertise. And, you know,
+
+452
+00:26:09,960 --> 00:26:14,010
+likewise, I guess that's where I
+always felt that I and others
+
+453
+00:26:14,010 --> 00:26:18,000
+can kind of contribute, because,
+you know, I'm not, I'm not kind
+
+454
+00:26:18,000 --> 00:26:21,600
+of, you know, controls PhD or
+machine learning PhD or anything
+
+455
+00:26:21,600 --> 00:26:27,870
+like I don't claim to be a
+super. Right, but I can tell you
+
+456
+00:26:27,870 --> 00:26:30,480
+how, like build systems work and
+data works and and systems
+
+457
+00:26:30,480 --> 00:26:32,970
+brought together and
+visualization and how these kind
+
+458
+00:26:32,970 --> 00:26:37,050
+of things work. And I really
+believe that kind of, you know,
+
+459
+00:26:37,080 --> 00:26:40,830
+good quality tooling means that
+domain experts can all focus on
+
+460
+00:26:40,830 --> 00:26:43,140
+kind of their, their area of
+expertise.
+
+461
+00:26:43,680 --> 00:26:47,280
+Audrow Nash: Gotcha. So you're
+basically making it easier for
+
+462
+00:26:47,280 --> 00:26:49,740
+people to work on what they are
+good at.
+
+463
+00:26:51,360 --> 00:26:54,420
+Adrian Macneil: Right, exactly.
+And yeah, and then so that, I
+
+464
+00:26:54,420 --> 00:26:56,970
+guess, tying it back to your
+question was, you know, how did
+
+465
+00:26:56,970 --> 00:27:01,860
+that leave the founding box live
+was that we were foxtel. If we
+
+466
+00:27:01,860 --> 00:27:04,050
+wanted to, you know,
+visualization, that's where
+
+467
+00:27:04,050 --> 00:27:06,930
+we're starting. But the ultimate
+goal of our slogan is to make
+
+468
+00:27:06,930 --> 00:27:09,300
+robotics development easier,
+right? We want to be able to
+
+469
+00:27:09,300 --> 00:27:13,680
+help roboticists focus on their
+domain problems, focus on on
+
+470
+00:27:13,680 --> 00:27:16,530
+shipping products, and not worry
+about, you know, how they're
+
+471
+00:27:16,530 --> 00:27:19,110
+thinking about their tools and
+their data and their development
+
+472
+00:27:19,110 --> 00:27:23,250
+workflow and all of these
+things. So the visualization
+
+473
+00:27:23,250 --> 00:27:27,210
+pace was our starting point,
+because I believe that there's
+
+474
+00:27:27,240 --> 00:27:29,670
+just, you know, such big, low
+hanging fruit there. It's
+
+475
+00:27:29,670 --> 00:27:33,240
+something that we selfie, so
+impactful at cruise, but you
+
+476
+00:27:33,240 --> 00:27:36,090
+know, we have kind of a roadmap
+of other areas that we also
+
+477
+00:27:36,090 --> 00:27:37,170
+really think we can help them.
+
+478
+00:27:37,529 --> 00:27:41,549
+Audrow Nash: Awesome. I'm
+interested to talk about that.
+
+479
+00:27:41,549 --> 00:27:48,809
+But first, you also had a lot of
+several people go from cruise to
+
+480
+00:27:48,809 --> 00:27:51,989
+working at Box club with you.
+Would you tell me a bit about
+
+481
+00:27:51,989 --> 00:27:52,319
+that?
+
+482
+00:27:53,700 --> 00:27:58,620
+Adrian Macneil: Yeah, so we, my
+co founder, and I both. So my co
+
+483
+00:27:58,620 --> 00:28:02,370
+founder, Roman, he's our CTO, we
+have worked together for a long
+
+484
+00:28:02,370 --> 00:28:04,710
+time, we actually worked
+together before careers, we
+
+485
+00:28:04,710 --> 00:28:06,780
+worked together for years before
+careers, we work together at
+
+486
+00:28:06,780 --> 00:28:11,760
+Coinbase. And that was where we
+met. So I was an early
+
+487
+00:28:11,760 --> 00:28:14,430
+engineering hire, and the first
+head of engineering and
+
+488
+00:28:14,430 --> 00:28:19,710
+Coinbase, back in back in the
+early days. And yeah, we met
+
+489
+00:28:19,710 --> 00:28:22,920
+there. We worked together for a
+long time, he was actually the
+
+490
+00:28:22,920 --> 00:28:25,050
+one that introduced me to
+careers and convince me to come
+
+491
+00:28:25,050 --> 00:28:30,210
+there. And then so you know, we
+really wanted to do something
+
+492
+00:28:30,210 --> 00:28:34,650
+together around robotics,
+developer tools, we got chatting
+
+493
+00:28:34,650 --> 00:28:39,060
+to a few folks. Many, you know,
+several of our team members have
+
+494
+00:28:39,060 --> 00:28:44,070
+come from careers. Mostly not
+directly, I guess, you know,
+
+495
+00:28:44,070 --> 00:28:47,640
+like I said, it was sort of five
+years since I or more now since
+
+496
+00:28:47,640 --> 00:28:51,750
+I started at Chris or Robin,
+and, you know, several of the
+
+497
+00:28:51,750 --> 00:28:56,400
+other folks on our team had come
+from, had been at cruise for,
+
+498
+00:28:56,430 --> 00:28:58,680
+you know, two or three years and
+then had gone to other
+
+499
+00:28:58,680 --> 00:29:03,300
+companies, products like this.
+And then, you know, we kind of
+
+500
+00:29:03,300 --> 00:29:06,780
+just reconnected with a bunch of
+people on our network and to see
+
+501
+00:29:06,780 --> 00:29:07,800
+who would be interested.
+
+502
+00:29:08,070 --> 00:29:12,480
+Audrow Nash: Sorry, Siri popped
+up. Why would you say, for the
+
+503
+00:29:12,480 --> 00:29:12,840
+last?
+
+504
+00:29:13,770 --> 00:29:16,320
+Adrian Macneil: Yeah, just just
+that we, you know, all of those
+
+505
+00:29:16,320 --> 00:29:19,590
+people had been that had been
+that curse. And then had gone on
+
+506
+00:29:19,590 --> 00:29:22,680
+to work at other companies. And
+we just reconnected with, with
+
+507
+00:29:22,710 --> 00:29:25,500
+some folks in our network to see
+her. You know, I was interested
+
+508
+00:29:25,500 --> 00:29:28,140
+in doing something around this.
+Yeah.
+
+509
+00:29:30,090 --> 00:29:33,990
+Audrow Nash: And now, you said
+you strongly believe in the
+
+510
+00:29:33,990 --> 00:29:37,530
+future of robotics. Would you
+just tell me a bit more about
+
+511
+00:29:37,530 --> 00:29:40,740
+that, like, what is making you
+so optimistic about the future
+
+512
+00:29:40,740 --> 00:29:41,430
+of robotics?
+
+513
+00:29:42,270 --> 00:29:46,500
+Adrian Macneil: Yeah, I mean,
+it's, it's, it's inevitable,
+
+514
+00:29:46,500 --> 00:29:51,990
+right? You see. I mean, and
+partly, maybe this comes from
+
+515
+00:29:51,990 --> 00:29:55,710
+having worked their careers and
+seeing what is possible. I
+
+516
+00:29:55,710 --> 00:29:57,990
+think, you know, a lot of people
+haven't really had that glimpse
+
+517
+00:29:57,990 --> 00:30:01,110
+into what is possible, but when
+you do Sit in a car that's
+
+518
+00:30:01,110 --> 00:30:04,050
+driving itself around a busy
+intersection with, you know,
+
+519
+00:30:04,050 --> 00:30:07,320
+potentially hundreds of people
+walking around it and cyclists
+
+520
+00:30:07,320 --> 00:30:11,790
+and cars and, you know, you see
+a car that can, I mean, I was,
+
+521
+00:30:12,600 --> 00:30:15,540
+you know, six, seven years ago
+very skeptical about self
+
+522
+00:30:15,540 --> 00:30:19,500
+driving cars. But you know,
+having having gone on scene and
+
+523
+00:30:19,500 --> 00:30:21,900
+setting those cars and seeing
+the progress that's made and
+
+524
+00:30:21,900 --> 00:30:25,560
+seeing things that, you know,
+you hear people while you're
+
+525
+00:30:25,560 --> 00:30:27,510
+talking to people on the street
+that have not worked in the
+
+526
+00:30:27,510 --> 00:30:29,820
+industry, and they say, Well, I
+don't think it's after because
+
+527
+00:30:29,820 --> 00:30:31,620
+of course it won't because
+sometimes you just need to be
+
+528
+00:30:31,620 --> 00:30:36,120
+able to understand you know, one
+of the other humans doing and
+
+529
+00:30:36,120 --> 00:30:38,820
+then you see the team was just
+plugging away at problems like
+
+530
+00:30:39,240 --> 00:30:43,650
+you know, a four way stop sign
+is a very common in America, we
+
+531
+00:30:43,650 --> 00:30:46,740
+have we, you know, cars have to
+basically take turns and giving
+
+532
+00:30:47,130 --> 00:30:52,110
+way to each other. And
+especially in San Francisco, you
+
+533
+00:30:52,110 --> 00:30:55,260
+have to be quite assertive in a
+four way stop sign up to a stop
+
+534
+00:30:55,260 --> 00:31:00,000
+sign. And you know, technically
+it's your right away if you got
+
+535
+00:31:00,000 --> 00:31:02,190
+there first and someone else got
+there half a second later. But
+
+536
+00:31:02,190 --> 00:31:06,150
+if you don't start pulling out
+into that intersection, you
+
+537
+00:31:06,150 --> 00:31:09,390
+know, the other car is gonna is
+gonna go very quickly, right? So
+
+538
+00:31:09,720 --> 00:31:12,570
+you look at these problems and
+you know, you start thinking
+
+539
+00:31:12,570 --> 00:31:15,000
+about people signaling and
+things like that, but but he
+
+540
+00:31:15,000 --> 00:31:17,640
+seems like chip away at these
+problems and get to a point
+
+541
+00:31:17,640 --> 00:31:21,150
+where they've tuned the car
+where you know, as as the cars
+
+542
+00:31:21,150 --> 00:31:23,790
+turns coming up, it has like a
+very human like behavior where
+
+543
+00:31:23,790 --> 00:31:27,000
+it pulls forward slightly to
+kind of indicate its intention
+
+544
+00:31:27,000 --> 00:31:30,960
+that it's going to go and that
+actually causes the other cars
+
+545
+00:31:30,960 --> 00:31:33,420
+not to pull out because they
+they can kind of see your
+
+546
+00:31:33,420 --> 00:31:36,450
+intention that you're planning
+on going and you know, these
+
+547
+00:31:36,480 --> 00:31:39,660
+these things, they sound like
+very human behaviors, but you
+
+548
+00:31:39,660 --> 00:31:42,540
+can actually just really get
+down into into kind of encoding
+
+549
+00:31:42,540 --> 00:31:46,290
+and machine learning models or,
+or even you know, hard coded
+
+550
+00:31:46,290 --> 00:31:49,680
+logic in some cases where the
+car is like exhibiting very
+
+551
+00:31:49,680 --> 00:31:54,150
+human like Vega so yeah, it's,
+it's really interesting, you
+
+552
+00:31:54,150 --> 00:31:58,020
+kind of see, see that evolve,
+and then you look around the
+
+553
+00:31:58,020 --> 00:32:02,490
+world, and you just see how many
+things done, how many sort of,
+
+554
+00:32:03,420 --> 00:32:06,510
+you know, tasks, or jobs are
+done by humans today that are
+
+555
+00:32:06,510 --> 00:32:10,830
+both like a, like, very
+interesting, very repetitive,
+
+556
+00:32:11,790 --> 00:32:15,240
+you know, couldn't be done
+better, more reliably cheaper by
+
+557
+00:32:15,240 --> 00:32:18,540
+machines? And the kicker is that
+they're way easier than driving
+
+558
+00:32:18,540 --> 00:32:23,040
+around San Francisco. Yeah, so
+like, you know, this is great
+
+559
+00:32:23,040 --> 00:32:25,140
+course, you know, the future is
+here, it's just not on
+
+560
+00:32:25,140 --> 00:32:28,410
+definitely, it's not evenly
+distributed, right? It's, it's
+
+561
+00:32:28,410 --> 00:32:32,280
+like it's just inevitable to me
+that the launch of burgers is
+
+562
+00:32:32,280 --> 00:32:35,700
+going to if you took all the
+technology that was currently
+
+563
+00:32:35,700 --> 00:32:39,180
+being developed and self driving
+cars and apply that to, you
+
+564
+00:32:39,180 --> 00:32:43,050
+know, warehouses, logistics,
+manufacturing, agriculture,
+
+565
+00:32:44,250 --> 00:32:48,030
+shipping like this, you know,
+food prep for production,
+
+566
+00:32:48,750 --> 00:32:53,220
+there's, there's so many areas
+where all of these environments
+
+567
+00:32:53,220 --> 00:32:57,120
+are much more constrained than
+then, you know, driving around a
+
+568
+00:32:57,120 --> 00:33:00,120
+city. And if you took 1000
+engineers and apply that to
+
+569
+00:33:00,120 --> 00:33:03,840
+that, there's no doubt that
+those loads will be solved. You
+
+570
+00:33:03,840 --> 00:33:07,080
+know, very quickly, the thing
+is, right now, there's not that,
+
+571
+00:33:07,590 --> 00:33:10,230
+I guess, you know, economic
+investment is not there to put
+
+572
+00:33:10,230 --> 00:33:13,410
+1000 engineers on a problem
+about self driving forklift or
+
+573
+00:33:13,410 --> 00:33:16,170
+something. We're certainly
+getting there. But it's not at
+
+574
+00:33:16,170 --> 00:33:20,310
+that scale yet. But you get this
+kind of flywheel effect where as
+
+575
+00:33:20,310 --> 00:33:22,200
+more people start trying to
+solve those problems, better
+
+576
+00:33:22,200 --> 00:33:24,270
+tools come along, better
+frameworks come along, better
+
+577
+00:33:24,270 --> 00:33:26,340
+libraries come along, there's
+more off the shelf that people
+
+578
+00:33:26,340 --> 00:33:29,730
+can use, you know, the flywheel
+start spinning, and then teams
+
+579
+00:33:29,730 --> 00:33:32,340
+of 10 engineers can all of a
+sudden have the output of
+
+580
+00:33:32,340 --> 00:33:37,830
+October 1000, you know, a decade
+earlier. So yeah, just, I mean,
+
+581
+00:33:37,830 --> 00:33:41,130
+that's what makes me so I guess,
+so interested in optimistic
+
+582
+00:33:41,130 --> 00:33:44,400
+about the future of robotics is
+just that, you know, it's, it's,
+
+583
+00:33:44,400 --> 00:33:47,790
+it's going to have a massive
+impact. And I think that people
+
+584
+00:33:47,790 --> 00:33:52,080
+are, I think it's really kind of
+reached the public consciousness
+
+585
+00:33:52,110 --> 00:33:54,330
+yet, you know, everyone's
+talking about blockchains. And
+
+586
+00:33:54,360 --> 00:34:00,090
+AI. You know, I think like,
+robotics is kind of the defining
+
+587
+00:34:00,090 --> 00:34:05,160
+application of AI maybe, and
+people haven't really sort of
+
+588
+00:34:05,400 --> 00:34:06,810
+grasp that yet, I think.
+
+589
+00:34:09,900 --> 00:34:13,380
+Audrow Nash: Do you? So you
+mentioned several, like, I don't
+
+590
+00:34:13,380 --> 00:34:18,600
+know, domains, agriculture,
+manufacturing, etc. Are there
+
+591
+00:34:18,600 --> 00:34:24,540
+any specific areas within those
+are any specific problems that
+
+592
+00:34:24,540 --> 00:34:27,150
+you think are particularly
+interesting and ripe to be
+
+593
+00:34:27,150 --> 00:34:28,260
+solved by robotics?
+
+594
+00:34:29,430 --> 00:34:32,340
+Adrian Macneil: Yeah, yeah, I've
+seen some very interesting stuff
+
+595
+00:34:32,340 --> 00:34:36,930
+happening. You know, and
+warehouses, like, fetch robotics
+
+596
+00:34:36,930 --> 00:34:40,620
+are doing really interesting
+stuff. They're obviously being
+
+597
+00:34:40,620 --> 00:34:46,080
+on your podcast earlier. And
+saying, you know, I think all of
+
+598
+00:34:46,080 --> 00:34:49,200
+these things where you have self
+driving forklifts, for example,
+
+599
+00:34:49,200 --> 00:34:52,830
+a lot of this stuff, I mean,
+I've and you know, coming into
+
+600
+00:34:52,830 --> 00:34:56,280
+the agriculture industry, for
+example, I grew up in New
+
+601
+00:34:56,280 --> 00:35:02,190
+Zealand, and kind of very in a
+rural region that does a lot of
+
+602
+00:35:02,730 --> 00:35:06,120
+fruit growing and picking, and I
+had, you know, jobs in high
+
+603
+00:35:06,120 --> 00:35:10,770
+school where I was packing Kiwis
+and boxes, and I've got all
+
+604
+00:35:10,770 --> 00:35:14,790
+sorts of things that don't
+pruning. And I've done a number
+
+605
+00:35:14,790 --> 00:35:17,010
+of these tasks that kind of
+happened on the agriculture
+
+606
+00:35:17,010 --> 00:35:19,740
+industry. And you know, I mean,
+some of the tasks that you do, I
+
+607
+00:35:19,740 --> 00:35:23,820
+like, sit here and watch these
+fruit roll by and grab the ones
+
+608
+00:35:23,820 --> 00:35:26,190
+that have blemishes and put them
+on, you know, grate them into
+
+609
+00:35:26,190 --> 00:35:29,130
+like a BSE and grab the ones
+that have blemishes and put them
+
+610
+00:35:29,460 --> 00:35:33,600
+onto this other conveyor belt.
+And it's just not a sensible
+
+611
+00:35:33,600 --> 00:35:36,210
+task for a human to be doing in
+this day and age. Right. And I
+
+612
+00:35:36,210 --> 00:35:39,600
+mean, maybe it was, you know, 15
+years ago or something when I
+
+613
+00:35:39,600 --> 00:35:43,380
+was doing it, but like, you
+know, computers with computer
+
+614
+00:35:43,380 --> 00:35:46,170
+vision and like manipulation on
+some things can just do a much
+
+615
+00:35:46,170 --> 00:35:49,200
+better job of this now, they're
+gonna be far more reliable, they
+
+616
+00:35:49,200 --> 00:35:52,890
+can do it at a higher pace. And
+like, guess what, that wasn't a
+
+617
+00:35:52,890 --> 00:35:56,640
+fun job for anyone, I certainly
+didn't enjoy it. Like, there's
+
+618
+00:35:56,640 --> 00:36:00,090
+much like more productive things
+that as humans can be kind of
+
+619
+00:36:00,090 --> 00:36:03,450
+putting our time and energy
+towards them, watching fruit
+
+620
+00:36:03,450 --> 00:36:06,330
+roll by and picking out the ones
+that like, look strange.
+
+621
+00:36:06,360 --> 00:36:12,180
+Audrow Nash: Gotcha. So, and one
+other thing that kind of caught
+
+622
+00:36:12,180 --> 00:36:16,260
+my ear, was you saying, putting
+1000 engineers towards the
+
+623
+00:36:16,260 --> 00:36:21,150
+problem? Can you just talk a bit
+about that, that it's an
+
+624
+00:36:21,150 --> 00:36:24,630
+interesting idea to me. And it's
+very different than, say, like a
+
+625
+00:36:24,630 --> 00:36:27,060
+startup thing, where you have
+the 10 engineers that you were
+
+626
+00:36:27,060 --> 00:36:30,060
+mentioning, and building a
+product? Or just a couple?
+
+627
+00:36:31,230 --> 00:36:35,520
+Adrian Macneil: Yeah, yeah, I
+guess. I would look at it from a
+
+628
+00:36:35,520 --> 00:36:40,620
+perspective of what you know, in
+1999, right. So you wanted to
+
+629
+00:36:40,620 --> 00:36:44,280
+start a startup in 1999. And
+you're gonna build some web,
+
+630
+00:36:44,280 --> 00:36:46,560
+you're gonna build Amazon or
+something, I guess they were a
+
+631
+00:36:46,560 --> 00:36:49,410
+little bit earlier. Okay, you're
+gonna go to Amazon 97 or
+
+632
+00:36:49,410 --> 00:36:53,190
+something, okay. You're going
+out and you're like, you know,
+
+633
+00:36:53,190 --> 00:36:55,110
+you need some people to write
+code. But guess what, you also
+
+634
+00:36:55,110 --> 00:36:57,210
+need some people to go and buy
+some servers and racks and
+
+635
+00:36:57,210 --> 00:37:00,300
+servers, you need, you know,
+just like multiplies. You need
+
+636
+00:37:00,480 --> 00:37:03,690
+people doing all that,
+especially as website starts
+
+637
+00:37:03,690 --> 00:37:05,910
+getting traction, you're
+building everything from
+
+638
+00:37:05,910 --> 00:37:09,180
+scratch, right? You know, when
+you say there's 1000 engineers
+
+639
+00:37:09,180 --> 00:37:11,310
+working on a problem, it's not
+that they're all kind of in
+
+640
+00:37:11,310 --> 00:37:15,060
+they're super productive writing
+the key kind of code day to day,
+
+641
+00:37:15,060 --> 00:37:19,200
+it's that you have to build kind
+of all of the infrastructure of
+
+642
+00:37:19,200 --> 00:37:21,390
+the pyramid underneath you as
+well, because there's nothing
+
+643
+00:37:21,480 --> 00:37:24,930
+Audrow Nash: because it doesn't
+exist off the shelf. Whereas if
+
+644
+00:37:24,930 --> 00:37:28,020
+you're building PayPal or
+something, or Amazon, you can
+
+645
+00:37:28,020 --> 00:37:30,720
+use react or some other
+framework that does a lot of the
+
+646
+00:37:30,720 --> 00:37:31,590
+lifting for you.
+
+647
+00:37:32,430 --> 00:37:34,200
+Adrian Macneil: Right, if you're
+doing this 20 years ago, you're
+
+648
+00:37:34,200 --> 00:37:38,730
+building Google or Facebook or
+Amazon or Ebay or any of these
+
+649
+00:37:38,730 --> 00:37:40,560
+things you're building
+everything from scratch, you're
+
+650
+00:37:40,560 --> 00:37:43,350
+not you know, you're not just
+grabbing like a web framework
+
+651
+00:37:43,350 --> 00:37:47,190
+like react or Ruby on Rails even
+know something you're kind of
+
+652
+00:37:47,250 --> 00:37:50,520
+you're writing all of the all of
+the you know, went from scratch,
+
+653
+00:37:50,520 --> 00:37:52,380
+you're writing all of the
+deployment from scratch, you're
+
+654
+00:37:52,380 --> 00:37:55,140
+buying hardware, you're racking
+hardware, you're worrying about
+
+655
+00:37:55,140 --> 00:37:57,900
+like network connections, you're
+making deals with ISP so that
+
+656
+00:37:57,900 --> 00:38:01,710
+you get enough bandwidth to
+service like, it's crazy, man,
+
+657
+00:38:01,710 --> 00:38:03,780
+it sounds crazy, right? But
+like, that's how one of these
+
+658
+00:38:03,780 --> 00:38:05,790
+companies got started. And
+that's where we are in the
+
+659
+00:38:05,790 --> 00:38:09,270
+robotics industry today, right?
+We're at this place where if you
+
+660
+00:38:09,270 --> 00:38:11,730
+want to build a, you know, build
+a self driving car company, I
+
+661
+00:38:11,730 --> 00:38:15,210
+mean, 90% of the engineering
+effort is not going to the core
+
+662
+00:38:15,210 --> 00:38:19,620
+kind of, you know, the core kind
+of like algorithms and models
+
+663
+00:38:19,620 --> 00:38:21,870
+that are being developed on the
+cards. That's all the stuff
+
+664
+00:38:21,870 --> 00:38:24,630
+around that everything that's
+supporting and available off the
+
+665
+00:38:24,630 --> 00:38:28,560
+shelf today. Yeah. So you know,
+if you if you talk that, you
+
+666
+00:38:28,560 --> 00:38:30,540
+know, one approaches kind of
+brute force, which is like you
+
+667
+00:38:30,540 --> 00:38:32,580
+take those 1000 engineers and
+say, Hey, you know, we're
+
+668
+00:38:32,580 --> 00:38:36,990
+pivoting to like self driving
+forklifts now. Sure, like, maybe
+
+669
+00:38:36,990 --> 00:38:40,470
+it's an easier problem, and all
+that talent could could get it
+
+670
+00:38:40,470 --> 00:38:45,000
+done. But I think, you know,
+the, the more kind of scalable
+
+671
+00:38:45,000 --> 00:38:47,070
+approach over time is that
+better and better quality
+
+672
+00:38:47,070 --> 00:38:50,550
+tooling comes out. And you know,
+in the in the web industry, that
+
+673
+00:38:50,550 --> 00:38:53,970
+was AWS coming out, that was
+Heroku coming out, that was
+
+674
+00:38:53,970 --> 00:38:58,110
+data, dog, and Splunk, and New
+Relic and Sumo logic, and, you
+
+675
+00:38:58,110 --> 00:39:01,410
+know, all of these kind of
+startups were founded in the
+
+676
+00:39:01,470 --> 00:39:07,860
+latter half of 2010, latter half
+of the 2000s. where, you know,
+
+677
+00:39:07,860 --> 00:39:11,670
+by 2015, you want to go and set
+a website up you just kind of
+
+678
+00:39:11,670 --> 00:39:14,700
+like slap a few things together,
+and you know, two people or one
+
+679
+00:39:14,700 --> 00:39:18,750
+person and you have a company.
+And, you know, I just I think
+
+680
+00:39:18,780 --> 00:39:22,560
+robotics needs to get there.
+Obviously, it's, it's never
+
+681
+00:39:22,560 --> 00:39:25,170
+going to be as easy as building
+a website and you have like
+
+682
+00:39:25,200 --> 00:39:28,890
+hardware and the real world to
+deal with. But it could come a
+
+683
+00:39:28,890 --> 00:39:31,710
+long way from where it is today
+in terms of like, having this
+
+684
+00:39:31,710 --> 00:39:34,650
+reusable components that you can
+grab off the shelf glue together
+
+685
+00:39:34,650 --> 00:39:35,670
+and have a company
+
+686
+00:39:37,110 --> 00:39:40,530
+Audrow Nash: where so in all of
+this building infrastructure, in
+
+687
+00:39:40,530 --> 00:39:43,260
+your mind, where does open
+source?
+
+688
+00:39:45,660 --> 00:39:49,500
+Adrian Macneil: Yeah, that's a
+really good question. Um, open
+
+689
+00:39:49,500 --> 00:39:53,820
+source is has you know, it's
+both like, I guess very
+
+690
+00:39:53,820 --> 00:39:56,730
+important. It's contributed a
+lot and, you know, we deeply
+
+691
+00:39:56,730 --> 00:40:00,600
+believe in open source. I think
+the open source industry has
+
+692
+00:40:00,600 --> 00:40:03,780
+matured a lot over the last kind
+of five or 10 years, especially
+
+693
+00:40:03,780 --> 00:40:07,050
+even the last five years, and
+what business models work and
+
+694
+00:40:07,050 --> 00:40:12,180
+what business models don't. You
+know, you've had some of these
+
+695
+00:40:12,180 --> 00:40:15,660
+things recently, like
+Elasticsearch, MongoDB, a lot of
+
+696
+00:40:15,660 --> 00:40:18,030
+these companies have kind of
+gone through a little bit of a
+
+697
+00:40:18,030 --> 00:40:20,820
+crisis where they said, Hey, you
+know, we give everything away
+
+698
+00:40:20,820 --> 00:40:24,720
+for free. And then someone like
+Amazon comes along and takes
+
+699
+00:40:24,720 --> 00:40:26,970
+that thing that you're giving
+away for free and starts
+
+700
+00:40:26,970 --> 00:40:30,030
+reselling it, and they've kind
+of like suck the air out of the
+
+701
+00:40:30,030 --> 00:40:34,530
+fact that you actually storing
+it to pay employees. So I think,
+
+702
+00:40:34,560 --> 00:40:38,130
+you know, we've, we're an
+advantage that, you know,
+
+703
+00:40:38,130 --> 00:40:42,180
+sitting here in 2021, is a lot,
+a lot of evidence of what models
+
+704
+00:40:42,180 --> 00:40:45,300
+work in open source and more
+models don't, I think, the fact
+
+705
+00:40:45,300 --> 00:40:49,980
+remains that open source is a
+really good way to get products
+
+706
+00:40:49,980 --> 00:40:52,320
+out there and make them easy and
+free for people to play with,
+
+707
+00:40:52,320 --> 00:40:55,350
+it's a really good way to build
+a community around projects.
+
+708
+00:40:56,130 --> 00:40:58,980
+It's also frankly, a lot easier
+to work with, you know, as a
+
+709
+00:40:58,980 --> 00:41:03,000
+consumer of open source. Even if
+you're paying for support or
+
+710
+00:41:03,000 --> 00:41:06,420
+services around something, if
+you if you get some you know,
+
+711
+00:41:06,450 --> 00:41:09,660
+you're working with a tool, as a
+developer, you're working with a
+
+712
+00:41:09,660 --> 00:41:12,030
+tool, and then it's not quite
+working for you, or you find a
+
+713
+00:41:12,030 --> 00:41:15,540
+bug or you need a feature, it's
+so much easier if you can just
+
+714
+00:41:15,540 --> 00:41:18,000
+like look at the code and fix
+the bug and build the feature.
+
+715
+00:41:18,030 --> 00:41:21,600
+Yeah, rather than stuck in this
+like, yeah, you know, it's not
+
+716
+00:41:21,600 --> 00:41:23,610
+gonna it's like crazy, where
+you've got to, like, go to their
+
+717
+00:41:23,610 --> 00:41:27,180
+support, and, you know, like,
+turn into a ticket and goes to a
+
+718
+00:41:27,780 --> 00:41:30,390
+pm somewhere and they farm it
+out to a team and you wait, like
+
+719
+00:41:30,390 --> 00:41:32,250
+two months when you could have
+just changed a bit of code
+
+720
+00:41:32,250 --> 00:41:36,810
+yourself? Yeah. So you know,
+yeah, open source is really
+
+721
+00:41:36,810 --> 00:41:40,770
+important. I think we strive to,
+and we can talk a little bit
+
+722
+00:41:40,770 --> 00:41:43,050
+about, you know, well, how we're
+thinking and where we're drawing
+
+723
+00:41:43,050 --> 00:41:46,020
+our mind. But I think it's
+important to, you know, try and
+
+724
+00:41:46,290 --> 00:41:48,720
+open source as much as you can
+and make that available to the
+
+725
+00:41:48,720 --> 00:41:52,290
+community and build a community
+around it. But also, you know,
+
+726
+00:41:52,290 --> 00:41:54,600
+you need to be realistic about
+the fact that you need to be
+
+727
+00:41:54,600 --> 00:41:57,840
+able to pay your employees and
+you need to kind of fund the
+
+728
+00:41:57,840 --> 00:42:00,540
+development and the other things
+that come around. And so it's
+
+729
+00:42:00,540 --> 00:42:04,050
+important to have kind of clear
+delineation there, I guess.
+
+730
+00:42:04,080 --> 00:42:09,030
+Audrow Nash: Yeah. And so now,
+natural segue. What's your
+
+731
+00:42:09,030 --> 00:42:11,640
+business model at cruise? How
+are you kind of balancing open
+
+732
+00:42:11,640 --> 00:42:13,620
+source and paying your employees
+and yeah,
+
+733
+00:42:13,650 --> 00:42:14,370
+Adrian Macneil: yeah, Fox?
+
+734
+00:42:14,670 --> 00:42:15,900
+Audrow Nash: Or Fox? Yes.
+
+735
+00:42:16,080 --> 00:42:19,440
+Adrian Macneil: Yeah, yeah.
+Yeah, exactly. So we, yeah, I
+
+736
+00:42:19,440 --> 00:42:23,370
+mean, in keeping with that, I
+think the the model, one open
+
+737
+00:42:23,370 --> 00:42:26,250
+source model? And actually, you
+know, I think I was just
+
+738
+00:42:26,250 --> 00:42:29,670
+listening to your podcast with
+Nick. And I think, I mean, I
+
+739
+00:42:29,670 --> 00:42:32,550
+probably share some similar
+views on this, I think I don't
+
+740
+00:42:32,550 --> 00:42:36,390
+like the open source model,
+where you kind of have an open
+
+741
+00:42:36,390 --> 00:42:39,990
+source version, and then you
+have kind of a better version
+
+742
+00:42:39,990 --> 00:42:42,360
+that you have to pay for, which
+is just, you know, more features
+
+743
+00:42:42,360 --> 00:42:45,000
+around it. I think that that
+frustrates people want to, you
+
+744
+00:42:45,000 --> 00:42:47,790
+know, it kind of feels like
+you're just kind of keeping the
+
+745
+00:42:47,790 --> 00:42:51,330
+crown jewels for yourself, I
+think, you know, much better
+
+746
+00:42:51,330 --> 00:42:55,290
+models that we're seeing around
+open source. There's, there's
+
+747
+00:42:55,290 --> 00:42:59,250
+kind of two related models that
+work quite well. One is just
+
+748
+00:42:59,250 --> 00:43:01,440
+that you have an open source
+product that people can run
+
+749
+00:43:01,440 --> 00:43:05,280
+themselves, and then you just
+sell basically hosting of that,
+
+750
+00:43:06,180 --> 00:43:10,230
+of that thing. So you know,
+that's where you see a lot of
+
+751
+00:43:10,230 --> 00:43:14,160
+companies kind of doing this
+today. That's, you know, what,
+
+752
+00:43:14,160 --> 00:43:18,150
+like Elasticsearch and MongoDB.
+And some of these people do, you
+
+753
+00:43:18,150 --> 00:43:22,410
+also see it with, like, next js,
+and wsl, they kind of offer
+
+754
+00:43:22,410 --> 00:43:26,100
+like, a paid hosting. So that's
+a front end framework, web
+
+755
+00:43:26,100 --> 00:43:28,350
+development framework and a web
+hosting company, and they kind
+
+756
+00:43:28,350 --> 00:43:31,920
+of they sponsor the thing. So
+that's one option, as you know,
+
+757
+00:43:31,950 --> 00:43:34,350
+kind of you build a thing, which
+is completely free, and then you
+
+758
+00:43:34,380 --> 00:43:38,070
+have the hosting of it. The
+other option, and you know,
+
+759
+00:43:38,070 --> 00:43:40,080
+where we're going as you build a
+thing that's completely free,
+
+760
+00:43:40,080 --> 00:43:43,140
+you get all the features button,
+this kind of add on services
+
+761
+00:43:43,140 --> 00:43:47,040
+that you know, you need if and I
+guess more specifically, in our
+
+762
+00:43:47,040 --> 00:43:50,700
+case, we give you Foxconn
+studio, it's free, it does
+
+763
+00:43:50,700 --> 00:43:52,920
+everything you want, you can run
+it on your computer, you can run
+
+764
+00:43:52,920 --> 00:43:56,970
+it on the web browser, there's
+no limitations. If you want our
+
+765
+00:43:56,970 --> 00:43:59,970
+services for collaboration, and
+for kind of like team
+
+766
+00:43:59,970 --> 00:44:02,400
+communication, which we're
+building around that, then those
+
+767
+00:44:02,400 --> 00:44:04,290
+are things that you need to log
+in for, and those are
+
+768
+00:44:04,290 --> 00:44:08,610
+automatically going to be paid
+features. So we actually, I
+
+769
+00:44:08,610 --> 00:44:11,340
+guess, you know, sort of pre
+announcing this a little bit,
+
+770
+00:44:11,340 --> 00:44:14,670
+we'll be coming out with more
+than a couple of weeks. But we
+
+771
+00:44:14,670 --> 00:44:18,210
+have some features in foxglove,
+where today, you can kind of
+
+772
+00:44:18,210 --> 00:44:21,720
+have these layouts that you have
+personally that live on your
+
+773
+00:44:21,720 --> 00:44:23,940
+computer, you can set up
+different layouts that you might
+
+774
+00:44:23,940 --> 00:44:27,090
+use for different tasks when
+you're debugging a particular
+
+775
+00:44:27,090 --> 00:44:31,620
+type of event. And we are coming
+out very soon with a couple of
+
+776
+00:44:31,620 --> 00:44:34,680
+things. One is the ability to
+kind of share these layouts
+
+777
+00:44:34,680 --> 00:44:37,200
+among team members. So being
+able to actually like login,
+
+778
+00:44:38,130 --> 00:44:40,380
+starting to get into this world
+of where we're sharing views
+
+779
+00:44:40,380 --> 00:44:42,780
+among among your team and making
+it easier for people to
+
+780
+00:44:42,780 --> 00:44:46,650
+collaborate over robots data,
+robotics data. And then the
+
+781
+00:44:46,650 --> 00:44:49,560
+other thing that we're building
+which will be kind of, you know,
+
+782
+00:44:49,560 --> 00:44:52,230
+hosted service that you can work
+with is actually that data
+
+783
+00:44:52,230 --> 00:44:55,170
+storage elements or, you know,
+how can we be the central
+
+784
+00:44:55,170 --> 00:44:58,380
+repository if we get data so
+that you know, as I said earlier
+
+785
+00:44:58,380 --> 00:45:00,900
+on so that you can just click on
+a link can immediately start
+
+786
+00:45:00,900 --> 00:45:04,110
+looking at it without having to
+go through that whole rigmarole
+
+787
+00:45:04,110 --> 00:45:07,470
+of downloading 100 gig bag for
+your computer and sharing it to
+
+788
+00:45:07,470 --> 00:45:10,740
+your friend on a hard drive.
+And, you know, running any of
+
+789
+00:45:10,740 --> 00:45:13,290
+these things locally, you can
+just have a kind of central
+
+790
+00:45:13,290 --> 00:45:16,140
+repository for your data, click
+on a link and immediately like
+
+791
+00:45:16,140 --> 00:45:16,800
+jump into it.
+
+792
+00:45:18,630 --> 00:45:21,570
+Audrow Nash: Now I'm struck by
+so you were saying you and Dave
+
+793
+00:45:21,570 --> 00:45:26,250
+are sharing Dave Coleman from
+move it or picnic are kind of
+
+794
+00:45:26,250 --> 00:45:28,710
+sharing a mind for these things.
+I'm struck by you guys both
+
+795
+00:45:28,740 --> 00:45:33,210
+calling your service with
+something studio. So your Fox
+
+796
+00:45:33,420 --> 00:45:37,320
+Studios movie studio, their new
+release? Why did you pick the
+
+797
+00:45:37,320 --> 00:45:39,900
+name studio? What's the What's
+there?
+
+798
+00:45:40,500 --> 00:45:44,280
+Adrian Macneil: Yeah, yeah. And
+I mean, since creating foxglove
+
+799
+00:45:44,280 --> 00:45:47,940
+Studio, I think maybe it's just,
+I've started seeing it
+
+800
+00:45:47,940 --> 00:45:49,620
+everywhere. I think, you know,
+we're not the only two
+
+801
+00:45:49,620 --> 00:45:53,520
+companies. So far five other
+companies with like, you know,
+
+802
+00:45:53,550 --> 00:45:56,130
+XYZ company name and then XYZ
+studio and
+
+803
+00:45:56,130 --> 00:45:57,750
+Audrow Nash: this is the paid
+version of whatever.
+
+804
+00:45:59,820 --> 00:46:05,790
+Adrian Macneil: Yeah, I mean, I
+think it's it's, it's, it's
+
+805
+00:46:05,820 --> 00:46:09,150
+intended to be just, you know, a
+product that you can jump into,
+
+806
+00:46:09,600 --> 00:46:12,120
+you know, you can you can see
+what's happening, I guess we
+
+807
+00:46:12,120 --> 00:46:16,440
+wanted to separate that product
+slightly from the company name,
+
+808
+00:46:16,470 --> 00:46:19,800
+because, you know, as I kind of
+alluded to it, we're planning to
+
+809
+00:46:19,890 --> 00:46:22,740
+bring on some of these other
+services and things. So we
+
+810
+00:46:22,740 --> 00:46:26,070
+needed something to
+differentiate differentiate.
+
+811
+00:46:26,100 --> 00:46:29,490
+Yeah, exactly. This is our, our
+kind of visualization tool that
+
+812
+00:46:29,490 --> 00:46:32,910
+you can see and open and
+probably picnic, maybe a movie
+
+813
+00:46:32,940 --> 00:46:38,250
+felt the same way. Yeah. But
+yeah, I guess, you know, and it
+
+814
+00:46:38,250 --> 00:46:40,890
+starts becoming a little bit of
+a mouthful, if you have another
+
+815
+00:46:41,280 --> 00:46:44,220
+studio releases, like an AC word
+that makes sense. But if you
+
+816
+00:46:44,220 --> 00:46:46,950
+come up with maybe, you know,
+you already have a company name,
+
+817
+00:46:46,950 --> 00:46:49,500
+and then you forget something
+else, rather long winded on the
+
+818
+00:46:49,500 --> 00:46:52,290
+end of the year, your product
+name, you know, you get these
+
+819
+00:46:52,290 --> 00:46:54,420
+things like hashey, Corp
+terraform. And you're like,
+
+820
+00:46:55,200 --> 00:47:00,870
+Audrow Nash: what is that? Yeah,
+yeah. And speaking of What's in
+
+821
+00:47:00,870 --> 00:47:03,720
+a name, and although it's a bit
+of a digression, I'd like to get
+
+822
+00:47:03,720 --> 00:47:07,740
+back to more of foxglove Studio,
+but how did you come up with a
+
+823
+00:47:07,740 --> 00:47:08,580
+name? foxglove?
+
+824
+00:47:09,419 --> 00:47:13,469
+Adrian Macneil: Yeah, yeah, this
+is a question I get a few times.
+
+825
+00:47:14,459 --> 00:47:18,269
+So I have, you know, my
+philosophy on naming is that I
+
+826
+00:47:18,269 --> 00:47:22,019
+think that if I say the name to
+you, you should be able to write
+
+827
+00:47:22,019 --> 00:47:25,259
+it down. And if I see it written
+down, or if you see it written
+
+828
+00:47:25,259 --> 00:47:29,069
+down, you should know how to say
+it. And I get kind of
+
+829
+00:47:29,069 --> 00:47:32,729
+frustrated, but some of these
+company names where, you know,
+
+830
+00:47:32,729 --> 00:47:35,789
+they're either just like,
+insane, not even company just
+
+831
+00:47:35,789 --> 00:47:38,219
+project names. And then you have
+like, Kubernetes, for example,
+
+832
+00:47:38,219 --> 00:47:40,589
+everyone goes around saying
+Kubernetes like, it's an easy
+
+833
+00:47:40,589 --> 00:47:41,609
+thing to say. Yeah.
+
+834
+00:47:41,730 --> 00:47:43,950
+Audrow Nash: It's like some
+Starcraft thing or something.
+
+835
+00:47:43,980 --> 00:47:44,400
+All right.
+
+836
+00:47:46,110 --> 00:47:48,810
+Adrian Macneil: That's a Greek
+god reference design. Yes. I
+
+837
+00:47:48,810 --> 00:47:50,460
+Audrow Nash: mean, it just
+sounds like some futuristic
+
+838
+00:47:50,460 --> 00:47:51,510
+device. Yeah,
+
+839
+00:47:51,540 --> 00:47:54,090
+Adrian Macneil: yeah. Yeah,
+that's sorry. And I have this
+
+840
+00:47:54,090 --> 00:47:57,630
+predisposition towards names
+that are easy to say, and easy
+
+841
+00:47:57,630 --> 00:48:01,050
+to easy to spell and easy to
+read. But of course, you know,
+
+842
+00:48:01,050 --> 00:48:04,590
+most of us are taken. So it's
+been a long time with this kind
+
+843
+00:48:04,590 --> 00:48:07,110
+of short list of names that I
+was going through. And I was
+
+844
+00:48:08,250 --> 00:48:12,000
+last year, just traveling around
+New Zealand. And I was doing a
+
+845
+00:48:12,000 --> 00:48:16,050
+bit of a road trip with my wife
+and child and this kind of
+
+846
+00:48:16,050 --> 00:48:19,980
+foxglove flowers are all over
+the side of the road. Did the
+
+847
+00:48:19,980 --> 00:48:28,050
+song flower I have in the
+background? So it was cool.
+
+848
+00:48:28,050 --> 00:48:32,070
+Yeah, just just a word. And I
+thought that's a cool word. And
+
+849
+00:48:32,100 --> 00:48:36,090
+you know, it wasn't already
+taken by a startup. So they have
+
+850
+00:48:36,150 --> 00:48:37,890
+no robotics reference. I'm
+sorry.
+
+851
+00:48:38,610 --> 00:48:40,710
+Audrow Nash: I didn't know. I
+just had no idea where it came
+
+852
+00:48:40,710 --> 00:48:44,250
+from. So it's a flower in the
+hills of New Zealand somewhere.
+
+853
+00:48:45,000 --> 00:48:50,670
+Yeah, that sounds lovely. Yeah.
+Okay. So if I understand
+
+854
+00:48:50,670 --> 00:48:54,690
+correctly, so foxglove Studio,
+the. So you have all of
+
+855
+00:48:54,690 --> 00:48:57,990
+foxglove, where you can
+visualize the data you see, and
+
+856
+00:48:58,200 --> 00:49:03,360
+it's for live playing of Ross to
+data and also playing from a bag
+
+857
+00:49:03,360 --> 00:49:03,870
+file
+
+858
+00:49:04,230 --> 00:49:06,180
+Adrian Macneil: playback.
+Exactly. So you can connect to a
+
+859
+00:49:06,180 --> 00:49:08,910
+live system, or you can just
+drag it back file and
+
+860
+00:49:08,910 --> 00:49:11,760
+immediately stop looking at that
+bag file. You don't need Ross
+
+861
+00:49:11,760 --> 00:49:14,430
+installed or anything. If you
+have a bag fine, you can just
+
+862
+00:49:14,430 --> 00:49:14,880
+open up.
+
+863
+00:49:15,390 --> 00:49:18,360
+Audrow Nash: And then the
+studio. What are the kind of
+
+864
+00:49:18,360 --> 00:49:21,210
+killer features that you're
+adding with this? So it's layout
+
+865
+00:49:21,210 --> 00:49:23,970
+support. So you can save a
+layout, eventually, you can
+
+866
+00:49:23,970 --> 00:49:27,660
+share a layout. And it's data
+storage coming soon.
+
+867
+00:49:29,100 --> 00:49:30,960
+Adrian Macneil: Yeah, these are
+the these are the paid features
+
+868
+00:49:30,960 --> 00:49:33,570
+that we're building around it,
+basically. So anything that
+
+869
+00:49:33,570 --> 00:49:36,630
+involves kind of collaborating
+on your robotics data, where you
+
+870
+00:49:36,630 --> 00:49:40,230
+have multiple team members,
+again, maybe you have a team of
+
+871
+00:49:40,230 --> 00:49:42,510
+five, or maybe you have a team
+of 20, maybe you have a team of
+
+872
+00:49:42,510 --> 00:49:45,750
+100. But the larger your team
+grows, the more important it is
+
+873
+00:49:45,750 --> 00:49:49,800
+that that you can collaborate
+over that data. This is I think
+
+874
+00:49:49,890 --> 00:49:53,520
+people naturally understand this
+because, you know, normally if
+
+875
+00:49:53,520 --> 00:49:58,470
+you have data stored in data dog
+or Splunk, or Google Analytics,
+
+876
+00:49:58,530 --> 00:50:02,100
+the thing is, it's kind of sad.
+In nature that you can just look
+
+877
+00:50:02,100 --> 00:50:05,130
+around a website and then copy a
+link, if you if you want to send
+
+878
+00:50:05,130 --> 00:50:07,140
+something to your friend, you
+just copy a link and paste in
+
+879
+00:50:07,140 --> 00:50:10,080
+slack and they can start looking
+at it. And so, you know, this
+
+880
+00:50:10,080 --> 00:50:12,870
+kind of collaboration around
+robotics data, I think is
+
+881
+00:50:12,870 --> 00:50:15,900
+something that that just doesn't
+exist in the industry today, if
+
+882
+00:50:15,900 --> 00:50:21,300
+the kind of, you know, it's very
+much a single focus on just, you
+
+883
+00:50:21,300 --> 00:50:24,900
+know, like, hair is my personal
+workflow, I have some data on my
+
+884
+00:50:24,900 --> 00:50:27,450
+computer, or I have a bunch of
+tools locally on my computer.
+
+885
+00:50:27,720 --> 00:50:30,240
+And if my friend wants to look
+at it, then he's gonna, you
+
+886
+00:50:30,240 --> 00:50:31,380
+know, they're kind of out of
+luck,
+
+887
+00:50:31,680 --> 00:50:33,420
+Audrow Nash: or you have to
+write or read me up, and then
+
+888
+00:50:33,420 --> 00:50:35,910
+they can try to reproduce what
+you do, right? Because the Yeah,
+
+889
+00:50:35,910 --> 00:50:37,680
+exactly 10 steps are more
+
+890
+00:50:37,680 --> 00:50:41,760
+Adrian Macneil: or less file,
+you know, these topics kind of
+
+891
+00:50:41,760 --> 00:50:45,510
+that, you know, it's just, it's
+a very, sort of add surface
+
+892
+00:50:45,510 --> 00:50:46,110
+process.
+
+893
+00:50:47,670 --> 00:50:51,330
+Audrow Nash: Gotcha. Now, I want
+to segue into talking about the
+
+894
+00:50:51,330 --> 00:50:55,620
+web and connecting it to
+robotics, in some capacity.
+
+895
+00:50:55,620 --> 00:50:58,320
+Like, I'm very excited about
+this, but would you speak on it?
+
+896
+00:51:00,000 --> 00:51:02,430
+Just playing Yeah. What do you
+think the potential is there?
+
+897
+00:51:02,430 --> 00:51:05,460
+Why the web will be good. You
+mentioned it a bit before, and
+
+898
+00:51:05,730 --> 00:51:08,460
+that there's a lot of people
+that are knowledgeable of how to
+
+899
+00:51:08,460 --> 00:51:13,740
+do web programming. Yeah. But
+anything else? Yeah,
+
+900
+00:51:13,770 --> 00:51:15,900
+Adrian Macneil: yeah, I think I
+mean, this is something that a
+
+901
+00:51:15,900 --> 00:51:19,350
+lot of companies independently
+coming to this conclusion, the
+
+902
+00:51:19,350 --> 00:51:23,460
+web is kind of the main platform
+that anything that was built on
+
+903
+00:51:23,460 --> 00:51:26,940
+these days, and you know, that
+can mean developer tools like
+
+904
+00:51:26,940 --> 00:51:30,810
+elsewhere, you're kind of diving
+into specific instances. And
+
+905
+00:51:30,810 --> 00:51:35,790
+since of your robot, it can mean
+kind of Fleet operations
+
+906
+00:51:35,790 --> 00:51:39,600
+tooling, we have companies like
+forment.io, and freedom
+
+907
+00:51:39,600 --> 00:51:42,420
+robotics, and all that where you
+know, you have a web based
+
+908
+00:51:42,420 --> 00:51:45,780
+interface where you can see you
+know, your whole fleet of robots
+
+909
+00:51:45,780 --> 00:51:50,820
+and see what's going on with any
+of them. It can also mean things
+
+910
+00:51:51,090 --> 00:51:54,150
+like tele operations and remote
+assistance, where you need your
+
+911
+00:51:54,150 --> 00:51:57,360
+robot to kind of call out and
+get human support and a human
+
+912
+00:51:57,360 --> 00:52:02,040
+eyes on things. It can even mean
+you know, and web based labeling
+
+913
+00:52:02,040 --> 00:52:05,370
+tools, for example, where where
+people are annotating data to
+
+914
+00:52:05,370 --> 00:52:08,430
+use for machine learning
+training, those tools are again,
+
+915
+00:52:08,430 --> 00:52:10,440
+primarily web based. And it's
+just because you have this
+
+916
+00:52:10,440 --> 00:52:13,440
+platform where you can build,
+you know, visual interfaces, and
+
+917
+00:52:13,770 --> 00:52:17,010
+they're inherently plugged into
+remote data stores, it's easy to
+
+918
+00:52:17,010 --> 00:52:19,950
+save, collaborate, it's kind of
+you know, a similar transition
+
+919
+00:52:19,950 --> 00:52:23,460
+from having Microsoft Word
+installed on your computer, to
+
+920
+00:52:23,460 --> 00:52:25,560
+Google Docs, right? And it's
+just, you know, now you're
+
+921
+00:52:25,560 --> 00:52:29,190
+moving to something that is
+inherently collaborative. And
+
+922
+00:52:29,190 --> 00:52:32,430
+so, you know, when we talk about
+like the web and robots, I
+
+923
+00:52:32,430 --> 00:52:36,540
+think, we're not really
+advocating that your robot is is
+
+924
+00:52:36,570 --> 00:52:38,970
+you know, written in JavaScript
+or something like that, although
+
+925
+00:52:38,970 --> 00:52:42,180
+it's perfectly possible if you
+want to go that route. But um,
+
+926
+00:52:42,750 --> 00:52:45,720
+but you know, the robot is the
+robot, usually it's, it's, you
+
+927
+00:52:45,720 --> 00:52:47,970
+know, it's running Ross or
+something similar. It's written
+
+928
+00:52:47,970 --> 00:52:51,690
+in Python or c++ or something
+similar, but it needs to kind of
+
+929
+00:52:51,690 --> 00:52:55,830
+communicate with that outside
+world. And so that means often
+
+930
+00:52:55,860 --> 00:52:59,850
+use web based technologies for
+connecting from the robot to
+
+931
+00:52:59,880 --> 00:53:02,700
+services, for example, like
+WebSockets are a really good way
+
+932
+00:53:02,700 --> 00:53:06,330
+if a robot communicating with a
+server or browser communicating
+
+933
+00:53:06,330 --> 00:53:10,830
+with a server. You also have
+technologies like web RTC, which
+
+934
+00:53:10,830 --> 00:53:15,030
+is a way for men, that's
+probably how our video is
+
+935
+00:53:15,030 --> 00:53:17,970
+getting to each other right now,
+it's kind of a way of streaming
+
+936
+00:53:17,970 --> 00:53:21,960
+videos and things like that
+across the internet. So you have
+
+937
+00:53:21,960 --> 00:53:24,540
+a lot of these kind of web based
+technologies, and they play
+
+938
+00:53:24,540 --> 00:53:26,730
+really well with robots, they're
+really good for, you know,
+
+939
+00:53:26,730 --> 00:53:28,440
+communicating with fleets,
+they're really good with
+
+940
+00:53:28,470 --> 00:53:33,030
+communicating, you know, even to
+local devices. And it's really
+
+941
+00:53:33,030 --> 00:53:35,670
+good for building interfaces
+where, you know, you don't have
+
+942
+00:53:35,670 --> 00:53:37,800
+to worry about which browser or
+platform on things you're
+
+943
+00:53:37,800 --> 00:53:41,010
+running, you can just kind of,
+you know, you can just open it
+
+944
+00:53:41,010 --> 00:53:42,030
+up, and it works.
+
+945
+00:53:44,340 --> 00:53:48,270
+Audrow Nash: And do you think,
+can you talk a little bit more
+
+946
+00:53:48,270 --> 00:53:52,320
+about the benefit of making it
+so that a lot of robotics
+
+947
+00:53:52,320 --> 00:53:57,840
+related things are made in a way
+that like getting us a bigger
+
+948
+00:53:57,840 --> 00:54:02,910
+pool of programmers to work on
+robotics problems through using
+
+949
+00:54:02,910 --> 00:54:04,140
+web technologies?
+
+950
+00:54:04,860 --> 00:54:09,300
+Adrian Macneil: Yeah, yeah, I
+think, I mean, that is something
+
+951
+00:54:09,300 --> 00:54:13,920
+that we that always I found
+interesting and Kurtis actually
+
+952
+00:54:13,920 --> 00:54:19,230
+was as we were hiring people,
+candidates vastly underestimated
+
+953
+00:54:21,780 --> 00:54:25,860
+the need for robotics
+experienced and work or self
+
+954
+00:54:25,860 --> 00:54:28,830
+driving experience to work on a
+self driving car company. And
+
+955
+00:54:28,830 --> 00:54:31,380
+kind of, you know, am I talking
+about the thing with the 1000
+
+956
+00:54:31,380 --> 00:54:35,610
+engineers and how, you know, 80%
+of them are working on you know,
+
+957
+00:54:35,610 --> 00:54:40,350
+the the permit that kind of
+supports the actual key
+
+958
+00:54:40,350 --> 00:54:44,430
+algorithm development. We needed
+to hire a lot of people at
+
+959
+00:54:44,430 --> 00:54:47,040
+careers that were just experts
+in infrastructure and data
+
+960
+00:54:47,040 --> 00:54:51,090
+processing and data management
+and and, you know, web
+
+961
+00:54:51,090 --> 00:54:52,950
+development, front end
+development JavaScript
+
+962
+00:54:52,950 --> 00:54:56,940
+engineers, and we didn't need
+any of those people to have, you
+
+963
+00:54:56,940 --> 00:54:59,550
+know, a PhD in machine learning
+or robotics or anything like
+
+964
+00:54:59,550 --> 00:55:02,520
+that. But there's kind of this
+perception out there that like,
+
+965
+00:55:03,360 --> 00:55:06,150
+I'm not a robotics developer, I
+can go and work at a self
+
+966
+00:55:06,150 --> 00:55:10,500
+driving car company. But, you
+know, like I said, I think
+
+967
+00:55:10,530 --> 00:55:14,580
+there's this, there's, you know,
+there's a large number of
+
+968
+00:55:14,580 --> 00:55:17,190
+candidates out, there are just,
+you know, people AI engineers
+
+969
+00:55:17,190 --> 00:55:19,140
+out there that work for
+companies doing all sorts of
+
+970
+00:55:19,140 --> 00:55:22,500
+stuff in the Silicon Valley
+today. And around the world, and
+
+971
+00:55:22,500 --> 00:55:25,170
+a lot of that stuff is, you
+know, much less meaningful,
+
+972
+00:55:25,170 --> 00:55:27,540
+there's a lot of people working
+in AD tech and things like that,
+
+973
+00:55:27,540 --> 00:55:30,450
+that, you know, could be working
+on our bonds, but maybe things
+
+974
+00:55:30,480 --> 00:55:33,540
+that you think that they can't,
+so I would implore those people
+
+975
+00:55:33,540 --> 00:55:36,660
+to, you know, have a look at
+some other really awesome stuff
+
+976
+00:55:36,660 --> 00:55:41,820
+that is happening out there. And
+realize that one of the most
+
+977
+00:55:41,820 --> 00:55:45,330
+exciting things to me about
+robotics is just how diverse of
+
+978
+00:55:45,330 --> 00:55:47,610
+a space it is, how many
+different skill sets you need,
+
+979
+00:55:47,670 --> 00:55:50,370
+and you know, you can come into
+it, and maybe you're experienced
+
+980
+00:55:50,370 --> 00:55:52,140
+in front end development, or
+maybe you're experienced in
+
+981
+00:55:52,140 --> 00:55:55,890
+DevOps. And you'll sit down with
+people who, you know, like I
+
+982
+00:55:55,890 --> 00:55:58,410
+said, machine learning PhDs or
+something, but you sit down with
+
+983
+00:55:58,410 --> 00:56:00,990
+people who are physicists, and
+people who are working on, you
+
+984
+00:56:00,990 --> 00:56:03,900
+know, hardware, and you sit down
+with electrical engineers, and
+
+985
+00:56:03,900 --> 00:56:08,370
+all of these people need to kind
+of come together and, you know,
+
+986
+00:56:08,460 --> 00:56:11,280
+it's, it's, it's really
+important to bring all of those
+
+987
+00:56:11,280 --> 00:56:15,690
+skill sets together, and
+robotics and I think, yeah, I
+
+988
+00:56:15,690 --> 00:56:17,610
+don't know, I think there's
+like, a gigantic, huge
+
+989
+00:56:17,610 --> 00:56:23,970
+opportunity there as more of the
+maybe for a look for for a long
+
+990
+00:56:23,970 --> 00:56:27,780
+time, robotics is kind of being
+a little bit off in a corner.
+
+991
+00:56:28,320 --> 00:56:32,130
+You know, a lot of the industry
+has been building, you know, ad
+
+992
+00:56:32,130 --> 00:56:35,130
+tech, and, you know, consumer
+startups and even enterprise
+
+993
+00:56:35,130 --> 00:56:38,430
+startups and a lot of stuff for
+processing enterprise data and a
+
+994
+00:56:38,430 --> 00:56:43,380
+lot of things for for, you know,
+social media and social
+
+995
+00:56:43,380 --> 00:56:46,650
+networking and things. But
+robotics is kind of spent a long
+
+996
+00:56:46,650 --> 00:56:49,890
+time and a slightly academic
+corner of the world, I guess,
+
+997
+00:56:49,920 --> 00:56:53,760
+you know, people have been
+working on robots, for, you
+
+998
+00:56:53,760 --> 00:56:56,280
+know, decades to this point. And
+certainly the last 15 years,
+
+999
+00:56:56,280 --> 00:56:58,560
+there's been a lot of really
+interesting stuff happening. But
+
+1000
+00:57:00,030 --> 00:57:04,170
+you know, it hasn't had as much
+kind of attention, I guess, as
+
+1001
+00:57:04,170 --> 00:57:07,650
+like the as the wider startup
+industry. And I think we're kind
+
+1002
+00:57:07,650 --> 00:57:09,720
+of reaching a tipping point now
+and more and more engineers
+
+1003
+00:57:10,950 --> 00:57:13,710
+coming over who have experienced
+and maybe more traditional
+
+1004
+00:57:13,710 --> 00:57:15,840
+software development, maybe they
+don't understand the robotics
+
+1005
+00:57:15,840 --> 00:57:18,870
+spaces, but they can, you know,
+they can sit down on paper with
+
+1006
+00:57:18,870 --> 00:57:21,000
+the people who really
+understand, you know, control
+
+1007
+00:57:21,000 --> 00:57:25,500
+theory or, or machine learning
+or planning or things like this,
+
+1008
+00:57:25,500 --> 00:57:29,940
+and you put that together, you
+get some really high quality
+
+1009
+00:57:29,940 --> 00:57:30,480
+software.
+
+1010
+00:57:31,920 --> 00:57:35,700
+Audrow Nash: Gotcha. Very
+interesting perspective. Do you
+
+1011
+00:57:35,700 --> 00:57:39,600
+think that web technologies, so
+we're speaking about often web
+
+1012
+00:57:39,600 --> 00:57:41,880
+technologies kind of on the
+front end, so mostly for
+
+1013
+00:57:41,880 --> 00:57:45,240
+visualization or connecting to
+other things? Yeah. Do you think
+
+1014
+00:57:45,240 --> 00:57:49,170
+it will ever? Or are there
+benefits to doing web
+
+1015
+00:57:49,410 --> 00:57:52,950
+technology? So like, from the
+back end? So using things like
+
+1016
+00:57:52,950 --> 00:57:55,680
+node j. s, or Dino or something
+like that?
+
+1017
+00:57:55,950 --> 00:57:58,290
+Adrian Macneil: Yeah, I think I
+mean, there's kind of a tourism
+
+1018
+00:57:58,290 --> 00:58:01,620
+that like, everything that can
+be written in JavaScript will be
+
+1019
+00:58:01,620 --> 00:58:07,320
+written in JavaScript at some
+point. There's people out there
+
+1020
+00:58:07,320 --> 00:58:12,300
+writing robots in JavaScript and
+and, you know, even the
+
+1021
+00:58:12,300 --> 00:58:15,720
+JavaScript ecosystem, that's not
+what it was 10 or even five
+
+1022
+00:58:15,720 --> 00:58:18,030
+years ago, right? It's, it's
+continually moving. And a lot of
+
+1023
+00:58:18,030 --> 00:58:20,460
+these things like TypeScript
+have come out, which provide a
+
+1024
+00:58:20,460 --> 00:58:21,870
+lot more structure around.
+
+1025
+00:58:22,800 --> 00:58:26,340
+Audrow Nash: I really like
+TypeScript type projects I've
+
+1026
+00:58:26,340 --> 00:58:28,620
+done it seems like Yeah,
+exactly.
+
+1027
+00:58:28,620 --> 00:58:31,020
+Adrian Macneil: It's Yeah, it's
+really nice. These these things
+
+1028
+00:58:31,020 --> 00:58:36,060
+are coming out. So you know, for
+sure, I think people will use
+
+1029
+00:58:37,380 --> 00:58:42,060
+languages like JavaScript and j.
+s, and, and things on robots.
+
+1030
+00:58:42,090 --> 00:58:44,700
+But, you know, equally you're
+seeing people branch out into
+
+1031
+00:58:44,700 --> 00:58:48,210
+like, using rust for robots, for
+example. And, you know, that
+
+1032
+00:58:48,210 --> 00:58:51,420
+would arguably be a benefit for
+a lot of these kinds of embedded
+
+1033
+00:58:52,350 --> 00:58:54,540
+applications where you're, you
+know, you're pretty resource
+
+1034
+00:58:54,540 --> 00:58:58,620
+constrained, you have to deal
+with, you know, even I mean,
+
+1035
+00:58:58,620 --> 00:59:01,440
+even when you have like, a very
+large computer available to you,
+
+1036
+00:59:01,440 --> 00:59:04,260
+you're always worrying about you
+know, energy consumption,
+
+1037
+00:59:04,260 --> 00:59:06,750
+battery life and, you know,
+competing things that are trying
+
+1038
+00:59:06,750 --> 00:59:12,390
+to run moment. So say, I think,
+you know, rust and go Broly or
+
+1039
+00:59:12,390 --> 00:59:15,870
+both, yeah, potentially,
+potentially quite interesting.
+
+1040
+00:59:17,850 --> 00:59:20,580
+Things that might end up, you
+know, picking up a bit of steam
+
+1041
+00:59:20,580 --> 00:59:24,960
+on robots, but I wouldn't, I
+wouldn't say that they that, you
+
+1042
+00:59:24,960 --> 00:59:29,370
+know, JavaScript or web Tech has
+an inherent advantage. for
+
+1043
+00:59:29,370 --> 00:59:32,580
+writing kind of the robot code
+itself, I would say most of the
+
+1044
+00:59:32,580 --> 00:59:35,400
+benefit, there are things around
+how you're communicating with
+
+1045
+00:59:35,400 --> 00:59:37,920
+back end services, how your
+voting UI would be able to
+
+1046
+00:59:37,920 --> 00:59:41,280
+interact with their robots.
+Things like Ross bridge, for
+
+1047
+00:59:41,280 --> 00:59:46,260
+example, is a that's a WebSocket
+protocol, where you can connect
+
+1048
+00:59:46,710 --> 00:59:50,070
+from a Ross system to a web
+browser or from a raw system to
+
+1049
+00:59:50,070 --> 00:59:53,880
+a server to a web browser. We
+you know, our team has been
+
+1050
+00:59:53,880 --> 00:59:56,580
+contributing a bunch to Ross
+bridge project lately and
+
+1051
+00:59:56,580 --> 01:00:00,300
+getting that up and running with
+Ross two, which has been You
+
+1052
+01:00:00,300 --> 01:00:03,690
+know, really great for the
+community. And you know, these
+
+1053
+01:00:03,690 --> 01:00:06,900
+are these are really where the
+web stack plugs in, and the
+
+1054
+01:00:06,900 --> 01:00:10,020
+protocols that we're using to
+communicate with robots, and
+
+1055
+01:00:10,050 --> 01:00:13,560
+that kind of interfaces where we
+can interact with robots.
+
+1056
+01:00:15,389 --> 01:00:18,149
+Audrow Nash: Now I'd like to
+talk about you for a little bit.
+
+1057
+01:00:19,979 --> 01:00:25,109
+So you were at Coinbase, as one
+of the early employees, then you
+
+1058
+01:00:25,109 --> 01:00:29,369
+were an early employee at
+cruise. And now you're starting
+
+1059
+01:00:29,369 --> 01:00:35,789
+foxglove. The earliest? The
+earliest? Yeah. So to me, it's
+
+1060
+01:00:35,789 --> 01:00:39,089
+kind of I see it as you're
+jumping into things when they're
+
+1061
+01:00:39,089 --> 01:00:44,039
+very interesting. So you jumped
+into cryptocurrency, you were
+
+1062
+01:00:44,039 --> 01:00:47,789
+you seem like you were very
+early into that, being at
+
+1063
+01:00:47,789 --> 01:00:52,979
+Coinbase, when they were pretty
+young, then self driving cars.
+
+1064
+01:00:53,159 --> 01:00:57,119
+And it basically took off, there
+was so much interest around it.
+
+1065
+01:00:57,629 --> 01:01:01,649
+And crews went from 20 to, I
+don't know, 2000 employees, or
+
+1066
+01:01:01,649 --> 01:01:05,459
+whatever you said, Can you just
+tell me a bit about your
+
+1067
+01:01:05,459 --> 01:01:10,679
+thinking around these things?
+Your experience? I don't know.
+
+1068
+01:01:12,000 --> 01:01:17,550
+Adrian Macneil: Yeah, yeah, for
+sure. I, I do really enjoy, I
+
+1069
+01:01:17,550 --> 01:01:20,850
+guess, futuristic technologies.
+And, you know, thinking about
+
+1070
+01:01:20,850 --> 01:01:24,060
+the future. Some people maybe,
+you know, take this a little too
+
+1071
+01:01:24,060 --> 01:01:27,180
+far and think about things that
+are, you know, really far out.
+
+1072
+01:01:27,180 --> 01:01:31,290
+And if it's going to take 50
+years, then, you know, maybe
+
+1073
+01:01:31,290 --> 01:01:33,210
+it's not the best thing to
+invest your time in today. Or
+
+1074
+01:01:33,210 --> 01:01:36,930
+maybe it's something to do, but
+I really like thinking about
+
+1075
+01:01:36,930 --> 01:01:40,230
+those kind of, you know, 10 or
+20 year horizon, and you know,
+
+1076
+01:01:40,230 --> 01:01:44,730
+what direction is the world
+going. And you know, that I
+
+1077
+01:01:44,730 --> 01:01:47,790
+actually in my early in my
+career, I did a lot of things
+
+1078
+01:01:47,790 --> 01:01:51,330
+with payments and e commerce,
+actually wrote an entire like e
+
+1079
+01:01:51,330 --> 01:01:54,450
+commerce framework and a bunch
+of payment gateway integrations.
+
+1080
+01:01:55,170 --> 01:01:58,860
+And that led me to sort of
+interest in Bitcoin, I guess,
+
+1081
+01:01:58,890 --> 01:02:02,220
+pretty early on, I saw, you
+know, I just started looking at
+
+1082
+01:02:02,220 --> 01:02:05,220
+Bitcoin, I initially thought it
+was a scam. But then I started
+
+1083
+01:02:05,220 --> 01:02:07,890
+getting interested in this idea
+of kind of, you know, cross
+
+1084
+01:02:07,890 --> 01:02:12,240
+border payments and
+permissionless money. And I
+
+1085
+01:02:12,540 --> 01:02:16,080
+thought, there's a real
+opportunity for this to become
+
+1086
+01:02:16,080 --> 01:02:19,260
+something that is a lot bigger
+than it is today. And it's
+
+1087
+01:02:19,260 --> 01:02:23,790
+something that people use in
+their day to day lives. I would
+
+1088
+01:02:23,790 --> 01:02:27,270
+say with the Bitcoin space, in
+particular, though, there's a
+
+1089
+01:02:27,270 --> 01:02:30,150
+lot of, there's a lot of people
+and you know, even in the early
+
+1090
+01:02:30,150 --> 01:02:32,190
+days, there were a lot of people
+who were in it for the
+
+1091
+01:02:32,190 --> 01:02:35,370
+technology, I guess, who were
+kind of, you know, excited about
+
+1092
+01:02:35,370 --> 01:02:38,400
+in the future could bring in,
+you know, even the kind of
+
+1093
+01:02:38,400 --> 01:02:41,280
+technical developments that
+happened there. But because it
+
+1094
+01:02:41,280 --> 01:02:44,670
+was kind of also a financial
+instrument, there were a lot of
+
+1095
+01:02:44,670 --> 01:02:49,380
+people who were just in it for
+the money. And that led to quite
+
+1096
+01:02:49,380 --> 01:02:53,310
+a sort of hostile community. And
+I actually think maybe kryptos,
+
+1097
+01:02:53,370 --> 01:02:56,910
+as turned a bit of a corner, now
+you get a lot of these kind of
+
+1098
+01:02:56,910 --> 01:03:00,360
+things coming out, like NF T's
+where people are clearly just
+
+1099
+01:03:00,360 --> 01:03:03,240
+having fun with it, and not, you
+know, not stressing so much
+
+1100
+01:03:03,240 --> 01:03:05,100
+about whether they're going to
+be millionaires or anything.
+
+1101
+01:03:06,030 --> 01:03:10,740
+Maybe they still are, but but
+the crypto community, I mean,
+
+1102
+01:03:10,740 --> 01:03:13,080
+there was a lot of, especially
+in the early days, there's a lot
+
+1103
+01:03:13,080 --> 01:03:17,400
+of infighting in the community
+around block sizes. And it got,
+
+1104
+01:03:17,430 --> 01:03:22,140
+you know, it got a little
+frustrating to me that yeah, it
+
+1105
+01:03:22,140 --> 01:03:23,040
+was it was
+
+1106
+01:03:24,390 --> 01:03:27,750
+Audrow Nash: a lot because it
+could be interesting, the
+
+1107
+01:03:27,750 --> 01:03:31,110
+technology and the implications
+of it, but people are like
+
+1108
+01:03:31,110 --> 01:03:34,560
+infighting trying to get a
+little more influence or a
+
+1109
+01:03:34,560 --> 01:03:36,690
+little better for themselves or
+something
+
+1110
+01:03:37,109 --> 01:03:38,699
+Adrian Macneil: kind of
+attractive, you know, if you
+
+1111
+01:03:38,699 --> 01:03:41,399
+have any, you know, different
+people for different reasons.
+
+1112
+01:03:41,399 --> 01:03:44,039
+Some people like to technology,
+some people just want to get
+
+1113
+01:03:44,039 --> 01:03:46,259
+rich, some people were in that
+because they think like, oh,
+
+1114
+01:03:46,259 --> 01:03:48,629
+taxation is theft, and then the
+government should be abolished
+
+1115
+01:03:48,629 --> 01:03:50,969
+or something. And so you have
+this, like, kind of strange
+
+1116
+01:03:50,969 --> 01:03:54,329
+melting pot of like, and then
+Coinbase was right in the middle
+
+1117
+01:03:54,329 --> 01:03:56,729
+of that trying to sell Bitcoin
+to people who thought that, you
+
+1118
+01:03:56,729 --> 01:04:00,269
+know, all tax was theft, but yet
+had to like appease banking
+
+1119
+01:04:00,269 --> 01:04:04,259
+regulators, or, or, you know,
+her, like very much thought that
+
+1120
+01:04:04,259 --> 01:04:07,589
+they needed, you know, legally
+very much did have to understand
+
+1121
+01:04:07,589 --> 01:04:09,599
+absolutely everything that's
+happening about every
+
+1122
+01:04:09,599 --> 01:04:12,479
+transaction on the platform. So,
+you know, that was an
+
+1123
+01:04:12,479 --> 01:04:16,979
+experience. But I, I kind of,
+you know, as I said, my co
+
+1124
+01:04:16,979 --> 01:04:20,399
+founder, sort of introduced me
+to currency when he was at
+
+1125
+01:04:20,399 --> 01:04:27,089
+Coinbase. And then he went to
+cruise. And I, you know, I, I
+
+1126
+01:04:27,089 --> 01:04:29,789
+guess I went through the
+experience that I was just
+
+1127
+01:04:29,789 --> 01:04:32,969
+describing earlier of being an
+engineer, not from my robotics
+
+1128
+01:04:32,969 --> 01:04:37,799
+background, but kind of coming
+into this company. I really, my
+
+1129
+01:04:37,799 --> 01:04:39,959
+eyes were opened up to both like
+opportunities that were
+
+1130
+01:04:39,959 --> 01:04:42,539
+possible, but also that it was
+very obvious that I could
+
+1131
+01:04:42,539 --> 01:04:45,389
+actually contribute a lot,
+despite not having that robotics
+
+1132
+01:04:45,389 --> 01:04:48,179
+experience. Because, you know, I
+found that a lot of the robotics
+
+1133
+01:04:48,179 --> 01:04:50,819
+engineers didn't have the
+experience I had, it's just you
+
+1134
+01:04:50,819 --> 01:04:52,679
+know, like I say, you have all
+of these people from different
+
+1135
+01:04:52,679 --> 01:04:55,229
+backgrounds come together and
+you need that in robotics, you
+
+1136
+01:04:55,229 --> 01:04:57,719
+need that, you know, the
+hardware engineers, mechanical,
+
+1137
+01:04:57,719 --> 01:05:00,659
+electrical engineers, you need
+the you know, Now, folks, you
+
+1138
+01:05:00,659 --> 01:05:03,299
+need the planning controls,
+folks. You need the back end
+
+1139
+01:05:03,299 --> 01:05:06,269
+infrastructure, you need the
+kind of UI and visualization.
+
+1140
+01:05:07,469 --> 01:05:10,679
+And, you know, it was it was
+kind of obvious that this was
+
+1141
+01:05:10,679 --> 01:05:14,879
+about something that, you know,
+was was also going to be a, you
+
+1142
+01:05:14,879 --> 01:05:19,649
+know, big interesting trend. But
+But, you know, I just felt that
+
+1143
+01:05:19,649 --> 01:05:21,779
+there was a lot more focus on
+kind of substance, I guess,
+
+1144
+01:05:21,779 --> 01:05:26,099
+compared to the crypto space
+where Yeah, yeah, a little bit,
+
+1145
+01:05:26,129 --> 01:05:29,249
+a little bit too much hype. So
+that that kind of, you know, led
+
+1146
+01:05:29,249 --> 01:05:32,339
+to my interest there. And I
+think Cruz really opened my eyes
+
+1147
+01:05:32,339 --> 01:05:35,339
+to, you know, what was possible
+in the space, like I said, I
+
+1148
+01:05:35,339 --> 01:05:38,039
+think it's, you know, it's
+really clear that the robotics
+
+1149
+01:05:38,039 --> 01:05:41,699
+industry has been making a ton
+of progress over the years, it's
+
+1150
+01:05:41,699 --> 01:05:45,089
+clear that a lot of these
+problems that people have
+
+1151
+01:05:45,089 --> 01:05:48,029
+struggled with, you know, actual
+technical problems and robotics
+
+1152
+01:05:48,029 --> 01:05:51,899
+that people are struggling with.
+Within Reach now, they're, you
+
+1153
+01:05:51,899 --> 01:05:55,019
+know, they're solvable, given
+enough time and resources. And
+
+1154
+01:05:55,229 --> 01:05:57,869
+given better tools, the time and
+resource kind of needs are going
+
+1155
+01:05:57,869 --> 01:06:01,919
+to come down. So yeah, that,
+like I said, they're kind of
+
+1156
+01:06:01,919 --> 01:06:04,769
+just continues the trajectory of
+our stuff where I think we can
+
+1157
+01:06:04,859 --> 01:06:07,739
+not just help us, you know, not
+just have one self driving car
+
+1158
+01:06:07,739 --> 01:06:11,189
+company get off the road. But
+you know, you look around, you
+
+1159
+01:06:11,189 --> 01:06:13,559
+see, all of the self driving car
+companies are building the same
+
+1160
+01:06:13,559 --> 01:06:17,369
+tools, and you say, Hey, hey,
+there's an opportunity here to
+
+1161
+01:06:17,369 --> 01:06:20,489
+kind of like reduce duplication,
+reduce kind of people,
+
+1162
+01:06:20,819 --> 01:06:24,029
+reinventing wheels, but also, we
+can look at all these other
+
+1163
+01:06:24,029 --> 01:06:26,669
+robotics companies that don't
+have anywhere near that level of
+
+1164
+01:06:26,669 --> 01:06:29,849
+resources. And they all need it,
+too. So you know, this
+
+1165
+01:06:29,849 --> 01:06:32,519
+opportunity is here for us to
+make everyone's life easier.
+
+1166
+01:06:32,850 --> 01:06:36,870
+Audrow Nash: Mm hmm. That's
+great. I'd be remiss if I didn't
+
+1167
+01:06:36,870 --> 01:06:41,220
+ask, what do you think the
+timeline is for autonomous cars?
+
+1168
+01:06:43,200 --> 01:06:45,150
+Adrian Macneil: That is a that's
+the money question.
+
+1169
+01:06:46,680 --> 01:06:48,990
+Audrow Nash: I mean, even like,
+started, I like next couple
+
+1170
+01:06:48,990 --> 01:06:51,450
+years, next 10s of years. Yeah,
+
+1171
+01:06:51,480 --> 01:06:54,930
+Adrian Macneil: yeah. I mean,
+they're here. Right? So it's a
+
+1172
+01:06:54,930 --> 01:06:58,350
+question of walking on Congress,
+what cannot autonomous cars
+
+1173
+01:06:58,350 --> 01:07:02,520
+achieve? Yeah, autonomous level
+for autonomous cars here, when I
+
+1174
+01:07:02,520 --> 01:07:07,140
+was, as you know, have cars
+running in Arizona today, fully
+
+1175
+01:07:07,140 --> 01:07:11,400
+autonomous, that, you know, the
+general public can can, can, I
+
+1176
+01:07:11,400 --> 01:07:13,380
+mean, maybe it's a limited
+number of people, maybe it's a
+
+1177
+01:07:13,380 --> 01:07:18,390
+limited kind of sun. But maybe I
+should back up a bit for the For
+
+1178
+01:07:18,390 --> 01:07:22,230
+those unfamiliar with those
+unfamiliar with the like levels
+
+1179
+01:07:22,230 --> 01:07:27,120
+of autonomy. Basically, you go
+from kind of a scale where level
+
+1180
+01:07:27,120 --> 01:07:30,090
+one, I'm not even sure what
+level one is level two is, is
+
+1181
+01:07:30,090 --> 01:07:34,320
+the car can kind of like, do
+basic things. So this is kind of
+
+1182
+01:07:34,320 --> 01:07:37,560
+like a Tesla autopilot where it
+can, you know, the car can steer
+
+1183
+01:07:37,560 --> 01:07:40,470
+in a lane and the car can can
+brake and accelerate for you.
+
+1184
+01:07:41,400 --> 01:07:44,610
+But ultimately, you're at level
+two, you're still completely
+
+1185
+01:07:44,610 --> 01:07:47,460
+responsible for anything that
+God does. So if the car crashes,
+
+1186
+01:07:47,460 --> 01:07:51,060
+you can't kind of blame it on
+the car. Level Three is
+
+1187
+01:07:51,060 --> 01:07:56,010
+basically that in some
+situations, the car can be fully
+
+1188
+01:07:56,010 --> 01:07:59,580
+responsible, but it may need to
+wake you up. So like, you can go
+
+1189
+01:07:59,580 --> 01:08:01,860
+to sleep, maybe it'll put you on
+the freeway, and maybe it'll do
+
+1190
+01:08:01,860 --> 01:08:05,250
+the bulk of the driving. But
+you're going to get like a 32nd
+
+1191
+01:08:05,250 --> 01:08:07,320
+warning or something saying
+like, hey, by the way, you know,
+
+1192
+01:08:07,320 --> 01:08:09,060
+it's time to wake up because I
+don't know what I'm doing, I
+
+1193
+01:08:09,060 --> 01:08:12,450
+need help. But you know, there's
+some kind of like, there's some
+
+1194
+01:08:12,450 --> 01:08:15,360
+kind of kind of warning element,
+whereas level two, it's like, I
+
+1195
+01:08:15,360 --> 01:08:18,630
+don't know, the cop might just
+do something crazy. And then the
+
+1196
+01:08:18,630 --> 01:08:22,290
+definition of level four is that
+within a defined kind of
+
+1197
+01:08:22,290 --> 01:08:25,920
+operating domain, the car can be
+fully responsible. And so
+
+1198
+01:08:25,920 --> 01:08:31,140
+that's, you know, we see that
+companies doing Robo taxis. You
+
+1199
+01:08:31,140 --> 01:08:33,630
+know, the cars are fully
+responsible, and that you jump
+
+1200
+01:08:33,630 --> 01:08:36,060
+in the taxi, it takes you from A
+to B and you jump out and you're
+
+1201
+01:08:36,060 --> 01:08:39,660
+done. There's a geo fence around
+it, you can't, you know, jump on
+
+1202
+01:08:39,660 --> 01:08:42,570
+it and expect you to drive it to
+the next day, or in some cases
+
+1203
+01:08:42,570 --> 01:08:45,480
+of counting when you drive on
+the freeway, but within the
+
+1204
+01:08:45,480 --> 01:08:48,750
+domain that was designed for the
+car was completely responsible.
+
+1205
+01:08:51,360 --> 01:08:55,680
+Audrow Nash: Not this not not
+some level of highway or some
+
+1206
+01:08:55,680 --> 01:08:57,810
+products, like a restriction on
+where I
+
+1207
+01:08:57,809 --> 01:09:00,059
+Adrian Macneil: can go domain
+could be restricted to certain
+
+1208
+01:09:00,059 --> 01:09:03,149
+roads, it could be restricted to
+a certain time of day like
+
+1209
+01:09:03,149 --> 01:09:03,419
+night.
+
+1210
+01:09:04,380 --> 01:09:06,120
+Audrow Nash: And weather
+conditions or weather
+
+1211
+01:09:06,120 --> 01:09:06,720
+conditions.
+
+1212
+01:09:06,720 --> 01:09:08,280
+Adrian Macneil: Yeah, if there's
+heavy rain, they're going to
+
+1213
+01:09:08,280 --> 01:09:11,790
+pull them off the road. But in
+the domain, and the operating
+
+1214
+01:09:11,790 --> 01:09:14,520
+domain that it was designed for
+the car is fully responsible.
+
+1215
+01:09:14,550 --> 01:09:19,050
+And so that that is happening
+today. Right. And that, you
+
+1216
+01:09:19,050 --> 01:09:23,220
+know, that is, I think it's
+gonna be something it'll be over
+
+1217
+01:09:23,220 --> 01:09:26,280
+the next 10 years, you know,
+it's just going to increase more
+
+1218
+01:09:26,280 --> 01:09:29,640
+and more domains where you can
+see it. More and more, you know,
+
+1219
+01:09:29,640 --> 01:09:33,270
+companies are going to be the
+flying cars out there. More
+
+1220
+01:09:33,270 --> 01:09:35,340
+domains are opening up,
+certainly, I think we'll see
+
+1221
+01:09:35,340 --> 01:09:39,450
+this happening, you know, in San
+Francisco very soon, probably on
+
+1222
+01:09:39,450 --> 01:09:44,160
+the order of like, next year or
+the year after really, after
+
+1223
+01:09:44,160 --> 01:09:48,960
+that, but I think that and
+again, and certain domains,
+
+1224
+01:09:48,960 --> 01:09:51,000
+right, maybe if it starts
+raining, which doesn't really
+
+1225
+01:09:51,000 --> 01:09:53,700
+happen very often in San
+Francisco, but maybe maybe if
+
+1226
+01:09:53,700 --> 01:09:56,250
+that does, then the cars aren't
+going to be running. I don't
+
+1227
+01:09:56,250 --> 01:10:00,480
+know. But I think you know,
+they're like us. They're already
+
+1228
+01:10:00,480 --> 01:10:02,850
+doing this in Arizona, and I
+think it's only a matter of time
+
+1229
+01:10:02,850 --> 01:10:06,180
+for you to start seeing it in
+denser cities. And then it just
+
+1230
+01:10:06,180 --> 01:10:08,850
+evolved from there at the kind
+of domain expands. And
+
+1231
+01:10:08,850 --> 01:10:11,460
+eventually the cars have better
+sensors and more processing
+
+1232
+01:10:11,460 --> 01:10:16,410
+power and can go faster and more
+safely. And so that that I think
+
+1233
+01:10:16,410 --> 01:10:18,630
+is just gonna be, you know,
+very, like, smoother than
+
+1234
+01:10:18,630 --> 01:10:23,790
+iterative. But the, you know,
+level five, I think is, is kind
+
+1235
+01:10:23,790 --> 01:10:28,020
+of, in my opinion, not even
+really worth defining level five
+
+1236
+01:10:28,020 --> 01:10:30,900
+is kind of defined as like, the
+car can do everything a human
+
+1237
+01:10:30,900 --> 01:10:36,660
+can do. And, in my mind, I'm not
+clear on why you would really
+
+1238
+01:10:36,660 --> 01:10:40,890
+want a car to do that, I guess
+like, there's this, there's
+
+1239
+01:10:40,890 --> 01:10:44,790
+expanding level four to like,
+Hey, I can drive on the road and
+
+1240
+01:10:45,870 --> 01:10:48,840
+on the wall, right? But like
+everything is human, I mean, a
+
+1241
+01:10:48,840 --> 01:10:52,500
+human can drive like a four hour
+drive through a burning forest,
+
+1242
+01:10:52,500 --> 01:10:57,060
+avoiding flames and like, like
+humans, can humans are very
+
+1243
+01:10:57,060 --> 01:10:59,850
+adaptive in the right situation,
+right. And I like I don't, I
+
+1244
+01:10:59,850 --> 01:11:03,180
+don't know that I ever see a
+world where a car is going to be
+
+1245
+01:11:03,180 --> 01:11:07,020
+able to do literally everything
+a human can do. But it doesn't
+
+1246
+01:11:07,020 --> 01:11:08,730
+matter, right, you're going to
+get to a point where a car can
+
+1247
+01:11:08,730 --> 01:11:10,920
+drive you, you know, from one
+side of the country to the other
+
+1248
+01:11:10,920 --> 01:11:14,460
+without stopping and without you
+without even having a steering
+
+1249
+01:11:14,460 --> 01:11:16,590
+wheel, then, you know, it
+doesn't really matter that it
+
+1250
+01:11:16,590 --> 01:11:18,630
+kind of drives through a burning
+forest or something.
+
+1251
+01:11:19,050 --> 01:11:24,240
+Audrow Nash: Yeah. Gotcha. Well,
+that's awesome. It's so
+
+1252
+01:11:24,240 --> 01:11:28,110
+interesting that it's so close.
+I look forward to, I hope in
+
+1253
+01:11:28,110 --> 01:11:30,900
+like a year or two, I'm able to
+take a ride in San Francisco.
+
+1254
+01:11:30,929 --> 01:11:33,179
+Adrian Macneil: I mean, these
+things start slowly, right? It's
+
+1255
+01:11:33,179 --> 01:11:36,269
+like, you know, Uber existed in
+2010. But no one was using it
+
+1256
+01:11:36,269 --> 01:11:39,719
+until until later. You know,
+they're coming in, they're
+
+1257
+01:11:39,719 --> 01:11:41,969
+onboard people, and they have to
+ramp up their operations, and
+
+1258
+01:11:41,969 --> 01:11:45,239
+they have to improve, you know,
+this, this. I mean, you know,
+
+1259
+01:11:45,269 --> 01:11:47,669
+every year the cost get better,
+are they able to handle more
+
+1260
+01:11:47,669 --> 01:11:49,979
+situations, they're more
+assertive, they're more human
+
+1261
+01:11:49,979 --> 01:11:54,629
+like, and they're driving. It's,
+it's, it's only a matter of time
+
+1262
+01:11:54,629 --> 01:11:57,779
+until the areas that they can
+operate effectively, kind of
+
+1263
+01:11:57,779 --> 01:12:00,659
+increases. But you know, you
+might have to get on a waiting
+
+1264
+01:12:00,659 --> 01:12:01,349
+list or something.
+
+1265
+01:12:01,890 --> 01:12:07,560
+Audrow Nash: Yep. Let's see. And
+so starting to wrap up, what
+
+1266
+01:12:07,560 --> 01:12:10,920
+what advice do you have for
+someone that's just starting
+
+1267
+01:12:10,920 --> 01:12:14,310
+their career or think like
+really early, like a 20 year old
+
+1268
+01:12:14,310 --> 01:12:19,080
+you? What would that advice end
+for now? Yeah, what advice would
+
+1269
+01:12:19,080 --> 01:12:19,560
+you have?
+
+1270
+01:12:20,490 --> 01:12:24,480
+Adrian Macneil: I think, um, you
+know, robotics is a big space
+
+1271
+01:12:24,480 --> 01:12:29,700
+and figure out which pieces that
+you're interested in and you
+
+1272
+01:12:29,700 --> 01:12:32,220
+know, a couple of things one
+maybe don't get too bogged down
+
+1273
+01:12:32,220 --> 01:12:34,800
+and thinking that you need to
+like specifically work on ml or
+
+1274
+01:12:34,800 --> 01:12:37,230
+something or, you know, you can
+be an electrical engineer
+
+1275
+01:12:37,230 --> 01:12:42,090
+working on robotics or you know,
+things like that. Yeah, there
+
+1276
+01:12:42,090 --> 01:12:46,110
+you go. So don't don't roll that
+out. Right, there's a lot of
+
+1277
+01:12:46,140 --> 01:12:50,100
+this is robotics industry is
+very diverse in terms of skill
+
+1278
+01:12:50,100 --> 01:12:53,640
+sets. And it takes all of those
+different skill sets to come
+
+1279
+01:12:53,640 --> 01:12:56,850
+together. It's not just, you
+know, a bunch of ml engineers
+
+1280
+01:12:56,850 --> 01:13:01,530
+or, or, you know, robotics,
+engineers writing c++. And so I
+
+1281
+01:13:01,530 --> 01:13:06,600
+think, you know, don't
+certainly, like take classes or
+
+1282
+01:13:06,600 --> 01:13:08,730
+try and get internships at
+different companies and work on
+
+1283
+01:13:08,730 --> 01:13:12,570
+different things. But, you know,
+don't get hung up on this
+
+1284
+01:13:12,570 --> 01:13:15,780
+feeling that you need, you know,
+one specific kind of skill set
+
+1285
+01:13:15,780 --> 01:13:18,030
+and to get into robotics, I
+think, you know, everyone can
+
+1286
+01:13:18,030 --> 01:13:20,940
+get into robotics if you're, if
+you're sufficiently interested.
+
+1287
+01:13:22,380 --> 01:13:27,450
+And then the other thing is just
+I think generally, people early
+
+1288
+01:13:27,450 --> 01:13:31,020
+in their career vastly
+underestimate how valuable it
+
+1289
+01:13:31,020 --> 01:13:34,920
+can be to build probably
+projects where you control end
+
+1290
+01:13:34,920 --> 01:13:39,030
+to end and you know, this is not
+like I'm not saying like, you
+
+1291
+01:13:39,030 --> 01:13:41,730
+know, go and do work in the
+spare time or something but if
+
+1292
+01:13:41,730 --> 01:13:44,970
+you want to understand how
+robots work on their own, don't
+
+1293
+01:13:44,970 --> 01:13:48,420
+get me you can get a kit for
+under $100 off Amazon to build a
+
+1294
+01:13:48,420 --> 01:13:50,940
+self driving car with just you
+know, some little some little
+
+1295
+01:13:50,940 --> 01:13:53,880
+motors and a little camera and a
+Raspberry Pi camera on things
+
+1296
+01:13:55,140 --> 01:13:58,140
+but build the intervention thing
+right i mean there's you know,
+
+1297
+01:13:58,140 --> 01:14:00,330
+there's stuff out there even
+like Ducky town which is great
+
+1298
+01:14:00,330 --> 01:14:04,410
+but even that is coming to you
+with a lot of pieces already
+
+1299
+01:14:04,410 --> 01:14:07,830
+kind of already thought out and
+if you foster this kind of like
+
+1300
+01:14:07,830 --> 01:14:10,590
+boat a little hobby project
+where you you know, even just
+
+1301
+01:14:10,620 --> 01:14:14,250
+get like a Raspberry Pi and so
+you know, Python on figuring out
+
+1302
+01:14:14,250 --> 01:14:17,250
+how to control the little servos
+from your, from your command
+
+1303
+01:14:17,250 --> 01:14:20,430
+line. You know, you don't even
+have to have any like sensing or
+
+1304
+01:14:20,460 --> 01:14:23,910
+thinking or acting happening
+just figure out how to like get
+
+1305
+01:14:23,910 --> 01:14:28,140
+me in a command line happening
+wired up 30 of Python and make
+
+1306
+01:14:28,140 --> 01:14:30,450
+the wheel spin you know, that'll
+teach you a lot about how the
+
+1307
+01:14:30,450 --> 01:14:32,910
+internet piece works. And when
+you go into a you know, a
+
+1308
+01:14:32,910 --> 01:14:37,830
+company Sure, it's not gonna be
+like directly applicable but you
+
+1309
+01:14:37,830 --> 01:14:41,610
+understand how the kind of you
+know how the pieces fit them. I
+
+1310
+01:14:41,610 --> 01:14:45,180
+think you know, that, that
+engineers that I've worked with
+
+1311
+01:14:45,180 --> 01:14:49,740
+that, that can kind of go from
+like the very big to the very
+
+1312
+01:14:49,740 --> 01:14:52,530
+small and back again, the best
+in the industry, the ones that
+
+1313
+01:14:52,560 --> 01:14:55,350
+are not just thinking about, you
+know, what is this little
+
+1314
+01:14:55,350 --> 01:14:58,230
+component that I'm working on,
+but how does it fit into the
+
+1315
+01:14:58,230 --> 01:15:01,560
+bigger picture and obviously,
+edit the account. We know one
+
+1316
+01:15:01,560 --> 01:15:05,130
+human can understand the big
+picture. So doing that on a much
+
+1317
+01:15:05,130 --> 01:15:08,430
+smaller scale is just really
+important to understand, you
+
+1318
+01:15:08,430 --> 01:15:10,590
+know, like what all of those
+components actually look like.
+
+1319
+01:15:12,990 --> 01:15:18,090
+Audrow Nash: So now, how can
+people reach out? or How can
+
+1320
+01:15:18,090 --> 01:15:22,020
+they contribute to the foxglove?
+any links or anything you'd like
+
+1321
+01:15:22,020 --> 01:15:22,560
+to share?
+
+1322
+01:15:23,340 --> 01:15:25,830
+Adrian Macneil: Definitely,
+yeah, we love contributions, we
+
+1323
+01:15:25,830 --> 01:15:29,100
+love people reaching out, you
+know, we have, so you can go to
+
+1324
+01:15:29,100 --> 01:15:33,090
+Fox club dot Dev, that's our
+website, you can download Fox
+
+1325
+01:15:33,090 --> 01:15:36,450
+doc studio, you can open it in
+the browser, try it out and give
+
+1326
+01:15:36,450 --> 01:15:39,570
+us feedback. We have links on
+there to our community channels,
+
+1327
+01:15:39,960 --> 01:15:45,120
+GitHub, Slack, things like that.
+You know, if you find that
+
+1328
+01:15:45,120 --> 01:15:48,300
+useful, great, tell us, we'd
+love feedback, feel free to make
+
+1329
+01:15:48,300 --> 01:15:52,770
+contributions for requests,
+report issues, those are all
+
+1330
+01:15:52,890 --> 01:15:56,670
+helpful. Also, you know, if this
+is something that's interesting
+
+1331
+01:15:56,670 --> 01:15:59,340
+to you, if there's something you
+want to work on, just feel free
+
+1332
+01:15:59,340 --> 01:16:04,800
+to contact me or us directly.
+And if it's something that that
+
+1333
+01:16:04,830 --> 01:16:08,190
+you're working on at a company
+and feel like you struggling
+
+1334
+01:16:08,190 --> 01:16:10,740
+with these kind of tools around
+how you're collaborating over
+
+1335
+01:16:10,740 --> 01:16:14,220
+robotics data, you know, also
+reach out we'd love to chat
+
+1336
+01:16:14,220 --> 01:16:17,160
+about it, even if that's kind of
+getting you access to our beta
+
+1337
+01:16:17,190 --> 01:16:21,060
+or, or, you know, just talking
+about more about where we're
+
+1338
+01:16:21,060 --> 01:16:24,210
+going. We were an early stage
+company. We love getting
+
+1339
+01:16:24,210 --> 01:16:27,030
+feedback from people and just
+engaging with the community. So
+
+1340
+01:16:29,310 --> 01:16:32,220
+Audrow Nash: all right, awesome.
+Thank you. Awesome, thanks.
+
+1341
+01:16:35,130 --> 01:16:37,740
+That's all we have for you
+today. I was surprised by
+
+1342
+01:16:37,740 --> 01:16:40,830
+Adrian's answer to what he
+thinks for the timeline of
+
+1343
+01:16:40,830 --> 01:16:44,490
+autonomous cars. What do you
+think? Let us know in the
+
+1344
+01:16:44,490 --> 01:16:48,810
+comments on sensing act.com
+thank you again to our founding
+
+1345
+01:16:48,810 --> 01:16:51,360
+sponsor open robotics. Goodbye,
+everyone.
+

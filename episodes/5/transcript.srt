@@ -1,0 +1,8658 @@
+1
+00:00:03,090 --> 00:00:05,280
+Audrow Nash: Hi, everyone.
+Welcome to the Sense Think Act
+
+2
+00:00:05,280 --> 00:00:08,940
+Podcast. I'm the host Audrow
+Nash. And in this episode, I'm
+
+3
+00:00:08,940 --> 00:00:13,770
+talking to Erik Schluntz, co
+founder and CTO of Cobalt
+
+4
+00:00:13,770 --> 00:00:17,970
+Robotics, which makes indoor
+security guard robots. Erik and
+
+5
+00:00:17,970 --> 00:00:22,290
+I talked about having the Cobalt
+robot take elevators, how Cobalt
+
+6
+00:00:22,290 --> 00:00:26,580
+has humans help their robots
+make decisions, robot body
+
+7
+00:00:26,580 --> 00:00:29,370
+language, advice for
+entrepreneurs and several other
+
+8
+00:00:29,370 --> 00:00:33,450
+things. It was great to talk to
+Erik, I enjoyed learning about
+
+9
+00:00:33,450 --> 00:00:37,170
+how cobalt uses humans and
+robots in their systems, which
+
+10
+00:00:37,200 --> 00:00:41,430
+each play to their strengths. It
+was also a great seeing how
+
+11
+00:00:41,430 --> 00:00:44,610
+cobalt robotics has navigated
+getting investors and funding.
+
+12
+00:00:45,000 --> 00:00:48,510
+As always a big thank you to our
+founding sponsor, Open Robotics,
+
+13
+00:00:48,540 --> 00:00:49,380
+and I hope you enjoy.
+
+14
+00:00:51,000 --> 00:00:53,550
+All right. Hi, Eric, would you
+introduce yourself?
+
+15
+00:00:54,300 --> 00:00:56,850
+Erik Schluntz: Hello, I'm Eric
+Schluntz. I'm the co founder and
+
+16
+00:00:56,850 --> 00:00:58,380
+CTO of Cobalt Robotics.
+
+17
+00:00:59,340 --> 00:01:00,870
+Audrow Nash: Would you tell me a
+bit about Cobalt?
+
+18
+00:01:01,500 --> 00:01:04,650
+Erik Schluntz: Absolutely. So
+Cobalt builds indoor security
+
+19
+00:01:04,650 --> 00:01:07,680
+guard robots. So these are
+robots that will patrol around
+
+20
+00:01:07,680 --> 00:01:11,640
+an office building, looking for
+anything out of the ordinary. We
+
+21
+00:01:11,640 --> 00:01:14,760
+work with human operators to
+help support the robots. So if
+
+22
+00:01:14,760 --> 00:01:17,040
+the robot comes across anything,
+it doesn't know how to respond
+
+23
+00:01:17,040 --> 00:01:20,850
+to it switches over controls are
+humans. And then our humans can
+
+24
+00:01:20,850 --> 00:01:23,940
+escalate exactly like a human
+guard on site would, whether
+
+25
+00:01:23,940 --> 00:01:27,270
+that's calling the customer or
+calling police, or having a
+
+26
+00:01:27,270 --> 00:01:29,910
+friendly video chat, instead of
+asking how someone's doing just
+
+27
+00:01:29,910 --> 00:01:30,750
+like a security guard.
+
+28
+00:01:31,379 --> 00:01:34,439
+Audrow Nash: Nice. And so for
+the people listening? Would you
+
+29
+00:01:34,439 --> 00:01:37,949
+describe what your robot looks
+like? And how do we refer to it?
+
+30
+00:01:37,979 --> 00:01:40,019
+What do you just Is it the
+cobalt robot
+
+31
+00:01:40,049 --> 00:01:43,079
+Erik Schluntz: or just a cobalt
+robot, we actually we decided we
+
+32
+00:01:43,079 --> 00:01:46,439
+didn't want a separate product
+name from company name. That can
+
+33
+00:01:46,439 --> 00:01:50,369
+be hard to to brand both of us.
+So it's just a cobalt robot. And
+
+34
+00:01:50,999 --> 00:01:53,759
+I'll describe this actually,
+while playing a video for people
+
+35
+00:01:53,759 --> 00:02:01,379
+that are watching. Sure, we'll
+get this going here. So the
+
+36
+00:02:01,379 --> 00:02:07,559
+cobalt robot is about five feet
+tall. And it'll control around
+
+37
+00:02:07,559 --> 00:02:11,219
+it has wheels, two main drive
+wheels. And then for supporting
+
+38
+00:02:11,219 --> 00:02:14,579
+casters, it's designed to
+navigate around through an
+
+39
+00:02:14,579 --> 00:02:17,969
+interoffice space, looking for
+anything ordinary, that can
+
+40
+00:02:17,969 --> 00:02:22,169
+include doors or windows that
+have been left open, the body is
+
+41
+00:02:22,169 --> 00:02:25,109
+actually coated in fabric. So
+it's a little bit soft and
+
+42
+00:02:25,109 --> 00:02:28,169
+squishy. And this was actually a
+big part of our industrial
+
+43
+00:02:28,169 --> 00:02:31,829
+design was that we wanted the
+robot to be friendly. The job of
+
+44
+00:02:31,829 --> 00:02:34,469
+a security guard is to keep
+people and employees feeling
+
+45
+00:02:34,469 --> 00:02:37,919
+safe and comfortable. And so if
+the robot is scary, you know, it
+
+46
+00:02:37,919 --> 00:02:40,739
+really hasn't done its job,
+right. There's also a
+
+47
+00:02:40,739 --> 00:02:44,609
+touchscreen on the front of the
+robot that we use for being able
+
+48
+00:02:44,609 --> 00:02:47,219
+to interact with anyone around
+the robot, where one of our
+
+49
+00:02:47,219 --> 00:02:52,769
+human operators can video call
+and talk to a person on site. We
+
+50
+00:02:52,769 --> 00:02:55,709
+also have a lot of sensors,
+cameras that are 360 degrees
+
+51
+00:02:55,709 --> 00:02:59,129
+around so no one can sneak up on
+the robot. And then a ton of
+
+52
+00:02:59,129 --> 00:03:01,859
+sensors that you find in a self
+driving car like LIDAR and depth
+
+53
+00:03:01,859 --> 00:03:03,209
+cameras, and I am Yes.
+
+54
+00:03:03,930 --> 00:03:07,110
+Audrow Nash: So how I'm thinking
+of it. It's like a telepresence
+
+55
+00:03:07,110 --> 00:03:09,960
+robot that has a lot of sensors
+that makes it more
+
+56
+00:03:09,960 --> 00:03:13,140
+sophisticated. And then you have
+the whole like person in the
+
+57
+00:03:13,140 --> 00:03:16,290
+loop thing, which makes it a
+good bit more sophisticated. But
+
+58
+00:03:16,290 --> 00:03:20,790
+is that a like a squishy, a
+basically a telepresence robot
+
+59
+00:03:20,790 --> 00:03:24,180
+with a kind of cylindrical
+fabric body?
+
+60
+00:03:24,720 --> 00:03:27,540
+Erik Schluntz: Yeah, yeah. And
+I'd say that's what our design
+
+61
+00:03:27,540 --> 00:03:30,960
+is basically that it's
+telepresence five or 10% of the
+
+62
+00:03:30,960 --> 00:03:33,150
+time. And I'll tell you this 90%
+of the time.
+
+63
+00:03:34,139 --> 00:03:37,919
+Audrow Nash: Okay. Now, and the
+one behind you has a little arm.
+
+64
+00:03:38,350 --> 00:03:40,630
+Erik Schluntz: Yes, yeah. So
+this is one of our add ons for
+
+65
+00:03:40,630 --> 00:03:44,290
+some of our customers. For our
+security patrols, we want to be
+
+66
+00:03:44,290 --> 00:03:47,950
+able to patrol through multiple
+different floors. And so to do
+
+67
+00:03:47,950 --> 00:03:51,730
+that, we need to ride elevators.
+Now in the past, we've done
+
+68
+00:03:51,730 --> 00:03:55,210
+elevator integrations that are
+wireless. Those take a long
+
+69
+00:03:55,210 --> 00:03:58,540
+time, elevator companies are
+often very slow. And so actually
+
+70
+00:03:58,540 --> 00:04:00,610
+what we do now at a lot of
+customer sites is just
+
+71
+00:04:00,610 --> 00:04:03,910
+physically press the button. So
+we added a one degree of freedom
+
+72
+00:04:03,910 --> 00:04:08,140
+actuator, swing up and press
+elevator buttons. And we use the
+
+73
+00:04:08,140 --> 00:04:11,110
+cameras and computer vision to
+detect the buttons know where we
+
+74
+00:04:11,110 --> 00:04:14,590
+should press. And we actually
+have this rolled out at a bunch
+
+75
+00:04:14,590 --> 00:04:18,340
+of customer sites now. And it is
+a lot faster to roll out in a
+
+76
+00:04:18,340 --> 00:04:22,360
+wireless integration and it
+works pretty well. So yeah, I'll
+
+77
+00:04:22,360 --> 00:04:24,790
+show a video of that for people
+at all kind of narrate that. So
+
+78
+00:04:24,790 --> 00:04:28,180
+the robot first starts and
+presses the button on the
+
+79
+00:04:28,180 --> 00:04:33,040
+outside of an elevator. waits
+for the door to open, navigates
+
+80
+00:04:33,040 --> 00:04:36,970
+inside. elevators are very
+technically challenging thing to
+
+81
+00:04:36,970 --> 00:04:40,390
+do. We find tons of things like
+elevator thresholds that are
+
+82
+00:04:40,390 --> 00:04:42,970
+actually out of spec that would
+cause a lot of problems for
+
+83
+00:04:42,970 --> 00:04:43,960
+people in wheelchairs.
+
+84
+00:04:43,990 --> 00:04:47,050
+Audrow Nash: What do you mean?
+Is that like a big bump getting
+
+85
+00:04:47,050 --> 00:04:47,560
+into it?
+
+86
+00:04:47,590 --> 00:04:49,930
+Erik Schluntz: Exactly, you
+know, we find elevators where
+
+87
+00:04:49,930 --> 00:04:53,170
+it's a two inch gap, you know,
+between the elevator car and the
+
+88
+00:04:53,170 --> 00:04:57,010
+floor or you know, one inch
+vertical, but once the robot
+
+89
+00:04:57,010 --> 00:05:00,760
+gets inside, it uses computer
+vision to see the paddle and
+
+90
+00:05:00,760 --> 00:05:04,480
+know which button it should
+press, flex the correct button
+
+91
+00:05:04,600 --> 00:05:08,500
+drives forward, depress it. And
+as I mentioned earlier, this arm
+
+92
+00:05:08,500 --> 00:05:11,830
+that we add is only a single
+degree of freedom. So we
+
+93
+00:05:11,830 --> 00:05:15,550
+actually use the robots drive
+train to steer the robot left
+
+94
+00:05:15,550 --> 00:05:19,930
+and right. And to move forward
+and backwards, the arm only
+
+95
+00:05:19,930 --> 00:05:23,950
+moves up and down. Yep. And we
+use the robot for the rest of
+
+96
+00:05:23,950 --> 00:05:24,760
+the degrees of freedom.
+
+97
+00:05:24,810 --> 00:05:28,380
+Audrow Nash: You may I think you
+mentioned so it has to the
+
+98
+00:05:28,380 --> 00:05:33,060
+cobalt robot has differential
+drive or something so you can
+
+99
+00:05:33,060 --> 00:05:36,270
+turn it's not Omni drive, so it
+doesn't move side to side.
+
+100
+00:05:36,000 --> 00:05:38,160
+Erik Schluntz: It's it's
+differential drives, we have two
+
+101
+00:05:38,160 --> 00:05:40,620
+main drive wheels and four
+support casters.
+
+102
+00:05:40,650 --> 00:05:42,900
+Audrow Nash: Okay, is that
+tricky to get lined up with the
+
+103
+00:05:42,900 --> 00:05:43,380
+button?
+
+104
+00:05:44,950 --> 00:05:46,660
+Erik Schluntz: Yes, so we
+definitely put a lot of work
+
+105
+00:05:46,660 --> 00:05:49,120
+into sort of that motion control
+and planning to be able to
+
+106
+00:05:49,120 --> 00:05:51,790
+nicely line up and press a
+button. Especially because
+
+107
+00:05:51,790 --> 00:05:55,540
+elevators often have very tight
+space, we don't have a lot of a
+
+108
+00:05:55,540 --> 00:05:58,690
+lot of room just sort of back up
+by 10 feet and approach it
+
+109
+00:05:58,690 --> 00:06:02,140
+nicely. It's, yeah, we have to
+kind of operate in these very
+
+110
+00:06:02,140 --> 00:06:02,830
+tight spaces.
+
+111
+00:06:02,890 --> 00:06:06,250
+Audrow Nash: Gotcha. I wonder,
+do you have ever the situation
+
+112
+00:06:06,250 --> 00:06:09,940
+where the elevator is so tight
+that you have to raise the arm
+
+113
+00:06:09,940 --> 00:06:11,650
+and then kind of swing into it?
+
+114
+00:06:12,790 --> 00:06:15,250
+Erik Schluntz: We haven't hit
+that yet. And luckily, there are
+
+115
+00:06:15,250 --> 00:06:19,960
+rules around elevators, for
+people with wheelchairs. So we
+
+116
+00:06:19,960 --> 00:06:22,630
+can actually just follow a lot
+of those same design specs to
+
+117
+00:06:22,630 --> 00:06:24,880
+know what the robot hardware
+needs to be capable of gotcha.
+
+118
+00:06:24,880 --> 00:06:27,760
+Audrow Nash: And is it difficult
+when you go into a new elevator?
+
+119
+00:06:28,060 --> 00:06:31,330
+To find the buttons? Like I
+imagine that this is fairly
+
+120
+00:06:31,330 --> 00:06:35,560
+custom, depending on the use
+case, depending on how you're
+
+121
+00:06:35,590 --> 00:06:36,550
+detecting things?
+
+122
+00:06:37,330 --> 00:06:40,390
+Erik Schluntz: Yeah, so we have
+a sort of a proprietary system
+
+123
+00:06:40,390 --> 00:06:44,440
+that we've set up where one of
+our sales engineers can go on to
+
+124
+00:06:44,470 --> 00:06:47,350
+new customer site with the
+robot, and very quickly
+
+125
+00:06:47,350 --> 00:06:51,250
+calibrate the robot for that
+site. So we don't need a ton of
+
+126
+00:06:51,250 --> 00:06:54,760
+training data or anything new
+like that. We can kind of just
+
+127
+00:06:54,760 --> 00:06:57,280
+bring the robot through the
+elevator once, and then after
+
+128
+00:06:57,280 --> 00:06:58,960
+that, it's able to use the
+elevator by itself.
+
+129
+00:06:59,050 --> 00:07:03,010
+Audrow Nash: That's awesome. You
+kind of... Can I guess that what
+
+130
+00:07:03,040 --> 00:07:03,460
+it is?
+
+131
+00:07:04,240 --> 00:07:04,810
+Erik Schluntz: Yeah, sure.
+
+132
+00:07:05,260 --> 00:07:08,680
+Audrow Nash: So do you use the
+depth camera at all in this for
+
+133
+00:07:08,680 --> 00:07:11,530
+figuring out how far away you
+are. And
+
+134
+00:07:12,400 --> 00:07:14,410
+Erik Schluntz: Yes, we mainly
+use the LIDAR for that. One of
+
+135
+00:07:14,410 --> 00:07:17,080
+the other interesting challenges
+is that elevators are very
+
+136
+00:07:17,080 --> 00:07:19,300
+reflective surfaces, a lot of
+times you have sort of a
+
+137
+00:07:19,300 --> 00:07:22,390
+polished metal. And time of
+flight depth, the cameras can do
+
+138
+00:07:22,390 --> 00:07:23,650
+very poorly with that, because
+
+139
+00:07:23,980 --> 00:07:27,160
+Audrow Nash: they're shooting
+out infrared and trying to see
+
+140
+00:07:27,160 --> 00:07:30,310
+that but then it bounces off. So
+you don't get any good depth
+
+141
+00:07:30,310 --> 00:07:32,800
+information, maybe very noisy
+information,
+
+142
+00:07:32,830 --> 00:07:35,440
+Erik Schluntz: you get very
+noisy, but the LIDAR at the
+
+143
+00:07:35,440 --> 00:07:37,750
+bottom of the robot is pretty
+good. And we know that in an
+
+144
+00:07:37,750 --> 00:07:40,540
+elevator, it's a fairly
+structured environment where we
+
+145
+00:07:40,540 --> 00:07:43,240
+see the walls is usually in
+line. Why is LIDAR
+
+146
+00:07:43,240 --> 00:07:45,460
+Audrow Nash: more reliable?
+intuitively, that doesn't make
+
+147
+00:07:45,490 --> 00:07:49,690
+much sense to me. So for the
+depth cameras, are they
+
+148
+00:07:49,690 --> 00:07:51,850
+structured lighting, where
+they're projecting something
+
+149
+00:07:51,850 --> 00:07:54,670
+out? And then trying to observe
+what that is, with the pattern
+
+150
+00:07:54,670 --> 00:07:56,350
+and the deformation in it? Or?
+
+151
+00:07:57,430 --> 00:07:59,530
+Erik Schluntz: That's a great
+question. So the one we use is
+
+152
+00:07:59,530 --> 00:08:02,650
+not structured light, it's time
+of flight. Oh, and I don't think
+
+153
+00:08:02,650 --> 00:08:07,180
+there's any inherent reason that
+a time of flight depth camera is
+
+154
+00:08:07,270 --> 00:08:10,180
+is worse than a LIDAR, which
+typically, what we see is that
+
+155
+00:08:10,180 --> 00:08:12,760
+LIDAR is are a lot more
+powerful, and just put a lot
+
+156
+00:08:12,760 --> 00:08:16,090
+more into those be able to get a
+much better signal response.
+
+157
+00:08:16,120 --> 00:08:18,790
+Audrow Nash: Gotcha. And the
+LIDAR of this robot is at the
+
+158
+00:08:18,790 --> 00:08:20,350
+it's like, on the base, right?
+
+159
+00:08:20,430 --> 00:08:23,400
+Erik Schluntz: Yes, at the very
+bottom of the robot, and you can
+
+160
+00:08:23,400 --> 00:08:27,630
+see around 270 degrees around
+the robot. So that gives us kind
+
+161
+00:08:27,630 --> 00:08:30,900
+of a good sort of footprint of
+what the the room that said,
+
+162
+00:08:31,860 --> 00:08:34,890
+Yeah, and then we use the
+optical camera on the front of
+
+163
+00:08:34,890 --> 00:08:38,010
+the robot, and can get very good
+sort of optical readings, write
+
+164
+00:08:38,040 --> 00:08:39,450
+up the buttons and see where
+they are.
+
+165
+00:08:39,480 --> 00:08:42,720
+Audrow Nash: Yep. And then how
+do you control the press for
+
+166
+00:08:42,720 --> 00:08:47,220
+this, I'm imagining like, you
+draw, you basically raise that
+
+167
+00:08:47,220 --> 00:08:50,190
+to the correct height that you
+imagined the thing is, and then
+
+168
+00:08:50,190 --> 00:08:52,920
+you just drive forward until you
+hit some sort of drive
+
+169
+00:08:52,919 --> 00:08:56,579
+Erik Schluntz: forward. And we
+have a set Oh, very tip here to
+
+170
+00:08:56,579 --> 00:08:59,669
+know whether we've made contact
+cool little forest, what are the
+
+171
+00:09:00,059 --> 00:09:03,029
+eggs? Initially, we had a force
+sensor, and then for
+
+172
+00:09:03,029 --> 00:09:06,239
+reliability, we just switched it
+to a, you know, a switch.
+
+173
+00:09:07,229 --> 00:09:10,829
+That's, that's calibrated. Yeah,
+one of the interesting things is
+
+174
+00:09:10,829 --> 00:09:14,159
+sort of, you can we can tell
+that we've hit something, but
+
+175
+00:09:14,159 --> 00:09:16,709
+you don't necessarily know
+whether you engage a button or
+
+176
+00:09:16,709 --> 00:09:19,409
+the or that you know, the rim of
+the button and maybe didn't
+
+177
+00:09:19,409 --> 00:09:22,379
+engage it. So there's some
+interesting things we can do to
+
+178
+00:09:23,459 --> 00:09:27,419
+you know, to sense whether we'd
+hit that one of the first things
+
+179
+00:09:27,419 --> 00:09:29,909
+we thought of is oh, you know,
+we can tell whether the light,
+
+180
+00:09:30,329 --> 00:09:32,759
+the light turned on in the
+button, but you'll actually find
+
+181
+00:09:32,759 --> 00:09:35,849
+plenty of elevators that don't
+light up. And so actually what
+
+182
+00:09:35,849 --> 00:09:39,869
+we do now, is we have an
+accelerometer of the
+
+183
+00:09:39,869 --> 00:09:40,979
+acceleration of the elevator.
+
+184
+00:09:41,250 --> 00:09:42,480
+Audrow Nash: So can you feel it
+moving?
+
+185
+00:09:43,590 --> 00:09:47,520
+Erik Schluntz: Exactly that's
+kind of you know, the sort of
+
+186
+00:09:47,520 --> 00:09:50,130
+that's like the the ultimate end
+goal is we feel like the
+
+187
+00:09:50,250 --> 00:09:53,220
+elevators not moving. We know
+that we've correctly told the
+
+188
+00:09:53,220 --> 00:09:53,970
+elevator what to do.
+
+189
+00:09:54,120 --> 00:09:57,540
+Audrow Nash: Now is there ever
+the case where the robot is in
+
+190
+00:09:57,540 --> 00:10:01,260
+the elevator pushes the button,
+but Miss This so that it didn't
+
+191
+00:10:01,260 --> 00:10:04,050
+actually click the button and
+then someone calls the elevator
+
+192
+00:10:04,050 --> 00:10:06,180
+from a different floor, and it
+sees it.
+
+193
+00:10:07,379 --> 00:10:09,989
+Erik Schluntz: Absolutely. And
+so I think what you brought up
+
+194
+00:10:09,989 --> 00:10:12,179
+is that one of the really
+interesting challenges of this
+
+195
+00:10:12,179 --> 00:10:15,449
+is that when we are in an
+elevator, in the worst case,
+
+196
+00:10:15,449 --> 00:10:19,169
+we're inside a Faraday cage. And
+so this has to be often this has
+
+197
+00:10:19,169 --> 00:10:20,189
+to be 100%. I'll
+
+198
+00:10:20,579 --> 00:10:23,429
+Audrow Nash: speak about it in a
+cage for just a little bit.
+
+199
+00:10:23,459 --> 00:10:23,849
+Yeah,
+
+200
+00:10:24,149 --> 00:10:27,419
+Erik Schluntz: absolutely. So a
+Faraday cage is a closed metal
+
+201
+00:10:27,419 --> 00:10:31,559
+structure that no radio waves or
+electromagnetic waves can get in
+
+202
+00:10:31,559 --> 00:10:34,889
+or out of. And so that means
+that for some elevators, when
+
+203
+00:10:34,889 --> 00:10:38,219
+we're in them, we don't have Wi
+Fi or cellular. And that means
+
+204
+00:10:38,219 --> 00:10:41,549
+that we can't rely on our human
+operators that generally we use
+
+205
+00:10:41,549 --> 00:10:42,089
+for ourselves.
+
+206
+00:10:42,300 --> 00:10:43,680
+Audrow Nash: That's hard,
+because it's like one of the
+
+207
+00:10:43,680 --> 00:10:47,340
+more difficult situations.
+Exactly, exactly. They're in a
+
+208
+00:10:47,340 --> 00:10:48,930
+Faraday box. That's crazy.
+
+209
+00:10:49,409 --> 00:10:52,259
+Erik Schluntz: Yeah, so it's
+very funny but And generally,
+
+210
+00:10:52,259 --> 00:10:55,319
+what we say cobalt is that one
+of our sort of really fun
+
+211
+00:10:55,319 --> 00:10:58,619
+advantages for our engineering
+team over say, working at a self
+
+212
+00:10:58,619 --> 00:11:01,709
+driving car company, is that we
+just have a lot of inherent
+
+213
+00:11:01,709 --> 00:11:04,409
+safety and stability that we
+move slowly through indoor
+
+214
+00:11:04,409 --> 00:11:07,829
+spaces. If anything happens, we
+can just stop and call a human
+
+215
+00:11:07,829 --> 00:11:11,699
+operator, you can't do that on a
+freeway. And so that means that
+
+216
+00:11:11,699 --> 00:11:15,599
+we can basically solve for the
+99% case, and we don't need to
+
+217
+00:11:15,629 --> 00:11:18,479
+worry about solving the last
+percent bring anything in the
+
+218
+00:11:18,479 --> 00:11:21,599
+elevator, except in the
+elevator. That's where we need
+
+219
+00:11:21,599 --> 00:11:24,119
+to get 100% You mean safety
+
+220
+00:11:24,120 --> 00:11:27,360
+Audrow Nash: instability? For
+this yet safety and stability
+
+221
+00:11:27,360 --> 00:11:28,020
+and stability?
+
+222
+00:11:28,830 --> 00:11:31,320
+Erik Schluntz: Yeah, you know,
+we're not trying to balance on
+
+223
+00:11:31,320 --> 00:11:35,250
+two wheels, it is always a safe
+situation for the robot to stop.
+
+224
+00:11:36,210 --> 00:11:38,100
+And so we can take a lot of
+advantage of that, and
+
+225
+00:11:38,100 --> 00:11:42,510
+basically, handle covering a lot
+of edge cases with that safety
+
+226
+00:11:42,510 --> 00:11:45,540
+behavior of I stopped the robot
+and wait for a human operator,
+
+227
+00:11:46,290 --> 00:11:48,510
+except in the elevator, then
+they realize
+
+228
+00:11:49,800 --> 00:11:54,240
+Audrow Nash: it. It's two
+interviews that this has
+
+229
+00:11:54,240 --> 00:11:56,550
+occurred. So I have to figure
+out how to turn that off.
+
+230
+00:11:57,090 --> 00:11:59,130
+Erik Schluntz: Okay, yeah, I'll
+need to be careful not to save
+
+231
+00:11:59,130 --> 00:12:05,340
+the G word over here, but my
+phone. Yeah, so And basically,
+
+232
+00:12:05,340 --> 00:12:07,890
+we need to make sure that
+because we're in this Faraday
+
+233
+00:12:07,890 --> 00:12:11,280
+cage, where we can't call for
+help from an operator, that this
+
+234
+00:12:11,280 --> 00:12:14,160
+robot is going to get itself out
+of the elevator come hell or
+
+235
+00:12:14,160 --> 00:12:17,580
+high water. And there's all
+sorts of really funny situations
+
+236
+00:12:17,580 --> 00:12:20,460
+you can get into. Like you
+mentioned that, you know,
+
+237
+00:12:20,490 --> 00:12:23,790
+perfect timing, you can miss the
+button, but someone else calls
+
+238
+00:12:23,910 --> 00:12:26,580
+the elevator at the same time.
+So it thinks that it succeeded.
+
+239
+00:12:26,910 --> 00:12:30,720
+And we have really robust state
+machines that we've built around
+
+240
+00:12:30,720 --> 00:12:34,290
+these behaviors. So the robot
+knows what state it's in and
+
+241
+00:12:34,290 --> 00:12:37,620
+knows how to retry from pretty
+much any state and knows that
+
+242
+00:12:37,620 --> 00:12:40,620
+these kinds of things happen.
+That even though it's it's felt
+
+243
+00:12:40,620 --> 00:12:42,990
+the motion, it knows there's a
+chance that maybe this is just a
+
+244
+00:12:42,990 --> 00:12:45,660
+coincidence. And if it doesn't
+go to the right floor, hey, I
+
+245
+00:12:45,660 --> 00:12:46,560
+might need to retry.
+
+246
+00:12:47,339 --> 00:12:50,009
+Audrow Nash: Ah, okay. Yeah, cuz
+what I was getting at with that
+
+247
+00:12:50,009 --> 00:12:53,549
+is I'm curious about the mapping
+problem. So how you split up
+
+248
+00:12:53,549 --> 00:12:56,279
+different maps, I suppose it
+like maybe Each floor has its
+
+249
+00:12:56,279 --> 00:12:59,699
+own map. And then you try to
+once you enter a new floor, try
+
+250
+00:12:59,699 --> 00:13:05,039
+to figure out where exactly you
+are in it. So that which Am I in
+
+251
+00:13:05,039 --> 00:13:07,799
+for one or three? This kind of
+thing?
+
+252
+00:13:08,789 --> 00:13:11,069
+Erik Schluntz: Yeah, so there's
+a I think two interesting things
+
+253
+00:13:11,069 --> 00:13:14,159
+that one is sort of knowing what
+floor we're on. And the other
+
+254
+00:13:14,159 --> 00:13:18,209
+is, is knowing where we are sort
+of inside the floors. For the
+
+255
+00:13:18,239 --> 00:13:20,819
+know, in the foreground, we
+actually use the accelerometer
+
+256
+00:13:21,329 --> 00:13:21,599
+to the
+
+257
+00:13:21,600 --> 00:13:24,990
+Audrow Nash: robot. So you need
+to know the accelerations to try
+
+258
+00:13:24,990 --> 00:13:28,740
+to we do what did you? And I
+suppose you decided not to use
+
+259
+00:13:28,740 --> 00:13:31,950
+like a barometer or something
+like that. Was it too noisy, or
+
+260
+00:13:31,950 --> 00:13:33,120
+I mean, not accurate enough.
+
+261
+00:13:34,170 --> 00:13:36,030
+Erik Schluntz: So we explored a
+bunch of different sensors,
+
+262
+00:13:36,030 --> 00:13:39,030
+including including barometers.
+One of the things that we found
+
+263
+00:13:39,030 --> 00:13:44,250
+there is that indoors, pressures
+terminal lot more by the H vac
+
+264
+00:13:44,250 --> 00:13:48,090
+system, oh, that's an actual
+altitude. So you can go on one
+
+265
+00:13:48,090 --> 00:13:50,400
+floor and the pressure can
+actually be lower, even though
+
+266
+00:13:50,400 --> 00:13:52,470
+it's higher, because the air
+conditioning settings are
+
+267
+00:13:52,470 --> 00:13:56,100
+different. So it wasn't a really
+good sensor for the Tirpitz.
+
+268
+00:13:56,130 --> 00:13:59,670
+Wild. where we are. Yeah, we did
+a lot of really interesting sort
+
+269
+00:13:59,670 --> 00:14:03,180
+of looking at different sensory
+modalities for this. Now the
+
+270
+00:14:03,180 --> 00:14:05,970
+accelerometer, you're absolutely
+right, we're double integrating
+
+271
+00:14:06,000 --> 00:14:10,230
+Yep, and double integrating is a
+scary thing. If you do it
+
+272
+00:14:10,230 --> 00:14:12,990
+forever, you're going to either
+end up going to the earth's core
+
+273
+00:14:12,990 --> 00:14:17,610
+or going to the moon. And so one
+of the things there is that we
+
+274
+00:14:17,610 --> 00:14:21,600
+can actually apply a lot of
+structure and constraints that
+
+275
+00:14:21,600 --> 00:14:25,890
+we know about how elevator
+systems work, in order to
+
+276
+00:14:25,980 --> 00:14:30,540
+basically constrain that and add
+a lot of these checks that keeps
+
+277
+00:14:30,540 --> 00:14:33,930
+the robot from going to the
+moon, or the floor. So an
+
+278
+00:14:33,930 --> 00:14:38,190
+interesting one there is that
+you know, that basically, floors
+
+279
+00:14:38,370 --> 00:14:42,240
+are basically integer divisions.
+So if you stop, and you're kind
+
+280
+00:14:42,240 --> 00:14:46,170
+of Oh, I think I'm at floor 1.1.
+You can actually snap that down.
+
+281
+00:14:46,260 --> 00:14:50,160
+Yeah, for what, an elevator
+never stops at sort of one and a
+
+282
+00:14:50,160 --> 00:14:52,650
+half floors. And similarly,
+
+283
+00:14:52,720 --> 00:14:53,560
+Audrow Nash: if it's working
+still
+
+284
+00:14:54,400 --> 00:14:57,400
+Erik Schluntz: exactly what's
+working. And similarly, there's
+
+285
+00:14:57,400 --> 00:14:59,980
+a lot of these other constraints
+that we found out well
+
+286
+00:15:00,010 --> 00:15:02,410
+researching and testing on
+elevator systems that they
+
+287
+00:15:02,410 --> 00:15:05,890
+follow very consistent
+acceleration profiles and speed
+
+288
+00:15:05,890 --> 00:15:09,910
+profiles. And we can use a lot
+of those things to basically add
+
+289
+00:15:09,910 --> 00:15:12,940
+these constraints. So it doesn't
+become an unbounded double
+
+290
+00:15:12,940 --> 00:15:16,960
+integration, it becomes sort of
+a much more constrained problem
+
+291
+00:15:16,960 --> 00:15:19,540
+that we're fitting to. Yeah. And
+we didn't tell what floor we're
+
+292
+00:15:19,540 --> 00:15:20,320
+on pretty accurate.
+
+293
+00:15:20,320 --> 00:15:22,630
+Audrow Nash: Gotcha. So you
+integrate your acceleration
+
+294
+00:15:22,690 --> 00:15:27,160
+results, and I guess, probably,
+so integrate, get velocity
+
+295
+00:15:27,160 --> 00:15:30,190
+integrate, again, get position.
+And then you look at the
+
+296
+00:15:30,220 --> 00:15:33,610
+position of the robot, how it's
+changed, because it's moving.
+
+297
+00:15:34,240 --> 00:15:38,110
+And then you get some sort of
+rough approximation of how much
+
+298
+00:15:38,110 --> 00:15:43,120
+you've moved. And then you use
+that. So it's like weighted
+
+299
+00:15:43,120 --> 00:15:45,910
+information. So you say, Oh,
+it's probably about this.
+
+300
+00:15:47,110 --> 00:15:49,870
+Erik Schluntz: Exactly. And we
+can use this extra information
+
+301
+00:15:49,870 --> 00:15:53,530
+of, you know, when we know that
+we've stopped, we can basically
+
+302
+00:15:53,560 --> 00:15:57,460
+clamp it to zero until we see
+more than a certain amount of
+
+303
+00:15:57,460 --> 00:16:00,040
+acceleration. Because we know
+that when the doors are open
+
+304
+00:16:00,040 --> 00:16:02,860
+when we stopped, you know, we
+might be reading a little bit of
+
+305
+00:16:02,860 --> 00:16:06,520
+acceleration, but we know that
+elevators don't actually jiggle
+
+306
+00:16:06,520 --> 00:16:09,580
+around. You know, if it's mostly
+stopped, it's a terrifying
+
+307
+00:16:09,580 --> 00:16:13,570
+elevator. Yes. it lessens the
+terrifying Okay, exactly. So
+
+308
+00:16:13,570 --> 00:16:16,810
+basically, we found a lot of
+these hidden constraints that
+
+309
+00:16:16,810 --> 00:16:19,840
+let us do this very accurately,
+and filter it no before.
+
+310
+00:16:19,930 --> 00:16:22,360
+Audrow Nash: Interesting. What
+if you have to go up 20 floors
+
+311
+00:16:22,420 --> 00:16:25,840
+or something like this? Like
+it's a skyscraper, say 50?
+
+312
+00:16:26,470 --> 00:16:26,950
+floors?
+
+313
+00:16:28,000 --> 00:16:29,860
+Erik Schluntz: There's, there's
+definitely a point at which
+
+314
+00:16:29,890 --> 00:16:32,620
+breaks down. I assume I'm
+actually not sure where that is.
+
+315
+00:16:32,620 --> 00:16:36,430
+But we have not yet hit a we've
+not yet hit a building where it
+
+316
+00:16:36,460 --> 00:16:40,240
+does not work. trouble. Yeah.
+It. We've been in some high
+
+317
+00:16:40,240 --> 00:16:42,310
+rises in the San Francisco area.
+
+318
+00:16:43,480 --> 00:16:45,670
+Audrow Nash: And it still works
+fine. That's awesome. Yeah. So
+
+319
+00:16:45,670 --> 00:16:48,130
+if you want to go around that,
+yeah. If you want to go to like
+
+320
+00:16:48,130 --> 00:16:51,640
+the 32nd floor, or what's the
+how large are these high rises?
+
+321
+00:16:52,210 --> 00:16:55,540
+Erik Schluntz: We've done jumps
+of 20 floors with good accuracy.
+
+322
+00:16:55,540 --> 00:16:56,770
+And I've never tested above
+
+323
+00:16:56,770 --> 00:16:58,930
+Audrow Nash: That's awesome,
+though. Hell yeah. I mean, I'm
+
+324
+00:16:58,930 --> 00:17:02,110
+impressed. It works to that
+level, which is awesome.
+
+325
+00:17:02,140 --> 00:17:04,330
+Erik Schluntz: Us as well, we
+were initially much more
+
+326
+00:17:04,330 --> 00:17:07,270
+optimistic about the barometer,
+than the accelerometer, and we
+
+327
+00:17:07,270 --> 00:17:10,900
+were actually very pleasantly
+surprised that it works out. And
+
+328
+00:17:10,900 --> 00:17:13,630
+again, you can do nice things
+like right before you get on the
+
+329
+00:17:13,870 --> 00:17:17,020
+accelerometer, right? Before you
+get on the elevator, you can
+
+330
+00:17:17,020 --> 00:17:20,710
+pause for five seconds and zero
+out your IMU calibration,
+
+331
+00:17:21,070 --> 00:17:23,950
+because you know, hey, I'm,
+unless there's an earthquake
+
+332
+00:17:23,950 --> 00:17:27,310
+going on right now. I know that
+I'm not accelerating. Let me
+
+333
+00:17:27,310 --> 00:17:31,930
+save that as gravity. And then,
+you know, for for a five minute
+
+334
+00:17:31,930 --> 00:17:35,710
+elevator trip. You know, that
+stays pretty good in that over
+
+335
+00:17:35,710 --> 00:17:36,760
+that short period of time.
+
+336
+00:17:36,840 --> 00:17:40,620
+Audrow Nash: And then how do
+you? How do you store your maps?
+
+337
+00:17:40,650 --> 00:17:45,210
+Is it like, so I'm wondering if
+it's a so say you have two
+
+338
+00:17:45,210 --> 00:17:49,080
+floors? Is it one map that
+includes both floors? Or is it
+
+339
+00:17:49,080 --> 00:17:54,570
+two separate maps? One for each
+floor? Or each each? Like? I
+
+340
+00:17:54,570 --> 00:17:58,650
+don't know, Consett? consecutive
+space are contiguous. I don't
+
+341
+00:17:58,650 --> 00:18:01,200
+know, continuous space
+contiguous space.
+
+342
+00:18:02,140 --> 00:18:04,030
+Erik Schluntz: So that's another
+really interesting question that
+
+343
+00:18:04,030 --> 00:18:07,480
+we had at the beginning while
+working on this. And it's also
+
+344
+00:18:07,510 --> 00:18:10,600
+an interesting question to ties
+into our hdri of how our
+
+345
+00:18:10,600 --> 00:18:14,740
+operators and how our customers
+interact with a robot. Because
+
+346
+00:18:14,770 --> 00:18:17,110
+this isn't just a robot
+operating in a vacuum. This is
+
+347
+00:18:17,620 --> 00:18:20,500
+the operators and customers want
+to see where it is on the map,
+
+348
+00:18:20,530 --> 00:18:23,890
+they want to see the alerts
+coming from the robot. And
+
+349
+00:18:23,890 --> 00:18:26,440
+actually, what we found what
+they liked, most was not needing
+
+350
+00:18:26,440 --> 00:18:29,140
+to switch between maps and only
+being able to see one floor at a
+
+351
+00:18:29,140 --> 00:18:32,500
+time. But seeing all their
+floors laid out side by side,
+
+352
+00:18:32,710 --> 00:18:36,280
+just like you would on a floor
+plan. And so actually, what we
+
+353
+00:18:36,280 --> 00:18:39,670
+do is we just have them on one
+giant map in different
+
+354
+00:18:39,670 --> 00:18:43,060
+locations. And so a robot
+switching floors is implemented
+
+355
+00:18:43,060 --> 00:18:47,080
+as just teleporting to kind of a
+new island in this map that work
+
+356
+00:18:47,080 --> 00:18:47,590
+and go between.
+
+357
+00:18:47,650 --> 00:18:50,830
+Audrow Nash: Interesting. And
+the elevator is like the portal
+
+358
+00:18:50,920 --> 00:18:55,720
+between all of these different
+floors. Exactly, yeah. Okay,
+
+359
+00:18:55,750 --> 00:19:00,610
+now. So getting into the robot a
+little bit more.
+
+360
+00:19:01,120 --> 00:19:01,390
+Erik Schluntz: Yeah.
+
+361
+00:19:01,390 --> 00:19:05,380
+Audrow Nash: So it has a bunch
+of sensors. Would you just talk
+
+362
+00:19:05,380 --> 00:19:06,970
+a bit more about the sensors
+that are on it?
+
+363
+00:19:07,860 --> 00:19:10,050
+Erik Schluntz: Yeah, absolutely.
+So there's, I'd say two
+
+364
+00:19:10,050 --> 00:19:13,290
+categories here. The bottom half
+of the robot is like an indoor
+
+365
+00:19:13,290 --> 00:19:17,700
+self driving car. And basically,
+its job is mobility and safety,
+
+366
+00:19:17,730 --> 00:19:23,520
+to bring the robot around
+through a customer space and get
+
+367
+00:19:23,520 --> 00:19:26,370
+the robot anywhere it needs to
+be. And the top half of the
+
+368
+00:19:26,370 --> 00:19:30,390
+robot is all about providing the
+security service that we provide
+
+369
+00:19:30,390 --> 00:19:33,510
+to our customers and providing
+that value. And basically, it's
+
+370
+00:19:33,510 --> 00:19:36,780
+a mobile sensor package that can
+be brought anywhere. And there's
+
+371
+00:19:36,780 --> 00:19:39,930
+a couple of high level goals
+there. The primary thing that we
+
+372
+00:19:39,930 --> 00:19:42,630
+do for our customers is
+detecting people. You know, if
+
+373
+00:19:42,630 --> 00:19:44,640
+we're trolling around the
+warehouse at three in the
+
+374
+00:19:44,640 --> 00:19:47,520
+morning, you want to know if
+there's a person, you know,
+
+375
+00:19:47,550 --> 00:19:50,310
+they're in the warehouse. Yeah.
+And a lot of times, you know,
+
+376
+00:19:50,310 --> 00:19:52,740
+they are supposed to be there,
+but we get an alert to our
+
+377
+00:19:52,740 --> 00:19:56,010
+operators, and they video call
+in and say, Hey, excuse me, can
+
+378
+00:19:56,010 --> 00:19:59,070
+I see your badge? Why are you
+here after hours, just like a
+
+379
+00:19:59,070 --> 00:20:01,290
+security guard on site. saying,
+you know that they can
+
+380
+00:20:01,290 --> 00:20:03,990
+authenticate that and make sure
+they're allowed to be there. The
+
+381
+00:20:03,990 --> 00:20:07,140
+other big category of things
+that we do is facilities
+
+382
+00:20:07,140 --> 00:20:10,020
+inspection, going and taking
+pictures of sensitive things,
+
+383
+00:20:10,440 --> 00:20:13,680
+whether that's an expensive
+piece of equipment, either using
+
+384
+00:20:13,680 --> 00:20:18,900
+our optical cameras or a thermal
+camera, or checking doors, sort
+
+385
+00:20:18,900 --> 00:20:22,890
+of sensitive things like that.
+And also environmental checks.
+
+386
+00:20:23,070 --> 00:20:27,510
+So we have temperature sensors,
+humidity sensors, carbon
+
+387
+00:20:27,510 --> 00:20:30,960
+dioxide, and carbon monoxide
+sensors in the robot. And what's
+
+388
+00:20:30,960 --> 00:20:35,520
+really great is being able to
+move these sensors, this sensor
+
+389
+00:20:35,520 --> 00:20:39,270
+package around at a tire
+building, and not just get sort
+
+390
+00:20:39,270 --> 00:20:42,030
+of a single point measurement
+like you would from an air
+
+391
+00:20:42,030 --> 00:20:45,060
+quality sensor. But being able
+to generate a map of air
+
+392
+00:20:45,060 --> 00:20:48,480
+quality, and being able to say,
+hey, not just what's the carbon
+
+393
+00:20:48,480 --> 00:20:51,570
+dioxide in my office, but get
+that map and say, Wow, the
+
+394
+00:20:51,570 --> 00:20:55,320
+carbon dioxide is all coming
+from this corner here, we must
+
+395
+00:20:55,320 --> 00:20:59,940
+have a broken bet. And be
+basically taking that promise of
+
+396
+00:20:59,940 --> 00:21:05,580
+what like IoT sensors trying to
+do, and bring in 1000 sensors
+
+397
+00:21:05,610 --> 00:21:09,180
+bring it everywhere, and to
+localize that data on a map. And
+
+398
+00:21:09,180 --> 00:21:12,210
+so we've helped customers catch
+really interesting things.
+
+399
+00:21:12,930 --> 00:21:15,660
+Whether that's broken h vac
+systems that could possibly pose
+
+400
+00:21:15,660 --> 00:21:20,040
+danger, we actually found h back
+issues where the with
+
+401
+00:21:20,040 --> 00:21:23,400
+temperature, where we show that
+one half of the building was
+
+402
+00:21:23,400 --> 00:21:27,240
+like five or 10 degrees colder
+than another. And they said, Oh,
+
+403
+00:21:27,240 --> 00:21:29,880
+man, we've had employees
+complaining about this. For
+
+404
+00:21:29,880 --> 00:21:32,490
+months, we didn't believe them.
+But now that we see the data
+
+405
+00:21:32,490 --> 00:21:36,840
+from the robot, and so really
+what the robot is, is, we want
+
+406
+00:21:36,840 --> 00:21:39,630
+to bring sort of superhuman
+sensing to what the guard could
+
+407
+00:21:39,630 --> 00:21:42,780
+do. And the things that a guard
+could notice, while looking
+
+408
+00:21:42,780 --> 00:21:45,030
+around and that that can be
+security or facilities.
+
+409
+00:21:46,140 --> 00:21:48,540
+Audrow Nash: Did you Do you guys
+ever so you have this arm now.
+
+410
+00:21:48,540 --> 00:21:51,180
+And I feel like that's a
+relatively new thing to push
+
+411
+00:21:51,180 --> 00:21:55,830
+elevator buttons. You ever, like
+try doors to see if it's a hinge
+
+412
+00:21:55,830 --> 00:21:59,340
+door to see if it's locked or
+interact in the environment,
+
+413
+00:21:59,640 --> 00:22:02,250
+interact with the environment in
+any way with it.
+
+414
+00:22:02,550 --> 00:22:04,890
+Erik Schluntz: So we have some
+interesting things coming out
+
+415
+00:22:04,890 --> 00:22:07,830
+for doors in the next year. I
+can't talk too much about Okay,
+
+416
+00:22:08,100 --> 00:22:09,000
+Audrow Nash: stay tuned, stay
+tuned.
+
+417
+00:22:10,560 --> 00:22:13,080
+Erik Schluntz: So, and I will
+say with this, we can press
+
+418
+00:22:13,080 --> 00:22:14,580
+handicap up and Stoker doors.
+
+419
+00:22:14,850 --> 00:22:19,860
+Audrow Nash: Ah, that's awesome.
+Let's see. So with these
+
+420
+00:22:19,860 --> 00:22:24,420
+sensors, now I noticed is with
+all the air quality ones, I
+
+421
+00:22:24,420 --> 00:22:27,450
+basically how did you select the
+air quality sensors? So you have
+
+422
+00:22:27,450 --> 00:22:32,880
+like carbon monoxide, carbon
+dioxide smoke? I don't know what
+
+423
+00:22:32,880 --> 00:22:36,480
+else? How did you select the
+sensor packages that you had
+
+424
+00:22:36,480 --> 00:22:40,740
+humidity and temperature? How
+did you select these ones? For
+
+425
+00:22:41,310 --> 00:22:42,660
+as opposed to anything else?
+
+426
+00:22:43,499 --> 00:22:46,199
+Erik Schluntz: Yep, exactly. So
+at the beginning, sort of when
+
+427
+00:22:46,199 --> 00:22:48,959
+we we did a lot of customer
+discovery asked our existing
+
+428
+00:22:48,959 --> 00:22:51,689
+customers, what are the kinds of
+things you're worried about in
+
+429
+00:22:51,689 --> 00:22:54,779
+your hair? What are the kinds of
+things you you want to know
+
+430
+00:22:54,779 --> 00:22:57,929
+about your space that you don't
+have right now, and sort of took
+
+431
+00:22:57,929 --> 00:23:00,779
+a lot of that input and then
+looked at what was feasible, we
+
+432
+00:23:00,779 --> 00:23:04,529
+actually have a radiation sensor
+on one of our robots from one of
+
+433
+00:23:04,529 --> 00:23:07,109
+our customers. So that's not a
+standard option. But you know,
+
+434
+00:23:07,109 --> 00:23:10,559
+we could add other sensors as
+needed for special cases.
+
+435
+00:23:11,490 --> 00:23:14,700
+Audrow Nash: Gotcha. I was gonna
+ask about customization next. So
+
+436
+00:23:14,700 --> 00:23:18,120
+you are customizing a little bit
+I imagine. So with the body of
+
+437
+00:23:18,120 --> 00:23:23,250
+the robot being kind of a big
+cylinder covered by fabric, it
+
+438
+00:23:23,250 --> 00:23:26,520
+seems like you can probably have
+pretty large sensor payloads,
+
+439
+00:23:26,520 --> 00:23:29,280
+and you can swap them out fairly
+easily. So you mentioned the
+
+440
+00:23:29,280 --> 00:23:33,690
+radiation. One, but do you do Is
+there a good amount of
+
+441
+00:23:33,690 --> 00:23:36,360
+customization that occurs or
+
+442
+00:23:37,710 --> 00:23:40,560
+Erik Schluntz: only for very
+large customer deals, we really
+
+443
+00:23:40,560 --> 00:23:43,590
+try to stay away from as much
+customization as possible, the
+
+444
+00:23:43,590 --> 00:23:46,050
+sensor package is one thing
+that's a little bit easier for
+
+445
+00:23:46,050 --> 00:23:49,860
+us to do. But it's sort of right
+now it's tied to sort of large
+
+446
+00:23:49,860 --> 00:23:52,680
+new deals that we do with
+customers, I would say that the
+
+447
+00:23:52,740 --> 00:23:55,710
+majority of what we do that's
+custom, I would consider more
+
+448
+00:23:55,710 --> 00:24:00,210
+configuration than
+customization. So we can
+
+449
+00:24:00,210 --> 00:24:02,640
+configure the robot with
+actually different color fabrics
+
+450
+00:24:02,940 --> 00:24:06,330
+to match the customers. And a
+lot of the robots of behaviors
+
+451
+00:24:06,330 --> 00:24:09,450
+actually are very different
+between customer sites. And one
+
+452
+00:24:09,450 --> 00:24:13,710
+of the ways we think about this
+is that security is basically a
+
+453
+00:24:13,710 --> 00:24:19,230
+big human configuration of if
+this than that, if you see a
+
+454
+00:24:19,230 --> 00:24:22,410
+person that doesn't have the
+badge, call this person, if you
+
+455
+00:24:22,410 --> 00:24:26,250
+see a door left open, do this.
+And it's these are sort of the
+
+456
+00:24:26,250 --> 00:24:29,700
+instructions that are given to
+human guards and sort of human
+
+457
+00:24:29,700 --> 00:24:31,950
+security teams, but how they
+should respond to all these
+
+458
+00:24:31,950 --> 00:24:35,310
+different situations. And so our
+robots are very highly
+
+459
+00:24:35,310 --> 00:24:39,270
+configurable for different
+customers. So for one customer,
+
+460
+00:24:39,480 --> 00:24:43,080
+you know, seeing a person might
+be just oh noted in the daily
+
+461
+00:24:43,080 --> 00:24:46,560
+security report. And for another
+customer it might be immediately
+
+462
+00:24:46,560 --> 00:24:49,830
+called the police. And so you
+know, there's these very, very
+
+463
+00:24:49,830 --> 00:24:54,330
+divergent actions based on what
+the robots attacks. Yeah. And we
+
+464
+00:24:54,360 --> 00:24:57,900
+build systems that let us very
+easily configure that, so that
+
+465
+00:24:57,900 --> 00:25:00,870
+the robot can be to basically do
+exactly What your guard was
+
+466
+00:25:00,870 --> 00:25:01,140
+doing?
+
+467
+00:25:01,200 --> 00:25:04,740
+Audrow Nash: Yeah? How so how
+does that work? So for you to
+
+468
+00:25:04,740 --> 00:25:10,710
+customize the robot's behavior?
+How, like, are you using our Do
+
+469
+00:25:10,710 --> 00:25:14,190
+you have users use like a block
+programming language? Or is it
+
+470
+00:25:14,190 --> 00:25:19,170
+just YouTube and a bunch of
+values? How does this work? Or
+
+471
+00:25:19,200 --> 00:25:22,170
+use maybe select from a drop
+down? If this occurs, then do
+
+472
+00:25:22,170 --> 00:25:25,230
+this? How do you set this up?
+Yeah.
+
+473
+00:25:25,620 --> 00:25:27,570
+Erik Schluntz: So we'd like to
+make things as easy as possible
+
+474
+00:25:27,570 --> 00:25:30,120
+for our customers and our
+customers. They just want
+
+475
+00:25:30,120 --> 00:25:32,310
+security that works in they
+don't want to think about the
+
+476
+00:25:32,310 --> 00:25:35,190
+robot or programming anything.
+Yeah, so typically, one of our
+
+477
+00:25:35,190 --> 00:25:38,940
+account managers who's an expert
+insecurity, and also now an
+
+478
+00:25:38,970 --> 00:25:42,600
+expert in our robot system, they
+will work with a customer and
+
+479
+00:25:42,600 --> 00:25:45,870
+look at their existing
+instructions for their guards,
+
+480
+00:25:45,990 --> 00:25:49,980
+and basically translate it into
+our configuration for the robot.
+
+481
+00:25:50,160 --> 00:25:52,650
+So the customer just has to give
+us their instructions as if
+
+482
+00:25:52,650 --> 00:25:55,350
+we're a security guard, which
+they love it. And then
+
+483
+00:25:55,350 --> 00:25:58,950
+basically, we turn it in, on our
+side, this configuration for
+
+484
+00:25:58,950 --> 00:25:59,640
+what the robot does.
+
+485
+00:25:59,670 --> 00:26:03,660
+Audrow Nash: So it's a fairly
+one off thing done by an expert,
+
+486
+00:26:04,320 --> 00:26:06,960
+is what I am hearing for this.
+And so
+
+487
+00:26:07,050 --> 00:26:09,810
+Erik Schluntz: Exactly, yeah.
+And this is sort of pretty
+
+488
+00:26:09,810 --> 00:26:13,170
+standard for how the security
+industry works, that every new
+
+489
+00:26:13,200 --> 00:26:17,340
+every sort of new building, or
+company, when they get security
+
+490
+00:26:17,340 --> 00:26:20,220
+guards, they have an account
+manager that basically helps set
+
+491
+00:26:20,340 --> 00:26:23,730
+what the what are the
+instructions? What should they
+
+492
+00:26:23,730 --> 00:26:24,600
+be doing on the site?
+
+493
+00:26:24,660 --> 00:26:26,880
+Audrow Nash: how detailed is it?
+Like, how many things to
+
+494
+00:26:26,880 --> 00:26:31,440
+configure? Is it? Is it like a
+huge list? Or is it a few?
+
+495
+00:26:31,650 --> 00:26:35,220
+Simple If This Then That
+statement? I guess it may vary?
+
+496
+00:26:35,250 --> 00:26:35,610
+Yeah,
+
+497
+00:26:36,330 --> 00:26:38,460
+Erik Schluntz: it varies, I'd
+say there's some customers that
+
+498
+00:26:39,000 --> 00:26:41,970
+sort of are very new, and, you
+know, young customers that are
+
+499
+00:26:41,970 --> 00:26:44,790
+expanding have their first few
+buildings. And we actually
+
+500
+00:26:44,790 --> 00:26:48,810
+usually help them define sort of
+what their procedure should be.
+
+501
+00:26:49,500 --> 00:26:52,830
+Because we've seen a lot of much
+more secure much more mature
+
+502
+00:26:52,830 --> 00:26:56,760
+security programs, and help them
+sort of know, hey, well, what
+
+503
+00:26:56,760 --> 00:27:00,240
+happens if this person doesn't
+answer the phone, like, you
+
+504
+00:27:00,240 --> 00:27:04,590
+know, you don't want you don't
+want something to just stop. And
+
+505
+00:27:04,590 --> 00:27:07,350
+so if it's a bigger company,
+we'll know, here's the whole
+
+506
+00:27:07,350 --> 00:27:10,800
+call tree of how you escalate
+things. If someone isn't
+
+507
+00:27:10,800 --> 00:27:13,740
+available, and for younger
+companies, sort of we help them
+
+508
+00:27:13,740 --> 00:27:16,590
+define a lot of that same
+security program with the same
+
+509
+00:27:16,590 --> 00:27:18,480
+rigor, so that we can help them
+get
+
+510
+00:27:18,930 --> 00:27:21,450
+Audrow Nash: to that level.
+Gotcha. That's cool. That's
+
+511
+00:27:21,450 --> 00:27:23,670
+interesting. You guys are
+becoming security experts
+
+512
+00:27:23,700 --> 00:27:24,630
+through this problem.
+
+513
+00:27:24,660 --> 00:27:27,570
+Erik Schluntz: Exactly. And sort
+of, for us, we have a big
+
+514
+00:27:27,570 --> 00:27:31,530
+robotics team. And we also have
+a security operations team. And
+
+515
+00:27:31,530 --> 00:27:33,690
+they're the people that are
+interacting with customers and
+
+516
+00:27:33,690 --> 00:27:37,740
+using the robots and using our
+control interfaces, to configure
+
+517
+00:27:37,740 --> 00:27:40,770
+them and to respond to alerts
+and help keep the customer safe.
+
+518
+00:27:40,800 --> 00:27:41,160
+Yeah.
+
+519
+00:27:41,000 --> 00:27:43,610
+Audrow Nash: So have you guys
+ever had kind of a silly
+
+520
+00:27:43,610 --> 00:27:49,880
+question? But have you ever had
+a like, where a security guard
+
+521
+00:27:49,880 --> 00:27:54,320
+would like, maybe try to
+physically stop? If physically
+
+522
+00:27:54,320 --> 00:27:57,320
+stop a person from doing
+something so you there's like a
+
+523
+00:27:57,320 --> 00:28:02,090
+thief or something? And they
+would like tase the person?
+
+524
+00:28:02,390 --> 00:28:06,560
+Like, is there any like, would
+you put a taser on the robot or
+
+525
+00:28:06,590 --> 00:28:08,390
+like on the little arm that
+comes up?
+
+526
+00:28:08,690 --> 00:28:10,760
+Erik Schluntz: So there's,
+there's no taser on the robot.
+
+527
+00:28:10,760 --> 00:28:14,060
+And I'm actually really happy.
+You asked that. One of the
+
+528
+00:28:14,060 --> 00:28:17,000
+little known facts in security
+is that a security guard will
+
+529
+00:28:17,000 --> 00:28:20,750
+never touch a person, it's a
+huge liability issue. All they
+
+530
+00:28:20,750 --> 00:28:23,540
+do is call the police, you'll
+actually see a lot of security
+
+531
+00:28:23,540 --> 00:28:26,720
+guards that either have fake
+guns or unloaded guns through
+
+532
+00:28:26,780 --> 00:28:29,360
+that it's entirely for
+deterrence. Whoa. Because
+
+533
+00:28:29,570 --> 00:28:32,660
+imagine sort of the the
+liability if a guard misjudges.
+
+534
+00:28:32,660 --> 00:28:36,260
+And a person was actually an
+employee, they thought they were
+
+535
+00:28:36,260 --> 00:28:39,260
+you know, up to no good and
+tackle someone that hurts them,
+
+536
+00:28:39,920 --> 00:28:43,880
+you know, be this huge liability
+issue. And so it's very funny
+
+537
+00:28:43,880 --> 00:28:46,130
+when we started off, this was
+one of our big assumptions as
+
+538
+00:28:46,130 --> 00:28:50,870
+well. And this actually kind of
+gets to how we started cobalt of
+
+539
+00:28:51,320 --> 00:28:55,340
+when me and my co founder,
+Travis style started cobalt, we
+
+540
+00:28:55,340 --> 00:28:58,190
+actually didn't know what we
+were going to work on. We had
+
+541
+00:28:58,190 --> 00:29:00,680
+both started companies in the
+past, we both been through Y
+
+542
+00:29:00,680 --> 00:29:04,160
+Combinator. And that's where we
+met each other. And we've seen a
+
+543
+00:29:04,160 --> 00:29:08,210
+lot of people come up with a
+startup idea, and then really
+
+544
+00:29:08,210 --> 00:29:12,290
+get overly attached to it,
+despite it not really being
+
+545
+00:29:12,290 --> 00:29:15,410
+needed by anyone. And so we
+decided that we were going to
+
+546
+00:29:15,410 --> 00:29:17,960
+take the opposite approach. We
+were going to find a real
+
+547
+00:29:17,960 --> 00:29:21,590
+customer and a real problem, and
+then work backwards to the idea.
+
+548
+00:29:22,280 --> 00:29:26,150
+And so you know, he quit Google,
+I turned down a return offer to
+
+549
+00:29:26,150 --> 00:29:29,120
+SpaceX with no idea what we were
+going to do. Both of our
+
+550
+00:29:29,120 --> 00:29:31,160
+families thought we were pretty
+crazy, but we're like, No, no,
+
+551
+00:29:31,160 --> 00:29:35,240
+no, no. startup idea is crazy.
+This is better. And so we spent
+
+552
+00:29:35,240 --> 00:29:37,970
+the first few months
+interviewing people from
+
+553
+00:29:37,970 --> 00:29:41,090
+different industries, anyone
+that we didn't really know what
+
+554
+00:29:41,090 --> 00:29:43,490
+their job actually entailed. We
+wanted to talk to them and just
+
+555
+00:29:43,490 --> 00:29:46,220
+asked, hey, what are your
+problems day to day like what
+
+556
+00:29:46,310 --> 00:29:49,310
+what would you pay money to
+solve? And luckily, one of these
+
+557
+00:29:49,310 --> 00:29:51,800
+people we talked to was a
+director of security and he
+
+558
+00:29:51,800 --> 00:29:55,370
+started complaining about his
+guards, sort of how unreliable
+
+559
+00:29:55,400 --> 00:29:59,750
+nightshift you know work can be
+why his cameras weren't enough.
+
+560
+00:30:00,830 --> 00:30:03,170
+Yeah, and we kind of the first
+thing we said is can we build
+
+561
+00:30:03,170 --> 00:30:05,870
+these smart security cameras.
+And he actually said, No, like,
+
+562
+00:30:05,870 --> 00:30:09,050
+I already have smart security
+cameras. But someone, someone
+
+563
+00:30:09,050 --> 00:30:12,170
+comes in wearing a hat, and you
+can't see the face. It doesn't
+
+564
+00:30:12,170 --> 00:30:15,020
+matter how smart the cameras,
+you either can do nothing, or
+
+565
+00:30:15,020 --> 00:30:17,690
+you can call the police. And
+that's why people still have
+
+566
+00:30:17,690 --> 00:30:22,760
+guards, they still have guards
+to, to follow up and investigate
+
+567
+00:30:22,910 --> 00:30:25,910
+as something's happening is
+happening, and understand to
+
+568
+00:30:25,910 --> 00:30:29,030
+collect more information. And
+that's when we realized, Hey,
+
+569
+00:30:29,060 --> 00:30:32,300
+this is the perfect job for a
+mobile robot. It's kind of that
+
+570
+00:30:32,300 --> 00:30:35,840
+blend between a guard and a
+smart camera where it's not just
+
+571
+00:30:35,840 --> 00:30:39,170
+about detecting a person, it's
+about once you detect them being
+
+572
+00:30:39,170 --> 00:30:42,890
+able to follow up and gather
+more information, go up to the
+
+573
+00:30:42,890 --> 00:30:46,730
+person and say, hey, how can I
+help you? And then you can make
+
+574
+00:30:46,730 --> 00:30:50,330
+the call of, you know, what do I
+need to ask? Or not? Exactly,
+
+575
+00:30:50,330 --> 00:30:53,660
+it's kind of like this, you need
+this third option of following
+
+576
+00:30:53,660 --> 00:30:56,390
+up and getting more information
+before making a final decision.
+
+577
+00:30:57,530 --> 00:31:00,320
+And so actually, now that's a
+big direction that our product
+
+578
+00:31:00,320 --> 00:31:04,190
+is going is that everyone now
+has tons of smart cameras and
+
+579
+00:31:04,190 --> 00:31:08,510
+smart sensors. And all of these
+smart devices, for enterprise
+
+580
+00:31:08,510 --> 00:31:12,380
+security, create work, they
+create alerts, they create
+
+581
+00:31:12,560 --> 00:31:16,760
+alarms. Yeah. And actually, a
+lot of our customers that we've
+
+582
+00:31:16,760 --> 00:31:19,850
+talked to have had to hire more
+security guards, because they
+
+583
+00:31:19,850 --> 00:31:21,830
+have all these things, that's
+fun as they need to go
+
+584
+00:31:21,860 --> 00:31:24,410
+investigate them, they need to
+go deal with false positives.
+
+585
+00:31:24,830 --> 00:31:28,490
+And our strategy is that all
+this other security
+
+586
+00:31:28,490 --> 00:31:32,030
+infrastructure is creating
+alarms. And our robots are
+
+587
+00:31:32,030 --> 00:31:35,330
+actually reducing work. Yeah.
+And the robot automatically gets
+
+588
+00:31:35,330 --> 00:31:38,510
+dispatched to go investigate
+these things, and say, Hey, this
+
+589
+00:31:38,510 --> 00:31:41,660
+door for this door force alarm
+was actually a false positive,
+
+590
+00:31:41,660 --> 00:31:44,270
+the door looks fine. And then it
+gets this batch to the next
+
+591
+00:31:44,270 --> 00:31:47,720
+alarm. And so basically, there's
+kind of these two sides of
+
+592
+00:31:47,720 --> 00:31:51,410
+security, there's the detection,
+and then there's the resolving.
+
+593
+00:31:51,770 --> 00:31:55,190
+And we actually want to be much
+more on the resolving side. So
+
+594
+00:31:55,190 --> 00:31:58,610
+the robot is not just a moving
+security camera. It's much more
+
+595
+00:31:58,610 --> 00:32:01,580
+than that. It's the ability to
+follow up and resolve things,
+
+596
+00:32:01,610 --> 00:32:03,620
+which is what a guard does, not
+what a camera does.
+
+597
+00:32:03,860 --> 00:32:07,310
+Audrow Nash: Interesting. I feel
+like you've said a lot of very
+
+598
+00:32:07,310 --> 00:32:08,540
+interesting things just now.
+
+599
+00:32:09,950 --> 00:32:12,140
+Erik Schluntz: No, thanks. Yeah,
+it's a, it's a really
+
+600
+00:32:12,140 --> 00:32:17,540
+fascinating space, I think it's
+very cool seeing how more people
+
+601
+00:32:17,540 --> 00:32:20,840
+and enterprise security are
+building sort of these, they're
+
+602
+00:32:20,840 --> 00:32:24,470
+trying to build these much more
+autonomous systems. And he's
+
+603
+00:32:24,470 --> 00:32:29,150
+much more sort of systems for
+handling physical security
+
+604
+00:32:29,150 --> 00:32:32,750
+without needing a lot of human
+input. But also, you know, one
+
+605
+00:32:32,750 --> 00:32:36,830
+of our customers quoted general
+patents us and said, fixed
+
+606
+00:32:36,830 --> 00:32:40,430
+infrastructure is a monument to
+man's stupidity. It's a quote
+
+607
+00:32:40,430 --> 00:32:42,680
+from World War Two. And this is
+sort of why no one builds
+
+608
+00:32:42,680 --> 00:32:45,950
+castles and fortresses anymore,
+is that anything for
+
+609
+00:32:45,950 --> 00:32:49,670
+infrastructure, you have
+anything that static, is at some
+
+610
+00:32:49,670 --> 00:32:52,910
+point, either going to be broken
+and not replaced, or someone's
+
+611
+00:32:52,910 --> 00:32:55,610
+going to find a way around it.
+And that's the difference
+
+612
+00:32:55,610 --> 00:32:59,120
+between cameras and sort of
+fixed sensors, and robots and
+
+613
+00:32:59,120 --> 00:33:02,840
+guards is that we're infinitely
+adaptable. A customer can call
+
+614
+00:33:02,840 --> 00:33:07,850
+one day and say, Hey, our left
+door alarm broke, can you change
+
+615
+00:33:07,850 --> 00:33:10,820
+the robots patrol to stay in
+that area? And we're like, yep,
+
+616
+00:33:10,850 --> 00:33:13,340
+we can do that. Just like a
+guard, you know, you can just
+
+617
+00:33:13,340 --> 00:33:16,970
+call us. And we'll immediately
+responds to whatever that is.
+
+618
+00:33:17,630 --> 00:33:20,120
+And that's why we don't want the
+customer to need to go through
+
+619
+00:33:20,120 --> 00:33:23,870
+some interface. We don't want
+us. We don't want cobalt to be a
+
+620
+00:33:23,870 --> 00:33:27,920
+static system. It was a flexible
+and responsive system. Yeah,
+
+621
+00:33:27,920 --> 00:33:28,580
+that's why they have
+
+622
+00:33:28,980 --> 00:33:31,650
+Audrow Nash: I'm saying, so the
+way that I'm thinking of cobalt
+
+623
+00:33:31,650 --> 00:33:35,430
+now, is you guys are almost
+like, but you guys are a
+
+624
+00:33:35,430 --> 00:33:39,630
+security company. And your
+personnel is your robots.
+
+625
+00:33:40,320 --> 00:33:42,600
+Exactly. Which is very
+interesting. It's an interesting
+
+626
+00:33:42,600 --> 00:33:49,530
+model. It's almost like I don't
+know you've you've taken all
+
+627
+00:33:51,450 --> 00:33:53,550
+it's just it's interesting,
+because you're not selling the
+
+628
+00:33:53,550 --> 00:33:56,640
+robot, which is what I first
+thought it was. You're selling
+
+629
+00:33:56,640 --> 00:33:58,680
+the service around the robot.
+
+630
+00:33:59,400 --> 00:34:03,480
+Erik Schluntz: Exactly. Yeah.
+And I think that's, you know, as
+
+631
+00:34:03,480 --> 00:34:06,600
+we scale, we're exploring, sort
+of splitting that off. So cobalt
+
+632
+00:34:06,600 --> 00:34:09,660
+can stay more of a technology
+company and work with guard
+
+633
+00:34:09,660 --> 00:34:12,300
+partners with the with the
+operators is
+
+634
+00:34:12,300 --> 00:34:14,550
+Audrow Nash: splitting exactly
+what off the
+
+635
+00:34:15,749 --> 00:34:18,029
+Erik Schluntz: work with an
+outside partner for sort of
+
+636
+00:34:18,029 --> 00:34:22,199
+those security to operators to
+be the security part, the cobalt
+
+637
+00:34:22,199 --> 00:34:24,719
+can stay more of a technology. I
+see. But I think in the
+
+638
+00:34:24,719 --> 00:34:28,169
+beginning, it's a really, really
+good strategy. Very, very,
+
+639
+00:34:29,700 --> 00:34:32,520
+Audrow Nash: I see seems to
+trigger Siri, when I say see
+
+640
+00:34:32,520 --> 00:34:34,680
+God's sorry, what did you say?
+
+641
+00:34:36,030 --> 00:34:39,210
+Erik Schluntz: That basically,
+you know, there's this balance
+
+642
+00:34:39,210 --> 00:34:42,510
+of us being a technology company
+and us being a security company.
+
+643
+00:34:42,810 --> 00:34:45,630
+And at the beginning, it's
+really powerful that we can be
+
+644
+00:34:45,630 --> 00:34:48,660
+both of those things. Yes, you
+can do that. So we get vertical,
+
+645
+00:34:49,050 --> 00:34:52,380
+we get vertical integration. And
+that means that you know, our
+
+646
+00:34:52,380 --> 00:34:55,890
+engineers are sitting alongside
+our security operators and
+
+647
+00:34:55,890 --> 00:34:58,230
+seeing what the deficiencies of
+the robot are and seeing what
+
+648
+00:34:58,230 --> 00:35:00,870
+the pain points are for the
+customers and They're talking to
+
+649
+00:35:00,870 --> 00:35:04,110
+security end users. And if we
+were just selling the robots,
+
+650
+00:35:04,290 --> 00:35:07,110
+and someone else was
+implementing security with them,
+
+651
+00:35:07,140 --> 00:35:10,080
+we wouldn't get any of those
+learnings. And so we want to be
+
+652
+00:35:10,080 --> 00:35:12,750
+a place where we are a
+technology company. But that's
+
+653
+00:35:12,750 --> 00:35:15,690
+very, very integrated with the
+security and very product
+
+654
+00:35:15,690 --> 00:35:18,540
+focused, and really sort of end
+user focused
+
+655
+00:35:18,570 --> 00:35:21,660
+Audrow Nash: gadget that is very
+interesting. Yeah, initially,
+
+656
+00:35:21,720 --> 00:35:24,240
+all the questions about
+configuration and things, I was
+
+657
+00:35:24,240 --> 00:35:27,750
+assuming that you just sell your
+robot, they buy it, the customer
+
+658
+00:35:27,750 --> 00:35:30,450
+buys it, and then they figure
+out how to use it in their
+
+659
+00:35:30,450 --> 00:35:33,870
+space. When really you're
+saying, okay, our robot is going
+
+660
+00:35:33,870 --> 00:35:37,140
+to be like an employee. And
+every time you want to update
+
+661
+00:35:37,140 --> 00:35:41,970
+it, you call us we make the
+changes. And then you present
+
+662
+00:35:41,970 --> 00:35:45,660
+them do so you present their
+security manager or something
+
+663
+00:35:45,660 --> 00:35:48,930
+like this with the data, or
+whoever's relevant with the data
+
+664
+00:35:48,930 --> 00:35:52,200
+that the robot captures this
+kind of thing. Yeah,
+
+665
+00:35:52,230 --> 00:35:54,870
+Erik Schluntz: exactly. And
+that's sort of the way that we
+
+666
+00:35:54,870 --> 00:35:57,060
+provide the end service, you
+know, the service isn't the
+
+667
+00:35:57,060 --> 00:36:00,270
+robot, it's the data that we
+collect and provide to them. And
+
+668
+00:36:00,270 --> 00:36:03,780
+there's a couple things a couple
+of ways we do that. One is, you
+
+669
+00:36:03,780 --> 00:36:07,200
+know, if there's ever any urgent
+incident, we just call them Yep.
+
+670
+00:36:07,260 --> 00:36:11,520
+And then the customers have a
+interface on a web dashboard, or
+
+671
+00:36:11,520 --> 00:36:14,850
+they can live see what the robot
+is saying. And they can dispatch
+
+672
+00:36:14,850 --> 00:36:16,860
+the robot to go see something.
+So we might call them and say,
+
+673
+00:36:16,860 --> 00:36:20,640
+hey, there's a break in, in
+progress at this office, you
+
+674
+00:36:20,640 --> 00:36:23,310
+know, pull up the dashboard, and
+you can watch while we resolve
+
+675
+00:36:23,310 --> 00:36:26,310
+it. And we've actually, we've
+stopped a few break ins, oh,
+
+676
+00:36:26,580 --> 00:36:29,850
+congratulations. Thank you,
+it's, it's actually much more
+
+677
+00:36:29,850 --> 00:36:33,510
+boring than you would think, you
+know, modern Moto, you're just
+
+678
+00:36:33,510 --> 00:36:33,780
+going
+
+679
+00:36:33,990 --> 00:36:36,030
+Audrow Nash: up to them. And
+you're like, stop, and they're
+
+680
+00:36:36,030 --> 00:36:37,710
+like, Oh, no, and then they run
+out.
+
+681
+00:36:37,950 --> 00:36:41,190
+Erik Schluntz: Modern criminals
+are not in ski masks, you know,
+
+682
+00:36:41,400 --> 00:36:44,910
+breaking into Windows, they are
+social engineering delays, and
+
+683
+00:36:44,910 --> 00:36:45,990
+office buildings. And so
+
+684
+00:36:46,020 --> 00:36:48,720
+Audrow Nash: what do you mean
+social engineering there? What
+
+685
+00:36:48,720 --> 00:36:48,990
+is that
+
+686
+00:36:48,990 --> 00:36:52,140
+Erik Schluntz: they're there
+pretending to be an employee
+
+687
+00:36:52,140 --> 00:36:54,360
+that forgot their badge, but
+they're actually not, they're
+
+688
+00:36:54,360 --> 00:36:58,020
+well dressed. They're, they're
+trying to blend in, they're
+
+689
+00:36:58,020 --> 00:37:03,630
+trying to blend in, around other
+people, and sort of. So we had a
+
+690
+00:37:03,630 --> 00:37:08,280
+customer where one of their door
+locks, stopped working at a door
+
+691
+00:37:08,280 --> 00:37:13,500
+swung open to the streets of San
+Francisco. And fairly soon after
+
+692
+00:37:13,500 --> 00:37:18,330
+that, our robot detected a
+person in the site. We
+
+693
+00:37:18,360 --> 00:37:21,840
+approached them because our
+operators didn't recognize the
+
+694
+00:37:21,840 --> 00:37:25,410
+person. And we video chat and
+said, Hey, excuse me, can I see
+
+695
+00:37:25,410 --> 00:37:29,490
+your badge? And the person was
+the video like, Oh, I'm lost?
+
+696
+00:37:29,520 --> 00:37:32,310
+Like, I didn't know I wasn't
+supposed to be here. It's funny.
+
+697
+00:37:32,340 --> 00:37:36,720
+I was like, I have to in the
+office building? Sure, yeah,
+
+698
+00:37:36,750 --> 00:37:40,500
+you're just so you know, here.
+You know, we call it the
+
+699
+00:37:40,500 --> 00:37:44,640
+customer and call the police,
+and then escorted the person out
+
+700
+00:37:44,640 --> 00:37:48,030
+the door. And then the robot was
+able to stay century at that
+
+701
+00:37:48,030 --> 00:37:51,600
+door that was open for the rest
+of the night. And so that's the
+
+702
+00:37:51,600 --> 00:37:54,120
+kind of flexibility and
+responsiveness that we want is
+
+703
+00:37:54,120 --> 00:37:58,290
+that as an emergency happens, we
+don't want to just be on a fixed
+
+704
+00:37:58,290 --> 00:38:01,440
+rail, like a camera, yeah, we're
+going to be doing what a garden
+
+705
+00:38:01,440 --> 00:38:04,890
+would be doing. And that's, you
+know, making value calls as we
+
+706
+00:38:04,890 --> 00:38:08,370
+go and deciding what is the best
+way we can provide value to this
+
+707
+00:38:08,370 --> 00:38:08,670
+customer?
+
+708
+00:38:08,670 --> 00:38:11,490
+Audrow Nash: So how do you code
+in all that behavior and the
+
+709
+00:38:11,490 --> 00:38:15,420
+flexibility I'm imagining like,
+something like behavior, trees,
+
+710
+00:38:15,540 --> 00:38:19,770
+or whatever they do in video
+games, where it's like, you can
+
+711
+00:38:19,770 --> 00:38:22,950
+have fairly complex layered
+behavior where I go, I try this,
+
+712
+00:38:22,950 --> 00:38:24,870
+and that doesn't work. So I'm
+going to try this other thing.
+
+713
+00:38:24,870 --> 00:38:29,280
+And you can keep moving from
+limb to limb of the tree. Is
+
+714
+00:38:29,280 --> 00:38:31,500
+that how do you encode your
+behavior? Basically?
+
+715
+00:38:31,620 --> 00:38:34,620
+Erik Schluntz: Yeah, so that's a
+really good question. We use a
+
+716
+00:38:34,620 --> 00:38:37,950
+hierarchical state machines for
+most of our behaviors. But
+
+717
+00:38:37,950 --> 00:38:41,190
+actually, I'd say a layer above
+that. And I think that it would
+
+718
+00:38:41,190 --> 00:38:44,250
+be misleading to say that our
+state machines resolve that
+
+719
+00:38:44,250 --> 00:38:48,450
+case, we keep our high level
+decision making done by our
+
+720
+00:38:48,450 --> 00:38:52,410
+human operators. And so they are
+able to on the fly, say, Hey,
+
+721
+00:38:52,620 --> 00:38:56,910
+don't patrol tonight, stay
+century here. And basically
+
+722
+00:38:56,910 --> 00:39:00,540
+giving them thinking that for
+operators, it's more like them
+
+723
+00:39:00,540 --> 00:39:05,160
+playing Starcraft, they can tell
+the robot what to do. And we
+
+724
+00:39:05,160 --> 00:39:08,250
+provide a really good interface
+for them to be able to tell the
+
+725
+00:39:08,250 --> 00:39:11,940
+robot to do different things.
+And that might be go patrol this
+
+726
+00:39:11,940 --> 00:39:15,780
+floor that might be stay here
+that might be go recharge, okay,
+
+727
+00:39:15,810 --> 00:39:18,240
+and that high level decision
+making, we will have to be made
+
+728
+00:39:18,240 --> 00:39:21,390
+by our human operators who are
+very highly trained, and know
+
+729
+00:39:21,390 --> 00:39:25,050
+our customers. And then our
+state machines that we build are
+
+730
+00:39:25,050 --> 00:39:28,770
+basically these primitives for
+the robot to be able to do these
+
+731
+00:39:28,770 --> 00:39:33,270
+block size to actions. But it's
+the human that's deciding sort
+
+732
+00:39:33,270 --> 00:39:34,320
+of which of these should be
+done.
+
+733
+00:39:34,830 --> 00:39:38,400
+Audrow Nash: Interesting. So the
+human at a very high level, it's
+
+734
+00:39:38,400 --> 00:39:41,370
+almost like picking the mode of
+whatever the robot will do. You
+
+735
+00:39:41,370 --> 00:39:44,850
+do. It's like a delegation
+effectively, exactly. And then
+
+736
+00:39:44,850 --> 00:39:48,840
+the robot will go and it will
+execute this fairly. This this
+
+737
+00:39:48,840 --> 00:39:51,510
+decided behavior and you have
+all those primitives, those
+
+738
+00:39:51,510 --> 00:39:55,830
+smaller action, control loop
+things go around this desk, go
+
+739
+00:39:55,830 --> 00:39:58,470
+look in that unexplored
+territory. These kinds of
+
+740
+00:39:58,470 --> 00:40:00,600
+things. Yeah, Yeah,
+
+741
+00:40:01,920 --> 00:40:03,780
+Erik Schluntz: yeah. And so we
+want to build the system that I
+
+742
+00:40:03,780 --> 00:40:06,870
+think it's, it's, we really
+consider our system. It's the
+
+743
+00:40:06,870 --> 00:40:10,110
+combination of human and the
+robot human operators. Yeah. And
+
+744
+00:40:10,110 --> 00:40:15,300
+that's really it's those put
+together that allow us, allow us
+
+745
+00:40:15,300 --> 00:40:18,120
+to provide a great service for
+our customers, I think, you
+
+746
+00:40:18,120 --> 00:40:20,520
+know, we've seen self driving
+cars being worked on for 10
+
+747
+00:40:20,520 --> 00:40:23,460
+years now. And they're just
+barely starting to actually
+
+748
+00:40:23,460 --> 00:40:27,270
+give, you know, get out into the
+market, and give taxi rides to
+
+749
+00:40:27,270 --> 00:40:30,810
+people. And for us, what really
+attracted me and my co founder
+
+750
+00:40:30,810 --> 00:40:34,020
+to this idea was that we could
+use this combination of humans
+
+751
+00:40:34,020 --> 00:40:37,170
+and robots to immediately get
+into the market and start
+
+752
+00:40:37,170 --> 00:40:40,770
+providing value, like right
+away. Yeah, right away, even
+
+753
+00:40:40,770 --> 00:40:43,350
+though pieces of the robotic
+technology weren't there yet.
+
+754
+00:40:43,650 --> 00:40:46,830
+And now, as all this technology
+gets better, what it does is it
+
+755
+00:40:46,830 --> 00:40:50,400
+increases our ratio of how many
+robots each one of our operators
+
+756
+00:40:50,400 --> 00:40:50,910
+can manage.
+
+757
+00:40:50,910 --> 00:40:54,120
+Audrow Nash: Gotcha. So tell me
+a bit more about the human in
+
+758
+00:40:54,120 --> 00:40:57,660
+the loop kind of thing. So how
+does that work? They're on a
+
+759
+00:40:58,080 --> 00:41:01,260
+computer somewhere logged into
+some web application that you
+
+760
+00:41:01,260 --> 00:41:01,680
+have,
+
+761
+00:41:01,950 --> 00:41:05,700
+Erik Schluntz: like, how does it
+work? Yeah, great question. So
+
+762
+00:41:05,940 --> 00:41:09,750
+we have a lot of operators, and
+they work from our offices or
+
+763
+00:41:09,750 --> 00:41:13,890
+satellite offices. And they have
+a sort of this big three
+
+764
+00:41:13,890 --> 00:41:17,760
+monitors set up. Each of them
+for AI, basically, they can zoom
+
+765
+00:41:17,760 --> 00:41:21,480
+in to one robot, and they have a
+fleet management view, and they
+
+766
+00:41:21,480 --> 00:41:25,140
+have sort of a communications
+view. And so they are
+
+767
+00:41:25,170 --> 00:41:27,870
+Audrow Nash: management, a
+little bit slower for that. So
+
+768
+00:41:27,870 --> 00:41:30,900
+fleet management, if they're
+using many robots in the same
+
+769
+00:41:30,900 --> 00:41:32,130
+environment, or
+
+770
+00:41:32,370 --> 00:41:34,290
+Erik Schluntz: Exactly, so
+they're looking at sort of the
+
+771
+00:41:34,290 --> 00:41:36,990
+health of all of their robot,
+okay, sort of how we have it
+
+772
+00:41:36,990 --> 00:41:40,410
+work is there's, you know, five
+to 10 of them on shift at a
+
+773
+00:41:40,410 --> 00:41:44,250
+time. And they split up the
+fleet of robots of who's
+
+774
+00:41:44,250 --> 00:41:47,730
+responsible for which robots,
+you know, plus some overlap. And
+
+775
+00:41:47,730 --> 00:41:52,380
+so dynamic changes. And they're
+saying, Hey, I'm watching my
+
+776
+00:41:52,380 --> 00:41:55,800
+robots, and the robots are
+telling them, Hey, I think I saw
+
+777
+00:41:55,800 --> 00:42:00,210
+something or Hey, I need help, I
+got stuck. And they are zooming
+
+778
+00:42:00,210 --> 00:42:03,960
+into these robots kind of one at
+a time, as events are popping up
+
+779
+00:42:03,960 --> 00:42:08,340
+that they need to go resolve. So
+then they switch to that robot
+
+780
+00:42:08,340 --> 00:42:11,640
+specific view and can go take
+action, whether that's video
+
+781
+00:42:11,640 --> 00:42:15,990
+chatting with a person to, you
+know, talk to them, or ask, ask
+
+782
+00:42:15,990 --> 00:42:20,070
+to see their security badge. Or
+maybe it's changing a patrol
+
+783
+00:42:20,070 --> 00:42:24,000
+route to go around, you know, a
+new obstacle or something that's
+
+784
+00:42:24,000 --> 00:42:27,570
+causing issues for the robot.
+And then if anything is needed,
+
+785
+00:42:27,660 --> 00:42:30,600
+they can go communicate with the
+customer, they can escalate
+
+786
+00:42:30,630 --> 00:42:33,660
+something to the robot sees into
+the customers dashboard, so that
+
+787
+00:42:33,660 --> 00:42:33,930
+they can
+
+788
+00:42:33,929 --> 00:42:37,919
+Audrow Nash: see Ah, so they
+have, they have their setup
+
+789
+00:42:37,919 --> 00:42:42,719
+where they see many robots, they
+have a view into one robot, and
+
+790
+00:42:42,719 --> 00:42:47,009
+then maybe they have a good way
+of accessing commands or
+
+791
+00:42:47,009 --> 00:42:51,359
+something with it for escalating
+the situation. Is this one robot
+
+792
+00:42:51,359 --> 00:42:55,349
+specific, I guess? Or is it? I
+guess you don't have multiple
+
+793
+00:42:55,349 --> 00:42:58,019
+robots coordinating? Or maybe
+you do? I don't know.
+
+794
+00:42:58,950 --> 00:43:01,200
+Erik Schluntz: Yeah, so for most
+of our customer sites, there's
+
+795
+00:43:01,230 --> 00:43:06,060
+one or just a few robots. But
+individual customers have many
+
+796
+00:43:06,060 --> 00:43:08,850
+robots across their different
+buildings. And that's one of the
+
+797
+00:43:08,850 --> 00:43:11,910
+other things we really see is
+that a customer that has this
+
+798
+00:43:11,910 --> 00:43:14,880
+one place really likes to expand
+to all of their different
+
+799
+00:43:14,880 --> 00:43:17,460
+offices and satellite offices.
+Yeah. So that they can get this
+
+800
+00:43:17,460 --> 00:43:21,360
+consistent data and reporting
+evenly across sort of their
+
+801
+00:43:21,390 --> 00:43:26,430
+their whole site, or their whole
+collection of sites. And so they
+
+802
+00:43:26,460 --> 00:43:29,310
+you know, there might be a call
+tree that applies for these 10
+
+803
+00:43:29,310 --> 00:43:30,960
+robots that are all from the
+same customer.
+
+804
+00:43:32,369 --> 00:43:36,119
+Audrow Nash: Gotcha.
+Interesting. Okay. Yeah. Yeah.
+
+805
+00:43:36,209 --> 00:43:39,539
+And then so when the robot is
+stuck, or anything they the
+
+806
+00:43:39,539 --> 00:43:42,569
+person takes over gives them
+high level guidance, do you have
+
+807
+00:43:42,569 --> 00:43:45,839
+to do anything where the person
+will do? So you mentioned, like,
+
+808
+00:43:45,839 --> 00:43:49,649
+pick another route? Or something
+like this? They won't do like
+
+809
+00:43:49,679 --> 00:43:53,309
+map editing, or something? Like,
+will they correct any sensor
+
+810
+00:43:53,309 --> 00:43:56,549
+errors, or say, This region is
+actually a spot you shouldn't
+
+811
+00:43:56,549 --> 00:43:57,059
+go?
+
+812
+00:43:57,929 --> 00:44:00,209
+Erik Schluntz: They have some
+annotations that they can add
+
+813
+00:44:00,209 --> 00:44:03,029
+like that on the fly. But if
+there's anything bigger, like
+
+814
+00:44:03,029 --> 00:44:05,759
+if, if they come in one night,
+and realize that the customer
+
+815
+00:44:05,759 --> 00:44:08,999
+has totally rearranged the
+furniture, you know, they'll
+
+816
+00:44:08,999 --> 00:44:12,659
+basically they can create a
+ticket for us to go with remap.
+
+817
+00:44:13,709 --> 00:44:16,169
+And we can do all that remotely.
+And it's kind of like the next
+
+818
+00:44:16,169 --> 00:44:18,869
+day, you know, we would go look
+in and see what,
+
+819
+00:44:19,440 --> 00:44:21,630
+Audrow Nash: so you're working
+with an existing map, it makes
+
+820
+00:44:21,630 --> 00:44:24,120
+sense for this kind of thing. So
+you can localize
+
+821
+00:44:24,149 --> 00:44:26,099
+Erik Schluntz: and that's
+exactly and that's something
+
+822
+00:44:26,099 --> 00:44:29,339
+where when we first go to a new
+customer, that sales engineer
+
+823
+00:44:29,339 --> 00:44:32,639
+goes on site for a day with the
+robot shows that the building
+
+824
+00:44:32,669 --> 00:44:36,389
+shows that the elevators shows
+that any sort of you know, doors
+
+825
+00:44:36,389 --> 00:44:40,259
+are handicap delicate, it needs
+to know about and then we have
+
+826
+00:44:40,259 --> 00:44:43,139
+that map that we can navigate
+against, is it some and we're
+
+827
+00:44:43,139 --> 00:44:47,609
+using, you know, right now some
+pretty we're using Ross and
+
+828
+00:44:47,609 --> 00:44:50,939
+we're using, you know, a heavily
+modified version of move base,
+
+829
+00:44:51,239 --> 00:44:56,399
+and then a half stack NaCl. So a
+lot of that kind of standard
+
+830
+00:44:56,519 --> 00:44:59,249
+standard, but improved. Ross
+systems. Yep.
+
+831
+00:44:59,250 --> 00:45:01,230
+Audrow Nash: So you forked
+specific things, and I've
+
+832
+00:45:01,230 --> 00:45:05,370
+improved them internally.
+Exactly. Which, which Ross are
+
+833
+00:45:05,370 --> 00:45:07,920
+using are using Ross one are
+using Ross two.
+
+834
+00:45:08,790 --> 00:45:11,670
+Erik Schluntz: Yeah, so we're
+using Ross one. We haven't yet
+
+835
+00:45:11,670 --> 00:45:15,540
+seen a lot of other people
+switch to Ross two for, you
+
+836
+00:45:15,540 --> 00:45:19,650
+know, live deploy the customer
+sites, applications yet we're
+
+837
+00:45:19,650 --> 00:45:22,170
+seeing a lot of interesting
+traction there and sort of new
+
+838
+00:45:22,170 --> 00:45:26,610
+things getting started with Ross
+two, but we haven't yet seen all
+
+839
+00:45:27,210 --> 00:45:30,210
+the level of limit that we'd
+like to see before switching
+
+840
+00:45:30,210 --> 00:45:30,810
+would make a move.
+
+841
+00:45:30,900 --> 00:45:36,270
+Audrow Nash: Gotcha. How? How
+has it been working with Ross
+
+842
+00:45:36,300 --> 00:45:40,200
+stack for you? Like, what are
+your? I don't know, just how,
+
+843
+00:45:40,230 --> 00:45:41,610
+what are your impressions of
+yeltsin?
+
+844
+00:45:42,240 --> 00:45:45,660
+Erik Schluntz: Yeah, I mean, I I
+really like Ross, I think the
+
+845
+00:45:45,720 --> 00:45:48,810
+just the general messaging
+architecture is a really, really
+
+846
+00:45:48,810 --> 00:45:52,050
+good way to design systems that
+it sort of forces that
+
+847
+00:45:52,050 --> 00:45:55,200
+microservices architecture, in
+the robot, and really good
+
+848
+00:45:55,200 --> 00:45:57,810
+separation of concerns,
+definitely, to be able to work
+
+849
+00:45:57,810 --> 00:46:00,990
+on a lot of different pieces,
+and just know what the
+
+850
+00:46:00,990 --> 00:46:05,490
+interfaces are. So I really love
+Ross conceptually, there's, you
+
+851
+00:46:05,490 --> 00:46:07,950
+know, a couple downsides. And
+there's a couple of rough edges,
+
+852
+00:46:07,950 --> 00:46:12,270
+especially of Ross pi, the
+Python implementation, but you
+
+853
+00:46:12,270 --> 00:46:14,490
+know, the things that we work
+around, and I think, I mean,
+
+854
+00:46:14,490 --> 00:46:17,070
+what I love most is just the
+community and the ecosystem that
+
+855
+00:46:17,430 --> 00:46:20,490
+any sensor we find, it's like,
+oh, there's a Ross node already
+
+856
+00:46:20,490 --> 00:46:23,040
+made for it. Like, we can just,
+you know, install it, and we're
+
+857
+00:46:23,040 --> 00:46:26,100
+ready to go. And, you know, I
+really love that. And, you know,
+
+858
+00:46:26,100 --> 00:46:29,370
+I want to find more things in
+the future where cobalt can
+
+859
+00:46:29,370 --> 00:46:31,680
+contribute back into open
+source. And I think that's
+
+860
+00:46:31,680 --> 00:46:34,440
+something that I want to do as
+we get more libraries and things
+
+861
+00:46:34,440 --> 00:46:37,320
+built that might be a little
+more general, outside of just
+
+862
+00:46:37,320 --> 00:46:37,470
+us,
+
+863
+00:46:37,470 --> 00:46:42,450
+Audrow Nash: because so for the,
+like your fork of NAB two, or
+
+864
+00:46:42,690 --> 00:46:45,960
+any of these other raw libraries
+that are built on top of Ross,
+
+865
+00:46:47,040 --> 00:46:50,310
+what was the decision? Are they
+public? Or what was the decision
+
+866
+00:46:50,310 --> 00:46:53,820
+to fork for this kind of thing?
+Yeah, they're not public
+
+867
+00:46:53,819 --> 00:46:55,319
+Erik Schluntz: yet. But it's
+something we've thought about.
+
+868
+00:46:55,889 --> 00:46:59,519
+One of the, I'd say two of the
+major areas there that we've
+
+869
+00:47:00,329 --> 00:47:03,569
+that we've added is one kind of
+just overhauling a lot of the
+
+870
+00:47:04,319 --> 00:47:07,229
+innards of move base to make
+things more reliable.
+
+871
+00:47:07,680 --> 00:47:09,030
+Audrow Nash: Base very well.
+
+872
+00:47:10,080 --> 00:47:13,050
+Erik Schluntz: Yeah, yeah. So
+move base is one of the big
+
+873
+00:47:13,050 --> 00:47:17,700
+packages in the bra snap stack
+that's responsible for getting a
+
+874
+00:47:17,700 --> 00:47:20,640
+robot from point A to point B.
+And it's kind of the the nice
+
+875
+00:47:20,640 --> 00:47:24,660
+high level interface, where you
+can say, hey, send a nav goal
+
+876
+00:47:24,660 --> 00:47:29,520
+here. And move base is a open
+source Ross package that
+
+877
+00:47:29,520 --> 00:47:32,070
+implements how to do that
+gotcha, you give it some
+
+878
+00:47:32,070 --> 00:47:35,340
+configurations about where to
+find your map, where to find
+
+879
+00:47:35,610 --> 00:47:40,470
+your cost map and sensors, to
+not hit obstacles, and how to
+
+880
+00:47:40,470 --> 00:47:43,350
+talk to your motors, and then it
+can go. So that's kind of the
+
+881
+00:47:43,350 --> 00:47:45,960
+starting point of what we've,
+you know what we've very heavily
+
+882
+00:47:45,990 --> 00:47:49,770
+modified. One of the interesting
+things that we've had to change
+
+883
+00:47:49,770 --> 00:47:53,160
+it actually, is the ability to
+send intermediate goals.
+
+884
+00:47:53,879 --> 00:47:57,269
+Audrow Nash: So we as opposed to
+just the actions, abstraction,
+
+885
+00:47:57,269 --> 00:47:58,079
+as opposed
+
+886
+00:47:58,079 --> 00:48:01,079
+Erik Schluntz: to just work, we
+send an action that has two
+
+887
+00:48:01,079 --> 00:48:07,139
+goals, sort of the final goal,
+and I think, a waypoint along
+
+888
+00:48:07,679 --> 00:48:10,409
+and it will actually start
+moving towards the waypoint,
+
+889
+00:48:10,439 --> 00:48:12,299
+even if we can't reach the final
+goal.
+
+890
+00:48:12,630 --> 00:48:15,930
+Audrow Nash: Now is that the why
+is that better than just sending
+
+891
+00:48:15,930 --> 00:48:21,210
+to actions, so an action just to
+be give some background for
+
+892
+00:48:21,210 --> 00:48:24,840
+those who are not familiar. So
+you send something, it's a high
+
+893
+00:48:24,840 --> 00:48:28,080
+level thing that you'd like the
+robot to do. And then it will
+
+894
+00:48:28,080 --> 00:48:31,800
+send feedback throughout the
+time that it's completing it,
+
+895
+00:48:32,610 --> 00:48:35,400
+which you can do something with,
+you could say, I'll cancel
+
+896
+00:48:35,400 --> 00:48:41,340
+nevermind, or just monitor it in
+some way. But why? So why is the
+
+897
+00:48:41,610 --> 00:48:45,960
+two actions within one action?
+Why is that different than just
+
+898
+00:48:45,960 --> 00:48:48,990
+sending one action, and then
+another action, I guess it takes
+
+899
+00:48:48,990 --> 00:48:49,860
+both into account.
+
+900
+00:48:50,909 --> 00:48:53,519
+Erik Schluntz: It's lower
+latency, and what we care about
+
+901
+00:48:53,519 --> 00:48:55,919
+here, and the motivation for
+this was actually getting into
+
+902
+00:48:55,919 --> 00:48:59,369
+elevators quickly. A lot of
+times, when you press the button
+
+903
+00:48:59,429 --> 00:49:03,839
+at the outset of elevators, you
+have three seconds until the
+
+904
+00:49:03,839 --> 00:49:07,619
+door starts closing. And if it's
+across the elevator lobby, we
+
+905
+00:49:07,619 --> 00:49:11,219
+actually have to move pretty
+fast to get in there. And one of
+
+906
+00:49:11,219 --> 00:49:15,569
+the things that we've seen is
+that if you send just one Ross
+
+907
+00:49:15,569 --> 00:49:20,399
+action of go, Oh, so basically,
+the one of the things here is
+
+908
+00:49:20,399 --> 00:49:25,079
+that if the elevator door has
+not yet opened, if you send a
+
+909
+00:49:25,079 --> 00:49:29,039
+nap goal into the elevator, it
+will sit there and wait until
+
+910
+00:49:29,039 --> 00:49:32,279
+the door opens and then start
+because I can't plant a calf
+
+911
+00:49:32,279 --> 00:49:36,629
+there. And so basically what we
+wanted to do is hey, we're
+
+912
+00:49:36,629 --> 00:49:38,999
+trying to get into that
+elevator. Even though the door
+
+913
+00:49:38,999 --> 00:49:42,749
+hasn't opened yet. We should
+start moving over this get lined
+
+914
+00:49:42,749 --> 00:49:46,829
+up in front of it. And basically
+doing both of these sort of
+
+915
+00:49:46,829 --> 00:49:51,719
+within move base. Lets us
+seamlessly transition into that
+
+916
+00:49:51,719 --> 00:49:56,099
+second goal as the door opens
+really quickly, rather than
+
+917
+00:49:56,129 --> 00:49:59,909
+stopping and lining up with that
+intermediate goal. And then send
+
+918
+00:49:59,909 --> 00:50:03,029
+the Second action to go inside,
+it's much faster for us to
+
+919
+00:50:03,029 --> 00:50:07,019
+actually switch that goal.
+Without even stopping the robot.
+
+920
+00:50:07,139 --> 00:50:10,529
+As soon as it sees that the
+second goal is viable, yeah,
+
+921
+00:50:10,559 --> 00:50:13,499
+it's switched over. And the
+local controller just keeps on
+
+922
+00:50:13,499 --> 00:50:17,459
+going. Also know, for any
+listeners that aren't familiar,
+
+923
+00:50:18,539 --> 00:50:22,379
+of move based on the nav stack,
+sort of as a two level system,
+
+924
+00:50:22,409 --> 00:50:25,769
+there's a global planner, that
+is sort of like, think about as
+
+925
+00:50:25,769 --> 00:50:30,059
+you're a star, you're Google
+Maps of, I'm here, I'm trying to
+
+926
+00:50:30,059 --> 00:50:33,959
+get there, plot a route around
+my obstacles that I know about
+
+927
+00:50:33,959 --> 00:50:37,469
+and get there. And then the
+local controller takes in that
+
+928
+00:50:37,469 --> 00:50:41,519
+path, and is simulating its
+wheels trajectories to figure
+
+929
+00:50:41,519 --> 00:50:45,599
+out how it should follow that
+path most quickly. Get to the
+
+930
+00:50:45,629 --> 00:50:45,929
+point.
+
+931
+00:50:47,219 --> 00:50:52,679
+Audrow Nash: Okay. And then the
+interest in eventually open
+
+932
+00:50:52,679 --> 00:50:58,379
+sourcing things. I mean, so I
+get, so from the company
+
+933
+00:50:58,379 --> 00:51:04,019
+perspective, it's not quite your
+interest to maintain a, like an
+
+934
+00:51:04,019 --> 00:51:09,299
+open source, library or
+anything. But why why do you
+
+935
+00:51:09,299 --> 00:51:12,389
+feel like you'd like to open
+source things? I mean, I'm at an
+
+936
+00:51:12,389 --> 00:51:15,629
+open source company. So clearly,
+I like it. But yeah,
+
+937
+00:51:16,650 --> 00:51:19,140
+Erik Schluntz: I think for me,
+it's a sense of giving back and
+
+938
+00:51:19,140 --> 00:51:23,250
+like paying it forward. cobalt
+was very heavily dependent on
+
+939
+00:51:23,250 --> 00:51:27,870
+open source at the beginning, we
+actually launched our, our first
+
+940
+00:51:27,870 --> 00:51:31,470
+product and deployed the
+customer sites, with myself and
+
+941
+00:51:31,470 --> 00:51:34,680
+a single other robotics
+engineer, wow. And we would not
+
+942
+00:51:34,680 --> 00:51:37,650
+have been able to do that, then,
+you know, plus some web
+
+943
+00:51:37,650 --> 00:51:41,160
+engineers and hardware. But we
+would not have been able to do
+
+944
+00:51:41,160 --> 00:51:44,040
+that without really heavily
+standing on the shoulders of
+
+945
+00:51:44,040 --> 00:51:47,880
+giants and using these open
+source packages, and building
+
+946
+00:51:47,880 --> 00:51:50,880
+layers on top of them. And I
+just found that really exciting
+
+947
+00:51:50,880 --> 00:51:54,780
+that, you know, two people were
+able to build a, you know, a
+
+948
+00:51:54,780 --> 00:51:58,620
+production ready robotics
+system, by using a lot of these
+
+949
+00:51:58,620 --> 00:52:02,130
+open source packages. And I just
+really, really enjoyed that. And
+
+950
+00:52:02,130 --> 00:52:05,670
+I think I want to make sure
+that, you know, problems that we
+
+951
+00:52:05,670 --> 00:52:08,490
+solve just sort of first
+humanity, I don't want, you
+
+952
+00:52:08,490 --> 00:52:11,820
+know, engineers everywhere to
+need to, you know, solve the
+
+953
+00:52:11,820 --> 00:52:14,670
+same problem over and over
+again, I love it. Now, of
+
+954
+00:52:14,670 --> 00:52:16,920
+course, a lot of the things that
+we built are very sort of
+
+955
+00:52:16,920 --> 00:52:19,950
+specific, customized to our
+robot. But you know, we're
+
+956
+00:52:19,950 --> 00:52:22,110
+always looking for things that
+could be a good thing to open
+
+957
+00:52:22,110 --> 00:52:22,530
+source.
+
+958
+00:52:24,900 --> 00:52:28,380
+Audrow Nash: Now, so, two
+people, you had a production
+
+959
+00:52:28,380 --> 00:52:30,300
+ready robot, how large Are you
+guys now?
+
+960
+00:52:31,440 --> 00:52:33,990
+Erik Schluntz: Yeah, we're about
+115 people right now.
+
+961
+00:52:33,989 --> 00:52:36,239
+Audrow Nash: And so that's a lot
+of the people that are doing the
+
+962
+00:52:36,239 --> 00:52:37,499
+security related thing.
+
+963
+00:52:37,530 --> 00:52:40,170
+Erik Schluntz: Exactly. Yeah,
+about half of that is actually
+
+964
+00:52:40,170 --> 00:52:43,710
+our human operators to supervise
+the robots, control the robots.
+
+965
+00:52:44,250 --> 00:52:46,980
+Our engineering team is still
+very small, it's about 23
+
+966
+00:52:46,980 --> 00:52:50,550
+people. And that split again,
+across robotics, web and
+
+967
+00:52:50,550 --> 00:52:54,150
+hardware. So it's a really great
+place where you know, the teams
+
+968
+00:52:54,150 --> 00:52:58,200
+are very small, each person can
+have a really big impact, and
+
+969
+00:52:58,200 --> 00:53:01,260
+solve a lot of interesting
+problems and have really good
+
+970
+00:53:01,260 --> 00:53:01,800
+ownership
+
+971
+00:53:02,070 --> 00:53:05,220
+Audrow Nash: over the code.
+Totally. What's the so going
+
+972
+00:53:05,220 --> 00:53:08,160
+from two, you had a production
+ready robot, now you have 20
+
+973
+00:53:08,160 --> 00:53:12,690
+engineers, or so what are the
+additional 20 ish people, like
+
+974
+00:53:12,690 --> 00:53:15,330
+you said, or what are the
+additional 18 people or so
+
+975
+00:53:15,510 --> 00:53:16,530
+doing? Yeah,
+
+976
+00:53:17,070 --> 00:53:18,990
+Erik Schluntz: we had two
+engineers to get to the point
+
+977
+00:53:18,990 --> 00:53:21,810
+where we can have one or two
+robots roll around. Now with a
+
+978
+00:53:21,810 --> 00:53:24,720
+much bigger fleet. There's all
+sorts of other, you know, other
+
+979
+00:53:24,720 --> 00:53:27,810
+things we have going on. And
+also for this first production
+
+980
+00:53:27,810 --> 00:53:30,570
+ready robots, that means that
+each one of our we had one
+
+981
+00:53:30,570 --> 00:53:33,690
+operator at the time. So if he's
+only looking at two or three
+
+982
+00:53:33,690 --> 00:53:37,590
+robots, the robots can be a lot
+more needy. And so really, now
+
+983
+00:53:37,590 --> 00:53:41,100
+everything is about scalability,
+and saying how many robots can
+
+984
+00:53:41,100 --> 00:53:44,460
+each one of our operators handle
+and that means the robots being
+
+985
+00:53:44,460 --> 00:53:47,910
+able to, you know, not get stuck
+as frequently, being able to
+
+986
+00:53:47,910 --> 00:53:51,510
+unstick themselves if they do
+get stuck, you know, navigation
+
+987
+00:53:51,510 --> 00:53:54,660
+area, building a lot more
+features out for our customers,
+
+988
+00:53:55,050 --> 00:53:58,590
+better data reporting better
+information that we can send
+
+989
+00:53:58,590 --> 00:54:02,100
+them and do that more reliably
+and more quickly. So I'd say
+
+990
+00:54:02,100 --> 00:54:06,030
+it's, it's really about adding a
+lot of like meat to the bones of
+
+991
+00:54:06,030 --> 00:54:08,970
+what our product services and
+increasing reliability and
+
+992
+00:54:08,970 --> 00:54:11,520
+making these robots, you know,
+really rock solid so that we can
+
+993
+00:54:11,520 --> 00:54:13,620
+scale scale out the fleet. Yeah.
+
+994
+00:54:13,799 --> 00:54:16,349
+Audrow Nash: Can you tell me a
+little bit about manufacturing
+
+995
+00:54:16,349 --> 00:54:19,769
+your robot or just in general
+making them and deploying
+
+996
+00:54:19,769 --> 00:54:23,459
+because you have how many? How
+many robots out in the world
+
+997
+00:54:23,459 --> 00:54:23,879
+now.
+
+998
+00:54:24,810 --> 00:54:27,210
+Erik Schluntz: We have over 100
+robots deployed very exciting.
+
+999
+00:54:27,900 --> 00:54:31,800
+So we actually manufacture all
+of our own robots in house at
+
+1000
+00:54:31,800 --> 00:54:36,000
+our right now our office in San
+Mateo in the Bay Area of
+
+1001
+00:54:36,000 --> 00:54:39,600
+California. So we've really
+liked having manufacturing in
+
+1002
+00:54:39,600 --> 00:54:43,560
+house because it lets us have a
+very, very fast iteration cycle
+
+1003
+00:54:43,980 --> 00:54:47,640
+between engineering and
+hardware. So we can solve issues
+
+1004
+00:54:47,640 --> 00:54:51,270
+as they come up and roll them
+back into the design and be have
+
+1005
+00:54:51,270 --> 00:54:54,780
+engineering right there to solve
+any issues that happen. So now
+
+1006
+00:54:54,780 --> 00:54:57,150
+as we're scaling up
+manufacturing, you know
+
+1007
+00:54:57,150 --> 00:55:00,300
+everything is getting a lot more
+locked down and as volumes Going
+
+1008
+00:55:00,300 --> 00:55:05,160
+up, you know, you start to see
+1%, you know, 1% errors where if
+
+1009
+00:55:05,160 --> 00:55:10,170
+you're buying, you know, you
+know, SSDs, you know, it's a 1%
+
+1010
+00:55:10,170 --> 00:55:12,210
+chance that they come out of the
+box debt or something like that.
+
+1011
+00:55:12,390 --> 00:55:14,520
+I don't know about that
+particular component, but
+
+1012
+00:55:14,790 --> 00:55:17,640
+Audrow Nash: some arbitrary
+about some widget. Yeah,
+
+1013
+00:55:18,089 --> 00:55:19,769
+Erik Schluntz: widget, you know,
+when you're building in five or
+
+1014
+00:55:19,769 --> 00:55:22,379
+10, robots, you don't really
+need to care about that. But
+
+1015
+00:55:22,379 --> 00:55:25,079
+when you're building a lot of
+robots, you're going to have
+
+1016
+00:55:25,109 --> 00:55:29,489
+anything that can fail. Exactly.
+And so that means you need to
+
+1017
+00:55:29,489 --> 00:55:33,269
+build in a lot more, you know,
+basically unit tests for each
+
+1018
+00:55:33,359 --> 00:55:37,169
+component that goes into the
+robot, everything gets tested
+
+1019
+00:55:37,169 --> 00:55:40,889
+before it gets put in, they get
+put into sub assemblies, those
+
+1020
+00:55:40,889 --> 00:55:43,499
+sub assemblies get tested,
+before they get put in, and
+
+1021
+00:55:43,499 --> 00:55:46,529
+trying to catch any of these
+errors sort of as early as
+
+1022
+00:55:46,529 --> 00:55:51,599
+possible. And then every, every
+robot that gets finished, goes
+
+1023
+00:55:51,599 --> 00:55:54,839
+through two days of battle
+tested at our office before they
+
+1024
+00:55:54,839 --> 00:55:58,439
+go to battle testing. Yes,
+exactly. And so it's a
+
+1025
+00:55:58,529 --> 00:56:01,949
+basically, the robot goes back
+and forth across like, a
+
+1026
+00:56:01,949 --> 00:56:05,129
+simulated office environment
+with very rough and bumpy floors
+
+1027
+00:56:05,129 --> 00:56:08,609
+for two days to try to shake
+itself apart. And it goes
+
+1028
+00:56:08,609 --> 00:56:11,009
+through basically making sure
+that it can do all the different
+
+1029
+00:56:11,009 --> 00:56:14,189
+kinds of tasks that it will be
+required to at the customer
+
+1030
+00:56:14,189 --> 00:56:17,879
+sites, we can catch any errors
+or manufacturing defects before
+
+1031
+00:56:17,879 --> 00:56:18,929
+it gets shipped to a customer.
+
+1032
+00:56:20,130 --> 00:56:23,970
+Audrow Nash: How is it? So where
+so you're doing your assembly in
+
+1033
+00:56:23,970 --> 00:56:27,090
+house, I assume you're buying a
+good number of components to put
+
+1034
+00:56:27,090 --> 00:56:30,450
+together? Exactly, yeah, how has
+it been sourcing those
+
+1035
+00:56:30,450 --> 00:56:34,140
+components? Like the process of
+doing that is very interesting
+
+1036
+00:56:34,140 --> 00:56:34,440
+to me,
+
+1037
+00:56:35,040 --> 00:56:37,320
+Erik Schluntz: this has been a
+very challenging year with a
+
+1038
+00:56:37,320 --> 00:56:41,580
+global CIO like that. And so you
+know, a lot of the components
+
+1039
+00:56:41,700 --> 00:56:47,310
+are either off the shelf sensors
+or compute pieces. And we do
+
+1040
+00:56:47,310 --> 00:56:51,390
+design our own custom PCBs that
+go into the robot. And I'd say
+
+1041
+00:56:51,390 --> 00:56:58,170
+the most of the most of the off
+the shelf pieces, it's, it's
+
+1042
+00:56:58,170 --> 00:57:00,600
+fairly easy. You know, we do
+research online, we test
+
+1043
+00:57:00,600 --> 00:57:03,840
+different components and make
+sure we go with vendors that are
+
+1044
+00:57:03,840 --> 00:57:06,480
+sort of more industrial, or they
+say, Hey, we're going to
+
+1045
+00:57:06,480 --> 00:57:08,820
+guarantee that we're going to
+keep making this part for at
+
+1046
+00:57:08,820 --> 00:57:11,490
+least another three or four
+years. Oh, interesting. There
+
+1047
+00:57:11,490 --> 00:57:14,340
+are, you know, in the early
+days, there were more consumer
+
+1048
+00:57:14,340 --> 00:57:17,010
+components in the robot and
+things like that are dangerous
+
+1049
+00:57:17,010 --> 00:57:19,620
+that, you know, it works great.
+But you know, the next year,
+
+1050
+00:57:19,620 --> 00:57:22,980
+it's not available on Amazon.
+You know, in the in the first
+
+1051
+00:57:22,980 --> 00:57:24,750
+version of a robot, there were
+definitely a couple of
+
+1052
+00:57:24,750 --> 00:57:28,650
+components, you know, purchased
+off Amazon. And it's a it's a
+
+1053
+00:57:28,650 --> 00:57:30,450
+great supplier until they
+disappeared.
+
+1054
+00:57:31,380 --> 00:57:32,250
+Audrow Nash: Yeah, gosh,
+
+1055
+00:57:33,120 --> 00:57:33,480
+Erik Schluntz: yeah.
+
+1056
+00:57:33,630 --> 00:57:34,950
+Audrow Nash: That's so funny.
+Yeah.
+
+1057
+00:57:35,280 --> 00:57:37,620
+Erik Schluntz: And, and now with
+the chip shortage, one of the
+
+1058
+00:57:37,620 --> 00:57:40,890
+big challenges that has been
+that, you know, so many people
+
+1059
+00:57:40,890 --> 00:57:45,390
+are, are ramping up production,
+for different things that even
+
+1060
+00:57:45,390 --> 00:57:48,750
+very simple components, like
+inductors, that go on a PCB will
+
+1061
+00:57:48,750 --> 00:57:52,530
+go out of stock. And there's
+been a couple times where if you
+
+1062
+00:57:52,530 --> 00:57:55,590
+don't have those stock piles,
+you know, you have to change a
+
+1063
+00:57:55,590 --> 00:57:58,290
+PCB design to use a different a
+different partner different
+
+1064
+00:57:58,290 --> 00:58:02,370
+value, because you can't get,
+you know, whatever component
+
+1065
+00:58:02,370 --> 00:58:06,180
+that goes on it. And so things
+like STM microcontrollers are
+
+1066
+00:58:06,180 --> 00:58:10,470
+very hard to come by now. And
+even surpasses our Yeah, it can
+
+1067
+00:58:10,470 --> 00:58:13,080
+be difficult to find gotcha.
+passives, like resistors.
+
+1068
+00:58:13,800 --> 00:58:16,200
+Exactly. resistors, capacitors
+inductors.
+
+1069
+00:58:17,489 --> 00:58:19,259
+Audrow Nash: Wow, that's really
+interesting.
+
+1070
+00:58:19,560 --> 00:58:21,990
+Erik Schluntz: So it's been a
+really crazy year for supply
+
+1071
+00:58:21,990 --> 00:58:24,870
+chain management, inventory. But
+we've done a good job. And
+
+1072
+00:58:25,020 --> 00:58:27,450
+there's been a lot of heroic
+lifts from the engineering team
+
+1073
+00:58:27,450 --> 00:58:30,720
+here to redesign with available
+five days is redesigned
+
+1074
+00:58:30,720 --> 00:58:34,020
+components around, redesigned
+boards around what's missing,
+
+1075
+00:58:34,440 --> 00:58:35,880
+and find other options.
+
+1076
+00:58:37,590 --> 00:58:39,630
+Audrow Nash: Let's see. Now
+another thing, I'd like to talk
+
+1077
+00:58:39,630 --> 00:58:45,090
+about the human robot
+interaction of your robot, so
+
+1078
+00:58:45,090 --> 00:58:48,960
+it's covered in fabric, just
+tell me some of your human robot
+
+1079
+00:58:48,960 --> 00:58:52,770
+interaction considerations in
+designing the kobalt robot.
+
+1080
+00:58:53,580 --> 00:58:55,860
+Erik Schluntz: Absolutely. So
+this was one of our really,
+
+1081
+00:58:55,860 --> 00:59:00,450
+really big sort of goals when we
+started this, because when we,
+
+1082
+00:59:00,690 --> 00:59:04,560
+again, going back to set up that
+that customer driven approach
+
+1083
+00:59:04,800 --> 00:59:09,360
+that we wanted to take, when we
+first talked to customers, about
+
+1084
+00:59:09,420 --> 00:59:11,700
+you know, whether they would
+like this product, whether they
+
+1085
+00:59:11,700 --> 00:59:15,780
+wouldn't, a lot of their biggest
+fear wasn't that the robot
+
+1086
+00:59:15,780 --> 00:59:18,480
+wouldn't work, it was that their
+employees would be scared of the
+
+1087
+00:59:18,480 --> 00:59:21,630
+robot, and that they would like
+something like this. And so we
+
+1088
+00:59:21,630 --> 00:59:25,080
+put a lot of effort into trying
+to dispel that fear, and making
+
+1089
+00:59:25,080 --> 00:59:28,230
+the robot as friendly as
+possible. And so that's why we
+
+1090
+00:59:28,260 --> 00:59:31,650
+we actually contracted a design
+firm that's very well known,
+
+1091
+00:59:31,650 --> 00:59:34,920
+called fuse project, and worked
+with a world famous designer in
+
+1092
+00:59:35,250 --> 00:59:38,370
+the heart. He actually helped
+design the Herman Miller office
+
+1093
+00:59:38,370 --> 00:59:41,640
+chairs. And kind of the sense
+that we wanted to go for it was
+
+1094
+00:59:41,640 --> 00:59:45,990
+not Terminator, Robocop, but we
+wanted to feel like a high end
+
+1095
+00:59:45,990 --> 00:59:48,840
+piece of furniture. That's
+something that's natural to be
+
+1096
+00:59:48,840 --> 00:59:52,980
+in the office that's helpful and
+useful, but isn't sort of isn't
+
+1097
+00:59:52,980 --> 00:59:55,530
+as much of like a intelligent
+thing that you know you're going
+
+1098
+00:59:55,530 --> 00:59:58,590
+to fight with. And so that's why
+we went with sort of the fabric
+
+1099
+00:59:58,590 --> 01:00:02,310
+basis that it was, it's nice and
+sunny. And it's actually we've
+
+1100
+01:00:02,310 --> 01:00:06,810
+seen it like crazy it's we go
+when we went to early customers,
+
+1101
+01:00:07,140 --> 01:00:11,130
+and would you an onboarding, for
+them to bring the robots there
+
+1102
+01:00:11,130 --> 01:00:14,370
+and basically tell the employees
+what it was and how it was going
+
+1103
+01:00:14,370 --> 01:00:17,370
+to work. A lot of people were
+initially very scared about the
+
+1104
+01:00:17,370 --> 01:00:20,310
+idea of a security robot. They
+were picturing picturing
+
+1105
+01:00:20,310 --> 01:00:24,660
+Terminator or Robocop with a
+taser. But you know, as soon as
+
+1106
+01:00:24,660 --> 01:00:27,570
+they came to the, you know, the
+all hands or the lunch and learn
+
+1107
+01:00:27,600 --> 01:00:30,960
+that we were host, and they saw
+the robot, and they touched the
+
+1108
+01:00:30,960 --> 01:00:33,810
+robot and realized that it was
+soft. And they talked to one of
+
+1109
+01:00:33,810 --> 01:00:37,020
+our operators, they realized,
+Oh, this is just like a security
+
+1110
+01:00:37,020 --> 01:00:40,980
+guard that just happens to be
+remote. And that just getting
+
+1111
+01:00:40,980 --> 01:00:44,730
+people to come touch the robot
+and interact with the robot. And
+
+1112
+01:00:44,730 --> 01:00:48,240
+see what it is really, really
+helps with that. Yeah, but
+
+1113
+01:00:48,240 --> 01:00:52,170
+Hollywood, sort of, Oh, yeah.
+Hollywood's depiction of robots
+
+1114
+01:00:52,170 --> 01:00:54,240
+is, you know, definitely not
+good for us. And, you know,
+
+1115
+01:00:54,240 --> 01:00:55,950
+we're trying to stay far away
+from that.
+
+1116
+01:00:58,260 --> 01:01:00,570
+Audrow Nash: Very interesting,
+that's crazy to me that people
+
+1117
+01:01:00,570 --> 01:01:03,930
+were afraid. I mean, I guess
+I've been involved in robotics
+
+1118
+01:01:03,960 --> 01:01:06,930
+for so long and not talking to
+customers. So that
+
+1119
+01:01:06,960 --> 01:01:09,300
+Erik Schluntz: exactly, this is
+something that's, you know,
+
+1120
+01:01:09,300 --> 01:01:11,370
+challenging, and that would why
+we wanted to make sure that we
+
+1121
+01:01:11,370 --> 01:01:14,850
+were very close to customers is
+that for us as roboticists, it's
+
+1122
+01:01:14,850 --> 01:01:17,880
+very easy to say, oh, who
+doesn't love robots? Yeah, so a
+
+1123
+01:01:17,880 --> 01:01:20,760
+lot of people don't. And so it's
+something that we want to be
+
+1124
+01:01:20,880 --> 01:01:25,800
+really, really careful of, and
+really just take, you know, very
+
+1125
+01:01:25,830 --> 01:01:29,730
+good consideration. And so
+actually, that goes in not just
+
+1126
+01:01:29,730 --> 01:01:33,240
+to the industrial design of the
+robot, but also into a lot of
+
+1127
+01:01:33,240 --> 01:01:36,780
+what we call the body language
+of the robot, and the software
+
+1128
+01:01:36,780 --> 01:01:39,960
+and behaviors. And so there's
+some interesting things there,
+
+1129
+01:01:39,960 --> 01:01:44,100
+if you know, we have an issue in
+the past, where if they, if the
+
+1130
+01:01:44,100 --> 01:01:48,060
+robot got stuck, and was waiting
+for a human operator to you
+
+1131
+01:01:48,060 --> 01:01:52,050
+know, help it proceed, if it was
+stuck near a person, the person
+
+1132
+01:01:52,050 --> 01:01:54,870
+would think, why did the robot
+stop and just stare at me for 10
+
+1133
+01:01:54,870 --> 01:01:58,590
+seconds, you know, and then
+continue on. And actually, it
+
+1134
+01:01:58,590 --> 01:02:01,530
+was that the robot was just
+stuck, staring at that it just
+
+1135
+01:02:01,530 --> 01:02:04,410
+happened to get stuck near that
+assumed and a person that
+
+1136
+01:02:04,410 --> 01:02:07,380
+doesn't know that assumes
+there's attention. So now we do
+
+1137
+01:02:07,380 --> 01:02:10,710
+things, like if the robot gets
+stuck, it's something displays
+
+1138
+01:02:10,710 --> 01:02:13,260
+on the screen that says, you
+know, oops, I've gotten stuck,
+
+1139
+01:02:13,260 --> 01:02:17,100
+I'll be on my way shortly. And
+make sure that people understand
+
+1140
+01:02:17,100 --> 01:02:19,680
+what the intention of the robot
+is. And that's made people a lot
+
+1141
+01:02:19,680 --> 01:02:20,490
+more comfortable around.
+
+1142
+01:02:22,230 --> 01:02:25,740
+Audrow Nash: What other so
+that's really funny about the
+
+1143
+01:02:25,740 --> 01:02:28,980
+body language of the same
+phrasing it as the body language
+
+1144
+01:02:28,980 --> 01:02:32,370
+of the robot. And so I see so
+you'll see someone who's
+
+1145
+01:02:32,370 --> 01:02:35,790
+watching the robot or sees the
+robot come up, and they assume a
+
+1146
+01:02:35,790 --> 01:02:39,810
+sort of intention behind
+whatever the robots doing. And
+
+1147
+01:02:39,840 --> 01:02:44,100
+so then you have to so you're
+making this explicit message of
+
+1148
+01:02:44,130 --> 01:02:47,640
+Oops, I'm actually stuck. I'm
+not just like staring at you, or
+
+1149
+01:02:47,640 --> 01:02:52,530
+something like this. How do you
+find those? Is it is it case by
+
+1150
+01:02:52,530 --> 01:02:56,370
+case where someone will be like,
+This made me uncomfortable of
+
+1151
+01:02:56,370 --> 01:02:59,400
+what the robot did? Or how do
+you? How do you go about
+
+1152
+01:02:59,400 --> 01:03:02,520
+designing robot body language?
+And I would love to hear other
+
+1153
+01:03:02,520 --> 01:03:04,320
+examples of robot body language.
+
+1154
+01:03:05,460 --> 01:03:09,390
+Erik Schluntz: Yeah, so I think
+the one of the best ways that we
+
+1155
+01:03:09,390 --> 01:03:12,660
+do it is that we have our own
+offices patrolled by cobalt
+
+1156
+01:03:12,660 --> 01:03:15,630
+robots, for our security. And so
+that just means, you know, we're
+
+1157
+01:03:15,630 --> 01:03:19,800
+dogfooding we're trying our own
+products, and dogfooding, for
+
+1158
+01:03:19,800 --> 01:03:22,680
+anyone that hasn't heard of it
+as a term of basically, if
+
+1159
+01:03:22,680 --> 01:03:25,440
+you're a company that makes dog
+food, you should eat your own
+
+1160
+01:03:25,440 --> 01:03:28,050
+dog food to make sure it
+actually tastes good and is high
+
+1161
+01:03:28,050 --> 01:03:32,910
+quality. That's, if you want to
+express your own product. If you
+
+1162
+01:03:32,910 --> 01:03:35,430
+don't use your own product, like
+how can you expect customers to
+
+1163
+01:03:35,430 --> 01:03:37,500
+use it. So that's something
+that's really important to us.
+
+1164
+01:03:37,500 --> 01:03:41,040
+And so that, as we're working in
+the office, you know, to feel
+
+1165
+01:03:41,040 --> 01:03:44,130
+what it's like to have a robot
+go go past you, or someone to
+
+1166
+01:03:44,130 --> 01:03:47,700
+come up and ask to see your
+badge with a robot. And so doing
+
+1167
+01:03:47,700 --> 01:03:50,790
+that is really, really important
+just to get that sense of what
+
+1168
+01:03:50,790 --> 01:03:53,460
+it's like. We also have
+engineers that will go on site
+
+1169
+01:03:53,460 --> 01:03:57,420
+to customers, with customers and
+walk around the robot and see,
+
+1170
+01:03:58,020 --> 01:04:00,000
+you know, see how people
+interact with it. And we just
+
+1171
+01:04:00,000 --> 01:04:04,050
+really try to get as much
+exposure as possible for our
+
+1172
+01:04:04,050 --> 01:04:07,050
+engineers to be with end
+customers, and also to be with
+
+1173
+01:04:07,050 --> 01:04:10,320
+our operators. Because a lot of
+times our operators see or
+
+1174
+01:04:10,320 --> 01:04:12,540
+they're seeing everything that
+goes on around the robot, and
+
+1175
+01:04:12,540 --> 01:04:15,960
+they're talking to people out
+there, they'll hear complaints,
+
+1176
+01:04:15,960 --> 01:04:18,420
+or they'll, they'll hear sort of
+people being delighted that
+
+1177
+01:04:18,420 --> 01:04:21,300
+they're talking to someone
+through a robot. And we're just
+
+1178
+01:04:21,300 --> 01:04:25,290
+trying to keep engineers not
+just looking at code, but
+
+1179
+01:04:25,320 --> 01:04:28,440
+involved with the end product
+and seeing the pain points is
+
+1180
+01:04:28,440 --> 01:04:29,430
+really important to us.
+
+1181
+01:04:30,060 --> 01:04:32,880
+Audrow Nash: That's very
+interesting. Have you. So
+
+1182
+01:04:32,880 --> 01:04:36,780
+there's a growing space of
+research, rather human
+
+1183
+01:04:36,780 --> 01:04:40,680
+interaction space. Has any of
+that research been useful to you
+
+1184
+01:04:40,680 --> 01:04:45,810
+guys? Or like, have you been
+leveraging it or it's all things
+
+1185
+01:04:45,810 --> 01:04:47,940
+that you've been finding kind of
+organically.
+
+1186
+01:04:49,440 --> 01:04:51,720
+Erik Schluntz: I'd say it's a
+mix and one of our advisors,
+
+1187
+01:04:52,050 --> 01:04:55,710
+Laila Akiyama, she's an expert
+in HR II, and so we brainstorm
+
+1188
+01:04:55,710 --> 01:05:01,140
+with her. And I say that's a mix
+of things that There's a lot of
+
+1189
+01:05:01,140 --> 01:05:04,980
+things that once you hear them
+feel like common sense. But
+
+1190
+01:05:04,980 --> 01:05:08,010
+there's also really good things
+that are, you know, very non
+
+1191
+01:05:08,010 --> 01:05:10,860
+intuitive that are very cool.
+One of the things that we had
+
+1192
+01:05:10,860 --> 01:05:14,160
+heard and learned from HR AI
+experts, and some of this
+
+1193
+01:05:14,160 --> 01:05:18,060
+research is that being
+completely stationary, for
+
+1194
+01:05:18,060 --> 01:05:21,030
+humans is actually a very
+aggressive and sort of assertive
+
+1195
+01:05:21,030 --> 01:05:25,800
+behavior. It's like, I am rock
+solid, and medicine. And for a
+
+1196
+01:05:25,800 --> 01:05:29,250
+robot, though, because like, by
+default, a human doesn't stay
+
+1197
+01:05:29,250 --> 01:05:34,320
+Stockstill, they fidget. And a
+robot by default stays stuck.
+
+1198
+01:05:35,040 --> 01:05:37,260
+And it's the one of the ideas
+that we've had is that if we're,
+
+1199
+01:05:37,260 --> 01:05:40,860
+if the robot is idle, instead of
+being stocked still, it should
+
+1200
+01:05:40,860 --> 01:05:44,610
+fit. You know, when kids turn
+back and forth a little bit. You
+
+1201
+01:05:44,610 --> 01:05:45,960
+know, that's one of the things
+we're thinking about
+
+1202
+01:05:45,960 --> 01:05:48,450
+implementing now. But kind of
+going back to that body language
+
+1203
+01:05:48,450 --> 01:05:53,100
+is that being stationary is
+actually like, more aggressive
+
+1204
+01:05:53,100 --> 01:05:55,470
+than moving sometimes. And so
+there's a lot of interesting
+
+1205
+01:05:55,470 --> 01:05:57,750
+things like that, that we've
+learned about
+
+1206
+01:05:57,840 --> 01:06:01,260
+Audrow Nash: interesting. And
+see. So
+
+1207
+01:06:01,469 --> 01:06:03,059
+Erik Schluntz: yeah, I think
+those are often called keep
+
+1208
+01:06:03,059 --> 01:06:06,659
+alive movements keep alive show
+that the robots Yeah, show that
+
+1209
+01:06:06,659 --> 01:06:09,209
+the robot is still active, it's
+still doing something, even if
+
+1210
+01:06:09,209 --> 01:06:10,649
+it can't make progress towards
+its goal.
+
+1211
+01:06:10,650 --> 01:06:13,350
+Audrow Nash: Yep. Yeah, I'm
+always a little disappointed as
+
+1212
+01:06:13,980 --> 01:06:16,950
+someone working on robots that
+almost all the time or robots
+
+1213
+01:06:16,950 --> 01:06:21,210
+are off. And so it's like,
+almost all of the robots are
+
+1214
+01:06:21,210 --> 01:06:25,380
+just completely still for almost
+all the time around robots,
+
+1215
+01:06:26,310 --> 01:06:30,240
+which maybe it will change at
+some point in the near future.
+
+1216
+01:06:31,110 --> 01:06:34,500
+Erik Schluntz: Yeah, yeah. And I
+think for us that that's
+
+1217
+01:06:34,500 --> 01:06:37,410
+actually an interesting segue
+that some of our future plans is
+
+1218
+01:06:37,410 --> 01:06:41,250
+making our robots a lot more
+general purpose. And our
+
+1219
+01:06:41,250 --> 01:06:46,170
+thoughts there is that security
+guards actually do a lot at, you
+
+1220
+01:06:46,170 --> 01:06:49,590
+know, at employers, they're
+making sure nothing bad happens
+
+1221
+01:06:49,590 --> 01:06:51,870
+at night. But during the day,
+they're doing visitor
+
+1222
+01:06:51,870 --> 01:06:54,420
+management, they're checking
+people in, a lot of times,
+
+1223
+01:06:54,420 --> 01:06:57,270
+they're almost acting like a
+secretary, or sort of a
+
+1224
+01:06:57,270 --> 01:07:01,440
+receptionist. And so one of our
+goals is that, while the robots
+
+1225
+01:07:01,440 --> 01:07:04,230
+are doing security at night,
+during the day, they can be a
+
+1226
+01:07:04,230 --> 01:07:08,070
+Virtual Receptionist, and check
+someone in just like envoy but
+
+1227
+01:07:08,070 --> 01:07:10,830
+then actually lead the person to
+the conference room, you know
+
+1228
+01:07:10,830 --> 01:07:13,620
+where they're supposed to be.
+And the idea is that, you know,
+
+1229
+01:07:13,620 --> 01:07:16,680
+once you have a robot on site
+somewhere, I just want to use it
+
+1230
+01:07:16,680 --> 01:07:20,010
+any functionality that you can
+do with our software updates,
+
+1231
+01:07:20,040 --> 01:07:23,220
+it's you have the hardware
+there, it's already paid for by
+
+1232
+01:07:23,220 --> 01:07:26,790
+security, because that's sort of
+a big cost, you know, the big
+
+1233
+01:07:26,790 --> 01:07:29,700
+cost, and you can start adding
+all these other applications.
+
+1234
+01:07:29,940 --> 01:07:31,650
+And we've already started doing
+that with some of that
+
+1235
+01:07:31,650 --> 01:07:34,080
+facilities monitoring that I
+talked about. But one of the
+
+1236
+01:07:34,080 --> 01:07:36,270
+next ones we're looking at is
+more daytime applications.
+
+1237
+01:07:36,960 --> 01:07:39,630
+Robots, you know, more active,
+and so people will be able to
+
+1238
+01:07:39,630 --> 01:07:41,430
+see them moving around and
+interact with them during the
+
+1239
+01:07:41,430 --> 01:07:41,580
+day.
+
+1240
+01:07:42,840 --> 01:07:45,630
+Audrow Nash: Let's see, maybe a
+bit more of a controversial
+
+1241
+01:07:45,630 --> 01:07:52,020
+check. Question. But so how does
+this relate to jobs for security
+
+1242
+01:07:52,020 --> 01:07:54,690
+guards and things like this?
+Because it is, in a sense,
+
+1243
+01:07:54,720 --> 01:07:57,930
+automating the job and maybe in
+the end automating receptionist
+
+1244
+01:07:57,930 --> 01:08:03,000
+so our inspection people? How do
+you look at this? Yeah,
+
+1245
+01:08:03,000 --> 01:08:04,710
+Erik Schluntz: that's a really
+good question. And definitely
+
+1246
+01:08:04,710 --> 01:08:07,920
+one that we take very seriously.
+What we found is actually that
+
+1247
+01:08:07,920 --> 01:08:12,660
+robots replace tasks, not jobs,
+and really sort of change how
+
+1248
+01:08:12,840 --> 01:08:16,020
+jobs are done. And what we've
+seen is, you know, we've never
+
+1249
+01:08:16,020 --> 01:08:20,130
+had a security guard laid off.
+Because of a customer getting
+
+1250
+01:08:20,130 --> 01:08:24,630
+robots, what we typically see is
+that customers can't find enough
+
+1251
+01:08:24,630 --> 01:08:28,770
+security guards that watch work.
+Or they'll work night shift, but
+
+1252
+01:08:28,770 --> 01:08:31,080
+as soon as they have any other
+job opportunity, they're
+
+1253
+01:08:31,290 --> 01:08:35,340
+switching to something else.
+Exactly. And so we've redeployed
+
+1254
+01:08:35,340 --> 01:08:37,860
+customers and they can take
+their good nightshift guards,
+
+1255
+01:08:37,890 --> 01:08:42,240
+and let them work day shift now.
+Or have that the guards focus on
+
+1256
+01:08:42,240 --> 01:08:44,850
+more interesting things like
+interacting with people, while
+
+1257
+01:08:44,850 --> 01:08:48,300
+the robot is doing the much more
+monotonous, sort of patrolling
+
+1258
+01:08:48,300 --> 01:08:51,780
+around go like and checking all
+these alarms, and checking for
+
+1259
+01:08:51,780 --> 01:08:54,780
+doors and windows being close to
+what's really sort of changed
+
+1260
+01:08:54,780 --> 01:08:58,470
+how people do security. And the
+other thing is that his
+
+1261
+01:08:58,650 --> 01:09:01,140
+customers are adding these in
+places where they didn't
+
+1262
+01:09:01,140 --> 01:09:04,740
+previously have guards. Because
+guards are quite expensive,
+
+1263
+01:09:04,800 --> 01:09:09,000
+especially, you know, if you
+want to guard 20 473 65, it can
+
+1264
+01:09:09,000 --> 01:09:11,250
+be very expensive, you can
+actually need three or four
+
+1265
+01:09:11,250 --> 01:09:15,870
+security guards to cover that
+amount of time. Yeah. And so
+
+1266
+01:09:15,870 --> 01:09:19,500
+what we see is that companies
+had guards for receptionists at
+
+1267
+01:09:19,500 --> 01:09:22,890
+their main office, but none of
+their satellite offices. And now
+
+1268
+01:09:22,890 --> 01:09:26,130
+because the robots are much
+cheaper, they can put the robot
+
+1269
+01:09:26,280 --> 01:09:29,160
+at all the satellite offices
+where they never had security
+
+1270
+01:09:29,160 --> 01:09:32,010
+presence before, and basically
+get that additional coverage.
+
+1271
+01:09:32,220 --> 01:09:35,670
+Audrow Nash: Gotcha. That's
+awesome. I really like framing
+
+1272
+01:09:35,670 --> 01:09:41,730
+it in the robots replace tasks,
+not jobs way. And I'm hearing
+
+1273
+01:09:41,730 --> 01:09:45,660
+this pattern in the last several
+interviews that I've done, where
+
+1274
+01:09:45,660 --> 01:09:49,080
+it's like, it's the same thing
+you're saying, which is that
+
+1275
+01:09:49,080 --> 01:09:53,190
+we're having trouble finding the
+workers for this kind of thing.
+
+1276
+01:09:55,500 --> 01:09:58,350
+So like I'm thinking of the
+interview I did with Melanie
+
+1277
+01:09:58,350 --> 01:10:01,680
+wise who in factories settings
+like there's a tremendous
+
+1278
+01:10:01,680 --> 01:10:07,080
+shortage of workers. And so it's
+interesting to hear the same
+
+1279
+01:10:07,080 --> 01:10:11,250
+kind of thing here. But there's
+a shortage of security guards.
+
+1280
+01:10:12,809 --> 01:10:16,529
+Erik Schluntz: Yep, exactly.
+Yeah. And I think comes from the
+
+1281
+01:10:16,529 --> 01:10:19,979
+fact that robots and humans are
+good at such different things.
+
+1282
+01:10:20,759 --> 01:10:23,879
+You know, humans are amazing at
+making good decisions, hands
+
+1283
+01:10:23,879 --> 01:10:27,689
+like guantes interacting with
+people, and they're terrible at
+
+1284
+01:10:27,779 --> 01:10:30,539
+anything monotonous, or
+something that requires Long,
+
+1285
+01:10:30,599 --> 01:10:34,049
+long focus. And the robot has no
+trouble at all for, you know,
+
+1286
+01:10:34,049 --> 01:10:38,609
+eight hours, never blinking. And
+checking, you know, checking
+
+1287
+01:10:38,609 --> 01:10:41,909
+whether that doors open with
+just as much sort of sincerity
+
+1288
+01:10:41,909 --> 01:10:46,859
+and, you know, carefulness as
+the the 100th time they did it
+
+1289
+01:10:46,859 --> 01:10:50,159
+as the first time they did it.
+So it's something where, you
+
+1290
+01:10:50,159 --> 01:10:53,609
+know, you can create a much
+better solution using both of
+
+1291
+01:10:53,609 --> 01:10:56,579
+those. And that's, you know,
+it's at several levels. That's,
+
+1292
+01:10:56,609 --> 01:10:59,849
+that's why we have our human
+operators that are handling the
+
+1293
+01:10:59,849 --> 01:11:02,219
+interesting parts of security
+while the robots are doing the
+
+1294
+01:11:02,219 --> 01:11:04,559
+monotonous parts. And we've seen
+the same thing with our
+
+1295
+01:11:04,559 --> 01:11:07,289
+customers, is they can take the
+monotonous parts of their
+
+1296
+01:11:07,289 --> 01:11:11,189
+security program, and do them
+with robots, and re designate
+
+1297
+01:11:11,219 --> 01:11:13,889
+their security guards to be
+working during the day shift,
+
+1298
+01:11:13,919 --> 01:11:16,379
+much more round people
+responding to things.
+
+1299
+01:11:17,250 --> 01:11:22,020
+Audrow Nash: Yeah, gotcha. I'm
+also I'm hearing another echo in
+
+1300
+01:11:22,020 --> 01:11:28,110
+this interview, where it's that
+we have humans in the loop in
+
+1301
+01:11:28,110 --> 01:11:31,950
+some way, augmenting the tasks.
+And yeah, I mean, you've spoken
+
+1302
+01:11:31,950 --> 01:11:34,410
+about how the humans are doing
+the things humans are good at,
+
+1303
+01:11:34,410 --> 01:11:37,860
+and the robots are doing things
+that the robots are good at. So
+
+1304
+01:11:37,860 --> 01:11:42,330
+long attention, grueling,
+mundane work. Can you just talk
+
+1305
+01:11:42,330 --> 01:11:45,630
+about this model within
+robotics? A little bit? Because
+
+1306
+01:11:45,630 --> 01:11:49,170
+I think it's a big one? And it
+seems like we're at a good time
+
+1307
+01:11:49,170 --> 01:11:49,770
+for this?
+
+1308
+01:11:50,670 --> 01:11:53,010
+Erik Schluntz: Yeah, absolutely.
+So human in the loop is
+
+1309
+01:11:53,010 --> 01:11:57,240
+definitely a really, really big
+wave in robotics, where I think
+
+1310
+01:11:57,240 --> 01:12:00,450
+this kind of comes back to my
+point that it's let us get into
+
+1311
+01:12:00,450 --> 01:12:04,650
+the market, and ship a product
+when in an area where the
+
+1312
+01:12:04,650 --> 01:12:08,160
+robotic technology was not good
+enough by itself to do the
+
+1313
+01:12:08,160 --> 01:12:12,840
+whole, to do the whole job. But
+because we're able to kind of
+
+1314
+01:12:12,870 --> 01:12:15,330
+augment these two things
+together of what the humans good
+
+1315
+01:12:15,330 --> 01:12:17,850
+at what the robots good at, we
+can provide the value from day
+
+1316
+01:12:17,850 --> 01:12:24,510
+one. And it lets us both focus
+the engineering work on the
+
+1317
+01:12:24,510 --> 01:12:28,890
+pieces that are easy for robots,
+and save, you know, you know,
+
+1318
+01:12:28,890 --> 01:12:31,560
+it'll be very hard to automate
+something like how do you
+
+1319
+01:12:31,560 --> 01:12:34,290
+respond to a person that says
+they're an employee, but doesn't
+
+1320
+01:12:34,290 --> 01:12:38,580
+have their badge? Like, that's a
+crazy hard situation to be to
+
+1321
+01:12:38,580 --> 01:12:42,510
+handle. And, you know, it will
+take engineers a lot of time to
+
+1322
+01:12:43,230 --> 01:12:48,780
+write something is correct. And
+if there is a case, there isn't
+
+1323
+01:12:48,780 --> 01:12:51,060
+a correct, you know, it depends
+probably for each customer, how
+
+1324
+01:12:51,060 --> 01:12:54,300
+they would want to do it. And,
+you know, some would say, Oh,
+
+1325
+01:12:54,300 --> 01:12:56,970
+just don't want them in some
+would say, call this number and
+
+1326
+01:12:56,970 --> 01:13:00,180
+verify whether they're there.
+And you know, that's something
+
+1327
+01:13:00,180 --> 01:13:02,760
+that having a human do that they
+can respond with a lot more
+
+1328
+01:13:02,760 --> 01:13:06,900
+nuance. And I think there's a
+couple different archetypes of
+
+1329
+01:13:06,900 --> 01:13:10,020
+human in the loop, that sort of
+different levels of shared
+
+1330
+01:13:10,020 --> 01:13:15,750
+autonomy. And we use a couple of
+these different levels, I'd say
+
+1331
+01:13:15,750 --> 01:13:19,800
+the, on one extreme, this is
+sort of complete autonomy. And
+
+1332
+01:13:19,800 --> 01:13:22,650
+that, you know, you can see with
+factory robots where a person
+
+1333
+01:13:22,650 --> 01:13:25,800
+doesn't need to be involved at
+all. On the other extreme, you
+
+1334
+01:13:25,800 --> 01:13:29,520
+have complete Telly off, it's a
+person directly controlling a
+
+1335
+01:13:29,520 --> 01:13:33,630
+robot, you know, one for one,
+and exactly specify what it
+
+1336
+01:13:33,630 --> 01:13:38,430
+should do. And a couple of the
+layers in between there is back
+
+1337
+01:13:38,430 --> 01:13:41,130
+to the sort of the autonomy
+side, there's autonomy with
+
+1338
+01:13:41,130 --> 01:13:44,820
+supervision. So the robot is
+still doing an autonomous thing,
+
+1339
+01:13:44,940 --> 01:13:48,060
+but a person is supervising it,
+and they can hit the stop
+
+1340
+01:13:48,060 --> 01:13:51,780
+button, or they can hit the
+correct button. One more step
+
+1341
+01:13:51,780 --> 01:13:55,980
+towards human is sort of human
+review, which is the robot is
+
+1342
+01:13:55,980 --> 01:13:59,610
+explicitly saying, Hey, I'm
+about to make this decision. Can
+
+1343
+01:13:59,610 --> 01:14:03,870
+you approve it? And that's great
+for something like, Hey, I am
+
+1344
+01:14:03,900 --> 01:14:08,520
+you know, 90% sure this, this
+door is open, can you approve
+
+1345
+01:14:08,520 --> 01:14:11,520
+this. And that's great for
+things that are, you know,
+
+1346
+01:14:11,520 --> 01:14:14,640
+something where we want to
+remove false positives, we don't
+
+1347
+01:14:14,640 --> 01:14:17,820
+want to integrate our customers
+with false positives of this
+
+1348
+01:14:17,820 --> 01:14:20,850
+door was left open, or you know,
+this, we saw this person. So
+
+1349
+01:14:20,850 --> 01:14:25,140
+anything like that, we always go
+through human review first. And
+
+1350
+01:14:25,140 --> 01:14:27,300
+it's something the robot can do
+by itself, but we want to make
+
+1351
+01:14:27,300 --> 01:14:34,410
+sure a human reviews then kind
+of one step more towards human,
+
+1352
+01:14:34,800 --> 01:14:36,510
+I would say there is
+
+1353
+01:14:37,800 --> 01:14:39,840
+I don't actually have a great
+term for this maybe robot
+
+1354
+01:14:39,840 --> 01:14:45,240
+accelerated or robot assisted
+human decisions, okay. And what
+
+1355
+01:14:45,240 --> 01:14:48,870
+that might mean is, let's say,
+we don't have any software to
+
+1356
+01:14:48,870 --> 01:14:52,170
+check, maybe a new customer
+feature, go check whether all of
+
+1357
+01:14:52,170 --> 01:14:55,260
+our fire extinguishers are
+there. Maybe we don't have code
+
+1358
+01:14:55,260 --> 01:14:58,350
+for that yet to classify whether
+we see a fire extinguisher in
+
+1359
+01:14:58,350 --> 01:15:03,300
+the correct spot. There. robot
+could still go and collect all
+
+1360
+01:15:03,300 --> 01:15:05,970
+the pictures of the 10 places
+they're supposed to be, and then
+
+1361
+01:15:05,970 --> 01:15:10,110
+show the human them all at once.
+Yeah, that way the human, the
+
+1362
+01:15:10,110 --> 01:15:13,080
+human can batch their work. And
+we don't actually have to
+
+1363
+01:15:13,110 --> 01:15:15,960
+automate the work, we just have
+to automate walking between the
+
+1364
+01:15:15,960 --> 01:15:19,410
+worker where a security guard
+would take 45 minutes to go walk
+
+1365
+01:15:19,410 --> 01:15:22,770
+around and check all these fire
+extinguishers, the robot can do
+
+1366
+01:15:22,770 --> 01:15:26,250
+that 45 minutes of walking, and
+then our human operator can go
+
+1367
+01:15:26,250 --> 01:15:32,700
+review them in 30 seconds. So
+basically batching and assisting
+
+1368
+01:15:32,940 --> 01:15:36,540
+work to let a human give just a
+little bit of input that makes
+
+1369
+01:15:36,540 --> 01:15:40,560
+the work. Basically, it's
+automating 95% of a task, and
+
+1370
+01:15:40,560 --> 01:15:44,250
+letting the human do it. And
+then kind of the, we get back,
+
+1371
+01:15:44,280 --> 01:15:46,860
+that's sort of the the far end,
+and then maybe you just have
+
+1372
+01:15:46,890 --> 01:15:50,220
+complete human control on the
+other end. So we have things
+
+1373
+01:15:50,220 --> 01:15:53,850
+that are sort of all along the
+spectrum. And as we automate
+
+1374
+01:15:53,850 --> 01:15:58,740
+more things, we try to move
+things further to the right, to
+
+1375
+01:15:58,740 --> 01:16:02,370
+make them more automated and
+take less human time. And that's
+
+1376
+01:16:02,370 --> 01:16:04,530
+a lot of the interesting things
+that our engineering team is
+
+1377
+01:16:04,530 --> 01:16:08,010
+working on now is, hey, how can
+we take something that right now
+
+1378
+01:16:08,280 --> 01:16:11,640
+we're just showing a person? And
+how can we have the robot make a
+
+1379
+01:16:11,640 --> 01:16:14,370
+decision and just have the human
+review and said, Yeah, cuz
+
+1380
+01:16:14,370 --> 01:16:17,550
+that's a lot easier, for sure.
+And the really cool thing about
+
+1381
+01:16:17,820 --> 01:16:20,970
+this model of having these
+different collections of kinds
+
+1382
+01:16:21,240 --> 01:16:26,850
+of human in the loop is that our
+humans basically act as a buffer
+
+1383
+01:16:27,060 --> 01:16:30,090
+for engineering work, where if
+there's a new feature that a
+
+1384
+01:16:30,090 --> 01:16:34,920
+customer requests, start a call,
+where it's done fully manually.
+
+1385
+01:16:35,250 --> 01:16:38,820
+And what that does is there can
+be a crazy new request from a
+
+1386
+01:16:38,820 --> 01:16:42,540
+customer. And normally, you'd
+have to say, ah, like, do we do
+
+1387
+01:16:42,540 --> 01:16:45,120
+this, it's this big product
+decision, you can try it and
+
+1388
+01:16:45,120 --> 01:16:48,780
+then see if you try it, and see
+if they actually use it and see
+
+1389
+01:16:48,780 --> 01:16:51,480
+if other if other people
+actually like it. Yep. And then
+
+1390
+01:16:51,480 --> 01:16:54,450
+if everyone does start using
+this feature, great, like, let's
+
+1391
+01:16:54,450 --> 01:16:57,690
+automate it. But if you know, no
+one is using it, if it's kind of
+
+1392
+01:16:57,690 --> 01:17:01,410
+a one off, you can either leave
+it manual or quietly deprecated.
+
+1393
+01:17:01,680 --> 01:17:04,680
+So it lets us kind of dip our
+toes in the water with a lot of
+
+1394
+01:17:04,680 --> 01:17:09,060
+features, and then automate them
+as needed later. So we spend a
+
+1395
+01:17:09,060 --> 01:17:12,330
+lot less time implementing
+features that no one needs, and
+
+1396
+01:17:12,330 --> 01:17:16,260
+a lot more time implementing a
+feature. Once we have amazing
+
+1397
+01:17:16,260 --> 01:17:19,770
+training data for an example.
+Yes. Because then when we go and
+
+1398
+01:17:19,770 --> 01:17:23,340
+do what automate it, we have,
+you know, two months of humans
+
+1399
+01:17:23,340 --> 01:17:25,770
+doing it manually with all that
+data recorded. Yeah.
+
+1400
+01:17:27,090 --> 01:17:30,630
+Audrow Nash: So for many of the
+things that you're inspecting,
+
+1401
+01:17:30,840 --> 01:17:33,390
+and where you get the data, and
+then you try to do it in an
+
+1402
+01:17:33,390 --> 01:17:40,530
+automatic way. Are you using any
+machine learning on this? Or
+
+1403
+01:17:40,740 --> 01:17:43,560
+what what kind of tasks are you
+using machine learning for?
+
+1404
+01:17:44,400 --> 01:17:47,130
+Erik Schluntz: Yep, yeah, so we
+use a combination of classical
+
+1405
+01:17:47,130 --> 01:17:50,520
+methods and machine learning for
+a lot of these different things
+
+1406
+01:17:50,520 --> 01:17:54,060
+that we're inspecting or
+checking. And kind of one of the
+
+1407
+01:17:54,060 --> 01:17:57,990
+ways that we refer to this is
+auditing the physical world for
+
+1408
+01:17:57,990 --> 01:18:01,800
+our customers. So we Yeah,
+exactly. You know, you want to
+
+1409
+01:18:01,800 --> 01:18:04,680
+be able to audit that everyone
+in your organization has, you
+
+1410
+01:18:04,680 --> 01:18:07,950
+know, two factor authentication
+turned on, the robot lets you
+
+1411
+01:18:07,950 --> 01:18:10,980
+audit the physical world in a
+very reliable and trustable way.
+
+1412
+01:18:11,490 --> 01:18:14,910
+That you know, before you
+couldn't really trust the Oh,
+
+1413
+01:18:14,910 --> 01:18:18,150
+your guard says, Yeah, all the
+doors are closed. And we've had
+
+1414
+01:18:18,150 --> 01:18:20,190
+plenty of times where someone
+says that and then we sent the
+
+1415
+01:18:20,190 --> 01:18:23,850
+robot two doors to your robot to
+his
+
+1416
+01:18:24,330 --> 01:18:27,870
+Audrow Nash: employee. That's
+like really diligent. That
+
+1417
+01:18:28,050 --> 01:18:33,660
+example. Yeah, other workers
+really dislike said it was done.
+
+1418
+01:18:33,690 --> 01:18:36,390
+Erik Schluntz: Humans are not
+exactly humans aren't good at
+
+1419
+01:18:36,390 --> 01:18:41,010
+that kind of deal. Don't worry,
+but robots are. Yeah, um, but so
+
+1420
+01:18:41,010 --> 01:18:44,970
+basically. Sorry, what was your
+question? I got the
+
+1421
+01:18:45,000 --> 01:18:47,580
+Audrow Nash: what do you do with
+what is machine learning? Yeah,
+
+1422
+01:18:47,640 --> 01:18:50,070
+yeah. On your platform? Like,
+what kinds of tasks are you
+
+1423
+01:18:50,070 --> 01:18:50,490
+learning?
+
+1424
+01:18:51,420 --> 01:18:54,450
+Erik Schluntz: So generally, I
+would say that machine learning
+
+1425
+01:18:54,570 --> 01:18:57,480
+should be a last approach when
+it's just, you know,
+
+1426
+01:18:58,080 --> 01:19:01,170
+Audrow Nash: data. But and so I
+love that I associated it with
+
+1427
+01:19:01,170 --> 01:19:04,380
+it. I know you don't, you can
+use classical methods with the
+
+1428
+01:19:04,380 --> 01:19:06,990
+training data to just see if it
+kind of lines up. But
+
+1429
+01:19:07,410 --> 01:19:09,570
+Erik Schluntz: yeah, yeah,
+exactly. So I would say, you
+
+1430
+01:19:09,570 --> 01:19:12,030
+know, we, we usually start for
+something new that we're doing,
+
+1431
+01:19:12,420 --> 01:19:15,180
+trying to use classical methods
+and trying to like, Hey, can we
+
+1432
+01:19:15,180 --> 01:19:19,170
+write an explicit solution for
+this? And then if not, if it's
+
+1433
+01:19:19,170 --> 01:19:21,420
+something that's challenging,
+We'll train a neural network,
+
+1434
+01:19:21,930 --> 01:19:24,480
+you know, based on some of the
+data. But it's actually really
+
+1435
+01:19:24,480 --> 01:19:27,480
+interesting that we've gotten
+very far using some even
+
+1436
+01:19:27,480 --> 01:19:29,520
+classical computer vision
+techniques and looking for
+
+1437
+01:19:29,520 --> 01:19:33,510
+diffs. Really. So an example is
+because our robot has very good
+
+1438
+01:19:33,510 --> 01:19:36,690
+localization, we can go take a
+picture of the same thing from
+
+1439
+01:19:36,690 --> 01:19:40,080
+exactly the same spot each time.
+And we can just look at a diff
+
+1440
+01:19:40,080 --> 01:19:42,810
+and say, Hey, this looks
+different than last time bow.
+
+1441
+01:19:43,590 --> 01:19:47,340
+And then suddenly, you have a
+way to inspect, you know,
+
+1442
+01:19:47,340 --> 01:19:52,020
+anything new, even if it's a,
+you know, whatever the arbitrary
+
+1443
+01:19:52,020 --> 01:19:55,080
+scene is, yeah, wherever the
+arbitrary scene is, we have now
+
+1444
+01:19:55,080 --> 01:19:58,320
+a way to flag this up to an
+operator of Hey, I don't know
+
+1445
+01:19:58,320 --> 01:20:01,350
+whether there's a fire
+extinguisher here. But it looks
+
+1446
+01:20:01,350 --> 01:20:04,320
+different than the last time I
+saw. Yeah. Yeah, that actually
+
+1447
+01:20:04,320 --> 01:20:04,770
+was no
+
+1448
+01:20:04,770 --> 01:20:06,810
+Audrow Nash: semantic
+understanding. But you're still
+
+1449
+01:20:06,810 --> 01:20:11,400
+like, I ran a diff on the old
+image and the new image, I
+
+1450
+01:20:11,400 --> 01:20:13,950
+looked at the difference. And I
+saw that there was this many
+
+1451
+01:20:13,950 --> 01:20:17,130
+pixels different, or some
+measure of entropy or whatever
+
+1452
+01:20:17,130 --> 01:20:18,420
+it might be. And yeah,
+
+1453
+01:20:18,450 --> 01:20:20,910
+Erik Schluntz: and we found some
+very interesting pre processing
+
+1454
+01:20:20,910 --> 01:20:24,660
+techniques to do the diff in a
+non pixel space. Oh, that lets
+
+1455
+01:20:24,660 --> 01:20:28,800
+us signal much more area, much
+more invariant to lighting
+
+1456
+01:20:28,800 --> 01:20:30,300
+conditions, and things like
+that.
+
+1457
+01:20:31,440 --> 01:20:33,660
+Audrow Nash: Hmm, that's
+awesome. can speak on that a
+
+1458
+01:20:33,660 --> 01:20:35,490
+little bit? Or is, yeah,
+
+1459
+01:20:35,880 --> 01:20:38,400
+Erik Schluntz: one, one example
+is that you can do things like
+
+1460
+01:20:38,400 --> 01:20:41,100
+edge, detect the image, and then
+do gifts at the edge detected
+
+1461
+01:20:41,100 --> 01:20:44,340
+images. And that that lets you
+see that something's sort of
+
+1462
+01:20:44,370 --> 01:20:47,490
+with heart outlines has moved in
+the scene. But an overall
+
+1463
+01:20:47,490 --> 01:20:51,450
+lighting change is very, not
+very picked out. Yeah. doesn't
+
+1464
+01:20:51,510 --> 01:20:54,060
+doesn't trigger that. And so we
+have sort of things like that,
+
+1465
+01:20:54,510 --> 01:20:58,530
+that we can do to very easily
+notice changes. It's
+
+1466
+01:20:58,530 --> 01:21:00,600
+Audrow Nash: cool to use these
+like incredibly simple
+
+1467
+01:21:00,600 --> 01:21:03,840
+operations. So if you want to
+get an edge detection, you just
+
+1468
+01:21:03,840 --> 01:21:06,900
+multiply plus like a plus one
+and a minus one over the
+
+1469
+01:21:06,900 --> 01:21:08,820
+convolve it over the whole
+image, and then you get your
+
+1470
+01:21:08,820 --> 01:21:12,450
+edges from the resulting image.
+It's and it's so crazy that you
+
+1471
+01:21:12,450 --> 01:21:15,750
+can use that and that will be
+useful and fairly invariant,
+
+1472
+01:21:15,750 --> 01:21:18,690
+which is very nice to different
+lighting conditions. And
+
+1473
+01:21:19,739 --> 01:21:22,409
+Erik Schluntz: yeah, yeah, we're
+we're really big fans of keeping
+
+1474
+01:21:22,409 --> 01:21:25,679
+things very simple in the
+design. And if something feels
+
+1475
+01:21:25,679 --> 01:21:28,379
+sort of overly complicated, it's
+probably going to be fragile.
+
+1476
+01:21:28,379 --> 01:21:31,739
+When it actually gets working in
+the real. This, we see lots of
+
+1477
+01:21:31,739 --> 01:21:34,649
+things, you know, from research,
+like oh, like, did they need to
+
+1478
+01:21:34,649 --> 01:21:37,859
+do that? Like, was that
+something in a research paper
+
+1479
+01:21:37,859 --> 01:21:39,149
+just to make it more
+publishable?
+
+1480
+01:21:40,260 --> 01:21:44,160
+Audrow Nash: Totally, how phony
+now so we're running out of
+
+1481
+01:21:44,160 --> 01:21:47,460
+time, I'd like to talk a little
+bit. So your experience in
+
+1482
+01:21:47,460 --> 01:21:51,600
+startups in this startup, and I
+you said you previously were
+
+1483
+01:21:51,600 --> 01:21:55,320
+starting companies or have
+started companies. And talk to
+
+1484
+01:21:55,320 --> 01:22:02,010
+me just a little bit about this
+time, like right now for being a
+
+1485
+01:22:02,010 --> 01:22:06,300
+robotics startup, and maybe just
+the landscape as you see it?
+
+1486
+01:22:07,500 --> 01:22:10,410
+Erik Schluntz: Yeah, yeah. So
+it's a really interesting time
+
+1487
+01:22:10,410 --> 01:22:13,740
+for robotics companies. And
+maybe I'll actually kind of
+
+1488
+01:22:13,740 --> 01:22:17,550
+backup Sure, maybe kind of my
+history of how I got here is, I
+
+1489
+01:22:17,550 --> 01:22:21,480
+started my first company called
+pulse metrics. In college with a
+
+1490
+01:22:21,480 --> 01:22:24,900
+friend, we dropped out of
+Harvard for a year went through
+
+1491
+01:22:24,900 --> 01:22:28,470
+Y Combinator. And that company
+eventually got acquired while I
+
+1492
+01:22:28,470 --> 01:22:31,320
+went back to school to finish my
+degree. Oh, congrats. That's
+
+1493
+01:22:31,320 --> 01:22:34,350
+awesome. Thank you. That's
+actually where I met my current
+
+1494
+01:22:34,350 --> 01:22:37,830
+co founder, Travis style. He
+also had a startup at the time
+
+1495
+01:22:39,210 --> 01:22:41,940
+that he was working on, we
+became pretty good friends
+
+1496
+01:22:41,940 --> 01:22:44,670
+chatting about robotics, even
+though neither of us at the time
+
+1497
+01:22:44,670 --> 01:22:47,520
+were doing robotics. And we just
+kind of stayed in touch. We're
+
+1498
+01:22:47,520 --> 01:22:50,970
+always bouncing startup ideas
+off of each other. And I think
+
+1499
+01:22:50,970 --> 01:22:54,480
+the really cool thing is of
+being a second time founder, was
+
+1500
+01:22:54,480 --> 01:22:57,210
+it just felt like we knew what
+we should be doing. You know,
+
+1501
+01:22:57,210 --> 01:23:00,330
+looking back to the first
+startup, it's crazy that we got
+
+1502
+01:23:00,330 --> 01:23:02,430
+anywhere, because we didn't know
+what we were doing. It's like,
+
+1503
+01:23:02,430 --> 01:23:04,380
+oh, maybe we should try
+marketing today. Maybe we should
+
+1504
+01:23:04,380 --> 01:23:07,230
+try to build features. Yeah, we
+didn't know what the goalposts
+
+1505
+01:23:07,230 --> 01:23:10,140
+were. And I think that's the
+really great time without her
+
+1506
+01:23:10,140 --> 01:23:12,840
+The really great thing about
+doing something the second time
+
+1507
+01:23:12,840 --> 01:23:16,530
+is, we know, what are the goals
+that we need to hit. And I think
+
+1508
+01:23:16,530 --> 01:23:20,370
+that a lot of the ways that I
+think about startups is
+
+1509
+01:23:21,300 --> 01:23:25,080
+progressive de risking, and look
+at what are the experiments you
+
+1510
+01:23:25,080 --> 01:23:27,540
+can be running each week that
+reduced the risk of your
+
+1511
+01:23:27,540 --> 01:23:32,070
+business as much as possible.
+And think about what is that
+
+1512
+01:23:32,070 --> 01:23:36,030
+next milestone we need to hit?
+And what are the kind of
+
+1513
+01:23:36,060 --> 01:23:39,540
+waterfall things that we need to
+do to get there. And a lot of
+
+1514
+01:23:39,540 --> 01:23:42,180
+times for early stage startups,
+that's different funding rounds,
+
+1515
+01:23:42,420 --> 01:23:44,910
+and sort of think, Okay, well,
+they get this, I need to
+
+1516
+01:23:44,910 --> 01:23:47,730
+probably have this much revenue.
+That means I need to get this
+
+1517
+01:23:47,730 --> 01:23:50,370
+many customers, that means I
+need to get this many features
+
+1518
+01:23:50,460 --> 01:23:53,880
+as an adult. And so you can kind
+of work backwards to what you
+
+1519
+01:23:53,880 --> 01:23:57,780
+need. And that helps decide what
+you actually need to be focused
+
+1520
+01:23:57,780 --> 01:24:00,720
+on. As a founder of what games
+your engineering team to be
+
+1521
+01:24:00,720 --> 01:24:04,530
+focused on, to decide, you know,
+really what's, what's going to
+
+1522
+01:24:04,530 --> 01:24:08,430
+be a feature that works and is
+important, and, you know, helps
+
+1523
+01:24:08,430 --> 01:24:10,410
+the company versus something
+that's just nice to have.
+
+1524
+01:24:11,910 --> 01:24:15,780
+Audrow Nash: So how do you so is
+this? Can you speak a bit more
+
+1525
+01:24:15,780 --> 01:24:17,010
+about picking a problem?
+
+1526
+01:24:18,180 --> 01:24:21,540
+Erik Schluntz: Yeah, sure. So
+when when Travis and I started
+
+1527
+01:24:21,540 --> 01:24:25,140
+looking at ideas, we had a
+couple of constraints. We wanted
+
+1528
+01:24:25,140 --> 01:24:27,420
+to find something that we could
+see ourselves loving and doing
+
+1529
+01:24:27,420 --> 01:24:30,750
+for 10 years. And you know,
+cobalt is an amazing fit for
+
+1530
+01:24:30,750 --> 01:24:33,990
+that pelea. You know, secure
+security just feels like this
+
+1531
+01:24:33,990 --> 01:24:36,840
+amazing first use for robots.
+And it's really good opportunity
+
+1532
+01:24:36,840 --> 01:24:40,710
+to get robots out into the
+physical world and get around
+
+1533
+01:24:40,710 --> 01:24:42,840
+people, not just in factories
+where no one's going to see
+
+1534
+01:24:42,840 --> 01:24:45,180
+them, but in office buildings
+where they're going to be around
+
+1535
+01:24:45,180 --> 01:24:48,600
+people all day. And it was
+something that could be too
+
+1536
+01:24:48,960 --> 01:24:51,690
+could be done with today's
+technology, sort of really like
+
+1537
+01:24:52,230 --> 01:24:55,950
+the other sort of constraint
+that we had her. We wanted to
+
+1538
+01:24:55,950 --> 01:24:58,080
+find something that we could
+immediately get it to market
+
+1539
+01:24:58,080 --> 01:25:01,860
+with, you know, no research and
+development. That was another
+
+1540
+01:25:01,860 --> 01:25:05,400
+really good thing about cobalt
+is we could go and we could use
+
+1541
+01:25:05,400 --> 01:25:09,720
+human in the loop to fill in the
+deficiencies. And we didn't want
+
+1542
+01:25:09,720 --> 01:25:13,170
+to do something that would take,
+you know, a lot of r&d or had
+
+1543
+01:25:13,170 --> 01:25:16,050
+very high technical risk. Yep,
+we wanted to find something that
+
+1544
+01:25:16,050 --> 01:25:18,660
+we could use today's technology,
+and that will just get better
+
+1545
+01:25:18,660 --> 01:25:22,230
+over time. And in our last
+constraint, believe it or not,
+
+1546
+01:25:22,230 --> 01:25:26,430
+was no hardware totally failed
+on and we were actually looking
+
+1547
+01:25:26,430 --> 01:25:30,090
+at a lot of non robotics ideas
+at the time, but this one,
+
+1548
+01:25:30,090 --> 01:25:33,240
+actually we, we kind of found
+that it was such, we found such
+
+1549
+01:25:33,240 --> 01:25:36,270
+a strong demand from this first
+customer we talked to, and then
+
+1550
+01:25:36,270 --> 01:25:38,160
+he put us in touch with all of
+his other friends in the
+
+1551
+01:25:38,160 --> 01:25:41,160
+security industry. And we just
+got such a positive response,
+
+1552
+01:25:41,160 --> 01:25:44,220
+like, wow, yeah, you know, it's
+gonna be a lot harder to do a
+
+1553
+01:25:44,220 --> 01:25:46,800
+hardware startup, but like, we
+do have the background for it.
+
+1554
+01:25:47,610 --> 01:25:50,550
+And you know, we do have, you
+know, it seems like it's a
+
+1555
+01:25:50,550 --> 01:25:54,930
+really good, good problem and
+space to tackle. But we were
+
+1556
+01:25:54,930 --> 01:26:00,060
+basically looking for, for
+customers, and where they said
+
+1557
+01:26:00,060 --> 01:26:03,150
+they had a problem, and they
+would pay money to solve it. And
+
+1558
+01:26:03,150 --> 01:26:06,120
+that they would give us a
+handshake deal that, once this
+
+1559
+01:26:06,120 --> 01:26:09,900
+is ready, I will pay for it at
+this price. And we got a couple
+
+1560
+01:26:09,900 --> 01:26:13,950
+people to get to that point do
+that those handshake deals. And
+
+1561
+01:26:13,950 --> 01:26:16,230
+that was enough for us to go
+raise our first funding round
+
+1562
+01:26:16,230 --> 01:26:19,680
+of, Hey, this is our idea. Don't
+believe us go talk to these
+
+1563
+01:26:19,680 --> 01:26:22,350
+customers that have done these
+handshake deals with us, and
+
+1564
+01:26:22,350 --> 01:26:24,930
+said, Let them tell you how
+excited they are for this
+
+1565
+01:26:24,930 --> 01:26:26,280
+product, and how they would use
+it.
+
+1566
+01:26:27,600 --> 01:26:30,510
+Audrow Nash: Okay, so a few
+things here. Very interesting to
+
+1567
+01:26:30,510 --> 01:26:34,140
+me the first, can you just tell
+me a bit about a bit more in
+
+1568
+01:26:34,140 --> 01:26:37,440
+detail about how you did your
+initial market research, when
+
+1569
+01:26:37,440 --> 01:26:39,900
+you were talking to people and
+seeing what they would pay for
+
+1570
+01:26:39,900 --> 01:26:42,840
+in this kind of thing? Like, how
+does someone do that kind of
+
+1571
+01:26:42,840 --> 01:26:47,040
+thing? How do you just, I don't
+know, like, how do you go about
+
+1572
+01:26:47,160 --> 01:26:51,180
+meeting these people? And what
+kind of questions and like,
+
+1573
+01:26:51,180 --> 01:26:53,760
+what's the heuristic when doing
+that kind of thing? Yeah.
+
+1574
+01:26:54,300 --> 01:26:56,370
+Erik Schluntz: So what we were
+looking for was talking to
+
+1575
+01:26:56,370 --> 01:27:01,530
+anyone that we didn't know what
+their job actually entailed. And
+
+1576
+01:27:01,530 --> 01:27:05,310
+it's funny, but it's, it's not
+that hard to do, you just kind
+
+1577
+01:27:05,310 --> 01:27:08,550
+of have to go and start doing
+it. And whether that's talking
+
+1578
+01:27:08,550 --> 01:27:10,890
+to strangers at Starbucks, which
+actually isn't that effective.
+
+1579
+01:27:11,850 --> 01:27:14,310
+But really, what we found most
+effective was going through our
+
+1580
+01:27:14,310 --> 01:27:17,760
+network, and really going in
+like asking, I asked every
+
+1581
+01:27:17,760 --> 01:27:20,550
+single one of my friends, what
+are your parents do? What are
+
+1582
+01:27:20,550 --> 01:27:24,690
+your aunts and uncles do? And
+you know what, to people that I
+
+1583
+01:27:24,690 --> 01:27:27,480
+knew, like, just asking them
+what their friends did and like,
+
+1584
+01:27:28,649 --> 01:27:29,249
+Audrow Nash: oh, cool,
+
+1585
+01:27:29,250 --> 01:27:31,350
+Erik Schluntz: I made this like
+kind of List of everyone I knew
+
+1586
+01:27:31,350 --> 01:27:33,930
+and went through them. And like,
+tell me about like everyone that
+
+1587
+01:27:33,930 --> 01:27:36,750
+you're, like, close enough to
+that you could ask for a favor
+
+1588
+01:27:36,750 --> 01:27:39,270
+and like, tell me like, what is
+your uncle do? What is your aunt
+
+1589
+01:27:39,270 --> 01:27:42,120
+do? And we kind of wrote out
+like, Oh, actually, I don't know
+
+1590
+01:27:42,120 --> 01:27:45,120
+what being a pharmacist is like,
+like, yeah, go talk to that
+
+1591
+01:27:45,120 --> 01:27:47,430
+person. I don't know what the
+security director is like, let's
+
+1592
+01:27:47,430 --> 01:27:49,890
+go talk to that person. I don't
+know what being a lawyer is
+
+1593
+01:27:49,890 --> 01:27:53,220
+like, let's go talk to that
+person. And then once we were
+
+1594
+01:27:53,220 --> 01:27:56,880
+talking to those, those people,
+you know, in our, in the back of
+
+1595
+01:27:56,880 --> 01:28:00,210
+our minds, we had a couple broad
+theses that we cared about, and
+
+1596
+01:28:00,210 --> 01:28:02,820
+that things that we were looking
+for, they were mainly around
+
+1597
+01:28:02,820 --> 01:28:07,860
+enterprise, and finding ways
+that we could use software or AI
+
+1598
+01:28:08,310 --> 01:28:12,060
+to make some process better or
+more efficient, or cheaper. And
+
+1599
+01:28:12,060 --> 01:28:14,250
+so that was kind of a lens that
+we were looking at these
+
+1600
+01:28:14,250 --> 01:28:16,530
+interviews through, but a lot of
+it was trying to be very open
+
+1601
+01:28:16,530 --> 01:28:20,040
+ended, like, tell me what you
+actually do day to day. But if
+
+1602
+01:28:20,040 --> 01:28:23,100
+there's one problem that you
+could solve, or like pay money
+
+1603
+01:28:23,100 --> 01:28:26,760
+to solve at work, what would it
+be, and trying to really focus
+
+1604
+01:28:26,760 --> 01:28:29,910
+on the problem, because a lot of
+times people will come up with
+
+1605
+01:28:29,910 --> 01:28:32,430
+an idea that they want you to do
+what it's kind of like people
+
+1606
+01:28:32,430 --> 01:28:35,430
+asking for the faster horse. But
+you have to kind of keep going
+
+1607
+01:28:35,430 --> 01:28:37,980
+back and really understanding
+what is the pain point that they
+
+1608
+01:28:37,980 --> 01:28:40,710
+have? Like, what would it
+actually mean solving. And a lot
+
+1609
+01:28:40,710 --> 01:28:44,340
+of times from someone saying an
+idea that they have, you can
+
+1610
+01:28:44,340 --> 01:28:46,320
+kind of work back to what is
+that actual pain?
+
+1611
+01:28:46,320 --> 01:28:47,790
+Audrow Nash: What is the pain
+point? Yeah,
+
+1612
+01:28:48,180 --> 01:28:49,530
+Erik Schluntz: come up with an
+even better idea.
+
+1613
+01:28:50,160 --> 01:28:54,210
+Audrow Nash: Gotcha. What an
+interesting thing. Okay. And
+
+1614
+01:28:54,210 --> 01:28:59,010
+then the other thing that I'm
+really curious, so you can you
+
+1615
+01:28:59,010 --> 01:29:01,470
+talk a little bit about kind of
+the way that you have been
+
+1616
+01:29:01,470 --> 01:29:02,880
+funded at cobalt?
+
+1617
+01:29:03,840 --> 01:29:06,720
+Erik Schluntz: Yeah, absolutely.
+So we have great financial
+
+1618
+01:29:06,720 --> 01:29:12,690
+backers. Bloomberg beta, did our
+seed round in 2016. So they're
+
+1619
+01:29:12,690 --> 01:29:15,390
+really good fund focus on the
+future of work kind of
+
+1620
+01:29:15,450 --> 01:29:18,450
+designing, you know, their,
+their main LP is Michael
+
+1621
+01:29:18,450 --> 01:29:22,590
+Bloomberg. So they really care
+about helping invent what his
+
+1622
+01:29:22,590 --> 01:29:25,770
+work is going to be like in the
+future. Then for our series, a
+
+1623
+01:29:25,830 --> 01:29:29,460
+we raised from Alfred Lind at
+Sequoia, he was sort of, Oh,
+
+1624
+01:29:29,460 --> 01:29:33,330
+yeah. Yeah. So Sequoia has a
+really, really amazing duster.
+
+1625
+01:29:33,480 --> 01:29:36,300
+And Alfred Lin was actually the
+top of our list of who we wanted
+
+1626
+01:29:36,300 --> 01:29:39,660
+to, to go with for our series.
+Wow. You know, he is a he's a
+
+1627
+01:29:39,660 --> 01:29:42,960
+really, really incredible
+individual. He was the CEO of
+
+1628
+01:29:42,960 --> 01:29:48,000
+Zappos, and actually was helped
+bring Kiva robotics into Amazon
+
+1629
+01:29:48,000 --> 01:29:52,650
+after Zappos got acquired by
+Amazon, and so he's very
+
+1630
+01:29:52,650 --> 01:29:56,310
+familiar with robotics. He was
+most importantly to us. He is an
+
+1631
+01:29:56,310 --> 01:30:00,510
+operator. He's been in startups
+and feels the pain And you know,
+
+1632
+01:30:00,510 --> 01:30:03,960
+knows what it's like, you know,
+with the time pressure and like
+
+1633
+01:30:03,960 --> 01:30:06,870
+everything on fire. And we
+really wanted people like that
+
+1634
+01:30:06,870 --> 01:30:09,150
+people that had been through
+this themselves and could sort
+
+1635
+01:30:09,150 --> 01:30:12,360
+of know what Travis and I were
+going through, rather than
+
+1636
+01:30:12,360 --> 01:30:15,360
+someone that was kind of just a
+financial analysts that had
+
+1637
+01:30:15,360 --> 01:30:18,750
+never been in it themselves and
+was making a bet on us. And then
+
+1638
+01:30:19,260 --> 01:30:24,060
+we raised a Series B from cotu.
+Later, and we raised about,
+
+1639
+01:30:24,090 --> 01:30:27,780
+we've raised around 16 million
+total, from our series A's and
+
+1640
+01:30:27,780 --> 01:30:33,120
+B's. cotu was another great
+investor, our partner there is
+
+1641
+01:30:33,150 --> 01:30:36,960
+Chris Fredrickson. He was very
+early in luxury, and actually
+
+1642
+01:30:36,960 --> 01:30:41,490
+did a lot of really hard work
+around deliveries and logistics.
+
+1643
+01:30:41,640 --> 01:30:43,680
+And that's something that's very
+hard for us as we're moving
+
+1644
+01:30:43,680 --> 01:30:46,620
+hardware around around the
+country. And actually, across
+
+1645
+01:30:46,620 --> 01:30:48,390
+different continents. We
+actually have customers in
+
+1646
+01:30:48,390 --> 01:30:51,510
+Australia and Japan. Oh, wow.
+The UK. So Oh, yeah. You know,
+
+1647
+01:30:51,540 --> 01:30:54,870
+logistics are very hard for
+moving five foot tall robot
+
+1648
+01:30:55,470 --> 01:30:58,230
+around on. So yeah. So we've
+been very, very happy with our
+
+1649
+01:30:58,230 --> 01:31:00,390
+investors at some of the best
+companies in Silicon Valley.
+
+1650
+01:31:01,470 --> 01:31:04,920
+Audrow Nash: Yeah. That's, yeah,
+I mean, you guys are very
+
+1651
+01:31:04,920 --> 01:31:09,210
+promising. So it's wonderful to
+see Great Investors supporting
+
+1652
+01:31:09,210 --> 01:31:15,150
+you, as well. Can you can you?
+So for someone who wants advice
+
+1653
+01:31:15,150 --> 01:31:21,390
+on how to approach investors? Or
+how to look for the I just any
+
+1654
+01:31:21,390 --> 01:31:24,090
+advice on getting funding? I
+suppose that you have?
+
+1655
+01:31:25,020 --> 01:31:28,260
+Erik Schluntz: Yeah, yeah. I
+would say to put your mind, put
+
+1656
+01:31:28,260 --> 01:31:30,120
+yourself in the mind of the
+investor. And what they're
+
+1657
+01:31:30,120 --> 01:31:33,660
+looking for is, how is this
+going to fail? And they're
+
+1658
+01:31:33,660 --> 01:31:36,210
+looking for the startup idea,
+that's, they're looking for a
+
+1659
+01:31:36,210 --> 01:31:38,220
+startup where they look at it,
+like, Oh, I don't see any
+
+1660
+01:31:38,220 --> 01:31:41,880
+possible way this could fail.
+And so sort of think, put
+
+1661
+01:31:41,880 --> 01:31:44,430
+yourself in that mindset and
+think, why would an investor say
+
+1662
+01:31:44,430 --> 01:31:48,240
+no to me, and then start working
+on fixing those things. And that
+
+1663
+01:31:48,240 --> 01:31:50,730
+might be they, they think, oh, I
+don't think this technology is
+
+1664
+01:31:50,730 --> 01:31:53,580
+possible, then go build a
+prototype, they might say, I
+
+1665
+01:31:53,580 --> 01:31:56,730
+don't think, you know, people
+are going to actually want this
+
+1666
+01:31:56,760 --> 01:31:59,700
+go get customers, or, you know,
+I don't think people are going
+
+1667
+01:31:59,700 --> 01:32:02,820
+to pay for this show that people
+will pay a high price for it.
+
+1668
+01:32:03,480 --> 01:32:05,700
+It's a really, you know, think
+about what the objections are
+
+1669
+01:32:05,700 --> 01:32:11,700
+going to be. And then your work
+as an early stage founder is, is
+
+1670
+01:32:11,850 --> 01:32:15,000
+doing things and collecting
+evidence to show that this is
+
+1671
+01:32:15,000 --> 01:32:18,630
+working. Yeah, and a lot of that
+evidence looks like building an
+
+1672
+01:32:18,630 --> 01:32:21,270
+early stage business of getting
+customers building a prototype.
+
+1673
+01:32:21,690 --> 01:32:24,660
+But really sort of it, you know,
+in the first year of a business
+
+1674
+01:32:24,660 --> 01:32:28,020
+are yours to the revenue isn't
+actually important, it's it's
+
+1675
+01:32:28,020 --> 01:32:30,750
+just an indicator that you will
+get more revenue in the future.
+
+1676
+01:32:31,650 --> 01:32:35,310
+And so you need to be thinking
+about it in terms of what is an
+
+1677
+01:32:35,310 --> 01:32:38,760
+investor need to see, to show
+that this is a great idea, and
+
+1678
+01:32:38,760 --> 01:32:40,740
+that people are going to want
+this and that we're the correct
+
+1679
+01:32:40,740 --> 01:32:41,430
+team to build it.
+
+1680
+01:32:41,670 --> 01:32:47,850
+Audrow Nash: Yeah. So one thing
+that I have seen many times is
+
+1681
+01:32:47,850 --> 01:32:52,740
+people or companies accepting
+funding, and the funding comes
+
+1682
+01:32:52,740 --> 01:32:56,160
+with terms and things that
+eventually suffocate the
+
+1683
+01:32:56,160 --> 01:33:02,580
+company. Can you talk a little
+bit about avoiding things like
+
+1684
+01:33:02,580 --> 01:33:07,200
+this, or just how do you make
+sure you don't accept bad
+
+1685
+01:33:07,200 --> 01:33:10,890
+investment or whatever it might
+be? Yeah.
+
+1686
+01:33:11,850 --> 01:33:14,640
+Erik Schluntz: So it's, that's
+definitely sort of a negotiation
+
+1687
+01:33:14,640 --> 01:33:16,980
+game. And you just need to make
+sure that you're in a strong
+
+1688
+01:33:16,980 --> 01:33:20,190
+enough point where, even if
+someone is offering more money,
+
+1689
+01:33:20,220 --> 01:33:23,760
+if there are those bad terms in
+there, you should probably take
+
+1690
+01:33:23,760 --> 01:33:26,760
+someone else's money. And being
+just knowledgeable about it,
+
+1691
+01:33:26,760 --> 01:33:29,490
+really reading through the docs
+and understanding sort of what's
+
+1692
+01:33:30,240 --> 01:33:33,120
+you know, what's happening, and
+cut, some of the things to worry
+
+1693
+01:33:33,120 --> 01:33:37,110
+about are sort of guaranteed
+returns, or sort of any sort of
+
+1694
+01:33:37,140 --> 01:33:41,580
+overhangs where someone can get
+sort of more than they otherwise
+
+1695
+01:33:41,580 --> 01:33:44,940
+would, if your valuation is
+lower. But one of the best
+
+1696
+01:33:44,940 --> 01:33:48,510
+things there is to get, you
+know, a really, really good
+
+1697
+01:33:49,410 --> 01:33:53,130
+investor on your cap table to
+start. And then, you know, with
+
+1698
+01:33:53,130 --> 01:33:57,150
+us having Sequoia and Bloomberg
+and cotu, no investor is going
+
+1699
+01:33:57,150 --> 01:34:00,240
+to try that. Yeah, they don't
+want Sequoia to get mad at them.
+
+1700
+01:34:00,930 --> 01:34:03,690
+And so having really, really
+good partners, helps you
+
+1701
+01:34:03,720 --> 01:34:06,870
+negotiate because you know, that
+new investor you're talking to,
+
+1702
+01:34:07,230 --> 01:34:09,420
+you know, your existing
+investors are on your side, and
+
+1703
+01:34:09,420 --> 01:34:11,520
+that, that when you're talking
+to so getting really good
+
+1704
+01:34:11,520 --> 01:34:16,170
+partners, and really well known
+people where they care about
+
+1705
+01:34:16,170 --> 01:34:19,560
+that reputation, a no name
+investor might give you money,
+
+1706
+01:34:19,920 --> 01:34:23,910
+but if they don't have a
+reputation to lose, if something
+
+1707
+01:34:23,910 --> 01:34:26,220
+comes up, they might try to
+squeeze you for any penny of
+
+1708
+01:34:26,220 --> 01:34:29,760
+your work. Whereas a really well
+known and sort of prominent
+
+1709
+01:34:29,760 --> 01:34:34,110
+investor like Sequoia, they care
+more about their reputation with
+
+1710
+01:34:34,110 --> 01:34:38,250
+other founders and sort of
+showing that they're gonna do
+
+1711
+01:34:38,250 --> 01:34:41,850
+right by people. They care more
+about that than making a few
+
+1712
+01:34:41,850 --> 01:34:43,470
+extra dollars got any deal.
+
+1713
+01:34:44,370 --> 01:34:48,000
+Audrow Nash: Alright, so
+wrapping up. What advice do you
+
+1714
+01:34:48,000 --> 01:34:53,940
+have for say, like a 20 year old
+version of yourself? I guess in
+
+1715
+01:34:54,450 --> 01:34:59,880
+now or in back then. Let's just
+how would you do the same thing
+
+1716
+01:34:59,880 --> 01:35:04,650
+I Then a little better, or what
+would you wish you better know?
+
+1717
+01:35:05,430 --> 01:35:06,480
+Yeah, advice for young,
+
+1718
+01:35:07,500 --> 01:35:09,090
+Erik Schluntz: I would say the
+most important thing is just
+
+1719
+01:35:09,120 --> 01:35:11,790
+always keep talking to customers
+and sort of always stay
+
+1720
+01:35:11,790 --> 01:35:15,360
+skeptical. You know, make sure
+you're always going to figure
+
+1721
+01:35:15,360 --> 01:35:18,720
+out what the pain point is and,
+and never sort of stop and think
+
+1722
+01:35:18,720 --> 01:35:21,780
+that you've, you've solved
+something. Because definitely
+
+1723
+01:35:21,780 --> 01:35:25,680
+for us, you know, from that
+first robot, to sort of where we
+
+1724
+01:35:25,680 --> 01:35:28,500
+are now, so many things have
+changed not just about the
+
+1725
+01:35:28,500 --> 01:35:31,980
+robot, but how we're delivering
+the value to the customer. And
+
+1726
+01:35:32,010 --> 01:35:34,680
+those iterations have led us
+really grow and scale and
+
+1727
+01:35:34,680 --> 01:35:38,040
+provide way better value. So I'd
+say just really stay focused on
+
+1728
+01:35:38,040 --> 01:35:42,120
+the customer. The technology and
+the product is just a means to
+
+1729
+01:35:42,120 --> 01:35:44,760
+an end. It's not an end in
+itself, you need to stay focused
+
+1730
+01:35:44,760 --> 01:35:47,190
+on the customer and their pain
+points. Awesome.
+
+1731
+01:35:48,240 --> 01:35:54,600
+Audrow Nash: So wrapping up, do
+you have any links or social
+
+1732
+01:35:54,600 --> 01:35:57,000
+media or anything you'd like to
+share with our listeners?
+
+1733
+01:35:57,809 --> 01:36:00,359
+Erik Schluntz: Yeah, absolutely.
+I can put in a couple links to
+
+1734
+01:36:00,359 --> 01:36:03,749
+some YouTube videos of our robot
+using elevators, with its
+
+1735
+01:36:03,749 --> 01:36:08,099
+elevator arm. some links to sort
+of our hiring page, and we are
+
+1736
+01:36:08,099 --> 01:36:11,909
+looking for robotics engineers
+and web engineers. Pretty much
+
+1737
+01:36:11,909 --> 01:36:15,299
+everything right now we have a
+really strong or a lot of really
+
+1738
+01:36:15,299 --> 01:36:17,189
+strong customer growth. And
+we're trying to keep up the
+
+1739
+01:36:17,189 --> 01:36:19,769
+engineering team with it to help
+deliver that value.
+
+1740
+01:36:20,700 --> 01:36:23,220
+Audrow Nash: Yeah, awesome. So
+I'll put links in the video
+
+1741
+01:36:23,220 --> 01:36:26,610
+description and podcast
+description. That sounds good.
+
+1742
+01:36:27,000 --> 01:36:28,410
+Thank you. It's been a pleasure.
+
+1743
+01:36:30,060 --> 01:36:30,990
+Erik Schluntz: Thank you so
+much, everyone.
+
+1744
+01:36:34,260 --> 01:36:36,660
+Audrow Nash: That's all we have
+for you today. I hope you
+
+1745
+01:36:36,660 --> 01:36:39,750
+enjoyed the episode. I was
+surprised during the interview
+
+1746
+01:36:39,750 --> 01:36:43,080
+that the cobalt robot is going
+to be trying receptionist work
+
+1747
+01:36:43,170 --> 01:36:46,500
+during the day. What other
+applications could you think of
+
+1748
+01:36:46,530 --> 01:36:50,610
+a robot like Cobalts robot? Let
+me know in the comments on
+
+1749
+01:36:50,610 --> 01:36:54,240
+sensing act calm. Thank you
+again to our founding sponsor
+
+1750
+01:36:54,240 --> 01:36:56,280
+open robotics. Goodbye,
+everyone.
+
