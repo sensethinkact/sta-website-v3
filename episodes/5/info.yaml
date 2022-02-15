@@ -1,0 +1,28 @@
+guests: Erik Schluntz
+title: Taking Elevators, Robot Body Language, and Advice for Startups
+description: |
+  In this episode, Audrow Nash interviews Erik Schluntz, co-founder and CTO of Cobalt Robotics, which makes a security guard robot.
+  Erik speaks about how their robot handles elevators, how they have humans-in-the-loop to help their robot make decisions, robot body language, and gives advice for entrepreneurs.
+excerpt: Erik Schluntz is a co-founder and the CTO of Cobalt Robotics.
+duration:
+  hours: 1
+  minutes: 37
+  seconds: 00
+tags:
+  - startup
+  - security
+  - safety
+  - elevators
+links:
+  - name: Cobalt's website
+    url: https://www.cobaltrobotics.com/
+  - name: Erik's website
+    url: http://www.erikschluntz.com/portfolio/
+  - name: Video introducing the Cobalt robot
+    url: https://www.youtube.com/watch?v=6PyUjK7JX_c&ab_channel=CobaltRobotics
+  - name: Video of the Cobalt robot using an elevator
+    url: https://www.youtube.com/watch?v=jUKCI0ynm6s&ab_channel=CobaltRobotics
+mp3SizeBytes: 188797584
+publishDate: 2021-10-19
+youtube:
+  mainContentId: E6fD3MIrciI

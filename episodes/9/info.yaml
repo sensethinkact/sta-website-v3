@@ -1,0 +1,31 @@
+guests: Youssef Benmokhtar
+title: Digitization of Touch and Meta AI Partnership
+description: |
+  In this episode, Audrow Nash speaks to Youssef Benmokhtar, CEO of GelSight, a Boston-based company that makes high resolution tactile sensors for several industries.
+  They talk about how GelSight's tactile sensors work, GelSight’s new collaboration with Meta AI (formerly, Facebook AI) to manufacture a low cost touch sensor called DIGIT, on the digitization of touch, touch sensing in robotics, how GelSight is investing in community and open source software, and Youssef’s professional path in several industries.
+excerpt: Youssef Benmokhtar is the CEO of GelSight.
+duration:
+  hours: 1
+  minutes: 37
+  seconds: 13
+tags:
+  - startup
+  - sensor
+  - open source
+  - haptic
+  - computer vision
+links:
+  - name: Youssef Benmokhtar’s LinkedIn
+    url: https://www.linkedin.com/in/youssef-benmokhtar-85a2403/
+  - name: GelSight’s Website
+    url: https://gelsight.com/
+  - name: GelSight’s LinkedIn
+    url: https://www.linkedin.com/company/gelsight/
+  - name: DIGIT’s open source page
+    url: https://digit.ml/
+  - name: PyTouch library
+    url: https://github.com/facebookresearch/PyTouch
+mp3SizeBytes: 190031254
+publishDate: 2021-12-14
+youtube:
+  mainContentId: wlq4P-WiRDo
