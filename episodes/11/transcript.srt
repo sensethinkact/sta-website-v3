@@ -46,7 +46,7 @@ Podcast. I'm Audrow Nash. Thank
 10
 00:00:42,689 --> 00:00:46,799
 you to our founding sponsor,
-open robotics. And now, here is
+Open Robotics. And now, here is
 
 11
 00:00:46,799 --> 00:00:54,059
@@ -198,7 +198,7 @@ crews, and our software that's
 
 41
 00:02:33,600 --> 00:02:34,950
-based on Ross does that.
+based on ROS does that.
 
 42
 00:02:36,180 --> 00:02:38,580
@@ -321,12 +321,12 @@ things like you know, data
 66
 00:03:58,829 --> 00:04:03,059
 structures, like point clouds
-and Ross enhancement proposals
+and ROS enhancement proposals
 
 67
 00:04:03,059 --> 00:04:06,689
 are like being standards for the
-Ross community. An easy one
+ROS community. An easy one
 
 68
 00:04:06,689 --> 00:04:09,989
@@ -1355,7 +1355,7 @@ about it.
 274
 00:15:35,430 --> 00:15:38,070
 Charles Brian Quinn: Sure. So
-we're big fans of Ross. And
+we're big fans of ROS. And
 
 275
 00:15:38,100 --> 00:15:40,140
@@ -1608,7 +1608,7 @@ we're not trying to reinvent the
 325
 00:18:24,390 --> 00:18:29,250
 wheel. So standard cost maps,
-we're big fans of Ross control.
+we're big fans of ROS control.
 
 326
 00:18:29,670 --> 00:18:32,520
@@ -1628,11 +1628,11 @@ standard data. You know, I
 329
 00:18:39,270 --> 00:18:42,060
 Audrow Nash: guess they're
-missing depth by using Ross one
+missing depth by using ROS one
 
 330
 00:18:42,060 --> 00:18:42,960
-or Ross two.
+or ROS two.
 
 331
 00:18:42,990 --> 00:18:45,090
@@ -1641,7 +1641,7 @@ currently our current generation
 
 332
 00:18:45,090 --> 00:18:49,290
-stack is on Ross one. And I
+stack is on ROS one. And I
 think we're on melodic, and I
 
 333
@@ -1656,7 +1656,7 @@ may upgrade our entire fleet to
 
 335
 00:18:56,310 --> 00:19:00,570
-that. And then Ross T we've
+that. And then ROS T we've
 evaluated some of the packages
 
 336
@@ -1667,7 +1667,7 @@ yet. And we've been working
 337
 00:19:03,300 --> 00:19:05,970
 closely with some of you guys at
-open robotics, the Michael
+Open Robotics, the Michael
 
 338
 00:19:05,970 --> 00:19:10,650
@@ -1681,7 +1681,7 @@ even do that in field. So but
 
 340
 00:19:14,340 --> 00:19:20,160
-we're enjoying the Ross one
+we're enjoying the ROS one
 ecosystem. But yeah, so you
 
 341
@@ -1692,7 +1692,7 @@ and sort of package look like
 342
 00:19:22,980 --> 00:19:29,130
 but autonomous mowing is a suite
-of Ross nodes that do a function
+of ROS nodes that do a function
 
 343
 00:19:29,130 --> 00:19:32,850
@@ -1716,12 +1716,12 @@ use. It's an x86. I actually
 
 347
 00:19:43,140 --> 00:19:46,440
-just gave a talk at Ross con.
+just gave a talk at ROS con.
 This last one on how to boot to
 
 348
 00:19:46,440 --> 00:19:50,310
-Ross and seven seconds where I
+ROS and seven seconds where I
 took this machine and really
 
 349
@@ -1741,7 +1741,7 @@ I and just go straight into
 
 352
 00:20:01,680 --> 00:20:05,640
-Ross, using System D, which
+ROS, using System D, which
 we're big fans of, we like a lot
 
 353
@@ -1791,7 +1791,7 @@ for software that we like about
 
 362
 00:20:39,420 --> 00:20:42,210
-Ross. And our stack does that
+ROS. And our stack does that
 very, very well. It also
 
 363
@@ -1950,7 +1950,7 @@ wire system. And so that starts
 
 394
 00:22:25,950 --> 00:22:29,910
-with with Ross control and
+with with ROS control and
 having a canvas adapter. And so
 
 395
@@ -2762,7 +2762,7 @@ about it, like we basically use
 
 559
 00:31:06,689 --> 00:31:09,779
-our coordinate system in Ross,
+our coordinate system in ROS,
 right? You have 00, right, which
 
 560
@@ -4385,7 +4385,7 @@ that basically run AI ml on
 
 886
 00:48:58,950 --> 00:49:03,510
-them. And they have great Ross
+them. And they have great ROS
 drivers. And we're helping a
 
 887
@@ -4558,7 +4558,7 @@ right? Web Standards. You know,
 
 921
 00:51:09,450 --> 00:51:14,460
-Ross being a standard, the rep,
+ROS being a standard, the rep,
 like we talked about, I'm a huge
 
 922
@@ -5983,7 +5983,7 @@ Well, I'm super excited about
 
 1207
 01:07:25,470 --> 01:07:27,960
-some of the Ross to you know,
+some of the ROS to you know,
 stuff that you can run, you
 
 1208
@@ -6054,7 +6054,7 @@ Can't be Python for that, for
 1221
 01:08:12,810 --> 01:08:16,920
 sure. So yeah, again, they all
-speak Ross topics on the back
+speak ROS topics on the back
 
 1222
 01:08:16,920 --> 01:08:19,830
@@ -6082,7 +6082,7 @@ level, but it does not have the
 
 1227
 01:08:31,710 --> 01:08:34,530
-same test suite that our Ross
+same test suite that our ROS
 does. Yeah,
 
 1228
@@ -6167,7 +6167,7 @@ very proud of for robotic stack,
 
 1244
 01:09:25,950 --> 01:09:29,640
-we use the Ross unit and Ross
+we use the ROS unit and ROS
 testing, we throw sensor data
 
 1245
@@ -6183,7 +6183,7 @@ you know, we commit code, it all
 1247
 01:09:36,420 --> 01:09:39,120
 goes on a circle CI server, it
-runs the Ross unit tests and
+runs the ROS unit tests and
 
 1248
 01:09:39,120 --> 01:09:42,870
@@ -6217,12 +6217,12 @@ cool. But you're right testing.
 
 1254
 01:10:00,000 --> 01:10:03,720
-I would love to see Ross get
+I would love to see ROS get
 better at this, I think, I think
 
 1255
 01:10:03,750 --> 01:10:09,060
-the Ross community would flip
+the ROS community would flip
 out if they saw what US former
 
 1256
@@ -6381,7 +6381,7 @@ We're getting a little better
 
 1287
 01:11:43,050 --> 01:11:46,440
-with Ross too. Yeah, for some of
+with ROS too. Yeah, for some of
 the testing resources, but I
 
 1288
@@ -6410,7 +6410,7 @@ excited and happy to talk about
 
 1293
 01:12:06,930 --> 01:12:10,890
-that. We part of my Ross CON
+that. We part of my ROS CON
 talk was a little bit on that.
 
 1294
@@ -6430,7 +6430,7 @@ it's cat can plus,
 1297
 01:12:21,180 --> 01:12:23,760
 Audrow Nash: we use cold con
-cold on we're here with Ross
+cold on we're here with ROS
 
 1298
 01:12:23,760 --> 01:12:25,380
@@ -6524,7 +6524,7 @@ packages. And then we have a
 1316
 01:13:27,300 --> 01:13:32,580
 couple of private repos that we
-mirror Ross upstream. So thank
+mirror ROS upstream. So thank
 
 1317
 01:13:32,580 --> 01:13:34,800
@@ -6534,7 +6534,7 @@ that a lot of people do, right?
 1318
 01:13:35,040 --> 01:13:38,490
 And and then we mirror you know,
-Ross security and Eros updates.
+ROS security and Eros updates.
 
 1319
 01:13:38,730 --> 01:13:41,610
@@ -6901,7 +6901,7 @@ definitely make keep doing that
 
 1392
 01:17:24,270 --> 01:17:27,540
-the Ross talks, because we
+the ROS talks, because we
 definitely enjoy that we were
 
 1393
@@ -8068,7 +8068,7 @@ laptop and we'd be like,
 
 1627
 01:29:40,920 --> 01:29:45,750
-alright, yeah, Ross launch your
+alright, yeah, ROS launch your
 BBs open. Yeah. Oh, yeah. Yeah,
 
 1628
@@ -10382,7 +10382,7 @@ Twitter is our more developer
 2094
 01:54:11,610 --> 01:54:15,570
 robotics focused, pithy jokes,
-and shout outs to Ross. So
+and shout outs to ROS. So
 
 2095
 01:54:15,690 --> 01:54:18,960
@@ -10566,7 +10566,7 @@ listening to this conversation
 2131
 01:56:02,850 --> 01:56:07,410
 with CPQ. Thank you again to our
-founding sponsor, open robotics,
+founding sponsor, Open Robotics,
 
 2132
 01:56:07,620 --> 01:56:08,850

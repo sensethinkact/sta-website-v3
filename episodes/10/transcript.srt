@@ -221,12 +221,12 @@ one it it provides a tight
 
 46
 00:03:21,810 --> 00:03:28,650
-integration with. With Ross,
+integration with. With ROS,
 allowing you to generate events
 
 47
 00:03:28,650 --> 00:03:34,050
-for Ross topics, services
+for ROS topics, services
 actions right out of the box. It
 
 48
@@ -266,7 +266,7 @@ architecture of SMAC. That
 
 55
 00:04:02,700 --> 00:04:07,590
-allows Ross users to use Ross
+allows ROS users to use ROS
 packages like move it to or nav
 
 56
@@ -276,7 +276,7 @@ also provides a pathway for
 
 57
 00:04:13,710 --> 00:04:19,350
-other Ross packages. And for the
+other ROS packages. And for the
 interfaces of those packages to
 
 58
@@ -296,7 +296,7 @@ developers to get started in
 
 61
 00:04:31,950 --> 00:04:35,610
-Ross, and then in programming in
+ROS, and then in programming in
 general controlling their robot.
 
 62
@@ -1337,7 +1337,7 @@ move it. One with perception.
 271
 00:18:29,400 --> 00:18:34,560
 And so when those other nodes
-communicate via let's say, Ross
+communicate via let's say, ROS
 
 272
 00:18:34,560 --> 00:18:40,860
@@ -1414,7 +1414,7 @@ some type of discrete.
 
 287
 00:19:37,560 --> 00:19:39,810
-Audrow Nash: So in Ross, it
+Audrow Nash: So in ROS, it
 would be have I received this
 
 288
@@ -2190,7 +2190,7 @@ say like that video of the
 
 444
 00:30:14,940 --> 00:30:19,980
-fetch, sorting, the fetch, in
+Fetch, sorting, the Fetch, in
 simulation, sorting cubes by
 
 445
@@ -2235,7 +2235,7 @@ dance bot example I can like it.
 
 453
 00:30:59,610 --> 00:31:04,380
-Yeah, is in is in the the Ross
+Yeah, is in is in the the ROS
 world 2021 presentation on smack
 
 454
@@ -2513,12 +2513,12 @@ other in other state machines,
 509
 00:34:54,239 --> 00:34:58,529
 we might use, you know,
-something like Ross to control
+something like ROS to control
 
 510
 00:34:58,559 --> 00:35:01,439
 the same kind of a similar way
-that that move it relies on Ross
+that that move it relies on ROS
 
 511
 00:35:01,439 --> 00:35:04,559
@@ -2527,18 +2527,18 @@ And we've had we've built
 
 512
 00:35:04,559 --> 00:35:08,849
-examples and navigation in Ross,
-one where it uses the Ross two
+examples and navigation in ROS,
+one where it uses the ROS two
 
 513
 00:35:08,939 --> 00:35:12,179
-or the Ross control draft
+or the ROS control draft
 controller. But yeah, it's you
 
 514
 00:35:12,179 --> 00:35:15,749
 know, you start using like your
-standard Ross stack to get
+standard ROS stack to get
 
 515
 00:35:15,749 --> 00:35:16,529
@@ -3116,7 +3116,7 @@ have thought that well and at
 631
 00:43:45,750 --> 00:43:48,780
 this time this is really before
-Ross you know so like the
+ROS you know so like the
 
 632
 00:43:48,780 --> 00:43:51,390
@@ -3131,7 +3131,7 @@ stack I see Yeah. Anyway my my
 634
 00:43:57,930 --> 00:44:03,720
 first project you know that
-involved Ross was creating what
+involved ROS was creating what
 
 635
 00:44:03,870 --> 00:44:09,000
@@ -3348,7 +3348,7 @@ graduate student at University
 678
 00:46:59,460 --> 00:47:03,060
 of Colorado Boulder, and he
-wrote some of the original Ross
+wrote some of the original ROS
 
 679
 00:47:03,060 --> 00:47:08,760
@@ -3357,7 +3357,7 @@ worked on the project. He's the
 
 680
 00:47:08,790 --> 00:47:14,550
-maintainer of Ross to control. A
+maintainer of ROS to control. A
 mathematician by the name of ROB
 
 681
@@ -3943,12 +3943,12 @@ mechanical issue along the way.
 799
 00:55:50,190 --> 00:55:56,040
 So we announced the we announced
-smack for Ross, one in June. And
+smack for ROS, one in June. And
 
 800
 00:55:56,310 --> 00:55:59,640
 we immediately set out to create
-it for Ross too, because I
+it for ROS too, because I
 
 801
 00:55:59,640 --> 00:56:03,900
@@ -3962,7 +3962,7 @@ major players, were already
 
 803
 00:56:10,350 --> 00:56:14,220
-moving into Ross, two. And so we
+moving into ROS, two. And so we
 immediately set out another
 
 804
@@ -5233,7 +5233,7 @@ ways, or one of the ways that I
 
 1061
 01:13:03,090 --> 01:13:07,500
-hope it SMAC will influence Ross
+hope it SMAC will influence ROS
 in general, is that it will
 
 1062
@@ -5553,7 +5553,7 @@ way defined by like these
 1126
 01:17:15,240 --> 01:17:19,890
 clients. Right? If if half of
-the Ross community interacted
+the ROS community interacted
 
 1127
 01:17:19,890 --> 01:17:23,580
@@ -5711,7 +5711,7 @@ back to the bifurcation, though,
 
 1158
 01:19:22,710 --> 01:19:25,830
-that I'm seeing in Ross, you
+that I'm seeing in ROS, you
 know, especially as I look down
 
 1159
@@ -7533,7 +7533,7 @@ a little bit more of that in
 
 1526
 01:44:21,540 --> 01:44:25,380
-Ross. But you know, let's, let's
+ROS. But you know, let's, let's
 put the players on the field.
 
 1527
@@ -8012,7 +8012,7 @@ develop something like nav two,
 1623
 01:50:59,250 --> 01:51:02,850
 or we have nav two and move it
-and Ross to control that if it's
+and ROS to control that if it's
 
 1624
 01:51:02,850 --> 01:51:09,000
@@ -8060,6 +8060,6 @@ Aldrich. Thank you again to our
 
 1633
 01:51:40,290 --> 01:51:43,170
-founding sponsor, open robotics
+founding sponsor, Open Robotics
 and I hope to see you next time
 

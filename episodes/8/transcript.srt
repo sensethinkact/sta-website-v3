@@ -1,0 +1,4225 @@
+1
+00:00:03,690 --> 00:00:07,140
+Audrow Nash: This is a
+conversation with Disha Sarawgi
+
+2
+00:00:07,440 --> 00:00:12,630
+and Mohammed Kabir. Disha and
+Kabir both work at Corvus
+
+3
+00:00:12,630 --> 00:00:17,490
+Robotics. Disha is the head of
+Special Projects and an early
+
+4
+00:00:17,490 --> 00:00:22,200
+employee at Corvus, while Kabir
+is a co founder and the CTO at
+
+5
+00:00:22,200 --> 00:00:27,330
+Corvus. Corvus robotics is a
+Boston based startup that makes
+
+6
+00:00:27,360 --> 00:00:30,450
+a drone to fly around warehouses
+and help with inventory
+
+7
+00:00:30,450 --> 00:00:34,620
+management. Their drone, the
+Corvus one seems to promise to
+
+8
+00:00:34,620 --> 00:00:37,860
+reduce inventory loss in
+warehouses, which currently
+
+9
+00:00:37,860 --> 00:00:41,100
+happens to a staggering rate. As
+you'll find out in the
+
+10
+00:00:41,100 --> 00:00:45,210
+interview, they speak about
+flying their drone in warehouses
+
+11
+00:00:45,240 --> 00:00:50,070
+working with customers, safety,
+fleet management, how Corvus is
+
+12
+00:00:50,070 --> 00:00:54,810
+funded, and they give advice to
+aspiring entrepreneurs. This is
+
+13
+00:00:54,810 --> 00:00:59,190
+the Sense Think Act Podcast. I'm
+Audrow Nash. Thank you to our
+
+14
+00:00:59,190 --> 00:01:03,630
+founding sponsor Open Robotics.
+And here is my conversation with
+
+15
+00:01:03,780 --> 00:01:05,850
+Disha and Kabir.
+
+16
+00:01:05,000 --> 00:01:10,340
+Kabir, would you introduce
+yourself?
+
+17
+00:01:11,270 --> 00:01:14,540
+Mohammed Kabir: Yeah, sure. So
+I'm Kabir. I'm the I'm the co
+
+18
+00:01:14,540 --> 00:01:17,270
+founder and CTO of Corvis
+robotics.
+
+19
+00:01:19,200 --> 00:01:20,970
+Audrow Nash: Hi, Disha.
+
+20
+00:01:22,290 --> 00:01:26,070
+Disha Sarawgi: Hi, I'm Disha. I
+work as head of Special Projects
+
+21
+00:01:26,070 --> 00:01:27,150
+and General Projects.
+
+22
+00:01:28,200 --> 00:01:32,340
+I lead basically all the product
+lines here at Corvus.
+
+23
+00:01:34,380 --> 00:01:37,110
+Mohammed Kabir: And she's also
+one of our early employees, one
+
+24
+00:01:37,110 --> 00:01:38,280
+of the very first
+
+25
+00:01:38,940 --> 00:01:41,490
+Audrow Nash: Gotcha. How large
+are you guys now?
+
+26
+00:01:43,380 --> 00:01:48,630
+Disha Sarawgi: We do have about
+15 people across engineering and
+
+27
+00:01:48,630 --> 00:01:49,710
+on engineering goes
+
+28
+00:01:51,000 --> 00:01:53,460
+Audrow Nash: to the shot when
+what number employee were you?
+
+29
+00:01:54,390 --> 00:01:57,150
+Disha Sarawgi: I read? Second,
+probably.
+
+30
+00:01:57,600 --> 00:02:01,470
+Audrow Nash: Yeah. She's the
+second employee. Right after you
+
+31
+00:02:01,470 --> 00:02:01,890
+come here.
+
+32
+00:02:04,050 --> 00:02:06,180
+Mohammed Kabir: The co founder,
+the founders,
+
+33
+00:02:06,330 --> 00:02:12,570
+Audrow Nash: I see. So tell me
+about Corvus. Yeah, about what
+
+34
+00:02:12,570 --> 00:02:15,000
+is the mission and everything.
+
+35
+00:02:15,030 --> 00:02:20,550
+Mohammed Kabir: Yeah, sure. So
+when we started out, sometime in
+
+36
+00:02:20,580 --> 00:02:26,640
+2017, or so we saw this a whole
+bunch of robotics companies,
+
+37
+00:02:26,640 --> 00:02:31,290
+newly formed robotics companies,
+really kind of doing great
+
+38
+00:02:31,290 --> 00:02:36,030
+things in the warehouse and
+industrial automation space. And
+
+39
+00:02:36,420 --> 00:02:42,030
+generally, my background is that
+I come from a real robots. So I
+
+40
+00:02:42,030 --> 00:02:45,570
+really love flying things and
+making drones. So when we
+
+41
+00:02:45,570 --> 00:02:48,960
+started the company, we kind of
+were like looking for use cases,
+
+42
+00:02:48,960 --> 00:02:52,890
+which we could automate kind of
+putting together this industrial
+
+43
+00:02:52,890 --> 00:02:57,120
+automation space, and aerial
+robotics. And I think we found a
+
+44
+00:02:57,180 --> 00:03:02,100
+pretty good niche and decided to
+pursue it, which is warehouse
+
+45
+00:03:02,100 --> 00:03:06,240
+inventory management. That's
+kind of our singular, large
+
+46
+00:03:06,240 --> 00:03:10,950
+focus throughout the company. So
+all our product lines are kind
+
+47
+00:03:10,950 --> 00:03:13,770
+of trying to solve for that one
+specific thing, which is
+
+48
+00:03:13,830 --> 00:03:18,210
+warehouse inventory. And that's
+where the idea for purpose one
+
+49
+00:03:18,210 --> 00:03:22,920
+was born. What purpose one is,
+it's a drone, which which does,
+
+50
+00:03:22,950 --> 00:03:27,690
+which helps warehouses do
+inventory. This is a huge
+
+51
+00:03:27,690 --> 00:03:32,070
+market, warehouses lose millions
+and billions of dollars worth of
+
+52
+00:03:32,070 --> 00:03:35,490
+goods from inside their own
+facilities every year. And this
+
+53
+00:03:35,490 --> 00:03:37,050
+is the problem we set out to
+solve.
+
+54
+00:03:37,919 --> 00:03:40,319
+Audrow Nash: Why is that? Why
+are they losing millions and
+
+55
+00:03:40,319 --> 00:03:42,269
+billions of dollars? Right,
+good, right.
+
+56
+00:03:42,780 --> 00:03:45,720
+Mohammed Kabir: So the way
+warehouses do inventory
+
+57
+00:03:45,720 --> 00:03:50,490
+management today is whenever
+they send a person out with like
+
+58
+00:03:50,490 --> 00:03:53,490
+a handheld barcode scanner, and
+then this person goes up and
+
+59
+00:03:53,490 --> 00:03:56,100
+down the racks. So these are
+huge facilities that can be
+
+60
+00:03:56,100 --> 00:03:58,920
+millions of square feet. So this
+person goes up and down the
+
+61
+00:03:58,920 --> 00:04:03,270
+racks with this handheld barcode
+scanner, and basically scans
+
+62
+00:04:03,270 --> 00:04:06,960
+barcodes on the on whatever
+stuff they have on the shelves.
+
+63
+00:04:07,260 --> 00:04:11,160
+And then they basically write
+down or somehow tie back into
+
+64
+00:04:11,160 --> 00:04:14,850
+their warehouse management
+system where this thing was. Now
+
+65
+00:04:14,880 --> 00:04:18,210
+in variably, because there's a
+human involved in the loop. This
+
+66
+00:04:18,210 --> 00:04:22,950
+introduces a lot of errors. And
+typically, I think the
+
+67
+00:04:22,950 --> 00:04:26,940
+nationwide average for kind of
+the inventory accuracy across
+
+68
+00:04:26,940 --> 00:04:31,200
+warehouses in the US, it's
+something about 40 to 60%, which
+
+69
+00:04:31,200 --> 00:04:34,560
+is actually quite bad. So they
+lose half of their stuff just
+
+70
+00:04:34,560 --> 00:04:39,210
+because they don't know where
+they put it. How could
+
+71
+00:04:39,210 --> 00:04:44,220
+Audrow Nash: that be that they
+lose 42 They only retain 46 to
+
+72
+00:04:44,220 --> 00:04:50,910
+60%. Yeah. So so what happens is
+like, why why are these red? Why
+
+73
+00:04:50,910 --> 00:04:52,530
+such a large number of loss?
+
+74
+00:04:53,070 --> 00:04:56,670
+Mohammed Kabir: Right? So um,
+basically, the way inventory
+
+75
+00:04:56,670 --> 00:05:00,000
+comes into warehouses, you
+basically unload from trucks and
+
+76
+00:05:00,000 --> 00:05:04,620
+Then there is a person who is
+taking it from these truck bays
+
+77
+00:05:04,620 --> 00:05:08,430
+and then putting it in their
+shelf somewhere. And this person
+
+78
+00:05:08,430 --> 00:05:12,510
+is responsible for kind of doing
+an incremental scan. So they
+
+79
+00:05:12,510 --> 00:05:17,370
+can. So basically, we can input
+into their warehouse management
+
+80
+00:05:17,370 --> 00:05:20,610
+system, where this particular
+thing was booked. So it's
+
+81
+00:05:20,610 --> 00:05:25,110
+basically all deltas. So it's,
+it's as things coming.
+
+82
+00:05:25,860 --> 00:05:27,900
+Audrow Nash: What do you mean,
+deltas? It's, it's every, it's
+
+83
+00:05:27,900 --> 00:05:29,430
+the change effectively?
+
+84
+00:05:29,730 --> 00:05:32,190
+Mohammed Kabir: Yes, yes, it is
+the change. So every time
+
+85
+00:05:32,250 --> 00:05:34,860
+there's a change, they update
+their warehouse management
+
+86
+00:05:34,860 --> 00:05:39,420
+system, but invariably, because
+there isn't like a global view
+
+87
+00:05:39,420 --> 00:05:42,900
+of the warehouse, per se. Errors
+build up over time.
+
+88
+00:05:45,720 --> 00:05:47,850
+Audrow Nash: Why? Why are
+they're building up, though? I
+
+89
+00:05:47,850 --> 00:05:51,810
+mean, if I just put something
+there and leave it there, it
+
+90
+00:05:51,810 --> 00:05:54,360
+should stay there. And it
+shouldn't matter that I only
+
+91
+00:05:54,360 --> 00:05:59,850
+have Delta's what's going on?
+Are people stealing some of the
+
+92
+00:05:59,880 --> 00:06:04,170
+packages that people move?
+Knowing or like, what's creating
+
+93
+00:06:04,170 --> 00:06:05,700
+60% of the law?
+
+94
+00:06:06,239 --> 00:06:09,449
+Mohammed Kabir: So I think it's
+a bunch of human factors at the
+
+95
+00:06:09,449 --> 00:06:13,109
+end of the day, I wouldn't say
+that stealing is a big one. But
+
+96
+00:06:13,109 --> 00:06:16,589
+I'm sure it is an actual
+problem. One of the main things
+
+97
+00:06:16,589 --> 00:06:21,089
+we've seen is people just put it
+in the wrong place in the first
+
+98
+00:06:21,089 --> 00:06:23,789
+place. So basically, you say
+that you're putting it in
+
+99
+00:06:23,789 --> 00:06:28,379
+whatever aisle a slot B, but
+then you put it in aisle a slot,
+
+100
+00:06:28,589 --> 00:06:34,349
+see the one next to it? And they
+just don't care about where they
+
+101
+00:06:34,349 --> 00:06:35,099
+put it at the end of the
+
+102
+00:06:35,100 --> 00:06:36,660
+Audrow Nash: day? Because you
+mean the person who puts it
+
+103
+00:06:36,660 --> 00:06:38,610
+there? Like, yeah, doesn't
+matter.
+
+104
+00:06:38,999 --> 00:06:42,359
+Mohammed Kabir: Yeah, they're
+processing like 1000s of orders
+
+105
+00:06:42,359 --> 00:06:46,619
+a day. So it's really hard at
+even at the human level to kind
+
+106
+00:06:46,619 --> 00:06:49,229
+of keep up that 100% accuracy.
+
+107
+00:06:49,530 --> 00:06:51,840
+Audrow Nash: I mean, it seems
+like getting one and two wrong
+
+108
+00:06:51,870 --> 00:06:55,320
+if you're getting that level of
+like loss, which is kind of
+
+109
+00:06:55,320 --> 00:06:57,450
+nuts. Yeah. Yeah.
+
+110
+00:06:57,480 --> 00:07:00,180
+Mohammed Kabir: It's a huge
+problem. It sounds ridiculous,
+
+111
+00:07:00,180 --> 00:07:04,350
+but it is what it is. And that's
+that's what we set out to solve.
+
+112
+00:07:05,070 --> 00:07:09,060
+Audrow Nash: So then, what your
+so tell me a bit about how
+
+113
+00:07:09,060 --> 00:07:12,540
+you're solving it with your
+Corvus one, drone.
+
+114
+00:07:13,590 --> 00:07:17,190
+Mohammed Kabir: Sure. So what
+premise one is, it's basically a
+
+115
+00:07:17,190 --> 00:07:23,190
+full cycle autonomous solution.
+It's a drone, and this charging
+
+116
+00:07:23,190 --> 00:07:26,250
+dock, which we go and install in
+facilities. So it sits at the
+
+117
+00:07:26,250 --> 00:07:31,590
+end of warehouse racks. And it
+does scheduled flights on its
+
+118
+00:07:31,590 --> 00:07:35,940
+own, and then goes out into the
+aisles, scans inventory as it's
+
+119
+00:07:35,940 --> 00:07:42,150
+flying, it finds barcode scans
+them comes back home lands, and
+
+120
+00:07:42,150 --> 00:07:45,210
+then we process this data and
+then send it to the customer,
+
+121
+00:07:45,780 --> 00:07:49,110
+usually through some sort of
+digital data dump. And what this
+
+122
+00:07:49,110 --> 00:07:53,070
+does is we're basically taking
+that person who was doing this
+
+123
+00:07:53,070 --> 00:07:55,770
+with a barcode scanner, and we
+put the barcode scanner on the
+
+124
+00:07:55,770 --> 00:08:00,720
+ground. And then we can do this
+repeatedly because well, it's a
+
+125
+00:08:00,720 --> 00:08:02,340
+drone day don't get tired.
+
+126
+00:08:03,270 --> 00:08:06,480
+Audrow Nash: Yeah, so you're
+thinking of this. So if you were
+
+127
+00:08:06,480 --> 00:08:09,600
+thinking of the diff, so it's
+kind of like in edge detection,
+
+128
+00:08:09,750 --> 00:08:12,960
+and image or something like
+this. So you only get like, I
+
+129
+00:08:12,960 --> 00:08:15,300
+don't know, you're only getting
+the difference, it's not a very
+
+130
+00:08:15,630 --> 00:08:19,560
+clear way to see the whole state
+of the warehouse, right. And so
+
+131
+00:08:19,560 --> 00:08:23,040
+now what you're saying is your
+drone flies around periodically.
+
+132
+00:08:23,040 --> 00:08:27,000
+And so you can kind of get
+updates over time of where all
+
+133
+00:08:27,000 --> 00:08:29,010
+the packages are. Exactly.
+
+134
+00:08:30,930 --> 00:08:34,200
+Mohammed Kabir: And if you do
+this frequently enough, we can
+
+135
+00:08:34,200 --> 00:08:37,230
+basically get that global view
+of the warehouse basically every
+
+136
+00:08:37,230 --> 00:08:40,830
+day, depending on the size of
+the facility. Okay.
+
+137
+00:08:42,629 --> 00:08:47,039
+Disha Sarawgi: Yeah, generally,
+like do I do that? Generally,
+
+138
+00:08:47,039 --> 00:08:51,869
+inventory counts are taken by
+houses maybe once a year. But
+
+139
+00:08:51,929 --> 00:08:56,339
+with the drawing, we're able to
+get the entire inventory counts
+
+140
+00:08:56,339 --> 00:09:02,159
+multiple times. So God gives you
+a great idea of like
+
+141
+00:09:02,159 --> 00:09:05,429
+historically, timestamps data,
+which you can go back to and
+
+142
+00:09:05,429 --> 00:09:09,329
+refer to when like locate every
+item at the warehouse at any
+
+143
+00:09:09,329 --> 00:09:09,929
+instant.
+
+144
+00:09:11,669 --> 00:09:16,889
+Audrow Nash: Gotcha. Very
+interesting. Now, how I'm
+
+145
+00:09:16,979 --> 00:09:21,599
+thinking about this crazy loss.
+that puzzles me honestly, that
+
+146
+00:09:21,599 --> 00:09:24,449
+it's so large, and I imagine
+like goods are twice as
+
+147
+00:09:24,449 --> 00:09:27,539
+expensive as they would be if
+they didn't have this loss. Is
+
+148
+00:09:27,539 --> 00:09:30,749
+that true? Would you think?
+Like, that's probably included
+
+149
+00:09:30,749 --> 00:09:32,579
+in the cost of things? Yeah.
+
+150
+00:09:32,610 --> 00:09:35,280
+Mohammed Kabir: So the way the
+business model for warehouses
+
+151
+00:09:35,280 --> 00:09:39,270
+work is they just write this
+loss off. So they account for
+
+152
+00:09:39,270 --> 00:09:41,850
+that loss as they're moving
+stuff around.
+
+153
+00:09:42,690 --> 00:09:43,980
+Audrow Nash: Write it off in
+what way
+
+154
+00:09:44,909 --> 00:09:46,199
+Mohammed Kabir: as just lost.
+
+155
+00:09:47,640 --> 00:09:49,560
+Audrow Nash: Okay, but yeah, but
+it's
+
+156
+00:09:49,559 --> 00:09:51,659
+Mohammed Kabir: still in their
+facility somewhere. It's they
+
+157
+00:09:51,659 --> 00:09:52,649
+just don't know where.
+
+158
+00:09:53,609 --> 00:09:59,219
+Audrow Nash: Hmm. Interesting.
+So that with the perspective of
+
+159
+00:09:59,219 --> 00:10:04,499
+fraud, flying The drone around,
+often, you can kind of get a
+
+160
+00:10:04,499 --> 00:10:08,969
+better sense doesn't require the
+human to place the package as
+
+161
+00:10:09,239 --> 00:10:13,529
+accurately or in the specific
+section so you can manage it, or
+
+162
+00:10:13,619 --> 00:10:15,689
+at least in the one that they
+say it's placed in, because I
+
+163
+00:10:15,689 --> 00:10:21,629
+would imagine, it would be the
+reason for the error. So then
+
+164
+00:10:21,629 --> 00:10:26,819
+from that, you can kind of see
+if things are missing, or like
+
+165
+00:10:26,819 --> 00:10:30,239
+if it was here, and now it's not
+you at least have a small window
+
+166
+00:10:30,239 --> 00:10:34,709
+of time to investigate where it
+has gone to, or where, or
+
+167
+00:10:34,709 --> 00:10:36,299
+something like that. Yeah,
+
+168
+00:10:36,720 --> 00:10:41,340
+Disha Sarawgi: it's not always
+just miss loading of items, but
+
+169
+00:10:41,340 --> 00:10:46,140
+sometimes, because the humans in
+the loop, people also forget to
+
+170
+00:10:46,140 --> 00:10:49,740
+just scan because they're taking
+care of 1000s of orders a day.
+
+171
+00:10:50,250 --> 00:10:55,830
+And it's, it's easy if you're
+also on the ground level, but
+
+172
+00:10:57,030 --> 00:11:02,100
+warehouse racks go up to like 20
+feet, or 20 to 30 feet. And
+
+173
+00:11:02,340 --> 00:11:05,580
+getting up a forklift scanning,
+and then coming down going to
+
+174
+00:11:05,580 --> 00:11:10,020
+the next track at the same
+height is not an easy feat. So
+
+175
+00:11:10,800 --> 00:11:13,740
+human error does play a big part
+of this as well.
+
+176
+00:11:14,669 --> 00:11:17,429
+Audrow Nash: I see. Yeah, that's
+a good point that they're so
+
+177
+00:11:17,429 --> 00:11:21,329
+high that these packages are
+just stored with layer on layer
+
+178
+00:11:21,329 --> 00:11:26,519
+on layer of packages. Is that
+the motivation for the drone?
+
+179
+00:11:28,620 --> 00:11:34,260
+Disha Sarawgi: Oh, badly. Yes.
+It's like humans can do
+
+180
+00:11:34,710 --> 00:11:38,070
+inventory tracking at ground
+level, probably at the same
+
+181
+00:11:38,070 --> 00:11:42,960
+rate. But as the height
+increases, the complexity
+
+182
+00:11:42,960 --> 00:11:47,550
+increases. And that's where the
+drone comes in. And we get a
+
+183
+00:11:47,550 --> 00:11:49,620
+Audrow Nash: diversity increase,
+because you have to have some
+
+184
+00:11:49,620 --> 00:11:52,800
+sort of ID or something to lift
+the person and you need a person
+
+185
+00:11:52,800 --> 00:11:56,970
+Manning, or thing that tries and
+holds the basket. I'm picturing
+
+186
+00:11:56,970 --> 00:12:00,690
+one of those like, things that
+they put up power lines, or go
+
+187
+00:12:00,690 --> 00:12:03,960
+and work on the power lines
+with, I don't know how,
+
+188
+00:12:03,990 --> 00:12:07,410
+Mohammed Kabir: yeah, it's
+actually quite close. So they
+
+189
+00:12:07,410 --> 00:12:11,190
+have forklifts or bucket trucks.
+And basically, there's a person
+
+190
+00:12:11,190 --> 00:12:14,880
+in a harness clip to that. And
+then they go up in that, and
+
+191
+00:12:14,880 --> 00:12:17,760
+they're running the barcode
+scanner. And it's, it's actually
+
+192
+00:12:17,760 --> 00:12:20,970
+quite dangerous. Yeah, it is
+quite terrifying. Like, we've
+
+193
+00:12:21,000 --> 00:12:24,930
+we've been in them just to get a
+feel for what it's like, do this
+
+194
+00:12:24,930 --> 00:12:27,810
+annually. And it's more or less
+and were
+
+195
+00:12:27,810 --> 00:12:30,990
+Audrow Nash: lifted by Yes, yes.
+That's awesome. I like that. You
+
+196
+00:12:30,990 --> 00:12:38,070
+guys do that? Yeah. How was it
+terrifying? It's it's, I'm just
+
+197
+00:12:38,070 --> 00:12:42,480
+imagining, like dangling trying
+to scan packages. That sounds
+
+198
+00:12:42,480 --> 00:12:49,350
+incredibly difficult. Yeah.
+Okay. So, being a drone really
+
+199
+00:12:49,350 --> 00:12:52,920
+helps you get to those high
+packages very easy, it's almost
+
+200
+00:12:52,920 --> 00:12:58,200
+free, because you just have to
+pilot it. Is there other other
+
+201
+00:12:58,200 --> 00:13:02,400
+advantages to having a drone,
+rather than like a robot with
+
+202
+00:13:02,400 --> 00:13:06,390
+like a real big telescoping
+pole, or something like this?
+
+203
+00:13:06,840 --> 00:13:07,410
+Right. So
+
+204
+00:13:07,410 --> 00:13:09,900
+Mohammed Kabir: we've, when we
+started, we've actually looked
+
+205
+00:13:09,900 --> 00:13:12,630
+into all of the options.
+Starting from like a lower
+
+206
+00:13:12,630 --> 00:13:15,390
+complexity, like ground robot is
+obviously easier to build,
+
+207
+00:13:15,390 --> 00:13:20,100
+right? Because it's not flying.
+But it turns out that when you
+
+208
+00:13:20,100 --> 00:13:23,640
+get your poll 20 feet high, it
+becomes really hard to make the
+
+209
+00:13:23,640 --> 00:13:29,220
+robot not tip over, just from
+the weight of the ball. And then
+
+210
+00:13:29,250 --> 00:13:32,460
+if you want to kind of conquer
+that you need to make your robot
+
+211
+00:13:32,490 --> 00:13:35,400
+like the you need the size of
+the base, you need to put in
+
+212
+00:13:35,400 --> 00:13:39,000
+more batteries more weight. And
+it's like it's a pretty bad
+
+213
+00:13:39,030 --> 00:13:41,490
+trade off at the end of the day,
+if you want to do anything of
+
+214
+00:13:41,490 --> 00:13:42,090
+that kind.
+
+215
+00:13:43,679 --> 00:13:47,759
+Audrow Nash: Okay, yeah. And
+then so you basically with the
+
+216
+00:13:47,759 --> 00:13:53,039
+drone, the Corvis. One, you have
+the drone flying and it has
+
+217
+00:13:53,129 --> 00:13:56,909
+effectively a barcode scanner
+attached to it. And it's just
+
+218
+00:13:56,909 --> 00:14:01,079
+pointing that at the packages.
+Is that right? Yes, exactly. And
+
+219
+00:14:01,079 --> 00:14:04,799
+so now it's flying around from
+package to package just scanning
+
+220
+00:14:04,829 --> 00:14:11,969
+all the different visible
+barcodes? Exactly. Hmm. Okay. So
+
+221
+00:14:11,969 --> 00:14:17,609
+that's very interesting. How,
+how far into how many systems
+
+222
+00:14:17,609 --> 00:14:22,499
+are deployed? And like, where
+are you guys at in terms of
+
+223
+00:14:23,309 --> 00:14:25,799
+deploying yours to different
+warehouses your system to
+
+224
+00:14:25,799 --> 00:14:26,759
+different warehouses?
+
+225
+00:14:27,480 --> 00:14:29,700
+Mohammed Kabir: Right. So we
+have a bunch of customers, we
+
+226
+00:14:29,700 --> 00:14:34,320
+don't publish the exact number
+on systems deployed. But it is
+
+227
+00:14:34,440 --> 00:14:37,890
+significant enough that we're
+getting very interesting fleet
+
+228
+00:14:37,890 --> 00:14:38,970
+insights from them.
+
+229
+00:14:39,480 --> 00:14:43,740
+Audrow Nash: So order of
+magnitude is like 10 100. It's
+
+230
+00:14:43,740 --> 00:14:48,330
+on the order of 100. Yes, that's
+really exciting. 100 robots out
+
+231
+00:14:48,330 --> 00:14:49,890
+there. 100. Warehouses,
+
+232
+00:14:50,040 --> 00:14:51,630
+Mohammed Kabir: 100 vehicles.
+Yeah.
+
+233
+00:14:53,159 --> 00:14:56,279
+Audrow Nash: And when you say
+fleet, insights into fleet
+
+234
+00:14:56,279 --> 00:15:03,149
+management, you're meaning
+multiple Have your drone systems
+
+235
+00:15:03,539 --> 00:15:08,069
+in a single warehouse? And how
+to like urgently go about
+
+236
+00:15:08,069 --> 00:15:15,869
+scanning them? Yep. Yeah.
+Gotcha. That's tell me a bit
+
+237
+00:15:15,869 --> 00:15:19,259
+about that. The different things
+you're realizing at a fleet
+
+238
+00:15:19,259 --> 00:15:22,469
+level of controlling your
+drones? Sure.
+
+239
+00:15:23,730 --> 00:15:26,370
+Mohammed Kabir: Let's see. So in
+general, the way we design our
+
+240
+00:15:26,370 --> 00:15:30,360
+system, it's quite scalable. So
+if you want to scale to a larger
+
+241
+00:15:30,360 --> 00:15:36,570
+facility, we can just add
+systems basically. And they talk
+
+242
+00:15:36,570 --> 00:15:39,450
+to each other, the charging
+docks can talk to each other and
+
+243
+00:15:39,450 --> 00:15:43,680
+kind of coordinate. And one of
+the things we're just starting
+
+244
+00:15:43,680 --> 00:15:48,180
+to roll out is basically this
+orchestration engine, which has
+
+245
+00:15:48,180 --> 00:15:50,850
+a global view of the entire
+warehouse, and then it can
+
+246
+00:15:50,850 --> 00:15:55,500
+basically automatically tasked
+groans to go and scan certain
+
+247
+00:15:55,500 --> 00:16:00,150
+parks either. Maybe it's a high
+traffic area, which we are kind
+
+248
+00:16:00,150 --> 00:16:02,910
+of inferring from previous
+flights, that if there's a lot
+
+249
+00:16:02,910 --> 00:16:07,410
+of change, and we can see that
+in the data, we can, we can cast
+
+250
+00:16:08,670 --> 00:16:12,180
+more drones to kind of focus on
+that one area, and things like
+
+251
+00:16:12,180 --> 00:16:12,570
+that.
+
+252
+00:16:13,350 --> 00:16:17,220
+Audrow Nash: That's really cool.
+Yeah, you should do anything to
+
+253
+00:16:17,220 --> 00:16:17,550
+add
+
+254
+00:16:18,870 --> 00:16:21,870
+Disha Sarawgi: a bottle. Now, we
+also give kind of a high level
+
+255
+00:16:21,870 --> 00:16:27,570
+control to the people at the
+warehouse as well. We have
+
+256
+00:16:28,410 --> 00:16:33,120
+scheduling online, where,
+whereas managers can schedule,
+
+257
+00:16:33,150 --> 00:16:38,430
+what time they want to draw to
+go and scan what location, so
+
+258
+00:16:38,820 --> 00:16:42,600
+and then the charging of
+orchestration figures out which
+
+259
+00:16:42,600 --> 00:16:46,740
+John was done there, and
+autonomically does all the
+
+260
+00:16:46,740 --> 00:16:48,660
+missions and comes back and
+charges again.
+
+261
+00:16:50,460 --> 00:16:55,110
+Audrow Nash: So that scheduling
+that you mentioned, Keisha, it's
+
+262
+00:16:55,560 --> 00:17:01,170
+like you try to avoid when
+people are in the area, or what
+
+263
+00:17:01,170 --> 00:17:03,780
+kind of why would I want to
+schedule the flights of these
+
+264
+00:17:03,780 --> 00:17:04,350
+drones.
+
+265
+00:17:04,529 --> 00:17:07,949
+Disha Sarawgi: So there are
+times in the warehouse where
+
+266
+00:17:08,639 --> 00:17:13,709
+there's too much traffic in an
+area, and you'd rather dedicate
+
+267
+00:17:13,709 --> 00:17:17,279
+the drawing to less traffic
+area, the friendships during the
+
+268
+00:17:17,279 --> 00:17:21,719
+day, were like, probably night
+shifts have X number of people
+
+269
+00:17:21,749 --> 00:17:26,369
+around, and you want to get a
+scan of whatever was moved
+
+270
+00:17:26,369 --> 00:17:31,229
+during the day. And that works
+out better for people. So we
+
+271
+00:17:31,229 --> 00:17:35,279
+give customers that level of
+control to decide what and how
+
+272
+00:17:35,279 --> 00:17:36,929
+they want to use this product as
+well.
+
+273
+00:17:38,580 --> 00:17:41,760
+Audrow Nash: Gotcha. And could
+be are that what you mentioned
+
+274
+00:17:41,760 --> 00:17:46,320
+for it, recognizing high traffic
+areas that have a lot of change
+
+275
+00:17:46,320 --> 00:17:50,370
+and trying to do them? Or I was
+imagining? Just I didn't
+
+276
+00:17:50,430 --> 00:17:53,280
+understand what about the fleet
+management was extremely
+
+277
+00:17:53,280 --> 00:17:56,160
+interesting before because it
+was like, Oh, you just patrol
+
+278
+00:17:56,160 --> 00:17:59,940
+certain regions. But then if a
+certain region has a lot more
+
+279
+00:17:59,940 --> 00:18:02,340
+change, you want to make more
+passes of it, because you want
+
+280
+00:18:02,340 --> 00:18:06,450
+to hire more temporal data.
+That's very interesting. Yeah.
+
+281
+00:18:07,290 --> 00:18:12,390
+Gotcha. How so now that you have
+100 robots out there or so like,
+
+282
+00:18:12,480 --> 00:18:17,970
+order of magnitude? How is this
+affecting? Package loss?
+
+283
+00:18:19,410 --> 00:18:21,780
+Mohammed Kabir: Right, right.
+Right. So one of the things
+
+284
+00:18:21,780 --> 00:18:26,880
+we've begun seeing is that we've
+actually been able to increase
+
+285
+00:18:26,910 --> 00:18:30,780
+the inventory accuracy for
+warehouses significantly. It
+
+286
+00:18:30,780 --> 00:18:34,530
+really depends on a per facility
+level, how much we can help just
+
+287
+00:18:34,530 --> 00:18:39,150
+because facility dynamics, the
+workers, their, their existing
+
+288
+00:18:39,150 --> 00:18:43,500
+practices. We don't have any
+specific numbers, which we want
+
+289
+00:18:43,500 --> 00:18:46,710
+to share this point, just
+because it's extremely facility
+
+290
+00:18:46,710 --> 00:18:50,400
+specific. And even like any
+vague ballpark number idea will
+
+291
+00:18:50,400 --> 00:18:52,170
+be wrong. So
+
+292
+00:18:52,770 --> 00:18:55,110
+Audrow Nash: you can have a
+specific instance of the thing.
+
+293
+00:18:55,110 --> 00:18:58,950
+Yeah, but I mean, maybe you have
+like an average, or something or
+
+294
+00:18:58,950 --> 00:19:02,040
+like a median level of
+improvement. Right. So
+
+295
+00:19:02,400 --> 00:19:03,480
+Mohammed Kabir: like, I'd be
+interested in,
+
+296
+00:19:03,869 --> 00:19:08,099
+Audrow Nash: like, double it,
+because the huge, like 60% loss
+
+297
+00:19:08,099 --> 00:19:12,419
+is crazy to me. And if you keep
+an additional 30%, that would be
+
+298
+00:19:12,809 --> 00:19:16,229
+amazing. I just walk
+
+299
+00:19:17,250 --> 00:19:20,160
+Mohammed Kabir: across, right,
+yeah, that is actually quite
+
+300
+00:19:20,160 --> 00:19:24,180
+close to what we almost
+guarantee that if your facility
+
+301
+00:19:24,180 --> 00:19:28,770
+is using Corvis drones 95% Just
+kind of the baseline you can
+
+302
+00:19:28,770 --> 00:19:35,130
+expect to achieve within months.
+Yeah, and this involves working
+
+303
+00:19:35,130 --> 00:19:37,770
+really closely with every
+customer because again, as I
+
+304
+00:19:37,770 --> 00:19:40,890
+said, every facility is
+different. Everyone uses
+
+305
+00:19:40,890 --> 00:19:44,880
+different barcodes. There's
+there's a lot of moving pieces
+
+306
+00:19:44,880 --> 00:19:45,270
+there.
+
+307
+00:19:49,320 --> 00:19:54,480
+Audrow Nash: See? So let's see,
+can you tell me a bit about
+
+308
+00:19:54,480 --> 00:19:56,070
+working with these customers?
+
+309
+00:19:57,090 --> 00:19:57,900
+Mohammed Kabir: Um,
+
+310
+00:19:58,320 --> 00:20:00,510
+Audrow Nash: and maybe the chef
+you have a perspective On this,
+
+311
+00:20:00,570 --> 00:20:02,760
+I want to try to get us all
+talking about the same amount.
+
+312
+00:20:05,460 --> 00:20:09,420
+Disha Sarawgi: Sure, so, okay,
+since the team is pretty small
+
+313
+00:20:09,420 --> 00:20:12,420
+right now, like, we are the ones
+who actually go to the
+
+314
+00:20:12,420 --> 00:20:18,090
+deployment as well. And it's
+good to have engineers on site
+
+315
+00:20:18,090 --> 00:20:22,710
+as well. Because if we build
+products that people cannot use
+
+316
+00:20:22,710 --> 00:20:27,360
+in production, that it makes no
+sense. So going on site
+
+317
+00:20:27,360 --> 00:20:31,830
+interacting with customers, we
+get a sense of what they want,
+
+318
+00:20:31,860 --> 00:20:38,010
+and we build accordingly. So
+like onside, Devon been
+
+319
+00:20:38,040 --> 00:20:42,510
+instances where customers have
+told us stories, like they spent
+
+320
+00:20:42,540 --> 00:20:46,710
+hours on a Sunday night trying
+to locate one package, which was
+
+321
+00:20:46,710 --> 00:20:52,110
+lost. And that's why like, and
+if there was something on
+
+322
+00:20:52,110 --> 00:20:55,380
+Sunday, that sets them back for
+the rest of the week, because
+
+323
+00:20:55,440 --> 00:21:00,630
+their week starts on Sunday. And
+that's where our drones have
+
+324
+00:21:00,630 --> 00:21:05,670
+been able to get them a good
+amount of improvement like that
+
+325
+00:21:05,670 --> 00:21:10,260
+is we have all the data stored.
+And we can tell them exactly
+
+326
+00:21:10,260 --> 00:21:14,940
+where, what, where what package
+was seen. And it has them
+
+327
+00:21:14,940 --> 00:21:18,090
+significantly improved their
+buffers and dedicated with
+
+328
+00:21:18,090 --> 00:21:23,280
+others still actually getting
+packages to avoid. So
+
+329
+00:21:24,150 --> 00:21:26,970
+Audrow Nash: that's cool. So
+does this mean that you have to
+
+330
+00:21:26,970 --> 00:21:30,900
+tie the data that you guys
+collect into their existing
+
+331
+00:21:31,290 --> 00:21:34,860
+package, localization
+infrastructure, so like figuring
+
+332
+00:21:34,860 --> 00:21:38,160
+out where all the packages are,
+and the map of that I imagine
+
+333
+00:21:38,160 --> 00:21:41,700
+it's like a grid or something
+like a two 3d grid where they
+
+334
+00:21:41,700 --> 00:21:46,410
+say it's in here, or at this
+location on this shelf, and you
+
+335
+00:21:46,410 --> 00:21:50,400
+have to like, locate the
+package, and then map it to how
+
+336
+00:21:50,400 --> 00:21:53,430
+they actually represent the
+location of the package. Is that
+
+337
+00:21:53,430 --> 00:21:53,730
+true?
+
+338
+00:21:53,940 --> 00:21:57,120
+Disha Sarawgi: Oh, yes. So every
+facility has their own warehouse
+
+339
+00:21:57,120 --> 00:22:02,610
+management system, which is,
+like, where every location is
+
+340
+00:22:02,610 --> 00:22:07,500
+tagged as, depending on the
+rack. And it's not.
+
+341
+00:22:08,820 --> 00:22:12,000
+Audrow Nash: So it's like a
+sticker is on the so say, we
+
+342
+00:22:12,000 --> 00:22:15,990
+have three shelves or something
+high, that each shelf of those
+
+343
+00:22:16,020 --> 00:22:19,890
+will have a sticker or something
+that says this is shelf one,
+
+344
+00:22:19,890 --> 00:22:22,980
+this is shelf two, this is shelf
+three. Yeah. And so that's how
+
+345
+00:22:22,980 --> 00:22:23,850
+you localize them.
+
+346
+00:22:24,089 --> 00:22:29,009
+Disha Sarawgi: Yeah. So it also
+is like, maybe a number as to
+
+347
+00:22:29,009 --> 00:22:33,029
+their eyes than their faces,
+like the two faces on each eye.
+
+348
+00:22:33,059 --> 00:22:37,229
+So then, the next level is the
+face. And then they go by the
+
+349
+00:22:37,229 --> 00:22:41,579
+level of the rag. And then each
+level also has number of slots.
+
+350
+00:22:41,639 --> 00:22:47,249
+So the a hierarchical naming of
+each pallet position in the
+
+351
+00:22:47,249 --> 00:22:51,239
+warehouse, which to keep track
+of and the warehouse management
+
+352
+00:22:51,239 --> 00:22:57,389
+system. And we use the same
+mapping, and we work with
+
+353
+00:22:57,389 --> 00:23:01,469
+customers to integrate the data
+we collect into their management
+
+354
+00:23:01,469 --> 00:23:02,309
+systems as well.
+
+355
+00:23:03,359 --> 00:23:06,029
+Audrow Nash: So it's a big key
+value problem effectively with
+
+356
+00:23:06,029 --> 00:23:10,079
+the key being the label of the
+shelf, and then the value being
+
+357
+00:23:10,079 --> 00:23:15,749
+whatever packages are on it kind
+of thing. That's when I guess so
+
+358
+00:23:15,779 --> 00:23:20,069
+if that's the case, it might not
+be I basically, was it
+
+359
+00:23:20,069 --> 00:23:24,029
+challenging to kind of work with
+all of the different warehouse
+
+360
+00:23:24,029 --> 00:23:27,269
+management setups that all of
+the different warehouses have?
+
+361
+00:23:27,299 --> 00:23:29,129
+Or was there a challenge there?
+
+362
+00:23:30,180 --> 00:23:32,700
+Disha Sarawgi: Oh, okay. Kobe,
+do you want it?
+
+363
+00:23:33,150 --> 00:23:36,570
+Mohammed Kabir: Sure, yeah. This
+is just a huge pain generally
+
+364
+00:23:36,570 --> 00:23:41,910
+integrating with the consuming,
+but the number of different
+
+365
+00:23:41,910 --> 00:23:46,710
+systems out in the wild. We have
+a couple of ways of integrating
+
+366
+00:23:47,010 --> 00:23:50,430
+life from the very simplest
+version, which we can basically
+
+367
+00:23:50,430 --> 00:23:54,180
+support for everyone is we just
+give them a digital data dump.
+
+368
+00:23:54,210 --> 00:23:58,110
+It's something like a CSV or
+something of that kind, which
+
+369
+00:23:58,110 --> 00:24:02,940
+they can. And everyone says,
+yes, yes, yes, men is in
+
+370
+00:24:02,940 --> 00:24:03,270
+commerce,
+
+371
+00:24:03,270 --> 00:24:06,480
+Audrow Nash: it can be processed
+like an Excel sheet. Exactly.
+
+372
+00:24:06,480 --> 00:24:10,530
+It's like it's essentially an
+Excel sheet. Yeah. And then.
+
+373
+00:24:12,690 --> 00:24:15,300
+Mohammed Kabir: And then we can
+also kind of go into slightly
+
+374
+00:24:15,300 --> 00:24:18,330
+more advanced integrations where
+we have some API which they can
+
+375
+00:24:18,330 --> 00:24:22,200
+pull for data, or we can go the
+other way, and we can push data
+
+376
+00:24:22,200 --> 00:24:25,560
+to their API's. This is again,
+very facility specific, very
+
+377
+00:24:25,560 --> 00:24:28,860
+customer specific, and it's
+essentially a custom integration
+
+378
+00:24:28,860 --> 00:24:30,150
+for every new facility.
+
+379
+00:24:32,339 --> 00:24:35,219
+Disha Sarawgi: We want to give
+as much value to the customers
+
+380
+00:24:35,219 --> 00:24:40,799
+as we can, so we try to
+integrate with whatever their
+
+381
+00:24:40,799 --> 00:24:44,999
+existing processes are and make
+them make it as easy as we can.
+
+382
+00:24:48,570 --> 00:24:52,200
+Audrow Nash: See, so now,
+getting into your drone a little
+
+383
+00:24:52,200 --> 00:24:58,440
+bit more. How I like just how
+large is it? It has the
+
+384
+00:24:58,440 --> 00:25:01,080
+autonomous charging dock just
+telling you bit about a bit more
+
+385
+00:25:01,080 --> 00:25:06,420
+about it. What sensors it has,
+what it how large what it looks
+
+386
+00:25:06,420 --> 00:25:11,100
+like, everything should start.
+
+387
+00:25:12,540 --> 00:25:16,320
+Disha Sarawgi: Sure. Yeah, I'm
+good tone is about.
+
+388
+00:25:17,040 --> 00:25:18,780
+Audrow Nash: And this is a
+cordless one we're talking
+
+389
+00:25:18,780 --> 00:25:21,540
+about. Correct? Great. Yeah.
+Yeah.
+
+390
+00:25:22,800 --> 00:25:25,920
+Disha Sarawgi: So it's basically
+two components. We have the
+
+391
+00:25:25,920 --> 00:25:28,650
+landing pad, which is the
+charging dock for us. And the
+
+392
+00:25:28,650 --> 00:25:37,260
+drone. The charging station is
+about like, one meter or 2.7
+
+393
+00:25:37,260 --> 00:25:46,380
+meters, maybe. And the drawn is
+probably, like 3.4. Yeah, five
+
+394
+00:25:47,790 --> 00:25:49,320
+Mohammed Kabir: meters in
+diameter.
+
+395
+00:25:51,840 --> 00:25:56,880
+Audrow Nash: Okay, so for now,
+just kind of, yes, landing
+
+396
+00:25:56,880 --> 00:26:00,870
+station is four feet or five
+feet, like a square kind of
+
+397
+00:26:00,870 --> 00:26:02,940
+thing. And I saw it in a video.
+And I don't know if it's
+
+398
+00:26:02,940 --> 00:26:06,990
+changed, but it's like a
+fiducial marker, like a QR tag.
+
+399
+00:26:07,530 --> 00:26:09,900
+And then you have the charging
+dock in the middle of it. So I'm
+
+400
+00:26:09,900 --> 00:26:14,040
+assuming that you're counting
+that in the five foot width of
+
+401
+00:26:14,040 --> 00:26:19,650
+the station? Yes, yeah. Okay.
+Yeah, go ahead.
+
+402
+00:26:19,710 --> 00:26:22,560
+Disha Sarawgi: So these are the
+mountains at a height where
+
+403
+00:26:23,610 --> 00:26:27,540
+forklift can go through
+underneath it, and we're not
+
+404
+00:26:27,540 --> 00:26:31,080
+causing any obstruction to
+general warehouse traffic.
+
+405
+00:26:33,599 --> 00:26:36,509
+Audrow Nash: How did you What
+was the lesson learned for why
+
+406
+00:26:36,509 --> 00:26:39,179
+you are mounting on the Bub
+forklifts? I assume that was
+
+407
+00:26:39,179 --> 00:26:41,489
+like, there's some story there.
+
+408
+00:26:42,839 --> 00:26:48,629
+Disha Sarawgi: So yeah, like, we
+genuinely love the landing pad
+
+409
+00:26:48,629 --> 00:26:55,349
+and the drawn to like at the end
+of a warehouse racks. And there
+
+410
+00:26:55,349 --> 00:26:58,979
+is also a high traffic area for
+anybody who wants to go into the
+
+411
+00:26:58,979 --> 00:27:04,379
+aisle or come out of the aisle.
+And we do not want to cause any
+
+412
+00:27:04,379 --> 00:27:07,259
+obstruction for them to take
+like a large radius around the
+
+413
+00:27:07,259 --> 00:27:11,909
+racks. Because some of them are
+also narrow passages, which is
+
+414
+00:27:11,909 --> 00:27:16,109
+difficult to get through. So we
+generally mount them at a height
+
+415
+00:27:16,139 --> 00:27:22,739
+where the drone can also operate
+without obstructing the traffic
+
+416
+00:27:22,739 --> 00:27:23,489
+underneath it.
+
+417
+00:27:26,160 --> 00:27:30,240
+Audrow Nash: Did like a get run
+over or where people just
+
+418
+00:27:30,240 --> 00:27:33,210
+frustrated that it was like a
+long path around or
+
+419
+00:27:33,480 --> 00:27:37,050
+Mohammed Kabir: so we've had
+some close calls before before
+
+420
+00:27:37,050 --> 00:27:39,990
+we kind of realized that we
+should move it up even higher.
+
+421
+00:27:40,140 --> 00:27:44,040
+So one of the things about
+forklifts is that they kind of
+
+422
+00:27:44,040 --> 00:27:46,950
+have two modes of operation. So
+one is when they're just
+
+423
+00:27:46,950 --> 00:27:50,040
+traveling along the ground, and
+therefore service fully at
+
+424
+00:27:50,040 --> 00:27:53,490
+ground level. And there's
+another thing where if you have
+
+425
+00:27:53,490 --> 00:27:56,310
+to take packages off from a
+higher act, they basically
+
+426
+00:27:56,310 --> 00:27:58,920
+extend up and then the whole
+thing goes up in the forks also
+
+427
+00:27:58,920 --> 00:28:04,440
+go up with it. Now what happens
+is, even though forklift drivers
+
+428
+00:28:04,440 --> 00:28:09,060
+instructed to not move around at
+full extension,
+
+429
+00:28:09,869 --> 00:28:12,749
+Audrow Nash: sometimes even
+meaning the fork all the way up
+
+430
+00:28:12,779 --> 00:28:13,529
+the exact right.
+
+431
+00:28:13,560 --> 00:28:16,650
+Mohammed Kabir: Yes, that is
+correct. So they're never
+
+432
+00:28:16,650 --> 00:28:19,080
+supposed to actually be moving
+around about the whole thing
+
+433
+00:28:19,080 --> 00:28:21,660
+extended in the forks all the
+way up, because as you can
+
+434
+00:28:21,660 --> 00:28:26,700
+imagine, that's pretty
+dangerous. stuff. Exactly. And
+
+435
+00:28:26,730 --> 00:28:32,760
+but it's actually it does happen
+sometimes. And then well, as you
+
+436
+00:28:32,760 --> 00:28:36,900
+can imagine, they could hit our
+landing pad or they could hit
+
+437
+00:28:36,900 --> 00:28:40,020
+other stuff. Um, that is why we
+tried to position it at such a
+
+438
+00:28:40,020 --> 00:28:42,660
+place which minimizes any
+
+439
+00:28:43,230 --> 00:28:46,590
+Audrow Nash: of this kind. So
+it's kind of you have like a
+
+440
+00:28:46,590 --> 00:28:52,140
+shelf side and then a few feet
+up, you'll have your actual
+
+441
+00:28:52,140 --> 00:28:56,580
+landing pad, which is five foot
+by five foot, approximately one
+
+442
+00:28:56,580 --> 00:28:58,050
+point So would you say seven
+meter
+
+443
+00:28:58,560 --> 00:28:59,970
+Disha Sarawgi: square? Oh,
+
+444
+00:29:01,710 --> 00:29:03,930
+Mohammed Kabir: point 1.2 by
+point seven. It's yeah,
+
+445
+00:29:04,109 --> 00:29:07,049
+Audrow Nash: yeah. Okay, so some
+square that suspended up there,
+
+446
+00:29:07,289 --> 00:29:11,069
+like a little bird's nest. Yeah.
+And that that has the charging
+
+447
+00:29:11,399 --> 00:29:18,239
+station there. You're Corvus one
+drone. Does it have like guards
+
+448
+00:29:18,239 --> 00:29:22,679
+around the propellers? Or like
+how is it set up? So it's a
+
+449
+00:29:22,679 --> 00:29:27,659
+quadrotor. It has four rotors.
+And each of those rotors has a
+
+450
+00:29:27,659 --> 00:29:31,169
+propeller spinning. That's how
+it lifts up. Do the propellers
+
+451
+00:29:31,169 --> 00:29:35,069
+have guards around them? So that
+they don't like hit anything? Or
+
+452
+00:29:36,029 --> 00:29:37,229
+is it not a problem?
+
+453
+00:29:39,450 --> 00:29:42,630
+Mohammed Kabir: That actually,
+there's a story behind that too.
+
+454
+00:29:42,960 --> 00:29:49,440
+So probably the story around
+Yes, indeed. Indeed. So when we
+
+455
+00:29:49,440 --> 00:29:53,340
+started we actually did used to
+have propeller guards around the
+
+456
+00:29:53,340 --> 00:29:57,900
+propellers. But after like doing
+1000s of flights, one of the
+
+457
+00:29:57,900 --> 00:30:02,670
+things we realized was that If
+there is any kind of collision
+
+458
+00:30:02,700 --> 00:30:06,180
+with anything, the propeller
+guards don't really help in the
+
+459
+00:30:06,180 --> 00:30:10,560
+first place, they actually end
+up. So the reason they don't
+
+460
+00:30:10,560 --> 00:30:14,790
+help is whatever material you
+build your propeller guards out
+
+461
+00:30:14,790 --> 00:30:20,430
+of, they typically have some
+amount of flex to them. And what
+
+462
+00:30:20,430 --> 00:30:23,820
+can happen is your propeller
+guard can kind of bend and hit
+
+463
+00:30:23,820 --> 00:30:27,960
+your propellers instead. And
+that's kind of a no win
+
+464
+00:30:27,960 --> 00:30:30,900
+situation for everyone. Because
+then the drone, there's like a
+
+465
+00:30:30,900 --> 00:30:31,980
+catastrophic failure.
+
+466
+00:30:33,180 --> 00:30:36,540
+Audrow Nash: Just falls down.
+Yeah, pretty much smashes on the
+
+467
+00:30:36,540 --> 00:30:38,550
+warehouse floor. Okay, pretty
+much.
+
+468
+00:30:39,150 --> 00:30:42,360
+Mohammed Kabir: So the way we
+started looking at the problem
+
+469
+00:30:42,360 --> 00:30:47,700
+was how can we prevent any kind
+of a situation where there could
+
+470
+00:30:47,700 --> 00:30:52,350
+be a collision in the first
+place. And kind of what we've
+
+471
+00:30:52,380 --> 00:30:56,910
+converged through is our economy
+stack maintains this safety
+
+472
+00:30:56,940 --> 00:31:01,410
+envelope around the vehicle. And
+we basically got rid of the the
+
+473
+00:31:01,410 --> 00:31:04,350
+hardware prop guards, and the
+software makes sure that the
+
+474
+00:31:04,350 --> 00:31:07,500
+drone is just never close enough
+to get into any situation of
+
+475
+00:31:07,500 --> 00:31:08,130
+that kind.
+
+476
+00:31:08,760 --> 00:31:11,760
+Audrow Nash: Gotcha. Okay, so
+you found basically, you could
+
+477
+00:31:11,760 --> 00:31:14,670
+just stay far enough away from
+everything so that you don't
+
+478
+00:31:14,670 --> 00:31:17,340
+need pretty much any sort of
+propeller guards and the
+
+479
+00:31:17,340 --> 00:31:19,770
+propeller guards weren't even
+that good, because they flex and
+
+480
+00:31:19,770 --> 00:31:21,720
+they would just go into the
+propeller, and then it would
+
+481
+00:31:21,720 --> 00:31:25,260
+crash. So they'd be like, for
+protecting fingers or something
+
+482
+00:31:25,260 --> 00:31:28,350
+where I would stop it. And I
+would hit the propeller guard,
+
+483
+00:31:28,380 --> 00:31:31,290
+but then the propeller would hit
+the propeller guard, and then it
+
+484
+00:31:31,290 --> 00:31:35,700
+would fall. So my fingers would
+be okay, but the drone would
+
+485
+00:31:35,700 --> 00:31:41,430
+still suffer the same color. I
+don't know falling from air. Why
+
+486
+00:31:41,430 --> 00:31:44,760
+not just use really rigid? I
+guess. So you've eliminated the
+
+487
+00:31:44,760 --> 00:31:48,360
+need for it. I just wonder about
+like, really rigid propeller.
+
+488
+00:31:48,660 --> 00:31:51,210
+But maybe they're heavier, they
+reduce your flight time or
+
+489
+00:31:51,210 --> 00:31:52,050
+exactly. Yeah,
+
+490
+00:31:52,080 --> 00:31:56,010
+Mohammed Kabir: that's, that's
+pretty much it. If you're going
+
+491
+00:31:56,010 --> 00:31:59,640
+to design with propeller guards
+in mind, you need to kind of add
+
+492
+00:31:59,640 --> 00:32:02,730
+a lot of extra weight to the
+vehicle, which might be
+
+493
+00:32:02,730 --> 00:32:06,210
+acceptable for for certain
+companies, or certain people
+
+494
+00:32:06,210 --> 00:32:11,730
+working on drones. But for us,
+as since we kind of designed
+
+495
+00:32:11,730 --> 00:32:14,520
+around the problem, it just was
+never a thing.
+
+496
+00:32:15,359 --> 00:32:21,689
+Audrow Nash: Yeah. And then the
+shot. Can you speak a little bit
+
+497
+00:32:21,689 --> 00:32:24,479
+to the are you doing something
+with the cable?
+
+498
+00:32:24,599 --> 00:32:26,129
+Disha Sarawgi: No, I was
+blogging?
+
+499
+00:32:28,110 --> 00:32:31,680
+Audrow Nash: Ah, yes. Yeah,
+these lame to have the computer
+
+500
+00:32:31,680 --> 00:32:36,570
+turn off. Can you speak a little
+bit to like safety concerns of
+
+501
+00:32:36,570 --> 00:32:38,700
+customers? Because I guess I'm
+getting at what I'm getting at
+
+502
+00:32:38,700 --> 00:32:42,510
+with the propeller guards. Is I
+wonder if people in the factory
+
+503
+00:32:42,510 --> 00:32:47,730
+would want something like that.
+But just general safety things,
+
+504
+00:32:47,730 --> 00:32:50,460
+safety concerns of the customer?
+This kind of thing?
+
+505
+00:32:50,640 --> 00:32:52,890
+Disha Sarawgi: Oh, yeah,
+definitely. So safety is
+
+506
+00:32:52,890 --> 00:32:57,630
+something we take very seriously
+because it's drawn with models
+
+507
+00:32:57,630 --> 00:33:02,580
+running at like 20,000 rpm, and
+we do not want to collide into
+
+508
+00:33:02,580 --> 00:33:07,410
+anything or hurt anyone or not.
+So we have a bunch of software
+
+509
+00:33:07,410 --> 00:33:15,870
+and hardware fail safes for
+ensuring safety. We have bunch
+
+510
+00:33:15,870 --> 00:33:22,020
+of audio visual cues that we be
+provide while taking off by
+
+511
+00:33:22,020 --> 00:33:25,200
+landing wire in case of
+
+512
+00:33:26,369 --> 00:33:30,059
+Audrow Nash: me that the drone
+has a speaker and it will go
+
+513
+00:33:30,059 --> 00:33:33,869
+like I'm taking off now. Or like
+landing now or something like
+
+514
+00:33:33,869 --> 00:33:36,359
+this. So people have some idea
+of its intention. Yeah,
+
+515
+00:33:37,080 --> 00:33:41,280
+Disha Sarawgi: we actually do.
+So we have Bibles on the drawn
+
+516
+00:33:41,310 --> 00:33:45,360
+on the landing pad, which make
+it known that it's going to take
+
+517
+00:33:45,360 --> 00:33:53,700
+off now. Now we have a bunch of
+spotlights to, like, tell people
+
+518
+00:33:53,700 --> 00:33:58,440
+where it's going to go, or it's
+flying above you, you've taken
+
+519
+00:33:58,440 --> 00:34:04,650
+out or something like that, and
+a bunch of flight to tell you
+
+520
+00:34:05,280 --> 00:34:09,090
+what it's doing now, like it's
+on a flight or it's charging,
+
+521
+00:34:09,090 --> 00:34:13,050
+it's not charging stuff like
+that, like anything that you can
+
+522
+00:34:14,190 --> 00:34:16,950
+as much as you can gather by
+just looking at the system.
+
+523
+00:34:18,270 --> 00:34:19,290
+There will be a visual
+
+524
+00:34:19,290 --> 00:34:24,870
+Audrow Nash: indicators of its
+status. Or audible as well. Yes.
+
+525
+00:34:26,010 --> 00:34:29,880
+Do you do any? So I was thinking
+for hardware failsafe, like if
+
+526
+00:34:29,880 --> 00:34:32,940
+the drum does happen to
+malfunction. Is there any like
+
+527
+00:34:33,000 --> 00:34:37,950
+because So you mentioned flying
+above people? Is there any sort
+
+528
+00:34:37,950 --> 00:34:42,480
+of like I don't know failsafe
+for something if the drone does
+
+529
+00:34:42,510 --> 00:34:44,970
+say for some reason, there's
+just like a segfault on the
+
+530
+00:34:44,970 --> 00:34:49,290
+drone like worst case and it
+just starts to fall. Any any
+
+531
+00:34:49,290 --> 00:34:50,190
+recourse from there?
+
+532
+00:34:50,640 --> 00:34:53,520
+Disha Sarawgi: Yeah, definitely.
+That does happen sometimes. But
+
+533
+00:34:53,820 --> 00:34:57,720
+we have tried to resolve it by
+software and our low level
+
+534
+00:34:57,720 --> 00:35:03,180
+thesis. So in case have an
+emergency, which can be like a
+
+535
+00:35:03,180 --> 00:35:08,970
+mission computer, losing contact
+with the landing pad or
+
+536
+00:35:08,970 --> 00:35:13,710
+something like that, or just
+even a segfault. We try to find
+
+537
+00:35:13,740 --> 00:35:18,240
+a safe spot underneath the drawn
+like the case, we have visual
+
+538
+00:35:18,240 --> 00:35:22,920
+information of everything around
+the drone making figurative
+
+539
+00:35:22,920 --> 00:35:29,040
+Potter land, and the drone
+navigates itself and land safely
+
+540
+00:35:29,280 --> 00:35:33,120
+around without external
+intervention.
+
+541
+00:35:33,960 --> 00:35:36,300
+Audrow Nash: Gotcha. What
+sensors do you have on the
+
+542
+00:35:36,300 --> 00:35:36,660
+drone?
+
+543
+00:35:37,530 --> 00:35:43,440
+Disha Sarawgi: So for a sensor
+stack, we nearly have an array
+
+544
+00:35:43,440 --> 00:35:45,810
+of like 12 cameras onboard?
+
+545
+00:35:49,710 --> 00:35:52,680
+Audrow Nash: Or do they have
+like infrared? Or are there any?
+
+546
+00:35:54,030 --> 00:35:59,580
+Like, like low light conditions
+or something? Maybe I think you
+
+547
+00:35:59,580 --> 00:36:01,380
+have depth cameras as well,
+probably.
+
+548
+00:36:01,410 --> 00:36:04,770
+Disha Sarawgi: Yeah. So they're
+all arranged in like, do
+
+549
+00:36:04,770 --> 00:36:08,520
+fashion. So we have infrared
+cameras, and then we also get
+
+550
+00:36:08,910 --> 00:36:13,290
+information out of them. We have
+a bunch of time use and modifier
+
+551
+00:36:14,010 --> 00:36:20,550
+to give you a no show
+information. And it's basically
+
+552
+00:36:20,580 --> 00:36:22,590
+a visual inertial system.
+
+553
+00:36:23,700 --> 00:36:26,670
+Audrow Nash: Gotcha. So you have
+a bunch of cameras are all of
+
+554
+00:36:26,670 --> 00:36:29,850
+the cameras, infrared depth
+cameras?
+
+555
+00:36:29,880 --> 00:36:31,470
+Unknown: Yeah. Yes.
+
+556
+00:36:34,260 --> 00:36:38,610
+Audrow Nash: Okay. And there's
+no like, this is gonna sound
+
+557
+00:36:38,610 --> 00:36:41,070
+kind of silly, but there's no
+like parachute on board or
+
+558
+00:36:41,070 --> 00:36:44,010
+something. If the book, I guess
+the drone doesn't like hit
+
+559
+00:36:44,010 --> 00:36:47,160
+anything ever, or it hasn't. And
+so that's you don't have to
+
+560
+00:36:47,160 --> 00:36:50,490
+worry about it, falling out
+people's heads, or anything.
+
+561
+00:36:51,570 --> 00:36:54,300
+Like my track record. So it
+isn't very
+
+562
+00:36:54,300 --> 00:36:57,180
+Mohammed Kabir: much. And also
+another way we try to kind of
+
+563
+00:36:57,180 --> 00:37:01,020
+deal with this problem at the
+root is we tell the customers to
+
+564
+00:37:01,020 --> 00:37:05,520
+schedule it in specific off
+hours, when there is no traffic
+
+565
+00:37:05,550 --> 00:37:09,240
+in the aisles. And then we also
+do us a lot of customer
+
+566
+00:37:09,240 --> 00:37:12,420
+training. And we train the
+workers there that if you see
+
+567
+00:37:12,420 --> 00:37:15,810
+the drone, and it's about banter
+and aisles, don't go in there,
+
+568
+00:37:15,810 --> 00:37:18,180
+wait for it to come back. It's
+like probably going to spend
+
+569
+00:37:18,180 --> 00:37:21,390
+like five minutes there. So
+there's a lot of like, kind of
+
+570
+00:37:21,660 --> 00:37:24,960
+human interaction between us and
+the customer and the worker
+
+571
+00:37:24,960 --> 00:37:25,800
+stair which
+
+572
+00:37:27,030 --> 00:37:31,470
+Audrow Nash: you get exactly the
+aisle, the drone is using. Okay,
+
+573
+00:37:31,920 --> 00:37:34,320
+because Disha you mentioned that
+flying overhead in this kind of
+
+574
+00:37:34,320 --> 00:37:37,170
+thing. So I was imagining, like
+drones, scanning people, but
+
+575
+00:37:37,170 --> 00:37:41,430
+need, and that seems risky to
+me. Like I imagined my propeller
+
+576
+00:37:41,430 --> 00:37:44,460
+flies off or something that's
+really hard to control for.
+
+577
+00:37:44,820 --> 00:37:48,060
+Disha Sarawgi: I mean, we have
+safety systems in place, but
+
+578
+00:37:48,090 --> 00:37:50,340
+obviously the same sense to not
+be that.
+
+579
+00:37:50,910 --> 00:37:55,080
+Audrow Nash: Yep. Gotcha. So it
+can't, like you can't fly over
+
+580
+00:37:55,080 --> 00:37:58,350
+someone, but it's not desirable,
+because it's a little bit more
+
+581
+00:37:58,350 --> 00:38:00,150
+risky. Yeah, exactly.
+
+582
+00:38:00,420 --> 00:38:03,510
+Mohammed Kabir: And variably. In
+the wild, we see that someone
+
+583
+00:38:03,510 --> 00:38:06,570
+wanders in or someone just
+didn't pay attention to what we
+
+584
+00:38:06,570 --> 00:38:10,320
+said. So we still design for
+that kind of extreme case where
+
+585
+00:38:10,320 --> 00:38:14,700
+there's someone underneath it
+all the time. But in reality,
+
+586
+00:38:14,700 --> 00:38:19,290
+that's probably like, 1% of our
+international flights.
+
+587
+00:38:19,320 --> 00:38:21,810
+Audrow Nash: Yeah, I would
+imagine far, far less. Yeah,
+
+588
+00:38:21,810 --> 00:38:27,810
+gotcha. Okay, so you have this
+drone, it flies around. It uses
+
+589
+00:38:27,810 --> 00:38:32,970
+depth cameras. To get a sense of
+the distance it is from
+
+590
+00:38:32,970 --> 00:38:37,680
+everything it probably. So do
+you have to do? Like, do you
+
+591
+00:38:37,680 --> 00:38:40,650
+have to map the warehouse first?
+Or how do you say you bring this
+
+592
+00:38:40,650 --> 00:38:44,310
+new drone to a new warehouse for
+a new customer? How do you set
+
+593
+00:38:44,310 --> 00:38:48,270
+up the environment other than
+putting this nest at? And by
+
+594
+00:38:48,270 --> 00:38:52,140
+nest? I mean, the launchpad
+elevated for the drone? How else
+
+595
+00:38:52,140 --> 00:38:54,660
+do you do the setup? Do you do
+some sort of mapping? Do you fly
+
+596
+00:38:54,660 --> 00:38:57,030
+the drone around? What kind of
+things?
+
+597
+00:38:58,110 --> 00:39:02,970
+Disha Sarawgi: So yes, you are
+exactly right about this. Apart
+
+598
+00:39:02,970 --> 00:39:07,680
+from setting the nest, we also
+pre map the warehouse, which
+
+599
+00:39:07,680 --> 00:39:11,280
+means we get like geometric and
+semantic information from the
+
+600
+00:39:11,280 --> 00:39:16,650
+warehouse and give the drone a
+pre map environment. Based on
+
+601
+00:39:16,650 --> 00:39:24,750
+that we can define reasons or
+slots that we want to fly in and
+
+602
+00:39:25,140 --> 00:39:28,680
+schedule missions accordingly
+and fly exactly that.
+
+603
+00:39:31,980 --> 00:39:36,570
+Audrow Nash: Gotcha. And so for
+mapping it, you just fly the
+
+604
+00:39:36,570 --> 00:39:41,700
+drone around and have it What
+was it? So I understand? Right,
+
+605
+00:39:41,700 --> 00:39:45,300
+Mohammed Kabir: right, right. So
+the exact process we cannot talk
+
+606
+00:39:45,300 --> 00:39:49,170
+about because it's something
+we've developed internally. And
+
+607
+00:39:49,170 --> 00:39:51,930
+it's actually one of the hardest
+parts of doing this even though
+
+608
+00:39:51,930 --> 00:39:57,270
+it may not Yeah, actually seem
+so. But at the end of the day,
+
+609
+00:39:57,270 --> 00:40:01,560
+we're taking measurements, some
+by hand Some using the vehicle
+
+610
+00:40:01,560 --> 00:40:04,830
+and then we're kind of putting
+these together and generating
+
+611
+00:40:04,830 --> 00:40:08,490
+kind of a unified map for the
+vehicles views.
+
+612
+00:40:09,570 --> 00:40:13,440
+Audrow Nash: Okay, so you will
+custom generate a specific a map
+
+613
+00:40:13,470 --> 00:40:18,870
+for the warehouse. For that you
+go off of that. Exactly. Do you
+
+614
+00:40:18,870 --> 00:40:21,540
+have problems? I guess the
+shelves if they're really tall,
+
+615
+00:40:22,110 --> 00:40:25,260
+you don't have a problem where
+they're like, move a few inches
+
+616
+00:40:25,260 --> 00:40:28,020
+or a few feet on one end, as
+much.
+
+617
+00:40:28,590 --> 00:40:28,950
+Mohammed Kabir: Yeah,
+
+618
+00:40:28,950 --> 00:40:29,970
+Audrow Nash: we've actually
+
+619
+00:40:29,970 --> 00:40:33,000
+Mohammed Kabir: seen that. Yeah,
+that does occur. It's ridiculous
+
+620
+00:40:33,000 --> 00:40:35,580
+again, but it does happen. Like
+we have to map it again.
+
+621
+00:40:35,940 --> 00:40:40,020
+Whatever. So no, so we actually
+designed into the system. Yeah.
+
+622
+00:40:40,050 --> 00:40:43,860
+So we have a map update method,
+which basically deals with minor
+
+623
+00:40:43,860 --> 00:40:47,100
+change in the environment
+automatically. So every time a
+
+624
+00:40:47,100 --> 00:40:51,150
+vehicle goes out, we can kind of
+update the map and then share it
+
+625
+00:40:51,150 --> 00:40:53,730
+across the fleet. So all of the
+vehicles know that. Okay, this
+
+626
+00:40:53,730 --> 00:40:56,550
+part changed a little bit. So
+next time I go there, I know
+
+627
+00:40:56,550 --> 00:40:57,090
+what to do.
+
+628
+00:40:57,930 --> 00:41:01,140
+Audrow Nash: I see. So you're
+updating a little bit with your
+
+629
+00:41:01,140 --> 00:41:04,080
+map. So you're doing some sort
+of simultaneous localization and
+
+630
+00:41:04,080 --> 00:41:10,620
+mapping? Flight? And how does
+the so when your drone I saw I
+
+631
+00:41:10,620 --> 00:41:14,100
+saw on the website, that you
+only need internet connected to
+
+632
+00:41:14,100 --> 00:41:19,230
+the launch pad. And so when your
+drone goes away, it needs to
+
+633
+00:41:19,230 --> 00:41:23,220
+probably stay within range of
+the launch pad? Like why like
+
+634
+00:41:23,220 --> 00:41:26,730
+some sort of maybe it has a
+router or something on the
+
+635
+00:41:26,730 --> 00:41:31,740
+launch pad? Or does it just does
+it just go back to where the
+
+636
+00:41:31,740 --> 00:41:34,410
+launch pad is, and it doesn't
+need that internet connection
+
+637
+00:41:34,740 --> 00:41:37,080
+for that period of time that it
+is in flight?
+
+638
+00:41:37,650 --> 00:41:40,170
+Mohammed Kabir: Right? So the
+way we design the system,
+
+639
+00:41:40,170 --> 00:41:44,040
+actually, we don't need any sort
+of connection back to the launch
+
+640
+00:41:44,040 --> 00:41:47,520
+pad while in flight. So
+everything all computation
+
+641
+00:41:47,520 --> 00:41:51,810
+happens on board. There is a
+wireless link, but we don't
+
+642
+00:41:51,810 --> 00:41:55,740
+actually need it while flying.
+It's just there for there's a
+
+643
+00:41:55,740 --> 00:41:59,070
+bunch of reasons why it's there.
+But we don't actually require it
+
+644
+00:41:59,370 --> 00:42:02,310
+while flying. Also,
+
+645
+00:42:02,970 --> 00:42:05,490
+Audrow Nash: things like logging
+data or something or what
+
+646
+00:42:05,490 --> 00:42:07,650
+Mohammed Kabir: pretty much
+pretty much basically
+
+647
+00:42:07,650 --> 00:42:10,140
+information about flight
+progress, stuff like that.
+
+648
+00:42:10,800 --> 00:42:14,820
+Audrow Nash: Oh, okay. That's
+cool. Yeah. And then, but you
+
+649
+00:42:14,820 --> 00:42:18,930
+don't need that actual the
+controller and the getting the
+
+650
+00:42:18,930 --> 00:42:23,250
+data and save saving the data
+and everything that happens on
+
+651
+00:42:23,250 --> 00:42:23,910
+board on
+
+652
+00:42:24,120 --> 00:42:27,120
+Mohammed Kabir: exactly, it
+happens all on the ground. And
+
+653
+00:42:27,150 --> 00:42:30,990
+that's another design decision,
+which was actually driven by
+
+654
+00:42:31,110 --> 00:42:34,800
+stuff we saw. So warehouse is
+like, typically it's a bunch of
+
+655
+00:42:34,800 --> 00:42:38,400
+metal racks, right? It's it's a
+Faraday cage. And they're
+
+656
+00:42:38,970 --> 00:42:42,450
+terrible, terrible RF
+propagation environments. Yeah,
+
+657
+00:42:42,480 --> 00:42:45,990
+so any sort of wireless is
+destined to fail.
+
+658
+00:42:49,350 --> 00:42:51,750
+Audrow Nash: So that was that
+was why you decided to put all
+
+659
+00:42:51,750 --> 00:42:56,400
+the computation on the drone.
+Exactly. That's amazing. I
+
+660
+00:42:56,400 --> 00:43:01,770
+started in research in my
+undergrad doing this kind of
+
+661
+00:43:01,770 --> 00:43:04,830
+thing where it was trying to put
+a drone and all the computation
+
+662
+00:43:04,830 --> 00:43:08,340
+on the drone and having it
+localize and maintain a swarm
+
+663
+00:43:08,340 --> 00:43:11,520
+formation. And it was really,
+really difficult. This was like
+
+664
+00:43:11,520 --> 00:43:14,760
+10 years ago, or something. And
+it's impressive now to have
+
+665
+00:43:14,760 --> 00:43:18,300
+everything and you're like
+unbelievable suite of cameras on
+
+666
+00:43:18,300 --> 00:43:22,530
+your drone to it's amazing how
+far things have come in the last
+
+667
+00:43:22,530 --> 00:43:23,130
+nine years.
+
+668
+00:43:26,280 --> 00:43:29,430
+Disha Sarawgi: We have extremely
+long eyes in the warehouse as
+
+669
+00:43:29,430 --> 00:43:35,550
+was so that showboating that
+kind of vibe firing is almost
+
+670
+00:43:35,550 --> 00:43:40,920
+impossible. I like like you have
+made a backup pointer on it. So
+
+671
+00:43:40,920 --> 00:43:44,460
+we just had to compress
+everything to onboard
+
+672
+00:43:44,460 --> 00:43:45,330
+combination.
+
+673
+00:43:48,570 --> 00:43:53,130
+Audrow Nash: Let's see. So now
+talking a bit more about Corvus
+
+674
+00:43:53,490 --> 00:43:57,750
+as a company. So you got you
+mentioned you started in 2017.
+
+675
+00:43:58,530 --> 00:44:01,590
+Will you tell me a little just
+how did you decide to start a
+
+676
+00:44:01,590 --> 00:44:04,740
+company and then dish I'd love
+to hear how did you decide to be
+
+677
+00:44:04,740 --> 00:44:06,870
+employee number two after the co
+founders?
+
+678
+00:44:08,880 --> 00:44:14,070
+Mohammed Kabir: Yeah, sure, I
+can start. Um, so basically. So
+
+679
+00:44:14,070 --> 00:44:18,960
+the company was, myself, Jackie,
+our CEO, and then our two other
+
+680
+00:44:18,960 --> 00:44:24,900
+co founders, Jonathan and Brian.
+And all of us, kind of happened
+
+681
+00:44:24,900 --> 00:44:29,520
+to come together. It was like a
+matter of luck or chance almost.
+
+682
+00:44:30,510 --> 00:44:34,380
+So as the story goes, I knew
+Brian and then Jackie knew
+
+683
+00:44:34,380 --> 00:44:39,930
+Jonathan. And then Jackie found
+me on the internet in some
+
+684
+00:44:39,930 --> 00:44:45,060
+random IRC chat room and I was
+helping people with drone
+
+685
+00:44:45,060 --> 00:44:49,800
+problems or something of that
+sort. And what kind of got
+
+686
+00:44:49,800 --> 00:44:56,910
+connected there and decided to
+kind of start looking into the
+
+687
+00:44:56,910 --> 00:45:02,190
+kinds of use cases which we
+could all automate. Because
+
+688
+00:45:02,460 --> 00:45:05,700
+personally, I'm really into
+automating anything that is
+
+689
+00:45:05,700 --> 00:45:09,660
+automatable. Just because people
+should be spending their time
+
+690
+00:45:09,750 --> 00:45:15,660
+doing more high impact things.
+So automation is really a big
+
+691
+00:45:15,660 --> 00:45:20,550
+part of my life. And kind of I
+think this is true. Also for the
+
+692
+00:45:20,550 --> 00:45:23,820
+other co founders, all of them
+really care about kind of this
+
+693
+00:45:23,820 --> 00:45:29,250
+problem space. And we sort of
+came together. And it was a
+
+694
+00:45:29,250 --> 00:45:35,490
+really great, great team. That,
+that we started with, basically,
+
+695
+00:45:35,490 --> 00:45:40,740
+to Brian was our hardware guy,
+he's our lead of hardware today.
+
+696
+00:45:41,580 --> 00:45:46,410
+He does all of this. So anything
+you see on the ground, it's it's
+
+697
+00:45:46,410 --> 00:45:51,210
+Brian, basically, all the
+hardware, all of the basically
+
+698
+00:45:51,210 --> 00:45:56,520
+every piece, then Jonathan is
+our chief of software, he does a
+
+699
+00:45:56,520 --> 00:46:00,060
+ton of work, both on the
+autonomy stack, and also kind of
+
+700
+00:46:00,090 --> 00:46:04,440
+the almost, it's almost harder,
+I would say, kind of the
+
+701
+00:46:04,440 --> 00:46:07,710
+customer integration side, which
+is integrating with all these
+
+702
+00:46:07,710 --> 00:46:11,310
+custom systems, some of which
+are from the 90s, stuff like
+
+703
+00:46:11,310 --> 00:46:16,290
+that. And then Jackie is our
+CEO. And basically, well, yeah,
+
+704
+00:46:16,290 --> 00:46:21,030
+he does, he does everything. And
+then all of us came together in
+
+705
+00:46:21,030 --> 00:46:26,700
+2017. It was like things, some,
+some some point in the middle of
+
+706
+00:46:26,700 --> 00:46:32,100
+2017. And I told Jackie that,
+okay, I know this great, good
+
+707
+00:46:32,430 --> 00:46:37,050
+hardware guy, my friend, we
+could probably think of doing
+
+708
+00:46:37,050 --> 00:46:40,200
+something. And all of us came
+together and decided to start
+
+709
+00:46:40,200 --> 00:46:41,010
+purpose.
+
+710
+00:46:44,010 --> 00:46:47,430
+Audrow Nash: Awesome. And how
+did you pick the opportunity?
+
+711
+00:46:47,460 --> 00:46:50,910
+Like, how did you pick this
+specific problem to work on?
+
+712
+00:46:50,970 --> 00:46:51,420
+Right?
+
+713
+00:46:53,190 --> 00:46:57,030
+Mohammed Kabir: So Jackie's
+family back in China. They were
+
+714
+00:46:57,060 --> 00:47:00,960
+one of the very first generation
+entrepreneurs in China. And he
+
+715
+00:47:00,960 --> 00:47:04,470
+had actually kind of firsthand
+seen the problems that
+
+716
+00:47:04,470 --> 00:47:08,460
+warehouses go through. And kind
+of this, like this huge thing.
+
+717
+00:47:08,490 --> 00:47:12,600
+Like as an outsider, like, I
+personally had no idea about
+
+718
+00:47:12,630 --> 00:47:17,970
+what problems warehouses and
+generally like industrial stuff,
+
+719
+00:47:18,120 --> 00:47:22,020
+people there go through. And
+Jagga kind of introduced us to
+
+720
+00:47:22,020 --> 00:47:27,720
+this whole new problem space
+where these sort of non sexy use
+
+721
+00:47:27,720 --> 00:47:31,080
+cases, which could still benefit
+hugely from automation, like
+
+722
+00:47:31,080 --> 00:47:33,270
+it's not self driving cars, but
+there's still a huge
+
+723
+00:47:33,270 --> 00:47:33,900
+opportunity.
+
+724
+00:47:35,070 --> 00:47:39,720
+Audrow Nash: Yeah, gotcha. Yeah,
+that's awesome, that Jackie knew
+
+725
+00:47:39,720 --> 00:47:45,060
+so much. And then the shot you
+joining as number two, how was
+
+726
+00:47:45,060 --> 00:47:48,390
+that for you? Like, how did you
+decide to join this company?
+
+727
+00:47:48,390 --> 00:47:51,630
+Yeah. How did you like your
+interest in startups at this
+
+728
+00:47:51,630 --> 00:47:52,980
+stage and this kind of thing.
+
+729
+00:47:54,090 --> 00:47:58,800
+Disha Sarawgi: So it was a bit
+of both like, I personally
+
+730
+00:47:58,800 --> 00:48:04,020
+always wanted to work in an
+early stage startup, because it
+
+731
+00:48:04,020 --> 00:48:10,860
+gives you the opportunity to
+work on the entire stack, get a
+
+732
+00:48:10,860 --> 00:48:13,740
+sense of how everything's
+interacting with each other,
+
+733
+00:48:13,740 --> 00:48:18,720
+have a good amount of ownership
+on the code as well. And the
+
+734
+00:48:18,720 --> 00:48:22,080
+minute you get to learn is much
+more than you would if you were
+
+735
+00:48:22,080 --> 00:48:29,460
+working just in a subsystem as
+part of a big team. So it kind
+
+736
+00:48:29,460 --> 00:48:33,930
+of worked out that Jackie
+reached out to me on LinkedIn, I
+
+737
+00:48:33,930 --> 00:48:38,340
+think. And I was in Austin at
+the time, and I flew down to
+
+738
+00:48:38,340 --> 00:48:44,010
+Boston to meet the team. And I
+was really intrigued by the work
+
+739
+00:48:44,010 --> 00:48:48,510
+we were doing, and just like
+being a small team, like they
+
+740
+00:48:48,510 --> 00:48:55,620
+had come far, I guess, with the
+hardware and the software at the
+
+741
+00:48:55,620 --> 00:49:02,070
+time, but I saw an opportunity
+to contribute as well and get
+
+742
+00:49:02,070 --> 00:49:04,650
+the system to where it is now
+today.
+
+743
+00:49:07,110 --> 00:49:08,490
+Audrow Nash: Where are you guys
+located?
+
+744
+00:49:09,420 --> 00:49:12,390
+Disha Sarawgi: So we are in
+Boston, Massachusetts, at the
+
+745
+00:49:12,390 --> 00:49:12,870
+moment.
+
+746
+00:49:14,370 --> 00:49:19,860
+Audrow Nash: Awesome. Let's see.
+And then just a more general
+
+747
+00:49:19,860 --> 00:49:23,520
+question about Corvis. How are
+you guys funded? So are you
+
+748
+00:49:23,520 --> 00:49:28,350
+receiving investment or have you
+received like a Series A or
+
+749
+00:49:28,350 --> 00:49:29,490
+like, where are you guys at?
+
+750
+00:49:30,300 --> 00:49:33,540
+Mohammed Kabir: Right? We're
+Priya company. We went through Y
+
+751
+00:49:33,540 --> 00:49:39,780
+Combinator in 2018. We were like
+the YC. Summer summer 2018.
+
+752
+00:49:39,780 --> 00:49:42,180
+Batch. Yeah. Cool.
+
+753
+00:49:42,810 --> 00:49:45,660
+Audrow Nash: And so you've
+received what are they? They
+
+754
+00:49:45,660 --> 00:49:49,590
+they give it's like seed funding
+kind of thing from a seed
+
+755
+00:49:49,590 --> 00:49:54,210
+funding. Yes. Gotcha. And then
+you've just been running on that
+
+756
+00:49:54,240 --> 00:49:57,360
+and maybe pretty much are you
+getting revenue from your
+
+757
+00:49:57,360 --> 00:49:59,820
+customers yet? Yeah. Proper
+course.
+
+758
+00:49:59,820 --> 00:50:03,060
+Mohammed Kabir: But Yeah,
+exactly, yeah. So we've been,
+
+759
+00:50:03,090 --> 00:50:08,790
+we've actually been deploying
+for about one and a half years
+
+760
+00:50:08,790 --> 00:50:12,240
+now, we've been doing pilots
+before that. But we've had, we
+
+761
+00:50:12,270 --> 00:50:14,550
+were doing production
+deployments for quite a while
+
+762
+00:50:14,550 --> 00:50:17,970
+now. And all of these are active
+revenue streams for the company.
+
+763
+00:50:18,900 --> 00:50:21,570
+Audrow Nash: Gotcha. And so are
+you guys bootstrapping,
+
+764
+00:50:21,660 --> 00:50:24,840
+effectively where you're
+reinvesting your profits back in
+
+765
+00:50:24,840 --> 00:50:29,580
+and you're not getting much?
+Gotcha. Nice. I like that model.
+
+766
+00:50:29,610 --> 00:50:33,240
+Do you think that you'll be
+seeking investment as a way to
+
+767
+00:50:33,240 --> 00:50:36,630
+kind of grow faster, or just
+kind of stay off that keep
+
+768
+00:50:36,630 --> 00:50:39,540
+bootstrapping and keep your
+equity really large? Or
+
+769
+00:50:39,930 --> 00:50:40,650
+Mohammed Kabir: when
+
+770
+00:50:40,710 --> 00:50:41,790
+Audrow Nash: I'm going forward?
+
+771
+00:50:41,850 --> 00:50:44,430
+Mohammed Kabir: That's that's
+completely open question. We are
+
+772
+00:50:44,430 --> 00:50:47,850
+open to outside investment.
+Because we do want to kind of
+
+773
+00:50:47,910 --> 00:50:51,180
+grow exponentially, we're kind
+of hitting the point where we
+
+774
+00:50:51,180 --> 00:50:54,840
+want to scale up the engineering
+team, the sales team, all of
+
+775
+00:50:54,840 --> 00:50:59,280
+that really quickly. So we're,
+of course open to that. But
+
+776
+00:50:59,400 --> 00:51:00,840
+everything's on the table.
+
+777
+00:51:01,620 --> 00:51:04,410
+Audrow Nash: And you have to
+find a good fit probably, right?
+
+778
+00:51:04,740 --> 00:51:07,710
+Because you guys are in a
+powerful situation where you're
+
+779
+00:51:07,710 --> 00:51:12,330
+not exactly burning through your
+money. And meeting investment,
+
+780
+00:51:13,080 --> 00:51:18,510
+possibly under bad terms, these
+kinds of awesome. Now, let's
+
+781
+00:51:18,510 --> 00:51:22,410
+see, I see that we're coming
+close to the time that we were
+
+782
+00:51:22,410 --> 00:51:28,290
+saying we should end. So what
+I'd like to do for our last
+
+783
+00:51:28,350 --> 00:51:32,280
+little bit, is just asked you
+guys general questions about
+
+784
+00:51:32,280 --> 00:51:37,050
+like, where robotic is going?
+And then advice things. So the
+
+785
+00:51:37,050 --> 00:51:41,820
+shot could you start, and I
+would like to know what advice
+
+786
+00:51:41,880 --> 00:51:45,120
+you would give to like a 20 year
+old view?
+
+787
+00:51:47,250 --> 00:51:50,250
+Disha Sarawgi: Um, okay, I think
+that's pretty straightforward.
+
+788
+00:51:50,250 --> 00:51:57,900
+Because yeah, I mean, okay, my
+point is not long ago. Yeah,
+
+789
+00:51:57,960 --> 00:52:01,080
+Audrow Nash: that to someone
+else added up? Yeah.
+
+790
+00:52:01,890 --> 00:52:06,990
+Disha Sarawgi: Well, to two
+younger badasses, I would say,
+
+791
+00:52:08,070 --> 00:52:17,070
+just do what you love. And do
+not be afraid, like, if it's an
+
+792
+00:52:17,070 --> 00:52:22,320
+engineering solution that you
+don't know the answer to keep at
+
+793
+00:52:22,320 --> 00:52:26,940
+it, because that is what
+engineers are helpful, like to
+
+794
+00:52:26,940 --> 00:52:31,440
+think of problems and solve them
+even when you do not think of
+
+795
+00:52:31,440 --> 00:52:37,020
+answers as the first goal. So
+just in general, the problem
+
+796
+00:52:37,020 --> 00:52:41,520
+solving aspect is engineering
+appears to me. And that is what
+
+797
+00:52:41,520 --> 00:52:46,080
+I love doing. And if you're good
+at it, keep doing it.
+
+798
+00:52:49,230 --> 00:52:51,750
+Audrow Nash: Let's see Kabir
+same question. Advice for
+
+799
+00:52:51,750 --> 00:52:52,350
+younger you.
+
+800
+00:52:53,490 --> 00:52:58,500
+Mohammed Kabir: Vice for younger
+me. Um, let's see, I think one
+
+801
+00:52:58,500 --> 00:53:02,670
+of the big things that's kind of
+been a part of my engineering
+
+802
+00:53:02,670 --> 00:53:06,660
+journey has been open source
+software, I feel really strongly
+
+803
+00:53:06,660 --> 00:53:10,020
+about open source, and also the
+stack at corpus, which we built,
+
+804
+00:53:10,020 --> 00:53:13,470
+it leverages a lot of open
+source pieces. For example, we
+
+805
+00:53:13,470 --> 00:53:18,600
+use ROS one, we use the px for
+autopilot stack. And I kind of
+
+806
+00:53:18,600 --> 00:53:22,740
+started interacting with all of
+these at a very young age. And I
+
+807
+00:53:22,740 --> 00:53:27,000
+think, kind of working with a
+lot of experienced people in the
+
+808
+00:53:27,000 --> 00:53:30,870
+same field. And that kind of
+experience can only come from
+
+809
+00:53:32,310 --> 00:53:35,610
+being on a team, like
+individually, there's only so
+
+810
+00:53:35,610 --> 00:53:38,310
+much you can do. Like you can
+take classes, you can study, you
+
+811
+00:53:38,310 --> 00:53:43,080
+can look up stuff yourself. But
+I think being a part of an open
+
+812
+00:53:43,080 --> 00:53:46,890
+source software team really gave
+me a bunch of skills, which I
+
+813
+00:53:46,890 --> 00:53:51,330
+use everyday now. I would
+really, really advise people to
+
+814
+00:53:51,330 --> 00:53:55,440
+kind of pick a project you love
+or biggest space you love, find
+
+815
+00:53:55,440 --> 00:53:59,370
+a project in that space, and
+then see where see where it
+
+816
+00:53:59,370 --> 00:54:01,260
+goes, you will learn a lot on
+the way.
+
+817
+00:54:02,910 --> 00:54:05,760
+Audrow Nash: And what are some
+of the most valuable parts to
+
+818
+00:54:05,760 --> 00:54:08,250
+you of contributing to open
+source? So obviously, your
+
+819
+00:54:08,250 --> 00:54:11,370
+learning skills but like what
+specific things were most
+
+820
+00:54:11,370 --> 00:54:12,960
+valuable in your experience?
+
+821
+00:54:13,680 --> 00:54:18,240
+Mohammed Kabir: Right. So when I
+started, like working on drones,
+
+822
+00:54:18,240 --> 00:54:22,290
+I think this was when I was in
+middle school or something. I
+
+823
+00:54:22,290 --> 00:54:26,910
+started looking at kind of what
+the options were if I wanted to
+
+824
+00:54:26,910 --> 00:54:29,940
+build my own drone, and I didn't
+know anything at that point. I
+
+825
+00:54:29,940 --> 00:54:35,100
+was just like a middle school
+kid. And then eventually, I came
+
+826
+00:54:35,100 --> 00:54:38,790
+across the px for autopilot,
+which is this open source
+
+827
+00:54:38,790 --> 00:54:43,440
+software stack for drones. And
+what this lets people do is
+
+828
+00:54:43,710 --> 00:54:46,560
+there's a certain set of
+supporting hardware, and you
+
+829
+00:54:46,560 --> 00:54:49,620
+keep this open source software,
+put it on that and then boom,
+
+830
+00:54:49,650 --> 00:54:52,320
+you have your own drone, mess
+around a little bit with the
+
+831
+00:54:52,320 --> 00:54:56,790
+hardware, but effectively it's a
+it's a pretty easy solution if
+
+832
+00:54:56,790 --> 00:54:59,160
+you're trying to build something
+on your own with no experience
+
+833
+00:54:59,160 --> 00:55:05,070
+before. And eventually what what
+my story personally looked like
+
+834
+00:55:05,070 --> 00:55:10,140
+was I started using px for as a
+user. But eventually I started
+
+835
+00:55:10,170 --> 00:55:14,580
+contributing back to upstream. A
+lot of the things which I wanted
+
+836
+00:55:14,580 --> 00:55:20,130
+to do, but the features didn't
+exist at the time. And
+
+837
+00:55:20,130 --> 00:55:24,030
+eventually what this led into
+was, I became a part of the core
+
+838
+00:55:24,180 --> 00:55:27,960
+kind of maintenance team, which
+maintains the entire project.
+
+839
+00:55:28,620 --> 00:55:31,890
+And that that branches out into
+helping other people doing code
+
+840
+00:55:31,890 --> 00:55:36,780
+reviews, just a lot of skills,
+which there was no way I thought
+
+841
+00:55:36,840 --> 00:55:40,260
+I would have learned unless I
+kind of got into it in the first
+
+842
+00:55:40,260 --> 00:55:40,860
+place.
+
+843
+00:55:42,420 --> 00:55:47,130
+Audrow Nash: Awesome. Now, let's
+see a wrapping up. Is there any
+
+844
+00:55:47,130 --> 00:55:50,160
+links that you guys would like
+to share? So in the show notes,
+
+845
+00:55:50,160 --> 00:55:53,970
+we'll put a link to Corvus is
+website. Anything else worth
+
+846
+00:55:53,970 --> 00:55:55,590
+share? Sure, we
+
+847
+00:55:55,590 --> 00:55:59,280
+Mohammed Kabir: have this demo
+reel of Corvis. One, which we'd
+
+848
+00:55:59,280 --> 00:56:02,790
+probably like to show off. I can
+send you the link after the
+
+849
+00:56:02,790 --> 00:56:06,330
+talk. And it'll be that'd be
+pretty nice. I
+
+850
+00:56:06,329 --> 00:56:09,629
+Audrow Nash: think you guys have
+social media or anything you'd
+
+851
+00:56:09,629 --> 00:56:11,429
+like to share the shot? Do you
+have anything?
+
+852
+00:56:13,170 --> 00:56:17,640
+Disha Sarawgi: Yeah, we do have
+garbage on the garbage website,
+
+853
+00:56:17,640 --> 00:56:21,600
+and it was on Twitter. And we
+will send you all the links.
+
+854
+00:56:22,590 --> 00:56:24,360
+Mohammed Kabir: Yeah, we'll send
+your Twitter handles and
+
+855
+00:56:24,360 --> 00:56:26,370
+LinkedIn and whatever else.
+
+856
+00:56:27,180 --> 00:56:29,670
+Audrow Nash: Okay, great. Well,
+it's been a pleasure speaking
+
+857
+00:56:29,670 --> 00:56:31,740
+with both of you. It's been a
+pleasure.
+
+858
+00:56:33,270 --> 00:56:34,470
+Disha Sarawgi: Thanks for taking
+time.
+
+859
+00:56:38,070 --> 00:56:39,990
+Audrow Nash: Thanks for
+listening to this conversation
+
+860
+00:56:40,020 --> 00:56:44,940
+with Disha and Kabir. Thank you
+again to our founding sponsor,
+
+861
+00:56:44,940 --> 00:56:47,670
+Open Robotics, and I hope to see
+you next time
+

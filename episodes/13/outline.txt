@@ -1,0 +1,23 @@
+0:00:00 - Start
+0:00:39 - Introducing Steve and Nav2
+0:01:07 - History of the navigation stack and Nav2
+0:06:10 - What problems does Nav2 solve?
+0:08:05 - How Nav2, MoveIt, and ROS Control relate
+0:10:59 - Challenges in navigation
+0:14:22 - Working in a grid world
+0:24:36 - Motion primitives
+0:40:26 - Potential fields
+0:46:12 - Unknown maps
+0:48:03 - Relating paths to wheel velocities
+0:50:55 - When is Pathplanning used?
+0:52:57 - Hybrid planners
+0:54:59 - Changing environments
+0:57:11 - Behavior trees
+1:01:42 - Behavior tree example
+1:06:16 - Behavior trees versus alternatives
+1:08:19 - Nav2 and SLAM
+1:10:41 - Nav2 for different types of surface environments
+1:13:27 - Experience with the Nav2 community
+1:18:02 - Open Source as a business model
+1:19:09 - Getting involved
+1:22:29 - Career advice

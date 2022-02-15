@@ -1,0 +1,30 @@
+guests: Tobias Holmes
+title: Commercial-grade Autonomous Mowers, Safety, and Dogfooding
+description: |
+  In this episode, Audrow Nash speaks to Tobias Holmes, Quality Assurance Manager at Blue River Technologies.
+  Blue River uses computer vision and robotics in agriculture and was acquired by John Deere in 2017.
+  Tobias speaks about herbicide resistance, spraying weeds, quality assurance and testing on hardware, and on encouraging kids to learn robotics.
+excerpt: Tobias Holmes is a Quality Assurance Manager at Blue River Technologies.
+duration:
+  hours: 1
+  minutes: 43
+  seconds: 26
+tags:
+  - industry
+  - agriculture
+  - robust
+  - safety
+  - testing
+links:
+  - name: Tobias' LinkedIn
+    url: https://www.linkedin.com/in/tobias-holmes-76666369
+  - name: Blue River Technology
+    url: https://bluerivertechnology.com/
+  - name: FIRST Robotics
+    url: https://www.firstinspires.org/robotics/frc
+  - name: Crystal Ray High School (East Bay)
+    url: https://cristoreydelasalle.org/
+mp3SizeBytes: 199732126
+publishDate: 2021-11-02
+youtube:
+  mainContentId: cgNpACPodP4

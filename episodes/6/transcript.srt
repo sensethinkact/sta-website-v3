@@ -1,0 +1,8346 @@
+1
+00:00:02,730 --> 00:00:05,250
+Audrow Nash: This is a
+conversation with Tobias Holmes.
+
+2
+00:00:05,430 --> 00:00:08,790
+Tobias is a Quality Assurance
+Manager at Blue River
+
+3
+00:00:08,790 --> 00:00:12,360
+technology, which uses computer
+vision and robotics and
+
+4
+00:00:12,360 --> 00:00:16,710
+agriculture. Blue River was
+acquired in 2017. By John Deere,
+
+5
+00:00:17,310 --> 00:00:21,120
+we begin this interview with an
+introduction to agriculture and
+
+6
+00:00:21,120 --> 00:00:24,780
+the problem that Blue River is
+working to solve. This includes
+
+7
+00:00:24,780 --> 00:00:30,030
+talking about row and non row
+crops, and herbicide resistance,
+
+8
+00:00:30,600 --> 00:00:33,900
+both of which I knew very little
+about before this conversation.
+
+9
+00:00:34,650 --> 00:00:37,560
+After establishing the problem,
+we talked about how blue river
+
+10
+00:00:37,560 --> 00:00:41,190
+systems work, quality assurance
+and testing and hardware,
+
+11
+00:00:41,490 --> 00:00:45,150
+machine learning and weed
+spraying the acquisition of Blue
+
+12
+00:00:45,150 --> 00:00:50,040
+River by John Deere, the future
+of robotics, in agriculture, and
+
+13
+00:00:50,040 --> 00:00:55,140
+on education. This is the Sense
+Think Act Podcast. Thank you to
+
+14
+00:00:55,140 --> 00:00:58,650
+our founding sponsor, Open
+Robotics. And now here's my
+
+15
+00:00:58,650 --> 00:01:00,540
+conversation with Tobias Holmes.
+
+16
+00:01:01,590 --> 00:01:03,810
+Would you introduce yourself,
+Tobias?
+
+17
+00:01:04,860 --> 00:01:07,950
+Tobias Holmes: Hi, I'm Tobias
+Holmes. I am currently the
+
+18
+00:01:08,610 --> 00:01:15,690
+manager of quality at Blue River
+technology here and in
+
+19
+00:01:15,690 --> 00:01:19,410
+Sunnyvale, California, a
+subsidiary of John Deere
+
+20
+00:01:19,860 --> 00:01:23,970
+Corporation. And, and yeah, I've
+been working in robotics for
+
+21
+00:01:23,970 --> 00:01:26,640
+about seven years now.
+
+22
+00:01:29,130 --> 00:01:30,780
+Audrow Nash: Would you tell me a
+bit about Blue River?
+
+23
+00:01:32,100 --> 00:01:35,370
+Tobias Holmes: So Blue River,
+the company started out what
+
+24
+00:01:35,370 --> 00:01:41,940
+what our co founders, Jorge
+Harada, and Lee reading. A
+
+25
+00:01:41,940 --> 00:01:45,540
+couple guys from Stanford,
+decided that they wanted to
+
+26
+00:01:45,540 --> 00:01:51,510
+bring high tech, you know, high
+tech tech high technology into
+
+27
+00:01:51,510 --> 00:01:56,430
+the agricultural space. So years
+ago, probably about 10 years
+
+28
+00:01:56,430 --> 00:02:01,560
+ago, they started out going
+carried harvesting. And you take
+
+29
+00:02:01,560 --> 00:02:04,920
+what's out there harvesting,
+Carry, carry weeding, sorry,
+
+30
+00:02:04,950 --> 00:02:11,040
+carrier weeding, and in 30 days,
+yeah, so basically being able to
+
+31
+00:02:11,100 --> 00:02:16,800
+look at a carrots and be able to
+clean up the weeds that are
+
+32
+00:02:16,800 --> 00:02:19,770
+around the character that the
+character actually gives you
+
+33
+00:02:19,770 --> 00:02:23,610
+more read more of the harvest,
+you get more of a yield from the
+
+34
+00:02:23,610 --> 00:02:26,940
+harvest. And and that was
+something that that was
+
+35
+00:02:26,940 --> 00:02:29,460
+interesting, there was a problem
+that was happening in the world,
+
+36
+00:02:29,760 --> 00:02:33,510
+they were in the tackling that
+using various robotics
+
+37
+00:02:33,510 --> 00:02:39,480
+technologies, and talk to a girl
+who was like, Hey, you guys have
+
+38
+00:02:39,480 --> 00:02:43,170
+a nice technology here. But what
+I really needed to be utilized
+
+39
+00:02:43,200 --> 00:02:50,160
+is in leading of row crops, and
+so Blue River transition from
+
+40
+00:02:50,160 --> 00:02:54,660
+Audrow Nash: What are row crops?
+I don't know that much about
+
+41
+00:02:54,660 --> 00:02:59,490
+agriculture. And I don't know
+about how carrots maybe are not
+
+42
+00:02:59,490 --> 00:03:01,290
+row crops. What's a row crop?
+
+43
+00:03:01,740 --> 00:03:04,680
+Tobias Holmes: So row crops are
+when you typically think about a
+
+44
+00:03:04,680 --> 00:03:10,080
+farm and when you're on a farm
+where a grower grows, they grow
+
+45
+00:03:10,080 --> 00:03:14,460
+their crops into these like, you
+know, very uniform rows across
+
+46
+00:03:14,460 --> 00:03:17,190
+their entire field. And that
+this allows them to get the
+
+47
+00:03:17,190 --> 00:03:22,170
+maximum amount of yield from a
+particular crop you're trying to
+
+48
+00:03:22,170 --> 00:03:27,630
+grow, it maximizes the space
+that you have, in order to to
+
+49
+00:03:27,630 --> 00:03:28,860
+get the most out of it.
+
+50
+00:03:29,070 --> 00:03:31,500
+Audrow Nash: So you just plant
+them, like optimally spaced in
+
+51
+00:03:31,500 --> 00:03:37,560
+lines. And why why are carrots
+not row crops? I would just
+
+52
+00:03:37,560 --> 00:03:39,330
+assume everything is planted in
+a row.
+
+53
+00:03:39,840 --> 00:03:43,350
+Tobias Holmes: So carrots
+typically are, you know, they
+
+54
+00:03:43,350 --> 00:03:47,520
+kind of they're kind of
+scattered around. And, and you
+
+55
+00:03:47,520 --> 00:03:52,260
+just kind of like throw the
+seeds as you go out and implant
+
+56
+00:03:52,260 --> 00:03:56,490
+them. Wherever they're last row
+crops, we actually like very
+
+57
+00:03:56,520 --> 00:04:01,470
+used machines that are very, you
+know, particular about where
+
+58
+00:04:01,470 --> 00:04:05,940
+they grow, where they are,
+there's less, there's less
+
+59
+00:04:06,090 --> 00:04:11,310
+ambiguity, and the in what our
+place, they're very, very
+
+60
+00:04:11,310 --> 00:04:15,120
+structured and very, very light,
+you know, every 10 inches, you
+
+61
+00:04:15,120 --> 00:04:17,460
+know, just depending on
+particular crop, they're very,
+
+62
+00:04:17,670 --> 00:04:21,510
+they're 10 inches of space from
+each other 30 inches, you know,
+
+63
+00:04:21,510 --> 00:04:26,970
+from the next row, it's very,
+very prescribed, whereas non
+
+64
+00:04:26,970 --> 00:04:30,840
+real crops are, you know, they
+kind of they kind of are planted
+
+65
+00:04:30,840 --> 00:04:35,400
+in a row, if you will, but but
+but what, what, what typically
+
+66
+00:04:35,400 --> 00:04:39,990
+happens is you plant a couple in
+a row, and whichever one is the
+
+67
+00:04:39,990 --> 00:04:44,460
+best, the best vibrant one after
+a little bit of time, you kill
+
+68
+00:04:44,460 --> 00:04:47,970
+the other ones, and then you
+keep the you keep the one that
+
+69
+00:04:47,970 --> 00:04:52,980
+you want. And so river did that
+kind of work in agriculture in
+
+70
+00:04:52,980 --> 00:04:56,550
+California. You can imagine
+there's lots of vegetables,
+
+71
+00:04:57,000 --> 00:04:59,910
+fruits that are grown here and
+they've grown in that manner.
+
+72
+00:05:00,210 --> 00:05:03,900
+You planted a couple of them, as
+you go down and the ones that's
+
+73
+00:05:03,900 --> 00:05:07,260
+the most viable, that's the one
+you keep, you kill the rest.
+
+74
+00:05:07,500 --> 00:05:10,710
+Audrow Nash: Okay, and you kill
+the rest so that the one that
+
+75
+00:05:10,740 --> 00:05:15,720
+looks most viable, or best at
+that time, has more resources
+
+76
+00:05:15,720 --> 00:05:19,860
+available to it less to compete
+with in that spectrum is a
+
+77
+00:05:19,860 --> 00:05:21,030
+better harvest. Maybe.
+
+78
+00:05:21,570 --> 00:05:23,340
+Tobias Holmes: That's right,
+it's so better quality
+
+79
+00:05:23,340 --> 00:05:26,160
+ones.That's, that's right. You
+know, you want to give that, you
+
+80
+00:05:26,430 --> 00:05:29,850
+know, every, every person wants
+to bigger to see or strawberry,
+
+81
+00:05:29,850 --> 00:05:33,750
+bigger, juicy carrot, whatever
+that is. And so, so and so that
+
+82
+00:05:33,750 --> 00:05:38,370
+allows you to say, okay, hey, I
+planted these in a nice bed of a
+
+83
+00:05:38,370 --> 00:05:45,180
+fertilized ground. And whichever
+ground is a is is a, you know,
+
+84
+00:05:45,180 --> 00:05:48,690
+whichever one out of the of the
+three or four, that is more
+
+85
+00:05:48,690 --> 00:05:52,080
+viable. That's the one that I
+keep, and then I kill the rest.
+
+86
+00:05:52,110 --> 00:05:57,720
+That's right. So as you get more
+and more, you get more yield is
+
+87
+00:05:57,720 --> 00:06:01,410
+what we typically call it, a
+grower typically, is concerned
+
+88
+00:06:01,410 --> 00:06:05,940
+about the yield of the crop that
+they they are planning, and they
+
+89
+00:06:05,940 --> 00:06:08,730
+want the most yield for for the
+amount of planning.
+
+90
+00:06:09,480 --> 00:06:11,250
+Audrow Nash: So they have a
+certain amount of space, and
+
+91
+00:06:11,250 --> 00:06:14,790
+they basically want to get as
+much product, carrots or
+
+92
+00:06:14,790 --> 00:06:18,060
+whatever it might be, as
+possible for that amount of
+
+93
+00:06:18,060 --> 00:06:18,540
+land.
+
+94
+00:06:18,570 --> 00:06:19,770
+Tobias Holmes: That's absolutely
+right.
+
+95
+00:06:20,100 --> 00:06:26,880
+Audrow Nash: Okay, so with row
+row plants, row crops and non
+
+96
+00:06:26,880 --> 00:06:31,710
+row crops like carrots, does the
+machinery change for because I'm
+
+97
+00:06:31,710 --> 00:06:35,220
+imagining like a big tractor
+driving down tracks? And so I'm
+
+98
+00:06:35,220 --> 00:06:37,860
+thinking for the non row crops,
+which you said are kind of in
+
+99
+00:06:37,860 --> 00:06:44,370
+rows anyways, does is it like
+squishing a bunch of them? Is
+
+100
+00:06:44,370 --> 00:06:47,310
+the row was I would imagine it's
+going kind of in the seams
+
+101
+00:06:47,310 --> 00:06:48,930
+between the rows of plants.
+
+102
+00:06:49,530 --> 00:06:52,350
+Tobias Holmes: And so yeah, so
+you can imagine it, there's like
+
+103
+00:06:52,350 --> 00:06:56,790
+these little mounds of dirt you
+create, and even something
+
+104
+00:06:56,970 --> 00:07:00,150
+depending on where you are in
+the country on the world. That
+
+105
+00:07:00,150 --> 00:07:03,540
+can be different, but But
+essentially, you're maximizing
+
+106
+00:07:03,570 --> 00:07:07,200
+the land space, and you're
+maximizing the ability of that
+
+107
+00:07:07,290 --> 00:07:11,700
+particular seed to to be the
+best year. And so the
+
+108
+00:07:11,700 --> 00:07:16,200
+transition. And so the
+transition is, is you don't you
+
+109
+00:07:16,200 --> 00:07:20,220
+don't carve out so much land,
+because you don't know, when you
+
+110
+00:07:20,220 --> 00:07:24,210
+know, particular crops like that
+are fruits and vegetables, you
+
+111
+00:07:24,210 --> 00:07:28,200
+don't know which one will be the
+one that actually takes hold and
+
+112
+00:07:28,920 --> 00:07:33,000
+is the champion, if you will,
+that part of the land to give
+
+113
+00:07:33,000 --> 00:07:36,240
+you put three or four of them
+down to see which one is really
+
+114
+00:07:36,240 --> 00:07:39,840
+taking the resources out of the
+ground. Yep, in a row crop, you
+
+115
+00:07:39,840 --> 00:07:43,350
+know that, hey, if I plant the
+seed here, this probably gonna
+
+116
+00:07:43,350 --> 00:07:47,940
+grow if I plan in perfect
+places, you know, soy bean, and
+
+117
+00:07:47,940 --> 00:07:50,520
+the particular row crops that
+we're talking about soy bean,
+
+118
+00:07:50,790 --> 00:07:54,540
+cotton corn, if you plant them
+there, they're probably going to
+
+119
+00:07:54,540 --> 00:07:59,580
+be just fine. The thing that
+will be the resource, so the
+
+120
+00:07:59,580 --> 00:08:05,100
+resource wouldn't be the
+resource like pool wouldn't be
+
+121
+00:08:05,100 --> 00:08:12,660
+weeds, it would be the... Excuse
+me, I said that wrong. And a
+
+122
+00:08:12,660 --> 00:08:15,660
+vegetable crop, you want to
+plant multiples, because you
+
+123
+00:08:15,660 --> 00:08:19,020
+don't know what the crop itself
+will take? Yeah in the row crop,
+
+124
+00:08:19,050 --> 00:08:21,090
+you know, the crop itself will
+take but then there's
+
+125
+00:08:21,090 --> 00:08:25,320
+competition as weeds. And so now
+you have to kill the weeds and
+
+126
+00:08:25,320 --> 00:08:29,550
+vegetables and fruits, you need
+to plant multiples, because that
+
+127
+00:08:29,550 --> 00:08:33,750
+that we'll see may just not grow
+right on its own. So you can't
+
+128
+00:08:33,750 --> 00:08:36,270
+just plant one and I know that
+that one's gonna, but you got to
+
+129
+00:08:36,270 --> 00:08:39,420
+plant multiples. Because you
+know, out of the if I plant at
+
+130
+00:08:39,420 --> 00:08:43,110
+least four, one or two of those
+guys are going to grow. Yeah,
+
+131
+00:08:43,110 --> 00:08:45,450
+and then you and then you take
+the best out of the out of the
+
+132
+00:08:45,450 --> 00:08:49,560
+group was in row crops, I plant
+a seed that seed is going to
+
+133
+00:08:49,560 --> 00:08:54,180
+grow the only competition is
+weeds. Yeah. And, and so and so
+
+134
+00:08:54,180 --> 00:08:57,000
+in that situation, you know,
+you're planning, you're planting
+
+135
+00:08:58,020 --> 00:09:01,380
+seeds that are going to grow,
+you just now need to make sure
+
+136
+00:09:01,380 --> 00:09:05,670
+that you you provided the best
+environment in order for it to
+
+137
+00:09:05,670 --> 00:09:06,030
+grow.
+
+138
+00:09:06,510 --> 00:09:08,400
+Audrow Nash: Gotcha. So if I
+understand correctly, when you
+
+139
+00:09:08,400 --> 00:09:11,970
+have the non row crops, you just
+have like a hump of soil that
+
+140
+00:09:11,970 --> 00:09:15,210
+goes back in a row effectively
+denotes a non row crop and you
+
+141
+00:09:15,210 --> 00:09:18,630
+just like throw seeds all over
+it. Right plants will come up
+
+142
+00:09:19,140 --> 00:09:25,290
+anywhere in that big wide row
+and kill the ones that look less
+
+143
+00:09:25,320 --> 00:09:29,520
+promising to save the ones that
+are more promising. Okay. And in
+
+144
+00:09:29,520 --> 00:09:33,630
+the row ones, you just have a
+narrow row where the seat seat
+
+145
+00:09:33,630 --> 00:09:38,490
+seats easy. And they Oh, yes.
+Right. And so in the non row
+
+146
+00:09:38,490 --> 00:09:42,480
+ones you are killing the
+competing ones of the same
+
+147
+00:09:42,480 --> 00:09:46,110
+species that are less viable.
+And row row ones you're more
+
+148
+00:09:46,110 --> 00:09:48,540
+concerned about killing the
+weeds that are competing with
+
+149
+00:09:48,570 --> 00:09:51,000
+the crop you're interested in.
+Is that correct?
+
+150
+00:09:51,420 --> 00:09:52,230
+Tobias Holmes: Absolutely.
+
+151
+00:09:52,770 --> 00:09:56,220
+Audrow Nash: Okay, so with going
+back a little bit, so with Blue
+
+152
+00:09:56,220 --> 00:10:00,720
+River they were starting with
+these non row crops. And then
+
+153
+00:10:01,200 --> 00:10:05,160
+feedback from customers was we
+are interested in row crops.
+
+154
+00:10:06,750 --> 00:10:09,030
+Continuing from there, what
+happened?
+
+155
+00:10:10,530 --> 00:10:13,620
+Tobias Holmes: So Blue River had
+to make a shift right that the,
+
+156
+00:10:13,770 --> 00:10:18,690
+the technology, the actual even
+even the agro agronomical When I
+
+157
+00:10:18,690 --> 00:10:22,620
+say agronomical, I'm talking
+about the Cool World, the word
+
+158
+00:10:22,650 --> 00:10:27,750
+the the way that you know, you
+do something in agriculture,
+
+159
+00:10:27,930 --> 00:10:30,390
+Audrow Nash: Is it like
+economical but for agriculture?
+
+160
+00:10:31,590 --> 00:10:34,800
+Tobias Holmes: agriculture, so
+So in this case, we have all the
+
+161
+00:10:34,800 --> 00:10:37,260
+seeds that are out there, and we
+want to get rid of the ones that
+
+162
+00:10:37,260 --> 00:10:40,650
+are not viable. So how did you
+do that, in a way an
+
+163
+00:10:40,650 --> 00:10:44,370
+agricultural? And so and there's
+multiple ways you can play, you
+
+164
+00:10:44,370 --> 00:10:48,840
+can spray herbicide, you can go
+in and dig up the ones that you
+
+165
+00:10:48,840 --> 00:10:52,590
+didn't want, you know, or you
+can you can you can even apply
+
+166
+00:10:52,590 --> 00:10:56,040
+her fertilizer, and that's what
+Blue River did they apply
+
+167
+00:10:56,040 --> 00:11:00,000
+fertilizer. And what happens if
+you apply too much fertilizer to
+
+168
+00:11:00,210 --> 00:11:03,930
+a plant? It'll explode it, you
+know, it'll just grow so fast
+
+169
+00:11:03,930 --> 00:11:09,300
+that it can't exploded. Realize
+think about that is not that
+
+170
+00:11:09,330 --> 00:11:13,680
+that fertilizer is in that soil.
+The other plants that makes the
+
+171
+00:11:13,680 --> 00:11:18,510
+one that is viable, ie that one,
+how can can grow stronger,
+
+172
+00:11:18,510 --> 00:11:22,320
+because now you have made a very
+fertile environment. The ones
+
+173
+00:11:22,320 --> 00:11:26,070
+that were weak exploded, but
+this guy that is not weak, took
+
+174
+00:11:26,070 --> 00:11:28,890
+that took that fertilization and
+use it and grew better.
+
+175
+00:11:29,760 --> 00:11:32,130
+Audrow Nash: So again, not
+knowing much about agriculture,
+
+176
+00:11:32,130 --> 00:11:36,510
+why does it... so it explodes,
+it grows too fast, and then it
+
+177
+00:11:36,510 --> 00:11:40,500
+can't support that or something?
+Why? Why? Why does it die?
+
+178
+00:11:40,500 --> 00:11:41,910
+Because it grows too fast?
+
+179
+00:11:42,750 --> 00:11:45,780
+Unknown: Because it's just it's
+just the fertilizers a kind of
+
+180
+00:11:47,220 --> 00:11:51,270
+Yeah, how to put that it is
+something that encourages the
+
+181
+00:11:51,270 --> 00:11:55,770
+plant to grow very fast, but
+good plant has to be able to
+
+182
+00:11:55,770 --> 00:11:56,400
+handle it
+
+183
+00:11:58,050 --> 00:12:00,930
+Audrow Nash: Does it grow to...
+is it like a startup in some
+
+184
+00:12:00,930 --> 00:12:05,010
+sense, that takes venture
+capital funding, and it
+
+185
+00:12:05,010 --> 00:12:07,980
+basically gets a huge
+investment, but if the money, so
+
+186
+00:12:07,980 --> 00:12:12,270
+you grow rapidly, and then
+expenses are coming, so then
+
+187
+00:12:13,380 --> 00:12:13,890
+the...
+
+188
+00:12:15,750 --> 00:12:20,130
+Unknown: Essentially, you're
+going too fast. And I would put
+
+189
+00:12:20,280 --> 00:12:24,840
+a similar startup somewhere
+going too fast if you don't have
+
+190
+00:12:24,840 --> 00:12:29,010
+the funding, but the but you
+don't have the infrastructure if
+
+191
+00:12:29,040 --> 00:12:31,080
+you don't have the
+infrastructure to handle it.
+
+192
+00:12:31,560 --> 00:12:35,460
+Right. So that viable crop,
+right, that one that is like
+
+193
+00:12:35,550 --> 00:12:41,070
+it's gonna it's gonna sustain,
+that one has already has gained
+
+194
+00:12:41,070 --> 00:12:45,150
+all the things necessary to reap
+the benefit of that fertilizer.
+
+195
+00:12:45,600 --> 00:12:51,330
+These other ones are set in such
+a non capable state, that when
+
+196
+00:12:51,330 --> 00:12:54,570
+you you feed them fertilizer,
+they, they grow so fast, but
+
+197
+00:12:54,570 --> 00:12:57,390
+they're not capable, they're not
+ready for it. In other words,
+
+198
+00:12:57,390 --> 00:12:59,070
+Audrow Nash: So they grow before
+they're ready, and they
+
+199
+00:12:59,070 --> 00:13:00,120
+overextend themselves.
+
+200
+00:13:00,600 --> 00:13:04,830
+Unknown: There you go, it's too
+much, this is too much ploom.
+
+201
+00:13:05,070 --> 00:13:05,910
+And a guy,
+
+202
+00:13:06,030 --> 00:13:09,840
+Audrow Nash: I'm thinking of
+like Napolean now and having too
+
+203
+00:13:09,840 --> 00:13:11,730
+big of an empire, and then it
+collapses.
+
+204
+00:13:12,030 --> 00:13:15,360
+Unknown: It collapse. And you
+could think about it as you
+
+205
+00:13:15,360 --> 00:13:18,510
+could think about it, as I have
+too much resources that I cannot
+
+206
+00:13:18,510 --> 00:13:24,630
+contain it, I cannot help hold
+it within my infrastructure. So
+
+207
+00:13:24,630 --> 00:13:30,210
+I need to so I so what happens
+is it just explodes. Whereas the
+
+208
+00:13:30,210 --> 00:13:34,050
+plants that are the plants that
+can handle that they take it in
+
+209
+00:13:34,050 --> 00:13:37,740
+and they use it and grow, which
+is what to expect when you get
+
+210
+00:13:37,890 --> 00:13:42,480
+you know, like, like an
+investment or an increase. And
+
+211
+00:13:42,480 --> 00:13:46,200
+it is a ridiculous amount.
+Right? It is a it would be like,
+
+212
+00:13:46,200 --> 00:13:48,690
+you know, you give somebody
+who's never had a business
+
+213
+00:13:48,690 --> 00:13:52,560
+before in their life, you know,
+30 million, right? Like, they
+
+214
+00:13:52,560 --> 00:13:54,630
+don't they wouldn't know what to
+do with that property. Right?
+
+215
+00:13:55,260 --> 00:13:55,650
+Yep.
+
+216
+00:13:56,550 --> 00:13:58,680
+Audrow Nash: Gotcha. It's like
+getting rich, quick kind of
+
+217
+00:13:58,680 --> 00:14:00,480
+thing. And then it just goes
+away. Okay.
+
+218
+00:14:00,480 --> 00:14:03,600
+Unknown: They have no ability to
+deal with it. Right and no
+
+219
+00:14:03,600 --> 00:14:06,540
+ability to deal with it. Yeah.
+And the thing about that is that
+
+220
+00:14:06,570 --> 00:14:09,570
+that money doesn't go anywhere.
+That money is still out in the
+
+221
+00:14:09,570 --> 00:14:12,990
+environment in the system. Yeah.
+And that and and that next crop
+
+222
+00:14:12,990 --> 00:14:16,170
+that's next to those to those in
+those plants that get killed
+
+223
+00:14:16,170 --> 00:14:19,980
+that way, reaps the benefit of
+it. So you're fertilizing. So
+
+224
+00:14:20,130 --> 00:14:24,000
+it's kind of a two pronged
+process. You're gonna fertilize
+
+225
+00:14:24,000 --> 00:14:26,940
+your soil anyway, because you
+want your plants to grow. But
+
+226
+00:14:26,940 --> 00:14:30,660
+the ones that are not viable,
+you fertilize it to the point
+
+227
+00:14:30,660 --> 00:14:34,770
+where they're going to die, but
+that overlying fertilizer still
+
+228
+00:14:34,770 --> 00:14:38,190
+stays in the ground and allows
+the ones that are not going to
+
+229
+00:14:38,190 --> 00:14:44,640
+die, to grow, to flourish to be
+better. You harvest those, that
+
+230
+00:14:44,640 --> 00:14:47,280
+ground is still very fertile
+with all those resources that
+
+231
+00:14:47,280 --> 00:14:50,820
+you come in are still there. You
+can go plant again next season,
+
+232
+00:14:51,030 --> 00:14:54,540
+the grounds fertile, it grows
+again. You do this process
+
+233
+00:14:54,540 --> 00:14:58,950
+again. So you're, you're kinda
+you know, it's kind of a cycle.
+
+234
+00:14:59,910 --> 00:15:03,990
+fertilizing the ground but also
+getting rid of the the the weeds
+
+235
+00:15:04,320 --> 00:15:07,680
+to the crops that are not going
+to they're not going to make it
+
+236
+00:15:07,680 --> 00:15:11,910
+right if you give those guys an
+extra shot, so that they so that
+
+237
+00:15:11,910 --> 00:15:14,070
+they they're not going to make
+it and then...
+
+238
+00:15:15,090 --> 00:15:19,530
+Audrow Nash: Is this row crops
+where it's weeds that are
+
+239
+00:15:19,530 --> 00:15:22,080
+competing, or we speaking about
+non row crops, or both?
+
+240
+00:15:22,080 --> 00:15:24,510
+Tobias Holmes: That was non row
+crops. So in row in a row crop,
+
+241
+00:15:24,510 --> 00:15:26,790
+it's a different environment and
+that's what I was talking about
+
+242
+00:15:26,790 --> 00:15:32,190
+agronomical tools, right. And so
+in a row crop. You know,
+
+243
+00:15:32,490 --> 00:15:35,760
+fertilizing the weeds is not the
+way to go, right? You don't want
+
+244
+00:15:35,760 --> 00:15:39,330
+the weeds to grow. You want to
+deplete the weeds, you want to
+
+245
+00:15:39,390 --> 00:15:40,470
+show that was removed?
+
+246
+00:15:41,010 --> 00:15:43,590
+Audrow Nash: I see. So that was
+with the non row crop, what
+
+247
+00:15:43,590 --> 00:15:47,160
+we're talking about with over
+fertilizing them. So you do it
+
+248
+00:15:47,160 --> 00:15:54,750
+to the non row crop that are not
+promising. And thus, they grow
+
+249
+00:15:54,750 --> 00:15:58,170
+too fast, then they explode and
+die. Not literally explode,
+
+250
+00:15:58,170 --> 00:16:01,380
+probably. But for the row crop,
+you're saying now we have a
+
+251
+00:16:01,380 --> 00:16:02,190
+different strategy?
+
+252
+00:16:02,460 --> 00:16:04,950
+Tobias Holmes: That's right. And
+that's what I'm talking about
+
+253
+00:16:04,950 --> 00:16:07,800
+the agronomic the strategy,
+right is that so and so in
+
+254
+00:16:07,800 --> 00:16:12,510
+agriculture, in plants, you can
+imagine there's this a variety
+
+255
+00:16:12,510 --> 00:16:16,950
+of plants and in the agronomic,
+the agricultural world is just
+
+256
+00:16:16,950 --> 00:16:20,760
+as varied as humans, right,
+there's just life itself is just
+
+257
+00:16:20,760 --> 00:16:24,930
+so varied. And it's even more so
+in the plant world. And so
+
+258
+00:16:25,230 --> 00:16:28,770
+different strategies are needed
+for different types of plants
+
+259
+00:16:28,770 --> 00:16:32,460
+that you're going. And in a row
+crop situation where you know,
+
+260
+00:16:32,460 --> 00:16:35,160
+the seed is going to take, you
+know that when you plant that
+
+261
+00:16:35,160 --> 00:16:37,890
+seed, it's going to come up and
+it's going to come out of the
+
+262
+00:16:37,890 --> 00:16:40,500
+ground, it's just a matter of
+how much yield you're going to
+
+263
+00:16:40,500 --> 00:16:44,130
+get from it. Your strategy there
+is different because now you're
+
+264
+00:16:44,130 --> 00:16:48,840
+not competing with others, like
+seeds, you're completing what
+
+265
+00:16:48,840 --> 00:16:53,220
+you're competing with, what we
+are completely different plants
+
+266
+00:16:53,220 --> 00:16:56,040
+that are trying to suck the
+resources away from the plant,
+
+267
+00:16:56,040 --> 00:16:58,440
+you're trying to, you know, the
+cash crop is what we call it.
+
+268
+00:16:58,920 --> 00:17:03,720
+And, and so in that situation,
+you actually want to kill, you
+
+269
+00:17:03,720 --> 00:17:07,560
+want to alleviate that leak, you
+want to alleviate those plants,
+
+270
+00:17:08,010 --> 00:17:11,280
+Audrow Nash: Alleviate is a
+funny word for that. It's the
+
+271
+00:17:12,810 --> 00:17:16,170
+problem, you're alleviating the
+problem, and thus you're killing
+
+272
+00:17:16,170 --> 00:17:17,220
+the plant. I see.
+
+273
+00:17:17,430 --> 00:17:20,820
+Unknown: It's killing the plant,
+it's killing the plant. It's
+
+274
+00:17:21,600 --> 00:17:26,220
+making sure that that plant
+because you never really kill
+
+275
+00:17:26,220 --> 00:17:29,370
+it. You never really kill it,
+right? Like like those, those,
+
+276
+00:17:30,120 --> 00:17:33,090
+Audrow Nash: But you remove it
+as a competitor for resources.
+
+277
+00:17:34,560 --> 00:17:36,930
+Unknown: So you think about
+plants, you think about life,
+
+278
+00:17:36,960 --> 00:17:41,400
+life always wants to persist, it
+doesn't really die, right? It's
+
+279
+00:17:41,400 --> 00:17:44,850
+hardy. That's absolutely true.
+
+280
+00:17:46,920 --> 00:17:49,890
+Audrow Nash: Only the cash crops
+die occasionally.
+
+281
+00:17:51,780 --> 00:17:54,930
+We purposely we purposely
+harvest those, right, but the
+
+282
+00:17:54,930 --> 00:17:58,350
+weeds are just there. And the
+interesting thing that happened,
+
+283
+00:17:58,410 --> 00:18:03,630
+so just go back, you know, 30
+years, they had what roundup
+
+284
+00:18:03,630 --> 00:18:06,750
+they had they had, you know
+chemicals that could that would
+
+285
+00:18:06,840 --> 00:18:09,780
+you know they have their crops
+genetically modified, you can
+
+286
+00:18:09,780 --> 00:18:13,350
+spray the entire field, we call
+that broadcasting. So you spray
+
+287
+00:18:13,350 --> 00:18:17,430
+the entire field with herbicide,
+the plants that you were trying
+
+288
+00:18:17,430 --> 00:18:20,100
+to keep were genetically
+modified so that that herbicide
+
+289
+00:18:20,100 --> 00:18:24,690
+did not kill that plant. But it
+killed everything that wasn't
+
+290
+00:18:24,750 --> 00:18:27,810
+anything like that all the weeds
+that were in that plant that had
+
+291
+00:18:28,230 --> 00:18:31,560
+a modification in it to that
+herbicide. And so all those
+
+292
+00:18:31,560 --> 00:18:34,470
+plants and what you would see if
+you could go down a growth field
+
+293
+00:18:34,470 --> 00:18:38,730
+and would be what we call clean,
+you would only see the crop that
+
+294
+00:18:38,730 --> 00:18:42,630
+the girl was trying to grow,
+meaning there was nothing else
+
+295
+00:18:42,630 --> 00:18:47,460
+but everything else was dirt in
+the field or soil. Only the crop
+
+296
+00:18:47,460 --> 00:18:51,210
+was there. And that now was the
+American agriculture for 3040
+
+297
+00:18:51,240 --> 00:18:55,470
+years, you know, using these
+genetically modified plants.
+
+298
+00:18:55,770 --> 00:18:59,130
+Okay, what happened was is over
+time he is talking about life
+
+299
+00:18:59,130 --> 00:19:04,260
+and how hard it is you kill the
+just dude, you killed all the
+
+300
+00:19:04,260 --> 00:19:07,440
+weeds that were susceptible to
+that herbicide. And the only
+
+301
+00:19:07,440 --> 00:19:09,900
+ones that are persistent were
+ones that were able to fight
+
+302
+00:19:09,900 --> 00:19:13,170
+through the herbicide. And so
+now they became they build up
+
+303
+00:19:13,170 --> 00:19:17,880
+the herbicide resistance.
+Valerie's so now they are the
+
+304
+00:19:17,880 --> 00:19:20,880
+old herbicide resistant plants
+are the only ones that are
+
+305
+00:19:20,880 --> 00:19:24,870
+reproducing. So now when you
+reproduce you're only be
+
+306
+00:19:24,870 --> 00:19:28,260
+producing herbicide resistant
+plants and that is causing a
+
+307
+00:19:28,260 --> 00:19:32,670
+huge air a huge battle man
+gotcha because now you now the
+
+308
+00:19:32,670 --> 00:19:37,500
+plants are being able to build
+up resistance faster than the
+
+309
+00:19:37,500 --> 00:19:40,830
+engineers can build up new
+technologies to actually kill
+
+310
+00:19:40,830 --> 00:19:44,400
+those those resistant plants.
+And so now now you're not you're
+
+311
+00:19:44,400 --> 00:19:48,120
+having, you know, what we call
+unclean fields, fields where
+
+312
+00:19:48,120 --> 00:19:51,720
+growers are spraying. They're
+planting crops and these
+
+313
+00:19:51,720 --> 00:19:55,080
+herbicides are resisting it. And
+so now they have to come up with
+
+314
+00:19:55,080 --> 00:19:58,200
+something different different
+chemicals different ability to
+
+315
+00:19:58,200 --> 00:19:58,830
+get rid of the plants.
+
+316
+00:19:58,830 --> 00:20:01,230
+And that's in the timeline of
+like the 30 years you said...
+
+317
+00:20:01,710 --> 00:20:06,090
+Unknown: So 30 years, 30 years
+we've been using the Roundup
+
+318
+00:20:06,120 --> 00:20:09,300
+herbicide, we've been using
+herbicide, or I would say the
+
+319
+00:20:09,300 --> 00:20:14,790
+last 10 years is where they
+really become maybe in the last
+
+320
+00:20:14,790 --> 00:20:19,020
+five years is where they really
+become prevalent herbicide
+
+321
+00:20:19,020 --> 00:20:22,530
+resistant weeds, to the point
+where they're, they're, they're
+
+322
+00:20:22,530 --> 00:20:25,980
+starting to, like, you know,
+hey, the strategies that growers
+
+323
+00:20:25,980 --> 00:20:29,370
+use, and there's multiples, as
+herbicide, there's a there's a
+
+324
+00:20:29,370 --> 00:20:33,540
+will be called a field fighting
+you call when you kind of just
+
+325
+00:20:33,630 --> 00:20:38,400
+trim up the dirt in the row to
+kill some of the weeds. There's
+
+326
+00:20:38,400 --> 00:20:43,110
+multiple techniques, but but
+like I said, you know, alleviate
+
+327
+00:20:43,110 --> 00:20:46,770
+the problem, you want to give
+the crop that you're trying to
+
+328
+00:20:46,770 --> 00:20:50,640
+grow and get killed from the one
+that you're trying to sell the
+
+329
+00:20:50,640 --> 00:20:54,810
+best opportunity to win in the,
+you know, in the competing of
+
+330
+00:20:54,810 --> 00:20:57,780
+resources that are in the
+ground. So you want that crop to
+
+331
+00:20:57,780 --> 00:21:00,990
+get as much of the resources as
+you can, and to provide, you
+
+332
+00:21:00,990 --> 00:21:03,750
+know, the weeds and other
+things, less resources so that
+
+333
+00:21:03,750 --> 00:21:04,650
+they die off?
+
+334
+00:21:04,830 --> 00:21:07,770
+Audrow Nash: This may be a silly
+question, but why not just make
+
+335
+00:21:07,770 --> 00:21:14,160
+an incredibly resource dense
+field and have a bunch of weeds
+
+336
+00:21:14,160 --> 00:21:15,690
+but also have your cash crop?
+
+337
+00:21:16,950 --> 00:21:20,490
+Unknown: Because the weeds the
+weeds are. The weeds are.
+
+338
+00:21:20,880 --> 00:21:24,120
+They're called weeds, right?
+They're just plants. Yeah, but
+
+339
+00:21:24,120 --> 00:21:27,930
+we call them we undesirable not
+cash plants. And the reason why
+
+340
+00:21:27,930 --> 00:21:33,030
+is because they they're very
+effective and sucking the
+
+341
+00:21:33,030 --> 00:21:37,770
+resource in that you won't your
+cash crop will not crop, they
+
+342
+00:21:37,770 --> 00:21:38,130
+will take over.
+
+343
+00:21:38,130 --> 00:21:40,590
+Audrow Nash: Starving it of
+resources and they grow way
+
+344
+00:21:40,590 --> 00:21:41,100
+quicker.
+
+345
+00:21:42,270 --> 00:21:45,300
+Tobias Holmes: Their genetics
+are so that they will take over.
+
+346
+00:21:45,660 --> 00:21:49,380
+And those viable those viable
+crops that you really want that
+
+347
+00:21:49,380 --> 00:21:52,620
+you want to keep, you know,
+which was you know, when you
+
+348
+00:21:52,620 --> 00:21:55,650
+think about, you just think
+about society, and you think
+
+349
+00:21:55,650 --> 00:21:59,880
+about, you know, just biology
+again, in the world, you know,
+
+350
+00:21:59,880 --> 00:22:02,880
+things that are valuable to
+humans, particularly the humans
+
+351
+00:22:03,330 --> 00:22:06,720
+are things that are scarce. So
+things like you know, cotton
+
+352
+00:22:06,720 --> 00:22:09,990
+soybeans, plants that you could
+eat plants that you could, you
+
+353
+00:22:09,990 --> 00:22:14,280
+could read, you know, something
+that was due Sunday, they
+
+354
+00:22:14,280 --> 00:22:16,530
+weren't just plentiful
+everywhere, and everybody could
+
+355
+00:22:16,530 --> 00:22:19,050
+just have it and it was great.
+In order to make that,
+
+356
+00:22:19,050 --> 00:22:21,840
+especially for the population of
+the world today, you have to
+
+357
+00:22:21,840 --> 00:22:26,220
+very strategically go and grow
+it. Right. That's kind of how
+
+358
+00:22:26,430 --> 00:22:30,090
+the world got as populated as it
+as it has, is because we no
+
+359
+00:22:30,090 --> 00:22:33,600
+longer just kind of go hunt and
+gather and just go find where
+
+360
+00:22:33,600 --> 00:22:36,810
+they're where the right stuff is
+off the tree as it grew
+
+361
+00:22:36,810 --> 00:22:39,570
+naturally. Because in order for
+it to grow naturally, you would
+
+362
+00:22:39,570 --> 00:22:43,260
+have to get in an environment
+naturally, that just didn't have
+
+363
+00:22:43,260 --> 00:22:46,830
+enough competition with all the
+other farmers in the area, so
+
+364
+00:22:46,830 --> 00:22:49,710
+that that thing could grow.
+We're very specifically saying,
+
+365
+00:22:49,710 --> 00:22:52,830
+Hey, we like apples, we like
+strawberries, we like
+
+366
+00:22:54,420 --> 00:22:56,010
+Audrow Nash: soy, whatever else.
+Yeah.
+
+367
+00:22:56,040 --> 00:22:58,560
+Tobias Holmes: So we have to
+definitely beat off the fauna
+
+368
+00:22:58,920 --> 00:23:02,340
+that would that naturally just
+grows, that naturally will just
+
+369
+00:23:02,340 --> 00:23:06,900
+take over. It is and isn't, you
+know, necessarily beneficial to
+
+370
+00:23:06,900 --> 00:23:10,920
+us. It's right, it's plant life,
+but we're trying to specifically
+
+371
+00:23:10,920 --> 00:23:14,160
+grow plant life that's
+beneficial to us. And all the
+
+372
+00:23:14,160 --> 00:23:17,490
+other plant life around is like,
+hey, I want to use this. I want
+
+373
+00:23:17,490 --> 00:23:21,840
+to take this spot up. Yeah,
+you're and they don't use much
+
+374
+00:23:21,840 --> 00:23:24,600
+energy, right, that the reason
+why those things are valuable is
+
+375
+00:23:24,600 --> 00:23:27,870
+because fruits and things like
+that need a lot of energy from
+
+376
+00:23:27,870 --> 00:23:32,070
+the ground. And so, so it's easy
+for these other things that
+
+377
+00:23:32,070 --> 00:23:36,360
+don't bear fruit that don't give
+us any benefit to grow and
+
+378
+00:23:36,360 --> 00:23:39,270
+rapidly take over the land
+because they don't, they don't
+
+379
+00:23:39,270 --> 00:23:42,000
+need a lot of energy because
+they don't provide anything of
+
+380
+00:23:42,000 --> 00:23:44,910
+value to us. Fruits and you
+know...
+
+381
+00:23:45,330 --> 00:23:47,040
+Audrow Nash: Stuff that we can
+harvest from them.
+
+382
+00:23:47,940 --> 00:23:49,860
+Unknown: You can think of the
+things that that humans care
+
+383
+00:23:49,860 --> 00:23:55,320
+about us the fruit, right. And,
+and those things. Take energy.
+
+384
+00:23:55,680 --> 00:24:00,480
+The things that we don't provide
+fruit, necessarily don't don't
+
+385
+00:24:00,480 --> 00:24:02,550
+take a lot of energy. And they
+they're prevalent. They're
+
+386
+00:24:02,550 --> 00:24:03,570
+everywhere. Yeah.
+
+387
+00:24:03,600 --> 00:24:05,880
+Audrow Nash: And by fruit you
+mean anything we can harvest.
+
+388
+00:24:05,880 --> 00:24:09,240
+Right? So like, I don't know,
+cotton? Like the seed probably
+
+389
+00:24:09,240 --> 00:24:12,720
+is not a fruit. But you mean
+that as in something we can
+
+390
+00:24:12,720 --> 00:24:14,400
+harvest and then use? Is it
+correct?
+
+391
+00:24:14,610 --> 00:24:16,380
+Unknown: Yeah, absolutely. So
+the bulk..
+
+392
+00:24:16,620 --> 00:24:18,960
+Audrow Nash: The fruit of the
+labor.
+
+393
+00:24:19,800 --> 00:24:20,190
+Tobias Holmes: There you go.
+
+394
+00:24:20,490 --> 00:24:24,870
+Audrow Nash: Gotcha. Gotcha.
+Okay. And then so what was the
+
+395
+00:24:24,870 --> 00:24:26,430
+strategy for row crops?
+
+396
+00:24:27,810 --> 00:24:32,010
+Unknown: So the strategy here
+for row crops is to, it's a cool
+
+397
+00:24:32,010 --> 00:24:34,380
+thing that Blue River did, is
+because you're talking about
+
+398
+00:24:34,380 --> 00:24:37,230
+agriculture, you're talking
+about a customer in a market
+
+399
+00:24:37,230 --> 00:24:40,050
+that's been around since the
+beginning of the United States,
+
+400
+00:24:40,050 --> 00:24:43,050
+right? It's this goes way back.
+John Deere has been a company
+
+401
+00:24:43,050 --> 00:24:47,250
+for hundreds of years in the US.
+That's awesome. And so the
+
+402
+00:24:47,250 --> 00:24:50,730
+agriculture is is a mainstay in
+the United States. And that
+
+403
+00:24:50,730 --> 00:24:55,650
+customer in that in that market
+is not very open to drastic
+
+404
+00:24:55,650 --> 00:24:58,410
+changes. They've been doing
+things the way they've been
+
+405
+00:24:58,410 --> 00:25:01,590
+doing it for the past 20 years.
+You're not just going to come in
+
+406
+00:25:01,590 --> 00:25:04,950
+here and say, Hey, I got the
+spaceship or I got this cool
+
+407
+00:25:04,950 --> 00:25:08,310
+technology, they're just gonna
+make your you know, they're very
+
+408
+00:25:08,310 --> 00:25:10,800
+adverse to those kinds of things
+because they know what they've
+
+409
+00:25:10,800 --> 00:25:13,920
+been doing. They've been doing
+that for for, you know, for a
+
+410
+00:25:13,920 --> 00:25:20,130
+long time. And they're very
+adverse to very crazy out of the
+
+411
+00:25:20,130 --> 00:25:25,440
+box changes. And so what we did
+was okay, you already use
+
+412
+00:25:25,440 --> 00:25:28,920
+herbicide, you're already
+spraying your entire field,
+
+413
+00:25:29,190 --> 00:25:32,310
+with, you're broadcasting your
+entire field with herbicide to
+
+414
+00:25:32,310 --> 00:25:36,300
+cover every anchor, right. So if
+you got 1000 acre field, doing
+
+415
+00:25:36,300 --> 00:25:38,970
+spraying the entire 1000 acres
+with herbicide, even though
+
+416
+00:25:38,970 --> 00:25:42,660
+there's only beads in certain
+pockets of that field, so you
+
+417
+00:25:42,660 --> 00:25:46,050
+just bring everything but Blue
+River did was with the court and
+
+418
+00:25:46,050 --> 00:25:49,290
+we did have this novel was a you
+know, add a camera to that, to
+
+419
+00:25:49,290 --> 00:25:53,490
+that a sprayer, the same spray,
+you always been using the same
+
+420
+00:25:53,490 --> 00:25:56,670
+technology, you used to use any
+like pointed out things, we
+
+421
+00:25:56,670 --> 00:25:59,760
+added a camera, the camera can
+look at the ground, it can tell
+
+422
+00:25:59,760 --> 00:26:03,180
+where the weed exactly located,
+and then we spray onto the weed.
+
+423
+00:26:03,810 --> 00:26:06,660
+Instead of spraying the entire
+field, you only spray where the
+
+424
+00:26:06,660 --> 00:26:07,230
+weed is.
+
+425
+00:26:07,260 --> 00:26:09,540
+Audrow Nash: With the herbicide?
+Is it correct?
+
+426
+00:26:10,200 --> 00:26:10,800
+Tobias Holmes: That's correct.
+
+427
+00:26:11,520 --> 00:26:11,970
+Audrow Nash: Gotcha.
+
+428
+00:26:12,000 --> 00:26:14,370
+Tobias Holmes: So now you only
+kill the herbicide you only
+
+429
+00:26:14,370 --> 00:26:18,480
+spray where we need to spray the
+herbicide. And you can imagine
+
+430
+00:26:18,480 --> 00:26:22,200
+like you're reducing the cost of
+the grower, you're reducing the
+
+431
+00:26:22,260 --> 00:26:25,440
+the herbicide that's in the
+ground, you know, causing
+
+432
+00:26:25,440 --> 00:26:30,420
+environmental impact. And, and
+so and so now in the give the
+
+433
+00:26:30,420 --> 00:26:33,270
+girl the opportunity to use the
+same technology that he's used
+
+434
+00:26:33,270 --> 00:26:36,600
+to using, but being more
+effective and more efficient,
+
+435
+00:26:36,600 --> 00:26:39,210
+and you give them the
+opportunity. I was talking about
+
+436
+00:26:39,210 --> 00:26:42,570
+the herbicide resistant weeds,
+you give them the opportunity to
+
+437
+00:26:42,570 --> 00:26:46,560
+use different chemicals. Yeah,
+that's right. That's right.
+
+438
+00:26:46,620 --> 00:26:49,200
+Because before you sprayed
+everything, so you have to use
+
+439
+00:26:49,200 --> 00:26:55,050
+an editing modified herbicide in
+crops, because you want to be
+
+440
+00:26:55,050 --> 00:26:58,320
+able to spray everything, you
+don't want the crop to die. Now
+
+441
+00:26:58,320 --> 00:27:01,380
+if I can just tell you, I can
+just hit just the wheat and not
+
+442
+00:27:01,380 --> 00:27:04,590
+everything else. Now you can use
+different chemicals, different
+
+443
+00:27:04,620 --> 00:27:07,830
+herbicides to target the week.
+There you go.
+
+444
+00:27:07,950 --> 00:27:11,520
+Audrow Nash: Now do you need to
+use genetically modified crops
+
+445
+00:27:11,550 --> 00:27:15,900
+for this? Because you're killing
+things in the same field with
+
+446
+00:27:15,900 --> 00:27:18,750
+some sort of herbicide? Or like,
+do you want them to be slightly
+
+447
+00:27:18,750 --> 00:27:22,410
+resistant to it? So that
+something in their system is not
+
+448
+00:27:22,410 --> 00:27:27,150
+like say you spray this one weed
+in this field of cash crop? And
+
+449
+00:27:28,080 --> 00:27:33,180
+does that impact negatively the
+cash crop that's around it? Or
+
+450
+00:27:33,210 --> 00:27:38,160
+is it a small enough and precise
+enough dose? That it just kills
+
+451
+00:27:38,160 --> 00:27:41,790
+the weed and doesn't damage the
+crops? Or is it a trade off
+
+452
+00:27:41,790 --> 00:27:42,450
+between the two.
+
+453
+00:27:42,840 --> 00:27:46,590
+Unknown: So nothing's ever
+perfect, right? So there's It
+
+454
+00:27:46,590 --> 00:27:50,100
+depends, depends on the cash
+crop, you're using some cash
+
+455
+00:27:50,100 --> 00:27:54,840
+crops, you, you want to be able
+to, you want to be able to
+
+456
+00:27:55,170 --> 00:27:58,200
+genetically modify them so that
+you can spray the crop as well
+
+457
+00:27:58,200 --> 00:28:02,340
+as the week. And then depending
+on depending on the cash crop
+
+458
+00:28:02,340 --> 00:28:05,190
+itself, you don't want to spray
+it at all, you want to spray
+
+459
+00:28:05,190 --> 00:28:09,600
+justly. And so and you think
+about you know, the situations
+
+460
+00:28:09,600 --> 00:28:13,800
+and the variances of fields, the
+variances of crop types, the
+
+461
+00:28:13,800 --> 00:28:16,890
+variances of wheat, you know,
+you have all those different
+
+462
+00:28:16,890 --> 00:28:19,860
+things, and depending on the
+situation, you want to apply a
+
+463
+00:28:19,860 --> 00:28:25,020
+system that works for your
+situation, right. And so the
+
+464
+00:28:25,050 --> 00:28:31,350
+focus of Blue River, and John
+Deere in overall is to give the
+
+465
+00:28:31,350 --> 00:28:36,960
+customer the ability to tailor
+their system to their situation.
+
+466
+00:28:37,560 --> 00:28:40,680
+And give them a system that that
+effectively will work for them,
+
+467
+00:28:41,010 --> 00:28:43,860
+given the situation. So some
+situations you can genetically
+
+468
+00:28:43,860 --> 00:28:47,280
+modify, spray, just the wheat
+and a little bit of the crop and
+
+469
+00:28:47,280 --> 00:28:50,430
+it doesn't hurt some situations
+you want to be able to spray,
+
+470
+00:28:50,550 --> 00:28:53,850
+you want to target test that
+weed only and you don't want to
+
+471
+00:28:53,850 --> 00:28:54,930
+spray the crop at all.
+
+472
+00:28:56,490 --> 00:29:00,390
+Audrow Nash: One thing just to
+clear up: Would you talk a bit
+
+473
+00:29:00,390 --> 00:29:03,210
+about the relationship between
+Blue River and John Deere.
+
+474
+00:29:04,320 --> 00:29:08,310
+Because we mentioned it but just
+to like explicitly talk about
+
+475
+00:29:08,310 --> 00:29:09,330
+how they are related.
+
+476
+00:29:10,890 --> 00:29:14,640
+Unknown: So Blue River was
+around right there was a startup
+
+477
+00:29:14,640 --> 00:29:17,790
+company I talked to you about
+the founders. Yeah. And and
+
+478
+00:29:17,790 --> 00:29:22,050
+eventually they you know, not
+just John Deere, but other
+
+479
+00:29:22,380 --> 00:29:25,440
+agricultural companies were
+interested in purchasing Blue
+
+480
+00:29:25,440 --> 00:29:29,880
+River and I think John Deere won
+that war, the war if you will,
+
+481
+00:29:30,240 --> 00:29:30,540
+and
+
+482
+00:29:30,780 --> 00:29:32,310
+Audrow Nash: It's nice to have a
+bidding war.
+
+483
+00:29:33,750 --> 00:29:37,860
+Unknown: Sure. So the use of the
+technology and the viableness,
+
+484
+00:29:37,860 --> 00:29:43,080
+and the need, I think is real,
+like it is absolutely 100% a
+
+485
+00:29:43,080 --> 00:29:46,290
+real problem that's happening
+across the world. And it needs
+
+486
+00:29:46,290 --> 00:29:52,410
+to be tackled it like it has to
+be tackled. John Deere was was
+
+487
+00:29:52,440 --> 00:29:55,830
+one of the first people to say
+hey, this is a you know, not
+
+488
+00:29:55,830 --> 00:30:01,980
+just not even just this
+particular problem with the
+
+489
+00:30:03,780 --> 00:30:04,920
+herbicide resistance,
+
+490
+00:30:05,160 --> 00:30:06,000
+Audrow Nash: Yeah, yeah.
+
+491
+00:30:06,540 --> 00:30:10,920
+Unknown: Just, you know,
+applying artificial intelligence
+
+492
+00:30:10,950 --> 00:30:14,580
+and in high tech, high tech, you
+know, things into the
+
+493
+00:30:14,580 --> 00:30:18,120
+agriculture, agricultural world,
+that now that's a new thing,
+
+494
+00:30:18,120 --> 00:30:21,420
+right like that these these,
+these companies, you know, John
+
+495
+00:30:21,420 --> 00:30:25,470
+Deere particularly, have been
+operating and using, you know,
+
+496
+00:30:25,860 --> 00:30:30,690
+machines for for, you know,
+hundreds of years. And they have
+
+497
+00:30:30,690 --> 00:30:34,770
+grown a Technic technological
+advances, but, you know, they
+
+498
+00:30:34,770 --> 00:30:38,070
+haven't been implementing, you
+know, artificial intelligence
+
+499
+00:30:38,070 --> 00:30:42,360
+and, you know, high definition
+cameras and high, you know, a
+
+500
+00:30:42,360 --> 00:30:46,920
+very high power computers. Yeah.
+And so, so making the next step,
+
+501
+00:30:46,980 --> 00:30:49,740
+I think John Deere thinking
+about making the next step, and
+
+502
+00:30:50,100 --> 00:30:53,340
+where does agriculture have to
+grow, you know, and for the
+
+503
+00:30:53,340 --> 00:30:57,390
+future, to continue to sustain
+and to continue to maintain, you
+
+504
+00:30:57,390 --> 00:31:01,590
+know, for the population that we
+have on this earth, that these
+
+505
+00:31:01,590 --> 00:31:05,400
+technologies need to be in, you
+know, integrated into the
+
+506
+00:31:05,400 --> 00:31:10,110
+agricultural industry, and saw
+Blue River as you know, what the
+
+507
+00:31:10,110 --> 00:31:14,160
+way that we want to tackle the
+problem using AI, using very
+
+508
+00:31:14,160 --> 00:31:17,280
+high performance computers,
+using, you know, advanced
+
+509
+00:31:17,280 --> 00:31:22,140
+technologies, you know, they in
+robotics, they saw that this was
+
+510
+00:31:22,140 --> 00:31:25,200
+a nice day, this was a nice, a
+nice integration into their
+
+511
+00:31:25,200 --> 00:31:28,680
+company, gotcha them to give
+them the ability to, you know,
+
+512
+00:31:28,680 --> 00:31:33,390
+to use robotics to robota size,
+if you will, their machinery
+
+513
+00:31:33,390 --> 00:31:36,450
+that they had already had, that
+they already built, they already
+
+514
+00:31:36,450 --> 00:31:36,930
+make.
+
+515
+00:31:38,130 --> 00:31:43,650
+Audrow Nash: Gotcha. So we then
+see, we're spraying herbicide on
+
+516
+00:31:44,340 --> 00:31:51,540
+the weeds in a cash crop, a row
+cash crop field, is this kind of
+
+517
+00:31:51,570 --> 00:31:55,320
+the, I guess, where does Blue
+River go from there before being
+
+518
+00:31:55,320 --> 00:32:00,150
+acquired by John Deere? Or is
+that is that kind of the core
+
+519
+00:32:00,150 --> 00:32:01,350
+competence of the company?
+
+520
+00:32:02,040 --> 00:32:06,480
+Unknown: So So we essentially,
+you know, the mentality is give
+
+521
+00:32:06,480 --> 00:32:12,180
+me up to give the, the CRO or
+the plant by plant knowledge, so
+
+522
+00:32:12,180 --> 00:32:14,880
+that they can make a smart
+decision. Right, so we have
+
+523
+00:32:14,880 --> 00:32:17,580
+cameras, we have artificial
+intelligence, we have the
+
+524
+00:32:17,580 --> 00:32:21,030
+ability to make real time
+decisions using robotics, right?
+
+525
+00:32:21,450 --> 00:32:24,750
+So we use robotics to be able to
+say, hey, real time, this is
+
+526
+00:32:24,750 --> 00:32:29,130
+what this plant needs. And that
+was Blue River, and still is,
+
+527
+00:32:29,400 --> 00:32:34,230
+it's blue rivers, you know,
+driving force, you know, you can
+
+528
+00:32:34,230 --> 00:32:38,250
+look at the plant real time and
+decide right there. What does
+
+529
+00:32:38,250 --> 00:32:41,610
+this guy need. And that is, you
+know, when you, when you think
+
+530
+00:32:41,610 --> 00:32:45,780
+about any, any person who's in
+agriculture, or, you know,
+
+531
+00:32:45,900 --> 00:32:49,080
+planning biology, they will tell
+you, the plants that grow the
+
+532
+00:32:49,080 --> 00:32:53,610
+best are the ones that are taken
+care of individually, this plant
+
+533
+00:32:53,610 --> 00:32:55,860
+needs this, this one needs a
+little bit of pruning, this one
+
+534
+00:32:55,860 --> 00:32:58,560
+needs some fertilizer, this one
+needs, he has weeds growing
+
+535
+00:32:58,560 --> 00:33:02,310
+around it. So Blue River was
+allowing you to do that and, you
+
+536
+00:33:02,310 --> 00:33:06,630
+know, skill level, you know, not
+not your pot in your house, you
+
+537
+00:33:06,630 --> 00:33:09,960
+know, where you kind of hand
+doing in the field, in the field
+
+538
+00:33:09,960 --> 00:33:14,580
+and 1000s of acres with a
+machine, you know, that you can
+
+539
+00:33:14,580 --> 00:33:17,640
+just kind of let it do its
+thing. And you as the grower
+
+540
+00:33:17,640 --> 00:33:20,160
+don't have to sit there and do
+that.
+
+541
+00:33:21,180 --> 00:33:25,530
+Audrow Nash: And is it only is
+it only spraying plants? Is it
+
+542
+00:33:25,530 --> 00:33:28,530
+also trimming or any of these
+other things that you've
+
+543
+00:33:28,530 --> 00:33:29,100
+mentioned.
+
+544
+00:33:29,220 --> 00:33:31,890
+Unknown: So you can you can
+imagine the technology can be
+
+545
+00:33:31,890 --> 00:33:36,030
+advanced, if the original, you
+know, this initial, like
+
+546
+00:33:36,060 --> 00:33:40,020
+induction into the market is
+spraying plants for herbicides,
+
+547
+00:33:40,020 --> 00:33:42,810
+because that is a very prevalent
+problem. And it's something that
+
+548
+00:33:42,810 --> 00:33:46,020
+Blue River was already doing.
+But you can imagine.
+
+549
+00:33:46,020 --> 00:33:48,210
+Audrow Nash: It's cool, because
+you can retrofit existing
+
+550
+00:33:48,210 --> 00:33:49,950
+systems. So that's very nice.
+
+551
+00:33:51,180 --> 00:33:54,270
+Tobias Holmes: Retrofitting
+existing systems, developing new
+
+552
+00:33:54,270 --> 00:33:58,410
+systems that are very, you know,
+optimized. Yeah. Then and then
+
+553
+00:33:58,410 --> 00:34:02,610
+extending the see and sense
+technology, kind of like, you
+
+554
+00:34:02,610 --> 00:34:04,920
+know, we talked about this a
+little bit, you know, seeing and
+
+555
+00:34:04,920 --> 00:34:09,720
+think and actuate, your podcast.
+That's exactly what Blue River,
+
+556
+00:34:09,720 --> 00:34:14,130
+you know, long term, you know,
+overall, that's the goal is to
+
+557
+00:34:14,160 --> 00:34:18,330
+be able to sense the
+environment, do something smart,
+
+558
+00:34:18,540 --> 00:34:22,260
+and then actually do something
+smart to the ground or do some
+
+559
+00:34:22,260 --> 00:34:27,120
+smart and get world sense. This
+is exactly what your podcast
+
+560
+00:34:27,120 --> 00:34:31,440
+says and think about it, think
+about agriculture, all the
+
+561
+00:34:31,440 --> 00:34:33,990
+different things that you have
+to do, you have to plant the
+
+562
+00:34:33,990 --> 00:34:36,900
+seed, you have to take care of
+the seed when it's down in the
+
+563
+00:34:36,900 --> 00:34:39,810
+ground at the fertilizer, you
+have to weed it, and then you
+
+564
+00:34:39,810 --> 00:34:42,270
+have to harvest it, and then you
+take it from harvest and you
+
+565
+00:34:42,270 --> 00:34:45,300
+have to get it out to the market
+so that they can be sold. So
+
+566
+00:34:45,300 --> 00:34:49,140
+there's just a lot as there's a
+wealth of, of tech, you know,
+
+567
+00:34:49,530 --> 00:34:53,520
+this, the agriculture industry
+is just I won't say behind but
+
+568
+00:34:53,760 --> 00:34:56,610
+just has been doing things a
+certain way for a long time and
+
+569
+00:34:56,610 --> 00:35:01,230
+it's a fertile ground. For new
+technology for New for new ways
+
+570
+00:35:01,230 --> 00:35:04,560
+to go about to bring that that
+sense. And they can actually
+
+571
+00:35:04,560 --> 00:35:07,980
+wait, you know, paradigm into
+that world. There's, there's
+
+572
+00:35:07,980 --> 00:35:10,500
+just oh my god, it's just so
+many different ways and
+
+573
+00:35:10,500 --> 00:35:13,230
+opportunities. Yeah, that's
+absolutely right, John, John
+
+574
+00:35:13,230 --> 00:35:16,320
+Deere and Uber are being
+acquired by John Deere to get us
+
+575
+00:35:16,320 --> 00:35:18,900
+right in the forefront of it.
+Because, you know, that's the
+
+576
+00:35:18,900 --> 00:35:22,050
+one of the biggest agriculture
+companies in the world. And, and
+
+577
+00:35:22,050 --> 00:35:24,690
+so and they do all that they do
+everything, you know, from
+
+578
+00:35:25,020 --> 00:35:28,860
+planting, to harvesting to, you
+know, to tilling the ground to
+
+579
+00:35:28,860 --> 00:35:32,220
+getting it prepared, and as well
+as other industries
+
+580
+00:35:32,250 --> 00:35:34,980
+construction. Forestry.
+
+581
+00:35:35,280 --> 00:35:37,290
+Audrow Nash: So what do you what
+do you mean? Oh, are you saying
+
+582
+00:35:37,290 --> 00:35:38,280
+John Deere does these?
+
+583
+00:35:38,550 --> 00:35:41,490
+Tobias Holmes: Yes, yes, yes,
+John Deere. And so Blue River,
+
+584
+00:35:41,520 --> 00:35:45,420
+you know, bringing in the sense
+and think kind of a mind frame,
+
+585
+00:35:45,990 --> 00:35:49,740
+into an industry and until a
+company that already has its
+
+586
+00:35:49,740 --> 00:35:53,460
+footprint across our world and
+all established? That's right,
+
+587
+00:35:53,460 --> 00:35:53,760
+all.
+
+588
+00:35:54,240 --> 00:35:55,920
+Audrow Nash: And they're,
+they're I mean, they're domain
+
+589
+00:35:55,920 --> 00:35:59,820
+experts at the actual markets
+that they're servicing. So
+
+590
+00:35:59,820 --> 00:36:03,420
+agriculture, and then other ones
+you mentioned. So then
+
+591
+00:36:03,420 --> 00:36:06,450
+partnering with them, where you
+guys are being you're helping on
+
+592
+00:36:06,450 --> 00:36:11,850
+the sensing and thinking side,
+and then they can kind of use
+
+593
+00:36:11,850 --> 00:36:14,730
+their existing systems are
+retrofit your systems into it,
+
+594
+00:36:14,730 --> 00:36:17,160
+or even add your systems design
+your systems
+
+595
+00:36:17,190 --> 00:36:20,670
+Unknown: Integrate them,
+exactly. Really great, really at
+
+596
+00:36:20,670 --> 00:36:23,970
+the foundational level, right?
+Let's develop new systems. But
+
+597
+00:36:23,970 --> 00:36:27,240
+let's rethink how we do this. We
+know how we do it already.
+
+598
+00:36:27,600 --> 00:36:31,170
+Right? But we do it, we did it
+already with previous Well, you
+
+599
+00:36:31,170 --> 00:36:34,200
+know, what previous experience,
+now let's bring in this new
+
+600
+00:36:34,200 --> 00:36:37,680
+technology, and let's rethink
+how we could do it. You know, if
+
+601
+00:36:37,680 --> 00:36:40,680
+we, if we bring in, you know,
+different sensors, cameras,
+
+602
+00:36:40,710 --> 00:36:47,130
+lasers, and sensors, you know,
+smart algorithms, and different,
+
+603
+00:36:47,160 --> 00:36:49,860
+you know, different ways to
+actuate in different ways to go
+
+604
+00:36:49,860 --> 00:36:53,280
+about doing something. And then
+now, you know, and now change
+
+605
+00:36:53,280 --> 00:36:55,500
+the future, right? Like, you
+know, you could just think about
+
+606
+00:36:55,500 --> 00:36:59,280
+all the different ways, you
+know, that AI Robotics has
+
+607
+00:36:59,280 --> 00:37:01,440
+changed the world, and it's
+gonna continue to check the
+
+608
+00:37:01,440 --> 00:37:05,220
+world, you know, before you have
+to have a human in the loop,
+
+609
+00:37:05,220 --> 00:37:07,950
+right? Yeah, human beings,
+humans just do it fast,
+
+610
+00:37:08,040 --> 00:37:11,670
+literally, when it's asked. And
+now, you know, you can provide a
+
+611
+00:37:11,670 --> 00:37:14,430
+smarter machine that can do that
+can do this task.
+
+612
+00:37:14,430 --> 00:37:17,490
+Audrow Nash: Or one person can
+do a bunch of fields and
+
+613
+00:37:17,820 --> 00:37:20,130
+effectively have a bunch of
+like, robot workers on the
+
+614
+00:37:20,130 --> 00:37:24,150
+tractor doing the hard manual
+things. Absolutely. Very
+
+615
+00:37:24,150 --> 00:37:30,720
+focused, intensive. Absolutely.
+Let's see. And then. So with
+
+616
+00:37:30,990 --> 00:37:39,750
+Blue River? What? Wait, so I'm
+just curious, I guess, how was
+
+617
+00:37:39,750 --> 00:37:45,030
+it? You were around? When John
+Deere purchased? Blue River?
+
+618
+00:37:45,030 --> 00:37:49,980
+Correct? That's correct. Yes.
+How, how have things felt to
+
+619
+00:37:50,010 --> 00:37:54,570
+you, as things have changed with
+that? Like, how is the focus
+
+620
+00:37:54,570 --> 00:37:57,510
+changed? Or what kind of
+problems are you guys working
+
+621
+00:37:57,510 --> 00:38:01,410
+on? What's interesting about
+being acquired, and the process
+
+622
+00:38:01,410 --> 00:38:01,860
+of that?
+
+623
+00:38:02,610 --> 00:38:05,040
+Tobias Holmes: I think it's,
+it's very, like, for me,
+
+624
+00:38:05,040 --> 00:38:07,800
+personally, it's been very
+interesting just to see a
+
+625
+00:38:07,800 --> 00:38:12,390
+company transition from you
+know, very, you know, startup,
+
+626
+00:38:12,450 --> 00:38:15,030
+you know, environment, you know,
+get out there and fire in the
+
+627
+00:38:15,030 --> 00:38:18,660
+belly, we got to make something
+we got to continue to, you know,
+
+628
+00:38:18,660 --> 00:38:22,950
+develop this product that people
+are interested in, grow into
+
+629
+00:38:22,950 --> 00:38:26,070
+now, you've been acquired by a
+company, that is totally has the
+
+630
+00:38:26,070 --> 00:38:28,860
+resources to make sure that you
+grow, but we need to grow it in
+
+631
+00:38:28,860 --> 00:38:32,070
+a direction that is actually
+going to be viable, and actually
+
+632
+00:38:32,070 --> 00:38:35,250
+going to be, you know, a product
+is actually going to be put out
+
+633
+00:38:35,250 --> 00:38:40,230
+to market, and customers are
+going to receive and use, and,
+
+634
+00:38:40,380 --> 00:38:46,200
+and having all of that expertise
+and that knowledge of all those
+
+635
+00:38:46,200 --> 00:38:48,630
+years of John Deere
+manufacturing, agricultural
+
+636
+00:38:48,630 --> 00:38:52,770
+sprayers, and any piece of
+agriculture milled with the high
+
+637
+00:38:52,770 --> 00:38:55,890
+technology. And you could you
+could already think that there's
+
+638
+00:38:55,890 --> 00:38:59,610
+going to be a lot of challenges,
+right? That's a two, not
+
+639
+00:38:59,610 --> 00:39:02,430
+necessarily two different
+worlds. But you know, you know,
+
+640
+00:39:02,430 --> 00:39:05,910
+kind of different environments
+kind of have to mesh together.
+
+641
+00:39:06,180 --> 00:39:09,930
+And I praise John Deere, for
+giving us the ability to kind of
+
+642
+00:39:10,560 --> 00:39:14,310
+keep our autonomy as far as
+developing the technology and
+
+643
+00:39:14,310 --> 00:39:18,480
+going as fast as we can to
+continue to develop it and grow
+
+644
+00:39:18,480 --> 00:39:23,190
+it and, and make changes as we
+need. But keep us kind of, you
+
+645
+00:39:23,190 --> 00:39:26,370
+know, I would call it. What do
+you call that leadership and
+
+646
+00:39:26,370 --> 00:39:31,230
+management? You know, John Deere
+has this division, right? This
+
+647
+00:39:31,230 --> 00:39:35,130
+is where this thing needs to get
+funneled into. You guys have the
+
+648
+00:39:35,130 --> 00:39:38,460
+ability to do whatever you think
+needs to be able needs to be
+
+649
+00:39:38,460 --> 00:39:41,610
+done in order to accomplish
+this, this goal here and we're
+
+650
+00:39:41,610 --> 00:39:46,200
+trying to accomplish and the
+goal is big enough and broad
+
+651
+00:39:46,200 --> 00:39:50,100
+enough, right? That it
+encompasses all the things that
+
+652
+00:39:50,100 --> 00:39:53,430
+they're doing, right? It
+compasses, not just the sprayer
+
+653
+00:39:53,430 --> 00:39:56,670
+part, which is just as one part
+that we're working on. And
+
+654
+00:39:56,670 --> 00:39:59,550
+probably the first thing that
+will roll out, just because
+
+655
+00:39:59,550 --> 00:40:03,720
+we're Were Blue River was the
+most mature in the area. Yeah,
+
+656
+00:40:03,750 --> 00:40:07,950
+but but we could, but we're
+already developing other areas.
+
+657
+00:40:08,370 --> 00:40:13,020
+And so And so John Deere just
+has a great vision has the great
+
+658
+00:40:13,020 --> 00:40:15,390
+wherewithal. And I think because
+they have acquired companies
+
+659
+00:40:15,390 --> 00:40:16,920
+that just have all the
+experience, are they the
+
+660
+00:40:16,920 --> 00:40:21,150
+company's been around for years,
+they know, you know, the ability
+
+661
+00:40:21,180 --> 00:40:25,140
+and the way that they they went
+about the acquisition after it
+
+662
+00:40:25,140 --> 00:40:28,830
+happened, and the way that
+they're slowly bringing a sense
+
+663
+00:40:28,830 --> 00:40:32,010
+of their, into their
+environment, and so their world,
+
+664
+00:40:32,310 --> 00:40:36,240
+but still allowing us to be Blue
+River, I think is great. And I
+
+665
+00:40:36,240 --> 00:40:39,570
+think it says kudos to them.
+Because they could have totally
+
+666
+00:40:39,570 --> 00:40:42,210
+just came in and say, Hey, boom,
+we bought everything we own
+
+667
+00:40:42,210 --> 00:40:45,300
+everything you got, they're
+gonna do his like how he said,
+
+668
+00:40:45,330 --> 00:40:48,270
+and they didn't do that. They,
+they, they, they said, hey, they
+
+669
+00:40:48,270 --> 00:40:50,940
+appreciate you guys have
+something special here going on.
+
+670
+00:40:51,150 --> 00:40:53,820
+We don't want to affect that.
+Want to allow you guys to
+
+671
+00:40:53,820 --> 00:40:56,880
+continue to do that. But we want
+you to do it in this direction.
+
+672
+00:40:57,390 --> 00:41:01,230
+Yeah, in any directions aligned,
+which I think is another, you
+
+673
+00:41:01,230 --> 00:41:04,980
+know, smart thing on them. And I
+think what Blue River as well,
+
+674
+00:41:05,010 --> 00:41:08,700
+to reason why we got acquired by
+John Deere is because the
+
+675
+00:41:08,700 --> 00:41:12,480
+directions aligned very well. So
+and so it was like, Yeah, this
+
+676
+00:41:12,480 --> 00:41:15,150
+is gonna work. Right. This is
+gonna work, you know, kudos to
+
+677
+00:41:15,150 --> 00:41:20,580
+our CEO, for you know, navigate
+that because Yeah, absolutely.
+
+678
+00:41:20,610 --> 00:41:23,250
+Absolutely. You know, making
+those making those things
+
+679
+00:41:23,250 --> 00:41:26,010
+happen. And then he's still
+around, right, like our CEO
+
+680
+00:41:26,010 --> 00:41:29,940
+still here or is still doing
+job. You're still managing he
+
+681
+00:41:29,940 --> 00:41:33,720
+still going? You know, very
+important things for us. Yeah.
+
+682
+00:41:33,720 --> 00:41:37,410
+And, yeah, we can say that this
+is working out pretty pretty
+
+683
+00:41:37,410 --> 00:41:37,980
+nicely. I
+
+684
+00:41:39,180 --> 00:41:41,970
+Audrow Nash: Hell yeah, so what
+was the timeline? So founding of
+
+685
+00:41:41,970 --> 00:41:45,270
+Blue River acquired by John
+Deere...
+
+686
+00:41:45,750 --> 00:41:51,630
+Unknown: We got founded 10 years
+ago, that's, what this is 21, so
+
+687
+00:41:51,930 --> 00:41:57,240
+2011. Yeah. So and then. And
+then, we got acquired by Deere
+
+688
+00:41:57,240 --> 00:42:02,010
+in 2017. So that's what six
+years after the founding, they
+
+689
+00:42:02,010 --> 00:42:08,160
+got acquired by dear God. Yeah.
+And so here we are 2021, four
+
+690
+00:42:08,160 --> 00:42:13,410
+years after acquisition. Still,
+still going well, and probably
+
+691
+00:42:13,410 --> 00:42:17,970
+going to bring the first product
+to market. Two years from now.
+
+692
+00:42:18,570 --> 00:42:20,520
+Audrow Nash: Two years? Can you
+talk a bit about that? Or is
+
+693
+00:42:20,520 --> 00:42:21,600
+that a secret?
+
+694
+00:42:22,620 --> 00:42:28,080
+Unknown: I can say that it's
+coming. That's about it. I mean,
+
+695
+00:42:28,110 --> 00:42:32,910
+not any details, but it's, yeah,
+the first, the first product
+
+696
+00:42:32,910 --> 00:42:34,500
+will be is coming soon.
+
+697
+00:42:35,040 --> 00:42:38,610
+Audrow Nash: Nice. That'll be
+exciting. So then, can you tell
+
+698
+00:42:38,610 --> 00:42:43,050
+me a bit about your experience?
+So you, you Quality Manager,
+
+699
+00:42:43,050 --> 00:42:46,020
+Quality Assurance Manager? Can
+you tell me a bit about what
+
+700
+00:42:46,020 --> 00:42:49,800
+that means? And I mean, I've
+been in academia most of my
+
+701
+00:42:50,190 --> 00:42:53,520
+time, so we don't really have
+this, would you tell me a bit
+
+702
+00:42:53,520 --> 00:42:55,140
+about your job as a quality
+manager?
+
+703
+00:42:55,590 --> 00:42:59,670
+Unknown: Absolutely. So, so
+Quality Manager is, you know,
+
+704
+00:42:59,700 --> 00:43:03,330
+this is an essential part of the
+business is to make sure that
+
+705
+00:43:03,330 --> 00:43:07,770
+the customer receives, you know,
+value in that product, and that
+
+706
+00:43:07,770 --> 00:43:11,190
+the product that they get is
+what they expect, not only what
+
+707
+00:43:11,190 --> 00:43:15,000
+they expect, hopefully it sees
+expectations, but But you know,
+
+708
+00:43:15,000 --> 00:43:19,530
+first and fundamentally is what
+they expect. And, and so it's
+
+709
+00:43:19,530 --> 00:43:24,870
+making sure you know, I think
+about it this way, you can have
+
+710
+00:43:24,870 --> 00:43:29,790
+the startup mind frame, you
+know, and just really just gone,
+
+711
+00:43:30,060 --> 00:43:34,020
+you read this, move fast and
+break things with us break
+
+712
+00:43:34,020 --> 00:43:36,660
+things, you put something out
+there, but there's all kinds of
+
+713
+00:43:36,660 --> 00:43:40,080
+bugs with it. And depending on
+your market, and depending on
+
+714
+00:43:40,080 --> 00:43:42,510
+the customer, you think you
+think about your, you think
+
+715
+00:43:42,510 --> 00:43:48,210
+about these phones, you know, 20
+years ago, and they and they had
+
+716
+00:43:48,210 --> 00:43:51,480
+all kinds of bugs and issues
+with them. But the customer you
+
+717
+00:43:51,480 --> 00:43:55,920
+were dealing with was okay with
+that right? There early adapters
+
+718
+00:43:55,920 --> 00:44:00,090
+are okay, yeah, I can I can I oh
+yeah, I gotta do this thing, or
+
+719
+00:44:00,090 --> 00:44:03,210
+I got to press it two times this
+way and do this in that way. And
+
+720
+00:44:03,210 --> 00:44:07,050
+then it finally works. Right?
+You know, so that that was fine
+
+721
+00:44:07,050 --> 00:44:09,600
+for that environment. But for
+our particular customer, you
+
+722
+00:44:09,600 --> 00:44:12,990
+know, agriculture customer, they
+want to bring in John Deere, you
+
+723
+00:44:12,990 --> 00:44:17,370
+know, name recognition. You
+know, it just works. John Deere
+
+724
+00:44:17,370 --> 00:44:22,110
+has the reputation in the in
+the, you know, the cloud that
+
+725
+00:44:22,440 --> 00:44:26,130
+when I get a bite when I buy a
+John Deere, it works out of the
+
+726
+00:44:26,130 --> 00:44:30,390
+box, I turn the key, it does
+what I wanted to do. And if
+
+727
+00:44:30,390 --> 00:44:34,140
+anything is wrong, they fix it
+Johnny on the spot, no big deal.
+
+728
+00:44:34,410 --> 00:44:39,330
+High quality high, you know, I
+pay a premium, because it is the
+
+729
+00:44:39,330 --> 00:44:43,710
+high quality product. It's the
+best, right? It's one of its, I
+
+730
+00:44:43,710 --> 00:44:46,470
+would say it's the best, right?
+It's the best that you're going
+
+731
+00:44:46,470 --> 00:44:50,580
+to get. And so how do we
+maintain that right? How do you
+
+732
+00:44:50,580 --> 00:44:55,140
+know John Deere has maintained
+that over years, over centuries?
+
+733
+00:44:55,410 --> 00:45:00,210
+How do we maintain that and so
+my job is to allow blu rays For
+
+734
+00:45:00,210 --> 00:45:04,470
+developers, the ability to
+continue to grow to continually
+
+735
+00:45:04,470 --> 00:45:07,920
+to develop this product and
+continue to iterate and make it
+
+736
+00:45:07,920 --> 00:45:11,730
+better, you know, the Bay Area
+Silicon Valley, quickly area
+
+737
+00:45:11,760 --> 00:45:15,360
+area can fail. But when we
+release something out, or
+
+738
+00:45:15,570 --> 00:45:20,310
+release something out to the to
+the, to the customer, it is it
+
+739
+00:45:20,310 --> 00:45:23,850
+has that John Deere quality it
+has that this is going to work,
+
+740
+00:45:23,910 --> 00:45:27,540
+it is robust, it is going to do
+what you guys told me it was
+
+741
+00:45:27,540 --> 00:45:31,110
+going to do. So I'm the kind of
+the gatekeeper. I'm like, yeah,
+
+742
+00:45:31,140 --> 00:45:34,380
+go develop all that cool stuff,
+go get in the lab, go write your
+
+743
+00:45:34,380 --> 00:45:37,350
+code. Let's get out here in the
+field. Let's go test it. Let's
+
+744
+00:45:37,350 --> 00:45:40,380
+go. Let's come up with all the
+cool things that we can. But
+
+745
+00:45:40,380 --> 00:45:43,440
+this is what we can release.
+This is what we can, this is
+
+746
+00:45:43,440 --> 00:45:47,070
+what we can give out. Because
+it's ready. If it ain't ready
+
+747
+00:45:47,070 --> 00:45:50,370
+yet, you know, hey, it's not
+ready yet, guys, we gotta go
+
+748
+00:45:50,370 --> 00:45:55,620
+back rehash. We, you know,
+reiterate. You know, and so and
+
+749
+00:45:55,620 --> 00:45:58,200
+so I want to allow those guys
+the ability to continue to
+
+750
+00:45:58,200 --> 00:46:00,840
+reiterate and continue to
+develop product, you know,
+
+751
+00:46:00,840 --> 00:46:04,950
+features and things, but only
+allow John Deere quality
+
+752
+00:46:05,340 --> 00:46:10,710
+features got ready to go. And so
+that's, that's my that's my
+
+753
+00:46:11,700 --> 00:46:14,070
+cool, cool. Yeah.
+
+754
+00:46:15,030 --> 00:46:18,000
+Audrow Nash: So does it what
+does it look like in a little
+
+755
+00:46:18,000 --> 00:46:22,920
+more detail? Is it like when I
+think of quality assurance
+
+756
+00:46:22,920 --> 00:46:27,120
+engineers, I mean, I'm at open
+robotics, and we have a lot of
+
+757
+00:46:27,120 --> 00:46:30,780
+software. So quality assurance
+for us means like, writing
+
+758
+00:46:30,780 --> 00:46:35,340
+software tests, or making sure
+we have certain amount of code
+
+759
+00:46:35,340 --> 00:46:38,520
+coverage with our tests or
+whatever, these kinds of things,
+
+760
+00:46:38,520 --> 00:46:41,640
+it sounds like your work is a
+good bit more applied as in
+
+761
+00:46:41,640 --> 00:46:44,790
+like, go in the field. Can you
+just tell me a bit more about
+
+762
+00:46:44,790 --> 00:46:45,720
+what it involves?
+
+763
+00:46:46,380 --> 00:46:49,650
+Tobias Holmes: It's that right?
+Is that and but But you said you
+
+764
+00:46:49,650 --> 00:46:53,820
+said exactly. It's definitely
+you know, unit test, you know,
+
+765
+00:46:53,820 --> 00:46:58,170
+code coverage of things in the
+software stack, right. But it's
+
+766
+00:46:58,170 --> 00:47:01,110
+not just a software piece of
+equipment, it's a robotic piece
+
+767
+00:47:01,110 --> 00:47:04,350
+of equipment. Yeah, and so and
+so it has to actually perform
+
+768
+00:47:04,350 --> 00:47:07,680
+out in the field. So there's
+more things than just does the
+
+769
+00:47:07,680 --> 00:47:10,980
+algorithm behave the way we
+expect, but just the mechanical
+
+770
+00:47:10,980 --> 00:47:15,150
+devices to behave the way we
+expect, can can the cameras and
+
+771
+00:47:15,150 --> 00:47:18,540
+the wires and the things hold up
+to the environment that we're
+
+772
+00:47:18,540 --> 00:47:23,190
+going to throw them in. And then
+again, I said earlier about, we
+
+773
+00:47:23,190 --> 00:47:26,370
+gave the customer the ability to
+use a platform that they were
+
+774
+00:47:26,370 --> 00:47:29,970
+already used to using. And
+they're already used to use it
+
+775
+00:47:29,970 --> 00:47:32,820
+in a certain way. So they
+already used to have in this
+
+776
+00:47:32,820 --> 00:47:36,900
+sprayer that I parked out on the
+corner over here, and it rains
+
+777
+00:47:36,900 --> 00:47:40,860
+on it, and it it snows on it, if
+depending on what part of the
+
+778
+00:47:40,860 --> 00:47:44,040
+country you're in, you got it
+that the environment you're
+
+779
+00:47:44,310 --> 00:47:47,880
+paying to it, but I can turn
+that key next season. And it
+
+780
+00:47:47,880 --> 00:47:51,690
+goes and it does its job. So
+making sure that all of the
+
+781
+00:47:51,690 --> 00:47:54,960
+pieces and all the all of the
+parts come together the
+
+782
+00:47:54,960 --> 00:47:59,610
+integration, in a way in a way
+that that when that customer is
+
+783
+00:47:59,610 --> 00:48:04,050
+actually my North Star is
+customer turns, the key thing
+
+784
+00:48:04,050 --> 00:48:07,710
+does what it's supposed to do,
+or at least tells you hey, you
+
+785
+00:48:07,710 --> 00:48:10,260
+need to go do something, you
+need to go do something right,
+
+786
+00:48:10,260 --> 00:48:13,800
+you know, your camera cables,
+have fried over this past
+
+787
+00:48:13,800 --> 00:48:17,280
+season, go replace them, you
+know, and so making sure that
+
+788
+00:48:17,310 --> 00:48:20,910
+all of those things are there,
+the quality is there in and of
+
+789
+00:48:20,910 --> 00:48:23,970
+itself. And when it isn't there,
+it is very obvious to the
+
+790
+00:48:23,970 --> 00:48:27,960
+customer, what it is they need
+to go through to fix it. And so
+
+791
+00:48:28,020 --> 00:48:31,740
+it's it's you know, it's unit
+testing, it's called coverage,
+
+792
+00:48:31,740 --> 00:48:35,670
+like a software company that has
+those features. But it's more
+
+793
+00:48:35,670 --> 00:48:38,100
+customer focused, it's more,
+it's more customer focused. So
+
+794
+00:48:38,100 --> 00:48:42,690
+we definitely have to go out and
+test it on the machine and give
+
+795
+00:48:42,690 --> 00:48:47,700
+it real machine time. Yes, see,
+to see what the customer is
+
+796
+00:48:47,700 --> 00:48:49,890
+going to experience and give
+them the best experience we can
+
+797
+00:48:49,890 --> 00:48:50,160
+get.
+
+798
+00:48:50,850 --> 00:48:54,090
+Audrow Nash: Okay, I'm curious
+about the hardware side of this.
+
+799
+00:48:54,210 --> 00:48:59,160
+How do you deal with software,
+if I write tests to constrain my
+
+800
+00:48:59,160 --> 00:49:01,470
+code to make sure that it's
+working, the tests fail if the
+
+801
+00:49:01,470 --> 00:49:05,070
+code is not working? And then I
+just run these frequently. And I
+
+802
+00:49:05,070 --> 00:49:10,680
+can tell if my code is working
+over time. What do you do? So
+
+803
+00:49:10,680 --> 00:49:14,040
+that that, to me is clear for
+software? How do you test
+
+804
+00:49:14,070 --> 00:49:17,790
+hardware to make sure that or
+even like hardware and software
+
+805
+00:49:17,790 --> 00:49:22,410
+and their integration together?
+How do you guys do this? Yeah,
+
+806
+00:49:22,410 --> 00:49:27,030
+no, I'm sure. I've seen like
+with Boston Dynamics, or some
+
+807
+00:49:27,030 --> 00:49:30,210
+robotics company, they'll just
+have their robot do the paces.
+
+808
+00:49:30,450 --> 00:49:33,750
+So they'll have it run and move
+continuously for a week or
+
+809
+00:49:33,750 --> 00:49:37,530
+something like this. But can you
+speak a little bit about this?
+
+810
+00:49:37,620 --> 00:49:38,130
+How do you...
+
+811
+00:49:38,160 --> 00:49:41,550
+Tobias Holmes: I mean, I think
+it's essentially the same
+
+812
+00:49:41,610 --> 00:49:45,090
+similar things. I mean, I won't
+get into the details of exactly
+
+813
+00:49:45,090 --> 00:49:49,620
+how, but it is something along
+those lines, right, we run we
+
+814
+00:49:49,620 --> 00:49:53,070
+run that system through the
+paces, if you will, I can't give
+
+815
+00:49:53,070 --> 00:49:57,090
+you all the details, because
+that is it is essentially the
+
+816
+00:49:57,090 --> 00:50:02,100
+John Deere name, their
+reliability and The and the you
+
+817
+00:50:02,100 --> 00:50:07,380
+know, the the the confidence you
+get from saying that I bought a
+
+818
+00:50:07,380 --> 00:50:11,520
+John Deere and I know this thing
+is gonna work. This is part of
+
+819
+00:50:11,520 --> 00:50:15,540
+their secret sauce as part of
+their, you know, this is how we
+
+820
+00:50:15,570 --> 00:50:20,100
+this is how we got to be who we
+are. And the I would say I will
+
+821
+00:50:20,100 --> 00:50:23,160
+say this, the nice thing about
+being acquired by them is that
+
+822
+00:50:23,160 --> 00:50:27,390
+we were able to be brought in.
+And so that process of how they
+
+823
+00:50:27,390 --> 00:50:31,470
+ensure reliability and quality
+to the customer. And we could
+
+824
+00:50:31,470 --> 00:50:34,740
+add that in and that and I think
+they you know, a lot of
+
+825
+00:50:34,740 --> 00:50:36,900
+startups, not every startup, you
+know, there's always gonna be
+
+826
+00:50:36,900 --> 00:50:39,480
+great startups, they're always
+gonna, you know, hurry up and
+
+827
+00:50:39,480 --> 00:50:44,100
+fail, and then figure out the
+quality. To do that, and they're
+
+828
+00:50:44,100 --> 00:50:46,560
+gonna raise it, yeah, they're
+gonna do it, right, they're
+
+829
+00:50:46,560 --> 00:50:49,620
+gonna figure out oh, that didn't
+work, change it up real quick.
+
+830
+00:50:49,920 --> 00:50:52,920
+That works now change it up. And
+depending on the customer base,
+
+831
+00:50:53,430 --> 00:50:56,250
+you have a lot of units, you
+have a lot of room to do that,
+
+832
+00:50:56,370 --> 00:50:58,590
+especially if it's new
+technology that's never been,
+
+833
+00:50:59,520 --> 00:51:02,670
+you know, out there, and your
+customer base is like open to
+
+834
+00:51:02,670 --> 00:51:07,290
+it. You know, our customer base
+isn't so much open to things
+
+835
+00:51:07,290 --> 00:51:11,250
+that don't work, it has to work.
+And so John Deere is very, you
+
+836
+00:51:11,250 --> 00:51:16,020
+know, keen on that. And, and so
+all the 50 did a good job of
+
+837
+00:51:16,320 --> 00:51:19,230
+bringing us in allowing a
+startup to see how did you
+
+838
+00:51:19,230 --> 00:51:24,210
+change transform from making
+this cool technology that works?
+
+839
+00:51:24,450 --> 00:51:26,910
+You know, at first, you know, we
+talked about you could talk
+
+840
+00:51:26,910 --> 00:51:30,900
+about when you develop
+something, you know, is that 95%
+
+841
+00:51:31,350 --> 00:51:35,010
+edge cases are the maker
+breakers, right? You can make
+
+842
+00:51:35,010 --> 00:51:41,010
+something that works 80 85% of
+the time, the 9095, you know,
+
+843
+00:51:41,010 --> 00:51:45,450
+the 9798, those ones are your
+problems that take the most
+
+844
+00:51:45,450 --> 00:51:49,770
+time, right. So those edge
+cases, and John Deere has a has
+
+845
+00:51:49,770 --> 00:51:55,860
+a method for that. And so and so
+we and so we work, right, we
+
+846
+00:51:55,860 --> 00:51:58,230
+continue to work, and we
+continue to develop the product.
+
+847
+00:51:59,670 --> 00:52:02,340
+I can't get into any of the
+details other than that, like
+
+848
+00:52:02,340 --> 00:52:07,680
+you said very clearly is that
+you continue to test that system
+
+849
+00:52:08,160 --> 00:52:11,850
+and method, you have a method of
+doing it. So that you know that
+
+850
+00:52:11,850 --> 00:52:16,290
+when the time you release it. It
+is ready. It's ready for the
+
+851
+00:52:16,380 --> 00:52:20,910
+customer is ready to accept it
+is not is a perfect? No. It's
+
+852
+00:52:20,910 --> 00:52:24,210
+that there's no perfect no no
+perfection. Oh, of course. Yeah.
+
+853
+00:52:24,210 --> 00:52:28,290
+But you have all you have all
+you have all the big things out.
+
+854
+00:52:28,320 --> 00:52:31,230
+And then the rest of it is
+there's a system to have the
+
+855
+00:52:31,230 --> 00:52:31,800
+rest.
+
+856
+00:52:33,030 --> 00:52:37,170
+Audrow Nash: So is there. So it
+sounds to me, like a lot of your
+
+857
+00:52:37,170 --> 00:52:42,720
+job might involve figure making
+decisions about what can and
+
+858
+00:52:42,720 --> 00:52:46,740
+cannot be included? Can you talk
+a little bit to this, I'm sure
+
+859
+00:52:46,740 --> 00:52:50,040
+it has something to do with the
+John Deere process. But also,
+
+860
+00:52:50,460 --> 00:52:55,530
+it's a value judgment. On your
+side, I imagine where you're
+
+861
+00:52:55,530 --> 00:52:59,670
+going, we need it to be good for
+this temperature range, or
+
+862
+00:52:59,670 --> 00:53:00,180
+whatever it is.
+
+863
+00:53:01,560 --> 00:53:03,900
+Unknown: That's right, that, you
+know, it's essential, right?
+
+864
+00:53:03,900 --> 00:53:07,170
+Like, there's specifications,
+and there's, there's certain
+
+865
+00:53:07,170 --> 00:53:11,460
+things that are, you know, go
+no, go, I try to be very clear
+
+866
+00:53:11,460 --> 00:53:15,720
+on that. And then, and the other
+part of my job is when that is
+
+867
+00:53:15,720 --> 00:53:19,140
+included, define some things are
+just clear. This is good enough,
+
+868
+00:53:19,140 --> 00:53:22,020
+and this isn't. And then there's
+some things that are like, Okay,
+
+869
+00:53:22,020 --> 00:53:25,740
+this is a gray area, you know,
+we don't have a really clearly
+
+870
+00:53:25,740 --> 00:53:26,910
+defined.
+
+871
+00:53:26,970 --> 00:53:28,170
+Audrow Nash: Can you give me an
+example?
+
+872
+00:53:30,450 --> 00:53:33,780
+Unknown: So, so, let's think
+about the technology, right?
+
+873
+00:53:33,780 --> 00:53:36,780
+Think about artificial
+intelligence, artificial
+
+874
+00:53:36,780 --> 00:53:40,170
+intelligence, you know, it's
+probability, you know, so you
+
+875
+00:53:40,170 --> 00:53:43,260
+have these, like, you know,
+these algorithms and these
+
+876
+00:53:43,500 --> 00:53:47,160
+metrics that say, okay, hey,
+we're about this percentage,
+
+877
+00:53:47,430 --> 00:53:50,730
+good, on on our detection of...
+
+878
+00:53:51,690 --> 00:53:55,380
+Audrow Nash: So maybe like, I'm
+95% confident that this is a
+
+879
+00:53:55,380 --> 00:53:56,160
+tomato plant.
+
+880
+00:53:56,520 --> 00:54:02,310
+Unknown: There you go. 95%, is
+95 going to be good enough? Do
+
+881
+00:54:02,310 --> 00:54:05,640
+we really need to be 97 or is
+that is that, where was that
+
+882
+00:54:05,640 --> 00:54:11,310
+number? And that's hard to say?
+And you think about the world,
+
+883
+00:54:11,310 --> 00:54:14,160
+right? This these machines can
+be anywhere in the world, that
+
+884
+00:54:14,160 --> 00:54:17,760
+various changes depending on
+where you are. So you're over
+
+885
+00:54:17,760 --> 00:54:19,590
+here and this part of the
+country or this part of the
+
+886
+00:54:19,590 --> 00:54:23,040
+world, that's good enough and
+other parts of the country of
+
+887
+00:54:23,040 --> 00:54:27,180
+the world or particular actually
+even a particular actual grower,
+
+888
+00:54:27,390 --> 00:54:31,320
+that's not good enough, I need
+this thing to be this well, or
+
+889
+00:54:31,320 --> 00:54:33,570
+otherwise, I'll just go I'll
+just go by the other thing.
+
+890
+00:54:34,320 --> 00:54:39,150
+Audrow Nash: So work. So I'm
+thinking like, okay, considering
+
+891
+00:54:39,150 --> 00:54:42,600
+you guys are in like all over
+the world, you have machines all
+
+892
+00:54:42,600 --> 00:54:47,520
+over the world. I'm imagining
+knowing that if you're using
+
+893
+00:54:49,740 --> 00:54:54,810
+some sort of like probabilistic
+machine learning AI thing for
+
+894
+00:54:54,900 --> 00:54:59,370
+identifying plants or weeds,
+there's probably a good amount
+
+895
+00:54:59,370 --> 00:55:01,890
+of variation in We there's a
+good amount of variation in the
+
+896
+00:55:01,890 --> 00:55:04,470
+type of lighting you're get
+during the day, there's a good
+
+897
+00:55:04,470 --> 00:55:09,270
+variation in the amount, or like
+the color of the soil, or the
+
+898
+00:55:09,270 --> 00:55:13,470
+makeup of the soil, or anything
+like this. And this would
+
+899
+00:55:13,470 --> 00:55:17,910
+probably make it depending on
+the method you're using. A good
+
+900
+00:55:17,910 --> 00:55:22,230
+bit more difficult to come up
+with metrics, I guess, yeah,
+
+901
+00:55:22,230 --> 00:55:24,900
+this would be a good gray area
+examples, right?
+
+902
+00:55:24,960 --> 00:55:28,530
+Unknown: That's exactly why I
+brought it up. Because, okay, it
+
+903
+00:55:28,530 --> 00:55:32,310
+depends, right? It depends on,
+like, all those things you said,
+
+904
+00:55:32,310 --> 00:55:37,170
+right. And probably oil more
+than environment, the lighting
+
+905
+00:55:37,170 --> 00:55:40,710
+condition and what condition
+you're in. And in, I think the
+
+906
+00:55:40,740 --> 00:55:43,530
+moisture important, the
+important piece that I talked
+
+907
+00:55:43,530 --> 00:55:49,920
+about what quality is, is under
+letting the customer know, how,
+
+908
+00:55:50,850 --> 00:55:54,390
+what quality you're getting.
+Right. And so being able to
+
+909
+00:55:54,390 --> 00:55:58,140
+communicate that, I think that's
+an key, I think that will be key
+
+910
+00:55:58,140 --> 00:56:01,080
+in the future of robotics, as
+well, as we continue to develop
+
+911
+00:56:01,080 --> 00:56:05,190
+the technology. There will be
+situations where there's an
+
+912
+00:56:05,190 --> 00:56:10,590
+expectation, and now we cannot
+guarantee you what you'd expect.
+
+913
+00:56:10,770 --> 00:56:14,910
+And so you know, we tell you,
+Hey, you're in a situation now
+
+914
+00:56:14,910 --> 00:56:18,810
+that we're using fuzzy
+probability mathematics. And
+
+915
+00:56:18,810 --> 00:56:22,170
+yeah, your numbers are are
+starting to below come below a
+
+916
+00:56:22,170 --> 00:56:27,120
+threshold, yet. So now it is up
+to you as the union user to say,
+
+917
+00:56:28,740 --> 00:56:32,310
+Can I keep going this way? Or?
+No? I think that is, I think
+
+918
+00:56:32,310 --> 00:56:34,680
+that's I think that's going to
+be I think that's going to
+
+919
+00:56:34,680 --> 00:56:39,810
+always be the case, for a long
+time in robotics. And so we can
+
+920
+00:56:39,870 --> 00:56:43,980
+get all the edge cases out of
+out of a particular application.
+
+921
+00:56:44,400 --> 00:56:47,430
+And well, how many robotic
+applications do we actually have
+
+922
+00:56:47,430 --> 00:56:51,780
+in the world? There's not a lot
+of. And so as we develop these
+
+923
+00:56:51,780 --> 00:56:53,910
+new novel ones, though, they'll
+need time...
+
+924
+00:56:54,600 --> 00:56:57,270
+Audrow Nash: ...to mature even
+more and become more reliable.
+
+925
+00:56:58,290 --> 00:57:05,280
+Okay, does it mean, you go and
+test the robot system in a
+
+926
+00:57:05,280 --> 00:57:08,580
+similar environment to what the
+customer is, and then measure
+
+927
+00:57:08,580 --> 00:57:11,280
+how effective it is, and then
+report that to the customer? I
+
+928
+00:57:11,280 --> 00:57:14,340
+assume it's not like a real
+time, this is how well, we're
+
+929
+00:57:14,340 --> 00:57:19,080
+doing. system when you're
+talking about telling the
+
+930
+00:57:19,080 --> 00:57:21,360
+customers quality information.
+
+931
+00:57:21,540 --> 00:57:25,590
+Unknown: So it's both it's,
+it's, it's actually some there's
+
+932
+00:57:25,590 --> 00:57:29,130
+some real time to it right?
+There has to be there has to be
+
+933
+00:57:29,130 --> 00:57:33,420
+in particular, it's a robotic
+system, you have to let the
+
+934
+00:57:33,420 --> 00:57:37,680
+customer know, like, as real
+time as you can, that we're not
+
+935
+00:57:37,770 --> 00:57:40,410
+getting like you're not
+behaving, you're not behaving
+
+936
+00:57:40,410 --> 00:57:44,370
+the way that you want to behave.
+Yeah, so you got to be able to
+
+937
+00:57:44,370 --> 00:57:46,440
+give them that you have to be
+able to give them that.
+
+938
+00:57:46,770 --> 00:57:49,230
+Audrow Nash: Okay, I guess I'm a
+little confused, because I'm
+
+939
+00:57:49,230 --> 00:57:54,030
+imagining like, a robotic system
+going and spraying plants. And
+
+940
+00:57:54,030 --> 00:58:00,180
+maybe it says, we hit 80% of the
+weeds. But the thing is, at the
+
+941
+00:58:00,180 --> 00:58:04,680
+time, it thought every one of
+which it sprayed was a weed. So
+
+942
+00:58:04,680 --> 00:58:07,740
+20% might have been the cash
+crop or something like this.
+
+943
+00:58:08,520 --> 00:58:14,460
+Unknown: So the secret sauce, I
+can't give you but but what I
+
+944
+00:58:14,460 --> 00:58:18,810
+can tell you is that you have to
+be able to allow the customer to
+
+945
+00:58:18,810 --> 00:58:23,370
+know that your system isn't
+behaving the way you expect it
+
+946
+00:58:23,370 --> 00:58:23,640
+to.
+
+947
+00:58:24,030 --> 00:58:26,130
+Audrow Nash: Oh, right. Maybe
+it's just being aware of how
+
+948
+00:58:26,130 --> 00:58:28,470
+confident you are about the
+things you're doing and
+
+949
+00:58:28,470 --> 00:58:29,310
+reporting that.
+
+950
+00:58:29,670 --> 00:58:32,670
+Tobias Holmes: Exactly. So So
+yeah, exactly. Right. Like,
+
+951
+00:58:33,330 --> 00:58:35,280
+Audrow Nash: So it's confidence
+based, not outcome, you don't
+
+952
+00:58:35,280 --> 00:58:37,980
+have any real labels for what
+you're doing. Gotcha.
+
+953
+00:58:38,010 --> 00:58:41,910
+Unknown: Well, so so. So it's,
+it's so yeah, so it depends,
+
+954
+00:58:41,910 --> 00:58:45,480
+right? It's a combination, I
+can't get into all the details
+
+955
+00:58:45,540 --> 00:58:48,540
+yet. But there is a I will put
+it like this, there's both
+
+956
+00:58:48,540 --> 00:58:51,690
+components, there is a real
+world component, that is real
+
+957
+00:58:51,690 --> 00:58:57,840
+time. And there's also a a
+introspected after the fact, you
+
+958
+00:58:57,840 --> 00:59:00,900
+know, but you know that you can
+go back and look at and you can
+
+959
+00:59:00,960 --> 00:59:04,830
+and then you can combined.
+Right? So so I'll put it to you
+
+960
+00:59:04,830 --> 00:59:08,910
+like this, if you ran over a
+field once, if you've already
+
+961
+00:59:09,360 --> 00:59:12,930
+kind of been through an area
+once. And then you go back
+
+962
+00:59:12,930 --> 00:59:16,470
+through it again, you know that
+that provides you ability to
+
+963
+00:59:16,950 --> 00:59:18,570
+make different kinds of
+decisions.
+
+964
+00:59:19,530 --> 00:59:22,050
+Audrow Nash: You get to see if
+the weeds were all killed, or if
+
+965
+00:59:22,050 --> 00:59:23,550
+there's a bunch of them still
+or...
+
+966
+00:59:23,850 --> 00:59:28,230
+Unknown: Where the weeds are?
+What, what's the density of
+
+967
+00:59:28,230 --> 00:59:31,800
+them, you know, how the machines
+behaving at the time when you go
+
+968
+00:59:31,800 --> 00:59:35,010
+through that part of the field?
+There's lots of different
+
+969
+00:59:35,010 --> 00:59:35,490
+things.
+
+970
+00:59:35,520 --> 00:59:37,290
+Audrow Nash: Cool, okay, I
+didn't consider that kind of
+
+971
+00:59:37,290 --> 00:59:38,910
+temporal part of this.
+
+972
+00:59:38,910 --> 00:59:41,670
+Unknown: There's lots of
+different things that we
+
+973
+00:59:41,670 --> 00:59:46,020
+definitely do both. I would say
+we do both something real time
+
+974
+00:59:46,020 --> 00:59:48,390
+because you want to allow the
+customer to know right away that
+
+975
+00:59:48,390 --> 00:59:52,770
+hey, you're not in a great
+situation. And but then there's
+
+976
+00:59:52,770 --> 00:59:57,600
+also like, what is the situation
+exactly in that area? What is
+
+977
+00:59:57,600 --> 01:00:01,350
+actually going on? Why isn't
+that a great situation? And then
+
+978
+01:00:01,680 --> 01:00:05,250
+how do we correct for it? How do
+we make it better? How do we
+
+979
+01:00:05,250 --> 01:00:08,460
+improve upon it? And so yeah,
+providing the customer with the
+
+980
+01:00:08,460 --> 01:00:11,490
+ability to do that. And so those
+are two, I would say, those are
+
+981
+01:00:11,490 --> 01:00:15,720
+two things that I constantly
+have to make sure that we're
+
+982
+01:00:15,720 --> 01:00:20,190
+doing. And you know, it's cool,
+because we're developing both,
+
+983
+01:00:20,190 --> 01:00:24,150
+right, we're developing both of
+those infrastructures. Now real
+
+984
+01:00:24,150 --> 01:00:27,450
+time, like, you know, and so
+when that product gets released,
+
+985
+01:00:27,810 --> 01:00:30,960
+you don't present the customer
+ability to do both, he can say,
+
+986
+01:00:30,960 --> 01:00:34,470
+hey, right now, this is what's
+going on, what do I do? He can
+
+987
+01:00:34,470 --> 01:00:37,620
+make a decision, or she can make
+a decision on what do I want to
+
+988
+01:00:37,620 --> 01:00:42,420
+do now? After the fact that can
+come back and say, hey, that's
+
+989
+01:00:42,420 --> 01:00:45,390
+what happened at that time? How
+do the next time we go through
+
+990
+01:00:45,390 --> 01:00:49,290
+that situation again, time
+better, gotten better prepared
+
+991
+01:00:49,290 --> 01:00:51,510
+and better to make a better
+decision? You know, what new
+
+992
+01:00:51,510 --> 01:00:56,160
+information? And then and then
+you know, that, that turns on
+
+993
+01:00:56,160 --> 01:01:01,740
+another, you know, opportunity
+or ability in ways to, to tackle
+
+994
+01:01:01,740 --> 01:01:04,890
+it, you know, versus the real
+time real time you're making a
+
+995
+01:01:04,890 --> 01:01:09,300
+decision right now. You know,
+planning ahead of time is always
+
+996
+01:01:09,300 --> 01:01:11,850
+better, right? If you can plan
+ahead for that's always better.
+
+997
+01:01:13,800 --> 01:01:17,100
+Audrow Nash: Now, would you talk
+a little bit about doing work in
+
+998
+01:01:17,100 --> 01:01:21,240
+the field for this kind of
+thing, or like, getting out in
+
+999
+01:01:21,240 --> 01:01:24,930
+the field and testing your
+systems? Just I think that's a
+
+1000
+01:01:24,930 --> 01:01:28,980
+very interesting part of what it
+sounds like your job involves?
+
+1001
+01:01:30,210 --> 01:01:32,040
+Tobias Holmes: Yeah, absolutely.
+So we had to get out in the
+
+1002
+01:01:32,040 --> 01:01:36,630
+field. And I got a team of
+people, you know, and also in
+
+1003
+01:01:36,630 --> 01:01:41,220
+coordination, not with just my
+QA team, but the the, the field
+
+1004
+01:01:41,220 --> 01:01:45,630
+team, that's always out on the
+machine is always out there. And
+
+1005
+01:01:45,630 --> 01:01:49,830
+being able to, to understand how
+the machine actually behaves in
+
+1006
+01:01:49,830 --> 01:01:54,840
+the field. And so, you know,
+that it's not the same thing as,
+
+1007
+01:01:55,050 --> 01:02:00,900
+like an iPhone, or, you know, a
+piece of software that's
+
+1008
+01:02:00,930 --> 01:02:04,050
+presented in a web server, it's
+an actual piece of equipment
+
+1009
+01:02:04,050 --> 01:02:08,520
+that's put in the field, and
+another customer uses it, you
+
+1010
+01:02:08,520 --> 01:02:12,660
+know, puts their hands on it,
+and, and actually gets out there
+
+1011
+01:02:12,660 --> 01:02:17,760
+and use Google ads. So it's very
+valuable to me to get the
+
+1012
+01:02:17,760 --> 01:02:23,130
+customer's input the customer's
+point of view, the novel use
+
+1013
+01:02:23,130 --> 01:02:26,970
+cases. So putting out something
+in the field with a customer,
+
+1014
+01:02:27,480 --> 01:02:30,330
+you know, you have in your mind
+as an engineer and the
+
+1015
+01:02:30,330 --> 01:02:33,780
+engineering team, this is how we
+think you should be using our
+
+1016
+01:02:33,780 --> 01:02:36,780
+product. And the customer will
+just say, Oh, I can do this,
+
+1017
+01:02:36,780 --> 01:02:39,450
+this and this, and totally
+something you didn't even think
+
+1018
+01:02:39,450 --> 01:02:43,500
+about. You don't even think oh,
+wow, well, I didn't know that
+
+1019
+01:02:43,500 --> 01:02:45,750
+you're going to go through this.
+Because, you know, we didn't
+
+1020
+01:02:45,750 --> 01:02:49,140
+design it for that. But it can
+totally be done in that way.
+
+1021
+01:02:49,560 --> 01:02:53,880
+And, and so that's always cool
+to get their their point of view
+
+1022
+01:02:53,880 --> 01:02:56,550
+to get their use cases, because
+then we can start to think
+
+1023
+01:02:56,550 --> 01:02:59,250
+about, oh, wow, this could be
+used this way. We didn't even
+
+1024
+01:02:59,250 --> 01:03:03,060
+think about that. But let's make
+sure that way works. Let's make
+
+1025
+01:03:03,060 --> 01:03:06,180
+sure that that way works,
+because now we know, right? They
+
+1026
+01:03:06,180 --> 01:03:08,460
+want to use it that way. Yeah,
+they want to use it that way.
+
+1027
+01:03:08,490 --> 01:03:13,590
+I'm putting it out in as many I
+think any company wants to put
+
+1028
+01:03:13,590 --> 01:03:19,530
+their product and all the as
+many environments and use cases
+
+1029
+01:03:19,530 --> 01:03:24,720
+as they can to get the 97 98%.
+Because you don't know, right?
+
+1030
+01:03:24,720 --> 01:03:27,690
+Somebody is using it this way.
+You have your describe where you
+
+1031
+01:03:27,690 --> 01:03:31,950
+want to use it. And you don't
+know, you know what those edge
+
+1032
+01:03:31,950 --> 01:03:35,370
+cases are in your software
+stack, your mechanicals that,
+
+1033
+01:03:35,760 --> 01:03:40,320
+you know, of what's what what
+did we break down at? Were we
+
+1034
+01:03:40,320 --> 01:03:43,800
+not good enough that, you know,
+and, and so if you don't get out
+
+1035
+01:03:43,800 --> 01:03:47,820
+there, and you don't give
+yourself the ability to to, to
+
+1036
+01:03:47,850 --> 01:03:51,360
+do it in as many different
+environments as you can, you're
+
+1037
+01:03:51,360 --> 01:03:53,850
+going to find an environment
+that you didn't prepare for that
+
+1038
+01:03:53,850 --> 01:03:57,120
+you're not capable of handling.
+And you just have to figure that
+
+1039
+01:03:57,120 --> 01:04:01,740
+out later. So we're, we're keen
+on, you know, and the nice thing
+
+1040
+01:04:01,740 --> 01:04:04,380
+about being acquired by John
+Deere is we can go a lot of
+
+1041
+01:04:04,380 --> 01:04:07,620
+places across the country and
+across the world to make sure
+
+1042
+01:04:07,620 --> 01:04:12,750
+we're getting the big slots of
+use cases.
+
+1043
+01:04:13,020 --> 01:04:19,980
+Audrow Nash: Gotcha. Cool. Let's
+see, blowing up a little bit. Or
+
+1044
+01:04:19,980 --> 01:04:24,450
+going up a few levels. What do
+you think? Where do you think
+
+1045
+01:04:24,450 --> 01:04:27,510
+robotics and agriculture is
+headed?
+
+1046
+01:04:29,340 --> 01:04:33,030
+Tobias Holmes: I think you know,
+you know, robotics in general is
+
+1047
+01:04:33,030 --> 01:04:37,080
+the future of all industries.
+Agriculture is going to totally,
+
+1048
+01:04:37,560 --> 01:04:41,580
+you know, 20 years from now it's
+going to dominate. There's going
+
+1049
+01:04:41,580 --> 01:04:44,910
+to there's going to be you know,
+these machines will be
+
+1050
+01:04:44,970 --> 01:04:51,660
+automated, and, and, you know,
+self sufficient, you know, 2030
+
+1051
+01:04:51,660 --> 01:04:57,360
+years from now, or a girl will
+be able to say, hey, I want this
+
+1052
+01:04:57,360 --> 01:05:01,470
+to happen on my land, and it
+will happen and it will be very
+
+1053
+01:05:01,470 --> 01:05:04,230
+little human input. You know,
+there'll be there'll be some
+
+1054
+01:05:04,230 --> 01:05:08,280
+spots for human input. But you
+know, unless someone from
+
+1055
+01:05:08,280 --> 01:05:13,200
+Congress or somebody, you know,
+artificially removes the stress
+
+1056
+01:05:13,200 --> 01:05:17,910
+that is going to grow. I mean,
+it's the only way for these
+
+1057
+01:05:17,910 --> 01:05:21,120
+things to grow, right? Like
+there's, there's ton of machines
+
+1058
+01:05:21,450 --> 01:05:25,530
+as Thailand, we have to feed in
+a growing population, bunch of
+
+1059
+01:05:25,530 --> 01:05:28,830
+people. Yeah, we have to do that
+efficiently as we possibly can.
+
+1060
+01:05:29,100 --> 01:05:31,650
+We have to take in as much
+information as we can about the
+
+1061
+01:05:31,650 --> 01:05:35,550
+ground, what's going on on that
+ground? What do we need to do?
+
+1062
+01:05:35,970 --> 01:05:40,560
+How do we get the most out of
+it, and then get it ready,
+
+1063
+01:05:40,830 --> 01:05:44,730
+again, season after season, year
+after year, and we've been doing
+
+1064
+01:05:44,730 --> 01:05:49,350
+that as humans, but a lot of
+human input. And I mean, that
+
+1065
+01:05:49,350 --> 01:05:54,720
+works. But in the future, that's
+gonna, it's gonna be less human
+
+1066
+01:05:54,720 --> 01:05:57,870
+input is going to be a systems
+input, because we're finding
+
+1067
+01:05:57,870 --> 01:06:00,720
+that the system, you know,
+systems can can remove that
+
+1068
+01:06:00,720 --> 01:06:06,720
+human input into a better and
+more efficient. And so FFI
+
+1069
+01:06:06,720 --> 01:06:09,930
+anything, you know, fair history
+of history says anything, when
+
+1070
+01:06:09,930 --> 01:06:12,810
+we find more efficient and more
+effective ways to do something
+
+1071
+01:06:12,810 --> 01:06:13,620
+we do with that way.
+
+1072
+01:06:14,100 --> 01:06:16,920
+Audrow Nash: Oh, yeah, for sure.
+We're, I'm curious to where you
+
+1073
+01:06:16,920 --> 01:06:19,080
+get the number of 20 to 30
+years?
+
+1074
+01:06:20,190 --> 01:06:22,440
+Unknown: It's just the
+technology growth? Right. Like,
+
+1075
+01:06:22,440 --> 01:06:25,830
+it's the, you know, that could
+be off, right. I'm giving myself
+
+1076
+01:06:25,830 --> 01:06:26,520
+buffer there.
+
+1077
+01:06:26,910 --> 01:06:29,280
+Audrow Nash: For sure, I'm just
+curious about order of
+
+1078
+01:06:29,280 --> 01:06:30,000
+magnitude.
+
+1079
+01:06:30,480 --> 01:06:34,050
+Unknown: It's the technology?
+It's the ability, you know, so
+
+1080
+01:06:34,080 --> 01:06:39,480
+AI is very, you know, I won't
+say it's infant. But applying it
+
+1081
+01:06:39,540 --> 01:06:43,950
+into real world problems is
+still fairly new. Yeah, there's
+
+1082
+01:06:43,950 --> 01:06:46,860
+some there's some areas, but
+we're talking about agriculture,
+
+1083
+01:06:46,890 --> 01:06:50,610
+agriculture, I think it's still
+fairly new, like we were, I
+
+1084
+01:06:50,610 --> 01:06:54,060
+think we're at the cutting edge.
+I think blueberries probably
+
+1085
+01:06:54,180 --> 01:06:57,120
+ought to be right, right at
+right at front, right. And so
+
+1086
+01:06:57,840 --> 01:07:01,560
+and so what and where does it
+go? And what are the new things
+
+1087
+01:07:01,560 --> 01:07:04,020
+that we're going to learn? And
+how are we going to apply the AI
+
+1088
+01:07:04,530 --> 01:07:08,370
+and the machine learning to this
+environment? You know, along
+
+1089
+01:07:08,370 --> 01:07:12,780
+with, you know, the cameras that
+can can withstand the rush the
+
+1090
+01:07:12,780 --> 01:07:15,750
+harsh environment, but still
+give you all the information?
+
+1091
+01:07:16,170 --> 01:07:18,900
+Yet all the like you talked
+about a little bit earlier, the
+
+1092
+01:07:18,900 --> 01:07:22,170
+cloud changing the lighting
+changes the all the things?
+
+1093
+01:07:22,170 --> 01:07:25,410
+Yeah, all the things so much
+variance, so much variance. So
+
+1094
+01:07:25,410 --> 01:07:28,440
+you, you put your dino, you
+know, it's nice, very controlled
+
+1095
+01:07:28,440 --> 01:07:32,220
+environment, you're in this very
+real world natural environment.
+
+1096
+01:07:32,820 --> 01:07:35,760
+How, you know, cameras, just one
+thing, you could do this, all
+
+1097
+01:07:35,760 --> 01:07:39,840
+these other things, right, it's
+all the other sensors, and then
+
+1098
+01:07:39,840 --> 01:07:43,320
+the machine and the machinery
+and what you're trying to
+
+1099
+01:07:43,680 --> 01:07:48,960
+actually do with that machine.
+Can those you know, the human
+
+1100
+01:07:48,960 --> 01:07:53,310
+hand, right is a, you know, a
+very complex, very dynamic piece
+
+1101
+01:07:53,310 --> 01:07:57,870
+of machine, that we still have a
+very hard time. robota sizing?
+
+1102
+01:07:58,380 --> 01:08:00,750
+Yeah, awesome. Dynamics is
+pretty cool. Right? I think they
+
+1103
+01:08:00,750 --> 01:08:04,260
+got some pretty nice dynamics,
+but I don't think they have a
+
+1104
+01:08:04,260 --> 01:08:04,950
+nice hand.
+
+1105
+01:08:05,550 --> 01:08:09,420
+Audrow Nash: Yeah. Focusing more
+on local notion, the local most
+
+1106
+01:08:10,350 --> 01:08:14,220
+universal robots or right hand
+robotics or some of these other
+
+1107
+01:08:14,850 --> 01:08:16,800
+gripping, I don't know.
+
+1108
+01:08:17,970 --> 01:08:19,740
+Tobias Holmes: Those gripping
+technologies, right. In the
+
+1109
+01:08:19,740 --> 01:08:23,880
+garden. It's been, yeah, it's
+really simple. It's for it's for
+
+1110
+01:08:23,880 --> 01:08:27,090
+the application, right? It's for
+the application, right? It's
+
+1111
+01:08:27,090 --> 01:08:29,580
+like, okay, if I want to grab a
+thing I can do I just need a
+
+1112
+01:08:29,580 --> 01:08:33,360
+thing that does this. So that
+that mimics some parts of the
+
+1113
+01:08:33,360 --> 01:08:37,410
+hand. Yeah, but the hand can do
+so many different things. And
+
+1114
+01:08:37,410 --> 01:08:41,520
+so, you know, just, you know,
+how do we do you know, so that's
+
+1115
+01:08:41,520 --> 01:08:45,570
+the mechanical, more complex,
+the categorical,
+
+1116
+01:08:45,569 --> 01:08:48,089
+Audrow Nash: More sophisticated
+in the mechanical part? Because
+
+1117
+01:08:48,089 --> 01:08:52,769
+yeah, you're right, right now we
+have very, it's like most very
+
+1118
+01:08:52,769 --> 01:08:57,059
+fine manipulation. With, in an
+environment where you're, like,
+
+1119
+01:08:58,259 --> 01:09:00,629
+in a highly unstructured
+environment doesn't seem to be a
+
+1120
+01:09:00,629 --> 01:09:01,529
+thing yet.
+
+1121
+01:09:03,300 --> 01:09:05,490
+Unknown: There's lots of there's
+lots of dynamics right? And when
+
+1122
+01:09:05,490 --> 01:09:07,500
+you get when you get out to the
+real world talk about
+
+1123
+01:09:07,500 --> 01:09:11,370
+agriculture, you know, that this
+this this harvesting companies
+
+1124
+01:09:11,370 --> 01:09:15,720
+now I think they got robotic,
+like, they got he's got suction
+
+1125
+01:09:15,720 --> 01:09:19,530
+things, but he's still suck to
+suck the thing with a vacuum.
+
+1126
+01:09:20,040 --> 01:09:23,340
+Right? And so that I can kind of
+work in if you can manipulate
+
+1127
+01:09:23,340 --> 01:09:25,200
+it, you know, and you suck it...
+
+1128
+01:09:25,350 --> 01:09:29,070
+Audrow Nash: Little things for
+picking strawberries. These
+
+1129
+01:09:29,070 --> 01:09:31,650
+kinds of things. I think I saw
+this at the Queensland
+
+1130
+01:09:31,680 --> 01:09:33,990
+University of Technology in
+Australia.
+
+1131
+01:09:34,410 --> 01:09:37,380
+Unknown: You can get in there,
+and you can kind of grab it, you
+
+1132
+01:09:37,380 --> 01:09:41,490
+know, and that works in those
+environments. But you know,
+
+1133
+01:09:42,570 --> 01:09:44,220
+there's so many diverse
+environments.
+
+1134
+01:09:44,220 --> 01:09:46,980
+Audrow Nash: Yeah, it's hard and
+not very general. Yeah. At this
+
+1135
+01:09:46,980 --> 01:09:49,350
+point, I believe I mean, I don't
+really much.
+
+1136
+01:09:50,189 --> 01:09:52,559
+Unknown: I think I think
+initially there's going to be
+
+1137
+01:09:52,559 --> 01:09:56,639
+people who are I got a
+strawberry grabber, I got an
+
+1138
+01:09:56,639 --> 01:10:00,179
+apple grabber, and then somebody
+is going to make the universal
+
+1139
+01:10:00,179 --> 01:10:05,099
+So I grab stuff, yeah, whatever
+it is, whatever it is, you want
+
+1140
+01:10:05,099 --> 01:10:08,039
+me to go grab, I go grab it,
+right? So the mechanics have to
+
+1141
+01:10:08,039 --> 01:10:10,949
+get to that point where I can
+just grab anything, you know,
+
+1142
+01:10:10,949 --> 01:10:14,069
+and the human hand can do that.
+So I would imagine this, because
+
+1143
+01:10:14,069 --> 01:10:17,489
+how our brain thinks that we
+make stuff that is, you know,
+
+1144
+01:10:17,699 --> 01:10:21,419
+but then again, with AI, they
+might say, Oh, no, your hand is
+
+1145
+01:10:21,419 --> 01:10:25,409
+not the most optimal grabbing
+device, that's other device that
+
+1146
+01:10:25,409 --> 01:10:28,439
+you can grab, it's completely
+different than everything else.
+
+1147
+01:10:29,669 --> 01:10:33,509
+So that's the other cool thing
+that AI brings is the ability to
+
+1148
+01:10:33,989 --> 01:10:38,489
+rethink about our own, you know,
+designs, we come up with these
+
+1149
+01:10:38,489 --> 01:10:41,459
+designs, and it's like, oh,
+that's not the most optimal way
+
+1150
+01:10:41,459 --> 01:10:44,099
+to build the structure. If you
+build the structure with these
+
+1151
+01:10:44,099 --> 01:10:47,789
+very like, to us, they're not
+submitted, we typically build
+
+1152
+01:10:47,789 --> 01:10:51,899
+symmetrically and you know, the
+forces are very nicely applied
+
+1153
+01:10:51,899 --> 01:10:55,799
+across these symmetrical, you
+know, trusses, good things. And
+
+1154
+01:10:55,829 --> 01:10:58,619
+AI can say, oh, no, if you put
+this really long one here, and
+
+1155
+01:10:58,619 --> 01:11:03,599
+this one here, it has all the
+same constraints set as your Is
+
+1156
+01:11:03,599 --> 01:11:06,719
+there a symmetrical thing that
+you've been developing for for
+
+1157
+01:11:06,719 --> 01:11:08,309
+hundreds of years? Are you
+
+1158
+01:11:08,340 --> 01:11:12,540
+Audrow Nash: Are you familiar
+with much work? I'm not? But are
+
+1159
+01:11:12,540 --> 01:11:15,630
+you familiar with much work
+where it's like design related
+
+1160
+01:11:15,630 --> 01:11:18,960
+things that use some sort of
+maybe an evolutionary strategy
+
+1161
+01:11:18,960 --> 01:11:22,530
+or something in AI? Is this what
+you're about?
+
+1162
+01:11:22,830 --> 01:11:26,790
+Unknown: Yeah, we definitely. So
+we do some we do some developing
+
+1163
+01:11:26,910 --> 01:11:30,330
+Blue River, right? It's not?
+It's not, it's not, you know,
+
+1164
+01:11:30,720 --> 01:11:33,180
+across the board type of thing,
+but we do some of our own of
+
+1165
+01:11:33,180 --> 01:11:36,540
+that, right. And we do sort of
+our own, how can AI affect the
+
+1166
+01:11:36,540 --> 01:11:38,850
+design? That's what we do some
+of that.
+
+1167
+01:11:40,560 --> 01:11:45,570
+Audrow Nash: Something or, like,
+the length of a part of it.
+
+1168
+01:11:45,900 --> 01:11:48,750
+Unknown: No, I think I think it
+is just like, you know, you
+
+1169
+01:11:48,750 --> 01:11:54,420
+fundamentally give it a problem.
+And, and let it do its thing.
+
+1170
+01:11:56,070 --> 01:12:00,480
+It's actually like rocket
+science. We got some of our guys
+
+1171
+01:12:00,690 --> 01:12:03,990
+are like, you know, smartest
+guys ever. And we got some super
+
+1172
+01:12:03,990 --> 01:12:07,560
+smart guys here. Oh, my dad,
+and, and, you know, some of
+
+1173
+01:12:07,560 --> 01:12:12,150
+those guys just go out and say,
+hey, I want to do this thing
+
+1174
+01:12:12,150 --> 01:12:15,450
+here and give it a problem. I'm
+gonna let the I'm gonna let AI
+
+1175
+01:12:15,450 --> 01:12:18,390
+and the algorithms and the
+techniques come up with fine.
+
+1176
+01:12:18,510 --> 01:12:20,130
+Yeah, there you go. There you
+go.
+
+1177
+01:12:20,340 --> 01:12:24,060
+Audrow Nash: Hmm. I wonder, I
+wonder if there's difficulties
+
+1178
+01:12:24,060 --> 01:12:28,080
+there. Because of I assume,
+well, I'm pretty sure you would
+
+1179
+01:12:28,080 --> 01:12:34,170
+have to do it in simulation. And
+in simulation physics doesn't
+
+1180
+01:12:34,170 --> 01:12:39,090
+really match up perfectly with
+our Oh, no, that. Yeah, yeah. So
+
+1181
+01:12:39,090 --> 01:12:42,030
+like, the attack is very hard to
+simulate.
+
+1182
+01:12:42,360 --> 01:12:44,370
+Tobias Holmes: So you gotta you
+got to get the you got to get
+
+1183
+01:12:44,370 --> 01:12:47,010
+the test stuff up, right, you
+got to build something, you got
+
+1184
+01:12:47,010 --> 01:12:51,060
+to, you know, prototype it get a
+texture rig up, see what you can
+
+1185
+01:12:51,060 --> 01:12:54,630
+learn, you know, in river river.
+And I think I think most
+
+1186
+01:12:54,630 --> 01:12:58,830
+companies are all about that,
+right? And every engineer would
+
+1187
+01:12:58,830 --> 01:13:01,950
+love doing that. Right? Oh, hey,
+there's this new thing. We got
+
+1188
+01:13:01,950 --> 01:13:05,640
+to develop this new test rig
+that that's saying, Yeah, let's
+
+1189
+01:13:05,640 --> 01:13:10,200
+figure out how it works. And
+totally, we, you know, that's,
+
+1190
+01:13:10,200 --> 01:13:12,450
+that's part of the that's part
+of the cool part of Blue River
+
+1191
+01:13:12,450 --> 01:13:16,020
+is that, you know, depending on
+what project you're working on,
+
+1192
+01:13:16,590 --> 01:13:20,010
+there's still that goes on,
+right? There's still that, hey,
+
+1193
+01:13:20,460 --> 01:13:24,690
+I got an idea. I don't know
+where this is gonna go yet. But
+
+1194
+01:13:24,750 --> 01:13:28,560
+can I get a little bit of budget
+to build a little something, and
+
+1195
+01:13:28,560 --> 01:13:33,000
+let's see what we get. Cool. And
+if, and if you get down, we
+
+1196
+01:13:33,000 --> 01:13:37,740
+started to see promise. that'll
+continue to get fans that will
+
+1197
+01:13:37,740 --> 01:13:40,500
+continue to get like, Okay,
+we'll keep developing. Keep keep
+
+1198
+01:13:40,500 --> 01:13:43,650
+looking at that. Keep figuring
+that out. Keep coming up with
+
+1199
+01:13:43,650 --> 01:13:47,790
+that. And I think I think all
+companies at some point, you
+
+1200
+01:13:47,790 --> 01:13:50,730
+know, I think they do they have
+to you have to do that. Right?
+
+1201
+01:13:50,730 --> 01:13:53,190
+If you want to, if you want to,
+you know how to have a John
+
+1202
+01:13:53,190 --> 01:13:58,110
+Deere, you know, stick around as
+long? Because we have to have
+
+1203
+01:13:58,350 --> 01:14:06,210
+somebody out there. Yay. Yeah, I
+want to figure out how to do
+
+1204
+01:14:06,210 --> 01:14:09,060
+something that is totally no one
+else is thinking about. Right.
+
+1205
+01:14:09,060 --> 01:14:13,440
+Yeah. Totally put a little bit
+of investment in that. And, my
+
+1206
+01:14:13,440 --> 01:14:17,370
+God, what can come out with
+we've come up with some cool
+
+1207
+01:14:17,370 --> 01:14:22,050
+stuff is, you know, just
+scratching the surface. I think
+
+1208
+01:14:22,050 --> 01:14:25,770
+we got some of the right people,
+you know, kind of like leading
+
+1209
+01:14:25,770 --> 01:14:30,000
+the direction there to continue
+us to grow there. Yeah, I think
+
+1210
+01:14:30,030 --> 01:14:34,020
+I think yeah, I think that that,
+and you talked a little bit
+
+1211
+01:14:34,020 --> 01:14:41,160
+earlier about, you know, the
+kids and the growing of the
+
+1212
+01:14:41,160 --> 01:14:44,640
+population so that they are
+capable of bringing those ideas
+
+1213
+01:14:44,640 --> 01:14:45,060
+seed.
+
+1214
+01:14:45,960 --> 01:14:48,180
+Audrow Nash: Yeah, actually,
+that's that's kind of a good
+
+1215
+01:14:48,180 --> 01:14:53,190
+segue into what I would like to
+ask you about, which is I mean,
+
+1216
+01:14:53,190 --> 01:14:59,310
+so you have kids, and you've
+been encouraging them to program
+
+1217
+01:14:59,760 --> 01:15:01,080
+would you tell me a bit about
+this?
+
+1218
+01:15:01,800 --> 01:15:06,000
+Unknown: Yes, so So I got I got
+two daughters, my oldest, now
+
+1219
+01:15:06,000 --> 01:15:09,390
+she's a nurse. And so she was a
+little bit behind the power
+
+1220
+01:15:09,390 --> 01:15:13,230
+curve when I, when I got into
+engineering, but but but I did
+
+1221
+01:15:13,230 --> 01:15:19,260
+explain to her that, you know,
+robotics, you know, computing
+
+1222
+01:15:19,290 --> 01:15:23,700
+and, you know, these actual
+devices that she uses as a nurse
+
+1223
+01:15:24,060 --> 01:15:27,510
+are going to converge, right,
+and that device will do a lot of
+
+1224
+01:15:27,510 --> 01:15:31,260
+things for you that you're doing
+right now manually as a nurse,
+
+1225
+01:15:31,890 --> 01:15:34,260
+and so that she should pay
+attention to it. Right. And so
+
+1226
+01:15:34,260 --> 01:15:38,820
+she, so she, you see has Riley
+she's been, you know, keeping up
+
+1227
+01:15:38,820 --> 01:15:44,040
+with, you know, a little bit of
+the technology, magazines, you
+
+1228
+01:15:44,040 --> 01:15:49,140
+know, around around the medical
+field, and the new devices that
+
+1229
+01:15:49,140 --> 01:15:52,170
+are coming and even like, you
+know, I talked to her about
+
+1230
+01:15:52,170 --> 01:15:58,500
+months ago, she was talking to a
+doctor about these new these new
+
+1231
+01:16:00,360 --> 01:16:03,180
+What do you call them, you know,
+so you can a doctor, they put
+
+1232
+01:16:03,180 --> 01:16:07,020
+that little thing on your your
+finger in your policy and
+
+1233
+01:16:07,020 --> 01:16:07,410
+system.
+
+1234
+01:16:09,600 --> 01:16:12,570
+Tobias Holmes: Yeah, so she's
+talking them about new ways that
+
+1235
+01:16:12,570 --> 01:16:15,180
+you don't even have to put that
+thing on there, you know, you
+
+1236
+01:16:15,180 --> 01:16:18,180
+can just come in the room and in
+the room has the environment,
+
+1237
+01:16:18,360 --> 01:16:21,630
+when the patient comes in, it
+just gives you like kind of the
+
+1238
+01:16:21,630 --> 01:16:25,080
+patient's whole thing, right,
+you can bring them in, and like
+
+1239
+01:16:25,080 --> 01:16:28,350
+3d Walk around them, like they
+just kind of stand there, you
+
+1240
+01:16:28,350 --> 01:16:30,870
+can kind of walk around and
+like, Okay, this is going on
+
+1241
+01:16:30,870 --> 01:16:34,740
+here, your heart rates here, it
+looks like we got some
+
+1242
+01:16:34,740 --> 01:16:39,660
+distraction here on your phones.
+And so technology is far away.
+
+1243
+01:16:39,960 --> 01:16:43,260
+But, but it's getting there,
+right. And then this is where
+
+1244
+01:16:43,260 --> 01:16:46,620
+the future is going. And so our
+doctors like, you know, paying
+
+1245
+01:16:46,620 --> 01:16:50,190
+attention to it, you know, and
+likes her because she's like,
+
+1246
+01:16:50,280 --> 01:16:53,790
+interested in those things. My
+youngest daughter is more of the
+
+1247
+01:16:53,820 --> 01:16:58,050
+the one that I you know, I have
+more of impact on she is she's
+
+1248
+01:16:58,050 --> 01:17:00,360
+becoming a biomedical engineer
+and actually go to school,
+
+1249
+01:17:00,360 --> 01:17:03,840
+University of Florida. And she
+was about when she was about, I
+
+1250
+01:17:03,840 --> 01:17:07,410
+would say about 12. I had her
+writing, writing small scripts
+
+1251
+01:17:07,410 --> 01:17:10,860
+and Python, I used to do some,
+some robotics work out in
+
+1252
+01:17:10,860 --> 01:17:15,420
+University of Florida for Joel
+teen, she used to come visit me.
+
+1253
+01:17:15,780 --> 01:17:18,930
+And we'd sit there and and one
+of the cool things about it was
+
+1254
+01:17:18,930 --> 01:17:21,630
+that was Code Academy. For
+Python, my daughter's super
+
+1255
+01:17:21,630 --> 01:17:26,340
+smart. And the way Code Academy
+is set up. It's just it gives
+
+1256
+01:17:26,340 --> 01:17:30,390
+you a nice little introduction
+into programming, and Python
+
+1257
+01:17:30,390 --> 01:17:35,490
+syntax. And so you can start to
+slowly learn how to program and
+
+1258
+01:17:35,490 --> 01:17:38,220
+you can start to slowly
+understand Python syntax, which
+
+1259
+01:17:38,220 --> 01:17:41,790
+isn't so complicated. It's not
+like C++, you know, it's a
+
+1260
+01:17:41,790 --> 01:17:45,810
+little bit more, you know,
+syntax see heavy Python, you
+
+1261
+01:17:45,810 --> 01:17:48,210
+just like, you know, you make
+these senses, you make these
+
+1262
+01:17:48,210 --> 01:17:51,600
+things that is kind of make
+sense, right? If this happens,
+
+1263
+01:17:51,630 --> 01:17:54,600
+do this, that happens do that.
+And there's not a whole lot of
+
+1264
+01:17:54,600 --> 01:17:57,990
+syntax around it just kind of in
+which I learned that in school
+
+1265
+01:17:57,990 --> 01:18:02,130
+anyway. And she was able to, you
+know, to start developing, you
+
+1266
+01:18:02,130 --> 01:18:04,860
+know, smaller programs that
+could do our homework and stuff
+
+1267
+01:18:04,860 --> 01:18:08,880
+for you. And, yeah, and so now
+she's like, Yeah, Dad, I want
+
+1268
+01:18:08,880 --> 01:18:12,120
+to, I want to build robotic
+arms. And I want to, you know,
+
+1269
+01:18:12,150 --> 01:18:15,420
+build like these kind of like
+robotic prosthetics for people,
+
+1270
+01:18:15,420 --> 01:18:18,720
+right? Because she remembers
+when I was in the military, she
+
+1271
+01:18:18,720 --> 01:18:21,900
+and I got a buddy of mine who,
+who lost his arm in the
+
+1272
+01:18:21,900 --> 01:18:26,640
+military. And he's got a very,
+you know, it works. But it's
+
+1273
+01:18:26,640 --> 01:18:30,390
+really primitive, like a fork
+kind of fork finger arm thing.
+
+1274
+01:18:30,810 --> 01:18:32,910
+Yeah. And she wants to give them
+hands, right? She wants to,
+
+1275
+01:18:32,910 --> 01:18:35,970
+like, you know, hey, I want to
+be able to make and take the
+
+1276
+01:18:35,970 --> 01:18:39,840
+fork away and give him the
+ability to grab things. Yeah.
+
+1277
+01:18:39,900 --> 01:18:45,570
+And but, you know, what did she
+get that desire from the wanting
+
+1278
+01:18:45,570 --> 01:18:50,310
+to do that? And it was because
+of the accessibility of
+
+1279
+01:18:50,310 --> 01:18:56,040
+programming. And, and things
+like Python and ROS, write
+
+1280
+01:18:56,400 --> 01:19:01,710
+Python, being able to give you a
+really high level language that
+
+1281
+01:19:01,710 --> 01:19:05,220
+isn't overly complicated to
+start writing a program. It's
+
+1282
+01:19:05,250 --> 01:19:08,970
+very close to how you just kind
+of think and write things down
+
+1283
+01:19:09,120 --> 01:19:14,070
+when you're writing stories and
+things. And then ROS ROS gives
+
+1284
+01:19:14,070 --> 01:19:17,250
+you the ability to say okay,
+hey, I got a I got this module
+
+1285
+01:19:17,250 --> 01:19:20,160
+that does this, I got the
+camera, the camera takes in
+
+1286
+01:19:20,190 --> 01:19:24,570
+images. And I can get a process
+image. I've got the sensor that
+
+1287
+01:19:24,570 --> 01:19:28,410
+tells me what the height is up
+and down. And I can break that
+
+1288
+01:19:28,410 --> 01:19:31,050
+down into numbers. Essentially,
+you break all of those things
+
+1289
+01:19:31,050 --> 01:19:34,290
+down into numbers. And if you
+understand enough mathematics,
+
+1290
+01:19:34,650 --> 01:19:38,550
+you can now take camera images,
+you can take sensors, you can
+
+1291
+01:19:38,550 --> 01:19:42,420
+take lasers, you can take all
+these crazy things, you know
+
+1292
+01:19:42,420 --> 01:19:46,440
+that are you know, no one knows
+how, how that how the camera
+
+1293
+01:19:46,440 --> 01:19:51,000
+works, like how does it take the
+image? electronically? Yeah,
+
+1294
+01:19:51,000 --> 01:19:55,920
+exactly. That that's Oh my God,
+how long it will take you to
+
+1295
+01:19:55,920 --> 01:19:58,560
+understand, you know, yeah, it's
+like an undergraduate degree.
+
+1296
+01:19:58,800 --> 01:20:02,010
+Yeah, the sign What's behind
+that, but but if you can tell me
+
+1297
+01:20:02,010 --> 01:20:06,210
+hey, I can give you the you
+know, I can give you an array,
+
+1298
+01:20:06,420 --> 01:20:10,710
+you know, a vector of pixels and
+what those pixel values are, and
+
+1299
+01:20:10,710 --> 01:20:15,000
+those correlate to colors. And
+then you can decide to project
+
+1300
+01:20:15,000 --> 01:20:18,660
+that on to another screen that
+just like displays numbers, you
+
+1301
+01:20:18,660 --> 01:20:22,530
+can almost see the face that
+you're taking a picture of, even
+
+1302
+01:20:22,530 --> 01:20:24,930
+in ASCII, right, like we even
+without it even would actually
+
+1303
+01:20:24,930 --> 01:20:26,880
+give you the color values, I can
+give you an ASCII
+
+1304
+01:20:26,880 --> 01:20:27,750
+representation.
+
+1305
+01:20:28,140 --> 01:20:31,770
+Audrow Nash: Yeah, or just use
+OpenCV, and then have it do face
+
+1306
+01:20:31,770 --> 01:20:34,770
+detection or some sort of thing,
+some other existing library,
+
+1307
+01:20:34,800 --> 01:20:39,360
+You learn OpenCV, and then you
+become your, you become a guru,
+
+1308
+01:20:39,360 --> 01:20:46,050
+right? Like you really get
+OpenCV. You gotta learn the math
+
+1309
+01:20:46,050 --> 01:20:49,260
+behind it, right? So you got to
+learn the math behind it. But
+
+1310
+01:20:49,260 --> 01:20:52,590
+you don't the tools, the tools
+give you the accessibility is
+
+1311
+01:20:52,590 --> 01:20:56,520
+the cool part. You make it
+accessible, you make it easy for
+
+1312
+01:20:56,520 --> 01:21:00,270
+these kids to get into it. And
+so and so you get the the little
+
+1313
+01:21:00,270 --> 01:21:04,140
+touches, I think I talked to you
+about this offline, was I had a
+
+1314
+01:21:04,140 --> 01:21:09,630
+kid, this this January, he was a
+was Cristo Rey has a high school
+
+1315
+01:21:09,630 --> 01:21:12,510
+program where they bring you
+know, other representative high
+
+1316
+01:21:12,510 --> 01:21:16,770
+school kids and merge them with
+a mentor from a tech company, to
+
+1317
+01:21:16,770 --> 01:21:19,500
+one talk this kid how to how to
+cut his camera on from a
+
+1318
+01:21:19,500 --> 01:21:23,970
+microphone, using Python, using
+Code Academy, quickly learned
+
+1319
+01:21:23,970 --> 01:21:26,880
+how to do let you know simple
+programs and modular
+
+1320
+01:21:26,880 --> 01:21:30,330
+programming, and bring in a
+library, this is the library for
+
+1321
+01:21:30,330 --> 01:21:33,510
+your camera. It's just how you
+cut your camera on. There's all
+
+1322
+01:21:33,510 --> 01:21:36,780
+these other API's in that
+library that can like focus the
+
+1323
+01:21:36,780 --> 01:21:41,040
+camera and go look at different
+things. But I'm just gonna, I'm
+
+1324
+01:21:41,040 --> 01:21:44,250
+just gonna show you how to cut
+it on and off. Yeah, and hit
+
+1325
+01:21:44,250 --> 01:21:46,980
+record for you. And then I'm
+going to show you this other
+
+1326
+01:21:46,980 --> 01:21:51,120
+library that takes your voice in
+and you can teach it words, but
+
+1327
+01:21:51,390 --> 01:21:54,990
+you know, teach it that camera
+teacher that on and it loads it
+
+1328
+01:21:54,990 --> 01:21:57,690
+from your voice, if I tell it
+ain't gonna work, but from your
+
+1329
+01:21:57,690 --> 01:22:01,410
+voice, it knows what cut means
+and has a camera on and knows
+
+1330
+01:22:01,410 --> 01:22:04,620
+what that means. And it sends
+the signal to the camera to turn
+
+1331
+01:22:04,620 --> 01:22:08,520
+on the camera API. And he's got
+that working in the kids. It's
+
+1332
+01:22:08,520 --> 01:22:14,160
+like, Oh, yes. Like, he was so
+upset about it, right? It's
+
+1333
+01:22:14,160 --> 01:22:17,100
+like, I love and see that. I
+love to see that because that
+
+1334
+01:22:17,100 --> 01:22:19,320
+kid's gonna grow, you know, I
+don't know he's gonna do in his
+
+1335
+01:22:19,320 --> 01:22:22,860
+life. I only mentored him for
+for about four or five months.
+
+1336
+01:22:23,190 --> 01:22:25,830
+But I showed him wonderful
+though, what is cake, what he's
+
+1337
+01:22:25,830 --> 01:22:30,240
+capable of doing? You know, and
+it was over four or five months.
+
+1338
+01:22:30,870 --> 01:22:33,240
+That was just, I just scratched
+the surface. And I always
+
+1339
+01:22:33,240 --> 01:22:36,720
+iterated. So this is just
+scratching the surface, if you
+
+1340
+01:22:36,750 --> 01:22:40,230
+actually want to be able to do
+this for real, and get paid,
+
+1341
+01:22:40,230 --> 01:22:43,650
+like I get paid to do it. You
+need to go to school, you need
+
+1342
+01:22:43,650 --> 01:22:46,200
+to learn you need to actually
+understand the math behind it,
+
+1343
+01:22:46,200 --> 01:22:48,690
+you need to understand the
+details behind this so that you
+
+1344
+01:22:48,690 --> 01:22:52,440
+do it the most efficient way the
+way we did it was a way they
+
+1345
+01:22:52,440 --> 01:22:55,380
+work, right. But this isn't the
+most efficient, the most
+
+1346
+01:22:55,380 --> 01:23:00,120
+effective way and ready for
+sure. And if you really want to
+
+1347
+01:23:00,120 --> 01:23:02,580
+get a job doing that, you can't
+go get a job making this right
+
+1348
+01:23:02,580 --> 01:23:04,680
+now because you're just a kid,
+right? But if you get a
+
+1349
+01:23:04,680 --> 01:23:07,410
+credential that says I know how
+to write software, well, I know
+
+1350
+01:23:07,410 --> 01:23:09,780
+how to develop cameras, and I
+know how to develop, you know,
+
+1351
+01:23:09,960 --> 01:23:15,120
+sound devices. And now you can
+go get a to this. Yeah, how cool
+
+1352
+01:23:15,120 --> 01:23:18,030
+is that? Right? How cool is it
+to go get paid to make these
+
+1353
+01:23:18,030 --> 01:23:20,760
+kinds of devices into make these
+things that affect the world.
+
+1354
+01:23:21,030 --> 01:23:23,730
+And he was totally, you know,
+he's totally stoked about it.
+
+1355
+01:23:24,030 --> 01:23:27,450
+And that that, to me is the key.
+That's the key to get our kids
+
+1356
+01:23:27,510 --> 01:23:32,490
+reback focused and, you know,
+technology and doing smart
+
+1357
+01:23:32,490 --> 01:23:36,900
+things. And I'm kind of bias.
+I'm a little older. I'm 43. And
+
+1358
+01:23:36,960 --> 01:23:40,380
+and I think like, you know,
+there's a good chunk of our
+
+1359
+01:23:40,380 --> 01:23:43,170
+kids. I think every generation
+has this, we just want to be
+
+1360
+01:23:43,170 --> 01:23:46,650
+like tick tock influences. And
+they want to you know, they want
+
+1361
+01:23:46,650 --> 01:23:49,560
+to do things that I like, Yeah,
+that's cool, when that's fun,
+
+1362
+01:23:49,560 --> 01:23:53,280
+but that isn't like, you know,
+progressing society. Right?
+
+1363
+01:23:53,280 --> 01:23:56,880
+Yeah, some way but you really
+need to be studying, you really
+
+1364
+01:23:56,880 --> 01:23:59,610
+need to be understanding, like
+standing on the shoulders of the
+
+1365
+01:23:59,610 --> 01:24:02,400
+guys that came before us, you
+know, with this technology and
+
+1366
+01:24:02,400 --> 01:24:06,990
+growing it. And it's not easy.
+You know, learning that calculus
+
+1367
+01:24:06,990 --> 01:24:09,180
+and learning that, you know, the
+physics...
+
+1368
+01:24:09,180 --> 01:24:10,350
+All the required skills.
+
+1369
+01:24:10,350 --> 01:24:13,380
+Tobias Holmes: That stuff is not
+easy. So how do you motivate
+
+1370
+01:24:13,500 --> 01:24:16,920
+those kids to stick with it when
+you know you got three
+
+1371
+01:24:16,920 --> 01:24:22,560
+dimensional calculus? You got
+integrals, and why am I doing
+
+1372
+01:24:22,740 --> 01:24:25,800
+this? Yeah, I could go vo here
+there was a tick tock dance.
+
+1373
+01:24:28,020 --> 01:24:31,110
+Making my money that way. It's
+like Nah, you get to actually
+
+1374
+01:24:31,140 --> 01:24:34,110
+once you learn that stuff, and
+what does that stuff apply to?
+
+1375
+01:24:34,110 --> 01:24:36,900
+That's another thing I think
+schools fail at is I agree
+
+1376
+01:24:36,900 --> 01:24:41,130
+completely explaining to you why
+is math important? Yeah, one
+
+1377
+01:24:41,130 --> 01:24:44,400
+plus one is soup. Okay, that's
+great. That's good for a simple
+
+1378
+01:24:44,430 --> 01:24:47,850
+math. Why is it that I need to
+know the integral of something
+
+1379
+01:24:47,880 --> 01:24:51,870
+what what usefulness is that?
+Yeah, this may give them
+
+1380
+01:24:51,870 --> 01:24:53,610
+something that is actually
+tangible.
+
+1381
+01:24:54,030 --> 01:24:55,710
+Audrow Nash: Totally. This is
+why I think it's such an
+
+1382
+01:24:55,710 --> 01:25:00,420
+important thing that you're
+mentoring people. It's like It's
+
+1383
+01:25:00,420 --> 01:25:03,870
+hard to expect teachers to
+understand, like K through 12
+
+1384
+01:25:03,900 --> 01:25:08,460
+teachers to understand the
+reasons that engineers use, say
+
+1385
+01:25:08,460 --> 01:25:12,510
+sinusoids, or linear algebra or
+whatever math related.
+
+1386
+01:25:12,510 --> 01:25:14,130
+Unknown: Pythagorean theorem.
+Yeah, for sure.
+
+1387
+01:25:14,130 --> 01:25:18,390
+Audrow Nash: All the programming
+concepts. But so like you who,
+
+1388
+01:25:18,390 --> 01:25:21,180
+as someone who actually does,
+it's very important for you to
+
+1389
+01:25:21,180 --> 01:25:23,580
+go hang out with kids, I think.
+And me too. Like, this is
+
+1390
+01:25:23,580 --> 01:25:27,060
+something I hope to be able to
+do in the near future, like, go
+
+1391
+01:25:27,060 --> 01:25:30,240
+help help help high school
+students or something like this.
+
+1392
+01:25:30,810 --> 01:25:35,310
+As someone who's actually
+applying these technologies, and
+
+1393
+01:25:35,310 --> 01:25:38,700
+be like, Oh, this is why
+sinusoids relevant, or whatever,
+
+1394
+01:25:38,700 --> 01:25:42,450
+which is something my teachers
+were not able to give me. When I
+
+1395
+01:25:42,450 --> 01:25:43,140
+was learning them.
+
+1396
+01:25:43,830 --> 01:25:47,580
+Unknown: You learn them, you get
+the grade, you know? Yeah. I
+
+1397
+01:25:47,580 --> 01:25:50,250
+don't know how you got into
+engineering, but it wasn't
+
+1398
+01:25:50,340 --> 01:25:54,480
+because you're learning sinusoid
+like it wasn't your high school
+
+1399
+01:25:54,480 --> 01:25:55,200
+math teacher.
+
+1400
+01:25:55,230 --> 01:25:58,050
+Audrow Nash: Not robotic for
+sure. I got into electrical
+
+1401
+01:25:58,050 --> 01:26:02,130
+because my dad told me I should.
+And then robotics was like, Oh,
+
+1402
+01:26:02,130 --> 01:26:05,610
+this is awesome. And so that's
+how I got into robotics.
+
+1403
+01:26:06,060 --> 01:26:08,100
+Tobias Holmes: Robotics is
+that's the cool thing about it
+
+1404
+01:26:08,130 --> 01:26:11,820
+is like, it's it's really world
+world, it's kind of hard
+
+1405
+01:26:11,820 --> 01:26:15,660
+sometimes for computer science,
+you know, to kind of explain,
+
+1406
+01:26:15,660 --> 01:26:18,030
+okay, yeah, you make this
+website. But in order to make
+
+1407
+01:26:18,030 --> 01:26:21,360
+this website, you got to know
+all these, like data structures,
+
+1408
+01:26:21,360 --> 01:26:25,500
+and all this other stuff that is
+not necessarily website base.
+
+1409
+01:26:25,740 --> 01:26:28,950
+And then in the, you know, the
+backend stuff is a little bit
+
+1410
+01:26:28,950 --> 01:26:32,310
+more complicated, but you know,
+being able to tie it to
+
+1411
+01:26:32,310 --> 01:26:36,660
+something that's real world, and
+I think robotics, is a very cool
+
+1412
+01:26:36,660 --> 01:26:39,960
+thing, because there's just so
+much, especially right now,
+
+1413
+01:26:39,960 --> 01:26:43,500
+there's so much room for things
+that are not there. You know,
+
+1414
+01:26:43,560 --> 01:26:45,780
+when when kids are usually the
+engineers, or the kids who are
+
+1415
+01:26:45,780 --> 01:26:48,990
+like, I wish this could work
+like this, we got this thing
+
+1416
+01:26:48,990 --> 01:26:51,960
+already. But why couldn't they
+work like this? Like who, you
+
+1417
+01:26:51,960 --> 01:26:54,600
+know, I'm not the guy who made
+it, but why did they make it
+
+1418
+01:26:54,600 --> 01:26:57,240
+like that I would have made it
+this way, I would have been
+
+1419
+01:26:57,240 --> 01:26:59,610
+something like this, I don't
+know how to do it. But if I
+
+1420
+01:26:59,610 --> 01:27:02,520
+could, I would have made it this
+way, I would have made my
+
+1421
+01:27:02,520 --> 01:27:06,150
+camera, you know, fly around on
+a drone and follow me around the
+
+1422
+01:27:06,150 --> 01:27:08,460
+house, right? Like, and then I
+don't have to just sit in my
+
+1423
+01:27:08,460 --> 01:27:12,060
+chair, and have this video, I
+could just go for a walk. And we
+
+1424
+01:27:12,060 --> 01:27:14,910
+could have this video, right?
+That'd be super cool. You know,
+
+1425
+01:27:14,910 --> 01:27:18,450
+and we got it, we have that
+technology now. Alright, but if
+
+1426
+01:27:18,450 --> 01:27:21,630
+no one ever developed that and
+thought of that up, that
+
+1427
+01:27:21,630 --> 01:27:25,410
+wouldn't have happened. And, and
+we got to give those kids the,
+
+1428
+01:27:25,440 --> 01:27:30,420
+you know, I think early on the
+early on is a photogram. Because
+
+1429
+01:27:30,720 --> 01:27:35,220
+the technology is accessible.
+Now, it's, it's not as
+
+1430
+01:27:35,220 --> 01:27:39,030
+complicated. It's not like our
+grandfathers and our fathers,
+
+1431
+01:27:39,300 --> 01:27:43,500
+you know, entry level to get in.
+It is now at a level where I can
+
+1432
+01:27:43,500 --> 01:27:46,500
+teach my seven year old
+daughter, you know, hey, this is
+
+1433
+01:27:46,500 --> 01:27:51,240
+how you program a little math
+equation in Python. Yes, how you
+
+1434
+01:27:51,240 --> 01:27:54,570
+take variables. And this is how
+you make these variables do this
+
+1435
+01:27:54,570 --> 01:27:56,580
+map. And this is how you get a
+result out.
+
+1436
+01:27:56,940 --> 01:27:59,130
+Audrow Nash: Or even this is how
+you talk to your camera. This is
+
+1437
+01:27:59,130 --> 01:28:01,950
+how you run an optimization.
+This is how you do these things.
+
+1438
+01:28:01,950 --> 01:28:05,340
+Because these libraries exist.
+So it's a lot of infrastructure
+
+1439
+01:28:05,340 --> 01:28:07,440
+that you would have had to build
+yourself.
+
+1440
+01:28:07,920 --> 01:28:11,340
+Tobias Holmes: Oh my god,
+optimization optimization. I
+
+1441
+01:28:11,340 --> 01:28:17,100
+just learned about that like
+grad school. Optimize this
+
+1442
+01:28:17,100 --> 01:28:20,190
+thing? What does that for? When
+you want to optimize? You know,
+
+1443
+01:28:20,190 --> 01:28:22,860
+all of your resources in the
+best way? So you're not wasting?
+
+1444
+01:28:23,310 --> 01:28:27,330
+Yeah, if you don't, you know,
+it's a very complex mathematical
+
+1445
+01:28:27,330 --> 01:28:32,370
+thing. Yeah. But it's a very
+intuitive concept. It's a very
+
+1446
+01:28:32,370 --> 01:28:35,910
+intuitive concept. Because you
+can totally teach a kid how to
+
+1447
+01:28:35,910 --> 01:28:39,570
+use a library, this will
+optimize your output. And that's
+
+1448
+01:28:39,570 --> 01:28:44,700
+what you want to use. That is
+what's going on totally right.
+
+1449
+01:28:44,970 --> 01:28:47,340
+It's totally right. And then
+they like, oh, I actually want
+
+1450
+01:28:47,340 --> 01:28:50,640
+to I actually want to know what
+optimization is. There's a class
+
+1451
+01:28:50,640 --> 01:28:53,130
+for that. You could actually go
+learn the math, right, you can
+
+1452
+01:28:53,190 --> 01:28:56,220
+actually go learn to improve
+optimization algorithms, because
+
+1453
+01:28:56,220 --> 01:28:59,310
+there's, there's not just one,
+there's multiple different ones
+
+1454
+01:28:59,310 --> 01:29:00,750
+for different situations.
+
+1455
+01:29:01,200 --> 01:29:05,400
+Audrow Nash: Yep. Yeah, concave.
+It's like not, and ones that are
+
+1456
+01:29:05,400 --> 01:29:06,840
+not concave. All these things.
+
+1457
+01:29:07,020 --> 01:29:09,270
+Unknown: All these, and you
+constantly gonna need to use
+
+1458
+01:29:09,270 --> 01:29:12,060
+that, you know, going forward,
+especially with robotics,
+
+1459
+01:29:12,090 --> 01:29:14,310
+especially with all of these
+different, you know, new
+
+1460
+01:29:14,310 --> 01:29:16,980
+technologies that we're
+developing with AI, all that
+
+1461
+01:29:16,980 --> 01:29:19,140
+stuff. If you really want to get
+in you want to make your own
+
+1462
+01:29:19,140 --> 01:29:22,200
+robot that thinks for itself,
+you know, Hey, these are the
+
+1463
+01:29:22,200 --> 01:29:26,730
+ways to go. And every kid isn't
+gonna want to do that. But I
+
+1464
+01:29:26,730 --> 01:29:30,060
+think it's going to bring a lot
+of kids, I think it will bring a
+
+1465
+01:29:30,060 --> 01:29:31,710
+lot of kids you know,
+
+1466
+01:29:33,690 --> 01:29:37,080
+Audrow Nash: Let's see. Wrapping
+up because we are running out of
+
+1467
+01:29:37,080 --> 01:29:42,270
+time. I would love to hear
+advice that you would have for
+
+1468
+01:29:42,270 --> 01:29:46,680
+someone say like teenager
+someone just about to go to
+
+1469
+01:29:46,680 --> 01:29:52,680
+college who might be interested
+in robotics. Any any advice for
+
+1470
+01:29:52,680 --> 01:29:52,980
+them?
+
+1471
+01:29:54,180 --> 01:30:00,900
+Unknown: Um, high school or a
+brand new college grad. You're
+
+1472
+01:30:00,900 --> 01:30:05,400
+definitely doing the right
+thing, this is the way to go. I
+
+1473
+01:30:05,400 --> 01:30:07,890
+would say that, you know, the
+most, you know, one of the most
+
+1474
+01:30:07,890 --> 01:30:12,240
+important things about college
+is determining what you're going
+
+1475
+01:30:12,240 --> 01:30:15,000
+to do for your future, like,
+what are you going to do, you
+
+1476
+01:30:15,000 --> 01:30:19,110
+know, a good majority of the
+rest of your life. And robotics
+
+1477
+01:30:19,380 --> 01:30:24,000
+is the future, it is the way
+that, you know, society is
+
+1478
+01:30:24,000 --> 01:30:27,480
+going, you know, for better or
+for worse, for the next, you
+
+1479
+01:30:27,480 --> 01:30:34,500
+know, 50 to 100 years, you know,
+you can go get a job, you know,
+
+1480
+01:30:34,530 --> 01:30:38,370
+developing, you know, something
+that is, I don't know, you can
+
+1481
+01:30:38,370 --> 01:30:43,470
+go be a firefighter, or, or a
+gas station mechanic, you can go
+
+1482
+01:30:43,470 --> 01:30:47,550
+do something that is, you know,
+not necessarily, you know,
+
+1483
+01:30:47,550 --> 01:30:51,720
+cutting edge, or there's,
+there's some work to be done in
+
+1484
+01:30:51,720 --> 01:30:55,800
+it, you know, I don't want to
+down up into crease. But there's
+
+1485
+01:30:55,830 --> 01:30:59,550
+some people that you know, that
+graduated college with degrees,
+
+1486
+01:30:59,820 --> 01:31:05,370
+and are working at like CVS, or
+someplace that is like, you
+
+1487
+01:31:05,370 --> 01:31:08,400
+know, you went to college for
+four years or more, and you're,
+
+1488
+01:31:08,430 --> 01:31:11,370
+you're not even working in the
+area that you want to go study
+
+1489
+01:31:11,370 --> 01:31:14,520
+in. If you got to study
+robotics, you're going to have a
+
+1490
+01:31:14,520 --> 01:31:19,410
+job for the next for the rest of
+your life. Kids nowadays, they
+
+1491
+01:31:19,410 --> 01:31:23,190
+ain't going to school for to
+learn software, mechanics,
+
+1492
+01:31:23,250 --> 01:31:28,620
+robotics integration. There is
+no end. There is no...
+
+1493
+01:31:28,860 --> 01:31:31,800
+Audrow Nash: You mean that
+there's lots of opportunity, no
+
+1494
+01:31:31,800 --> 01:31:32,730
+end of opportunities.
+
+1495
+01:31:32,910 --> 01:31:35,790
+Unknown: No end of
+opportunities, right. And then
+
+1496
+01:31:35,790 --> 01:31:40,710
+the the areas to go specialize
+in, or just, you know, even more
+
+1497
+01:31:40,710 --> 01:31:44,040
+broader, you know, what is it
+about robotics that you are
+
+1498
+01:31:44,040 --> 01:31:48,030
+interested in? You know, I would
+like for us to develop a
+
+1499
+01:31:48,030 --> 01:31:50,850
+robotics degree. And I think
+some universities do have that.
+
+1500
+01:31:51,120 --> 01:31:55,020
+It's probably not very well
+defined. And they probably are
+
+1501
+01:31:55,050 --> 01:31:58,410
+retired universities have well
+defined one. But no, because
+
+1502
+01:31:58,440 --> 01:32:02,670
+it's a lot of things, right?
+It's program. Yep. It's a little
+
+1503
+01:32:02,670 --> 01:32:05,400
+bit of electrical, it's a little
+bit of mechanical, right. So
+
+1504
+01:32:05,400 --> 01:32:08,070
+it's a little bit of the three
+main disciplines, right, that we
+
+1505
+01:32:08,070 --> 01:32:12,150
+think about electrical software,
+mechanical, right, it's those
+
+1506
+01:32:12,150 --> 01:32:18,840
+three things combined, to do
+something real world. And so
+
+1507
+01:32:18,840 --> 01:32:22,620
+there's the integration part.
+And so if there's a, I would
+
+1508
+01:32:22,620 --> 01:32:25,350
+say, a good defined robotics
+program would have those three
+
+1509
+01:32:25,350 --> 01:32:29,100
+things as classes, read a little
+code, understand the basics of
+
+1510
+01:32:29,100 --> 01:32:33,240
+circuits, understand how
+mechanical devices work, and
+
+1511
+01:32:33,240 --> 01:32:35,730
+then understand how to pull
+these things together to dues
+
+1512
+01:32:35,760 --> 01:32:39,630
+will work in the world. And then
+allow the students to go and,
+
+1513
+01:32:40,410 --> 01:32:43,860
+you know, and sensors, right,
+bring it in sensors, utilizing
+
+1514
+01:32:43,860 --> 01:32:47,730
+sensors, and then allow a
+student to go, what are you?
+
+1515
+01:32:47,850 --> 01:32:50,370
+What are you most interested in?
+You know, what did you like the
+
+1516
+01:32:50,370 --> 01:32:53,790
+most? What do you want sensors,
+more, you want to write code,
+
+1517
+01:32:54,000 --> 01:32:56,940
+you want to build robots, you
+want to, you know, you want to
+
+1518
+01:32:56,940 --> 01:32:59,580
+build the circuitry that powers
+up the motors that powers up
+
+1519
+01:32:59,580 --> 01:33:03,510
+the, you know, the devices, and,
+you know, right solar solar
+
+1520
+01:33:03,510 --> 01:33:06,090
+devices that that, you know,
+bring the energy and that way,
+
+1521
+01:33:06,510 --> 01:33:11,220
+you know, all sorts of things.
+Yeah, the dried out, Oh, my God,
+
+1522
+01:33:11,640 --> 01:33:17,010
+the areas of, of words are where
+they're going to go to dive in
+
+1523
+01:33:17,010 --> 01:33:23,070
+deep. They're endless. And so
+it's the way to go, I would I
+
+1524
+01:33:23,070 --> 01:33:27,750
+would even say, go develop, go
+get a traditional degree,
+
+1525
+01:33:27,930 --> 01:33:30,810
+undergrad, right, but get a
+traditional, if you already know
+
+1526
+01:33:30,810 --> 01:33:33,690
+if I know I want to write
+program, or I know I want to
+
+1527
+01:33:33,870 --> 01:33:36,510
+write circuits. Or I know I want
+to, you know, I'm more
+
+1528
+01:33:36,540 --> 01:33:40,320
+mechanically inclined, and I
+want to do mechanics, do that.
+
+1529
+01:33:40,470 --> 01:33:43,830
+But absolutely get your master's
+in robotics, take that
+
+1530
+01:33:43,830 --> 01:33:47,790
+knowledge, and then go into
+robotics after that. Okay,
+
+1531
+01:33:47,790 --> 01:33:50,400
+because that knowledge is going
+to then that knowledge is then
+
+1532
+01:33:50,400 --> 01:33:54,660
+going to allow you to build a
+better robot. Right? I can, I
+
+1533
+01:33:54,660 --> 01:33:57,480
+could probably as an undergrad,
+undergrad is usually too broad,
+
+1534
+01:33:57,480 --> 01:34:01,050
+you don't ever get enough. And
+if you if you go too broad
+
+1535
+01:34:01,050 --> 01:34:03,960
+across all those disciplines,
+you will never know enough. But
+
+1536
+01:34:03,960 --> 01:34:07,500
+if you're a mechanical, you got
+a bachelor's in mechanical. And
+
+1537
+01:34:07,500 --> 01:34:10,140
+then I show you robotics, you
+now know how to apply your
+
+1538
+01:34:10,140 --> 01:34:13,530
+mechanics to this robot
+situation or you know how to
+
+1539
+01:34:13,530 --> 01:34:14,790
+apply your software.
+
+1540
+01:34:15,210 --> 01:34:17,340
+Audrow Nash: For the control
+theory, or things you you learn
+
+1541
+01:34:17,340 --> 01:34:17,970
+as a mechanical.
+
+1542
+01:34:18,570 --> 01:34:22,020
+Unknown: There you go. So you
+get the foundation, and then
+
+1543
+01:34:22,020 --> 01:34:24,960
+apply that foundation to robots
+and things. So think about what
+
+1544
+01:34:24,960 --> 01:34:28,860
+robot and what about robot so we
+should be introducing our kids
+
+1545
+01:34:28,860 --> 01:34:32,850
+in high school to robots. It
+should be as fundamental as
+
+1546
+01:34:32,850 --> 01:34:36,630
+like, you know, they had those
+old schools that were like,
+
+1547
+01:34:36,960 --> 01:34:43,770
+where you had like ROTC and you
+had Homeric and you had shop
+
+1548
+01:34:43,770 --> 01:34:46,950
+class, you know where they show
+the kids how to do so all the
+
+1549
+01:34:46,950 --> 01:34:51,300
+stuff we should have a shop
+robots class, all go in, all
+
+1550
+01:34:51,300 --> 01:34:56,190
+kids get in it. You got to pass
+it right like you got it. You
+
+1551
+01:34:56,190 --> 01:34:58,770
+got to pay attention here
+because this is gonna be part of
+
+1552
+01:34:58,770 --> 01:35:02,550
+your life whether you like it
+Not, but those kids who are
+
+1553
+01:35:02,550 --> 01:35:06,540
+really into it, hey, what part
+of it do you really like,
+
+1554
+01:35:06,630 --> 01:35:09,870
+because this is where mechanical
+engineers, they build it. This
+
+1555
+01:35:09,870 --> 01:35:13,500
+is where the electrical is guys,
+they do the circuits. This is
+
+1556
+01:35:13,530 --> 01:35:18,420
+the control guys, they develop,
+you know how it knows when they
+
+1557
+01:35:18,420 --> 01:35:21,150
+go up or when they go down on
+when to go this way or when they
+
+1558
+01:35:21,150 --> 01:35:25,140
+go that way. This is computer
+vision guys who really get into,
+
+1559
+01:35:25,320 --> 01:35:28,590
+you know, open CV in a write
+codes, you got to know how to
+
+1560
+01:35:28,590 --> 01:35:32,220
+write software, in order to to
+be able to utilize the camera
+
+1561
+01:35:32,220 --> 01:35:35,850
+and utilize the sensors. So you
+so you got to be a software
+
+1562
+01:35:35,850 --> 01:35:38,550
+engineer. And so now those kids
+know what they want to do. They
+
+1563
+01:35:38,550 --> 01:35:40,560
+get out of high school, they
+know what they want to go do.
+
+1564
+01:35:41,250 --> 01:35:44,220
+Yeah. And if you don't want to
+be a robot guy, then yeah, go
+
+1565
+01:35:44,220 --> 01:35:49,590
+could be a banker or finance.
+With those guys, we need those
+
+1566
+01:35:49,590 --> 01:35:53,820
+guys suit. But that's really the
+kids that are like us. I believe
+
+1567
+01:35:53,820 --> 01:35:58,440
+we're all nerds. We're all those
+kids who are like breaking apart
+
+1568
+01:35:58,440 --> 01:36:01,650
+something that your mom had when
+she was a kid. When you were a
+
+1569
+01:36:01,650 --> 01:36:05,760
+kid, you have your mom's like
+radio or something like that.
+
+1570
+01:36:05,760 --> 01:36:10,560
+And you're like, oh, yeah,
+that's that's us. Right? That's
+
+1571
+01:36:10,590 --> 01:36:15,690
+our, our type of kids. And I
+wish I wish I had a high school
+
+1572
+01:36:15,690 --> 01:36:19,860
+teacher that showed showing
+robotics when I was that age,
+
+1573
+01:36:19,860 --> 01:36:23,400
+because in that age, I'm even
+more I was even more fired up
+
+1574
+01:36:23,400 --> 01:36:26,940
+about school and stuff then than
+I am now. And I'm still fired up
+
+1575
+01:36:26,940 --> 01:36:31,140
+about it. But man had I know,
+then I would have already picked
+
+1576
+01:36:31,140 --> 01:36:35,640
+my stuff. Like I went to the
+military. I did a very long
+
+1577
+01:36:35,640 --> 01:36:38,370
+around the way path...
+
+1578
+01:36:39,720 --> 01:36:41,790
+Audrow Nash: To come to where
+you are now working on the
+
+1579
+01:36:42,030 --> 01:36:42,480
+future.
+
+1580
+01:36:42,510 --> 01:36:45,750
+Unknown: Yeah, I would have
+loved to have just been right
+
+1581
+01:36:45,900 --> 01:36:48,780
+bing bing right on it. Because
+this is this is it, man, this is
+
+1582
+01:36:49,170 --> 01:36:52,920
+my passion. You know, creating
+things in the world and
+
+1583
+01:36:52,920 --> 01:36:55,560
+understanding how technology
+works, and then being able to
+
+1584
+01:36:55,740 --> 01:36:59,160
+leverage the technology to
+create a new thing. That's
+
+1585
+01:36:59,190 --> 01:37:02,430
+that's me. I think that's a lot
+of I think that's just every
+
+1586
+01:37:02,430 --> 01:37:07,620
+engineer. I think most of us,
+you have to be like passionate
+
+1587
+01:37:07,650 --> 01:37:11,940
+in order to get the capital. She
+can't get through this though.
+
+1588
+01:37:14,640 --> 01:37:18,720
+Audrow Nash: Gotcha. All right.
+So now finally wrapping up Is
+
+1589
+01:37:18,720 --> 01:37:25,260
+there any like websites, blogs,
+like your company blog, or your
+
+1590
+01:37:25,740 --> 01:37:28,650
+any any contact info you'd like
+to share with our listeners?
+
+1591
+01:37:28,800 --> 01:37:33,000
+Unknown: So there's two things,
+I don't have the websites of
+
+1592
+01:37:33,000 --> 01:37:35,580
+topical head. But there's two
+things...
+
+1593
+01:37:35,640 --> 01:37:38,910
+Audrow Nash: I can include them
+in the post. So Blue River one.
+
+1594
+01:37:39,330 --> 01:37:43,860
+Tobias Holmes: So along the
+lines of, of young kids getting
+
+1595
+01:37:43,860 --> 01:37:48,690
+into technology, Crystal Ray
+program, it's a high school
+
+1596
+01:37:48,690 --> 01:37:53,610
+program, that, uh, that, you
+know, I would, I would advertise
+
+1597
+01:37:53,610 --> 01:37:56,730
+it to parents who have young
+children who haven't went to
+
+1598
+01:37:56,730 --> 01:37:59,910
+high school yet, who want to
+give their kids a little bit of
+
+1599
+01:37:59,910 --> 01:38:01,950
+an edge when it comes to high
+school other than just going to
+
+1600
+01:38:01,950 --> 01:38:04,950
+the top High School in the area,
+which that's there too. But if
+
+1601
+01:38:04,950 --> 01:38:07,020
+your kid doesn't have the
+opportunity to get there to the
+
+1602
+01:38:07,020 --> 01:38:11,520
+top High School in the area,
+Cristo, Rey is particularly
+
+1603
+01:38:11,820 --> 01:38:14,730
+structured towards kids who are
+not going to get into the top
+
+1604
+01:38:14,760 --> 01:38:19,440
+high schools in Cupertino for
+the opportunity to work with
+
+1605
+01:38:20,280 --> 01:38:23,400
+professionals in the robotics
+field, or any professional
+
+1606
+01:38:23,400 --> 01:38:23,730
+field.
+
+1607
+01:38:24,240 --> 01:38:26,610
+Audrow Nash: Is it a common
+model that other high schools
+
+1608
+01:38:26,610 --> 01:38:29,460
+follow? I imagine listeners will
+be all over not just in the Bay
+
+1609
+01:38:29,460 --> 01:38:30,210
+Area, too.
+
+1610
+01:38:30,210 --> 01:38:31,770
+Unknown: I'm not sure I'm not
+even sure.
+
+1611
+01:38:31,800 --> 01:38:35,040
+Audrow Nash: I heard about FIRST
+Robotics is really good to get
+
+1612
+01:38:35,040 --> 01:38:37,170
+high school students or maybe
+even younger.
+
+1613
+01:38:37,500 --> 01:38:40,320
+Unknown: So that was my second
+one. That was actually my second
+
+1614
+01:38:40,320 --> 01:38:46,620
+one. So I got a I got a we got
+like, five or six first robotic
+
+1615
+01:38:46,620 --> 01:38:50,130
+engineers, I got one of the guys
+who's in FIRST Robotics on our
+
+1616
+01:38:50,130 --> 01:38:54,570
+team, who is a He's like one of
+the he's not only went through
+
+1617
+01:38:54,570 --> 01:38:58,020
+from you know, from grade school
+to high school and graduated and
+
+1618
+01:38:58,020 --> 01:39:01,830
+went on he's like, a, an
+administrator now in FIRST
+
+1619
+01:39:01,830 --> 01:39:06,630
+Robotics. So he's, he's like,
+he's a very like pivotal FIRST
+
+1620
+01:39:06,630 --> 01:39:10,170
+Robotics person, and just the
+whole organization. And we
+
+1621
+01:39:10,170 --> 01:39:14,460
+probably got through his through
+him. Another five people that
+
+1622
+01:39:14,460 --> 01:39:18,060
+are from first robotics. And
+these guys Oh, cool. These guys
+
+1623
+01:39:18,060 --> 01:39:24,150
+are amazing. They're amazing.
+Audrow Like, I can't even I
+
+1624
+01:39:24,150 --> 01:39:27,540
+can't even put it into words,
+man, these guys. They're young,
+
+1625
+01:39:28,020 --> 01:39:32,790
+and they're on it. And so I
+would say, first, robotics is
+
+1626
+01:39:32,820 --> 01:39:38,820
+absolutely a a thing. A good
+thing to get your kids involved
+
+1627
+01:39:38,820 --> 01:39:42,450
+in. If you have it, right like
+that. To me, those are the
+
+1628
+01:39:42,450 --> 01:39:45,450
+things that I wish I had in high
+school. I wish I had a high
+
+1629
+01:39:45,450 --> 01:39:48,630
+school focus towards
+professional development. And I
+
+1630
+01:39:48,630 --> 01:39:51,870
+would I wish I had a high school
+that that had the first robotics
+
+1631
+01:39:51,870 --> 01:39:54,660
+program I would have told you
+partake of it, and I wouldn't
+
+1632
+01:39:54,660 --> 01:39:58,350
+kicked ass and because I because
+it's you get because I get the
+
+1633
+01:39:58,350 --> 01:40:02,520
+kids who are interested in that
+Get the kids who like, I want to
+
+1634
+01:40:02,520 --> 01:40:06,300
+do this, I want to make robots.
+I think one of our guys, one or
+
+1635
+01:40:06,300 --> 01:40:12,210
+two of our guys is in the battle
+bots competition this year, they
+
+1636
+01:40:12,210 --> 01:40:15,390
+just had they just filmed and so
+they're in the battle bots
+
+1637
+01:40:15,390 --> 01:40:19,650
+competition. A couple of our
+guys were are there not even
+
+1638
+01:40:19,650 --> 01:40:22,980
+full time employees out there
+interning, working for NASA
+
+1639
+01:40:22,980 --> 01:40:26,280
+helping them nasa develop some
+of their software stuff in
+
+1640
+01:40:26,280 --> 01:40:32,730
+robotic stuff. And, and just
+this a great group of having
+
+1641
+01:40:32,730 --> 01:40:37,200
+that great foundation, you know,
+the right things. And it's very
+
+1642
+01:40:37,200 --> 01:40:40,590
+targeted to robotics, which is a
+tough thing to go find, like,
+
+1643
+01:40:40,590 --> 01:40:45,030
+you know, a hiring manager and
+robotics is you can find a
+
+1644
+01:40:45,030 --> 01:40:48,120
+software engineer, I can find a
+mechanical engineer, I can find,
+
+1645
+01:40:48,510 --> 01:40:52,080
+I can find the individuals, I
+need someone who understands how
+
+1646
+01:40:52,080 --> 01:40:54,960
+we do this in the robotics
+environment, the parts and how
+
+1647
+01:40:54,960 --> 01:40:58,020
+they really is. And that is that
+is a little bit more
+
+1648
+01:40:58,020 --> 01:41:00,900
+challenging. When you get these
+guys like this that have been
+
+1649
+01:41:00,900 --> 01:41:03,510
+particularly focused on a
+robotics environment that is so
+
+1650
+01:41:03,510 --> 01:41:07,080
+much better. It's so it's so
+great, because they already get
+
+1651
+01:41:07,080 --> 01:41:10,470
+it. It's a real time system. It
+has to work in all kinds of
+
+1652
+01:41:10,470 --> 01:41:14,250
+environments, lots of variables.
+Oh my god, that is the greatest.
+
+1653
+01:41:14,790 --> 01:41:18,300
+So first, robotics is my second
+one. So those are two things
+
+1654
+01:41:18,300 --> 01:41:22,350
+that I that I think, I think
+that I would point people to go
+
+1655
+01:41:22,350 --> 01:41:25,980
+get more involved in crystal re
+FIRST Robotics. There's another
+
+1656
+01:41:25,980 --> 01:41:27,990
+one, but I can't think of the
+name of the song won't bring it
+
+1657
+01:41:27,990 --> 01:41:33,000
+up. But um, yeah, if I, if I
+could start all over again, or
+
+1658
+01:41:33,000 --> 01:41:36,330
+if I could, my kids are both a
+high school now. But if they
+
+1659
+01:41:37,050 --> 01:41:37,890
+could redo it.
+
+1660
+01:41:39,090 --> 01:41:41,370
+Audrow Nash: They'd be doing
+that. Doing that man,
+
+1661
+01:41:41,640 --> 01:41:44,430
+Tobias Holmes: they'd be doing
+that. That's not waste. It's not
+
+1662
+01:41:44,430 --> 01:41:48,030
+waste our kids signs that the
+future is going to be
+
+1663
+01:41:48,030 --> 01:41:52,890
+ridiculously competitive. And so
+that the better the Headstart
+
+1664
+01:41:52,890 --> 01:41:56,220
+that we can give them the
+better. And so crystal Ray gets
+
+1665
+01:41:56,220 --> 01:41:59,160
+you in a professional mind High
+School, at the high school
+
+1666
+01:41:59,160 --> 01:42:01,500
+level, we should start thinking
+about, you know, even some
+
+1667
+01:42:01,500 --> 01:42:05,700
+people will say even before, I
+feel like great school, I feel
+
+1668
+01:42:05,700 --> 01:42:08,190
+like great schools, you should
+give them some chocolate, right.
+
+1669
+01:42:10,290 --> 01:42:14,100
+So serious, but high school is
+sounding good, serious. Oh,
+
+1670
+01:42:14,100 --> 01:42:19,650
+yeah. And from there, let's go.
+Let's CCS kids. You know, let's
+
+1671
+01:42:19,650 --> 01:42:22,590
+keep us competitive. You know,
+and that's, and that's no
+
+1672
+01:42:22,590 --> 01:42:27,180
+robotics, because, yeah, that
+that that is the future man. The
+
+1673
+01:42:27,180 --> 01:42:30,810
+other things, you know, you
+know, outside of robotics areas,
+
+1674
+01:42:31,140 --> 01:42:35,130
+they're going to still be there.
+But they're, you know, they're
+
+1675
+01:42:35,130 --> 01:42:40,080
+going to be using robotics to
+man, the bankers and, and the,
+
+1676
+01:42:40,290 --> 01:42:43,710
+you know, what else? What else?
+Is there? The retailers, they're
+
+1677
+01:42:43,710 --> 01:42:45,300
+going to be using robotics.
+
+1678
+01:42:46,500 --> 01:42:48,420
+Audrow Nash: Yeah. All right.
+Thank you.
+
+1679
+01:42:49,980 --> 01:42:53,730
+Tobias Holmes: All right, man.
+So, I hope you enjoy the
+
+1680
+01:42:53,730 --> 01:42:59,190
+conversation. And I appreciate
+talking with you, man. It was
+
+1681
+01:42:59,190 --> 01:43:02,310
+great, great pleasure about talk
+about you know, Blue River
+
+1682
+01:43:02,310 --> 01:43:06,060
+robotics and, and what we do
+here, man, you know, the
+
+1683
+01:43:06,060 --> 01:43:09,150
+future's bright. So, you know,
+let's continue to contribute to
+
+1684
+01:43:09,150 --> 01:43:10,170
+that. That's for sure.
+
+1685
+01:43:14,790 --> 01:43:17,010
+Audrow Nash: Thanks for
+listening to this conversation
+
+1686
+01:43:17,010 --> 01:43:20,760
+with Tobias Holmes. Thank you
+again to our founding sponsor,
+
+1687
+01:43:20,790 --> 01:43:23,490
+Open Robotics, and I hope to see
+you next time
+
