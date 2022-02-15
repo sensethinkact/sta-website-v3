@@ -17,12 +17,14 @@ TODO
 - [x] Add Google Analytics
 - [x] Update README
 - [x] Port all posts
+- [x] Use Git LFS for images
 
 Version 4
 ---------
 
 - [ ] Move podcast config out of post-loader + create a better separation
-- [ ] Add post photos to preview (see [here](https://github.com/vercel/community/discussions/49#discussioncomment-739107))
+- [ ] Use prettier and linting
+- [ ] Add post photos to preview
 - [ ] Use a schema to validate posts
 - [ ] Combine transcript and outline
 - [ ] Link outline to transcript
