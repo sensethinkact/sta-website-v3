@@ -1,0 +1,7819 @@
+1
+00:00:02,490 --> 00:00:04,260
+Audrow Nash: This is a
+conversation with Steve
+
+2
+00:00:04,260 --> 00:00:08,040
+Macenski, who is the Open Source
+Robotics Engineering lead at
+
+3
+00:00:08,040 --> 00:00:12,570
+Samsung Research America. Steve
+leads the Nav2 two project,
+
+4
+00:00:12,570 --> 00:00:16,440
+which is an open source robot
+navigation framework. In this
+
+5
+00:00:16,440 --> 00:00:20,280
+interview, Steve and I talk
+about the problem and challenges
+
+6
+00:00:20,310 --> 00:00:24,960
+in robot navigation, how Nav2
+works at a high level, hybrid
+
+7
+00:00:24,960 --> 00:00:28,650
+planners, and about Steve's
+experience working with the Nav2
+
+8
+00:00:28,650 --> 00:00:32,670
+community. This is the Sense
+Think Act Podcast. I'm Audrow.
+
+9
+00:00:32,670 --> 00:00:36,810
+Nash. Thank you to our founding
+sponsor Open Robotics. And now
+
+10
+00:00:36,840 --> 00:00:38,550
+here's my conversation with
+Steve.
+
+11
+00:00:40,110 --> 00:00:41,910
+Steve, would you introduce
+yourself?
+
+12
+00:00:42,750 --> 00:00:45,090
+Steve Macenski: Hi, yeah, I'm
+Steven Macenski. And the open
+
+13
+00:00:45,090 --> 00:00:48,750
+source engineering lead for a
+box at Samsung research. So I'm
+
+14
+00:00:48,750 --> 00:00:51,570
+the lead developer on the ROS
+to navigation stack. And I sit
+
+15
+00:00:51,570 --> 00:00:55,320
+on the TSC. For us, too, as
+well. And the TSC is the
+
+16
+00:00:55,320 --> 00:00:58,590
+Technical Steering Committee.
+Correct? Yeah. So it's like the
+
+17
+00:00:58,620 --> 00:01:01,260
+the board for ROS, let's say.
+So it's a bunch of different
+
+18
+00:01:01,260 --> 00:01:03,930
+companies that kind of come
+together with Idris and ROS to
+
+19
+00:01:04,050 --> 00:01:06,570
+to make sure that we can see the
+project the right direction.
+
+20
+00:01:07,140 --> 00:01:09,960
+Audrow Nash: So yeah, tell me a
+bit about the navigation stack
+
+21
+00:01:10,350 --> 00:01:12,810
+or not. And then how that
+relates to NAV two.
+
+22
+00:01:14,610 --> 00:01:17,100
+Steve Macenski: So I'm going to
+navigate stack was the the, you
+
+23
+00:01:17,100 --> 00:01:20,160
+know, the software built at
+Willow Garage to do you know,
+
+24
+00:01:20,160 --> 00:01:23,160
+mobile based application, you
+know, primarily for the PR to
+
+25
+00:01:23,160 --> 00:01:26,130
+robot. But now even in those
+early days, they understood that
+
+26
+00:01:26,160 --> 00:01:28,470
+a lot of the same technology
+could be applied to other mobile
+
+27
+00:01:28,470 --> 00:01:31,740
+platforms. So I made at the time
+they made it, it was awesome.
+
+28
+00:01:31,740 --> 00:01:33,720
+The fact that there was a
+software out there that was free
+
+29
+00:01:33,720 --> 00:01:36,030
+and open source and with a
+strong community around it with
+
+30
+00:01:36,030 --> 00:01:39,300
+documentation and examples and
+all that kind of good stuff. But
+
+31
+00:01:39,300 --> 00:01:41,760
+you know, over time, you know,
+that was, you know, in the very
+
+32
+00:01:41,760 --> 00:01:44,220
+early days of robotics, where
+basically the light robot you
+
+33
+00:01:44,220 --> 00:01:47,760
+could buy if your home was like,
+you know, an iRobot Roomba. And
+
+34
+00:01:47,760 --> 00:01:50,460
+there really were few of any
+kind of service robots, you
+
+35
+00:01:50,460 --> 00:01:53,670
+know, in application. What year
+do you think this was? Was this
+
+36
+00:01:53,670 --> 00:01:58,650
+like, 22,000? Or when do you
+think it was like 12 ish is when
+
+37
+00:01:58,650 --> 00:02:02,400
+started. And then there's a big
+push to update some algorithms.
+
+38
+00:02:02,400 --> 00:02:06,570
+And I think the summer of 2011
+2012, when a bunch of insurance
+
+39
+00:02:06,570 --> 00:02:09,480
+guy came in, and absolute new
+new variations of the
+
+40
+00:02:09,480 --> 00:02:10,260
+algorithms.
+
+41
+00:02:12,270 --> 00:02:14,550
+Audrow Nash: Okay, so you had
+this open source navigation
+
+42
+00:02:14,550 --> 00:02:18,000
+stack? And that was with Willow
+Garage. And then how did that
+
+43
+00:02:18,030 --> 00:02:18,900
+evolve?
+
+44
+00:02:19,920 --> 00:02:23,010
+How did that how did we go from
+there? Yeah,
+
+45
+00:02:23,009 --> 00:02:25,889
+Steve Macenski: so it's after
+we'll closed in the 2013
+
+46
+00:02:25,889 --> 00:02:29,669
+timeframe, kind of all major
+developments on the navigation,
+
+47
+00:02:29,969 --> 00:02:34,319
+kind of kind of halted. So you
+had folks like David Liu and
+
+48
+00:02:34,319 --> 00:02:37,319
+Mike Ferguson that continued to
+maintain things over time, to
+
+49
+00:02:37,319 --> 00:02:41,189
+date. So David was, you know,
+working at Lucas robotics and
+
+50
+00:02:41,189 --> 00:02:43,769
+working as a consultant doing
+doing various navigation work.
+
+51
+00:02:43,949 --> 00:02:47,519
+And then Mike Ferguson was
+starting, what was the precursor
+
+52
+00:02:47,519 --> 00:02:50,279
+to Fetch robotics, then later,
+Fetch robotics. And so he was
+
+53
+00:02:50,279 --> 00:02:53,069
+using in the early days, some of
+the navigation stuff, I think,
+
+54
+00:02:53,069 --> 00:02:55,439
+these days, I have to assume
+everything's been stripped out
+
+55
+00:02:55,439 --> 00:02:58,019
+their systems at this point, but
+in the early days to try and
+
+56
+00:02:58,019 --> 00:03:00,779
+build that MVP to get the
+venture capital money, that
+
+57
+00:03:00,779 --> 00:03:04,139
+that's the he was working on on
+the napkin stuff, as well. But
+
+58
+00:03:04,139 --> 00:03:07,709
+then, you know, nothing really
+major change from from 2013,
+
+59
+00:03:07,709 --> 00:03:12,779
+basically, until about, you
+know, 2019 or so when, you know,
+
+60
+00:03:12,779 --> 00:03:16,349
+ROS two started hitting kind of
+more mature milestones. So I
+
+61
+00:03:16,349 --> 00:03:20,099
+think with without see is when
+Matt Hanson, in the open source
+
+62
+00:03:20,129 --> 00:03:23,399
+robotics team at Intel, had a
+big post a discourse saying
+
+63
+00:03:23,399 --> 00:03:25,379
+that, hey, there, they want to
+work on this roster navigation
+
+64
+00:03:25,379 --> 00:03:28,709
+stack. They didn't want it to
+just be a straight port for
+
+65
+00:03:28,709 --> 00:03:31,409
+boss, one that wants to redesign
+from the ground up based on
+
+66
+00:03:31,409 --> 00:03:33,629
+like, the current requirements
+that are basically is asking
+
+67
+00:03:33,629 --> 00:03:36,989
+people to air their grievances
+about the boss one stack, or
+
+68
+00:03:36,989 --> 00:03:39,299
+what kinds of things they were
+swapping out the stack because
+
+69
+00:03:39,299 --> 00:03:41,969
+they didn't meet the
+requirements. And so that that
+
+70
+00:03:41,969 --> 00:03:44,789
+actually, that discourse posts,
+I still today occasionally open
+
+71
+00:03:44,789 --> 00:03:47,849
+up and go down a list of refers
+to it to make sure Yeah, to make
+
+72
+00:03:47,849 --> 00:03:50,339
+sure like, okay, oh, like I
+forgot about this, we still
+
+73
+00:03:50,339 --> 00:03:52,409
+haven't addressed this point.
+And I'll add that to my queue.
+
+74
+00:03:52,949 --> 00:03:55,439
+But at this point, a lot of
+those lob abroad, things that
+
+75
+00:03:55,439 --> 00:04:00,059
+people said are have not been
+handled for the most part. So
+
+76
+00:04:00,239 --> 00:04:04,259
+really, Matt, and the team at
+Intel, really put like the
+
+77
+00:04:04,259 --> 00:04:08,069
+legwork in to get this get the
+ball rolling. And when they did
+
+78
+00:04:08,069 --> 00:04:11,009
+that's kind of when I when I
+jumped on on the bandwagon to
+
+79
+00:04:11,039 --> 00:04:14,189
+start working on things. But
+that's essentially how that app
+
+80
+00:04:14,189 --> 00:04:17,699
+to project kind of got going.
+And how we got a lot of the
+
+81
+00:04:17,699 --> 00:04:19,259
+architectural elements we see
+today.
+
+82
+00:04:20,100 --> 00:04:23,490
+Audrow Nash: Gotcha. So if I
+understand correctly, so it was
+
+83
+00:04:23,490 --> 00:04:28,590
+started at Willow Garage in
+2010. Ish. And the as a general
+
+84
+00:04:28,590 --> 00:04:34,440
+navigation library, and then
+ROS one came out. And it was
+
+85
+00:04:34,500 --> 00:04:38,010
+used with ROS one. So the
+general navigation code was
+
+86
+00:04:38,010 --> 00:04:42,180
+using ROS one. It continued and
+people were using that. And then
+
+87
+00:04:42,210 --> 00:04:46,620
+ROS two came out in an early
+version, he said bouncy, and
+
+88
+00:04:46,650 --> 00:04:53,430
+then you then ask the community
+for what was wrong or what could
+
+89
+00:04:53,430 --> 00:04:57,030
+be improved. And then this is
+how we have come to NAV to
+
+90
+00:04:58,170 --> 00:05:00,750
+Steve Macenski: Yeah, I mean,
+that's it It wasn't me that that
+
+91
+00:05:00,750 --> 00:05:03,570
+was Matt and the team at Intel,
+they were really the ones in the
+
+92
+00:05:03,570 --> 00:05:05,670
+early days when you're porting
+stuff over and starting to do
+
+93
+00:05:05,670 --> 00:05:08,040
+some of the core architecture
+elements that were taking the
+
+94
+00:05:08,040 --> 00:05:11,130
+lead. So I think they had like
+six people working on it. So
+
+95
+00:05:11,130 --> 00:05:13,890
+they there was a lot of
+professional software
+
+96
+00:05:13,890 --> 00:05:16,140
+engineering time put into it.
+And in those early
+
+97
+00:05:16,140 --> 00:05:18,630
+Audrow Nash: days, nice, and how
+did you get involved?
+
+98
+00:05:19,740 --> 00:05:21,570
+Steve Macenski: Yeah, so I've
+been kind of doing open source
+
+99
+00:05:21,570 --> 00:05:24,630
+stuff for a bit before that
+point. So when I was doing the
+
+100
+00:05:24,630 --> 00:05:28,800
+robotics team at semi robotics,
+I built the STL layer, as well
+
+101
+00:05:28,800 --> 00:05:31,710
+as the SAM toolbox library. And
+so I've already done a couple of
+
+102
+00:05:31,710 --> 00:05:37,110
+ROS con talks on those topics.
+So Samsung was looking to hire
+
+103
+00:05:37,110 --> 00:05:39,240
+somebody to work with the open
+source group on various open
+
+104
+00:05:39,240 --> 00:05:41,910
+source box technologies. And
+they've reached out to Matt
+
+105
+00:05:41,910 --> 00:05:44,430
+Hanson asking kind of who they
+might recommend that would be
+
+106
+00:05:44,430 --> 00:05:47,850
+good for this. And they said
+that, you know, I might be good,
+
+107
+00:05:47,850 --> 00:05:51,210
+good, good candidate. At the
+time, I was leaving Sydney
+
+108
+00:05:51,210 --> 00:05:53,610
+robotics, and so is really good
+transition to go over to Samsung
+
+109
+00:05:53,610 --> 00:05:57,420
+research, to work on this open
+source technology full time,
+
+110
+00:05:57,570 --> 00:05:59,850
+versus just, you know, working
+on these problems that are
+
+111
+00:05:59,850 --> 00:06:02,880
+specific to Cindy, for the end
+products, and then open sourcing
+
+112
+00:06:02,880 --> 00:06:05,220
+the little bits here and there
+that makes sense open source.
+
+113
+00:06:05,640 --> 00:06:07,500
+You know, now I can start
+working on open source things
+
+114
+00:06:07,500 --> 00:06:09,780
+and make big infrastructure
+changes that are that are fully
+
+115
+00:06:09,780 --> 00:06:10,350
+in the open.
+
+116
+00:06:11,610 --> 00:06:13,470
+Audrow Nash: Yeah, it's awesome.
+It's an awesome position to be
+
+117
+00:06:13,470 --> 00:06:20,820
+in. It's fun. Oh, yeah. With. So
+tell me kind of at a high level,
+
+118
+00:06:20,820 --> 00:06:23,460
+what problems does not have to
+solve?
+
+119
+00:06:24,450 --> 00:06:28,500
+Steve Macenski: For work to
+solve? Yeah, so now, nav two is
+
+120
+00:06:28,500 --> 00:06:31,080
+basically sitting between you
+have a bunch of motors and a
+
+121
+00:06:31,080 --> 00:06:34,110
+motor controller that can take
+take philosophy commands to go
+
+122
+00:06:34,110 --> 00:06:36,540
+forward and your autonomy
+application where you want
+
+123
+00:06:36,630 --> 00:06:40,020
+robots, you say I want robot to
+go there. So it kind of deals
+
+124
+00:06:40,020 --> 00:06:42,540
+with everything in the middle
+from the the mapping and
+
+125
+00:06:42,540 --> 00:06:45,030
+localization systems, which I
+consider to be slightly
+
+126
+00:06:45,030 --> 00:06:48,750
+separated from navigation, I
+consider the navigation, one
+
+127
+00:06:48,750 --> 00:06:51,480
+problem set and localization to
+be another problem set. But we
+
+128
+00:06:51,480 --> 00:06:53,310
+do have reference
+implementations that work with
+
+129
+00:06:53,310 --> 00:06:57,660
+AMC LSF toolbox for that
+localization element. And then
+
+130
+00:06:57,750 --> 00:07:00,750
+on the navigation side, and we
+say, well, now that we know
+
+131
+00:07:00,750 --> 00:07:03,960
+where we are within some global
+representation of the world, and
+
+132
+00:07:03,960 --> 00:07:07,050
+we have this global
+representation of the world, how
+
+133
+00:07:07,050 --> 00:07:10,650
+do we, you know, navigate the
+space in order to, you know, go
+
+134
+00:07:10,650 --> 00:07:13,950
+to our to our final goal. So
+this could be in a warehouse,
+
+135
+00:07:13,950 --> 00:07:16,560
+like the position on a shelf,
+where you want to have go pick a
+
+136
+00:07:16,560 --> 00:07:19,500
+box, or with your Roomba say,
+you know, what's this little
+
+137
+00:07:19,500 --> 00:07:21,870
+pattern I want to nap on the
+floor in order to clean my
+
+138
+00:07:21,870 --> 00:07:26,340
+space? So we solved that problem
+of saying, how do we take some
+
+139
+00:07:26,340 --> 00:07:30,570
+sensor data from from just
+hardware and populate a
+
+140
+00:07:30,570 --> 00:07:32,700
+representation of our
+environment, given the current
+
+141
+00:07:32,700 --> 00:07:35,640
+state of the world? And then
+once we have the state of the
+
+142
+00:07:35,640 --> 00:07:39,570
+world, how do we make a route
+that goes from where I am to
+
+143
+00:07:39,570 --> 00:07:42,870
+where I want to be within that
+environment. And then finally,
+
+144
+00:07:43,290 --> 00:07:46,470
+dealing with the the lower level
+system of okay, how I now follow
+
+145
+00:07:46,470 --> 00:07:48,840
+this path that goes from where I
+am to where I want to be
+
+146
+00:07:48,960 --> 00:07:53,610
+accurately efficiently. And
+there's obviously more little
+
+147
+00:07:53,670 --> 00:07:56,700
+bells and whistles on widgets,
+here and there to help make that
+
+148
+00:07:56,700 --> 00:07:59,640
+you know, either more efficient
+or more configurable or deal
+
+149
+00:07:59,640 --> 00:08:03,330
+with fault tolerances and things
+like that. But that'd be kind of
+
+150
+00:08:03,390 --> 00:08:05,820
+the core problem navigation and
+actually tries to solve.
+
+151
+00:08:07,770 --> 00:08:12,030
+Audrow Nash: So it's, it's
+sounds like several things. How
+
+152
+00:08:12,030 --> 00:08:18,660
+do you? How do you find a good
+delimiter? Between math two and
+
+153
+00:08:18,660 --> 00:08:24,660
+other ROS libraries? Like ROS
+to control for example, or move
+
+154
+00:08:24,660 --> 00:08:26,880
+it or any of these other ones?
+
+155
+00:08:27,360 --> 00:08:29,640
+Steve Macenski: Yeah, so I guess
+these all become parallel
+
+156
+00:08:29,640 --> 00:08:32,580
+pillars. I mean, these are all
+by themselves really significant
+
+157
+00:08:32,580 --> 00:08:36,270
+applications that have their own
+specific developer code bases
+
+158
+00:08:36,270 --> 00:08:40,140
+and don't own individual
+ecosystems, and are they
+
+159
+00:08:40,140 --> 00:08:42,840
+themselves you know,
+equivalently complex challenges
+
+160
+00:08:42,840 --> 00:08:48,570
+to solve. So move that I say in
+the most simplistic terms is our
+
+161
+00:08:48,570 --> 00:08:51,660
+navigation, which was actually
+the the the library name from
+
+162
+00:08:51,660 --> 00:08:55,560
+Willow Garage that became move
+it was application. So it's
+
+163
+00:08:55,560 --> 00:08:58,140
+often the same kinds of problems
+as as the mobile robot
+
+164
+00:08:58,140 --> 00:09:01,290
+navigation that nav two solves,
+but for arms, so it's taking
+
+165
+00:09:01,980 --> 00:09:04,710
+potentially sensor data to build
+an environmental representation.
+
+166
+00:09:04,740 --> 00:09:07,500
+In the case of movement, they're
+using Okta map and with 3d
+
+167
+00:09:07,500 --> 00:09:11,850
+Octrees, then they're using
+sampling based motion planning
+
+168
+00:09:11,850 --> 00:09:15,870
+in order to get a a rough plan
+from point A to point B. And
+
+169
+00:09:15,870 --> 00:09:18,090
+using various smoothing
+techniques usually optimization
+
+170
+00:09:18,090 --> 00:09:21,150
+base to smooth those out to be a
+little bit less clunky on the on
+
+171
+00:09:21,150 --> 00:09:23,490
+the motors earlier while you're
+going through the sampling base
+
+172
+00:09:23,490 --> 00:09:27,090
+planner would give you naturally
+and then finally, then having
+
+173
+00:09:27,090 --> 00:09:30,210
+those the same kind of local
+trajectory controllers, we have
+
+174
+00:09:30,210 --> 00:09:33,960
+Neptune now with the hyperplane
+schema. So there's somebody a
+
+175
+00:09:33,960 --> 00:09:36,420
+very, very analog problem,
+pretty much everything they
+
+176
+00:09:36,420 --> 00:09:39,720
+exist in that one nephew,
+rather, and move and have some
+
+177
+00:09:39,720 --> 00:09:43,320
+sort of direct analog to each
+other for the most part. And
+
+178
+00:09:43,320 --> 00:09:46,740
+then your ROS control is is
+kind of sitting in that lower
+
+179
+00:09:46,740 --> 00:09:50,010
+level on the actual electronics
+solving the motor control issue
+
+180
+00:09:50,010 --> 00:09:53,370
+of saying, you know, I have this
+I have this motor and I want to
+
+181
+00:09:53,370 --> 00:09:55,680
+control this motor to do
+something interesting for me. So
+
+182
+00:09:55,800 --> 00:09:59,820
+if you have a differential drive
+robot, how do I take this this
+
+183
+00:09:59,820 --> 00:10:03,300
+block The command I get for
+navigation and and follow that
+
+184
+00:10:03,510 --> 00:10:07,200
+with, with my my motor efforts,
+or for manipulation, which is
+
+185
+00:10:07,260 --> 00:10:11,280
+frankly, more of what ROS
+control is used for has, you
+
+186
+00:10:11,280 --> 00:10:14,550
+know more advanced impedance
+controllers and other other type
+
+187
+00:10:14,550 --> 00:10:17,370
+of modeling to deal with, you
+know, the kind of manipulation
+
+188
+00:10:17,370 --> 00:10:20,850
+problem. For the most part, the
+navigation control systems at
+
+189
+00:10:20,850 --> 00:10:23,250
+the lower level are, you know,
+very simple, right, this is the
+
+190
+00:10:23,250 --> 00:10:25,320
+kind of stuff that
+undergraduates might do in
+
+191
+00:10:25,320 --> 00:10:28,590
+their, their, their intro to
+controls lab, it's not not
+
+192
+00:10:28,590 --> 00:10:29,640
+overly complex,
+
+193
+00:10:30,960 --> 00:10:33,270
+Audrow Nash: like a, like a
+proportional integral derivative
+
+194
+00:10:33,300 --> 00:10:37,890
+or PID controller kind of thing
+or, yeah, to try to get it to a
+
+195
+00:10:37,890 --> 00:10:38,460
+position.
+
+196
+00:10:39,090 --> 00:10:41,970
+Steve Macenski: Yeah, pictures
+are pretty, pretty common, as
+
+197
+00:10:41,970 --> 00:10:45,090
+well as it potentially if you're
+working on warehousing robot
+
+198
+00:10:45,090 --> 00:10:48,630
+where you have, you know,
+different different weights of
+
+199
+00:10:48,630 --> 00:10:52,440
+opposite objects on top of it.
+You there's other slightly more
+
+200
+00:10:52,440 --> 00:10:55,470
+advanced control scheme you
+might use, that's based on on
+
+201
+00:10:56,550 --> 00:10:59,460
+efforts rather than just just
+photocurrents
+
+202
+00:10:59,579 --> 00:11:03,329
+Audrow Nash: Petrit. Now, why is
+can you tell me some of the
+
+203
+00:11:03,329 --> 00:11:08,219
+challenges and making something
+perform navigation? Like, what
+
+204
+00:11:08,219 --> 00:11:11,579
+are some of the problems that
+nav two is solving, and there's
+
+205
+00:11:11,579 --> 00:11:14,849
+some flexibility around the ways
+it salts but so
+
+206
+00:11:15,719 --> 00:11:18,059
+Steve Macenski: yeah, so, you
+know, one of the biggest
+
+207
+00:11:18,059 --> 00:11:21,269
+challenges is just taking both
+the representation of your
+
+208
+00:11:21,269 --> 00:11:24,419
+environment you have from from
+mapping or localization or you
+
+209
+00:11:24,419 --> 00:11:26,819
+know, other previous data that
+you've collected and somehow
+
+210
+00:11:26,819 --> 00:11:29,399
+assembled. And then the current
+data you have about the
+
+211
+00:11:29,399 --> 00:11:33,629
+environment. So if you have a 2d
+laser scanner on it, or you have
+
+212
+00:11:33,659 --> 00:11:37,499
+a RGB camera on it, which
+provides you depth information,
+
+213
+00:11:37,499 --> 00:11:40,289
+as well as color camera
+information, in, you know,
+
+214
+00:11:40,289 --> 00:11:43,289
+radars, sonars tall sensors, I
+mean, there's, there's a large
+
+215
+00:11:43,289 --> 00:11:45,569
+variety of different sensors
+that you can utilize that robot.
+
+216
+00:11:46,169 --> 00:11:48,599
+And most robot systems actually
+have multiple these types of
+
+217
+00:11:48,599 --> 00:11:51,809
+sensors on them. So the problem
+is dealing with how do we take
+
+218
+00:11:51,899 --> 00:11:55,529
+all that sort of information and
+populate something that is now
+
+219
+00:11:55,529 --> 00:11:59,099
+useful to solve the navigation
+problem. And so we do that with
+
+220
+00:11:59,099 --> 00:12:03,119
+a navigation stack with the the
+cost of 2d package, which is
+
+221
+00:12:03,119 --> 00:12:05,309
+essentially a direct port. For
+last one, we have some
+
+222
+00:12:05,309 --> 00:12:07,619
+additional plugin layers, we've
+added for more advanced
+
+223
+00:12:07,619 --> 00:12:11,339
+capabilities, but you know, high
+level, exact same package, long
+
+224
+00:12:11,339 --> 00:12:13,439
+term, we'd like to actually
+replace that with something a
+
+225
+00:12:13,439 --> 00:12:16,409
+bit a bit more advanced. But at
+the moment, that's where we're
+
+226
+00:12:16,409 --> 00:12:19,739
+at. So that's one of the big
+problems. Another problem is
+
+227
+00:12:19,739 --> 00:12:22,229
+saying, Okay, well, now that we
+have this populated
+
+228
+00:12:22,229 --> 00:12:24,629
+representation of my environment
+with current sensor data is
+
+229
+00:12:24,629 --> 00:12:28,949
+being fused into it. How do I
+actually plan within that space
+
+230
+00:12:28,979 --> 00:12:32,489
+so that my robot can can, you
+know, achieve its goal? And so
+
+231
+00:12:32,489 --> 00:12:35,129
+there's a variety of different
+methods of doing that,
+
+232
+00:12:35,159 --> 00:12:38,309
+obviously. So there's, there's,
+you know, holonomic planners
+
+233
+00:12:38,339 --> 00:12:42,839
+that work well with like 2d, or
+grid, basically techniques that
+
+234
+00:12:42,839 --> 00:12:43,919
+work very well with
+
+235
+00:12:44,070 --> 00:12:47,640
+Audrow Nash: holonomic. It means
+it's like a car or something,
+
+236
+00:12:47,640 --> 00:12:52,770
+right? And non holonomic. robot
+can drive like sideways and
+
+237
+00:12:52,770 --> 00:12:55,800
+things where a car has to go
+forward or backward. That's what
+
+238
+00:12:55,800 --> 00:12:57,180
+all means, right? Or?
+
+239
+00:12:58,170 --> 00:13:00,900
+Steve Macenski: Yeah, it's a hot
+holonomic means it can move in
+
+240
+00:13:00,900 --> 00:13:06,540
+any direction. So think about a
+robot with Swiss wheels, or
+
+241
+00:13:06,540 --> 00:13:08,880
+whatever they're called, or
+yeah, those little roller
+
+242
+00:13:08,880 --> 00:13:12,120
+wheels. Yeah. Or, or
+potentially, where you can pick
+
+243
+00:13:12,120 --> 00:13:14,880
+the wheels themselves to be able
+move sideways. Yep, those are
+
+244
+00:13:14,880 --> 00:13:17,760
+considered to be holonomic
+robots. On a first order
+
+245
+00:13:17,760 --> 00:13:20,550
+approximation, we also say that
+differential drive robots, if
+
+246
+00:13:20,550 --> 00:13:23,160
+they're circular are also
+holonomic. Because if you can
+
+247
+00:13:23,160 --> 00:13:25,830
+pit it perfectly in place as a
+different drive robot, and
+
+248
+00:13:25,830 --> 00:13:28,830
+you're circular, so your your
+footprint isn't moving, you can
+
+249
+00:13:28,830 --> 00:13:31,770
+you can achieve the same kind of
+behavior as with a truly
+
+250
+00:13:31,770 --> 00:13:32,790
+holonomic robot,
+
+251
+00:13:33,480 --> 00:13:35,850
+Audrow Nash: because the angle
+is facing and then you can drive
+
+252
+00:13:35,850 --> 00:13:37,320
+anyway. I see. Yeah.
+
+253
+00:13:37,679 --> 00:13:39,959
+Steve Macenski: Yeah, precisely.
+So for those kind of robots,
+
+254
+00:13:39,959 --> 00:13:42,599
+it's really easy to leverage
+just like, you know, your usual
+
+255
+00:13:42,599 --> 00:13:44,789
+a storage actress algorithm that
+you might learn in, like an
+
+256
+00:13:44,789 --> 00:13:48,659
+intro to algorithms class, but
+those are perfectly serviceable,
+
+257
+00:13:48,989 --> 00:13:50,939
+you probably want to do some
+smoothing on it, if you are
+
+258
+00:13:50,939 --> 00:13:53,099
+doing a direct research so that
+you don't have like little
+
+259
+00:13:53,099 --> 00:13:56,999
+jaggedy lines on thing. But you
+know, it's there's there's
+
+260
+00:13:56,999 --> 00:13:59,219
+different ways we do that
+through navigation functions,
+
+261
+00:13:59,219 --> 00:14:03,449
+which are basically generating
+these potential fields of cost
+
+262
+00:14:03,449 --> 00:14:06,359
+that you're you're tracing on
+instead of just like directly
+
+263
+00:14:06,359 --> 00:14:13,349
+just doing a grid search. But I
+mean, at a at a conceptual
+
+264
+00:14:13,349 --> 00:14:15,269
+level, they're, they're, you
+know, the same kind of class of
+
+265
+00:14:15,269 --> 00:14:21,269
+algorithm. As a star. Yeah, it
+is. They solve the same kind of
+
+266
+00:14:21,269 --> 00:14:24,419
+problems. Yeah, they're, they're
+giving you a path through space.
+
+267
+00:14:24,930 --> 00:14:28,830
+Audrow Nash: Yep. And if I
+remember correctly, so for a
+
+268
+00:14:28,830 --> 00:14:33,690
+star, it's a heuristic, a search
+that you say the goal is that
+
+269
+00:14:33,690 --> 00:14:37,620
+way and I'm going to try to
+search in that direction. And
+
+270
+00:14:37,620 --> 00:14:41,940
+then you find the optimal in a
+grid world you'll find the
+
+271
+00:14:41,970 --> 00:14:49,170
+optimal solution of what's the
+shortest path to get there. And
+
+272
+00:14:49,170 --> 00:14:54,990
+what was extras? Because it is
+it more general thing or forget
+
+273
+00:14:54,990 --> 00:14:55,710
+how it relates?
+
+274
+00:14:55,710 --> 00:14:57,330
+Steve Macenski: Just breath
+first, it just goes in every
+
+275
+00:14:57,330 --> 00:14:59,970
+direction at the same time. You
+don't have there's not a
+
+276
+00:15:00,000 --> 00:15:03,000
+heuristic that that saying, like
+go in that direction, it's just
+
+277
+00:15:03,000 --> 00:15:05,520
+gonna go out and expand its
+hole, find the optimal solution.
+
+278
+00:15:06,480 --> 00:15:09,690
+Audrow Nash: Okay, and then we
+feel for these if you have a
+
+279
+00:15:09,690 --> 00:15:12,240
+start and an end spot, and so
+it's going to search the space,
+
+280
+00:15:12,240 --> 00:15:15,360
+and it's going to find it. And
+we're representing space in a
+
+281
+00:15:15,360 --> 00:15:18,930
+grid world, or some sort of
+representation. And so that's
+
+282
+00:15:18,930 --> 00:15:23,280
+why you would have these kind of
+jagged edges, rather than a
+
+283
+00:15:23,280 --> 00:15:29,100
+smooth way to get there, per se,
+if you go up into diagonal to
+
+284
+00:15:29,100 --> 00:15:29,520
+the grid.
+
+285
+00:15:29,550 --> 00:15:32,490
+Steve Macenski: Yeah, so So you
+had like, basically, the motion
+
+286
+00:15:32,490 --> 00:15:35,790
+model motion model, so to speak,
+that you're using is, is the the
+
+287
+00:15:35,790 --> 00:15:38,490
+search neighborhood. So you're
+saying, I can search, you know,
+
+288
+00:15:38,520 --> 00:15:42,030
+left, right up down for like the
+four connects neighborhood or
+
+289
+00:15:42,030 --> 00:15:44,850
+say uptown, you know, up, down,
+left, right, and then the
+
+290
+00:15:44,850 --> 00:15:47,730
+diagonal? So that's the eight
+connected space, and so that
+
+291
+00:15:47,730 --> 00:15:49,680
+they'll let you then work at,
+you know, how do you plan to go
+
+292
+00:15:49,680 --> 00:15:52,770
+45 degrees, but you're still
+restricted only to these, these,
+
+293
+00:15:52,770 --> 00:15:55,170
+you know, exactly the angle
+increments of either going, you
+
+294
+00:15:55,170 --> 00:16:00,450
+know, zero 90 or 45 degrees for
+your planner. So this works, you
+
+295
+00:16:00,450 --> 00:16:03,750
+know, fairly well, when you're
+working with just a simple, you
+
+296
+00:16:03,750 --> 00:16:06,300
+know, simple base that like you
+might see on your on your on
+
+297
+00:16:06,300 --> 00:16:09,630
+your Roomba over this kind of
+breaks down, it becomes more of
+
+298
+00:16:09,630 --> 00:16:12,840
+a significant issue is when
+you're working with your larger
+
+299
+00:16:12,840 --> 00:16:15,630
+noncircular robots. So think
+about like a forklift, or you're
+
+300
+00:16:15,630 --> 00:16:19,260
+thinking about like, I think
+that's robotic cells, like a big
+
+301
+00:16:19,350 --> 00:16:23,010
+platform robot, I don't, I don't
+know they call it. It's like
+
+302
+00:16:23,010 --> 00:16:27,360
+something 1500 bucks. The thing
+is, and those are obviously
+
+303
+00:16:27,360 --> 00:16:30,120
+like, very noncircular. And so
+even though they are a
+
+304
+00:16:30,120 --> 00:16:32,820
+differential drive robot and get
+pivot in place, if you need to
+
+305
+00:16:32,820 --> 00:16:36,900
+do a bit bit more work to make
+sure that it's a viable the
+
+306
+00:16:36,900 --> 00:16:40,140
+plant or a space when you're in
+a narrow aisle way where maybe
+
+307
+00:16:40,140 --> 00:16:42,630
+the robot can just trivially
+rotate in place,
+
+308
+00:16:42,660 --> 00:16:45,120
+Audrow Nash: because it could
+swing and hit something because
+
+309
+00:16:45,120 --> 00:16:48,060
+it Yeah, exactly. It's
+rectangular or something. Okay,
+
+310
+00:16:48,150 --> 00:16:51,390
+Steve Macenski: yeah. And the
+other big kind of class of
+
+311
+00:16:51,450 --> 00:16:53,790
+problem that that you have
+working with those techniques
+
+312
+00:16:53,820 --> 00:16:58,620
+is, when you have drive trains
+aren't, you know, trivial that
+
+313
+00:16:58,620 --> 00:17:00,870
+you can treat essentially as
+holonomic. So you mentioned
+
+314
+00:17:00,870 --> 00:17:03,660
+before, like cars like the
+Ackermann model, which is the
+
+315
+00:17:03,660 --> 00:17:06,990
+car model we talked about. So
+that that's, that's one example
+
+316
+00:17:07,020 --> 00:17:10,500
+of where if you just plan a path
+as is go here, go straight to
+
+317
+00:17:10,500 --> 00:17:13,530
+the right, you know, your car
+can't do that, right. That's
+
+318
+00:17:13,530 --> 00:17:16,560
+not, that's not a feasible way
+of getting from point A to point
+
+319
+00:17:16,560 --> 00:17:19,860
+B for the actual drive train at
+the robot. So you have to then
+
+320
+00:17:19,860 --> 00:17:23,340
+take into account, not just like
+the the emotion model of saying
+
+321
+00:17:23,370 --> 00:17:26,700
+this for a cap space, but
+instead, using in your search
+
+322
+00:17:26,700 --> 00:17:30,180
+space, user space planner,
+actual motion primitives that
+
+323
+00:17:30,180 --> 00:17:33,870
+better describe the capabilities
+of your drive train. And that's
+
+324
+00:17:33,870 --> 00:17:36,600
+where we have some of the new
+algorithms that Neptune provides
+
+325
+00:17:36,630 --> 00:17:39,870
+in the snap planner, which is
+the hybrid, a star planner, and
+
+326
+00:17:39,870 --> 00:17:43,920
+the state lattice planner, which
+would enable us to set different
+
+327
+00:17:43,920 --> 00:17:47,070
+search patterns, so that you can
+create physically feasible paths
+
+328
+00:17:47,070 --> 00:17:50,580
+that robots with with
+constrained drive trains can
+
+329
+00:17:50,580 --> 00:17:56,280
+actually navigate exactly and
+not not Not, not not not treat
+
+330
+00:17:56,280 --> 00:17:57,060
+as holonomic.
+
+331
+00:17:57,210 --> 00:18:00,870
+Audrow Nash: So by search
+patterns, human kind of
+
+332
+00:18:00,870 --> 00:18:05,700
+simulating the position in
+space, to try to see if it's
+
+333
+00:18:05,700 --> 00:18:09,330
+valid from one position to
+another. So like, I have a car,
+
+334
+00:18:09,510 --> 00:18:12,750
+I'm going to try to move it from
+one spot to another. And I'm
+
+335
+00:18:12,750 --> 00:18:16,500
+going to kind of project it out
+into the future and try to see
+
+336
+00:18:16,500 --> 00:18:20,580
+if that path gets us there, or
+what do you mean by search?
+
+337
+00:18:21,300 --> 00:18:23,910
+Steve Macenski: Yeah, so So
+imagining in this this 2d
+
+338
+00:18:23,910 --> 00:18:28,980
+example, we said, If I'm at the
+cell, I can, the cells I can
+
+339
+00:18:28,980 --> 00:18:31,470
+recently traverse are either up
+down and left or right in this
+
+340
+00:18:31,470 --> 00:18:34,110
+forecasted space. So that that
+will be the motion model that
+
+341
+00:18:34,110 --> 00:18:37,830
+we're using to, to to expand
+search. Because then once you go
+
+342
+00:18:37,920 --> 00:18:40,230
+up, we apply the same for then
+you just keep doing that
+
+343
+00:18:40,230 --> 00:18:42,030
+recursively. And you get, you
+know, eventually like a
+
+344
+00:18:42,030 --> 00:18:43,320
+chessboard span basically.
+
+345
+00:18:43,410 --> 00:18:44,550
+Audrow Nash: Okay. Yeah.
+
+346
+00:18:44,640 --> 00:18:48,510
+Steve Macenski: So with for
+instance, let's, let's talk
+
+347
+00:18:49,260 --> 00:18:52,890
+about the simpler one first. So
+for hybrid, a star, which the
+
+348
+00:18:52,890 --> 00:18:55,920
+name kind of breaking that down
+you a hybrid. So you know,
+
+349
+00:18:55,920 --> 00:18:57,840
+there's something different
+about this than a star. So
+
+350
+00:18:57,840 --> 00:18:59,940
+you're still using this, like
+heuristic search algorithm at
+
+351
+00:18:59,940 --> 00:19:03,450
+its core. And what that's doing
+is, is what we're first who is
+
+352
+00:19:03,450 --> 00:19:06,600
+hybrid sampling, which is that
+instead of just naively saying
+
+353
+00:19:06,630 --> 00:19:08,970
+we're going to, we're going to
+visit each of these grid cells
+
+354
+00:19:08,970 --> 00:19:13,320
+just as the grid structure.
+Instead, we're going to treat
+
+355
+00:19:13,740 --> 00:19:18,210
+our search neighborhood as
+primitives of actual velocity
+
+356
+00:19:18,210 --> 00:19:21,990
+commands the robot can achieve.
+So for a car like model, you can
+
+357
+00:19:21,990 --> 00:19:24,690
+either turn left and drive a
+bit, you can go straight and
+
+358
+00:19:24,690 --> 00:19:26,850
+drive bit or you can turn right
+and those are the premises.
+
+359
+00:19:27,450 --> 00:19:29,640
+Audrow Nash: The turn left a
+little bit turn right a little
+
+360
+00:19:29,640 --> 00:19:33,000
+bit go straight. Yeah, I suppose
+backwards as well. And
+
+361
+00:19:33,000 --> 00:19:35,130
+backwards, or whatever. Okay,
+precisely.
+
+362
+00:19:35,160 --> 00:19:38,820
+Steve Macenski: Yeah. So those
+are the vacancies. Yeah. And
+
+363
+00:19:38,820 --> 00:19:41,880
+then, you know, for the sake of
+implementation, the length of
+
+364
+00:19:41,880 --> 00:19:44,160
+these primitives you want to set
+is something interesting and
+
+365
+00:19:44,160 --> 00:19:47,100
+not, you know, arbitrarily just
+like driving the future a bunch
+
+366
+00:19:47,100 --> 00:19:48,990
+because then you'd otherwise
+you'd end up going in circles on
+
+367
+00:19:48,990 --> 00:19:51,960
+the left circles on the right
+and so straight forever. You
+
+368
+00:19:51,960 --> 00:19:54,750
+have to decide, like, what are
+the lengths of these things I
+
+369
+00:19:54,750 --> 00:19:55,500
+want to work with.
+
+370
+00:19:55,920 --> 00:19:58,350
+Audrow Nash: Okay, and you want
+to swap it basically, so that
+
+371
+00:19:58,350 --> 00:20:01,380
+you can find things okay. So you
+don't go all the way in that
+
+372
+00:20:01,380 --> 00:20:04,350
+circle, if you turn your wheel a
+little bit to the left kind of
+
+373
+00:20:04,350 --> 00:20:05,160
+thing. Yeah.
+
+374
+00:20:05,550 --> 00:20:08,310
+Steve Macenski: But because
+we're also still working. So to
+
+375
+00:20:08,310 --> 00:20:10,590
+go back, we're still working in
+this grid space, though. So we
+
+376
+00:20:10,590 --> 00:20:12,660
+need to make sure that we go
+small amount, but needs to be
+
+377
+00:20:12,660 --> 00:20:15,600
+enough. So that guarantees that
+we leave our current cells. So
+
+378
+00:20:15,600 --> 00:20:18,180
+as we're expanding the search
+over time, we don't have
+
+379
+00:20:18,180 --> 00:20:20,610
+situations where we're
+revisiting the same cell we
+
+380
+00:20:20,610 --> 00:20:24,570
+currently had, was certainly
+something that can be dealt
+
+381
+00:20:24,570 --> 00:20:28,560
+with. Yep. Yeah. Or actually,
+they, it's all geometry, you
+
+382
+00:20:28,560 --> 00:20:31,320
+have read the code. And this is
+like, you know, six lines, where
+
+383
+00:20:31,320 --> 00:20:33,780
+I go through step by step how to
+mentally drive this, this this
+
+384
+00:20:33,780 --> 00:20:38,580
+idea. But while the paper itself
+of the hybrid star from from
+
+385
+00:20:38,580 --> 00:20:41,910
+Thron, and folks from the DARPA
+Urban Challenge, or grand
+
+386
+00:20:41,910 --> 00:20:45,870
+challenge, one of the
+challenges, they they, I think,
+
+387
+00:20:45,870 --> 00:20:48,360
+allow you to do that to have
+some sort of solution space for
+
+388
+00:20:48,360 --> 00:20:51,570
+how they select which one to
+use. I instead say I don't want
+
+389
+00:20:51,570 --> 00:20:53,700
+to deal with that problem. I'm
+assuming I printed sufficiently
+
+390
+00:20:53,700 --> 00:20:56,250
+long, so we always guaranteed to
+leave a cell. So there are a
+
+391
+00:20:56,250 --> 00:20:59,220
+minimum square root of two cell
+lengths away from each other. So
+
+392
+00:20:59,220 --> 00:21:02,940
+that way, we're guaranteed for
+any time that the proof hits a
+
+393
+00:21:02,940 --> 00:21:05,400
+cell, it's always guaranteed to
+leave that cell in the next
+
+394
+00:21:05,490 --> 00:21:06,180
+iteration.
+
+395
+00:21:06,390 --> 00:21:09,480
+Audrow Nash: And are we
+ourselves always squares?
+
+396
+00:21:11,130 --> 00:21:13,140
+Steve Macenski: Yeah, um, well,
+I guess they don't don't have to
+
+397
+00:21:13,140 --> 00:21:17,490
+be. But I mean, the first I have
+to they are, yeah, gotcha. They
+
+398
+00:21:17,490 --> 00:21:20,610
+could be circles. They could be
+hexagons, I've actually I did
+
+399
+00:21:20,610 --> 00:21:25,410
+some, some research and a couple
+papers I've, I've just not
+
+400
+00:21:25,440 --> 00:21:27,540
+written for publication, but
+written terms of like, you know,
+
+401
+00:21:27,540 --> 00:21:31,170
+to take in regarding actually
+having an environmental Model B,
+
+402
+00:21:31,350 --> 00:21:35,760
+you have a hex hexagonal cells,
+rather than grid cells. But that
+
+403
+00:21:35,760 --> 00:21:37,770
+ends up having a whole lot of
+other issues. But it's
+
+404
+00:21:37,770 --> 00:21:38,550
+interesting to think
+
+405
+00:21:38,550 --> 00:21:45,330
+Audrow Nash: about. Okay, so you
+have this grid, and you have a
+
+406
+00:21:45,360 --> 00:21:50,280
+way of describing how your robot
+moves in this grid. If you have
+
+407
+00:21:50,280 --> 00:21:52,830
+a robot that's like a car or
+something you have some idea
+
+408
+00:21:52,830 --> 00:21:57,330
+for, if you tell it to drive
+forward at left for this angle,
+
+409
+00:21:57,330 --> 00:22:04,020
+or something, how it goes into
+another cell? How do you just it
+
+410
+00:22:04,020 --> 00:22:06,000
+sounds like a hard
+representation, because I'm
+
+411
+00:22:06,000 --> 00:22:11,010
+imagining, if I turn the wheel
+10 degrees to the left, like,
+
+412
+00:22:11,040 --> 00:22:14,100
+and I drive, I'm not in the
+middle of a cell, but I guess I
+
+413
+00:22:14,100 --> 00:22:17,550
+still am in a cell. And you can
+use that for planning your
+
+414
+00:22:17,550 --> 00:22:18,270
+trajectory.
+
+415
+00:22:19,440 --> 00:22:22,950
+Steve Macenski: So rather than
+just so with these grid based
+
+416
+00:22:22,950 --> 00:22:25,620
+methods, or essentially
+visiting, let's say, like, we go
+
+417
+00:22:25,620 --> 00:22:29,130
+up, down, left and right, yeah,
+we could say that, that, you
+
+418
+00:22:29,130 --> 00:22:31,800
+know, you're you're not busy and
+arbitrary place in that cell,
+
+419
+00:22:31,800 --> 00:22:35,010
+right. Because if you blow that
+any, any any space, we blow it
+
+420
+00:22:35,010 --> 00:22:37,860
+up infinitely, to go to look at
+it. So we look a little cell and
+
+421
+00:22:37,860 --> 00:22:40,110
+make it really big. It's like,
+well, we're visiting any random
+
+422
+00:22:40,110 --> 00:22:42,360
+place we're visiting, let's say
+the center or an edge, depending
+
+423
+00:22:42,360 --> 00:22:44,610
+on how you want to find it, of
+that cell and each cell are
+
+424
+00:22:44,610 --> 00:22:46,980
+visiting the center of, but when
+you're working with these motion
+
+425
+00:22:46,980 --> 00:22:49,590
+primitives, you're right, we
+don't actually have exact angle,
+
+426
+00:22:50,070 --> 00:22:52,980
+these aren't computers that were
+ending exactly in the center of
+
+427
+00:22:52,980 --> 00:22:56,430
+every single cell every single
+time. So we do actually have the
+
+428
+00:22:56,430 --> 00:22:59,970
+cash in the planning sequence,
+where within that, that, that
+
+429
+00:22:59,970 --> 00:23:03,090
+that that cell, we've actually
+landed, and then when we go
+
+430
+00:23:03,090 --> 00:23:06,210
+back, and we visit that cell to
+expand it, again, we're actually
+
+431
+00:23:06,240 --> 00:23:08,310
+not using the center of that
+cell, we're again using that
+
+432
+00:23:08,310 --> 00:23:11,430
+that position within the cell
+that we actually visited, which
+
+433
+00:23:11,430 --> 00:23:14,490
+then, you know, if you compound
+that over and over again, to
+
+434
+00:23:14,490 --> 00:23:17,610
+build a path, that means that
+it's exactly drivable in this
+
+435
+00:23:17,610 --> 00:23:17,850
+grid
+
+436
+00:23:17,850 --> 00:23:22,440
+Audrow Nash: space. A little
+confused by that?
+
+437
+00:23:23,670 --> 00:23:26,580
+Steve Macenski: Yeah, um, so if
+you were, if you were to have,
+
+438
+00:23:26,640 --> 00:23:28,560
+for instance, like a naive
+implementation of this, you
+
+439
+00:23:28,560 --> 00:23:31,620
+might think about saying, let's
+approximate that I had this this
+
+440
+00:23:31,620 --> 00:23:34,050
+this primitive that I'm
+projecting forward at a curve,
+
+441
+00:23:34,170 --> 00:23:37,800
+and it ends at within a cell,
+but not in the center of the
+
+442
+00:23:37,800 --> 00:23:41,100
+cell, it might be natural for
+you to think if you come from an
+
+443
+00:23:41,130 --> 00:23:43,950
+from like a 2d grid lands space
+to say, Oh, well, you know,
+
+444
+00:23:43,950 --> 00:23:47,250
+these, these, these cells, these
+B cells are sufficiently small
+
+445
+00:23:47,370 --> 00:23:50,970
+that I can just store that as
+the as I've entered the cell.
+
+446
+00:23:51,180 --> 00:23:53,820
+And then the next iteration,
+when you when you visit that
+
+447
+00:23:53,820 --> 00:23:56,610
+cell to expand it to get its
+neighbors, you could then say,
+
+448
+00:23:56,610 --> 00:23:58,860
+Okay, well, let's just pretend
+like we started at the center
+
+449
+00:23:58,860 --> 00:24:01,680
+and expand it again. But if you
+keep doing that, then the path
+
+450
+00:24:01,680 --> 00:24:04,410
+you get at the end of it
+actually isn't then respecting
+
+451
+00:24:04,440 --> 00:24:07,470
+the constraints on that motion
+model. Because you're you're not
+
+452
+00:24:07,470 --> 00:24:10,710
+accurate, you're that the small
+errors compound, each of each
+
+453
+00:24:10,920 --> 00:24:15,420
+individual primitive. So instead
+of, yeah, so So doing that when
+
+454
+00:24:15,420 --> 00:24:20,730
+we when we, we visit, we visit a
+cell and we're trying to find
+
+455
+00:24:20,760 --> 00:24:24,630
+its neighbors, we're not using
+an approximation of the position
+
+456
+00:24:24,690 --> 00:24:27,570
+that we're using. As like the
+center, we're using the real
+
+457
+00:24:27,570 --> 00:24:30,420
+position of the actual cell
+coordinates used, so that as
+
+458
+00:24:30,420 --> 00:24:33,090
+that compounds together that's
+going to be guaranteed to be
+
+459
+00:24:33,090 --> 00:24:37,170
+drivable within the kinematics
+of the of the the robot system.
+
+460
+00:24:37,680 --> 00:24:41,730
+Audrow Nash: Interesting. So how
+does it work if I want to go
+
+461
+00:24:41,730 --> 00:24:45,750
+from one spot to another spot,
+and I have these motion
+
+462
+00:24:45,750 --> 00:24:48,990
+primitives, which say I can turn
+and for these motion primitives,
+
+463
+00:24:48,990 --> 00:24:54,450
+if I have a car? Do you have
+like basically infinite motion
+
+464
+00:24:54,450 --> 00:24:58,200
+primitives because you have the
+whole degree of angles that the
+
+465
+00:24:58,200 --> 00:25:02,940
+car can go or how Is it? How do
+you go from one spot to another?
+
+466
+00:25:02,940 --> 00:25:05,130
+Do you know what I'm asking?
+With? Motion permitted? Yeah,
+
+467
+00:25:05,130 --> 00:25:09,420
+yeah. So you have the continuous
+range between, say, minus 45 and
+
+468
+00:25:09,420 --> 00:25:12,930
+positive 45, that the car can
+travel in, that the wheels could
+
+469
+00:25:12,930 --> 00:25:13,410
+face.
+
+470
+00:25:14,580 --> 00:25:17,760
+Steve Macenski: Yeah, so so we
+subsample that space. So
+
+471
+00:25:17,760 --> 00:25:21,540
+essentially, we have for the
+hybrid star, and in the current
+
+472
+00:25:21,540 --> 00:25:24,960
+implementation that that exists
+today, you have a left turn, you
+
+473
+00:25:24,960 --> 00:25:26,880
+have a right turn either
+straight turn, and then you have
+
+474
+00:25:26,880 --> 00:25:29,670
+the reverse equivalents of those
+things. So you have either three
+
+475
+00:25:29,670 --> 00:25:33,180
+or six motion primitives you're
+working with, that are the most
+
+476
+00:25:33,180 --> 00:25:35,700
+extreme terms, right? The the
+your your robot model can
+
+477
+00:25:35,820 --> 00:25:37,590
+obtain, and it randomly samples
+in
+
+478
+00:25:37,590 --> 00:25:41,460
+Audrow Nash: that space, or just
+uses one of one of the six will
+
+479
+00:25:41,460 --> 00:25:42,060
+expand.
+
+480
+00:25:42,600 --> 00:25:44,580
+Steve Macenski: So expand all of
+them, right. So every time we
+
+481
+00:25:44,580 --> 00:25:48,000
+visit a cell from an A star, we
+expand every single cell, and we
+
+482
+00:25:48,000 --> 00:25:50,820
+set a heuristic cost at the end
+value of that cell that goes
+
+483
+00:25:50,820 --> 00:25:55,770
+into a priority queue to sort
+who I the the most optimal
+
+484
+00:25:55,980 --> 00:25:58,410
+trajectory possible. And then
+when we go back through and
+
+485
+00:25:58,410 --> 00:26:00,960
+visit the next cell in that
+priority queue, you're getting
+
+486
+00:26:00,960 --> 00:26:03,630
+back out that that next cell
+that you want to go to, so
+
+487
+00:26:03,630 --> 00:26:09,600
+you're not, that's not a goal.
+It's not like a the, the, it was
+
+488
+00:26:09,600 --> 00:26:11,790
+not a heuristic search, and
+you're using a set A dexterous
+
+489
+00:26:11,790 --> 00:26:14,550
+algorithm on this kind of thing.
+And right, every single aisle
+
+490
+00:26:14,550 --> 00:26:17,190
+six, aisle six, aisle six, and
+you just be spreading and
+
+491
+00:26:17,190 --> 00:26:20,280
+spreading and spreading out,
+which is problematic. That's
+
+492
+00:26:20,280 --> 00:26:20,910
+where your priority,
+
+493
+00:26:20,970 --> 00:26:24,750
+Audrow Nash: so which is very
+clever. We're Yeah, it seems
+
+494
+00:26:24,750 --> 00:26:25,650
+like you're going to do it.
+
+495
+00:26:26,880 --> 00:26:30,030
+Steve Macenski: Yeah. That's
+pretty standard for a star's
+
+496
+00:26:30,090 --> 00:26:32,490
+that that's kind of, at least to
+my understanding, that's how
+
+497
+00:26:32,490 --> 00:26:33,180
+most people do it.
+
+498
+00:26:33,540 --> 00:26:39,030
+Audrow Nash: Gotcha. So you, but
+it's not. So you're only using
+
+499
+00:26:39,030 --> 00:26:42,990
+these primitives of like extreme
+angles. So it's all the way this
+
+500
+00:26:43,020 --> 00:26:45,390
+all the way left all the way
+right or straight? If we're just
+
+501
+00:26:45,390 --> 00:26:52,860
+doing the forward case. In this
+case, if I How do you arrive at
+
+502
+00:26:52,860 --> 00:26:55,890
+a solution where the robot
+doesn't drive like incredibly
+
+503
+00:26:55,890 --> 00:27:00,330
+manically doing all the way left
+all the way? Right, on its way
+
+504
+00:27:00,330 --> 00:27:01,260
+towards its goal?
+
+505
+00:27:02,430 --> 00:27:05,070
+Steve Macenski: Yeah, so that's
+where we have a smoothing step
+
+506
+00:27:05,070 --> 00:27:07,590
+at the end of this. So this we
+do this for
+
+507
+00:27:07,590 --> 00:27:10,890
+Audrow Nash: the house space,
+basically, this is this is for
+
+508
+00:27:10,890 --> 00:27:14,460
+you arriving at a solution. And
+then from that solution, you
+
+509
+00:27:14,460 --> 00:27:15,150
+smooth it.
+
+510
+00:27:15,690 --> 00:27:18,330
+Steve Macenski: Yeah. So so we
+have. So we thought through
+
+511
+00:27:18,330 --> 00:27:22,260
+this, we have now a path that is
+rival maybe, yeah, little
+
+512
+00:27:22,260 --> 00:27:25,650
+suurvey. But drivable. And so
+what we do is we take that path,
+
+513
+00:27:25,680 --> 00:27:28,860
+and we put it into a smoothing
+algorithm, which will, you know,
+
+514
+00:27:28,860 --> 00:27:31,050
+take out some of those extreme
+turns and make them a little bit
+
+515
+00:27:31,050 --> 00:27:35,760
+more, or I guess, less
+aggressive. And then also goes
+
+516
+00:27:35,760 --> 00:27:37,800
+through the boundary conditions
+to make sure that those remain
+
+517
+00:27:38,430 --> 00:27:42,360
+tight during the entire entire
+process. So that part
+
+518
+00:27:43,200 --> 00:27:45,270
+Audrow Nash: of boundary
+conditions and make sure, yeah,
+
+519
+00:27:45,300 --> 00:27:46,320
+what do you mean by that?
+
+520
+00:27:47,280 --> 00:27:51,000
+Steve Macenski: So sorry, to
+type that word. But so
+
+521
+00:27:51,030 --> 00:27:51,840
+essentially,
+
+522
+00:27:51,990 --> 00:27:54,990
+Audrow Nash: we mean, optimal at
+night, but what do you mean,
+
+523
+00:27:55,050 --> 00:27:57,690
+like a good solo error? Or I
+don't know what you mean,
+
+524
+00:27:57,690 --> 00:27:58,140
+actually.
+
+525
+00:27:59,220 --> 00:28:02,880
+Steve Macenski: Yeah, so we
+have. So in the hyperstar, paper
+
+526
+00:28:02,880 --> 00:28:05,100
+that is published that, you
+know, an autonomous driving
+
+527
+00:28:05,130 --> 00:28:07,620
+company might use, for instance,
+has a pretty advanced move
+
+528
+00:28:07,620 --> 00:28:09,810
+there. And in fact, this is the
+some of the information we used
+
+529
+00:28:09,810 --> 00:28:13,770
+to use within the spec planner,
+that takes into account, you
+
+530
+00:28:13,770 --> 00:28:16,590
+know, keeping spacing, the
+sames, which helps us
+
+531
+00:28:16,710 --> 00:28:20,100
+smoothness, using our Fermoy
+diagram to help you drive away
+
+532
+00:28:20,100 --> 00:28:23,850
+from obstacles and then limiting
+the curvature so that you you
+
+533
+00:28:23,850 --> 00:28:26,550
+keep those constraints that you
+had during the planning process.
+
+534
+00:28:26,760 --> 00:28:31,230
+And I think a couple other terms
+as well. And those then spin
+
+535
+00:28:31,230 --> 00:28:34,620
+through an optimization problem
+to give you an optimal solution.
+
+536
+00:28:34,650 --> 00:28:37,800
+Given those those cost
+functions, this ends up being a
+
+537
+00:28:37,800 --> 00:28:40,230
+very computationally expensive
+thing to do. And it's ultimately
+
+538
+00:28:40,230 --> 00:28:44,580
+why I removed that, and instead,
+Swift changed up a bit of the
+
+539
+00:28:44,580 --> 00:28:47,460
+internal systems of how the
+search the search, or restrict
+
+540
+00:28:47,490 --> 00:28:49,560
+operates, so that we don't have
+to use that kind of smoothing
+
+541
+00:28:49,560 --> 00:28:53,280
+technique. But what we use
+instead is essentially like a
+
+542
+00:28:53,280 --> 00:28:59,130
+super, super naive, smoother,
+like you might find in like, I
+
+543
+00:28:59,130 --> 00:29:02,430
+don't know, like, one of those
+Udacity nano degree kind of
+
+544
+00:29:02,430 --> 00:29:06,360
+things, we just go through very
+simply and say, like, let's make
+
+545
+00:29:06,360 --> 00:29:09,150
+these things as close together
+as possible. And then iterate
+
+546
+00:29:09,150 --> 00:29:11,910
+until we have very little change
+left in our in our in our
+
+547
+00:29:11,910 --> 00:29:12,870
+outside path between
+
+548
+00:29:12,870 --> 00:29:15,150
+Audrow Nash: these things, which
+actually things have close to
+
+549
+00:29:15,150 --> 00:29:16,710
+each other. What I mean by that
+
+550
+00:29:17,850 --> 00:29:19,590
+Steve Macenski: each of the the
+points on the path.
+
+551
+00:29:22,050 --> 00:29:22,800
+Unknown: Okay, so
+
+552
+00:29:23,639 --> 00:29:25,529
+Steve Macenski: in opposition to
+land, it's maybe not as
+
+553
+00:29:25,679 --> 00:29:29,069
+intuitive to somebody who isn't
+who's worked with it. But it's
+
+554
+00:29:29,069 --> 00:29:31,709
+something that that's generally
+a very successful way of
+
+555
+00:29:31,709 --> 00:29:34,619
+smoothing is just say, all my
+points my path, I want to make
+
+556
+00:29:34,619 --> 00:29:37,949
+sure that they're each as close
+they're evenly distributed from
+
+557
+00:29:37,949 --> 00:29:40,619
+each other. And when you iterate
+over that and try to minimize
+
+558
+00:29:40,619 --> 00:29:44,579
+that cost function, you end up
+actually smoothing out the path
+
+559
+00:29:44,579 --> 00:29:48,509
+from from turn to such which is
+a convenient and easy Oh, that's
+
+560
+00:29:48,509 --> 00:29:50,069
+a waste smoothie. I
+
+561
+00:29:50,070 --> 00:29:54,330
+Audrow Nash: see. It's basically
+like the shortest path from
+
+562
+00:29:54,330 --> 00:29:58,290
+something is straight to it. And
+so if you're making all your
+
+563
+00:29:58,290 --> 00:30:02,670
+points closer to each Other, you
+probably are working towards
+
+564
+00:30:02,670 --> 00:30:05,940
+that. Because they will be
+further. That is a cool
+
+565
+00:30:05,940 --> 00:30:09,660
+heuristic to use to smooth.
+Yeah. Interesting. So if
+
+566
+00:30:09,660 --> 00:30:13,260
+Steve Macenski: you had no no
+other, other things doubting
+
+567
+00:30:13,260 --> 00:30:15,210
+that solution, and essentially
+what you're right, and just
+
+568
+00:30:15,210 --> 00:30:18,000
+being exact, perfect. Just
+ignore everything. Yeah, yeah.
+
+569
+00:30:18,030 --> 00:30:21,180
+But that's why I have to add in
+things like, collision looks
+
+570
+00:30:21,180 --> 00:30:24,420
+otherwise Yeah, definitely all
+into it, for sure. Yeah. And
+
+571
+00:30:24,420 --> 00:30:27,480
+then, because we derive it
+kinematics, these will path we
+
+572
+00:30:27,480 --> 00:30:30,630
+also want to add some weights on
+the original path itself. So
+
+573
+00:30:30,630 --> 00:30:33,780
+that, like, if you have a little
+squiggle that could be made into
+
+574
+00:30:33,780 --> 00:30:35,970
+a straight line, we want that to
+smooth out. But we don't
+
+575
+00:30:35,970 --> 00:30:39,450
+necessarily want something to
+turn from a nice smooth turn,
+
+576
+00:30:39,450 --> 00:30:40,050
+just like you know,
+
+577
+00:30:41,070 --> 00:30:43,590
+Audrow Nash: Arvon drivers kind
+of thing.
+
+578
+00:30:44,250 --> 00:30:47,220
+Steve Macenski: Yeah, where it's
+no longer actually also valid by
+
+579
+00:30:47,220 --> 00:30:51,690
+the current motion model. And so
+I have, I tried this more in the
+
+580
+00:30:51,690 --> 00:30:53,640
+actual the readme file. And I
+don't think it's worth getting
+
+581
+00:30:53,640 --> 00:30:56,430
+to the specific details of this
+at the moment. But essentially,
+
+582
+00:30:56,460 --> 00:31:00,810
+you can, you can, through
+logical proofs, find that the
+
+583
+00:31:00,810 --> 00:31:03,810
+only time when you break
+feasibility is during sharp
+
+584
+00:31:03,810 --> 00:31:06,690
+turns at the beginning and the
+end of the path. And so those
+
+585
+00:31:06,690 --> 00:31:08,760
+are the boundary conditions,
+okay, so the boundary conditions
+
+586
+00:31:08,760 --> 00:31:11,340
+totally break during this
+process. So if you were to try
+
+587
+00:31:11,340 --> 00:31:14,640
+and drive the robot using just
+that pseudo described, both the
+
+588
+00:31:14,640 --> 00:31:17,640
+start and the end would not be
+guaranteed to be drivable. So we
+
+589
+00:31:17,640 --> 00:31:20,850
+do is we have an additional post
+processing step on the beginning
+
+590
+00:31:20,850 --> 00:31:25,530
+and the end of it, where we use
+the Kinect motion model of the
+
+591
+00:31:25,530 --> 00:31:28,170
+robot that we use previously
+during that planning technique
+
+592
+00:31:28,260 --> 00:31:32,520
+to take the Star Pose and then
+sample across the new smooth
+
+593
+00:31:32,520 --> 00:31:35,940
+path until we find a the
+shortest path that goes from the
+
+594
+00:31:35,940 --> 00:31:39,120
+start the actual starting point
+to a point on the smooth path,
+
+595
+00:31:39,210 --> 00:31:41,250
+or to give us a drivable
+connection point between those
+
+596
+00:31:41,250 --> 00:31:45,630
+two areas. And so by doing that,
+then we end up with a smooth
+
+597
+00:31:45,630 --> 00:31:49,110
+path that also then then meets
+the boundary conditions of
+
+598
+00:31:49,110 --> 00:31:51,060
+drivability, and therefore the
+end path is
+
+599
+00:31:51,060 --> 00:31:53,310
+Audrow Nash: drivable. So I
+don't know that I fully
+
+600
+00:31:53,310 --> 00:31:57,630
+understand that. But can you
+think of it as just if the start
+
+601
+00:31:57,630 --> 00:32:00,780
+and end will be wrong because of
+some weird boundary conditions
+
+602
+00:32:00,780 --> 00:32:03,720
+in the optimization, you just
+extend them a little bit. So you
+
+603
+00:32:03,720 --> 00:32:07,020
+consider like a little before
+the start and a little after the
+
+604
+00:32:07,020 --> 00:32:10,260
+end? Assuming the motion
+primitive, just continue with
+
+605
+00:32:10,260 --> 00:32:11,550
+something like this or?
+
+606
+00:32:12,420 --> 00:32:14,940
+Steve Macenski: So I actually I
+tried that it didn't work. But
+
+607
+00:32:14,940 --> 00:32:18,690
+yeah, I did. I did try that I
+tried a bunch of stuff before I
+
+608
+00:32:18,690 --> 00:32:22,440
+found the solution that we
+currently use. So essentially,
+
+609
+00:32:22,440 --> 00:32:28,290
+so this is where it gets it gets
+a little out into the weeds. So
+
+610
+00:32:28,320 --> 00:32:31,470
+within these planners, we also
+have a concept called analytic
+
+611
+00:32:31,470 --> 00:32:35,370
+expansion, where occasionally
+during our search process, we
+
+612
+00:32:35,370 --> 00:32:39,240
+take our search position and our
+goal position. And we use a
+
+613
+00:32:39,240 --> 00:32:41,910
+library called Oh MPL, the open
+motion planning library, which
+
+614
+00:32:41,910 --> 00:32:44,910
+is commonly used for sampling
+bass planning implementations.
+
+615
+00:32:45,270 --> 00:32:48,180
+They also have a very good
+implementation of the Ackermann
+
+616
+00:32:48,180 --> 00:32:50,850
+models that you can use both for
+sampling but also in our
+
+617
+00:32:51,540 --> 00:32:54,510
+Audrow Nash: model shows, our
+models are for tire with two
+
+618
+00:32:55,920 --> 00:32:58,170
+steering ones, the front ones
+here.
+
+619
+00:32:59,400 --> 00:33:01,470
+Steve Macenski: Yeah, yeah, like
+a double bicycle, or whatever.
+
+620
+00:33:01,470 --> 00:33:06,090
+Is that? Yeah, yeah. So we can
+use that to then say, here's our
+
+621
+00:33:06,090 --> 00:33:09,030
+start point, here's our end
+point and points opposes rights,
+
+622
+00:33:09,030 --> 00:33:11,880
+their orientation associated
+with them, and then give me a
+
+623
+00:33:11,880 --> 00:33:15,690
+path to where I am to where I
+want to go. And then we then
+
+624
+00:33:15,780 --> 00:33:18,240
+check for collisions to make
+sure it's actually valid. And
+
+625
+00:33:18,240 --> 00:33:20,310
+most the time during your your
+planning, right, that isn't
+
+626
+00:33:20,310 --> 00:33:22,020
+valid, right, it's going through
+a wall or something. So you
+
+627
+00:33:22,020 --> 00:33:24,120
+throw it out and continue
+searching, and then maybe
+
+628
+00:33:24,120 --> 00:33:26,850
+another 20 iterations to try
+again, until you find a
+
+629
+00:33:26,850 --> 00:33:29,850
+solution. And that helps a lot
+with the speed of the planner.
+
+630
+00:33:30,030 --> 00:33:32,670
+So most of your planning time
+and a kingdom activities will
+
+631
+00:33:32,670 --> 00:33:35,340
+planner is spent actually on
+just getting to that exact goal,
+
+632
+00:33:35,340 --> 00:33:38,280
+position and orientation. So if
+you can speed it up by having
+
+633
+00:33:38,280 --> 00:33:40,740
+something they'll find exact
+curve fits, that helps you quite
+
+634
+00:33:40,740 --> 00:33:44,220
+a bit. So we apply that same
+concept, then after the
+
+635
+00:33:44,220 --> 00:33:46,680
+smoothing process to say, here's
+our starting point, which is
+
+636
+00:33:46,680 --> 00:33:49,530
+fixed as our as our starting
+point or our end goal point,
+
+637
+00:33:49,530 --> 00:33:52,830
+which are both fixed. And then
+we basically say every, I think
+
+638
+00:33:52,830 --> 00:33:55,650
+it's like five or 10, or some
+some number of points on the on
+
+639
+00:33:55,650 --> 00:33:59,610
+the smooth output, we find the
+feasible solution between those
+
+640
+00:33:59,610 --> 00:34:01,860
+two things, and we measure the
+length of it, and we check the
+
+641
+00:34:01,860 --> 00:34:05,490
+feasibility for it. And we do
+that for you know, up until
+
+642
+00:34:05,490 --> 00:34:08,760
+basically, you know, for I think
+it's bounded, but you know, far,
+
+643
+00:34:08,760 --> 00:34:12,420
+far into the into the path until
+we find the shortest collision
+
+644
+00:34:12,420 --> 00:34:16,920
+free path possible. The shortest
+point here is actually very
+
+645
+00:34:16,920 --> 00:34:20,700
+important is if you were to try
+to find the feasible solution
+
+646
+00:34:20,700 --> 00:34:23,730
+between your starting point and
+a point that's, you know, just
+
+647
+00:34:23,730 --> 00:34:26,130
+just directly in front of it,
+that's how shifted just a little
+
+648
+00:34:26,130 --> 00:34:28,860
+bit away, you don't get gained
+this loop to loop maneuver to
+
+649
+00:34:28,860 --> 00:34:32,700
+make that feasible. You don't
+really want your robot doing a
+
+650
+00:34:32,700 --> 00:34:35,070
+loop de loop. So we check so we
+continue to march through the
+
+651
+00:34:35,070 --> 00:34:37,020
+path a few times until
+essentially that loop de loop
+
+652
+00:34:37,020 --> 00:34:40,230
+goes away. And that now be a
+shorter path, then that full
+
+653
+00:34:40,230 --> 00:34:41,040
+circular path
+
+654
+00:34:41,070 --> 00:34:44,670
+Audrow Nash: I'm thinking of if
+you have like a piece of thread
+
+655
+00:34:44,670 --> 00:34:48,270
+or something and you try to move
+it, you grab it in the middle
+
+656
+00:34:48,270 --> 00:34:50,670
+somewhere with two hands and
+then you move it close to each
+
+657
+00:34:50,670 --> 00:34:53,340
+other it'll do a loop and this
+is like your hands are the
+
+658
+00:34:53,340 --> 00:34:57,810
+points and it has to do a loop
+to go through both points. Yes
+
+659
+00:34:57,810 --> 00:34:58,350
+kind of thing.
+
+660
+00:34:58,830 --> 00:35:03,690
+Steve Macenski: So you Yeah,
+exactly. So we we, we don't just
+
+661
+00:35:03,690 --> 00:35:05,760
+just randomly marks through a
+bike five points or whatever,
+
+662
+00:35:05,760 --> 00:35:08,190
+there's, there's a more
+principled approach we use based
+
+663
+00:35:08,190 --> 00:35:11,010
+on on, you know, certainly the
+fact that we know that we build
+
+664
+00:35:11,040 --> 00:35:13,800
+is exactly a circle. And
+therefore we can we can select
+
+665
+00:35:13,890 --> 00:35:16,410
+interesting parts of the path
+based on that on that circle,
+
+666
+00:35:17,100 --> 00:35:20,880
+the quarter circle. And yeah,
+that that's how we constrain the
+
+667
+00:35:20,880 --> 00:35:23,970
+boundary conditions to be to be
+reasonable. And while that
+
+668
+00:35:23,970 --> 00:35:26,970
+sounds very, it sounds like a
+very naive approach to it, I
+
+669
+00:35:26,970 --> 00:35:30,120
+will say is very effective. And
+other things I did, which were
+
+670
+00:35:30,330 --> 00:35:33,450
+maybe a bit more principled, did
+not work nearly as well. So this
+
+671
+00:35:33,450 --> 00:35:35,820
+is the the solution, ultimately,
+we select strikes
+
+672
+00:35:35,820 --> 00:35:37,950
+Audrow Nash: me that that's
+often the way in robotics, where
+
+673
+00:35:37,950 --> 00:35:42,870
+it's like, this simple thing
+works really well, and is fast,
+
+674
+00:35:43,080 --> 00:35:47,970
+and solves most of the problems.
+Like a lot of our heuristics
+
+675
+00:35:47,970 --> 00:35:48,900
+seem to be this way.
+
+676
+00:35:51,510 --> 00:35:54,090
+Steve Macenski: Um, yeah, yeah.
+Yeah. I mean, yeah.
+
+677
+00:35:55,830 --> 00:35:58,410
+Audrow Nash: So yeah, I mean,
+there's obviously exceptions.
+
+678
+00:35:58,440 --> 00:36:01,560
+But I'm just amazed how far you
+can get with simple
+
+679
+00:36:01,860 --> 00:36:07,320
+representations for a lot of
+things. The so is this.
+
+680
+00:36:08,940 --> 00:36:13,020
+Actually, once you have your, so
+you have your grid world, in
+
+681
+00:36:13,020 --> 00:36:15,300
+your grid world, you use your
+motion primitives to kind of
+
+682
+00:36:15,300 --> 00:36:19,140
+explore it for to get from one
+cell to another, and then you
+
+683
+00:36:19,140 --> 00:36:24,690
+get this rough path that goes
+from start to end. And then once
+
+684
+00:36:24,690 --> 00:36:27,930
+you have that rough path with
+like crazy, if you're driving
+
+685
+00:36:27,930 --> 00:36:31,110
+like crazy, all the way left all
+the way, right turns, so it's
+
+686
+00:36:31,110 --> 00:36:35,160
+all jagged. Once you have that,
+then you run this smoothing
+
+687
+00:36:35,160 --> 00:36:39,060
+function on it, and the
+smoothing function is going to
+
+688
+00:36:40,350 --> 00:36:45,360
+smoother on it. And that's going
+to make it so that you have a
+
+689
+00:36:45,810 --> 00:36:50,940
+smoother path. And the clever
+thing about that is you look for
+
+690
+00:36:51,030 --> 00:36:54,600
+what makes the points the
+closest distance because that's
+
+691
+00:36:54,600 --> 00:36:59,580
+more likely the or that that is
+the more optimal solution.
+
+692
+00:37:01,230 --> 00:37:02,940
+Right? Is that correct?
+
+693
+00:37:03,570 --> 00:37:06,180
+Steve Macenski: Yeah. More or
+less? More or less? Yeah, don't
+
+694
+00:37:06,180 --> 00:37:08,760
+wait, don't wait. yet. Don't
+only crush important, Vic,
+
+695
+00:37:08,760 --> 00:37:11,940
+there's so when you get that
+path out from my brain star,
+
+696
+00:37:12,000 --> 00:37:15,420
+it's it's not nearly as this
+crazy thing as possible. Because
+
+697
+00:37:15,420 --> 00:37:17,880
+right, we're talking about this
+really small motion primitives.
+
+698
+00:37:17,940 --> 00:37:20,970
+So if one thing is it's a little
+tweak, tweak, you know, you
+
+699
+00:37:20,970 --> 00:37:23,190
+barely even notice it without a
+path when you have something
+
+700
+00:37:23,430 --> 00:37:23,940
+happening.
+
+701
+00:37:24,090 --> 00:37:26,280
+Audrow Nash: It's true. But if
+you had a robot, it would be
+
+702
+00:37:26,340 --> 00:37:29,070
+crazy. Like imagine being on a
+car that was following that one,
+
+703
+00:37:29,070 --> 00:37:31,830
+it would turn all the way left,
+then all the way right, to try
+
+704
+00:37:31,830 --> 00:37:34,920
+to do something crazy. So but
+
+705
+00:37:35,310 --> 00:37:37,020
+Steve Macenski: you also have
+like a local trajectory plan
+
+706
+00:37:37,020 --> 00:37:38,790
+that's processing, that
+information has to be smoothed
+
+707
+00:37:38,790 --> 00:37:42,870
+out yet. But before we get into
+that too much, the point I want
+
+708
+00:37:42,870 --> 00:37:46,890
+to make there was that, because
+they're small, they really don't
+
+709
+00:37:46,890 --> 00:37:49,590
+make that much of an impact it
+like super small, like like to
+
+710
+00:37:49,620 --> 00:37:52,050
+to grid cells wide, you know,
+kind of a
+
+711
+00:37:52,050 --> 00:37:55,290
+Audrow Nash: big grid. So we
+have an autonomous car. How big
+
+712
+00:37:55,290 --> 00:37:57,750
+is a grid cell? In this
+
+713
+00:37:58,590 --> 00:38:01,170
+Steve Macenski: application?
+Yeah, in my example, it's five
+
+714
+00:38:01,170 --> 00:38:03,990
+centimeters, so it'd be five and
+10 centimeters in size. Yeah, so
+
+715
+00:38:03,990 --> 00:38:09,720
+it's very small. And because
+we're we're working on with
+
+716
+00:38:09,750 --> 00:38:13,170
+optimal heuristics, it's not
+like we're like, here's the free
+
+717
+00:38:13,170 --> 00:38:15,660
+space, and we're Whoo, you're
+wobbling all over the place. So
+
+718
+00:38:15,750 --> 00:38:19,200
+it's very much like being driven
+towards that goal in a very
+
+719
+00:38:19,200 --> 00:38:22,590
+reasonable way. And so that
+output path is actually already
+
+720
+00:38:22,590 --> 00:38:25,320
+pretty, pretty smooth and pretty
+good looking. It's mostly just
+
+721
+00:38:25,320 --> 00:38:28,590
+like small discrete discrete
+planning errors that you're
+
+722
+00:38:28,590 --> 00:38:30,780
+dealing with, because we are
+working in this grid space, not
+
+723
+00:38:30,780 --> 00:38:35,520
+continuous coordinates notes. So
+that kind of feeds a little bit
+
+724
+00:38:35,520 --> 00:38:39,120
+to the heuristic functions that
+we're using here. So like I
+
+725
+00:38:39,120 --> 00:38:42,720
+said, we're able to simplify the
+smoother quite a bit, because we
+
+726
+00:38:42,750 --> 00:38:45,030
+made some changes internally to
+the planner for how the search
+
+727
+00:38:45,030 --> 00:38:50,490
+is performed. So that the two
+ways that we approach that is in
+
+728
+00:38:50,490 --> 00:38:53,310
+our traversal function, rather
+than just just looking at the
+
+729
+00:38:53,310 --> 00:38:57,600
+cost value, and the length of
+primitive, we also enter penalty
+
+730
+00:38:57,600 --> 00:39:00,780
+functions so that we penalize
+the path from making those
+
+731
+00:39:00,780 --> 00:39:05,610
+extreme turns that if it starts,
+if it starts to turn, we
+
+732
+00:39:05,610 --> 00:39:08,280
+penalize it stopping turning or
+penalizing, if it's going
+
+733
+00:39:08,280 --> 00:39:11,070
+straight, to start turning just
+a little bit, you know, a
+
+734
+00:39:11,070 --> 00:39:14,880
+percent 2%, you have something
+very small, which ends up making
+
+735
+00:39:14,880 --> 00:39:18,210
+us the things are quite a bit
+smoother on the output. And the
+
+736
+00:39:18,210 --> 00:39:20,910
+second thing we do is that
+rather than just using like a
+
+737
+00:39:20,910 --> 00:39:24,030
+distance heuristic to say, like,
+here's how far I here's my goal,
+
+738
+00:39:24,030 --> 00:39:27,270
+here I am, just just just
+compute the Euclidean distance
+
+739
+00:39:27,270 --> 00:39:29,970
+between those two points and use
+as a heuristic function.
+
+740
+00:39:30,240 --> 00:39:33,840
+Instead, we use to to
+heuristics, though take the
+
+741
+00:39:33,840 --> 00:39:37,140
+maximum on one is the actual
+length of the path that would
+
+742
+00:39:37,140 --> 00:39:42,060
+represent in Ackerman space. So
+we take using that same idea we
+
+743
+00:39:42,060 --> 00:39:43,950
+talked about with the analog
+expansions and the boundary
+
+744
+00:39:43,950 --> 00:39:47,010
+conditions, we take our current
+pose, our actual pose, we find
+
+745
+00:39:47,010 --> 00:39:50,070
+what that minimum curve would
+be. So we set the maximum value
+
+746
+00:39:50,220 --> 00:39:55,590
+and the value of a a new to this
+to this implementation that I'm
+
+747
+00:39:55,590 --> 00:40:00,510
+writing paper about actually
+early, where it takes to count
+
+748
+00:40:00,510 --> 00:40:03,270
+the obstacles within the space
+the same way the the Highbury
+
+749
+00:40:03,270 --> 00:40:06,030
+star has a similar heuristic.
+But it takes that into a cost
+
+750
+00:40:06,030 --> 00:40:09,570
+aware environmental
+representation. So rather than
+
+751
+00:40:09,750 --> 00:40:13,860
+the smoother having a cost
+function in it, that takes into
+
+752
+00:40:13,860 --> 00:40:16,260
+account the for noise diagram,
+which is similar to a potential
+
+753
+00:40:16,260 --> 00:40:20,490
+field, to smooth out the path
+away from obstacles, we have our
+
+754
+00:40:20,490 --> 00:40:23,400
+actual heuristic function that's
+driving the search take into
+
+755
+00:40:23,400 --> 00:40:26,520
+account the search or the cost.
+And during that process,
+
+756
+00:40:26,820 --> 00:40:28,650
+Audrow Nash: and the potential
+field, that's just a way of
+
+757
+00:40:28,650 --> 00:40:30,990
+keeping things away from
+something else, right, it
+
+758
+00:40:30,990 --> 00:40:34,950
+basically says Don't come close
+to this obstacle.
+
+759
+00:40:36,120 --> 00:40:38,730
+Steve Macenski: Is that true?
+Or? Yeah, yes, essentially.
+
+760
+00:40:38,730 --> 00:40:42,690
+Yeah. So so the NOI diagram is
+computing a potential field
+
+761
+00:40:42,780 --> 00:40:47,700
+where costs are high or low
+neuron schools and lower high in
+
+762
+00:40:47,700 --> 00:40:50,940
+the centers of Ioway spaces. So
+essentially, it finds these
+
+763
+00:40:50,940 --> 00:40:56,220
+like, is a graph of the centers.
+And the notes were, like spaces
+
+764
+00:40:56,220 --> 00:41:00,090
+like, you know, collide with
+each other. Which if you're
+
+765
+00:41:00,090 --> 00:41:02,370
+dealing with a stack
+environment, like if you're
+
+766
+00:41:02,370 --> 00:41:05,130
+dealing with, if you're planning
+on a map, that does not change
+
+767
+00:41:05,130 --> 00:41:08,220
+over time, like you might do an
+autonomous driving application,
+
+768
+00:41:08,370 --> 00:41:10,950
+that makes a lot of sense, your
+EQ compute that once super
+
+769
+00:41:10,950 --> 00:41:13,230
+efficient, knows exactly where
+things around the center works
+
+770
+00:41:13,230 --> 00:41:15,900
+over time. But when you're
+working with an environment,
+
+771
+00:41:15,930 --> 00:41:18,690
+mental representation that's
+changing constantly, there's a
+
+772
+00:41:18,690 --> 00:41:19,320
+bunch of data
+
+773
+00:41:19,920 --> 00:41:22,110
+Audrow Nash: around or something
+and you're driving a robot.
+
+774
+00:41:22,200 --> 00:41:22,950
+Yeah, okay.
+
+775
+00:41:23,880 --> 00:41:26,640
+Steve Macenski: Yeah, you have
+to, you have to compute that
+
+776
+00:41:26,640 --> 00:41:29,610
+every single iteration, which is
+super expensive, but we already
+
+777
+00:41:29,610 --> 00:41:32,100
+actually actually have potential
+fields that we're working with,
+
+778
+00:41:32,100 --> 00:41:34,680
+it's already pre computed as
+part of the inflation layer of
+
+779
+00:41:34,680 --> 00:41:37,500
+the navigation stack. So we
+actually use the potential field
+
+780
+00:41:37,500 --> 00:41:42,660
+computed from the inflation
+layer inflation to Yeah, so so
+
+781
+00:41:42,660 --> 00:41:48,000
+we inflate from from political
+obstacles, like like my couch
+
+782
+00:41:48,000 --> 00:41:53,190
+behind me, we're going to add a
+potential function off of that,
+
+783
+00:41:53,190 --> 00:41:56,370
+so that we have more cost, the
+closer you come in proximity to
+
+784
+00:41:56,370 --> 00:42:00,090
+that, that obstacle. And then,
+given the radius of your robot,
+
+785
+00:42:00,090 --> 00:42:04,140
+if it's a circular robot, we
+apply then a lethal ban of cost
+
+786
+00:42:04,140 --> 00:42:06,480
+in front of it so that, you
+know, if the robot would be
+
+787
+00:42:06,480 --> 00:42:09,210
+centered at that cell, the part
+of the edge might be heading
+
+788
+00:42:09,210 --> 00:42:13,320
+heading the couch. So because we
+have this this potential field
+
+789
+00:42:13,320 --> 00:42:16,500
+already computed, we can use
+that to drive the robot away.
+
+790
+00:42:16,920 --> 00:42:19,980
+The robot, the heuristic search
+away from the muscles just to be
+
+791
+00:42:19,980 --> 00:42:20,550
+guessing.
+
+792
+00:42:21,150 --> 00:42:25,920
+Audrow Nash: So you have because
+you have these, sorry, what did
+
+793
+00:42:25,920 --> 00:42:34,140
+you call them? What was the
+cost? Or was it the potential
+
+794
+00:42:34,140 --> 00:42:38,550
+fields? You have the potential
+fields, and you basically say,
+
+795
+00:42:38,790 --> 00:42:42,120
+this area, because it's static,
+we know we don't want to go near
+
+796
+00:42:42,210 --> 00:42:44,760
+and that one area will be
+defined? That's what you're
+
+797
+00:42:44,760 --> 00:42:45,150
+saying?
+
+798
+00:42:46,830 --> 00:42:49,560
+Steve Macenski: Yeah, yeah, we
+also apply that to, to new
+
+799
+00:42:49,560 --> 00:42:51,870
+obstacles to right people and
+stuff, you still want to run
+
+800
+00:42:51,870 --> 00:42:51,960
+out?
+
+801
+00:42:52,050 --> 00:42:56,400
+Audrow Nash: Yeah, for sure. And
+it's but it's similar, you can
+
+802
+00:42:56,400 --> 00:42:59,310
+use this kind of expensive
+computational, or this
+
+803
+00:42:59,310 --> 00:43:01,560
+computationally expensive
+representation for static
+
+804
+00:43:01,560 --> 00:43:04,860
+objects, but then a different
+one, that's not as expensive for
+
+805
+00:43:04,860 --> 00:43:05,910
+moving objects.
+
+806
+00:43:07,350 --> 00:43:10,950
+Steve Macenski: So the potential
+field that we use for an
+
+807
+00:43:10,950 --> 00:43:13,770
+inflation layer is very quick to
+update. So it's actually not
+
+808
+00:43:13,770 --> 00:43:16,380
+very computationally expensive
+at all. And that's why we use
+
+809
+00:43:16,380 --> 00:43:20,010
+that within within the, the
+planning for discipline,
+
+810
+00:43:20,040 --> 00:43:22,140
+rotation, and not not necessary
+what you do for autonomous
+
+811
+00:43:22,140 --> 00:43:27,120
+driving. Another reason why we
+do this, which is like heart,
+
+812
+00:43:27,150 --> 00:43:30,420
+it's a little subtle to explain,
+but so autonomous driving, in
+
+813
+00:43:30,420 --> 00:43:33,330
+general, you want to stay in the
+center of the lane, or you want
+
+814
+00:43:33,330 --> 00:43:36,090
+to stay in center of a space,
+which you are allowed to drive
+
+815
+00:43:36,090 --> 00:43:39,570
+to maintain maximum distance
+away from from everything else
+
+816
+00:43:39,570 --> 00:43:44,370
+around you, or Cynefin of your
+lane since. But in the case of
+
+817
+00:43:44,430 --> 00:43:47,430
+autonomous robotics, that's not
+always optimal. Like sometimes
+
+818
+00:43:47,430 --> 00:43:49,980
+you do want to do that, that
+that's really true. But a lot of
+
+819
+00:43:49,980 --> 00:43:53,250
+times, maybe you want the robot
+to hug, hug a shelf, so that
+
+820
+00:43:53,250 --> 00:43:55,290
+things could go in the opposite
+direction. If you're working in
+
+821
+00:43:55,290 --> 00:43:57,960
+the scene of a lot of robot
+systems, or there's just
+
+822
+00:43:57,960 --> 00:44:00,240
+different behaviors, you may
+want to have that curl in the
+
+823
+00:44:00,240 --> 00:44:03,750
+NASDAQ, we allow you to to,
+essentially by tuning that
+
+824
+00:44:03,750 --> 00:44:06,870
+inflation distribution on that
+inflation layer potential field.
+
+825
+00:44:07,020 --> 00:44:10,800
+And so basically, because we're
+using that information in the
+
+826
+00:44:10,800 --> 00:44:13,920
+planning itself, that means that
+your plants are going to
+
+827
+00:44:13,920 --> 00:44:17,670
+actually respect the tuning to
+have this the tune system
+
+828
+00:44:17,670 --> 00:44:21,060
+behavior you want to have based
+on the current the plantings
+
+829
+00:44:21,060 --> 00:44:23,940
+that you that uses that
+potential oil, so you're
+
+830
+00:44:23,940 --> 00:44:25,770
+actually getting more
+flexibility where you could
+
+831
+00:44:25,770 --> 00:44:28,380
+still define system to operate
+that way if you want to, but you
+
+832
+00:44:28,380 --> 00:44:29,400
+don't have to you can.
+
+833
+00:44:29,550 --> 00:44:32,550
+Audrow Nash: That's cool. How
+does what do you call it
+
+834
+00:44:32,550 --> 00:44:33,180
+inflation?
+
+835
+00:44:35,610 --> 00:44:39,300
+Steve Macenski: So essentially,
+it's inflating the cause static
+
+836
+00:44:39,300 --> 00:44:41,520
+obstacles or dynamic offices in
+the city. Yeah, inflates the
+
+837
+00:44:41,520 --> 00:44:44,340
+cost. And in the the grid map
+representation.
+
+838
+00:44:44,340 --> 00:44:46,470
+Audrow Nash: I was thinking
+inflation like in the economy or
+
+839
+00:44:46,470 --> 00:44:49,170
+something and it's like, I don't
+I don't get the map. Okay, okay.
+
+840
+00:44:49,170 --> 00:44:51,480
+It's inflating the cost, it's
+making it larger.
+
+841
+00:44:53,070 --> 00:44:54,990
+Steve Macenski: Another way of
+thinking about it is risk which
+
+842
+00:44:54,990 --> 00:44:57,330
+I think is really the the proper
+term I should be using here.
+
+843
+00:44:57,330 --> 00:45:01,770
+It's it's the risk that look
+Let's say that the race is cool.
+
+844
+00:45:01,830 --> 00:45:05,340
+Audrow Nash: Okay. And then so
+when you are driving the right
+
+845
+00:45:05,340 --> 00:45:09,180
+when you are planning, what
+you'll do is at each location,
+
+846
+00:45:09,180 --> 00:45:13,890
+you evaluate it for its
+potential and or for it for
+
+847
+00:45:13,890 --> 00:45:17,880
+like, how good if the how good
+is the position? And one of
+
+848
+00:45:17,880 --> 00:45:21,420
+these things that you take into
+consideration after being like,
+
+849
+00:45:21,420 --> 00:45:24,540
+is this valid or not, is the
+risk. And so if you want to
+
+850
+00:45:24,540 --> 00:45:29,670
+minimize the risk, then this is
+used in your priority queue that
+
+851
+00:45:29,670 --> 00:45:33,450
+you mentioned to to sample more
+feasible and lower risk
+
+852
+00:45:33,480 --> 00:45:34,320
+locations.
+
+853
+00:45:35,850 --> 00:45:38,550
+Steve Macenski: Yeah, and that's
+another fancy function that has
+
+854
+00:45:38,580 --> 00:45:40,860
+that can be tuned. So right, you
+can you can sense that. So I'm
+
+855
+00:45:40,860 --> 00:45:42,990
+super sensitive to risk. And so
+I always want to stay in the
+
+856
+00:45:42,990 --> 00:45:45,030
+center of aisles, that that's
+really important to me. So you
+
+857
+00:45:45,030 --> 00:45:47,400
+can say, you know, I mean,
+obviously, nothing would ever
+
+858
+00:45:47,400 --> 00:45:49,710
+give you a diversity inclusion
+path, because that that's
+
+859
+00:45:49,710 --> 00:45:52,290
+invalid, or they're always going
+to be valid. They can say that
+
+860
+00:45:52,290 --> 00:45:55,710
+maybe like, oh, yeah, I'm okay
+if it if it's a little closer
+
+861
+00:45:55,710 --> 00:45:58,200
+obstacles, because I want to be
+able to, like, you know, hug a
+
+862
+00:45:58,200 --> 00:46:01,140
+wall or hug a shelf or
+something, for instance. So
+
+863
+00:46:01,140 --> 00:46:03,450
+these are all all tuple
+behaviors you have access to,
+
+864
+00:46:03,630 --> 00:46:06,630
+because we're using the cost
+information in the search
+
+865
+00:46:06,630 --> 00:46:10,080
+itself. And using the inflation
+layer to kind of see that based
+
+866
+00:46:10,080 --> 00:46:12,090
+on the behavior of the robot
+system, you wanna you want to
+
+867
+00:46:12,090 --> 00:46:12,570
+how does
+
+868
+00:46:12,600 --> 00:46:16,380
+Audrow Nash: how does this work?
+Is this only true of known maps?
+
+869
+00:46:16,410 --> 00:46:20,010
+So if I have a known cost map,
+then I can use these? Or is it
+
+870
+00:46:20,010 --> 00:46:26,280
+is the ability to tune inflation
+or risk of things? Is it
+
+871
+00:46:26,310 --> 00:46:29,640
+something that I can do as I am
+building a map of the
+
+872
+00:46:29,640 --> 00:46:30,450
+environment?
+
+873
+00:46:32,160 --> 00:46:33,510
+Steve Macenski: That's a good
+question. Um,
+
+874
+00:46:34,020 --> 00:46:35,790
+Audrow Nash: maybe you have,
+like heuristics for features of
+
+875
+00:46:35,790 --> 00:46:36,840
+the environment? Yeah.
+
+876
+00:46:38,310 --> 00:46:40,440
+Steve Macenski: Yeah, I mean,
+both, I think I mean, if you
+
+877
+00:46:40,440 --> 00:46:43,860
+have some, I mean, if you if you
+blindfold me, and then kidnapped
+
+878
+00:46:43,860 --> 00:46:46,470
+me and throw me somewhere and
+say, Build me a map, and like,
+
+879
+00:46:46,470 --> 00:46:48,600
+choose some parameters, right?
+Like there are there is a
+
+880
+00:46:48,600 --> 00:46:50,850
+reasonable band of parameters
+space that you can, you can
+
+881
+00:46:50,850 --> 00:46:53,730
+select, and you know, if you're
+in narrow spaces might be better
+
+882
+00:46:53,730 --> 00:46:56,730
+parameters than if you're a
+super wide open spaces. So if I
+
+883
+00:46:56,730 --> 00:46:59,550
+do nothing, it's like, right,
+yeah, I couldn't tell you. But
+
+884
+00:46:59,610 --> 00:47:02,250
+usually, when you deploy a
+robot, you have some general
+
+885
+00:47:02,250 --> 00:47:03,240
+understanding that kind of
+
+886
+00:47:03,600 --> 00:47:06,060
+Audrow Nash: working so you can
+parameterize it based on
+
+887
+00:47:06,060 --> 00:47:08,760
+heuristics about what you know
+about the space, if it's very
+
+888
+00:47:08,760 --> 00:47:11,730
+open, or if it's very tight, you
+might set parameters differently
+
+889
+00:47:11,730 --> 00:47:18,480
+that would change how these how
+the inflation of the costs map
+
+890
+00:47:18,810 --> 00:47:23,160
+is generated? Yeah. Yeah. Can
+you tell me a bit about the
+
+891
+00:47:23,160 --> 00:47:24,990
+priority queue? I think that's
+really interesting.
+
+892
+00:47:27,180 --> 00:47:28,650
+Steve Macenski: I mean, that's
+just a that's just part of a
+
+893
+00:47:28,650 --> 00:47:32,610
+star. Right. So I think that
+that's, I haven't any, any
+
+894
+00:47:32,610 --> 00:47:35,040
+resource talking about here. So
+search would would explain it
+
+895
+00:47:35,370 --> 00:47:36,870
+more articulately than I
+wouldn't the moment.
+
+896
+00:47:37,110 --> 00:47:39,270
+Audrow Nash: Gotcha. Actually.
+Yeah, I guess you're right, that
+
+897
+00:47:39,270 --> 00:47:42,420
+it is just a normal thing of a
+star because you're only
+
+898
+00:47:42,420 --> 00:47:46,020
+searching a subset on your way
+to the solution, a subset of
+
+899
+00:47:46,020 --> 00:47:50,850
+possible options. until
+hopefully, your or your
+
+900
+00:47:50,850 --> 00:47:51,420
+solution.
+
+901
+00:47:51,809 --> 00:47:52,949
+Steve Macenski: Actually,
+there's other ways of
+
+902
+00:47:52,949 --> 00:47:55,289
+implementing it as well. That's
+just at least to me, that was
+
+903
+00:47:55,289 --> 00:47:57,299
+just my knee jerk reaction
+thing, I have to do this thing.
+
+904
+00:47:57,329 --> 00:48:00,689
+All right, I need to sort by
+lowest cost, then oh, ergo,
+
+905
+00:48:00,689 --> 00:48:03,359
+prior to me. So easy. But
+
+906
+00:48:03,840 --> 00:48:07,740
+Audrow Nash: so then, for you to
+once you have this path that
+
+907
+00:48:07,740 --> 00:48:10,500
+started as kind, of course, but
+I guess the grid cells are so
+
+908
+00:48:10,500 --> 00:48:16,020
+small, that they it's not that
+course, I guess, or it's not
+
+909
+00:48:16,020 --> 00:48:20,370
+that jerky. But you have this
+you perform smoothing on it. And
+
+910
+00:48:20,400 --> 00:48:23,910
+then you map it to motion from
+or you match it, map it to
+
+911
+00:48:23,910 --> 00:48:27,060
+velocities? Do you get this kind
+of for free with the motion
+
+912
+00:48:27,060 --> 00:48:31,800
+primitives? Or how do you relate
+your path to motion to like the
+
+913
+00:48:31,800 --> 00:48:34,110
+velocities that each of the
+wheels should go?
+
+914
+00:48:35,730 --> 00:48:39,510
+Steve Macenski: Yeah, so we
+have, that's where the the local
+
+915
+00:48:39,720 --> 00:48:42,600
+trajectory planning also
+referred to as the controllers
+
+916
+00:48:42,600 --> 00:48:46,830
+within the Neptune ecosystem,
+kind of kind of operate. So we
+
+917
+00:48:46,830 --> 00:48:49,860
+use as referred to as the hyper
+planning scheme, which which
+
+918
+00:48:49,860 --> 00:48:53,250
+move it has recently started to
+migrate over to as well. But
+
+919
+00:48:53,250 --> 00:48:56,040
+this has been a built in feature
+of the nav navigation stack
+
+920
+00:48:56,040 --> 00:49:00,720
+since the very beginning. So we
+separate the concerns of
+
+921
+00:49:01,110 --> 00:49:04,980
+building a route from where we
+are to where we want to go, we
+
+922
+00:49:04,980 --> 00:49:06,960
+separate that from the process
+of saying, Okay, how do we
+
+923
+00:49:06,960 --> 00:49:10,200
+follow that path? And so the
+follow the path part is where we
+
+924
+00:49:10,200 --> 00:49:12,900
+take that path that currently
+exists and we say how do I
+
+925
+00:49:12,900 --> 00:49:15,630
+generate a trajectory? Which the
+difference between a path and a
+
+926
+00:49:15,630 --> 00:49:19,740
+trajectory is the philosophy and
+or acceleration and or jerk and
+
+927
+00:49:19,740 --> 00:49:22,470
+or other derivative information
+about the dynamics
+
+928
+00:49:22,650 --> 00:49:26,250
+Audrow Nash: that's interesting
+involved? So I wonder if you
+
+929
+00:49:26,250 --> 00:49:29,700
+were traveling like really fast
+might have changed the path that
+
+930
+00:49:29,700 --> 00:49:32,400
+you were able to take more
+things like this like is this
+
+931
+00:49:32,400 --> 00:49:36,120
+concern is it always fair that
+you can divorce the two
+
+932
+00:49:38,730 --> 00:49:43,830
+Steve Macenski: I'm in I mean it
+can you can you always know
+
+933
+00:49:43,830 --> 00:49:46,620
+anything all the time? No. So
+yeah, there's gonna be some sort
+
+934
+00:49:46,620 --> 00:49:50,130
+of like weird edge cases, or
+Yeah, like, but generally
+
+935
+00:49:50,130 --> 00:49:54,420
+speaking for a reasonable mobile
+robot system that that that's
+
+936
+00:49:54,420 --> 00:49:57,990
+gonna be a valid way of
+operating. I while I'm not an
+
+937
+00:49:57,990 --> 00:50:00,600
+expert in the autonomous driving
+space miners Sending of what
+
+938
+00:50:00,600 --> 00:50:04,590
+they do is primarily large scale
+route planning. So rather than
+
+939
+00:50:04,590 --> 00:50:08,250
+having like a path, like we have
+when we have like, you know,
+
+940
+00:50:08,250 --> 00:50:11,040
+doing the grid search, they have
+like as far saying, like, go to
+
+941
+00:50:11,040 --> 00:50:13,620
+this intersection turn left, and
+then you know, go straight and
+
+942
+00:50:13,620 --> 00:50:16,170
+for a long time, then do turn,
+right, whatever. And these are
+
+943
+00:50:16,170 --> 00:50:18,780
+just basically like, like event
+markers for when it changed
+
+944
+00:50:18,780 --> 00:50:21,450
+during doing your events. And
+you have your local trajectory
+
+945
+00:50:21,450 --> 00:50:24,540
+planner, which are computing,
+like the how do I like stay in
+
+946
+00:50:24,540 --> 00:50:27,240
+my lane? Or how do I pass a car?
+So I can meet that route and
+
+947
+00:50:27,240 --> 00:50:29,040
+given need? So there is no like
+
+948
+00:50:29,070 --> 00:50:30,750
+Audrow Nash: path planning half
+person?
+
+949
+00:50:33,360 --> 00:50:36,090
+Steve Macenski: Yeah, exactly.
+So in that situation, then you
+
+950
+00:50:36,090 --> 00:50:39,750
+basically only have the velocity
+planner in that local time, per
+
+951
+00:50:39,750 --> 00:50:44,790
+se, you don't have the goal path
+planner at all. So it doesn't
+
+952
+00:50:44,790 --> 00:50:47,670
+always even make sense. Even
+have even even had the concept
+
+953
+00:50:47,670 --> 00:50:50,880
+of a long term, you know, path
+at all, that there are
+
+954
+00:50:50,880 --> 00:50:53,190
+situations where, especially if
+during doing district waypoint
+
+955
+00:50:53,190 --> 00:50:54,180
+following that you start
+
+956
+00:50:54,180 --> 00:50:58,650
+Audrow Nash: to so let's see, I
+want to get to that in a little
+
+957
+00:50:58,650 --> 00:51:02,820
+bit. Because that's interest, I
+guess, when. So when is path
+
+958
+00:51:02,820 --> 00:51:07,710
+planning most useful? I suppose,
+like when when do you really
+
+959
+00:51:07,710 --> 00:51:10,950
+need it rather than just kind of
+waypoint planning? I guess
+
+960
+00:51:10,950 --> 00:51:13,170
+anytime you're using web point,
+waypoints, you have to get from
+
+961
+00:51:13,170 --> 00:51:15,300
+waypoint to waypoint. And so
+then you have to do path
+
+962
+00:51:15,300 --> 00:51:19,530
+planning? Or how do you think of
+it? Yeah,
+
+963
+00:51:19,650 --> 00:51:21,360
+Steve Macenski: it's good
+question. I guess I haven't
+
+964
+00:51:21,360 --> 00:51:23,100
+thought about in those terms
+before, I guess, I think it
+
+965
+00:51:23,100 --> 00:51:27,360
+usually like certain classes
+application. So help, like,
+
+966
+00:51:28,380 --> 00:51:33,900
+navigating around like, hey,
+means it doesn't matter what
+
+967
+00:51:33,900 --> 00:51:36,750
+you're going for, I guess, if
+you have like an A last mile
+
+968
+00:51:36,750 --> 00:51:39,870
+delivery application, where it's
+like, you know, somewhat analog
+
+969
+00:51:39,870 --> 00:51:42,480
+to autonomous driving system,
+where you have just a such
+
+970
+00:51:42,480 --> 00:51:45,180
+insanely large environment, it
+just doesn't really make sense
+
+971
+00:51:45,180 --> 00:51:48,930
+to have to dynamically plan from
+point A to point D, that's like
+
+972
+00:51:48,960 --> 00:51:53,880
+70 miles away, or whatever, you
+know, you, you, you're seven,
+
+973
+00:51:53,910 --> 00:51:55,650
+wherever it's somebody is a
+little crazy, let's say seven
+
+974
+00:51:55,650 --> 00:52:01,290
+miles away, are going on
+sidewalks. And so you might want
+
+975
+00:52:01,290 --> 00:52:04,560
+to do some more thing where you
+have some, you know, Google Maps
+
+976
+00:52:04,560 --> 00:52:07,860
+data, or OpenStreetMap data to
+say, here are the intersections
+
+977
+00:52:07,860 --> 00:52:10,590
+and we're going through a sparse
+route based on on intersection
+
+978
+00:52:10,590 --> 00:52:13,800
+information. And then you're
+basically just locally just
+
+979
+00:52:13,800 --> 00:52:16,440
+saying, Go Go towards the
+intersection, stay on the
+
+980
+00:52:16,440 --> 00:52:19,290
+sidewalk, dynamically go route
+things, and you don't really
+
+981
+00:52:19,290 --> 00:52:25,230
+need a depth path between those
+two spaces. So A, but then if
+
+982
+00:52:25,230 --> 00:52:28,230
+you're working in like a
+warehouse space, the two kinds
+
+983
+00:52:28,230 --> 00:52:32,040
+of things you could do is also
+have like way points on critical
+
+984
+00:52:32,040 --> 00:52:34,770
+points at the end of aisle ways,
+or whatever, and have a sparse
+
+985
+00:52:34,770 --> 00:52:37,200
+route going going between them.
+But then you can also do a
+
+986
+00:52:37,200 --> 00:52:41,310
+dense, you know, waypoint or a
+dense path planning methodology
+
+987
+00:52:41,460 --> 00:52:43,860
+to be able to dynamically go
+around a lot of a lot of areas,
+
+988
+00:52:43,860 --> 00:52:45,960
+and I think it just kind of
+depends on what kind of robot
+
+989
+00:52:45,960 --> 00:52:49,590
+behavior you're looking for, you
+know, largely static, staying in
+
+990
+00:52:49,590 --> 00:52:52,530
+these lanes, staying in the
+straight lines, or being more
+
+991
+00:52:52,530 --> 00:52:55,860
+dynamic and able to, you know,
+navigate free space more
+
+992
+00:52:55,860 --> 00:52:56,490
+flexibly
+
+993
+00:52:57,570 --> 00:53:00,330
+Audrow Nash: Stacia, and then
+going back through getting the
+
+994
+00:53:00,420 --> 00:53:06,450
+so you separate out the planning
+of the path to from planning the
+
+995
+00:53:06,480 --> 00:53:08,610
+velocity commands you were
+talking about.
+
+996
+00:53:10,710 --> 00:53:13,530
+Steve Macenski: Yeah, so So this
+is all kind of like the
+
+997
+00:53:13,590 --> 00:53:17,490
+preferred is like, like hybrid
+planning, which, which is this
+
+998
+00:53:17,490 --> 00:53:21,330
+technique of of splitting these
+things apart. So then within
+
+999
+00:53:21,360 --> 00:53:24,630
+within the NASDAQ, we have
+several different options for
+
+1000
+00:53:24,660 --> 00:53:27,750
+local trajectory planners within
+take that path planner, output
+
+1001
+00:53:27,780 --> 00:53:30,450
+of the of the just the kinematic
+plan up, here are some points I
+
+1002
+00:53:30,450 --> 00:53:33,930
+want you to follow and convert
+that into that velocity commands
+
+1003
+00:53:33,930 --> 00:53:37,800
+the motor, the most, the most
+simple to explain is probably
+
+1004
+00:53:37,800 --> 00:53:41,070
+the regularly pursue controller
+that we currently have, which is
+
+1005
+00:53:41,100 --> 00:53:45,150
+new to NAV two, not available.
+And last one. And without do
+
+1006
+00:53:45,150 --> 00:53:49,110
+essentially, is pick a point on
+the path, that's a at least a
+
+1007
+00:53:49,110 --> 00:53:51,720
+certain distance away, maybe up
+to a maximum distance away, it
+
+1008
+00:53:51,720 --> 00:53:53,790
+could dynamically change
+depending on the robot speed for
+
+1009
+00:53:53,790 --> 00:53:58,290
+stability reasons. So talks at
+some point on the path and says,
+
+1010
+00:53:58,710 --> 00:54:02,550
+What is the curvature required
+for me to if I were to pick one
+
+1011
+00:54:02,550 --> 00:54:06,510
+Velocity Command to drive that
+to hit that point exactly on the
+
+1012
+00:54:06,510 --> 00:54:11,100
+dot, and then if I curvature,
+from a curvature in your current
+
+1013
+00:54:11,100 --> 00:54:14,310
+position, you can then back out
+what the velocities do need to
+
+1014
+00:54:14,310 --> 00:54:17,940
+apply in order to achieve that
+command. And then so you say,
+
+1015
+00:54:17,940 --> 00:54:21,450
+okay, robot, do this drive this
+this direction, you know,
+
+1016
+00:54:21,450 --> 00:54:24,840
+awesome start point on the path.
+And then the next iteration,
+
+1017
+00:54:25,530 --> 00:54:29,430
+let's say, you know, one 100 of
+a second later or 120 of a
+
+1018
+00:54:29,430 --> 00:54:33,180
+second later, you you say okay,
+well now what now what point of
+
+1019
+00:54:33,180 --> 00:54:35,250
+the path am I interested in and
+you do the exact same process
+
+1020
+00:54:35,250 --> 00:54:38,190
+over and over and over again.
+And as you're driving forward
+
+1021
+00:54:38,190 --> 00:54:40,860
+towards that goal, that goal is
+constantly changed on you see,
+
+1022
+00:54:40,860 --> 00:54:44,130
+are essentially following this
+carrot over over time. So that
+
+1023
+00:54:44,130 --> 00:54:46,980
+that's, that's that's one very
+simplistic way to convert your
+
+1024
+00:54:46,980 --> 00:54:50,070
+path into philosophy commands,
+then for your lower level of
+
+1025
+00:54:50,070 --> 00:54:53,280
+Tronic motor controllers to use
+a PID controller or whatever to
+
+1026
+00:54:53,280 --> 00:54:54,900
+convert into voltages,
+
+1027
+00:54:55,260 --> 00:55:00,750
+Audrow Nash: not just a current
+or whatever. There was a So how
+
+1028
+00:55:00,750 --> 00:55:05,100
+do you? How does it have to work
+with it? We talked a little bit
+
+1029
+00:55:05,100 --> 00:55:12,150
+about potential functions for
+the inflation. But how does it
+
+1030
+00:55:12,150 --> 00:55:17,220
+work with a bunch of people
+walking around or constantly
+
+1031
+00:55:17,220 --> 00:55:23,460
+changing environments? Just re
+computed all this? How do you?
+
+1032
+00:55:23,910 --> 00:55:25,980
+How do you think of it? Yes,
+this
+
+1033
+00:55:26,340 --> 00:55:27,810
+Steve Macenski: sort of the
+sensor data is really important
+
+1034
+00:55:27,810 --> 00:55:30,210
+so that you have information
+about what's now changed the
+
+1035
+00:55:30,210 --> 00:55:33,720
+world. And once you have that,
+that information, you can input
+
+1036
+00:55:33,720 --> 00:55:36,420
+that into cost map. So this
+might be from sensors like
+
+1037
+00:55:36,450 --> 00:55:41,160
+sonars, or RGB cameras provide
+you depth maps are going to give
+
+1038
+00:55:41,160 --> 00:55:46,530
+you points as well as color
+information, or 2d LIDAR. So for
+
+1039
+00:55:46,530 --> 00:55:49,680
+the vast majority of things,
+navigation to operate on a box
+
+1040
+00:55:49,680 --> 00:55:52,890
+with primarily depth, depth
+values, it wants to know where
+
+1041
+00:55:52,890 --> 00:55:56,010
+this thing is relative to a
+sensor frame. With that said,
+
+1042
+00:55:56,040 --> 00:55:59,820
+it's not hard to integrate
+modern AI techniques into as
+
+1043
+00:55:59,820 --> 00:56:03,090
+well we have plugin interfaces.
+So this is all possible on the
+
+1044
+00:56:03,090 --> 00:56:06,690
+sun as well. But once we have
+this dense information, we have
+
+1045
+00:56:06,690 --> 00:56:10,560
+input that into our into our
+grid map representation. And
+
+1046
+00:56:10,560 --> 00:56:14,220
+when we say that we had a sensor
+reading, hit hit a person is
+
+1047
+00:56:14,220 --> 00:56:17,520
+walking, we can say, okay,
+there's something here and put
+
+1048
+00:56:17,520 --> 00:56:20,640
+that into the grid map as a
+lethal obstacle. And then we can
+
+1049
+00:56:20,640 --> 00:56:23,940
+inflate then our cost map with
+with that inflation layer we
+
+1050
+00:56:23,940 --> 00:56:26,160
+talked about, which adds that
+potential function to it. So
+
+1051
+00:56:26,160 --> 00:56:29,040
+then the next cycle, when we
+want to compute a path plan
+
+1052
+00:56:29,160 --> 00:56:31,890
+that's now represented in our
+environment, and it can navigate
+
+1053
+00:56:31,890 --> 00:56:34,980
+around it, then most of these
+algorithms have clearing
+
+1054
+00:56:34,980 --> 00:56:38,610
+mechanisms so that once this
+this obstacle is gone for the
+
+1055
+00:56:38,610 --> 00:56:42,090
+scene, then we can we can clear
+it out use a ray casting from
+
+1056
+00:56:42,090 --> 00:56:45,330
+the sensor to that to a clearing
+measurement. So basically a
+
+1057
+00:56:45,330 --> 00:56:47,820
+measurement of nothing, right?
+If you don't see it anymore,
+
+1058
+00:56:47,820 --> 00:56:51,510
+it's therefore gone. So you can
+raycast from the sensor frame to
+
+1059
+00:56:51,510 --> 00:56:55,020
+that to that point, and clear
+out any cells in the middle is
+
+1060
+00:56:55,020 --> 00:56:58,200
+clearly these are going to be
+unoccupied. If you're able to
+
+1061
+00:56:58,200 --> 00:57:00,450
+view something much further away
+everything between that
+
+1062
+00:57:00,450 --> 00:57:04,740
+measurement and okay, it's
+clear, which then removes that
+
+1063
+00:57:04,740 --> 00:57:07,020
+lethal obstacle, which then
+removes that inflation
+
+1064
+00:57:07,050 --> 00:57:10,320
+perspective. So the next time
+you plan it updates in those
+
+1065
+00:57:10,320 --> 00:57:10,530
+days are
+
+1066
+00:57:10,530 --> 00:57:13,440
+Audrow Nash: gone. Gotcha. So is
+the general way that you run
+
+1067
+00:57:13,440 --> 00:57:17,040
+this, you run it over and over
+again, and constantly are
+
+1068
+00:57:17,040 --> 00:57:18,180
+planning and replanting?
+
+1069
+00:57:20,550 --> 00:57:22,680
+Steve Macenski: Yeah, you don't
+have to. But that that is that
+
+1070
+00:57:22,680 --> 00:57:25,590
+is a that is the default
+behavior. Currently, I'm
+
+1071
+00:57:25,590 --> 00:57:27,660
+actually there's some pull
+requests open. And I'm working
+
+1072
+00:57:27,660 --> 00:57:29,940
+with some folks to kind of
+refine the behavior additionally
+
+1073
+00:57:29,940 --> 00:57:33,840
+to remove some some oscillation
+behaviors that can sometimes
+
+1074
+00:57:33,840 --> 00:57:36,750
+exist in that situation. But
+essentially, yeah, every one
+
+1075
+00:57:36,750 --> 00:57:39,840
+second or so we're computing a
+new new path given the new
+
+1076
+00:57:39,840 --> 00:57:42,840
+representation of the
+environment. But this is where
+
+1077
+00:57:42,870 --> 00:57:45,690
+the, the way that naturally
+structured differently from the
+
+1078
+00:57:45,690 --> 00:57:48,750
+navigation stack starts to
+really be helpful is that we're
+
+1079
+00:57:48,750 --> 00:57:51,330
+using behavior trees to
+orchestrate these different
+
+1080
+00:57:51,330 --> 00:57:53,820
+capabilities. So the
+environmental or non
+
+1081
+00:57:53,850 --> 00:57:57,780
+governmental is with the the
+planner, the behaviors that
+
+1082
+00:57:57,780 --> 00:58:00,660
+control the local Treasury
+controllers, these things are
+
+1083
+00:58:00,660 --> 00:58:06,480
+all controlled by a central
+system to control the flow of
+
+1084
+00:58:06,480 --> 00:58:10,380
+data so that we can manipulate
+how the navigation system is
+
+1085
+00:58:10,380 --> 00:58:13,290
+operating. So this is done
+through what's referred to as a
+
+1086
+00:58:13,290 --> 00:58:16,890
+paper tree. And I definitely
+recommend reading more about
+
+1087
+00:58:16,890 --> 00:58:19,710
+that, then I'm going to describe
+it in less than an hour.
+
+1088
+00:58:21,480 --> 00:58:23,040
+Audrow Nash: Like, yeah,
+imagine.
+
+1089
+00:58:24,300 --> 00:58:26,340
+Steve Macenski: Yeah, so imagine
+you had like a tree like
+
+1090
+00:58:26,340 --> 00:58:31,500
+structure like you might find in
+a computer science. Course. And
+
+1091
+00:58:31,560 --> 00:58:33,840
+if you have a computer science
+background, I'm sorry, read a
+
+1092
+00:58:33,840 --> 00:58:38,100
+book about it. That can't go any
+any any less detail than that.
+
+1093
+00:58:38,250 --> 00:58:39,900
+I've heard so good to have
+
+1094
+00:58:39,930 --> 00:58:43,230
+Audrow Nash: these. I've heard
+good, differently, like video
+
+1095
+00:58:43,230 --> 00:58:47,130
+games often use it. And the
+behavior seems kind of it's like
+
+1096
+00:58:47,130 --> 00:58:53,310
+fallback conditions. So like, if
+you want to get into a house, a
+
+1097
+00:58:53,310 --> 00:58:56,610
+behavior tree, you might say,
+first try the door. And then if
+
+1098
+00:58:56,610 --> 00:59:01,260
+that fails, you fall back to do
+I have keys. And if that fails,
+
+1099
+00:59:01,290 --> 00:59:05,610
+then you see if you can knock
+and if that fails, no one comes
+
+1100
+00:59:05,640 --> 00:59:09,120
+then you break the window. And
+like this kind of thing, where
+
+1101
+00:59:09,120 --> 00:59:11,820
+it's fall back, fall back, fall
+back fall back all structured by
+
+1102
+00:59:11,820 --> 00:59:17,610
+the I want to get into the house
+thing, or Yeah, yeah, I think
+
+1103
+00:59:17,610 --> 00:59:19,560
+Steve Macenski: that that's
+that's one of the primitives you
+
+1104
+00:59:19,620 --> 00:59:22,740
+work with. Yeah, fallback node
+sequence nodes are kinda too too
+
+1105
+00:59:22,740 --> 00:59:25,260
+big control flow types, they can
+also define other types with
+
+1106
+00:59:25,260 --> 00:59:29,340
+more more use case specific
+here, but essentially, this this
+
+1107
+00:59:29,340 --> 00:59:34,530
+is this is all modeled as a
+giant tree. So you have like a
+
+1108
+00:59:34,560 --> 00:59:37,020
+root node, which then has
+different branches to it, which
+
+1109
+00:59:37,020 --> 00:59:39,510
+then have our own node for
+branches to it with different
+
+1110
+00:59:39,870 --> 00:59:43,350
+methodologies for controlling
+the flow of data between are
+
+1111
+00:59:43,350 --> 00:59:46,920
+sort of controlling the flow of
+the nodes execution model by
+
+1112
+00:59:46,950 --> 00:59:50,100
+these different fallback or
+sequence controller nodes until
+
+1113
+00:59:50,100 --> 00:59:53,460
+you reach your leaf conditions,
+which are leaf actions, which
+
+1114
+00:59:53,490 --> 00:59:56,910
+then are you know, do something
+or do something valuable thing,
+
+1115
+00:59:57,030 --> 01:00:00,810
+okay. Yeah. And so all the
+navigation behavior is then
+
+1116
+01:00:00,810 --> 01:00:03,120
+defined through these behavior
+trees, which then can be
+
+1117
+01:00:03,150 --> 01:00:06,030
+reconfigured to do different
+things for you. So, if you don't
+
+1118
+01:00:06,030 --> 01:00:08,280
+want to replant every second,
+you can replant every 10
+
+1119
+01:00:08,280 --> 01:00:10,950
+seconds. If you don't want to
+replant ever, you can have a so
+
+1120
+01:00:10,950 --> 01:00:14,550
+that you use only one sack path.
+If you'd like to replan only
+
+1121
+01:00:14,550 --> 01:00:17,550
+when that current path isn't
+valid, you can also do that as
+
+1122
+01:00:17,550 --> 01:00:20,640
+well. And these things are all
+really easy to implement. These
+
+1123
+01:00:20,640 --> 01:00:22,380
+are all through plugin
+interfaces, so you don't even
+
+1124
+01:00:22,380 --> 01:00:24,690
+need to fork and have to, you
+just need to implement your own
+
+1125
+01:00:24,690 --> 01:00:27,060
+custom plugins. And then, you
+know, run your own custom
+
+1126
+01:00:27,060 --> 01:00:30,120
+behavior tree model, and you
+still use the available binaries
+
+1127
+01:00:30,120 --> 01:00:34,410
+from apt to, we try to make it
+as simple as possible. We offer
+
+1128
+01:00:34,440 --> 01:00:36,960
+significant documentation about
+this because we understand this
+
+1129
+01:00:36,960 --> 01:00:39,750
+gonna be a new concept with
+users, where we can't talk about
+
+1130
+01:00:39,780 --> 01:00:42,210
+what our paid for three is, why
+should you care? Where's the
+
+1131
+01:00:42,210 --> 01:00:45,120
+node to give you access to why
+should you care? What are some
+
+1132
+01:00:45,120 --> 01:00:48,390
+of the examples behavior trees
+we offer you? Why do you care?
+
+1133
+01:00:48,480 --> 01:00:51,060
+And then what is our what is the
+default behavior and then
+
+1134
+01:00:51,060 --> 01:00:57,270
+walking you through exactly how
+the input or the the execution
+
+1135
+01:00:57,270 --> 01:01:00,510
+model of that behavior tree goes
+through on tick by tick basis,
+
+1136
+01:01:00,510 --> 01:01:02,730
+you can have a reasonable
+understanding about how the
+
+1137
+01:01:02,730 --> 01:01:03,870
+current behavior acts.
+
+1138
+01:01:04,350 --> 01:01:07,770
+Audrow Nash: And so this helps
+your program figure out what it
+
+1139
+01:01:07,770 --> 01:01:13,500
+should do when by finding
+certain events? Or how does it
+
+1140
+01:01:14,850 --> 01:01:18,450
+like if I if I have, say, we
+have a simple example of a robot
+
+1141
+01:01:18,450 --> 01:01:22,680
+getting from one position to
+another, and a human gets in the
+
+1142
+01:01:22,680 --> 01:01:25,770
+way or something? How would that
+look kind of in behavior tree
+
+1143
+01:01:25,770 --> 01:01:29,400
+space? Um,
+
+1144
+01:01:31,050 --> 01:01:34,470
+Steve Macenski: if so we don't
+have the environmental data, set
+
+1145
+01:01:34,470 --> 01:01:37,830
+up the data three interface, so
+that that really wouldn't be
+
+1146
+01:01:37,860 --> 01:01:41,220
+important for at least how the
+current behavior or navigation
+
+1147
+01:01:41,220 --> 01:01:44,880
+works? Or what would be a good
+example. Like if we can trace
+
+1148
+01:01:44,880 --> 01:01:48,690
+through some of what a behavior
+tree does, for some simple case
+
+1149
+01:01:48,690 --> 01:01:53,040
+will be a good example for that.
+Yeah, let me just Let us pull up
+
+1150
+01:01:53,040 --> 01:02:04,860
+an actual example. So not just
+typing stuff up on the fly was
+
+1151
+01:02:04,860 --> 01:02:11,520
+relatively simple. Okay. That's
+not simple. Let's do distance.
+
+1152
+01:02:11,550 --> 01:02:17,160
+Okay. So for instance, like, we
+might have a sequence which was
+
+1153
+01:02:17,160 --> 01:02:21,960
+in Beaver tree land a sequence
+is say, do this task is
+
+1154
+01:02:21,960 --> 01:02:25,020
+successful, do this task is
+successful to this task, versus
+
+1155
+01:02:25,020 --> 01:02:28,590
+a fallback which say, do this
+task, if it fails, do fallback
+
+1156
+01:02:28,590 --> 01:02:31,380
+to the next one, if fails
+fallback, the next one, etc,
+
+1157
+01:02:31,560 --> 01:02:36,120
+within within all the the
+children nodes on that control
+
+1158
+01:02:36,120 --> 01:02:41,670
+flow of the sequence or the or
+the recovery? So they might be
+
+1159
+01:02:41,670 --> 01:02:48,390
+operating to do to very simply
+just to replan every second, or
+
+1160
+01:02:48,390 --> 01:02:52,470
+every time you, you, you or you
+travel, for instance. So you
+
+1161
+01:02:52,470 --> 01:02:56,760
+might have a Sequence node that
+says, Okay, start just because
+
+1162
+01:02:56,760 --> 01:03:00,090
+sequence out here, I say okay,
+go by first child, and my first
+
+1163
+01:03:00,090 --> 01:03:04,770
+child would be a decorator node,
+called a distance controller, a
+
+1164
+01:03:04,770 --> 01:03:07,830
+decorator node is something that
+has one child and defines the
+
+1165
+01:03:07,830 --> 01:03:10,470
+behavior about when that child
+is tick. So for this instance,
+
+1166
+01:03:10,470 --> 01:03:13,440
+it'd be, it'd be checking if
+we've moved one meter. Another
+
+1167
+01:03:13,440 --> 01:03:17,340
+example would be if we've, if
+there, the time has moved by one
+
+1168
+01:03:17,340 --> 01:03:21,000
+seconds, or that my speed is 10
+meters per seconds, or any sort
+
+1169
+01:03:21,000 --> 01:03:24,030
+of random condition you want to
+set to define whether or not you
+
+1170
+01:03:24,030 --> 01:03:27,600
+want to do this child. So we
+have our SQL code, we go to our
+
+1171
+01:03:27,600 --> 01:03:31,050
+decorator to say, do we want to
+actually we compute a path? Yes
+
+1172
+01:03:31,050 --> 01:03:34,440
+or no? It says yes, there we go
+down to that, that that compute,
+
+1173
+01:03:34,920 --> 01:03:38,340
+compute a new path, name for
+tree node, and that's going to
+
+1174
+01:03:38,340 --> 01:03:42,390
+put them that path on to was
+referred to as the blackboard,
+
+1175
+01:03:42,510 --> 01:03:45,150
+which is essentially a parameter
+system that is shared across all
+
+1176
+01:03:45,150 --> 01:03:48,210
+the nodes and the behavior tree
+so that any node can input or
+
+1177
+01:03:48,210 --> 01:03:55,290
+change or modify parameters on
+the other node. You're not use
+
+1178
+01:03:55,290 --> 01:03:59,520
+NG for state with Eva trees
+ever. But it should be it should
+
+1179
+01:03:59,520 --> 01:04:01,470
+be the state should be defined
+to the tree. This should be
+
+1180
+01:04:01,470 --> 01:04:04,740
+mostly parameters or values that
+you need to be in terms
+
+1181
+01:04:04,740 --> 01:04:09,450
+Audrow Nash: of state with. Or
+could it be like we've traveled
+
+1182
+01:04:09,450 --> 01:04:11,220
+one meter? That would be
+something you put on the
+
+1183
+01:04:11,220 --> 01:04:11,820
+blackboard?
+
+1184
+01:04:14,820 --> 01:04:16,440
+Steve Macenski: Yeah, as long as
+it's not state about the
+
+1185
+01:04:16,440 --> 01:04:19,620
+execution of the behavior tree
+like you shouldn't have like a
+
+1186
+01:04:19,620 --> 01:04:22,980
+blackboard node that is saying
+check check the blackboard for a
+
+1187
+01:04:22,980 --> 01:04:26,580
+one or a zero for without
+execute. You could do that. I
+
+1188
+01:04:26,580 --> 01:04:29,850
+mean, you could I mean, nothing
+stopping you. But you shouldn't
+
+1189
+01:04:30,600 --> 01:04:34,230
+it should be based on on
+computing values separately so
+
+1190
+01:04:34,230 --> 01:04:36,930
+the baby trees think about his
+four parameters or dynamic
+
+1191
+01:04:36,930 --> 01:04:37,680
+values but shouldn't
+
+1192
+01:04:37,680 --> 01:04:40,140
+Audrow Nash: be an example of
+something you could if you
+
+1193
+01:04:40,140 --> 01:04:40,620
+needed to.
+
+1194
+01:04:42,180 --> 01:04:46,080
+Steve Macenski: Yeah, so So
+example here is like the path so
+
+1195
+01:04:46,080 --> 01:04:48,420
+once we're once we're in our
+sequence in our we go to our
+
+1196
+01:04:48,420 --> 01:04:51,690
+decorator and compute the path,
+the way that we get that path
+
+1197
+01:04:51,780 --> 01:04:56,040
+computed to the next node of the
+tree to Okay, follow the path is
+
+1198
+01:04:56,040 --> 01:04:59,610
+through the Blackboard. And so
+because this node and this node
+
+1199
+01:04:59,610 --> 01:05:02,220
+can't draw To talk to each
+other, so they can only pass
+
+1200
+01:05:02,220 --> 01:05:07,440
+values. So we have our Depew
+path, update the Blackboard
+
+1201
+01:05:07,440 --> 01:05:10,590
+variable for the path. And then
+when when we go back up to our
+
+1202
+01:05:10,590 --> 01:05:13,650
+tree back to our router into our
+sequence, and we say, okay, we
+
+1203
+01:05:13,650 --> 01:05:18,390
+compute a path that would go
+down to our fall path node and
+
+1204
+01:05:18,390 --> 01:05:20,580
+check to say, hey, there's been
+an update to this, this path
+
+1205
+01:05:20,580 --> 01:05:22,950
+block, we're variable, I'm gonna
+throw that to my local
+
+1206
+01:05:22,950 --> 01:05:25,560
+trajectory planner. And then
+it's going to compute the the
+
+1207
+01:05:25,560 --> 01:05:30,600
+control effort required to
+execute. And then if our, what's
+
+1208
+01:05:30,600 --> 01:05:34,020
+nice about the the decorator
+node, is that because if it
+
+1209
+01:05:34,020 --> 01:05:36,630
+fails, it says, No, we've not
+moved one second, it's going to
+
+1210
+01:05:36,630 --> 01:05:39,810
+fail and go back up the sequence
+and be the Sequence node only
+
+1211
+01:05:39,810 --> 01:05:41,940
+continues going down to
+children. And when it when the
+
+1212
+01:05:41,940 --> 01:05:44,460
+last one succeeded, it's going
+to exit and say, Okay, I'm done.
+
+1213
+01:05:44,460 --> 01:05:48,300
+So it's not going to try to
+execute the default follow path,
+
+1214
+01:05:48,300 --> 01:05:48,630
+because it's
+
+1215
+01:05:49,860 --> 01:05:51,510
+Audrow Nash: so it doesn't try
+anything further.
+
+1216
+01:05:51,540 --> 01:05:55,530
+Steve Macenski: Yeah. So as a
+result, yeah. So so in a very
+
+1217
+01:05:55,530 --> 01:05:59,370
+simple behavior tree with like,
+you know, 1234 nodes,
+
+1218
+01:05:59,370 --> 01:06:03,930
+essentially, we just, you know,
+just did planning, dynamic
+
+1219
+01:06:03,930 --> 01:06:08,130
+replanting of a of a, of a path
+and then throw it to a local
+
+1220
+01:06:08,130 --> 01:06:10,710
+trick and learn to execute.
+Yeah, that is the at the core
+
+1221
+01:06:10,710 --> 01:06:15,450
+level, the most simplistic way
+of representing dynamic
+
+1222
+01:06:15,450 --> 01:06:16,050
+navigation.
+
+1223
+01:06:16,320 --> 01:06:19,020
+Audrow Nash: How does this
+compare to like a state machine
+
+1224
+01:06:19,560 --> 01:06:22,200
+way of representing this
+information, I assume that there
+
+1225
+01:06:22,200 --> 01:06:26,610
+are advantages to choosing to do
+a behavior tree to represent
+
+1226
+01:06:26,610 --> 01:06:32,550
+kind of these transitions. Um,
+yeah, it's
+
+1227
+01:06:32,550 --> 01:06:34,950
+Steve Macenski: preference more
+than anything else. So they're,
+
+1228
+01:06:34,980 --> 01:06:37,200
+they're both they're both
+execution models, you can use
+
+1229
+01:06:37,200 --> 01:06:40,200
+define how you like your system
+to behave. And there's not
+
+1230
+01:06:40,200 --> 01:06:43,200
+necessarily a benefit of one
+over the other. It's more about
+
+1231
+01:06:43,200 --> 01:06:46,170
+preference. And maybe certain
+applications are more simple to
+
+1232
+01:06:46,230 --> 01:06:50,070
+model one way versus another,
+for instance, that the move base
+
+1233
+01:06:50,790 --> 01:06:54,120
+was state machine back in ROSS
+one, you know, it statically
+
+1234
+01:06:54,120 --> 01:06:57,120
+set. So it wasn't using some
+sort of like external state
+
+1235
+01:06:57,120 --> 01:06:59,460
+machine library, that's
+reconfigurable. All that kind of
+
+1236
+01:06:59,460 --> 01:07:01,380
+good stuff is, you know, hard
+coded, here's our, here's my
+
+1237
+01:07:01,380 --> 01:07:04,620
+state machine. And that works
+pretty well. And it's pretty
+
+1238
+01:07:04,620 --> 01:07:07,170
+easy to define simple state
+machines to do something like
+
+1239
+01:07:07,170 --> 01:07:10,110
+this, this type of replanting,
+essentially, why just described
+
+1240
+01:07:10,140 --> 01:07:13,500
+was the moon base node, except
+for we're not replanting every
+
+1241
+01:07:13,500 --> 01:07:15,570
+meter we're planning every
+second or I think it's
+
+1242
+01:07:15,570 --> 01:07:18,870
+configurable. So not often, you
+won't do it. But essentially,
+
+1243
+01:07:18,870 --> 01:07:20,820
+that that's the exact same
+thing. But what we just
+
+1244
+01:07:20,820 --> 01:07:24,660
+described as favorite tree is as
+an XML file, which is loaded one
+
+1245
+01:07:24,660 --> 01:07:28,230
+time, dynamically allocates to
+nodes, and then an execute. So
+
+1246
+01:07:28,230 --> 01:07:30,420
+you can change your behavior
+over time. But there are other
+
+1247
+01:07:30,420 --> 01:07:32,790
+state machine libraries that
+exist that could do those exact
+
+1248
+01:07:32,790 --> 01:07:36,330
+same things. And almost anything
+you can model as a base tree,
+
+1249
+01:07:36,330 --> 01:07:38,940
+you can also model as a as a
+hierarchical or finite state
+
+1250
+01:07:38,940 --> 01:07:42,510
+machine, and back and forth. But
+we just prefer in general
+
+1251
+01:07:42,510 --> 01:07:45,960
+working with behavior trees, we
+actually ran a study in LinkedIn
+
+1252
+01:07:46,050 --> 01:07:49,350
+last year, asking users what
+they prefer to work with. And we
+
+1253
+01:07:49,350 --> 01:07:52,380
+had 70% of the people say they'd
+rather work favorite trees. So
+
+1254
+01:07:52,440 --> 01:07:55,710
+this is why we were interested
+in trees. But certainly there,
+
+1255
+01:07:55,770 --> 01:07:58,170
+there are other options, and
+they're all valid under the sun.
+
+1256
+01:07:58,620 --> 01:08:00,090
+It just depends on you know,
+whatever makes
+
+1257
+01:08:00,090 --> 01:08:08,280
+Audrow Nash: it work. Okay, so
+nav two has, it's a there's a
+
+1258
+01:08:08,280 --> 01:08:15,450
+lot of, there's a lot of parts
+to this. I'm, so it goes from
+
+1259
+01:08:15,480 --> 01:08:18,420
+and actually, we haven't talked
+about the cost map that you can
+
+1260
+01:08:18,420 --> 01:08:25,680
+generate through this. So in so
+in your initial mapping, kind of
+
+1261
+01:08:25,740 --> 01:08:29,550
+more slam like so actually
+creating a map, while you're
+
+1262
+01:08:29,550 --> 01:08:31,830
+driving around it nav through
+does this as well.
+
+1263
+01:08:34,650 --> 01:08:37,200
+Steve Macenski: Yeah, it doesn't
+do it through like the the slam
+
+1264
+01:08:37,200 --> 01:08:39,540
+library we use is not actually
+built into the navigation stacks
+
+1265
+01:08:39,540 --> 01:08:42,120
+of bright you go to github.com,
+you know, walk by a slash
+
+1266
+01:08:42,120 --> 01:08:44,790
+navigation to is there's no
+slack implementation there. But
+
+1267
+01:08:44,790 --> 01:08:47,220
+we have a strong integration
+with a library called slam
+
+1268
+01:08:47,220 --> 01:08:50,880
+toolbox that I largely built.
+Well, is it simply robotics then
+
+1269
+01:08:50,880 --> 01:08:54,180
+continue to refine while Samsung
+research in the first few months
+
+1270
+01:08:54,180 --> 01:08:58,890
+there? And so that's what we use
+primarily for January maps, that
+
+1271
+01:08:58,890 --> 01:09:01,350
+this is where all our tutorials
+are based off of this binaries
+
+1272
+01:09:01,350 --> 01:09:04,320
+release for it. So from an end
+user, basically, it is part of
+
+1273
+01:09:04,320 --> 01:09:08,310
+the application stack. Yeah, but
+it's it's sufficiently complex
+
+1274
+01:09:08,310 --> 01:09:11,340
+that should not belong in the
+same place. I think some toolbox
+
+1275
+01:09:11,340 --> 01:09:15,660
+has almost as much code as half
+an hour just by itself. So it's
+
+1276
+01:09:15,660 --> 01:09:19,590
+very complicated. There's a lot
+going on. So it's worth keeping
+
+1277
+01:09:19,770 --> 01:09:23,850
+these products separated. But
+also actually like to remove a
+
+1278
+01:09:23,850 --> 01:09:29,430
+MCL was an attack as well, that
+the adaptive Monte Carlo
+
+1279
+01:09:29,430 --> 01:09:31,890
+localization system,
+essentially, it's the
+
+1280
+01:09:32,040 --> 01:09:37,080
+methodology for localization in
+an existing map. And a MCL is
+
+1281
+01:09:37,080 --> 01:09:40,050
+the very common like
+probabilistic robotics
+
+1282
+01:09:40,080 --> 01:09:44,550
+implementation of this of this
+algorithm. So it does it works
+
+1283
+01:09:44,550 --> 01:09:46,980
+on 2d maps for these 2d
+occupancy grid. So we've been
+
+1284
+01:09:46,980 --> 01:09:51,150
+talking about this grid space
+discussion prior and through so
+
+1285
+01:09:51,150 --> 01:09:53,550
+I want to actually remove that
+from the stack into potentially
+
+1286
+01:09:53,550 --> 01:09:57,000
+different repositories that I
+want to get to the Get get the
+
+1287
+01:09:57,000 --> 01:10:00,720
+point across that nav two is not
+specific to me. navigation and
+
+1288
+01:10:00,720 --> 01:10:04,860
+does not require 2d Localization
+2d and mapping systems, if you
+
+1289
+01:10:04,860 --> 01:10:08,220
+want to work with a 3d map in a
+3d position isn't totally valid,
+
+1290
+01:10:08,220 --> 01:10:10,830
+you want to work with a visual
+slab system visual localization
+
+1291
+01:10:10,830 --> 01:10:14,940
+currently valid. I think that
+even last one got a bad rap
+
+1292
+01:10:14,940 --> 01:10:18,450
+about that, because a MCL was
+included in the stack. And there
+
+1293
+01:10:18,450 --> 01:10:21,630
+were examples of other
+localization systems within the
+
+1294
+01:10:21,630 --> 01:10:24,000
+stack to kind of showcase that
+you can utilize different
+
+1295
+01:10:24,000 --> 01:10:28,080
+methodologies. So I'd like to
+remove that. And it also adds
+
+1296
+01:10:28,080 --> 01:10:32,490
+support for 3d positioning
+methodologies as well. So that
+
+1297
+01:10:32,490 --> 01:10:35,460
+way, you know, we get the point
+across that you can use really
+
+1298
+01:10:35,460 --> 01:10:38,400
+anything you want. This is just
+what we pride by by default,
+
+1299
+01:10:38,400 --> 01:10:41,370
+because it works well. And this
+is what other users are.
+
+1300
+01:10:41,400 --> 01:10:45,060
+Audrow Nash: Yeah. So if you
+had, say, like a quadrotor, or
+
+1301
+01:10:45,060 --> 01:10:49,140
+some sort of flying robot, you
+could use nav to just as well,
+
+1302
+01:10:49,140 --> 01:10:52,110
+because of the plugin
+architecture, in the sense or,
+
+1303
+01:10:53,220 --> 01:10:59,460
+Steve Macenski: um, I, maybe I
+don't know, anyone using Yeah,
+
+1304
+01:10:59,880 --> 01:11:03,930
+this is mostly ground robot
+systems. So it's mobile robots,
+
+1305
+01:11:03,960 --> 01:11:07,470
+surface marine applications. So
+that kind of stuff. I mean, it's
+
+1306
+01:11:07,470 --> 01:11:11,160
+meant for like, largely, like,
+like you're working on a surface
+
+1307
+01:11:11,160 --> 01:11:14,400
+environment. Our environmental
+models don't really work with
+
+1308
+01:11:14,430 --> 01:11:16,920
+like three dimensional spaces to
+have like large height
+
+1309
+01:11:16,950 --> 01:11:19,920
+variations. So if you have a
+drone that's flying very high,
+
+1310
+01:11:20,010 --> 01:11:23,160
+or you have like a submersible
+robot going very low, you don't
+
+1311
+01:11:23,160 --> 01:11:26,880
+have a lot of you don't have the
+capability right out modeling
+
+1312
+01:11:26,880 --> 01:11:29,910
+those gotcha effectively. It's
+not that the plane runs couldn't
+
+1313
+01:11:29,910 --> 01:11:31,830
+be made to work in three
+dimensions, that it's just they
+
+1314
+01:11:31,830 --> 01:11:35,370
+work. That's not the the current
+niche that we're trying.
+
+1315
+01:11:35,730 --> 01:11:38,010
+Audrow Nash: So I'm a little
+confused about the serve the
+
+1316
+01:11:38,010 --> 01:11:40,740
+last point, then you're you're
+saying you want to remove this
+
+1317
+01:11:41,100 --> 01:11:46,950
+boza MCL? Are you and it? Yeah,
+they're just quite understand.
+
+1318
+01:11:46,950 --> 01:11:49,530
+So you were so so because I was
+assuming this was primarily for
+
+1319
+01:11:49,530 --> 01:11:54,990
+2d planning. So if you want to
+move on the ground, or something
+
+1320
+01:11:54,990 --> 01:11:58,050
+like this, are you saying like,
+with different floors, or?
+
+1321
+01:12:00,780 --> 01:12:03,450
+Steve Macenski: Yeah, so So
+these are two different topics.
+
+1322
+01:12:03,480 --> 01:12:07,140
+So what what is that? How do we
+represent our space, and right
+
+1323
+01:12:07,140 --> 01:12:10,950
+now we do this through a 2d
+planar cost presentation
+
+1324
+01:12:10,950 --> 01:12:14,850
+environment. So this is a 2d
+plane. But you can add layers to
+
+1325
+01:12:14,850 --> 01:12:17,430
+represent things like like
+height, height changes, so you
+
+1326
+01:12:17,430 --> 01:12:20,490
+can work on other other train
+models. With that said, it's not
+
+1327
+01:12:20,490 --> 01:12:25,110
+really optimal and longer term,
+we want to be replacing or
+
+1328
+01:12:25,110 --> 01:12:28,650
+adapting cost map 2d, to be
+operating both height
+
+1329
+01:12:28,650 --> 01:12:31,650
+information, as well as risk
+information as well as, you
+
+1330
+01:12:31,650 --> 01:12:34,140
+know, AI detection based
+methods, methods, so that you
+
+1331
+01:12:34,140 --> 01:12:37,290
+can, you can work it all out
+with all these kinds of spaces.
+
+1332
+01:12:37,710 --> 01:12:40,740
+But at the end of the day, the
+natural system is serving the
+
+1333
+01:12:40,740 --> 01:12:43,770
+niche of surface robots. So
+they're in a surface and the
+
+1334
+01:12:43,770 --> 01:12:47,880
+ground surface on a lake top,
+you know, but generally
+
+1335
+01:12:47,880 --> 01:12:51,960
+speaking, working on the
+surface. And then there's the
+
+1336
+01:12:51,960 --> 01:12:55,410
+other problem of localization.
+So right now we do primarily 2d
+
+1337
+01:12:55,410 --> 01:12:58,680
+Localization using a 3d laser
+scanner, which then takes like a
+
+1338
+01:12:58,680 --> 01:13:00,780
+slice of your environment,
+right, you don't see a couch,
+
+1339
+01:13:00,780 --> 01:13:03,630
+you see a straight line that
+were on the edge of the couch.
+
+1340
+01:13:04,170 --> 01:13:07,410
+And so that has, you know, you,
+right, you're throwing out a lot
+
+1341
+01:13:07,410 --> 01:13:09,600
+of information, right, you're
+throwing out the the texture of
+
+1342
+01:13:09,600 --> 01:13:11,610
+the couch, which might have some
+interesting features for
+
+1343
+01:13:11,610 --> 01:13:13,920
+throwing out the shape of the
+couch outside of that, that just
+
+1344
+01:13:13,920 --> 01:13:17,160
+that 2d slice of the world. So
+we want to build support,
+
+1345
+01:13:17,700 --> 01:13:20,760
+localization systems that can
+take advantage of more
+
+1346
+01:13:20,790 --> 01:13:23,580
+contextual information of the
+environment than just 2d laser
+
+1347
+01:13:23,580 --> 01:13:26,370
+scans into 2d Kind of like, flat
+Earth world.
+
+1348
+01:13:26,610 --> 01:13:31,200
+Audrow Nash: NACHA. Quick, cool.
+Let's see. I want to segue a
+
+1349
+01:13:31,200 --> 01:13:36,150
+little bit. How has, how has it
+done for you being so involved
+
+1350
+01:13:36,150 --> 01:13:37,950
+in the community? Can you just
+talk a bit about your
+
+1351
+01:13:37,950 --> 01:13:42,420
+experience, working with the
+NAFTA community growing? Its
+
+1352
+01:13:42,420 --> 01:13:46,440
+working with developers and
+getting an open source project?
+
+1353
+01:13:48,630 --> 01:13:48,960
+Yeah,
+
+1354
+01:13:48,990 --> 01:13:51,060
+Steve Macenski: no, it's
+definitely been been different.
+
+1355
+01:13:51,360 --> 01:13:53,880
+So it's, it's a different
+challenge to work with people
+
+1356
+01:13:53,880 --> 01:13:56,910
+that aren't paid to work for
+you. thing, right? Like, you
+
+1357
+01:13:56,910 --> 01:13:59,190
+know, these aren't, these aren't
+my colleagues where we have
+
+1358
+01:13:59,190 --> 01:14:02,130
+like, we get this thing done,
+we're all being paid by this
+
+1359
+01:14:02,130 --> 01:14:05,160
+company to accomplish this
+particular task. And I'm not
+
+1360
+01:14:05,160 --> 01:14:08,340
+managing people where I can just
+say, here's what you must do,
+
+1361
+01:14:08,370 --> 01:14:10,260
+because we must get this thing
+done. Here's the project, we're
+
+1362
+01:14:10,260 --> 01:14:14,310
+working on this this month. It's
+a lot more. It has to be
+
+1363
+01:14:14,310 --> 01:14:16,350
+collaborative, and you're
+building coalitions with
+
+1364
+01:14:16,350 --> 01:14:19,080
+companies and you're building
+collaborations with individually
+
+1365
+01:14:19,140 --> 01:14:22,650
+individual people to get things
+done. And so, you know, that's
+
+1366
+01:14:22,650 --> 01:14:25,950
+to be a lot more more mentorship
+going on. So I have to be, you
+
+1367
+01:14:25,950 --> 01:14:29,430
+know, not just assigning
+projects, but talking to people
+
+1368
+01:14:29,430 --> 01:14:31,740
+about what they're interested in
+learning where they are right
+
+1369
+01:14:31,740 --> 01:14:34,020
+now, where they want to be
+going, what kinds of things
+
+1370
+01:14:34,050 --> 01:14:36,960
+interests them and engage them
+and try to carve out project
+
+1371
+01:14:36,960 --> 01:14:39,690
+like individual projects or
+small sections of larger
+
+1372
+01:14:39,690 --> 01:14:42,150
+projects that they can work on
+that they can have that those
+
+1373
+01:14:42,150 --> 01:14:44,370
+personal growth elements, but
+then also contribute back to the
+
+1374
+01:14:44,370 --> 01:14:48,540
+project at large. So there's a
+lot of mentorship that goes on
+
+1375
+01:14:48,540 --> 01:14:51,090
+that I mean, would you also
+would happen in hopefully
+
+1376
+01:14:51,090 --> 01:14:53,280
+corporate environment as well,
+but it's a little bit different.
+
+1377
+01:14:53,520 --> 01:14:55,920
+Because no one's being being
+paid to work on this. For
+
+1378
+01:14:55,920 --> 01:14:59,790
+instance, these are all just
+volunteers with their off time
+
+1379
+01:14:59,790 --> 01:15:03,210
+or Maybe some companies who are
+giving engineers, you know,
+
+1380
+01:15:03,270 --> 01:15:06,240
+every other Friday, you know,
+four hours to play around with
+
+1381
+01:15:06,240 --> 01:15:09,780
+stuff or write documentation or
+help out with various things. So
+
+1382
+01:15:09,810 --> 01:15:14,580
+it's a lot more collaborative
+and building building coalitions
+
+1383
+01:15:14,850 --> 01:15:18,060
+of multiple companies to work on
+larger projects together. Since
+
+1384
+01:15:18,060 --> 01:15:20,610
+these are being worked on
+primarily on a volunteer, part
+
+1385
+01:15:20,610 --> 01:15:23,430
+time basis, so we're working on
+some of these larger projects,
+
+1386
+01:15:23,430 --> 01:15:26,730
+it's often it's either just me
+and myself working on something,
+
+1387
+01:15:26,850 --> 01:15:30,390
+or it's me building coalitions
+of, you know, a couple students
+
+1388
+01:15:30,420 --> 01:15:33,720
+with a, you know, a
+representative company, a, and a
+
+1389
+01:15:33,750 --> 01:15:36,600
+senior engineer at a company B,
+or each kind of doing their
+
+1390
+01:15:36,600 --> 01:15:40,290
+kinds of things, and then I'm
+popping in to help resolve
+
+1391
+01:15:40,290 --> 01:15:43,590
+disputes or help with design
+decisions. And, you know,
+
+1392
+01:15:43,650 --> 01:15:46,560
+implement some sections of this
+myself so that we can get you to
+
+1393
+01:15:46,560 --> 01:15:49,110
+continue moving forward. You
+know, the smack planner is a
+
+1394
+01:15:49,110 --> 01:15:53,400
+great example of a coalition
+project. You know, I put out the
+
+1395
+01:15:53,430 --> 01:15:56,610
+the bones of that, largely
+myself after, you know, many,
+
+1396
+01:15:56,610 --> 01:15:59,490
+many months of work that only
+contain the hybrid, a star
+
+1397
+01:15:59,490 --> 01:16:03,480
+planter, had some, some bugs in
+it, and all that kind of stuff.
+
+1398
+01:16:03,480 --> 01:16:06,750
+And over time his company
+started using it, we had a
+
+1399
+01:16:06,750 --> 01:16:09,000
+couple companies go through and
+really start benchmarking
+
+1400
+01:16:09,000 --> 01:16:11,250
+performance and help me find
+some areas that can improve
+
+1401
+01:16:11,250 --> 01:16:14,490
+things and made some pretty
+substantial improvements to it,
+
+1402
+01:16:14,700 --> 01:16:16,620
+that we're currently working
+through through merging at the
+
+1403
+01:16:16,620 --> 01:16:20,190
+moment. And then I also have
+worked with a couple of students
+
+1404
+01:16:20,190 --> 01:16:23,100
+where instead of just having
+this this hybrid ACR planner, I
+
+1405
+01:16:23,100 --> 01:16:25,980
+also want to add a state lattice
+planner, so we could model
+
+1406
+01:16:25,980 --> 01:16:31,230
+arbitrary motion primitives and
+not just Ackermann models. And I
+
+1407
+01:16:31,230 --> 01:16:33,120
+found a couple of folks that
+were really interested in this
+
+1408
+01:16:33,120 --> 01:16:36,510
+thing as well. And were helping
+me, you'll build out file
+
+1409
+01:16:36,510 --> 01:16:41,850
+formats for caching information,
+building the local, primitive
+
+1410
+01:16:41,850 --> 01:16:45,510
+files offline for what the the
+actual printers are of that
+
+1411
+01:16:45,510 --> 01:16:49,470
+search pattern. Other than
+acumen models, we have folks
+
+1412
+01:16:49,500 --> 01:16:54,660
+working on improving the analog
+expansions to be more efficient
+
+1413
+01:16:54,660 --> 01:16:57,540
+and deal with cost information
+more effectively. You know, it's
+
+1414
+01:16:57,540 --> 01:16:59,610
+a lot of folks are working a lot
+of different things that end up
+
+1415
+01:16:59,610 --> 01:17:02,520
+coming together to build
+something new and interesting.
+
+1416
+01:17:03,210 --> 01:17:07,260
+And so it's a, yeah, a lot of my
+time is spent coalition building
+
+1417
+01:17:07,260 --> 01:17:09,810
+and getting new people involved
+the project and finding out what
+
+1418
+01:17:09,810 --> 01:17:12,990
+excites them, and where I can
+kind of where I can put them the
+
+1419
+01:17:12,990 --> 01:17:15,690
+project that is both helpful for
+the direction that we're going,
+
+1420
+01:17:16,170 --> 01:17:18,390
+or even potentially changing the
+direction we're going, if
+
+1421
+01:17:18,390 --> 01:17:20,250
+there's somebody who can spend a
+lot of time on it, or very
+
+1422
+01:17:20,250 --> 01:17:22,110
+senior that wants to see that
+certain thing happening.
+
+1423
+01:17:22,350 --> 01:17:24,240
+Sometimes I'll shift my
+direction to kind of help
+
+1424
+01:17:24,240 --> 01:17:28,110
+support them do that do that
+thing. Since a lot of
+
+1425
+01:17:28,110 --> 01:17:31,440
+development happens the NASDAQ
+is opportunity based, so there's
+
+1426
+01:17:31,440 --> 01:17:33,450
+an opportunity to integrate
+something new or somebody has
+
+1427
+01:17:33,450 --> 01:17:35,850
+some time they want to spend
+working on this thing. Sometimes
+
+1428
+01:17:35,850 --> 01:17:38,520
+I'll drop what I'm doing, I'll
+go watch over there. Because if
+
+1429
+01:17:38,520 --> 01:17:41,100
+I can get if I get if I get some
+help in some area, I'm not gonna
+
+1430
+01:17:41,100 --> 01:17:41,730
+say no to help.
+
+1431
+01:17:44,760 --> 01:17:49,230
+Audrow Nash: What do you it's
+interesting to hear that it
+
+1432
+01:17:49,230 --> 01:17:52,140
+shifts really to community
+building and coalition building.
+
+1433
+01:17:54,090 --> 01:17:57,930
+And you mentioned that it's a
+little bit different with not
+
+1434
+01:17:57,960 --> 01:18:01,380
+being able to, like, give people
+deadlines and things not easily.
+
+1435
+01:18:03,150 --> 01:18:06,960
+What do you think of open
+source? As like a business
+
+1436
+01:18:06,960 --> 01:18:12,360
+model? Yeah, you know, you know,
+I
+
+1437
+01:18:13,169 --> 01:18:14,849
+Steve Macenski: don't think
+about that, honestly. So I don't
+
+1438
+01:18:14,849 --> 01:18:17,339
+know, I couldn't really give you
+too much. I mean, I know like,
+
+1439
+01:18:17,369 --> 01:18:19,109
+you know, folks like picnic,
+they're doing this, the Oprah
+
+1440
+01:18:19,109 --> 01:18:21,509
+boxes doing this and some of the
+folks I've chatted with as well
+
+1441
+01:18:21,509 --> 01:18:25,139
+are doing this and and I think
+that's, that's a good direction
+
+1442
+01:18:25,139 --> 01:18:28,259
+to bring money into a project to
+fund development in a particular
+
+1443
+01:18:28,409 --> 01:18:32,099
+area. But, you know, I really
+like being able to work on the
+
+1444
+01:18:32,099 --> 01:18:35,009
+hard problems that are necessary
+because their gaps and they're
+
+1445
+01:18:35,009 --> 01:18:37,679
+needed, and not necessarily just
+working on who's going to you
+
+1446
+01:18:37,679 --> 01:18:40,439
+know, throw money in my face and
+say, go do this thing. Because
+
+1447
+01:18:40,439 --> 01:18:42,179
+sometimes it's hard to get
+funding for the things that are
+
+1448
+01:18:42,179 --> 01:18:44,339
+really important and you know,
+you have over a box I mean, you
+
+1449
+01:18:44,339 --> 01:18:46,409
+must know understand that with
+the the bill farm and
+
+1450
+01:18:46,409 --> 01:18:48,509
+documentation and things like
+that, it's hard, it's hard to
+
+1451
+01:18:48,509 --> 01:18:50,759
+get some people throw money at
+the important things that are
+
+1452
+01:18:50,759 --> 01:18:55,019
+the big gaps that are felt. So
+you know, maybe down the line
+
+1453
+01:18:55,019 --> 01:18:57,269
+there's there's a, there's an
+opportunity for an app to to
+
+1454
+01:18:57,269 --> 01:19:00,689
+have a similar kind of, you
+know, open source business model
+
+1455
+01:19:00,689 --> 01:19:03,929
+to have that funded. But that's
+not something that I'm currently
+
+1456
+01:19:03,929 --> 01:19:07,019
+thinking too much about or I've
+executed on or have any plans
+
+1457
+01:19:07,019 --> 01:19:07,709
+they need to catch up.
+
+1458
+01:19:07,710 --> 01:19:11,610
+Audrow Nash: So I'd love your
+thoughts on that anyways. Let's
+
+1459
+01:19:11,610 --> 01:19:15,810
+see. How can someone get
+involved if they want to, like
+
+1460
+01:19:15,840 --> 01:19:18,630
+say someone is interested in
+learning more and interested in
+
+1461
+01:19:18,630 --> 01:19:21,750
+the possibility of mentorship?
+What should they do?
+
+1462
+01:19:24,180 --> 01:19:26,550
+Steve Macenski: Yeah, the first
+place to go to navigation dot
+
+1463
+01:19:26,550 --> 01:19:29,670
+rostered org That's our
+documentation website. I spent
+
+1464
+01:19:29,700 --> 01:19:32,040
+an inordinate amount of time
+very good documentation site I
+
+1465
+01:19:32,040 --> 01:19:37,500
+am very impressed. Yeah, it's
+it's a lot of nickel and diming
+
+1466
+01:19:37,530 --> 01:19:40,110
+it's just you know, a page here
+and there one thing every Friday
+
+1467
+01:19:40,500 --> 01:19:43,560
+kind of thing. But yeah, if you
+go there you can find our
+
+1468
+01:19:43,560 --> 01:19:45,750
+tutorials you can find our
+getting started guides for how
+
+1469
+01:19:45,750 --> 01:19:48,450
+just like get from from
+absolutely nothing to installing
+
+1470
+01:19:48,450 --> 01:19:51,060
+ROS to gain the binaries, do
+your first demonstrations and
+
+1471
+01:19:51,060 --> 01:19:54,000
+arvis so that that's a good
+place to get started with the
+
+1472
+01:19:54,000 --> 01:19:57,180
+actual NASDAQ itself. If you
+want start contributing. We have
+
+1473
+01:19:57,180 --> 01:20:00,810
+a community slack that can give
+you the URL to do including this
+
+1474
+01:20:00,870 --> 01:20:05,400
+description of this podcast,
+that's a great place to, to
+
+1475
+01:20:05,400 --> 01:20:08,220
+reach out, either for assistance
+or ask questions or if you want
+
+1476
+01:20:08,220 --> 01:20:10,650
+to get involved, and you want to
+see where you can get involved
+
+1477
+01:20:10,650 --> 01:20:13,920
+in that, that slack group is a
+great place to be. And then
+
+1478
+01:20:13,920 --> 01:20:17,520
+generally just looking at our
+product issues. So our issue
+
+1479
+01:20:17,520 --> 01:20:19,980
+tracker is very active, it's
+where everything that that's
+
+1480
+01:20:20,190 --> 01:20:23,400
+being worked on is being
+discussed openly, and also
+
+1481
+01:20:23,610 --> 01:20:26,970
+searchable later on. But you
+know, don't don't restrict
+
+1482
+01:20:26,970 --> 01:20:28,710
+yourself to those things. If
+there are some other features
+
+1483
+01:20:28,710 --> 01:20:30,840
+that you see missing, or some
+gaps that you want for your
+
+1484
+01:20:30,840 --> 01:20:33,510
+product or your research or
+whatever, you'll file ticket.
+
+1485
+01:20:33,510 --> 01:20:36,840
+Let's let's talk about it. You
+know, I'm definitely not, you
+
+1486
+01:20:36,840 --> 01:20:39,240
+know, I'm not God, I don't know,
+I don't know, like, you know,
+
+1487
+01:20:39,270 --> 01:20:41,670
+what your what your product
+needs, that we're not, we're not
+
+1488
+01:20:41,670 --> 01:20:43,890
+servicing. And I want to
+understand these gaps are
+
+1489
+01:20:43,890 --> 01:20:47,340
+because I want to build this in
+to be the right, not just like a
+
+1490
+01:20:47,340 --> 01:20:50,400
+navigation system, but the
+navigation system, I read this,
+
+1491
+01:20:50,490 --> 01:20:53,370
+I want this to be the standard
+library for robot navigations.
+
+1492
+01:20:53,370 --> 01:20:55,500
+That, you know, it doesn't make
+sense to use anything else.
+
+1493
+01:20:55,500 --> 01:20:58,290
+Because this, this is a feature
+complete, it has so many options
+
+1494
+01:20:58,290 --> 01:21:01,620
+and plugin interfaces, so, and I
+think we're definitely getting
+
+1495
+01:21:01,620 --> 01:21:04,620
+there. So yeah, if there's
+anything missing, I want to hear
+
+1496
+01:21:04,620 --> 01:21:04,920
+about it.
+
+1497
+01:21:05,220 --> 01:21:09,660
+Audrow Nash: And just going back
+to like more for mentoring and
+
+1498
+01:21:09,660 --> 01:21:13,140
+things like this, or what? So if
+someone wants to contribute?
+
+1499
+01:21:14,130 --> 01:21:17,190
+Should they already be a
+roboticist? Or can they like,
+
+1500
+01:21:17,220 --> 01:21:21,480
+what level? Should someone like?
+What level of skills should
+
+1501
+01:21:21,480 --> 01:21:23,070
+someone have if they want to
+contribute?
+
+1502
+01:21:25,770 --> 01:21:27,210
+Steve Macenski: Yeah, I mean, it
+kind of depends on what you're
+
+1503
+01:21:27,210 --> 01:21:29,820
+interested in working on. If
+you're okay with doing some more
+
+1504
+01:21:29,820 --> 01:21:32,610
+like small discrete tasks, and
+in basically no experience is
+
+1505
+01:21:32,640 --> 01:21:36,060
+required. You know, in
+oftentimes folks that reach out
+
+1506
+01:21:36,060 --> 01:21:39,060
+to that are working on things
+like testing frameworks, and
+
+1507
+01:21:39,060 --> 01:21:41,820
+helping me out with with CI
+issues and these kinds of
+
+1508
+01:21:41,820 --> 01:21:44,640
+things. So then over time, as
+you've built some confidence in
+
+1509
+01:21:44,670 --> 01:21:47,670
+the concepts in the in the the
+code base, we can build those
+
+1510
+01:21:47,670 --> 01:21:50,070
+into larger and larger projects
+that are maybe more substantial
+
+1511
+01:21:50,070 --> 01:21:55,530
+and rewarding. In general, ROS,
+having some rough backgrounds,
+
+1512
+01:21:55,650 --> 01:21:59,160
+especially rough to background,
+is always helpful. But you know,
+
+1513
+01:21:59,160 --> 01:22:01,200
+I understand that a lot of
+folks, this would be the first
+
+1514
+01:22:01,200 --> 01:22:03,840
+experiences working with wealth
+too. So we're always willing to
+
+1515
+01:22:03,840 --> 01:22:07,470
+help work work through those
+those problems. So really not
+
+1516
+01:22:07,470 --> 01:22:10,830
+not much required. But if you
+are more experienced, have more
+
+1517
+01:22:10,830 --> 01:22:13,230
+background in these concepts,
+you can certainly make a much
+
+1518
+01:22:13,230 --> 01:22:17,010
+bigger impact much quicker.
+Because, you know, you can
+
+1519
+01:22:17,010 --> 01:22:19,920
+understand the gaps, where
+they're important for you and
+
+1520
+01:22:19,920 --> 01:22:24,240
+your research and where they are
+in navigation. It's its roadmap,
+
+1521
+01:22:24,480 --> 01:22:27,150
+you can help Phil so it fills in
+those gaps with some of the more
+
+1522
+01:22:27,150 --> 01:22:28,290
+substantial process.
+
+1523
+01:22:28,830 --> 01:22:33,960
+Audrow Nash: And what advice do
+you have for someone who's at
+
+1524
+01:22:33,960 --> 01:22:35,490
+the beginning of their career?
+
+1525
+01:22:39,210 --> 01:22:41,130
+Steve Macenski: Yeah, I mean,
+just just dive in. I think
+
+1526
+01:22:41,400 --> 01:22:44,700
+that's the biggest part. Like
+don't, don't wait for someone to
+
+1527
+01:22:44,700 --> 01:22:47,190
+teach you something. I guess.
+Like, you know, my background is
+
+1528
+01:22:47,190 --> 01:22:51,390
+in aerospace engineering, my,
+my, my, like I did, I wrote
+
+1529
+01:22:51,390 --> 01:22:56,730
+zero, Python for any coursework,
+anytime, during all college. I
+
+1530
+01:22:56,730 --> 01:22:59,490
+learned embedded C when I was in
+high school, just as my dad is a
+
+1531
+01:22:59,490 --> 01:23:02,670
+software engineer, we did some
+projects together, literally,
+
+1532
+01:23:02,670 --> 01:23:06,420
+like my first job, SMB, like day
+one, it was the first time I'd
+
+1533
+01:23:06,420 --> 01:23:10,110
+ever really written C++ code on
+the plane to San Francisco, I
+
+1534
+01:23:10,110 --> 01:23:14,160
+was reading the C++ standard
+manual to learn the semantics.
+
+1535
+01:23:14,190 --> 01:23:17,850
+It's been a while since I've
+worked with C. And so it you
+
+1536
+01:23:17,850 --> 01:23:21,150
+know, just just dive in
+headfirst and start start
+
+1537
+01:23:21,150 --> 01:23:24,660
+breaking stuff, look at errors
+get confused. You know, if
+
+1538
+01:23:24,660 --> 01:23:26,970
+you're willing to be excited and
+interested in spending time
+
+1539
+01:23:26,970 --> 01:23:31,200
+doing it, you know, you can you
+can go from zero to expert, you
+
+1540
+01:23:31,200 --> 01:23:35,550
+know, fairly quickly. It just
+requires grit and the desire
+
+1541
+01:23:35,550 --> 01:23:36,060
+loves Oh,
+
+1542
+01:23:37,140 --> 01:23:41,130
+Audrow Nash: and kind of big
+picture question. Where do you
+
+1543
+01:23:41,130 --> 01:23:49,230
+think robotics is headed in the
+next two to five years? Um,
+
+1544
+01:23:52,920 --> 01:23:55,050
+Steve Macenski: continuation of
+what's happening right now, I
+
+1545
+01:23:55,050 --> 01:23:58,110
+think like, a lot of the
+warehouse companies are starting
+
+1546
+01:23:58,170 --> 01:24:01,080
+to go from like, medium scale to
+like really like, you know,
+
+1547
+01:24:01,200 --> 01:24:03,420
+everywhere else in the world
+happening yet. So I think that
+
+1548
+01:24:03,450 --> 01:24:08,010
+that trend will continue. I
+think the delivery robots will
+
+1549
+01:24:08,010 --> 01:24:11,160
+get a bit will be a lot less
+Telly off and a bit more
+
+1550
+01:24:11,850 --> 01:24:15,270
+autonomous, hopefully. But I
+think there's still a long way
+
+1551
+01:24:15,270 --> 01:24:17,160
+to go there. I think there
+there's a there's a missing.
+
+1552
+01:24:17,220 --> 01:24:19,530
+There's a technology gap right
+there that exists.
+
+1553
+01:24:19,560 --> 01:24:24,660
+Audrow Nash: What is it today?
+What is the gap? I'm
+
+1554
+01:24:26,970 --> 01:24:29,820
+Steve Macenski: going from like
+my first like semantic
+
+1555
+01:24:29,820 --> 01:24:32,340
+segmentation and detection
+models to like something that's
+
+1556
+01:24:32,340 --> 01:24:37,920
+like super robust and works in
+all situations. I think is a big
+
+1557
+01:24:37,950 --> 01:24:39,720
+is a big part of it. I think
+there's a lot of there's a lot
+
+1558
+01:24:39,720 --> 01:24:42,270
+of folks working with just like,
+out of the box demos of
+
+1559
+01:24:42,270 --> 01:24:45,180
+TensorFlow. And they work well
+enough but not well enough. You
+
+1560
+01:24:45,180 --> 01:24:47,550
+could actually just lead a robot
+to go do its thing and
+
+1561
+01:24:47,580 --> 01:24:49,980
+especially in the outdoor space,
+we have cars and yeah, for sure
+
+1562
+01:24:49,980 --> 01:24:52,980
+everything around it. And I
+think there's a there's a
+
+1563
+01:24:53,040 --> 01:24:56,910
+there's a big gap there and in
+when you do have the small
+
+1564
+01:24:56,910 --> 01:24:59,610
+number of companies that can go
+over that. It's because they had
+
+1565
+01:24:59,610 --> 01:25:02,970
+millions Millions and millions
+suspend to hire all the right
+
+1566
+01:25:02,970 --> 01:25:06,990
+people and you know, click this
+huge train datasets and all that
+
+1567
+01:25:06,990 --> 01:25:10,320
+kind of stuff and that that's
+not something everyone can do.
+
+1568
+01:25:12,480 --> 01:25:18,300
+And I think hopefully we see a
+lot more mobile manipulators
+
+1569
+01:25:18,360 --> 01:25:22,170
+starting to reach the market and
+actually accomplishing useful
+
+1570
+01:25:22,170 --> 01:25:24,930
+tasks. I guess right now
+there's, there's that promise
+
+1571
+01:25:24,930 --> 01:25:27,720
+rifle Bill garage of, you know,
+a special box that has had a
+
+1572
+01:25:27,720 --> 01:25:30,030
+product, other folks that have
+had products, but they didn't
+
+1573
+01:25:30,030 --> 01:25:32,550
+really go anywhere outside the
+research space. But I'd really
+
+1574
+01:25:32,550 --> 01:25:34,470
+love to see those start really
+taking off. And I think that
+
+1575
+01:25:34,470 --> 01:25:37,050
+that would get me excited to go
+back into the manipulation
+
+1576
+01:25:37,050 --> 01:25:40,560
+space, if I started seeing it at
+that, that that will start to
+
+1577
+01:25:40,560 --> 01:25:41,250
+take off again.
+
+1578
+01:25:41,730 --> 01:25:48,840
+Audrow Nash: All right, awesome.
+Thank you. Thanks for listening
+
+1579
+01:25:48,840 --> 01:25:52,590
+to this conversation with Steve
+Minsky. Thank you again to our
+
+1580
+01:25:52,590 --> 01:25:55,530
+founding sponsor, Open Robotics.
+See you next time.
+

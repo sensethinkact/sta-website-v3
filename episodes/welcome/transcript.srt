@@ -1,0 +1,316 @@
+1
+00:00:04,470 --> 00:00:06,840
+Audrow Nash: Hi, everyone.
+Welcome to the Sense Think Act
+
+2
+00:00:06,840 --> 00:00:10,290
+Podcast. I'm Audrow Nash, and in
+this episode, I'm going to be
+
+3
+00:00:10,290 --> 00:00:12,720
+introducing the Sense Think Act
+Podcast.
+
+4
+00:00:13,260 --> 00:00:19,020
+So this podcast will feature
+longer interviews on various
+
+5
+00:00:19,020 --> 00:00:22,110
+topics in robotics. I'll
+speak with people that are
+
+6
+00:00:22,110 --> 00:00:25,890
+starting robotics companies,
+larger robotics companies,
+
+7
+00:00:27,300 --> 00:00:31,860
+researchers, both in academia
+and in industry, people that are
+
+8
+00:00:31,860 --> 00:00:34,860
+involved with robotics in
+government, as well as people
+
+9
+00:00:36,060 --> 00:00:39,930
+that are using robotics and art,
+or philosophers that discuss
+
+10
+00:00:39,930 --> 00:00:44,190
+robotics, really anyone that I
+think will make an interesting
+
+11
+00:00:44,190 --> 00:00:45,300
+interview for you all.
+
+12
+00:00:46,080 --> 00:00:50,970
+This podcast is going to be for
+roboticists, as well as anyone
+
+13
+00:00:50,970 --> 00:00:54,750
+that is interested in robotics,
+but doesn't necessarily have any
+
+14
+00:00:54,750 --> 00:00:59,850
+robotics knowledge. So for
+roboticists, we hope that this
+
+15
+00:00:59,910 --> 00:01:03,810
+podcast helps them understand
+different things that are
+
+16
+00:01:03,810 --> 00:01:08,190
+happening in robotics, outside
+of their own focused area.
+
+17
+00:01:08,870 --> 00:01:12,440
+For everyone else, those without
+robotics backgrounds. We hope
+
+18
+00:01:12,440 --> 00:01:15,890
+that this is an accessible way
+to understand what's going on in
+
+19
+00:01:15,890 --> 00:01:22,580
+robotics, as well as its
+limitations, and potential. And
+
+20
+00:01:22,580 --> 00:01:25,760
+one way that we're going to make
+this podcast accessible is to
+
+21
+00:01:25,760 --> 00:01:31,100
+explain technical concepts as we
+go. So that way, we don't leave
+
+22
+00:01:31,100 --> 00:01:36,290
+anyone in the dark. This is also
+good for roboticist because this
+
+23
+00:01:36,290 --> 00:01:39,440
+is a very large field and
+someone from legged mocha
+
+24
+00:01:39,470 --> 00:01:44,870
+locomotion may not understand
+terms used by the computer
+
+25
+00:01:44,870 --> 00:01:46,400
+vision community say.
+
+26
+00:01:47,480 --> 00:01:52,760
+Now, this podcast is sponsored
+by Open Robotics, which is where
+
+27
+00:01:52,760 --> 00:01:58,100
+I work as a software engineer.
+Open Robotics makes open source
+
+28
+00:01:58,100 --> 00:02:01,250
+robotic software, you may be
+familiar with their robot
+
+29
+00:02:01,280 --> 00:02:06,470
+operating system (ROS), or their
+simulator, Ignition Gazebo. This
+
+30
+00:02:06,470 --> 00:02:09,860
+podcast isn't going to be
+limited talk to talking about
+
+31
+00:02:09,980 --> 00:02:15,830
+topics that relate to things
+that Open Robotics makes. So we
+
+32
+00:02:15,830 --> 00:02:17,510
+have free rein to talk about
+everything.
+
+33
+00:02:17,930 --> 00:02:21,860
+For me, I have been involved in
+robotics for maybe eight years,
+
+34
+00:02:21,920 --> 00:02:26,300
+mostly as a researcher in
+academia. As I mentioned, I'm
+
+35
+00:02:26,300 --> 00:02:30,470
+currently working at Open
+Robotics. And I was previously
+
+36
+00:02:30,470 --> 00:02:35,990
+involved in Robohub's Robot
+Podcast, where I led it for
+
+37
+00:02:35,990 --> 00:02:41,660
+maybe five years. And I'm very
+happy for this opportunity and
+
+38
+00:02:41,660 --> 00:02:46,700
+the support of Open Robotics to
+make this podcast, very excited
+
+39
+00:02:46,700 --> 00:02:50,840
+to try longer interviews. And I
+just enjoyed learning through
+
+40
+00:02:50,840 --> 00:02:53,720
+conducting interviews and
+sharing that with the greater
+
+41
+00:02:53,720 --> 00:02:54,260
+public.
+
+42
+00:02:55,370 --> 00:03:01,550
+So next, where do we get the
+name Sense Think Act Podcast? So
+
+43
+00:03:01,640 --> 00:03:07,490
+robots can be thought of as
+machines that sense the world.
+
+44
+00:03:07,850 --> 00:03:11,900
+Think about what they see, and
+then act upon the world, maybe
+
+45
+00:03:11,900 --> 00:03:14,870
+by moving themselves or by
+moving something else, for
+
+46
+00:03:14,870 --> 00:03:21,770
+example. And in school, many
+roboticists were probably taught
+
+47
+00:03:22,070 --> 00:03:25,310
+that this is a fundamental
+control loop that you can think
+
+48
+00:03:25,310 --> 00:03:29,120
+of for roboticist. So because
+this is going to be a general
+
+49
+00:03:29,120 --> 00:03:32,000
+robotics podcast, we thought it
+was an appropriate name.
+
+50
+00:03:33,200 --> 00:03:38,120
+Now, you can watch this podcast
+on YouTube and maybe Vimeo in
+
+51
+00:03:38,120 --> 00:03:41,450
+the near future. And you should
+be able to listen to this
+
+52
+00:03:41,450 --> 00:03:45,260
+podcast on all major podcasting
+platforms such as Apple
+
+53
+00:03:45,260 --> 00:03:49,160
+Podcasts, Spotify, Google
+Podcasts, etc.
+
+54
+00:03:50,090 --> 00:03:55,580
+For comments, you can of course,
+comment on YouTube. But we will
+
+55
+00:03:55,580 --> 00:04:00,470
+be using the ROS Discourse for
+comments with the category since
+
+56
+00:04:00,470 --> 00:04:05,810
+think act. And you can you can
+leave comments there, such as
+
+57
+00:04:06,080 --> 00:04:09,200
+thoughts on a specific episode,
+or general feedback or
+
+58
+00:04:09,200 --> 00:04:13,820
+suggestions on things you would
+like us to cover. Now you can
+
+59
+00:04:13,850 --> 00:04:17,360
+also access that through the
+sense think act website at
+
+60
+00:04:17,360 --> 00:04:23,840
+SenseThinkAct.com. And well,
+that's all I have for today. So
+
+61
+00:04:23,870 --> 00:04:27,860
+thank you to our founding
+sponsor, Open Robotics, and I'll
+
+62
+00:04:27,860 --> 00:04:31,460
+see you every two weeks for a
+new interview. Make sure to
+
+63
+00:04:31,460 --> 00:04:33,920
+subscribe if you want
+notifications. Goodbye,
+
+64
+00:04:33,920 --> 00:04:34,460
+everyone.
+

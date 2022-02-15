@@ -1,0 +1,27 @@
+guests: Dave Coleman
+title: New directions for the MoveIt project
+description: |
+  In this episode, Audrow Nash interviews Dave Coleman, Chief Executive Officer at PickNik Robotics.
+  Dave speaks at a high level about what MoveIt is and what problems it helps roboticists solve, they talk about supervised autonomy, including a collaboration with NASA and MoveIt Studio, and Dave talks about MoveIt 3.0.
+excerpt: Dave Coleman is the CEO of PickNik Robotics.
+duration:
+  hours: 1
+  minutes: 2
+  seconds: 53
+tags:
+  - robotic arms
+  - motion planning
+  - open source
+links:
+  - name: Dave Coleman's LinkedIn profile
+    url: https://www.linkedin.cn/in/davetcoleman
+  - name: PickNik's website
+    url: https://picknik.ai/
+  - name: MoveIt's website
+    url: https://moveit.ros.org/
+  - name: MoveIt Studio's website
+    url: https://picknik.ai/studio/
+mp3SizeBytes: 123156970
+publishDate: 2021-09-06
+youtube:
+  mainContentId: 5d7F9gvMncY

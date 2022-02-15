@@ -1,0 +1,14 @@
+0:00:00 - Start
+0:00:56 - Introducing Matt and ROS-Industrial
+0:05:17 - Motivation in forming ROS-Industrial
+0:11:06 - Matt’s background
+0:19:10 - Getting introduced to ROS
+0:24:33 - Collaboration before Git
+0:32:21 - Getting to the Southwest Research Institute
+0:35:37 - Lowering the barrier to entry
+0:45:41 - Overview of SWRI
+0:51:09 - ROS-Industrial’s consortium
+1:02:23 - Just in time manufacturing
+1:06:37 - ROS-Industrial’s new working group
+1:17:03 - ROS-Industrial’s conferences
+1:25:08 - Links to share
