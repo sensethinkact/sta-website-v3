@@ -65,7 +65,7 @@ Audrow Nash. Thank you to our
 
 14
 00:00:59,190 --> 00:01:03,630
-founding sponsor open robotics.
+founding sponsor Open Robotics.
 And here is my conversation with
 
 15
@@ -3944,7 +3944,7 @@ source pieces. For example, we
 
 805
 00:53:13,470 --> 00:53:18,600
-use Ross one, we use the px for
+use ROS one, we use the px for
 autopilot stack. And I kind of
 
 806
@@ -4220,6 +4220,6 @@ again to our founding sponsor,
 
 861
 00:56:44,940 --> 00:56:47,670
-open robotics, and I hope to see
+Open Robotics, and I hope to see
 you next time
 

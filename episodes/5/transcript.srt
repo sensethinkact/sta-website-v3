@@ -4073,7 +4073,7 @@ against, is it some and we're
 827
 00:44:43,139 --> 00:44:47,609
 using, you know, right now some
-pretty we're using Ross and
+pretty we're using ROS and
 
 828
 00:44:47,609 --> 00:44:50,939
@@ -4087,7 +4087,7 @@ lot of that kind of standard
 
 830
 00:44:56,519 --> 00:44:59,249
-standard, but improved. Ross
+standard, but improved. ROS
 systems. Yep.
 
 831
@@ -4098,22 +4098,22 @@ specific things, and I've
 832
 00:45:01,230 --> 00:45:05,370
 improved them internally.
-Exactly. Which, which Ross are
+Exactly. Which, which ROS are
 
 833
 00:45:05,370 --> 00:45:07,920
-using are using Ross one are
-using Ross two.
+using are using ROS one are
+using ROS two.
 
 834
 00:45:08,790 --> 00:45:11,670
 Erik Schluntz: Yeah, so we're
-using Ross one. We haven't yet
+using ROS one. We haven't yet
 
 835
 00:45:11,670 --> 00:45:15,540
 seen a lot of other people
-switch to Ross two for, you
+switch to ROS two for, you
 
 836
 00:45:15,540 --> 00:45:19,650
@@ -4127,7 +4127,7 @@ traction there and sort of new
 
 838
 00:45:22,170 --> 00:45:26,610
-things getting started with Ross
+things getting started with ROS
 two, but we haven't yet seen all
 
 839
@@ -4142,7 +4142,7 @@ would make a move.
 841
 00:45:30,900 --> 00:45:36,270
 Audrow Nash: Gotcha. How? How
-has it been working with Ross
+has it been working with ROS
 
 842
 00:45:36,300 --> 00:45:40,200
@@ -4157,7 +4157,7 @@ yeltsin?
 844
 00:45:42,240 --> 00:45:45,660
 Erik Schluntz: Yeah, I mean, I I
-really like Ross, I think the
+really like ROS, I think the
 
 845
 00:45:45,720 --> 00:45:48,810
@@ -4187,7 +4187,7 @@ and just know what the
 850
 00:46:00,990 --> 00:46:05,490
 interfaces are. So I really love
-Ross conceptually, there's, you
+ROS conceptually, there's, you
 
 851
 00:46:05,490 --> 00:46:07,950
@@ -4196,7 +4196,7 @@ there's a couple of rough edges,
 
 852
 00:46:07,950 --> 00:46:12,270
-especially of Ross pi, the
+especially of ROS pi, the
 Python implementation, but you
 
 853
@@ -4212,7 +4212,7 @@ community and the ecosystem that
 855
 00:46:17,430 --> 00:46:20,490
 any sensor we find, it's like,
-oh, there's a Ross node already
+oh, there's a ROS node already
 
 856
 00:46:20,490 --> 00:46:23,040
@@ -4256,7 +4256,7 @@ like your fork of NAB two, or
 864
 00:46:42,690 --> 00:46:45,960
 any of these other raw libraries
-that are built on top of Ross,
+that are built on top of ROS,
 
 865
 00:46:47,040 --> 00:46:50,310
@@ -4315,7 +4315,7 @@ can say, hey, send a nav goal
 876
 00:47:24,660 --> 00:47:29,520
 here. And move base is a open
-source Ross package that
+source ROS package that
 
 877
 00:47:29,520 --> 00:47:32,070
@@ -4463,7 +4463,7 @@ fast to get in there. And one of
 906
 00:49:11,219 --> 00:49:15,569
 the things that we've seen is
-that if you send just one Ross
+that if you send just one ROS
 
 907
 00:49:15,569 --> 00:49:20,399
@@ -8653,6 +8653,6 @@ again to our founding sponsor
 
 1750
 01:36:54,240 --> 01:36:56,280
-open robotics. Goodbye,
+Open Robotics. Goodbye,
 everyone.
 

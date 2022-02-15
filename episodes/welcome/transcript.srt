@@ -5,13 +5,13 @@ Welcome to the Sense Think Act
 
 2
 00:00:06,840 --> 00:00:10,290
-Podcast. I'm Audrow Nash. And in
+Podcast. I'm Audrow Nash, and in
 this episode, I'm going to be
 
 3
 00:00:10,290 --> 00:00:12,720
-introducing the sensing gap
-podcast.
+introducing the Sense Think Act
+Podcast.
 
 4
 00:00:13,260 --> 00:00:19,020
@@ -20,7 +20,7 @@ longer interviews on various
 
 5
 00:00:19,020 --> 00:00:22,110
-topics in robotics. So I'll
+topics in robotics. I'll
 speak with people that are
 
 6
@@ -149,7 +149,7 @@ limited talk to talking about
 31
 00:02:09,980 --> 00:02:15,830
 topics that relate to things
-that open robotics makes. So we
+that Open Robotics makes. So we
 
 32
 00:02:15,830 --> 00:02:17,510
@@ -173,8 +173,8 @@ Robotics. And I was previously
 
 36
 00:02:30,470 --> 00:02:35,990
-involved in Robohub's robot
-podcast, where I led it for
+involved in Robohub's Robot
+Podcast, where I led it for
 
 37
 00:02:35,990 --> 00:02:41,660

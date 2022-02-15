@@ -41,7 +41,7 @@ Think Act Podcast. I'm Audrow.
 9
 00:00:32,670 --> 00:00:36,810
 Nash. Thank you to our founding
-sponsor open robotics. And now
+sponsor Open Robotics. And now
 
 10
 00:00:36,840 --> 00:00:38,550
@@ -65,7 +65,7 @@ box at Samsung research. So I'm
 
 14
 00:00:48,750 --> 00:00:51,570
-the lead developer on the Ross
+the lead developer on the ROS
 to navigation stack. And I sit
 
 15
@@ -80,13 +80,13 @@ Correct? Yeah. So it's like the
 
 17
 00:00:58,620 --> 00:01:01,260
-the board for Ross, let's say.
+the board for ROS, let's say.
 So it's a bunch of different
 
 18
 00:01:01,260 --> 00:01:03,930
 companies that kind of come
-together with Idris and Ross to
+together with Idris and ROS to
 
 19
 00:01:04,050 --> 00:01:06,570
@@ -253,8 +253,8 @@ starting, what was the precursor
 
 52
 00:02:47,519 --> 00:02:50,279
-to fetch robotics, then later,
-fetch robotics. And so he was
+to Fetch robotics, then later,
+Fetch robotics. And so he was
 
 53
 00:02:50,279 --> 00:02:53,069
@@ -293,7 +293,7 @@ know, 2019 or so when, you know,
 
 60
 00:03:12,779 --> 00:03:16,349
-Ross two started hitting kind of
+ROS two started hitting kind of
 more mature milestones. So I
 
 61
@@ -414,21 +414,21 @@ started at Willow Garage in
 84
 00:04:28,590 --> 00:04:34,440
 navigation library, and then
-Ross one came out. And it was
+ROS one came out. And it was
 
 85
 00:04:34,500 --> 00:04:38,010
-used with Ross one. So the
+used with ROS one. So the
 general navigation code was
 
 86
 00:04:38,010 --> 00:04:42,180
-using Ross one. It continued and
+using ROS one. It continued and
 people were using that. And then
 
 87
 00:04:42,210 --> 00:04:46,620
-Ross two came out in an early
+ROS two came out in an early
 version, he said bouncy, and
 
 88
@@ -503,7 +503,7 @@ so I've already done a couple of
 
 102
 00:05:31,710 --> 00:05:37,110
-Ross con talks on those topics.
+ROS con talks on those topics.
 So Samsung was looking to hire
 
 103
@@ -757,7 +757,7 @@ delimiter? Between math two and
 
 153
 00:08:18,660 --> 00:08:24,660
-other Ross libraries? Like Ross
+other ROS libraries? Like ROS
 to control for example, or move
 
 154
@@ -881,7 +881,7 @@ other for the most part. And
 
 178
 00:09:43,320 --> 00:09:46,740
-then your Ross control is is
+then your ROS control is is
 kind of sitting in that lower
 
 179
@@ -916,7 +916,7 @@ or for manipulation, which is
 
 185
 00:10:07,260 --> 00:10:11,280
-frankly, more of what Ross
+frankly, more of what ROS
 control is used for has, you
 
 186
@@ -7269,7 +7269,7 @@ absolutely nothing to installing
 
 1470
 01:19:48,450 --> 01:19:51,060
-Ross to gain the binaries, do
+ROS to gain the binaries, do
 your first demonstrations and
 
 1471
@@ -7473,7 +7473,7 @@ that are maybe more substantial
 
 1511
 01:21:50,070 --> 01:21:55,530
-and rewarding. In general, Ross,
+and rewarding. In general, ROS,
 having some rough backgrounds,
 
 1512
@@ -7814,6 +7814,6 @@ Minsky. Thank you again to our
 
 1580
 01:25:52,590 --> 01:25:55,530
-founding sponsor, open robotics.
+founding sponsor, Open Robotics.
 See you next time.
 

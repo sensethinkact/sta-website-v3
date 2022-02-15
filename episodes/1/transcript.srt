@@ -46,7 +46,7 @@ And also I found it very
 10
 00:00:39,120 --> 00:00:42,210
 interesting to hear about the
-different stages that FX fetch
+different stages that FX Fetch
 
 11
 00:00:42,210 --> 00:00:47,670
@@ -105,7 +105,7 @@ related?
 22
 00:01:25,380 --> 00:01:28,890
 Melonee Wise: Yeah, so I started
-fetch robotics about seven years
+Fetch robotics about seven years
 
 23
 00:01:28,890 --> 00:01:35,100
@@ -114,17 +114,17 @@ closed on an acquisition of
 
 24
 00:01:35,100 --> 00:01:39,540
-zebra acquiring fetch robotics.
+zebra acquiring Fetch robotics.
 And so Zebra Technologies
 
 25
 00:01:39,780 --> 00:01:43,290
-acquired fetch to create a new
+acquired Fetch to create a new
 robotics automation division.
 
 26
 00:01:43,320 --> 00:01:46,710
-and fetch makes autonomous
+and Fetch makes autonomous
 mobile robots for the logistics
 
 27
@@ -133,7 +133,7 @@ and manufacturing industries.
 
 28
 00:01:50,730 --> 00:01:54,510
-Audrow Nash: So going into fetch
+Audrow Nash: So going into Fetch
 a bit more congrats on being
 
 29
@@ -153,7 +153,7 @@ seven years. Would you tell me a
 
 32
 00:02:09,030 --> 00:02:13,170
-bit more about fetch. So it's
+bit more about Fetch. So it's
 for warehouse related robots,
 
 33
@@ -173,7 +173,7 @@ when I, when they first started
 
 36
 00:02:23,460 --> 00:02:28,200
-talking about it, fetch robotics
+talking about it, Fetch robotics
 to investors, I kind of I kind
 
 37
@@ -357,7 +357,7 @@ hotels and, and the guys in AI
 
 73
 00:04:51,040 --> 00:04:58,750
-that started fetch robotics. We
+that started Fetch robotics. We
 we looked at at the
 
 74
@@ -553,7 +553,7 @@ etc, etc. And so that led us to
 
 113
 00:07:28,469 --> 00:07:33,539
-be interested in creating fetch
+be interested in creating Fetch
 and how know the
 
 114
@@ -577,7 +577,7 @@ trend was very much true before.
 
 118
 00:07:48,480 --> 00:07:53,310
-before when we started fetch,
+before when we started Fetch,
 there was just a huge labor gap
 
 119
@@ -1192,7 +1192,7 @@ application. And if you look at
 
 242
 00:16:10,980 --> 00:16:17,670
-fetch today, we offer three
+Fetch today, we offer three
 major platforms, and have
 
 243
@@ -1267,7 +1267,7 @@ company. And I mean, you work in
 
 257
 00:17:13,620 --> 00:17:16,320
-open robotics, and like the
+Open Robotics, and like the
 whole business, their software.
 
 258
@@ -3029,7 +3029,7 @@ the things. But when we, when we
 
 615
 00:39:38,640 --> 00:39:42,960
-started fetch, we had so much
+started Fetch, we had so much
 experience like when we built
 
 616
@@ -3636,12 +3636,12 @@ we no longer base any of our
 737
 00:47:55,800 --> 00:47:59,160
 navigation and slam on top of
-the Ross stack.
+the ROS stack.
 
 738
 00:48:02,670 --> 00:48:06,030
 Audrow Nash: With that, would
-that change with Ross? Two out
+that change with ROS? Two out
 
 739
 00:48:06,030 --> 00:48:08,250
@@ -3654,7 +3654,7 @@ you know, we definitely are
 
 741
 00:48:11,999 --> 00:48:15,029
-going to move to Ross, two in
+going to move to ROS, two in
 the future. We're trying to
 
 742
@@ -3680,7 +3680,7 @@ same is true for kind of the
 746
 00:48:31,259 --> 00:48:37,679
 slant algorithms. It doesn't say
-anything negative about the Ross
+anything negative about the ROS
 
 747
 00:48:37,679 --> 00:48:39,779
@@ -3719,11 +3719,11 @@ is stuff that that I think now
 754
 00:48:57,420 --> 00:48:59,760
 you're starting to see more
-attention to in Ross with, like
+attention to in ROS with, like
 
 755
 00:48:59,760 --> 00:49:04,860
-Ross web tools. But But
+ROS web tools. But But
 previously, there wasn't as much
 
 756
@@ -3738,7 +3738,7 @@ and, and things like that. And
 
 758
 00:49:13,530 --> 00:49:18,210
-so fetch builds all that
+so Fetch builds all that
 software stack for, for
 
 759
@@ -3763,12 +3763,12 @@ the application. Yeah. I think
 763
 00:49:30,060 --> 00:49:32,160
 that's an important thing to add
-into Ross.
+into ROS.
 
 764
 00:49:32,520 --> 00:49:35,370
-Melonee Wise: Yeah, Ross was
-ecosystem. Yeah, the Ross
+Melonee Wise: Yeah, ROS was
+ecosystem. Yeah, the ROS
 
 765
 00:49:35,370 --> 00:49:40,560
@@ -3841,7 +3841,7 @@ thing that sparked all of the
 779
 00:50:28,110 --> 00:50:34,860
 explosion in in companies for
-robotics and using Ross was that
+robotics and using ROS was that
 
 780
 00:50:35,310 --> 00:50:40,740
@@ -3860,7 +3860,7 @@ explicitly I mean, I'm, I'm the
 
 783
 00:50:46,860 --> 00:50:53,160
-Ross boss for the humble to
+ROS boss for the humble to
 release in a year. And so I'm
 
 784
@@ -3899,7 +3899,7 @@ the person who used to be the
 
 791
 00:51:11,550 --> 00:51:12,870
-Ross Wikis are so
+ROS Wikis are so
 
 792
 00:51:14,730 --> 00:51:16,260
@@ -3922,18 +3922,18 @@ so so this the Willow Garage
 
 796
 00:51:25,080 --> 00:51:28,200
-days, or this is the early Ross
+days, or this is the early ROS
 days, yeah, milestone
 
 797
 00:51:28,200 --> 00:51:33,450
-Melonee Wise: three of Ross, and
+Melonee Wise: three of ROS, and
 will abroad was documentation.
 
 798
 00:51:33,780 --> 00:51:39,900
 And during that time, I wrote
-about 200 Ross tutorials. So all
+about 200 ROS tutorials. So all
 
 799
 00:51:39,900 --> 00:51:43,920
@@ -3948,7 +3948,7 @@ turtle sim I wrote.
 801
 00:51:47,970 --> 00:51:50,790
 Audrow Nash: That's so funny.
-And now in Ross two, it's the
+And now in ROS two, it's the
 
 802
 00:51:50,790 --> 00:51:54,240
@@ -3983,7 +3983,7 @@ former, she's no longer at open
 808
 00:52:11,100 --> 00:52:15,330
 robotics. But she was like the
-documentation lead for the Ross
+documentation lead for the ROS
 
 809
 00:52:15,330 --> 00:52:17,010
@@ -3997,7 +3997,7 @@ she, I think she ported a lot of
 
 811
 00:52:20,280 --> 00:52:22,320
-the Ross one tutorials to Ross
+the ROS one tutorials to ROS
 Who?
 
 812
@@ -4027,7 +4027,7 @@ these kinds of things. These
 
 817
 00:52:42,810 --> 00:52:44,910
-would be good to see. And Ross,
+would be good to see. And ROS,
 do you think, right?
 
 818
@@ -4099,7 +4099,7 @@ those things? All started two or
 
 832
 00:53:31,589 --> 00:53:34,109
-three years after fetch started
+three years after Fetch started
 as a company.
 
 833
@@ -4114,7 +4114,7 @@ it's why, you know, it's it's
 835
 00:53:40,140 --> 00:53:46,110
 the same thing that a lot of
-people ask why Ross didn't base
+people ask why ROS didn't base
 
 836
 00:53:46,110 --> 00:53:51,390
@@ -4123,7 +4123,7 @@ protobuf exists. Yeah, it didn't
 
 837
 00:53:51,390 --> 00:53:57,510
-exist when? When Ross started,
+exist when? When ROS started,
 you know? And then DBS wasn't as
 
 838
@@ -4932,7 +4932,7 @@ than we are today. Yeah, I I,
 1002
 01:04:21,240 --> 01:04:27,030
 you know, a couple years ago
-actually at a Ross con, the CEO
+actually at a ROS con, the CEO
 
 1003
 01:04:27,030 --> 01:04:31,320
@@ -4952,7 +4952,7 @@ robotics is is a slow moving
 1006
 01:04:42,030 --> 01:04:48,780
 train. I think that a lot of
-people probably know fetch and
+people probably know Fetch and
 
 1007
 01:04:48,780 --> 01:04:53,280
@@ -5232,7 +5232,7 @@ Keywords terrifying. Now, if you
 
 1063
 01:08:37,019 --> 01:08:40,589
-look at fetch and plus one and
+look at Fetch and plus one and
 lots of other companies we all
 
 1064
@@ -5385,7 +5385,7 @@ sense think act calm, or you can
 
 1094
 01:10:41,340 --> 01:10:45,210
-find us on the Ross discourse.
+find us on the ROS discourse.
 We'll be back in two weeks time.
 
 1095

@@ -6,12 +6,12 @@ conversation with Matt Robinson,
 2
 00:00:05,460 --> 00:00:09,090
 who is a program manager for
-Ross industrial Americas at the
+ROS industrial Americas at the
 
 3
 00:00:09,090 --> 00:00:12,960
 Southwest Research Institute.
-Ross industrial is a group that
+ROS industrial is a group that
 
 4
 00:00:12,960 --> 00:00:17,130
@@ -20,7 +20,7 @@ for example, factories, leverage
 
 5
 00:00:17,130 --> 00:00:20,940
-Ross and its ecosystem. Ross
+ROS and its ecosystem. ROS
 industrial has many parts,
 
 6
@@ -45,12 +45,12 @@ can be improved with more modern
 
 10
 00:00:37,260 --> 00:00:41,640
-tooling like Ross and get Matt's
-background, Ross industrials
+tooling like ROS and get Matt's
+background, ROS industrials
 
 11
 00:00:41,640 --> 00:00:45,720
-consortium and Ross industrials
+consortium and ROS industrials
 new working group. This is the
 
 12
@@ -60,7 +60,7 @@ Nash. Thank you to our founding
 
 13
 00:00:49,350 --> 00:00:53,130
-sponsor, open robotics. And here
+sponsor, Open Robotics. And here
 is my conversation with Matt
 
 14
@@ -89,17 +89,17 @@ give me a bit of background on
 
 19
 00:01:16,170 --> 00:01:17,670
-Ross industrial?
+ROS industrial?
 
 20
 00:01:18,540 --> 00:01:25,680
-Matt Robinson: Yeah. So. So Ross
+Matt Robinson: Yeah. So. So ROS
 industrial is an open source
 
 21
 00:01:25,680 --> 00:01:29,580
 project that seeks to extend
-Ross, robot operating system to
+ROS, robot operating system to
 
 22
 00:01:29,580 --> 00:01:33,480
@@ -152,7 +152,7 @@ something as industrial in the
 
 32
 00:02:06,480 --> 00:02:11,190
-context of the Ross industrial
+context of the ROS industrial
 open source project. We are
 
 33
@@ -217,7 +217,7 @@ ecosystem. And so that's where
 
 45
 00:03:01,860 --> 00:03:05,940
-the extending of Ross into this
+the extending of ROS into this
 industrial space was kind of the
 
 46
@@ -388,7 +388,7 @@ and merge with the capabilities
 79
 00:05:14,940 --> 00:05:17,640
 that are kind of coming forward
-in the Ross ecosystem.
+in the ROS ecosystem.
 
 80
 00:05:18,330 --> 00:05:21,720
@@ -422,7 +422,7 @@ layers and Thrall some
 
 86
 00:05:43,200 --> 00:05:47,160
-industrial, the Ross industrial
+industrial, the ROS industrial
 open source project was was
 
 87
@@ -472,7 +472,7 @@ until or before they adopted
 
 96
 00:06:26,460 --> 00:06:29,850
-Ross, very often, they would
+ROS, very often, they would
 develop that advanced
 
 97
@@ -753,7 +753,7 @@ that component and then connect
 
 153
 00:09:45,780 --> 00:09:50,550
-to it with Ross or some other
+to it with ROS or some other
 like, high level thing that you
 
 154
@@ -1250,7 +1250,7 @@ Caterpillar to get involved with
 
 254
 00:15:37,050 --> 00:15:40,770
-the Ross industrial open source
+the ROS industrial open source
 projects. Well, I learned that
 
 255
@@ -1558,7 +1558,7 @@ to identify some potential near
 316
 00:19:04,800 --> 00:19:09,000
 term use cases or business cases
-around like, what what does Ross
+around like, what what does ROS
 
 317
 00:19:09,000 --> 00:19:10,860
@@ -1567,17 +1567,17 @@ really offer us? Right? Okay.
 318
 00:19:10,860 --> 00:19:13,980
 Audrow Nash: So at this time,
-you had been exposed to Ross or
+you had been exposed to ROS or
 
 319
 00:19:13,980 --> 00:19:15,660
-like, how did Ross come into the
+like, how did ROS come into the
 picture?
 
 320
 00:19:16,350 --> 00:19:21,630
 Matt Robinson: We ran into the
-Ross industrial team at a
+ROS industrial team at a
 
 321
 00:19:21,630 --> 00:19:26,670
@@ -1621,7 +1621,7 @@ of the caterpillar face for the
 
 329
 00:19:50,760 --> 00:19:53,970
-Ross industrial consortium. And
+ROS industrial consortium. And
 I started like, kind of
 
 330
@@ -1652,7 +1652,7 @@ like why we actually saw can we
 335
 00:20:12,450 --> 00:20:14,880
 solve industrial problems with
-with Ross?
+with ROS?
 
 336
 00:20:15,060 --> 00:20:20,220
@@ -1926,7 +1926,7 @@ this focus technical project,
 390
 00:23:25,620 --> 00:23:27,660
 which are these collaborative
-projects in the Ross industrial
+projects in the ROS industrial
 
 391
 00:23:27,660 --> 00:23:30,690
@@ -2011,7 +2011,7 @@ you know, streaking it up to the
 407
 00:24:21,000 --> 00:24:23,850
 open source Kool Aid and this
-idea of leveraging Ross to solve
+idea of leveraging ROS to solve
 
 408
 00:24:23,850 --> 00:24:27,000
@@ -2020,7 +2020,7 @@ chance to come here and take
 
 409
 00:24:27,000 --> 00:24:30,630
-over the Ross industrial project
+over the ROS industrial project
 here from my predecessor, Paul
 
 410
@@ -2080,7 +2080,7 @@ different locations, we did that
 421
 00:25:14,370 --> 00:25:17,640
 collaborative project and the
-Ross industrial sort of family,
+ROS industrial sort of family,
 
 422
 00:25:17,640 --> 00:25:22,260
@@ -2184,7 +2184,7 @@ communities and the prevalence
 
 442
 00:26:36,900 --> 00:26:39,390
-or emergence of Ross and people
+or emergence of ROS and people
 looking at industrial
 
 443
@@ -2557,11 +2557,11 @@ startups, whatever the robot
 517
 00:31:03,509 --> 00:31:05,969
 they're putting out there. Like
-there's, there's Ross, there's a
+there's, there's ROS, there's a
 
 518
 00:31:05,969 --> 00:31:07,709
-Ross something on Yeah, it's
+ROS something on Yeah, it's
 
 519
 00:31:07,710 --> 00:31:09,480
@@ -2732,7 +2732,7 @@ you know, I'm like, oh, like,
 
 553
 00:33:06,330 --> 00:33:09,090
-run the Ross Industrial Program.
+run the ROS Industrial Program.
 Like, you got to be kidding me.
 
 554
@@ -2882,7 +2882,7 @@ maybe I don't need to define it,
 583
 00:35:02,460 --> 00:35:06,600
 but just a programming language,
-which, for Ross, we are a lot of
+which, for ROS, we are a lot of
 
 584
 00:35:06,600 --> 00:35:09,660
@@ -2927,7 +2927,7 @@ almost. Okay,
 592
 00:35:38,249 --> 00:35:40,859
 Audrow Nash: so one of the big
-parts of Ross industrial, you're
+parts of ROS industrial, you're
 
 593
 00:35:40,859 --> 00:35:45,479
@@ -3134,7 +3134,7 @@ of the community, right? We
 
 634
 00:38:05,130 --> 00:38:08,160
-really want it's extending Ross
+really want it's extending ROS
 into industrial applications. So
 
 635
@@ -3254,7 +3254,7 @@ so yes, so hence we've migrated
 
 658
 00:39:35,460 --> 00:39:39,180
-our training over to Ross to as
+our training over to ROS to as
 well we're trying to as I
 
 659
@@ -3274,7 +3274,7 @@ manage rolling out in the
 
 662
 00:39:52,140 --> 00:39:57,480
-direction of Ross to but but but
+direction of ROS to but but but
 we're getting right. Most
 
 663
@@ -3709,7 +3709,7 @@ and we're just trying to I have
 750
 00:44:56,700 --> 00:44:59,700
 a hard time keeping up and I'm
-like in the Ross world more than
+like in the ROS world more than
 
 751
 00:44:59,700 --> 00:44:59,970
@@ -3782,7 +3782,7 @@ you're at Southwest at the
 765
 00:45:44,670 --> 00:45:50,610
 Southwest Research Institute,
-sweary. And you're leading Ross
+sweary. And you're leading ROS
 
 766
 00:45:50,610 --> 00:45:53,790
@@ -3816,7 +3816,7 @@ these tools in their day to day
 772
 00:46:08,070 --> 00:46:11,640
 problem solving. Right? So
-they're kind of like, the Ross
+they're kind of like, the ROS
 
 773
 00:46:11,640 --> 00:46:14,580
@@ -3913,7 +3913,7 @@ share tips and practices and
 
 792
 00:47:12,750 --> 00:47:16,710
-where Ross makes sense. But
+where ROS makes sense. But
 anyways, so there's, it's all
 
 793
@@ -4212,7 +4212,7 @@ well as some of our partner
 
 852
 00:50:42,540 --> 00:50:46,890
-groups. Ross industrial is
+groups. ROS industrial is
 stewarded by three organizations
 
 853
@@ -4232,8 +4232,8 @@ Technology Center in Singapore,
 
 856
 00:50:56,700 --> 00:50:59,400
-Stuart Ross, industrial Europe
-and Ross industrial Asia
+Stuart ROS, industrial Europe
+and ROS industrial Asia
 
 857
 00:50:59,400 --> 00:51:03,630
@@ -4243,11 +4243,11 @@ organizations also make great
 858
 00:51:03,630 --> 00:51:07,590
 contributions to open source and
-of course, Ross Ross, too, and
+of course, ROS ROS, too, and
 
 859
 00:51:07,620 --> 00:51:08,310
-Ross industrial.
+ROS industrial.
 
 860
 00:51:10,350 --> 00:51:12,720
@@ -4256,7 +4256,7 @@ bit about the consortium? Around
 
 861
 00:51:12,720 --> 00:51:13,680
-Ross industrial?
+ROS industrial?
 
 862
 00:51:14,700 --> 00:51:18,780
@@ -4400,7 +4400,7 @@ stuff fixes, new versions, etc,
 890
 00:52:47,160 --> 00:52:52,620
 we maintain the Qt plugin for
-Ross. And different functions
+ROS. And different functions
 
 891
 00:52:52,620 --> 00:52:56,190
@@ -4480,7 +4480,7 @@ on navigation. Right? Oh, we
 906
 00:53:47,010 --> 00:53:50,610
 generally, like we've started
-pushing out Ross to training and
+pushing out ROS to training and
 
 907
 00:53:50,610 --> 00:53:54,450
@@ -4490,7 +4490,7 @@ like, Hey, this is fine. But
 908
 00:53:54,510 --> 00:53:57,570
 like, how do we make it run with
-our Ross one stuff? Right. So we
+our ROS one stuff? Right. So we
 
 909
 00:53:57,570 --> 00:54:01,680
@@ -4553,7 +4553,7 @@ the Americas consortium,
 
 921
 00:54:38,730 --> 00:54:42,300
-Fraunhofer IPA stood up a Ross
+Fraunhofer IPA stood up a ROS
 industrial consortium in Europe.
 
 922
@@ -4822,7 +4822,7 @@ me in touch with the person who
 
 975
 00:58:03,330 --> 00:58:11,340
-does Ross on marketing? But
+does ROS on marketing? But
 like, yes, one second. I'm the
 
 976
@@ -4857,7 +4857,7 @@ Michael ripperger. Just recently
 
 982
 00:58:34,230 --> 00:58:37,230
-spoke at Ross con, we put on a
+spoke at ROS con, we put on a
 workshop, obviously, by
 
 983
@@ -4877,7 +4877,7 @@ Yeah.
 986
 00:58:42,930 --> 00:58:45,630
 Matt Robinson: Jorge, Nico was
-on the Ross developers podcast
+on the ROS developers podcast
 
 987
 00:58:45,660 --> 00:58:50,880
@@ -5120,7 +5120,7 @@ initial industry, oh, my God.
 1035
 01:01:44,010 --> 01:01:46,230
 And so like, obviously hanging
-out and Ross industry, we can
+out and ROS industry, we can
 
 1036
 01:01:46,230 --> 01:01:48,480
@@ -5283,7 +5283,7 @@ common in industry. And there's
 
 1068
 01:03:37,200 --> 01:03:41,190
-two sets here in the Ross
+two sets here in the ROS
 toolbox that can help deliver
 
 1069
@@ -5622,7 +5622,7 @@ things about our work with
 
 1138
 01:07:17,280 --> 01:07:20,730
-industry in Ross, is the notion
+industry in ROS, is the notion
 of being able to abstract away
 
 1139
@@ -5678,12 +5678,12 @@ something? Maybe they would
 1149
 01:07:55,920 --> 01:07:58,890
 write drivers for it. And maybe
-those drivers could have a Ross
+those drivers could have a ROS
 
 1150
 01:07:58,890 --> 01:08:01,080
 interface. So you can use it
-really well with the Ross
+really well with the ROS
 
 1151
 01:08:01,080 --> 01:08:05,880
@@ -5701,7 +5701,7 @@ would be mo not consistent.
 
 1154
 01:08:12,240 --> 01:08:15,870
-Right. So you have a Ross
+Right. So you have a ROS
 driver. And you would expect it
 
 1155
@@ -5810,7 +5810,7 @@ are Hey, great, awesome, that
 
 1176
 01:09:23,370 --> 01:09:26,430
-people are offering Ross
+people are offering ROS
 interfaces, right? And building
 
 1177
@@ -5889,12 +5889,12 @@ inconsistency in the interface.
 1192
 01:10:16,289 --> 01:10:19,049
 Audrow Nash: But we're trying to
-fix it for Ross too. So the
+fix it for ROS too. So the
 
 1193
 01:10:19,049 --> 01:10:23,219
 ecosystem doesn't develop quite
-as much as Ross one without
+as much as ROS one without
 
 1194
 01:10:23,819 --> 01:10:28,619
@@ -6158,7 +6158,7 @@ EMS interested in rolling out.
 1246
 01:13:07,259 --> 01:13:10,769
 And they're already looking at
-Ross to control. So that's good.
+ROS to control. So that's good.
 
 1247
 01:13:10,769 --> 01:13:12,809
@@ -6173,7 +6173,7 @@ past drivers were a little bit
 1249
 01:13:15,269 --> 01:13:18,419
 more simplified. But now that
-everyone's pivoting to Ross,
+everyone's pivoting to ROS,
 
 1250
 01:13:18,419 --> 01:13:22,889
@@ -6192,7 +6192,7 @@ considering? Like, will you
 
 1253
 01:13:33,000 --> 01:13:38,610
-write Ross enhancement proposal
+write ROS enhancement proposal
 for this kind of thing? Or? Like
 
 1254
@@ -6277,7 +6277,7 @@ around the proper documentation
 1270
 01:14:34,020 --> 01:14:38,010
 as opposed to like us, maybe
-making like under the hood Ross
+making like under the hood ROS
 
 1271
 01:14:38,010 --> 01:14:39,090
@@ -6286,7 +6286,7 @@ enhancements per se.
 1272
 01:14:39,509 --> 01:14:41,429
 Audrow Nash: Right. These are,
-you know what I mean by Ross
+you know what I mean by ROS
 
 1273
 01:14:41,429 --> 01:14:42,689
@@ -6398,7 +6398,7 @@ to change how a large group of
 
 1295
 01:15:59,489 --> 01:16:03,899
-users might use Ross. It's like
+users might use ROS. It's like
 the way to have standards, as
 
 1296
@@ -6495,7 +6495,7 @@ Yeah, I can I know that are
 1315
 01:17:04,410 --> 01:17:09,840
 Audrow Nash: So the thing that
-so looking at Ross industrial
+so looking at ROS industrial
 
 1316
 01:17:09,870 --> 01:17:13,800
@@ -6505,7 +6505,7 @@ lot of things that are offered.
 1317
 01:17:16,170 --> 01:17:20,580
 One other thing is the
-conference, Ross industrial con,
+conference, ROS industrial con,
 
 1318
 01:17:20,580 --> 01:17:21,480
@@ -6549,7 +6549,7 @@ these are kind of like our big
 1326
 01:17:43,110 --> 01:17:47,940
 marquee events for each region.
-So Ross industrial conference is
+So ROS industrial conference is
 
 1327
 01:17:47,940 --> 01:17:51,420
@@ -6568,7 +6568,7 @@ it's in December units, hosted
 
 1330
 01:17:59,430 --> 01:18:02,940
-by Ross industrial Europe, and
+by ROS industrial Europe, and
 then Fraunhofer IPA, and
 
 1331
@@ -6609,7 +6609,7 @@ it more interactive. So that's
 1338
 01:18:29,340 --> 01:18:34,290
 once a year, Asia Pacific hosts
-what they call a Ross industrial
+what they call a ROS industrial
 
 1339
 01:18:34,320 --> 01:18:38,610
@@ -6756,7 +6756,7 @@ and supported and spoke, folks
 
 1368
 01:20:16,740 --> 01:20:20,490
-from open robotics as well. We
+from Open Robotics as well. We
 really appreciate the support
 
 1369
@@ -6787,7 +6787,7 @@ Friday in Detroit. We're doing a
 1374
 01:20:38,070 --> 01:20:40,980
 big a big dinner Thursday, we're
-going to highlight all the Ross
+going to highlight all the ROS
 
 1375
 01:20:40,980 --> 01:20:46,140
@@ -6797,7 +6797,7 @@ show floor. So we'll put out a
 1376
 01:20:46,140 --> 01:20:48,330
 little cheat sheet like hey, if
-you want to see something Ross
+you want to see something ROS
 
 1377
 01:20:48,330 --> 01:20:51,930
@@ -6866,7 +6866,7 @@ like consortium in 2013? Or?
 1390
 01:21:31,290 --> 01:21:33,990
 Matt Robinson: Yes. So the first
-can Ross industrial consortium
+can ROS industrial consortium
 
 1391
 01:21:34,020 --> 01:21:38,280
@@ -6955,7 +6955,7 @@ Yeah, drives a lot of a lot of
 1408
 01:22:40,380 --> 01:22:44,160
 interest. It's definitely not as
-big as Ross brands were more
+big as ROS brands were more
 
 1409
 01:22:44,610 --> 01:22:48,810
@@ -6983,8 +6983,8 @@ beginning to wrap up. Where do
 
 1414
 01:23:00,569 --> 01:23:04,739
-you see Ross industry going? Or
-Ross industrial going in the
+you see ROS industry going? Or
+ROS industrial going in the
 
 1415
 01:23:04,739 --> 01:23:08,489
@@ -7091,7 +7091,7 @@ that are basically really just
 
 1436
 01:24:17,430 --> 01:24:20,790
-Ross on industrial hardware. And
+ROS on industrial hardware. And
 that's really exciting. I think
 
 1437
@@ -7117,7 +7117,7 @@ engineering type people,
 1441
 01:24:34,950 --> 01:24:39,600
 mechanical engineers, to get
-exposed to Ross technicians. So
+exposed to ROS technicians. So
 
 1442
 01:24:39,600 --> 01:24:41,670
@@ -7126,7 +7126,7 @@ bunch of robots out there, or
 
 1443
 01:24:41,670 --> 01:24:44,190
-Ryan Ross, what is the
+Ryan ROS, what is the
 technician who has to fix the
 
 1444
@@ -7177,22 +7177,22 @@ our listeners and watchers? Yeah
 1453
 01:25:16,230 --> 01:25:19,230
 Matt Robinson: obviously Twitter
-at Ross industrial we have a
+at ROS industrial we have a
 
 1454
 01:25:19,230 --> 01:25:24,630
 LinkedIn page both myself
-personally Ross industrial and
+personally ROS industrial and
 
 1455
 01:25:24,690 --> 01:25:27,660
-LinkedIn pages Ross industrial
+LinkedIn pages ROS industrial
 feel free to to follow us there.
 
 1456
 01:25:27,660 --> 01:25:30,420
 We obviously have a specific
-discourse category as well, Ross
+discourse category as well, ROS
 
 1457
 01:25:30,420 --> 01:25:34,320
@@ -7201,7 +7201,7 @@ to have some discourse about
 
 1458
 01:25:34,320 --> 01:25:40,140
-Ross industrial there. There
+ROS industrial there. There
 bear with the battle. So but
 
 1459
@@ -7274,7 +7274,7 @@ the working group proposals
 
 1473
 01:26:26,790 --> 01:26:29,760
-under Ross discourse. Next
+under ROS discourse. Next
 Generation. It's called Working
 
 1474
@@ -7295,7 +7295,7 @@ actually, you guys, maybe we'll
 1477
 01:26:38,040 --> 01:26:42,180
 be making a pull request to the
-Ross to documentation and adding
+ROS to documentation and adding
 
 1478
 01:26:42,210 --> 01:26:46,410
@@ -7349,7 +7349,7 @@ this conversation with Matt
 1488
 01:27:23,400 --> 01:27:27,000
 Robinson. Thank you again to our
-founding sponsor, open robotics.
+founding sponsor, Open Robotics.
 
 1489
 01:27:27,030 --> 01:27:27,960

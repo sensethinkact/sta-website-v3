@@ -3193,7 +3193,7 @@ them. And intelli foot is still
 
 645
 00:40:16,920 --> 00:40:19,770
-at the store with open robotics.
+at the store with Open Robotics.
 And they created this turtle bot
 
 646
@@ -5379,7 +5379,7 @@ gackt.com or discourse. Thank
 
 1086
 01:07:23,910 --> 01:07:26,700
-you again to open robotics for
+you again to Open Robotics for
 being our founding sponsor.
 
 1087

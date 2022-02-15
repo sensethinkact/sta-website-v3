@@ -143,7 +143,7 @@ interface tightly with the robot
 
 30
 00:01:48,270 --> 00:01:51,090
-operating system or Ross
+operating system or ROS
 ecosystem, correct?
 
 31
@@ -153,7 +153,7 @@ correct. So we we work very well
 
 32
 00:01:55,830 --> 00:01:59,400
-with Ross. We don't we're not
+with ROS. We don't we're not
 strictly limited to Russell
 
 33
@@ -179,17 +179,17 @@ visualize data coming off the
 37
 00:02:12,150 --> 00:02:15,750
 sensor. But when you're in a
-Ross environment, we can
+ROS environment, we can
 
 38
 00:02:15,750 --> 00:02:18,210
 obviously make a connection to
-Ross and then we have a lot of
+ROS and then we have a lot of
 
 39
 00:02:18,960 --> 00:02:21,690
 custom visualizations that help
-you understand Ross messages
+you understand ROS messages
 
 40
 00:02:21,690 --> 00:02:24,420
@@ -199,11 +199,11 @@ other things like
 41
 00:02:24,420 --> 00:02:27,720
 Audrow Nash: how does it compare
-to existing Ross tools like ARV
+to existing ROS tools like ARV
 
 42
 00:02:27,720 --> 00:02:31,290
-is our Ross visualizer for
+is our ROS visualizer for
 visualization?
 
 43
@@ -288,8 +288,8 @@ that you're developing on and
 
 59
 00:03:27,030 --> 00:03:30,900
-you know if you're using Ross
-Vision X you know Ross galactic
+you know if you're using ROS
+Vision X you know ROS galactic
 
 60
 00:03:30,900 --> 00:03:35,820
@@ -313,7 +313,7 @@ galactic and many of the other
 
 64
 00:03:42,899 --> 00:03:48,749
-Ross two distributions also work
+ROS two distributions also work
 on Windows not very well I think
 
 65
@@ -343,7 +343,7 @@ a rough one. Or Weber's Yeah, we
 70
 00:04:06,900 --> 00:04:10,320
 Adrian Macneil: support both
-Ross one roster Yeah. But yeah,
+ROS one roster Yeah. But yeah,
 
 71
 00:04:10,320 --> 00:04:13,380
@@ -353,7 +353,7 @@ out there. Although you know,
 72
 00:04:13,380 --> 00:04:15,720
 most of the people I've seen
-doing Ross development on
+doing ROS development on
 
 73
 00:04:15,720 --> 00:04:19,050
@@ -372,7 +372,7 @@ then Mac actually you know, Mac
 
 76
 00:04:26,610 --> 00:04:28,740
-came out I think Ross two
+came out I think ROS two
 initially came out and said
 
 77
@@ -553,7 +553,7 @@ on a computer, and then I've
 112
 00:06:26,760 --> 00:06:29,700
 been trying to debug it. And
-that's Ross bag. You want to
+that's ROS bag. You want to
 
 113
 00:06:29,700 --> 00:06:31,590
@@ -561,7 +561,7 @@ share this, my friend? Yeah.
 
 114
 00:06:31,650 --> 00:06:36,030
-Audrow Nash: And Ross, too. It's
+Audrow Nash: And ROS, too. It's
 an SQL lite database. Right. And
 
 115
@@ -577,7 +577,7 @@ a custom format, bag. Bag file
 117
 00:06:41,940 --> 00:06:45,240
 format. That's just basically
-your Ross message. But having
+your ROS message. But having
 
 118
 00:06:45,240 --> 00:06:48,720
@@ -610,7 +610,7 @@ We're also recording all of the
 
 124
 00:07:01,410 --> 00:07:05,400
-other messages that Ross is
+other messages that ROS is
 sending back and forth. And so,
 
 125
@@ -753,11 +753,11 @@ they they started, as you know,
 153
 00:08:42,090 --> 00:08:44,550
 I'm sure a lot of our products
-company, so it was a Ross stack
+company, so it was a ROS stack
 
 154
 00:08:44,550 --> 00:08:49,410
-originally, on Ross one, and you
+originally, on ROS one, and you
 have a bunch of people just, you
 
 155
@@ -812,7 +812,7 @@ rather than using the standard
 
 165
 00:09:25,919 --> 00:09:30,629
-Ross one arvis. Or our Qt graph.
+ROS one arvis. Or our Qt graph.
 Yeah. Anything?
 
 166
@@ -823,11 +823,11 @@ It started out as as visit
 167
 00:09:33,690 --> 00:09:36,900
 Accutane. As I mentioned, they
-started out on a Ross one
+started out on a ROS one
 
 168
 00:09:36,900 --> 00:09:40,200
-platform, positive Ross
+platform, positive ROS
 definitely gotten kind of
 
 169
@@ -883,7 +883,7 @@ you know, some people may be
 179
 00:10:17,220 --> 00:10:22,110
 familiar with, they presented
-with us at Ross con in 2019, I
+with us at ROS con in 2019, I
 
 180
 00:10:22,110 --> 00:10:26,340
@@ -1250,7 +1250,7 @@ file and then open it, start
 
 253
 00:14:41,789 --> 00:14:44,969
-Ross in the background, and then
+ROS in the background, and then
 launch about like 12 different
 
 254
@@ -1281,7 +1281,7 @@ that process and you know,
 259
 00:15:02,759 --> 00:15:05,309
 taking a backfile and wanting
-Ross and then opening these
+ROS and then opening these
 
 260
 00:15:05,309 --> 00:15:09,419
@@ -1331,17 +1331,17 @@ you know, the tools like others
 269
 00:15:34,200 --> 00:15:37,950
 are, they're very coupled with
-Ross. So you have to have Ross,
+ROS. So you have to have ROS,
 
 270
 00:15:37,980 --> 00:15:41,190
-you run Ross, in the background,
-you stone, your Ross stack, and
+you run ROS, in the background,
+you stone, your ROS stack, and
 
 271
 00:15:41,190 --> 00:15:44,100
 then you start others, and
-others will talk to Ross, and
+others will talk to ROS, and
 
 272
 00:15:44,100 --> 00:15:46,530
@@ -1356,7 +1356,7 @@ playback recording that you
 274
 00:15:49,620 --> 00:15:55,110
 have, then you need to play that
-back into Ross. And then kind of
+back into ROS. And then kind of
 
 275
 00:15:55,110 --> 00:15:57,180
@@ -1365,7 +1365,7 @@ byproduct of
 
 276
 00:15:58,170 --> 00:16:00,270
-Audrow Nash: going over the Ross
+Audrow Nash: going over the ROS
 network, basically.
 
 277
@@ -1375,7 +1375,7 @@ Everything's kind of going over
 
 278
 00:16:02,430 --> 00:16:05,850
-the Ross network. And, again,
+the ROS network. And, again,
 when you start thinking about
 
 279
@@ -1524,7 +1524,7 @@ actually running on and then you
 
 309
 00:17:32,849 --> 00:17:35,669
-launch Ross launch hours, and
+launch ROS launch hours, and
 like, now you're looking at the
 
 310
@@ -1563,7 +1563,7 @@ installed. And they don't need
 
 317
 00:17:58,500 --> 00:18:00,030
-to have Ross bag installed.
+to have ROS bag installed.
 
 318
 00:18:01,980 --> 00:18:03,750
@@ -1836,7 +1836,7 @@ the project out there, but like,
 
 372
 00:21:28,980 --> 00:21:31,470
-no one is building Ross to
+no one is building ROS to
 support and the weapons are
 
 373
@@ -2942,7 +2942,7 @@ seen some very interesting stuff
 595
 00:34:32,340 --> 00:34:36,930
 happening. You know, and
-warehouses, like, fetch robotics
+warehouses, like, Fetch robotics
 
 596
 00:34:36,930 --> 00:34:40,620
@@ -4237,7 +4237,7 @@ visualize the data you see, and
 
 856
 00:48:58,200 --> 00:49:03,360
-it's for live playing of Ross to
+it's for live playing of ROS to
 data and also playing from a bag
 
 857
@@ -4257,7 +4257,7 @@ drag it back file and
 860
 00:49:08,910 --> 00:49:11,760
 immediately stop looking at that
-bag file. You don't need Ross
+bag file. You don't need ROS
 
 861
 00:49:11,760 --> 00:49:14,430
@@ -4588,7 +4588,7 @@ robot, usually it's, it's, you
 
 927
 00:52:45,720 --> 00:52:47,970
-know, it's running Ross or
+know, it's running ROS or
 something similar. It's written
 
 928
@@ -5180,7 +5180,7 @@ voting UI would be able to
 1046
 00:59:37,920 --> 00:59:41,280
 interact with their robots.
-Things like Ross bridge, for
+Things like ROS bridge, for
 
 1047
 00:59:41,280 --> 00:59:46,260
@@ -5189,7 +5189,7 @@ protocol, where you can connect
 
 1048
 00:59:46,710 --> 00:59:50,070
-from a Ross system to a web
+from a ROS system to a web
 browser or from a raw system to
 
 1049
@@ -5199,13 +5199,13 @@ you know, our team has been
 
 1050
 00:59:53,880 --> 00:59:56,580
-contributing a bunch to Ross
+contributing a bunch to ROS
 bridge project lately and
 
 1051
 00:59:56,580 --> 01:00:00,300
 getting that up and running with
-Ross two, which has been You
+ROS two, which has been You
 
 1052
 01:00:00,300 --> 01:00:03,690
@@ -6667,6 +6667,6 @@ thank you again to our founding
 
 1345
 01:16:48,810 --> 01:16:51,360
-sponsor open robotics. Goodbye,
+sponsor Open Robotics. Goodbye,
 everyone.
 

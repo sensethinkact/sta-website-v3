@@ -10,7 +10,7 @@ host and a software engineer at
 
 3
 00:00:09,420 --> 00:00:12,990
-open robotics. In today's
+Open Robotics. In today's
 episode, I speak with Dave
 
 4
@@ -272,13 +272,13 @@ program was a way of spreading
 
 56
 00:03:51,240 --> 00:03:54,060
-Ross. I like like a virus, he
+ROS. I like like a virus, he
 wanted us to go back to our
 
 57
 00:03:54,060 --> 00:03:57,690
 research groups and get everyone
-to use Ross and I think it was
+to use ROS and I think it was
 
 58
 00:03:57,690 --> 00:04:00,660
@@ -287,7 +287,7 @@ strategy. And so I was certainly
 
 59
 00:04:00,660 --> 00:04:03,720
-part of that I brought Ross and
+part of that I brought ROS and
 particularly move it back to our
 
 60
@@ -475,7 +475,7 @@ encouraged by a number of people
 
 97
 00:06:14,819 --> 00:06:17,699
-that open robotics and others
+that Open Robotics and others
 that were had been at Willow
 
 98
@@ -496,7 +496,7 @@ revitalized, I think he would
 101
 00:06:26,969 --> 00:06:31,829
 the time was starting, but the
-precursors to fetch, and so that
+precursors to Fetch, and so that
 
 102
 00:06:31,829 --> 00:06:35,429
@@ -1134,7 +1134,7 @@ different approaches. So I've
 230
 00:13:31,140 --> 00:13:35,010
 personally found that very
-valuable at open robotics, code
+valuable at Open Robotics, code
 
 231
 00:13:35,010 --> 00:13:37,380
@@ -1203,7 +1203,7 @@ future people can improve it
 244
 00:14:11,130 --> 00:14:15,210
 Audrow Nash: as well. Yeah, at
-open robotics, we talked about
+Open Robotics, we talked about
 
 245
 00:14:15,210 --> 00:14:20,400
@@ -1395,7 +1395,7 @@ to co develop or develop for you
 283
 00:16:27,810 --> 00:16:31,170
 robotic software, using movement
-using Ross using other
+using ROS using other
 
 284
 00:16:31,290 --> 00:16:36,210
@@ -1578,7 +1578,7 @@ IP, intellectual property. And
 320
 00:18:42,210 --> 00:18:46,110
 it's building off of move it or
-Ross or other components of the
+ROS or other components of the
 
 321
 00:18:46,110 --> 00:18:49,440
@@ -1603,7 +1603,7 @@ And you know, we if it's like a
 325
 00:19:01,170 --> 00:19:03,690
 thing that originated in, move
-it or in Ross, and we're just
+it or in ROS, and we're just
 
 326
 00:19:03,690 --> 00:19:07,080
@@ -1697,7 +1697,7 @@ you stay with the mainland
 344
 00:20:02,700 --> 00:20:06,660
 project, then companies like
-picnic and open robotics and,
+picnic and Open Robotics and,
 
 345
 00:20:06,840 --> 00:20:10,260
@@ -3813,7 +3813,7 @@ lot with the space station. And
 773
 00:45:06,600 --> 00:45:10,170
 so in gazebo, another open
-source common library and Ross,
+source common library and ROS,
 
 774
 00:45:10,380 --> 00:45:15,990
@@ -3988,11 +3988,11 @@ about that?
 809
 00:47:11,190 --> 00:47:15,030
 Dave Coleman: Yeah, they've
-they've been involved with Ross
+they've been involved with ROS
 
 810
 00:47:15,030 --> 00:47:18,240
-and funding open robotics for a
+and funding Open Robotics for a
 while, I believe is my
 
 811
@@ -4013,7 +4013,7 @@ standardize and hire people who
 814
 00:47:31,170 --> 00:47:35,670
 already know, the technology and
-I Ross just kind of become a
+I ROS just kind of become a
 
 815
 00:47:35,670 --> 00:47:40,590
@@ -4514,7 +4514,7 @@ early customers. And so we plan
 915
 00:53:38,370 --> 00:53:42,390
 to have the beta operating at
-Ross con, we should have it
+ROS con, we should have it
 
 916
 00:53:42,690 --> 00:53:45,600
@@ -4523,7 +4523,7 @@ if I assume our viewers are
 
 917
 00:53:45,600 --> 00:53:48,060
-familiar with the Ross
+familiar with the ROS
 conference in New Orleans this
 
 918
@@ -4567,17 +4567,17 @@ And so we thought we would just
 926
 00:54:12,240 --> 00:54:16,860
 focus our resources on the main
-Ross con event. So we are having
+ROS con event. So we are having
 
 927
 00:54:17,670 --> 00:54:20,610
 we are having a workshop the day
-before the official Ross con
+before the official ROS con
 
 928
 00:54:20,610 --> 00:54:24,240
 event starts, but it's part of
-the Ross con workshops we're
+the ROS con workshops we're
 
 929
 00:54:24,240 --> 00:54:28,200
@@ -4788,7 +4788,7 @@ reminder is just move it
 
 971
 00:56:49,290 --> 00:56:52,770
-migrated to Ross two. Except
+migrated to ROS two. Except
 it's not just that because we've
 
 972
@@ -4808,7 +4808,7 @@ because you have to upgrade your
 
 975
 00:57:01,440 --> 00:57:04,470
-Ross version as well. But I
+ROS version as well. But I
 think more and more of the
 
 976
@@ -4823,7 +4823,7 @@ files are still a little bit
 
 978
 00:57:12,390 --> 00:57:15,780
-rough in like Ross to Foxy I
+rough in like ROS to Foxy I
 think a lot of ethics and
 
 979
@@ -5311,13 +5311,13 @@ free to subscribe, head over to
 
 1078
 01:02:41,580 --> 01:02:45,090
-the Ross discourse if you want
+the ROS discourse if you want
 to comment on the episode. Thank
 
 1079
 01:02:45,090 --> 01:02:48,090
 you to our founding sponsor,
-open robotics, and I'll see you
+Open Robotics, and I'll see you
 
 1080
 01:02:48,090 --> 01:02:49,740

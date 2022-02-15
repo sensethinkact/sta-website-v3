@@ -6320,7 +6320,7 @@ of the accessibility of
 1279
 01:18:50,310 --> 01:18:56,040
 programming. And, and things
-like Python and Ross, write
+like Python and ROS, write
 
 1280
 01:18:56,400 --> 01:19:01,710
@@ -6340,7 +6340,7 @@ of think and write things down
 1283
 01:19:09,120 --> 01:19:14,070
 when you're writing stories and
-things. And then Ross Ross gives
+things. And then ROS ROS gives
 
 1284
 01:19:14,070 --> 01:19:17,250

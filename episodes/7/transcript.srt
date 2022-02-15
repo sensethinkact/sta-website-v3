@@ -367,12 +367,12 @@ the stomach of this little
 75
 00:04:32,420 --> 00:04:35,300
 creature, for people that
-haven't seen DAX before, I'd
+haven't seen Dax before, I'd
 
 76
 00:04:35,300 --> 00:04:38,870
 encourage you to go, you could
-check out DAX spot.com. You can
+check out Dax spot.com. You can
 
 77
 00:04:38,870 --> 00:04:42,410
@@ -466,7 +466,7 @@ in the video now because of how
 
 95
 00:05:41,730 --> 00:05:47,700
-the cameras positioned. But DAX
+the cameras positioned. But Dax
 is on tank treads, right? Yep,
 
 96
@@ -4179,7 +4179,7 @@ don't make it too big, but at
 847
 00:46:38,040 --> 00:46:42,000
 the same time, we have a lot of
-fans. We call it the DAX fam.
+fans. We call it the Dax fam.
 
 848
 00:46:42,810 --> 00:46:45,300
@@ -4198,7 +4198,7 @@ people can be, you know, an
 
 851
 00:46:53,490 --> 00:46:54,630
-owner of DAX but why
+owner of Dax but why
 
 852
 00:46:54,630 --> 00:46:55,410
@@ -5199,7 +5199,7 @@ reasons. One was because we
 
 1055
 00:57:43,260 --> 00:57:46,590
-everywhere DAX goes a celebrity.
+everywhere Dax goes a celebrity.
 You know, everybody, kind of
 
 1056
@@ -5288,7 +5288,7 @@ look at the robot. And you know,
 
 1073
 00:58:37,290 --> 00:58:40,260
-the look at DAX and then
+the look at Dax and then
 everybody smiles. Where has this
 
 1074
@@ -5308,7 +5308,7 @@ something special today. So
 
 1077
 00:58:48,960 --> 00:58:53,160
-anywhere, the DAX goes. He's a
+anywhere, the Dax goes. He's a
 celebrity. Like I talked about,
 
 1078
@@ -5348,23 +5348,23 @@ you're coming from but, but need
 
 1085
 00:59:18,030 --> 00:59:21,030
-more eyeballs on DAX, right,
+more eyeballs on Dax, right,
 more the more eyeballs, the C
 
 1086
 00:59:21,030 --> 00:59:24,180
-DAX, the more people that have
+Dax, the more people that have
 invested interest literally,
 
 1087
 00:59:24,210 --> 00:59:27,300
 right? If somebody is in Texas,
-and they put $1,000 into DAX,
+and they put $1,000 into Dax,
 
 1088
 00:59:27,510 --> 00:59:29,730
 they're probably also more privy
-to be like, hey, I want DAX down
+to be like, hey, I want Dax down
 
 1089
 00:59:29,730 --> 00:59:32,610
@@ -5453,7 +5453,7 @@ things?
 1106
 01:00:35,550 --> 01:00:40,320
 Jason Richards: Yeah. So if if
-all the DAX did was be novel? I
+all the Dax did was be novel? I
 
 1107
 01:00:40,320 --> 01:00:43,920
@@ -5815,7 +5815,7 @@ trips. So so same way you know,
 1179
 01:04:43,110 --> 01:04:46,560
 for robot you know, this you
-know, the DAX is not DAX is not
+know, the Dax is not Dax is not
 
 1180
 01:04:46,590 --> 01:04:49,260
@@ -6057,18 +6057,18 @@ One is that we realize kind of a
 
 1229
 01:07:20,910 --> 01:07:23,670
-back to the DAX as a celebrity
+back to the Dax as a celebrity
 thing. We can talk about it now,
 
 1230
 01:07:23,670 --> 01:07:26,910
 there's been a few events that
-the DAX has been in. One was for
+the Dax has been in. One was for
 
 1231
 01:07:26,910 --> 01:07:32,190
 a TV show called the coma FD. So
-there was a bunch of DAX robots
+there was a bunch of Dax robots
 
 1232
 01:07:32,190 --> 01:07:35,280
@@ -7491,7 +7491,7 @@ of what it could be like to have
 
 1519
 01:23:42,270 --> 01:23:45,990
-DAX, if their only experience is
+Dax, if their only experience is
 a remote control box that is
 
 1520
@@ -7501,7 +7501,7 @@ feet. They don't want it there,
 
 1521
 01:23:49,140 --> 01:23:51,960
-versus DAX, which is a robot
+versus Dax, which is a robot
 like you would see in a movie
 
 1522
@@ -7552,7 +7552,7 @@ space is a much bigger deal than
 1531
 01:24:23,580 --> 01:24:26,070
 most people realize. And that's
-that's the thing, the DAX is
+that's the thing, the Dax is
 
 1532
 01:24:26,070 --> 01:24:30,390
@@ -8206,7 +8206,7 @@ robots in the same way that
 1663
 01:31:35,039 --> 01:31:39,089
 Tesla became kind of the face of
-electric cars. We think that DAX
+electric cars. We think that Dax
 
 1664
 01:31:39,089 --> 01:31:43,199
@@ -8283,7 +8283,7 @@ system from the ground. Yeah.
 1679
 01:32:28,590 --> 01:32:32,040
 Jason Richards: Oh, yeah. Called
-DAX Oh, s that are DAX, those,
+Dax Oh, s that are Dax, those,
 
 1680
 01:32:32,430 --> 01:32:33,000
@@ -8331,7 +8331,7 @@ to open up DAC, so S, which is a
 
 1689
 01:32:55,889 --> 01:32:59,609
-Ross like, software, you know,
+ROS like, software, you know,
 but it's way more than
 
 1690
@@ -8371,7 +8371,7 @@ another Nova node. So for
 1697
 01:33:20,519 --> 01:33:23,039
 example, we say, Okay, we need
-an iteration where DAX has an
+an iteration where Dax has an
 
 1698
 01:33:23,039 --> 01:33:27,089
@@ -8380,7 +8380,7 @@ whatever, we plug in another
 
 1699
 01:33:27,089 --> 01:33:30,449
-Nova node. And then DAX knows,
+Nova node. And then Dax knows,
 oh, now I have this arm. And now
 
 1700
@@ -8445,17 +8445,17 @@ their own stuff similar to like
 
 1712
 01:34:11,309 --> 01:34:13,739
-how Ross is, if that makes
+how ROS is, if that makes
 sense. You know, people are
 
 1713
 01:34:13,919 --> 01:34:16,109
-familiar with the Ross, you
+familiar with the ROS, you
 know, robot operating system.
 
 1714
 01:34:17,069 --> 01:34:22,589
-But DAX DAX Oh, s would be
+But Dax Dax Oh, s would be
 similar in that vein.
 
 1715
@@ -8486,7 +8486,7 @@ more of a flavor of another one.
 1720
 01:34:37,290 --> 01:34:40,350
 But it's, yeah. When you talk
-about Ross, people think oh,
+about ROS, people think oh,
 
 1721
 01:34:40,350 --> 01:34:43,590
@@ -8515,7 +8515,7 @@ of like I mean, one of the
 1726
 01:35:00,899 --> 01:35:03,989
 things that's really nice with
-Ross is the whole community and
+ROS is the whole community and
 
 1727
 01:35:03,989 --> 01:35:06,629
@@ -8917,7 +8917,7 @@ you Interesting. So it's gonna
 
 1807
 01:40:01,380 --> 01:40:06,420
-be like a no JS Ross like thing
+be like a no JS ROS like thing
 that has behavior trees. Would
 
 1808
@@ -8927,11 +8927,11 @@ do you call it again, called
 
 1809
 01:40:10,470 --> 01:40:11,010
-DAX.
+Dax.
 
 1810
 01:40:11,070 --> 01:40:12,990
-Jason Richards: So DAX is just
+Jason Richards: So Dax is just
 like the robot XO
 
 1811
@@ -9037,7 +9037,7 @@ super likely know, that somebody
 1831
 01:41:22,260 --> 01:41:24,510
 would take and be like, Oh,
-we're gonna do exactly what DAX
+we're gonna do exactly what Dax
 
 1832
 01:41:24,510 --> 01:41:28,290
@@ -9186,7 +9186,7 @@ via audio, you know, can't see
 1861
 01:43:14,009 --> 01:43:19,319
 the robot behind me. So if you
-go to DAX bot.com, that's D AX
+go to Dax bot.com, that's D AX
 
 1862
 01:43:19,499 --> 01:43:23,579
@@ -9261,7 +9261,7 @@ conversation with Jason
 1876
 01:44:05,459 --> 01:44:08,819
 Richards. Thank you again to our
-founding sponsor, open robotics
+founding sponsor, Open Robotics
 
 1877
 01:44:08,849 --> 01:44:10,019
