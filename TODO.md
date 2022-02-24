@@ -17,11 +17,13 @@
 - [x] Update README
 - [x] Port all posts
 - [x] Use Git LFS for images
+- [x] Use prettier and linting
+- [ ] Validate RSS feed on spotify and apple
 
 ## Version 4
 
+- [ ] Setup with storybooks
 - [ ] Move podcast config out of post-loader + create a better separation
-- [ ] Use prettier and linting
 - [ ] Add post photos to preview
 - [ ] Use a schema to validate posts
 - [ ] Combine transcript and outline
