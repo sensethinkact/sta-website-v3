@@ -1,4 +1,5 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
+
 import Link from 'next/link'
 
 import {IMAGES_URL} from '../lib/constants'
@@ -11,7 +12,7 @@ const LogoNav = () => {
         <div className="navbar-brand">
           <Link href="/">
             <a>
-              <Image
+              <img
                 className="navbar-logo"
                 src={`${IMAGES_URL}/logo-with-name.png`}
                 width={1900 * scale} height={400 * scale}

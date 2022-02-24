@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 
 import getPostLoader from '../lib/get-post-loader'
 
@@ -33,7 +33,7 @@ const Home = ({ posts, tags, isDebug=false }: Props) => {
             <div className="columns is-desktop is-centered is-variable is-6">
               <div className="column is-narrow">
                 <figure className="field has-text-centered has-text-right-desktop">
-                  <Image className="logo" src={`${IMAGES_URL}/cover.jpg`} alt="STA logo" width={logoSizePx} height={logoSizePx} />
+                  <img className="logo" src={`${IMAGES_URL}/cover.jpg`} alt="STA logo" width={logoSizePx} height={logoSizePx} />
                 </figure>
               </div>
               <div className="column is-7-desktop is-6-widescreen">
@@ -72,7 +72,7 @@ const Home = ({ posts, tags, isDebug=false }: Props) => {
                         <div key={platform} className="column is-narrow">
                           <a href={url} target="_blank" rel="noreferrer">
                             <figure className="image is-48x48">
-                              <Image src={iconUrl} layout='fill' alt={`${platform} logo`} />
+                              <img src={iconUrl} alt={`${platform} logo`} />
                             </figure>
                           </a>
                         </div>
