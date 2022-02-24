@@ -18,6 +18,7 @@
 - [x] Port all posts
 - [x] Use Git LFS for images
 - [x] Use prettier and linting
+- [x] Generate a static site
 - [ ] Validate RSS feed on spotify and apple
 
 ## Version 4
