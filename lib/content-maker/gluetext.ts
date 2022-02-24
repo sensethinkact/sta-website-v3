@@ -1,8 +1,8 @@
-import type { SerializedPost } from "@sta-podcast/types";
-import type { PodcastConfig } from '../../podcast.config'
+import type {SerializedPost} from '@sta-podcast/types'
+import type {PodcastConfig} from '../../podcast.config'
 
-import { listToString } from "../utils";
-import endent from "endent";
+import {listToString} from '../utils'
+import endent from 'endent'
 
 function getGluetext(pod: PodcastConfig, ep: SerializedPost) {
   const guests = listToString(ep.guests || '')
@@ -31,7 +31,7 @@ function getGluetext(pod: PodcastConfig, ep: SerializedPost) {
     Thank you to our founding Sponsor, Open Robotics
 
     See you next time!
-  `;
+  `
 }
 
-export default getGluetext;
+export default getGluetext

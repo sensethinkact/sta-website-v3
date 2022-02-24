@@ -1,19 +1,22 @@
 import {join} from 'path'
-import type { PodcastConfig as PodcastConfigImported } from '@sta-podcast/types'
-import { IMAGES_URL } from './lib/constants'
+import type {PodcastConfig as PodcastConfigImported} from '@sta-podcast/types'
+import {IMAGES_URL} from './lib/constants'
 import urlJoin from 'proper-url-join'
 
-import type { Link } from '@sta-podcast/types'
+import type {Link} from '@sta-podcast/types'
 
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'
 const feedUrl = join(siteUrl, feedFile)
 
-const appleUrl = 'https://podcasts.apple.com/us/podcast/sense-think-act/id1582090036'
+const appleUrl =
+  'https://podcasts.apple.com/us/podcast/sense-think-act/id1582090036'
 const spotifyUrl = 'https://open.spotify.com/show/52wK4oMDvgijRk6E82tC5d'
 const youtubeUrl = 'https://www.youtube.com/c/SenseThinkActPodcast'
-const youtubeClipsUrl = 'https://www.youtube.com/channel/UChfnCpNwZzYtZ32J-pZvNDg'
-const googleUrl = 'https://podcasts.google.com/feed/aHR0cHM6Ly9zZW5zZXRoaW5rYWN0LmNvbS9pdHVuZXMueG1s'
+const youtubeClipsUrl =
+  'https://www.youtube.com/channel/UChfnCpNwZzYtZ32J-pZvNDg'
+const googleUrl =
+  'https://podcasts.google.com/feed/aHR0cHM6Ly9zZW5zZXRoaW5rYWN0LmNvbS9pdHVuZXMueG1s'
 const overcastUrl = 'https://overcast.fm/itunes1582090036/sense-think-act'
 const pocketcastsUrl = 'https://pca.st/g667w2c4'
 
@@ -22,9 +25,8 @@ const discourseUrl = 'https://discourse.ros.org/c/sensethinkact/71'
 const staEmail = 'sensethinkact@googlegroups.com'
 const staEmailUrl = `mailto:${staEmail}`
 
-
 export type PodcastConfig = {
-  availableOn: {[site: string]: {url: string, iconUrl: string}}
+  availableOn: {[site: string]: {url: string; iconUrl: string}}
   footer: Link[]
   host: string
 } & PodcastConfigImported
@@ -124,7 +126,7 @@ const podcastConfig: PodcastConfig = {
     rss: {
       url: `/${feedFile}`,
       iconUrl: urlJoin(IMAGES_URL, 'rss.svg'),
-    }
+    },
   },
   footer: [
     {
@@ -138,8 +140,8 @@ const podcastConfig: PodcastConfig = {
     {
       name: 'Contact',
       url: staEmailUrl,
-    }
-  ]
+    },
+  ],
 }
 
 export default podcastConfig

@@ -1,13 +1,13 @@
 import '../styles/globals.css'
-import "bulma/css/bulma.css"
+import 'bulma/css/bulma.css'
 
-import { useEffect } from 'react'
+import {useEffect} from 'react'
 import Script from 'next/script'
-import { useRouter } from 'next/router'
+import {useRouter} from 'next/router'
 import * as gtag from '../lib/gtag'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app'
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({Component, pageProps}: AppProps) => {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url: string) => {

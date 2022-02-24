@@ -15,7 +15,8 @@ const LogoNav = () => {
               <img
                 className="navbar-logo"
                 src={`${IMAGES_URL}/logo-with-name.png`}
-                width={1900 * scale} height={400 * scale}
+                width={1900 * scale}
+                height={400 * scale}
                 alt="STA Logo"
               />
             </a>

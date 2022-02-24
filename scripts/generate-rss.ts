@@ -8,7 +8,11 @@ import {join} from 'path'
 async function generateRss() {
   const postLoader = await getPostLoader()
   const rssFeed = getRssFeed(podcastConfig, postLoader)
-  const writeFilePath = join(process.cwd(), INTERNAL_PUBLIC_URL, podcastConfig.itunes.feedFile)
+  const writeFilePath = join(
+    process.cwd(),
+    INTERNAL_PUBLIC_URL,
+    podcastConfig.itunes.feedFile,
+  )
   fs.writeFileSync(writeFilePath, rssFeed)
 }
 

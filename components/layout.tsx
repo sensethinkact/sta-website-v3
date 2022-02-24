@@ -8,10 +8,10 @@ type Props = {
   title?: string
 }
 
-const Layout = ({ children, title }: Props) => {
+const Layout = ({children, title}: Props) => {
   return (
     <>
-      <Meta title={title}/>
+      <Meta title={title} />
       <div className="min-h-screen">
         <main>{children}</main>
       </div>

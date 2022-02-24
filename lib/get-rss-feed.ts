@@ -2,11 +2,11 @@ import {Podcast} from 'podcast'
 import urlJoin from 'proper-url-join'
 import endent from 'endent'
 
-import { toTimestampString } from '@sta-podcast/timestamp-tools'
+import {toTimestampString} from '@sta-podcast/timestamp-tools'
 
 import type {FeedOptions, ItemOptions} from 'podcast'
-import type { PostLoader } from '@sta-podcast/post-loader'
-import type { Link, PodcastConfig, Outline} from '@sta-podcast/types'
+import type {PostLoader} from '@sta-podcast/post-loader'
+import type {Link, PodcastConfig, Outline} from '@sta-podcast/types'
 
 export type YoutubePost = {
   videoId: string
@@ -30,9 +30,13 @@ export type StaWebsitePost = {
   transcript: string
 }
 
-export default function getRssFeed(podcastConfig: PodcastConfig, postLoader: PostLoader) {
+export default function getRssFeed(
+  podcastConfig: PodcastConfig,
+  postLoader: PostLoader,
+) {
   // Validated with
   // https://validator.w3.org/feed/
+  // TODO check Spotify and iTunes validators
 
   const feedOptions: FeedOptions = {
     title: podcastConfig.name,
@@ -114,9 +118,9 @@ function getDescriptionWithLinks(args: {
     ${getLinksHtml(args.podcastLinks)}
   `
   if (args.outline) {
-    const outline = args.outline.map(i =>
-      `- (${toTimestampString(i.timeStamp)}) ${i.title}`
-    ).join('\n')
+    const outline = args.outline
+      .map((i) => `- (${toTimestampString(i.timeStamp)}) ${i.title}`)
+      .join('\n')
     text = endent`
       ${text}
 

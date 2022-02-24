@@ -7,24 +7,34 @@ type Props = {
   hideText?: string
 }
 
-const ReadMore = ({children, isStartExpanded=false, showText="Read more", hideText="Read less"}: Props) => {
-
+const ReadMore = ({
+  children,
+  isStartExpanded = false,
+  showText = 'Read more',
+  hideText = 'Read less',
+}: Props) => {
   const [isReadMore, setIsReadMore] = useState(isStartExpanded)
 
   return (
     <>
-      {
-        isReadMore ? (
-          <div>
-            <p>
-              {children}
-            </p>
-            <button className="button is-info is-small" onClick={() => setIsReadMore(false)}>{hideText}</button>
-          </div>
-        ) : (
-          <button className="button is-info is-small" onClick={() => setIsReadMore(true)}>{showText}</button>
-        )
-      }
+      {isReadMore ? (
+        <div>
+          <p>{children}</p>
+          <button
+            className="button is-info is-small"
+            onClick={() => setIsReadMore(false)}
+          >
+            {hideText}
+          </button>
+        </div>
+      ) : (
+        <button
+          className="button is-info is-small"
+          onClick={() => setIsReadMore(true)}
+        >
+          {showText}
+        </button>
+      )}
     </>
   )
 }

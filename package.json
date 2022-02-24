@@ -8,6 +8,9 @@
     "script": "ts-node --project tsconfig.scripts.json",
     "build:rss": "npm run script -- scripts/generate-rss.ts",
     "start": "next start",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.(js|jsx|json|yml|yaml|css|ts|tsx|md|mdx)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-different",
     "lint": "next lint"
   },
   "dependencies": {
@@ -36,6 +39,7 @@
     "endent": "^2.1.0",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.8",
+    "prettier": "^2.5.1",
     "ts-node": "^10.5.0",
     "typescript": "4.5.4"
   }

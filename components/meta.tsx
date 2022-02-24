@@ -5,7 +5,7 @@ type Props = {
   title?: string
 }
 
-const Meta = ({ title=podcastConfig.name} : Props) => {
+const Meta = ({title = podcastConfig.name}: Props) => {
   return (
     <Head>
       <title>{title}</title>

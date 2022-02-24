@@ -1,15 +1,15 @@
-import { useRouter } from "next/router"
+import {useRouter} from 'next/router'
 import ErrorPage from 'next/error'
 
-import getPostLoader from "../../lib/get-post-loader"
-import { IS_DEBUG } from "../../lib/constants"
+import getPostLoader from '../../lib/get-post-loader'
+import {IS_DEBUG} from '../../lib/constants'
 
-import type { SerializedPost } from "@sta-podcast/types"
+import type {SerializedPost} from '@sta-podcast/types'
 
-import Layout from "../../components/layout"
-import podcastConfig from "../../podcast.config"
-import EpisodePreview from "../../components/episode-preview"
-import LogoNav from "../../components/logo-nav"
+import Layout from '../../components/layout'
+import podcastConfig from '../../podcast.config'
+import EpisodePreview from '../../components/episode-preview'
+import LogoNav from '../../components/logo-nav'
 
 type Props = {
   posts: SerializedPost[]
@@ -17,7 +17,7 @@ type Props = {
   isDebug?: boolean
 }
 
-const PostsWithTag = ({ posts, tag, isDebug=false }: Props) => {
+const PostsWithTag = ({posts, tag, isDebug = false}: Props) => {
   const router = useRouter()
   if (!router.isFallback && posts.length === 0) {
     return <ErrorPage statusCode={404} />
@@ -25,16 +25,18 @@ const PostsWithTag = ({ posts, tag, isDebug=false }: Props) => {
   return (
     <Layout title={`${tag} tag | ${podcastConfig.name}`}>
       <div className="container">
-        <LogoNav/>
+        <LogoNav />
         <section className="section">
           <div className="columns is-centered">
             <div className="column is-8-tablet is-desktop-7 is-fullhd-6">
               <article>
                 <h2 className="subtitle">
-                  {
-                    posts.length === 1 ? "1 post" : `${posts.length} posts`
-                  }
-                  {' '} with the <b><i>{tag}</i></b> tag
+                  {posts.length === 1 ? '1 post' : `${posts.length} posts`} with
+                  the{' '}
+                  <b>
+                    <i>{tag}</i>
+                  </b>{' '}
+                  tag
                 </h2>
                 <div className="content">
                   {posts.map((post) => (
@@ -62,7 +64,7 @@ export async function getStaticPaths() {
   const tags = postLoader.getTags()
   return {
     paths: tags.map((tag) => ({
-      params: { tag },
+      params: {tag},
     })),
     fallback: false,
   }
@@ -74,15 +76,19 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params): Promise<{ props: Props }> {
+export async function getStaticProps({
+  params,
+}: Params): Promise<{props: Props}> {
   const postLoader = await getPostLoader()
   const slugs = postLoader.getSlugsByTag(params.tag)
-  const posts = slugs.map(slug => postLoader.getPostBySlug(slug)) as SerializedPost[]
+  const posts = slugs.map((slug) =>
+    postLoader.getPostBySlug(slug),
+  ) as SerializedPost[]
   return {
     props: {
       posts,
       tag: params.tag,
-      isDebug: IS_DEBUG
-    }
+      isDebug: IS_DEBUG,
+    },
   }
 }

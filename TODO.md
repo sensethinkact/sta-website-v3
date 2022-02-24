@@ -1,5 +1,4 @@
-TODO
-====
+# TODO
 
 - [x] Make a layout page
 - [x] Add tags page
@@ -19,8 +18,7 @@ TODO
 - [x] Port all posts
 - [x] Use Git LFS for images
 
-Version 4
----------
+## Version 4
 
 - [ ] Move podcast config out of post-loader + create a better separation
 - [ ] Use prettier and linting

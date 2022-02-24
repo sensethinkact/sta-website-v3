@@ -1,27 +1,27 @@
-import { useRouter } from "next/router"
+import {useRouter} from 'next/router'
 import ErrorPage from 'next/error'
-import YouTube from "react-youtube"
+import YouTube from 'react-youtube'
 
-import getPostLoader from "../../lib/get-post-loader"
-import {toTimestampString} from "@sta-podcast/timestamp-tools"
-import { listToString } from "../../lib/utils"
-import podcastConfig from "../../podcast.config"
+import getPostLoader from '../../lib/get-post-loader'
+import {toTimestampString} from '@sta-podcast/timestamp-tools'
+import {listToString} from '../../lib/utils'
+import podcastConfig from '../../podcast.config'
 
-import Layout from "../../components/layout"
-import Comments from "../../components/comments"
-import TagsList from "../../components/tags-list"
-import CopyableContentLink from "../../components/copyable-content-link"
+import Layout from '../../components/layout'
+import Comments from '../../components/comments'
+import TagsList from '../../components/tags-list'
+import CopyableContentLink from '../../components/copyable-content-link'
 
-import type { SerializedPost } from "@sta-podcast/types"
-import LogoNav from "../../components/logo-nav"
-import { IS_DEBUG } from "../../lib/constants"
+import type {SerializedPost} from '@sta-podcast/types'
+import LogoNav from '../../components/logo-nav'
+import {IS_DEBUG} from '../../lib/constants'
 
 type Props = {
   post: SerializedPost
   isDebug?: boolean
 }
 
-const Post = ({ post, isDebug }: Props) => {
+const Post = ({post, isDebug}: Props) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -29,7 +29,7 @@ const Post = ({ post, isDebug }: Props) => {
   return (
     <Layout title={`${post.title} | ${podcastConfig.name}`}>
       <div className="container">
-        <LogoNav/>
+        <LogoNav />
 
         <section className="section">
           <div className="columns is-centered">
@@ -37,7 +37,7 @@ const Post = ({ post, isDebug }: Props) => {
               <article>
                 <h2>
                   <span className="title is-3">
-                    {post.number && post.number?.toString() + ". "}
+                    {post.number && post.number?.toString() + '. '}
                     {post.title}
                   </span>
                   <span className="subtitle is-3">
@@ -54,87 +54,70 @@ const Post = ({ post, isDebug }: Props) => {
                   <TagsList tags={post.tags} />
                 </div>
                 <YouTube videoId={post.youtube.mainContentId} />
-                <br/>
-                <p className="content">
-                  {post.description}
-                </p>
-                <br/>
-                  <div className="content">
-                    <h3 className="subtitle is-4">
-                      Links
-                    </h3>
-                    <ul>
-                      <li>
-                        <a href={post.mp3.url} target="_blank" rel="noreferrer">
-                          Download the episode
-                        </a>
-                      </li>
-                      {
-                        post.links && post.links.map(link => (
-                          <li key={link.url}>
-                            <a href={link.url} target="_blank" rel="noreferrer">
-                              {link.name}
-                            </a>
+                <br />
+                <p className="content">{post.description}</p>
+                <br />
+                <div className="content">
+                  <h3 className="subtitle is-4">Links</h3>
+                  <ul>
+                    <li>
+                      <a href={post.mp3.url} target="_blank" rel="noreferrer">
+                        Download the episode
+                      </a>
+                    </li>
+                    {post.links &&
+                      post.links.map((link) => (
+                        <li key={link.url}>
+                          <a href={link.url} target="_blank" rel="noreferrer">
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                  </ul>
+                  <h3 className="subtitle is-4">Comments</h3>
+
+                  <Comments pageUrl={post.url} />
+
+                  {post.includes?.outline && (
+                    <>
+                      <h3 className="subtitle is-4">Outline</h3>
+                      <ul>
+                        {post.includes?.outline.map((outline) => (
+                          <li key={outline.title}>
+                            {toTimestampString(outline.timeStamp)}
+                            {' - '}
+                            {outline.title}
                           </li>
-                        ))
-                      }
-                    </ul>
-                    <h3 className="subtitle is-4">
-                      Comments
-                    </h3>
+                        ))}
+                      </ul>
+                    </>
+                  )}
 
-                    <Comments pageUrl={post.url} />
-
-                    {
-                      post.includes?.outline && (
-                      <>
-                        <h3 className="subtitle is-4">
-                          Outline
-                        </h3>
-                        <ul>
-                          {
-                            post.includes?.outline.map(outline => (
-                              <li key={outline.title}>
-                                {toTimestampString(outline.timeStamp)}
-                                {' - '}
-                                {outline.title}
-                              </li>
-                            ))
-                          }
-                        </ul>
-                      </>
-                      )
-                    }
-
-                    {
-                      post.includes?.transcript && (
-                        <>
-                          <h3 className="subtitle is-4">
-                            Transcript
-                          </h3>
-                          <p className="content is-small">
-                            <i>The transcript is for informational purposes and is not guaranteed to be correct.</i>
-                          </p>
-                          <div className="content">
-                            {post.includes.transcript.map(dialog => {
-                              const timestamp = toTimestampString(dialog.timeStamp)
-                              return (
-                                <div className="content" key={timestamp}>
-                                  <h3 className="is-5">
-                                    ({timestamp}) {' '}
-                                    {dialog.speaker}
-                                  </h3>
-                                  <p>
-                                    {dialog.text}
-                                  </p>
-                                </div>
-                              )
-                            })}
-                          </div>
-                        </>
-                      )
-                    }
-                  </div>
+                  {post.includes?.transcript && (
+                    <>
+                      <h3 className="subtitle is-4">Transcript</h3>
+                      <p className="content is-small">
+                        <i>
+                          The transcript is for informational purposes and is
+                          not guaranteed to be correct.
+                        </i>
+                      </p>
+                      <div className="content">
+                        {post.includes.transcript.map((dialog) => {
+                          const timestamp = toTimestampString(dialog.timeStamp)
+                          return (
+                            <div className="content" key={timestamp}>
+                              <h3 className="is-5">
+                                ({timestamp}) {dialog.speaker}
+                              </h3>
+                              <p>{dialog.text}</p>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </>
+                  )}
+                </div>
               </article>
             </div>
           </div>
@@ -151,7 +134,7 @@ export async function getStaticPaths() {
   const slugs = postLoader.getSlugs()
   return {
     paths: slugs.map((slug) => ({
-      params: { slug },
+      params: {slug},
     })),
     fallback: false,
   }
@@ -163,12 +146,14 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params): Promise<{ props: Props }> {
+export async function getStaticProps({
+  params,
+}: Params): Promise<{props: Props}> {
   const postLoader = await getPostLoader()
   return {
     props: {
       post: postLoader.getPostBySlug(params.slug) as SerializedPost,
       isDebug: IS_DEBUG,
-    }
+    },
   }
 }
