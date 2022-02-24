@@ -19,6 +19,7 @@
 - [x] Use Git LFS for images
 - [x] Use prettier and linting
 - [x] Generate a static site
+- [ ] Check transcripts for "Unknown Speaker"
 - [ ] Validate RSS feed on spotify and apple
 
 ## Version 4
