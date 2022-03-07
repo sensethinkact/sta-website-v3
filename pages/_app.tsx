@@ -1,13 +1,11 @@
-import '../styles/globals.css'
 import 'bulma/css/bulma.css'
-
-import {useEffect} from 'react'
-import Script from 'next/script'
-import {useRouter} from 'next/router'
-import * as gtag from '../lib/gtag'
 import type {AppProps} from 'next/app'
-
+import {useRouter} from 'next/router'
+import Script from 'next/script'
+import {useEffect} from 'react'
+import * as gtag from '../lib/gtag'
 import podcastConfig from '../podcast.config'
+import '../styles/globals.css'
 
 const App = ({Component, pageProps}: AppProps) => {
   const router = useRouter()

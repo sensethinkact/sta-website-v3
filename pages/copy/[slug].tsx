@@ -1,25 +1,21 @@
-import {useRouter} from 'next/router'
-import ErrorPage from 'next/error'
-import {CopyToClipboard} from 'react-copy-to-clipboard'
-import {ChangeEventHandler} from 'react'
-import {useState} from 'react'
-
-import getPostLoader from '../../lib/get-post-loader'
-import getRobohubPost from '../../lib/content-maker/robohub'
-import getIrishTechNewsPost from '../../lib/content-maker/irish-tech-news'
-import {getTitle, checkYoutubeTitle} from '../../lib/content-maker/common'
-import {
-  getYoutubeInterviewDescription,
-  getYoutubeClipTitles,
-  getYoutubeClipDescription,
-} from '../../lib/content-maker/youtube'
-import {getTweet, getLinkedIn} from '../../lib/content-maker/social-media'
-import getGluetext from '../../lib/content-maker/gluetext'
-import {MAX_TITLE_LENGTH} from '../../lib/constants'
-
-import Layout from '../../components/layout'
-
 import type {SerializedPost} from '@sta-podcast/types'
+import ErrorPage from 'next/error'
+import {useRouter} from 'next/router'
+import {ChangeEventHandler, useState} from 'react'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
+import Layout from '../../components/layout'
+import {MAX_TITLE_LENGTH} from '../../lib/constants'
+import {checkYoutubeTitle, getTitle} from '../../lib/content-maker/common'
+import getGluetext from '../../lib/content-maker/gluetext'
+import getIrishTechNewsPost from '../../lib/content-maker/irish-tech-news'
+import getRobohubPost from '../../lib/content-maker/robohub'
+import {getLinkedIn, getTweet} from '../../lib/content-maker/social-media'
+import {
+  getYoutubeClipDescription,
+  getYoutubeClipTitles,
+  getYoutubeInterviewDescription,
+} from '../../lib/content-maker/youtube'
+import getPostLoader from '../../lib/get-post-loader'
 import podcastConfig from '../../podcast.config'
 
 type Props = {

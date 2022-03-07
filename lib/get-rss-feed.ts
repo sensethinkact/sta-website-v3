@@ -1,12 +1,10 @@
+import type {PostLoader} from '@sta-podcast/post-loader'
+import {toTimestampString} from '@sta-podcast/timestamp-tools'
+import type {Link, Outline, PodcastConfig} from '@sta-podcast/types'
+import endent from 'endent'
+import type {FeedOptions, ItemOptions} from 'podcast'
 import {Podcast} from 'podcast'
 import urlJoin from 'proper-url-join'
-import endent from 'endent'
-
-import {toTimestampString} from '@sta-podcast/timestamp-tools'
-
-import type {FeedOptions, ItemOptions} from 'podcast'
-import type {PostLoader} from '@sta-podcast/post-loader'
-import type {Link, PodcastConfig, Outline} from '@sta-podcast/types'
 
 export type YoutubePost = {
   videoId: string

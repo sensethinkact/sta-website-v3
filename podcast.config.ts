@@ -1,9 +1,10 @@
+import type {
+  Link,
+  PodcastConfig as PodcastConfigImported,
+} from '@sta-podcast/types'
 import {join} from 'path'
-import type {PodcastConfig as PodcastConfigImported} from '@sta-podcast/types'
-import {IMAGES_URL} from './lib/constants'
 import urlJoin from 'proper-url-join'
-
-import type {Link} from '@sta-podcast/types'
+import {IMAGES_URL} from './lib/constants'
 
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'

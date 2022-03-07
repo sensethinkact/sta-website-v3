@@ -1,5 +1,4 @@
 import Link from 'next/link'
-
 import {TAG_PICKER_URL} from '../lib/constants'
 
 type Props = {

@@ -1,15 +1,12 @@
-import {useRouter} from 'next/router'
-import ErrorPage from 'next/error'
-
-import getPostLoader from '../../lib/get-post-loader'
-import {IS_DEBUG} from '../../lib/constants'
-
 import type {SerializedPost} from '@sta-podcast/types'
-
-import Layout from '../../components/layout'
-import podcastConfig from '../../podcast.config'
+import ErrorPage from 'next/error'
+import {useRouter} from 'next/router'
 import EpisodePreview from '../../components/episode-preview'
+import Layout from '../../components/layout'
 import LogoNav from '../../components/logo-nav'
+import {IS_DEBUG} from '../../lib/constants'
+import getPostLoader from '../../lib/get-post-loader'
+import podcastConfig from '../../podcast.config'
 
 type Props = {
   posts: SerializedPost[]

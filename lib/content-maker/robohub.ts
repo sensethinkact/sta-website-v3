@@ -1,8 +1,7 @@
 import type {SerializedPost} from '@sta-podcast/types'
+import endent from 'endent'
 import type {PodcastConfig} from '../../podcast.config'
 import {getYoutubeUrlFromVideoId} from './common'
-
-import endent from 'endent'
 
 function getRobohubPost(pod: PodcastConfig, ep: SerializedPost) {
   return endent`

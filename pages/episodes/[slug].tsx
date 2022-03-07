@@ -1,20 +1,17 @@
-import {useRouter} from 'next/router'
-import ErrorPage from 'next/error'
-import YouTube from 'react-youtube'
-
-import getPostLoader from '../../lib/get-post-loader'
 import {toTimestampString} from '@sta-podcast/timestamp-tools'
+import type {SerializedPost} from '@sta-podcast/types'
+import ErrorPage from 'next/error'
+import {useRouter} from 'next/router'
+import YouTube from 'react-youtube'
+import Comments from '../../components/comments'
+import CopyableContentLink from '../../components/copyable-content-link'
+import Layout from '../../components/layout'
+import LogoNav from '../../components/logo-nav'
+import TagsList from '../../components/tags-list'
+import {IS_DEBUG} from '../../lib/constants'
+import getPostLoader from '../../lib/get-post-loader'
 import {listToString} from '../../lib/utils'
 import podcastConfig from '../../podcast.config'
-
-import Layout from '../../components/layout'
-import Comments from '../../components/comments'
-import TagsList from '../../components/tags-list'
-import CopyableContentLink from '../../components/copyable-content-link'
-
-import type {SerializedPost} from '@sta-podcast/types'
-import LogoNav from '../../components/logo-nav'
-import {IS_DEBUG} from '../../lib/constants'
 
 type Props = {
   post: SerializedPost

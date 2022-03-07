@@ -1,13 +1,10 @@
-import Link from 'next/link'
-
-import {listToString, truncateWords} from '../lib/utils'
 import {toTimestampString} from '@sta-podcast/timestamp-tools'
-
-import TagsList from './tags-list'
-
 import type {SerializedPost} from '@sta-podcast/types'
-import {EPISODES_URL, COPYABLE_CONTENT_URL} from '../lib/constants'
+import Link from 'next/link'
+import {EPISODES_URL} from '../lib/constants'
+import {listToString, truncateWords} from '../lib/utils'
 import CopyableContentLink from './copyable-content-link'
+import TagsList from './tags-list'
 
 type Props = {
   post: SerializedPost

@@ -1,9 +1,9 @@
+import fs from 'fs'
+import {join} from 'path'
+import {INTERNAL_PUBLIC_URL} from '../lib/constants'
 import getPostLoader from '../lib/get-post-loader'
 import getRssFeed from '../lib/get-rss-feed'
 import podcastConfig from '../podcast.config'
-import {INTERNAL_PUBLIC_URL} from '../lib/constants'
-import fs from 'fs'
-import {join} from 'path'
 
 async function generateRss() {
   const postLoader = await getPostLoader()

@@ -1,8 +1,7 @@
 import type {SerializedPost} from '@sta-podcast/types'
-import type {PodcastConfig} from '../../podcast.config'
-
-import {listToString} from '../utils'
 import endent from 'endent'
+import type {PodcastConfig} from '../../podcast.config'
+import {listToString} from '../utils'
 
 export function getTweet(_pod: PodcastConfig, ep: SerializedPost) {
   const guests = listToString(ep.guests || '')

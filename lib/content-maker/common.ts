@@ -1,6 +1,6 @@
-import {listToString} from '../utils'
 import type {SerializedPost} from '@sta-podcast/types'
 import type {PodcastConfig} from '../../podcast.config'
+import {listToString} from '../utils'
 
 export function checkYoutubeTitle(title: string, maxLength: number) {
   if (title.length > maxLength) {

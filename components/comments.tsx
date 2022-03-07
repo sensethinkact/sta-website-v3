@@ -1,5 +1,4 @@
 import Script from 'next/script'
-import endent from 'endent'
 
 type Props = {
   pageUrl: string

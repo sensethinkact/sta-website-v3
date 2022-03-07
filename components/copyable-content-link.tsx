@@ -1,5 +1,4 @@
 import Link from 'next/link'
-
 import {COPYABLE_CONTENT_URL} from '../lib/constants'
 
 type Props = {

@@ -1,12 +1,10 @@
-import type {SerializedPost} from '@sta-podcast/types'
-import type {PodcastConfig} from '../../podcast.config'
-
-import {checkYoutubeTitle} from './common'
-import {listToString} from '../utils'
-import endent from 'endent'
 import {toTimestampString} from '@sta-podcast/timestamp-tools'
-import {getYoutubeUrlFromVideoId} from './common'
+import type {SerializedPost} from '@sta-podcast/types'
+import endent from 'endent'
+import type {PodcastConfig} from '../../podcast.config'
 import {MAX_TITLE_LENGTH} from '../constants'
+import {listToString} from '../utils'
+import {checkYoutubeTitle, getYoutubeUrlFromVideoId} from './common'
 
 export function getYoutubeInterviewDescription(
   pod: PodcastConfig,

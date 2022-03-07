@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from 'next/link'
-
 import {IMAGES_URL} from '../lib/constants'
 
 const LogoNav = () => {

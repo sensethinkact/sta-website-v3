@@ -1,17 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
-import getPostLoader from '../lib/get-post-loader'
-
 import type {SerializedPost} from '@sta-podcast/types'
-
-import podcastConfig from '../podcast.config'
-
-import TagsList from '../components/tags-list'
+import EpisodePreview from '../components/episode-preview'
 import Layout from '../components/layout'
 import ReadMore from '../components/read-more'
-import EpisodePreview from '../components/episode-preview'
-
-import {IS_DEBUG, IMAGES_URL} from '../lib/constants'
+import TagsList from '../components/tags-list'
+import {IMAGES_URL, IS_DEBUG} from '../lib/constants'
+import getPostLoader from '../lib/get-post-loader'
+import podcastConfig from '../podcast.config'
 
 type Props = {
   posts: SerializedPost[]

@@ -1,8 +1,6 @@
 import Footer from './footer'
 import Meta from './meta'
 
-import podcastConfig from '../podcast.config'
-
 type Props = {
   children: React.ReactNode
   title?: string
