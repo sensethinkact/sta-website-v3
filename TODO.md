@@ -19,12 +19,17 @@
 - [x] Use Git LFS for images
 - [x] Use prettier and linting
 - [x] Generate a static site
+- [x] Remove Git LFS
+- [ ] Make sitemap in generated site
 - [ ] Check transcripts for "Unknown Speaker"
+- [x] Update README with build instructions
+- [x] Add tracking id in config
 - [ ] Validate RSS feed on spotify and apple
 
 ## Version 4
 
 - [ ] Setup with storybooks
+- [ ] Link checking linter
 - [ ] Move podcast config out of post-loader + create a better separation
 - [ ] Add post photos to preview
 - [ ] Use a schema to validate posts

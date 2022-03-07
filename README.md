@@ -21,11 +21,7 @@ The copyable content, as well as future posts are only created during debug mode
 
 1. Install [NodeJS 16](https://nodejs.org/en/).
 2. Clone this repository
-3. Go into the cloned directory and get the large files (images)
-   ```bash
-   git lfs install && git lfs pull
-   ```
-4. Then run the following command:
+3. Install the depenedencies with the following command:
    ```bash
    npm ci
    ```
@@ -48,13 +44,8 @@ Note that the RSS feed isn't generated until you run `npm run build`, which you 
 
 ### Deploying
 
-The environment where you intent to run the server should have an evironmental variable for the Google Analytics tracking ID stored in the variable `GA_TRACKING_ID`.
+To deploy, run the following command and then run an HTTP server in the generated directory `out`.
 
-Then, to run the production version of this site, you must run the following commands:
-
-```bash
-# Build the static site
+```
 npm run build
-# Start a local server
-npm run start
 ```

@@ -8,6 +8,7 @@ import type {Link} from '@sta-podcast/types'
 const siteUrl = 'https://sensethinkact.com/'
 const feedFile = 'itunes.xml'
 const feedUrl = join(siteUrl, feedFile)
+const googleAnalyticsId = 'G-X1WYK4V72V'
 
 const appleUrl =
   'https://podcasts.apple.com/us/podcast/sense-think-act/id1582090036'
@@ -29,6 +30,7 @@ export type PodcastConfig = {
   availableOn: {[site: string]: {url: string; iconUrl: string}}
   footer: Link[]
   host: string
+  googleAnalyticsId: string
 } & PodcastConfigImported
 
 const podcastConfig: PodcastConfig = {
@@ -60,6 +62,7 @@ const podcastConfig: PodcastConfig = {
       'https://ftp.osuosl.org/pub/ros/download.ros.org/sensethinkact/episodes/',
   },
   siteUrl,
+  googleAnalyticsId,
   links: {
     podcast: [
       {
