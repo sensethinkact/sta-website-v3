@@ -4,14 +4,17 @@
   "scripts": {
     "dev": "next dev",
     "debug": "DEBUG=true next dev",
-    "build": "npm run build:rss && next build && next export",
-    "script": "ts-node --project tsconfig.scripts.json",
+    "build": "run-s build:next build:rss build:sitemap && next export",
+    "build:next": "next build",
     "build:rss": "npm run script -- scripts/generate-rss.ts",
+    "build:sitemap": "next-sitemap",
+    "script": "ts-node --project tsconfig.scripts.json",
     "start": "next start",
     "prettier": "prettier --ignore-path .gitignore \"**/*.(js|jsx|json|yml|yaml|css|ts|tsx|md|mdx)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate": "run-s check-format lint build"
   },
   "dependencies": {
     "@sta-podcast/post-loader": "^1.4.1",
@@ -39,6 +42,8 @@
     "endent": "^2.1.0",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
+    "next-sitemap": "^2.5.7",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "prettier-plugin-organize-imports": "^2.3.4",
     "ts-node": "^10.7.0",
