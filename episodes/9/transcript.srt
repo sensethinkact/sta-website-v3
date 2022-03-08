@@ -146,7 +146,7 @@ information?
 
 31
 00:01:55,160 --> 00:01:59,030
-Unknown: Absolutely. So we have
+Absolutely. So we have
 a unique proprietary elasomeric
 
 32
@@ -309,7 +309,7 @@ they necessary?
 
 64
 00:04:08,540 --> 00:04:12,290
-Unknown: Well, that's the
+Well, that's the
 principle of photometric 3d.
 
 65
@@ -577,7 +577,7 @@ around?
 
 119
 00:07:25,700 --> 00:07:29,660
-Unknown: So the company was
+So the company was
 founded in 2011, I believe the
 
 120
@@ -1278,7 +1278,7 @@ manufacturing lots of these?
 
 261
 00:17:18,470 --> 00:17:20,960
-Unknown: Well, I think the you
+Well, I think the you
 know, that's also a great
 
 262
@@ -5660,7 +5660,7 @@ way to interface yourself?
 
 1149
 01:12:04,160 --> 01:12:07,100
-Unknown: With Yeah, I should. I
+With Yeah, I should. I
 should have mentioned that
 
 1150
@@ -5680,7 +5680,7 @@ by the way? ROS 1 or ROS 2?
 
 1153
 01:12:19,730 --> 01:12:22,010
-Unknown: I don't know, that's a
+I don't know, that's a
 good question. I'll ask my
 
 1154
@@ -5770,7 +5770,7 @@ and build off of your standards.
 
 1171
 01:13:35,990 --> 01:13:36,980
-Unknown: I'm making a note.
+I'm making a note.
 
 1172
 01:13:40,460 --> 01:13:43,520
@@ -6161,7 +6161,7 @@ on the end of grab them,
 
 1251
 01:18:21,350 --> 01:18:23,750
-Unknown: I would say, you know,
+I would say, you know,
 you saw you shaking my hand in
 
 1252
@@ -7447,7 +7447,7 @@ listeners?
 
 1511
 01:36:26,810 --> 01:36:29,300
-Unknown: Absolutely. I mean, I
+Absolutely. I mean, I
 would encourage everybody to
 
 1512

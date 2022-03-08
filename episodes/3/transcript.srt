@@ -3697,7 +3697,7 @@ data. Things
 
 747
 00:46:21,530 --> 00:46:23,990
-Unknown: Yeah, so there's
+Yeah, so there's
 there's a bunch of stuff in
 
 748
@@ -3956,7 +3956,7 @@ of thing.
 
 799
 00:49:28,610 --> 00:49:34,940
-Unknown: The the thing which is
+The the thing which is
 so obviously there's various
 
 800
@@ -4175,7 +4175,7 @@ robots with ROS 2 correct
 
 843
 00:52:35,630 --> 00:52:37,970
-Unknown: Yeah all the all the
+Yeah all the all the
 all the custom software we do is
 
 844
@@ -4335,7 +4335,7 @@ how's the community?
 
 876
 00:54:34,550 --> 00:54:37,100
-Unknown: Common? Yeah, it's
+Common? Yeah, it's
 becoming more and more common I
 
 877
@@ -5384,5 +5384,5 @@ being our founding sponsor.
 
 1087
 01:07:27,090 --> 01:07:27,780
-Unknown: Bye, everyone.
+Bye, everyone.
 

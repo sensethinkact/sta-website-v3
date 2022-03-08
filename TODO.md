@@ -20,11 +20,11 @@
 - [x] Use prettier and linting
 - [x] Generate a static site
 - [x] Remove Git LFS
-- [ ] Make sitemap in generated site
-- [ ] Check transcripts for "Unknown Speaker"
+- [x] Make sitemap in generated site
+- [x] Check transcripts for "Unknown Speaker"
 - [x] Update README with build instructions
 - [x] Add tracking id in config
-- [ ] Validate RSS feed on spotify and apple
+- [x] Validate RSS feed on spotify and apple
 
 ## Version 4
 
