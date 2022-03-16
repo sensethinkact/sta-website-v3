@@ -2,10 +2,9 @@ name: deploy_site
 on:
   push:
     branches:
-    - main
+      - main
   schedule:
     - cron: '5 16 * * *'
-
 
 jobs:
   Run-Test-Build:
@@ -25,10 +24,10 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.SENSETHINKACT_UPLOAD_KEY }}
-            ARGS: "-av --partial --delete --exclude .well-known"
-            SOURCE: "_site/"
-            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-            REMOTE_USER: ${{ secrets.REMOTE_USER }}
-            TARGET: ${{ secrets.REMOTE_TARGET }}
-            EXCLUDE: ".well-known"
+          SSH_PRIVATE_KEY: ${{ secrets.SENSETHINKACT_UPLOAD_KEY }}
+          ARGS: '-av --partial --delete --exclude .well-known'
+          SOURCE: '_site/'
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+          EXCLUDE: '.well-known'
