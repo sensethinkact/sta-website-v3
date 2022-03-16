@@ -7,26 +7,23 @@ on:
     - cron: '5 16 * * *'
 
 jobs:
-  Run-Test-Build:
+  deploy-site:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.0.0
         with:
-          python-version: '3.x'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install ghrocker
-      - name: Test build
-        run: ghrocker --build .
+          node-version: 16
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SENSETHINKACT_UPLOAD_KEY }}
-          ARGS: '-av --partial --delete --exclude .well-known'
-          SOURCE: '_site/'
+          ARGS: '-nav --partial --delete --exclude .well-known'
+          SOURCE: 'out/'
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
