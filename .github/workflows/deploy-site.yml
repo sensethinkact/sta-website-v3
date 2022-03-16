@@ -22,7 +22,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SENSETHINKACT_UPLOAD_KEY }}
-          ARGS: '-av --partial --delete --exclude .well-known'
+          ARGS: '-nav --partial --delete --exclude .well-known'
           SOURCE: 'out/'
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
