@@ -2,13 +2,12 @@ import type {
   Link,
   PodcastConfig as PodcastConfigImported,
 } from '@sta-podcast/types'
-import {join} from 'path'
 import urlJoin from 'proper-url-join'
 import {IMAGES_URL} from './lib/constants'
 
-const siteUrl = 'https://sensethinkact.com/'
+const siteUrl = 'https://sensethinkact.com'
 const feedFile = 'itunes.xml'
-const feedUrl = join(siteUrl, feedFile)
+const feedUrl = `${siteUrl}/${feedFile}`
 const googleAnalyticsId = 'G-X1WYK4V72V'
 
 const appleUrl =
