@@ -1,0 +1,46 @@
+guests: Tim Chung
+title: DARPA Subterranean Challenge
+description: |
+  In this episode, Audrow Nash speaks to Tim Chung, Program Manager in the Tactical Technology Office at the Defense Advanced Research Projects Agency (DARPA), on the DARPA Subterranean (SubT) Challenge.
+  The SubT Challenge is a robotics challenge that aims to develop innovative technologies that would augment operations underground.
+  In this conversation, they talk about the motivation of the SubT Challenge, its systems (hardware) and virtual (simulation) challenges, how the resulting technology has been shared with the world, on benchmarking the robotics behaviors in simulation, on the challenge of scoping the SubT Challenge, and on building the final environment for the systems challenge.
+excerpt: Tim Chung is a Program Manager in the Tactical Technology Office at the Defense Advanced Research Projects Agency (DARPA).
+duration:
+  hours: 1
+  minutes: 24
+  seconds: 51
+tags:
+  - darpa
+  - government
+  - challenge
+  - subt
+  - simulation
+  - hardware
+  - mobility
+  - networking
+links:
+  - name: The SubT Challenge's Website
+    url: https://www.subtchallenge.com/
+  - name: Tim's LinkedIn
+    url: https://www.linkedin.com/in/timothy-h-chung/
+  - name: DARPAtv's YouTube Channel
+    url: https://www.youtube.com/user/DARPAtv
+  - name: SubT's Repository on OSRF
+    url: https://github.com/osrf/subt
+mp3SizeBytes: 166614024
+publishDate: 2022-02-22
+youtube:
+  mainContentId: -EVIFxmANg4
+  clips:
+    - title: Sharing Between Competitors
+      videoId: Y0fwJOKnmRw
+    - title: On the DARPA Challenge Model
+      videoId: _SXDn8s8_Ls
+    - title: Motivation for the SubT Challenge
+      videoId: g7kOo4pI--M
+    - title: On Setting the DARPA Challenge's Difficulty
+      videoId: AMAibCdFJwM
+    - title: On Benchmarking Robotics Behavior
+      videoId: 6aqVF0aj4Nk
+    - title: On Using the Benchmarking Framework
+      videoId: mIGXUg93lNQ

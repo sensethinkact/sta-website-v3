@@ -1,0 +1,8519 @@
+1
+00:00:03,210 --> 00:00:04,980
+Audrow Nash: This is a
+conversation with Christian
+
+2
+00:00:04,980 --> 00:00:08,670
+Fritz, who is the CEO and
+founder of Transitive Robotics.
+
+3
+00:00:08,850 --> 00:00:12,150
+Transitive Robotics makes
+software for building full stack
+
+4
+00:00:12,540 --> 00:00:16,080
+robotics applications, meaning
+that it aims to make connecting
+
+5
+00:00:16,080 --> 00:00:19,920
+your robot to a user interface
+easier. Some reasons you might
+
+6
+00:00:19,920 --> 00:00:23,640
+want to do this are to remotely
+monitor the health of robot
+
+7
+00:00:23,640 --> 00:00:28,230
+fleets. See what a robots camera
+sees, or to tele operate a
+
+8
+00:00:28,230 --> 00:00:32,100
+robot? Transitive Robotics does
+this while solving the hard
+
+9
+00:00:32,100 --> 00:00:36,180
+networking problem of robots
+potentially coming into and out
+
+10
+00:00:36,180 --> 00:00:40,350
+of connectivity. I enjoyed
+talking to Christian. His
+
+11
+00:00:40,350 --> 00:00:43,020
+perspective in forming
+Transitive Robotics seems to
+
+12
+00:00:43,020 --> 00:00:46,860
+have been very pragmatic. And in
+my opinion, Transitive Robotics
+
+13
+00:00:46,860 --> 00:00:49,680
+is building a tool that is very
+needed by the robotics
+
+14
+00:00:49,680 --> 00:00:53,310
+community. It was also
+interesting to hear his thoughts
+
+15
+00:00:53,310 --> 00:00:56,790
+on growing a robotics app
+marketplace, which may be in
+
+16
+00:00:56,790 --> 00:01:01,470
+Transitive's future. This is the
+Sense Think Act Podcast. I'm
+
+17
+00:01:01,500 --> 00:01:04,860
+Audrow Nash. Thank you to our
+founding sponsor, Open Robotics.
+
+18
+00:01:04,890 --> 00:01:07,470
+And now here's my conversation
+with Christian.
+
+19
+00:01:09,510 --> 00:01:11,580
+Christian, would you introduce
+yourself?
+
+20
+00:01:13,170 --> 00:01:16,770
+Christian Fritz: Hi. I'm
+Christian Fritz. I'm the founder
+
+21
+00:01:16,770 --> 00:01:22,350
+of Transitive Robotics. People
+may know a little bit from my
+
+22
+00:01:22,350 --> 00:01:26,130
+career, where I'm coming from, I
+used to be the head of software
+
+23
+00:01:26,130 --> 00:01:29,820
+at Savvy oak. And for those who
+don't know, Savio, said hope
+
+24
+00:01:29,820 --> 00:01:34,230
+makes a really cute delivery
+robot for hotels and hospitals.
+
+25
+00:01:34,680 --> 00:01:38,340
+And it was, it was a really fun
+ride. For me. Being there, I
+
+26
+00:01:38,340 --> 00:01:40,740
+started when there were about
+five robots in the field. When I
+
+27
+00:01:40,740 --> 00:01:44,850
+left there were over 100. And it
+was a really an eye opening
+
+28
+00:01:44,850 --> 00:01:46,770
+experience. For me, my
+background is in robotics, I've
+
+29
+00:01:46,770 --> 00:01:51,810
+done Robocop back in 2001, I've
+seen all sorts of versions of
+
+30
+00:01:52,140 --> 00:01:58,620
+robotics, including before Ross,
+which was bearish. And then at
+
+31
+00:01:58,620 --> 00:02:02,910
+Savvy org, I learned about not
+just the robotics piece, but the
+
+32
+00:02:02,910 --> 00:02:05,820
+full stack that went on top of
+that. So that's really kind of
+
+33
+00:02:06,060 --> 00:02:09,060
+my background, I was leading the
+application development team
+
+34
+00:02:09,060 --> 00:02:14,310
+there, which basically, I always
+described it to new candidates
+
+35
+00:02:14,310 --> 00:02:17,910
+or employees as as follows. The
+application development team
+
+36
+00:02:17,910 --> 00:02:20,700
+gets a robot that knows how to
+stay localized and not bump into
+
+37
+00:02:20,700 --> 00:02:25,170
+anything, and turns it into
+value to the company. So what
+
+38
+00:02:25,170 --> 00:02:29,850
+that meant was all of the HDRI
+was done by our team, anything
+
+39
+00:02:29,850 --> 00:02:33,750
+that involves just a sense of
+ambition, right, like running a
+
+40
+00:02:33,750 --> 00:02:36,900
+delivery, the notion of
+delivery, writing elevators,
+
+41
+00:02:36,900 --> 00:02:41,670
+calling phones, notifying users,
+all of that was done by a team.
+
+42
+00:02:41,670 --> 00:02:45,000
+And it was, it was a really
+interesting experience. Because
+
+43
+00:02:45,000 --> 00:02:49,950
+I found out that while Ross is
+really great, there's, there's
+
+44
+00:02:49,950 --> 00:02:53,130
+so much more that you need in
+order to deploy a successful
+
+45
+00:02:53,130 --> 00:02:56,730
+robotics fleet in the real
+world. And so that's, that's how
+
+46
+00:02:56,730 --> 00:02:57,900
+I came to start trying to
+
+47
+00:02:58,440 --> 00:03:01,680
+Audrow Nash: know, what exactly
+are you doing at transitive?
+
+48
+00:03:02,430 --> 00:03:05,730
+Like, how are you solving this
+deployment problem and the
+
+49
+00:03:05,730 --> 00:03:07,620
+problems that you kind of saw
+from your work, it's.
+
+50
+00:03:09,600 --> 00:03:13,560
+Christian Fritz: So it's heavy,
+we spend a lot of time building,
+
+51
+00:03:13,590 --> 00:03:16,440
+you know, those those full stack
+applications, data
+
+52
+00:03:16,440 --> 00:03:19,320
+synchronization between robots
+and the cloud at the front end,
+
+53
+00:03:20,730 --> 00:03:23,550
+visualizing elements of the
+robot, such as maps at laser
+
+54
+00:03:23,550 --> 00:03:27,330
+scans, and sending data back and
+forth and doing all of that
+
+55
+00:03:27,330 --> 00:03:30,390
+DevOps. And it was really
+interesting for me to find out
+
+56
+00:03:30,390 --> 00:03:33,750
+that other people at other
+companies like fetch robotics
+
+57
+00:03:33,750 --> 00:03:36,540
+and places that we spoke with,
+were basically building the
+
+58
+00:03:36,540 --> 00:03:40,500
+exact same thing, right. So we,
+we felt that, that that's not a
+
+59
+00:03:40,500 --> 00:03:44,700
+good idea. And granted, there
+are some solutions out there
+
+60
+00:03:44,730 --> 00:03:49,170
+that help try to offer you the
+kind of a one stop shop for
+
+61
+00:03:49,530 --> 00:03:54,570
+fleet management and DevOps. And
+some of them are actually done
+
+62
+00:03:54,570 --> 00:03:57,060
+by friends of ours. And they
+approached us and said, We have
+
+63
+00:03:57,060 --> 00:03:59,940
+to, to see whether we would want
+to use them. But the problem
+
+64
+00:03:59,940 --> 00:04:03,810
+that we had with them was that
+they all are sinking, like
+
+65
+00:04:03,810 --> 00:04:07,620
+standalone platforms. So really,
+they give you the choice of do I
+
+66
+00:04:07,620 --> 00:04:11,250
+build my own fleet management?
+Or do I outsource that. And the
+
+67
+00:04:11,250 --> 00:04:14,370
+issue that we had with that was
+that when you outsource that
+
+68
+00:04:14,370 --> 00:04:17,670
+your hands are tied, if the
+thing is not perfect, you cannot
+
+69
+00:04:17,670 --> 00:04:21,270
+extend? And if there's something
+that you need, you still have to
+
+70
+00:04:21,270 --> 00:04:25,140
+build it separately. And then
+you have, well, first of all,
+
+71
+00:04:25,140 --> 00:04:28,230
+some type of work. But also
+you're duplicating your data,
+
+72
+00:04:28,710 --> 00:04:31,710
+landscape, right? Some data will
+live in the one side or the
+
+73
+00:04:31,710 --> 00:04:32,100
+other in
+
+74
+00:04:32,100 --> 00:04:35,520
+Audrow Nash: your domain in so
+software you're using for fleet
+
+75
+00:04:35,520 --> 00:04:39,090
+management, and then whatever
+features you build custom
+
+76
+00:04:39,090 --> 00:04:42,720
+yourself kind of outside of
+that. For your own. Yeah,
+
+77
+00:04:42,720 --> 00:04:46,260
+Christian Fritz: that's exactly
+right. Yeah, exactly. Right. So
+
+78
+00:04:46,350 --> 00:04:49,110
+you will have separate users on
+different accounts. You'll have
+
+79
+00:04:49,110 --> 00:04:51,810
+different roles. You'll have
+complex some data about the
+
+80
+00:04:51,810 --> 00:04:56,580
+robot. Yeah. And so what struck
+us was that what people really
+
+81
+00:04:56,580 --> 00:05:00,750
+want is the ability to just take
+individual complaints and plug
+
+82
+00:05:00,750 --> 00:05:04,860
+them into your existing web
+application. A good example of
+
+83
+00:05:04,860 --> 00:05:07,800
+that is low latency video
+streaming, almost everybody
+
+84
+00:05:07,800 --> 00:05:10,470
+wants to see what's the ability
+to see what the robot is
+
+85
+00:05:10,470 --> 00:05:15,000
+currently seeing. And it's a
+complicated application or
+
+86
+00:05:15,000 --> 00:05:18,630
+capability to implement. Because
+there's some really great
+
+87
+00:05:18,630 --> 00:05:20,550
+technology like the one that
+we're using here right now,
+
+88
+00:05:20,550 --> 00:05:23,040
+which is why Partisi, which is
+running in the background, it's
+
+89
+00:05:23,040 --> 00:05:26,280
+very complex. And a lot of
+robotics companies don't want to
+
+90
+00:05:26,280 --> 00:05:29,190
+get in the weeds don't want to
+become experts, they don't want
+
+91
+00:05:29,190 --> 00:05:32,970
+to get into the weeds. So I
+tried to give were basically
+
+92
+00:05:33,060 --> 00:05:36,750
+developing these things as
+individual components. That's
+
+93
+00:05:36,810 --> 00:05:39,720
+the one thing that's different
+about us from from the existing
+
+94
+00:05:40,560 --> 00:05:42,990
+offerings out there. And the
+other one is that we believe in
+
+95
+00:05:42,990 --> 00:05:46,650
+open source. So we actually
+following an open core model,
+
+96
+00:05:46,860 --> 00:05:50,040
+with a platform that we're
+developing will be open source,
+
+97
+00:05:50,100 --> 00:05:52,830
+and anybody can use it, and we
+hope people will, and they will
+
+98
+00:05:52,830 --> 00:05:56,940
+build cool things on top of
+that. And this is really kind of
+
+99
+00:05:57,300 --> 00:06:02,700
+a philosophical thing for us. We
+think that Ross has done such a
+
+100
+00:06:02,700 --> 00:06:07,200
+good job at uniting the robotics
+community by giving us a common
+
+101
+00:06:07,200 --> 00:06:09,630
+platform that we can build
+packages on. And so we can
+
+102
+00:06:09,630 --> 00:06:14,160
+share, right? So if you if you
+build a really awesome
+
+103
+00:06:14,520 --> 00:06:19,440
+navigation functionality, and
+thinking of your last you can
+
+104
+00:06:19,470 --> 00:06:21,300
+you can share that with the
+world and the world will be a
+
+105
+00:06:21,300 --> 00:06:25,770
+better flex, right. And I think
+Ross has done such a tremendous
+
+106
+00:06:25,770 --> 00:06:29,250
+job at establishing that
+framework or platform on based
+
+107
+00:06:29,250 --> 00:06:32,490
+on which we can share it. And we
+would really love to do the same
+
+108
+00:06:32,490 --> 00:06:35,790
+now for the for the full stack.
+If it's open if it's open
+
+109
+00:06:35,790 --> 00:06:39,030
+source, and it's easy to
+implement new capabilities that
+
+110
+00:06:39,030 --> 00:06:43,170
+we really think that people will
+start contributing back. And we
+
+111
+00:06:43,170 --> 00:06:46,440
+can finally stop all reinventing
+the wheel and building the same.
+
+112
+00:06:47,460 --> 00:06:49,530
+Audrow Nash: Yeah, for everyone
+who has a fleet of robots that
+
+113
+00:06:49,530 --> 00:06:54,270
+needs to manage them in some
+way. So now one thing I'd like
+
+114
+00:06:54,270 --> 00:06:58,380
+to do just kind of going more
+into detail, what does it mean
+
+115
+00:06:58,380 --> 00:07:01,530
+to do fleet management? And what
+are some of the challenges with
+
+116
+00:07:01,530 --> 00:07:02,430
+fleet management?
+
+117
+00:07:04,890 --> 00:07:07,500
+Christian Fritz: Well, so I'd
+start perhaps a little bit lower
+
+118
+00:07:07,560 --> 00:07:12,720
+and start with why why sleep
+management or anything to do
+
+119
+00:07:13,020 --> 00:07:18,120
+with robotics is not just
+another react app, or something
+
+120
+00:07:18,120 --> 00:07:21,390
+else where you can use common
+tools out there. And they don't
+
+121
+00:07:21,390 --> 00:07:24,810
+just solve the problem. The big
+one is really that these robots
+
+122
+00:07:24,840 --> 00:07:29,190
+as much as they seem to behave
+like servers are not really
+
+123
+00:07:29,190 --> 00:07:33,180
+servers because they run around,
+they lose network connectivity,
+
+124
+00:07:33,390 --> 00:07:38,730
+they gather data faster than
+anybody can process them. And so
+
+125
+00:07:38,730 --> 00:07:42,090
+you have some unique
+requirements in creating a
+
+126
+00:07:42,210 --> 00:07:46,350
+uniform picture of your fleet in
+the front end. And this is not
+
+127
+00:07:46,350 --> 00:07:50,490
+very unlike what some of the
+cloud providers offer with their
+
+128
+00:07:50,490 --> 00:07:51,090
+IoT
+
+129
+00:07:51,120 --> 00:07:54,540
+Audrow Nash: when we say that
+you mean like a web browser or
+
+130
+00:07:54,540 --> 00:07:56,130
+some other web browser?
+
+131
+00:07:57,480 --> 00:08:00,120
+Christian Fritz: Yeah, it's um,
+yeah, I guess I should, I should
+
+132
+00:08:00,120 --> 00:08:04,260
+say that I'm asking I'm a no,
+it's a it's a good point.
+
+133
+00:08:04,260 --> 00:08:07,800
+Because in robotics, and
+especially in bras, a lot of Qt
+
+134
+00:08:07,830 --> 00:08:12,840
+applications are still being
+fronted. We think that if you're
+
+135
+00:08:12,840 --> 00:08:18,240
+dealing with a broad set of
+users who are distributed, have
+
+136
+00:08:18,240 --> 00:08:21,150
+different backgrounds and so
+forth, using web technologies,
+
+137
+00:08:21,150 --> 00:08:25,200
+really the way to come. Because
+everybody knows how to use them.
+
+138
+00:08:25,530 --> 00:08:30,180
+Obviously, most of the software
+being developed these days, runs
+
+139
+00:08:30,210 --> 00:08:34,470
+in some on some form of web
+technology. And it's just a very
+
+140
+00:08:34,860 --> 00:08:39,030
+lively and flourishing
+ecosystem. So using web tools, I
+
+141
+00:08:39,030 --> 00:08:42,990
+think it's the best approach for
+building these front ends. And
+
+142
+00:08:42,990 --> 00:08:47,790
+so at that point, you have to
+create a link between your your
+
+143
+00:08:47,790 --> 00:08:51,630
+robot gathering data and user
+sitting in front of a browser.
+
+144
+00:08:52,830 --> 00:08:59,010
+Audrow Nash: Okay, so for fleet
+management, webs, web related
+
+145
+00:08:59,010 --> 00:09:03,480
+tools are really good. Because
+they let you it's like it's
+
+146
+00:09:03,480 --> 00:09:06,390
+better. There's really good
+tooling around there. There's a
+
+147
+00:09:06,390 --> 00:09:11,160
+good ecosystem, this kind of
+thing, and I guess, getting into
+
+148
+00:09:11,160 --> 00:09:15,180
+kind of the fleet. So and then
+actually, you were saying that a
+
+149
+00:09:15,330 --> 00:09:18,690
+server, like you can't just
+treat it like a normal sir, a
+
+150
+00:09:18,690 --> 00:09:23,820
+robot like a normal server. And
+so because of that, you have
+
+151
+00:09:23,820 --> 00:09:27,270
+transitive robotics, you're
+trying to make it so that you
+
+152
+00:09:27,270 --> 00:09:32,640
+can, in a sense, treat a robot
+like a server while addressing
+
+153
+00:09:32,640 --> 00:09:33,840
+some of those challenges.
+
+154
+00:09:35,010 --> 00:09:37,620
+Christian Fritz: Yeah, that's
+exactly right. I think it kind
+
+155
+00:09:37,620 --> 00:09:43,590
+of comes down to the core
+abilities that the platform
+
+156
+00:09:43,590 --> 00:09:47,220
+gives you as a developer. And
+one of them. I think that's
+
+157
+00:09:47,220 --> 00:09:50,880
+perhaps the most important one
+is the data model that it gives
+
+158
+00:09:50,880 --> 00:09:54,270
+you. And what we're doing there
+is actually not very different
+
+159
+00:09:54,270 --> 00:09:57,480
+from what some of the cloud
+providers offer in the IoT
+
+160
+00:09:57,480 --> 00:10:03,750
+solutions at all on AWS, they
+call them IoT shadows. In a
+
+161
+00:10:03,750 --> 00:10:08,160
+jury, they call them desired and
+reported state of a robot, the
+
+162
+00:10:08,160 --> 00:10:11,640
+idea is always the same that you
+have some form of data model
+
+163
+00:10:12,210 --> 00:10:15,690
+that tells the robot this is
+what I want you to be like,
+
+164
+00:10:15,780 --> 00:10:21,240
+whatever that is configuration
+deployment. So as a robot to get
+
+165
+00:10:21,240 --> 00:10:24,360
+into, basically. So it's, it's
+saying I want to think of it as
+
+166
+00:10:25,380 --> 00:10:29,460
+you think of it as a state.
+Yeah. At the state can have all
+
+167
+00:10:29,460 --> 00:10:32,490
+sorts of aspects to it, right?
+Like which software to run, what
+
+168
+00:10:32,490 --> 00:10:36,090
+users to have, what
+configuration values to use,
+
+169
+00:10:36,090 --> 00:10:40,230
+which cloud to connect to, and,
+and then the problem is your
+
+170
+00:10:40,230 --> 00:10:44,790
+robot. Sometimes it's not just
+not online, right. So you have
+
+171
+00:10:44,790 --> 00:10:47,580
+to make sure that you reliably
+synchronize that data to the
+
+172
+00:10:47,580 --> 00:10:52,650
+robot, and also get the get the
+data back. On the coming back
+
+173
+00:10:52,650 --> 00:10:56,220
+side, you have that same issue
+that you may want to monitor
+
+174
+00:10:56,220 --> 00:10:59,700
+your robot while it is
+traversing through some areas
+
+175
+00:10:59,700 --> 00:11:02,880
+where it has very poor
+connectivity. But you don't want
+
+176
+00:11:02,880 --> 00:11:07,530
+the front end experience to be
+chopped up, right? You want the
+
+177
+00:11:07,530 --> 00:11:10,890
+user to have a smooth experience
+and still see the robot, even if
+
+178
+00:11:10,950 --> 00:11:13,560
+right now you can't get signal
+from it. And that's, that's why
+
+179
+00:11:13,560 --> 00:11:16,680
+it is not a server, you can't
+just run a web server on it and
+
+180
+00:11:16,680 --> 00:11:18,540
+have to reuse it connect to it
+directly.
+
+181
+00:11:18,539 --> 00:11:21,119
+Audrow Nash: Is that is that
+kind of the biggest challenge in
+
+182
+00:11:21,119 --> 00:11:24,059
+this? Would you say where it's,
+the robot comes in and out of
+
+183
+00:11:24,059 --> 00:11:27,689
+connectivity? And it makes it so
+that you can't make a lot of the
+
+184
+00:11:27,689 --> 00:11:31,919
+assumptions that people would
+make about, like web servers? In
+
+185
+00:11:31,919 --> 00:11:32,369
+general?
+
+186
+00:11:33,480 --> 00:11:35,130
+Christian Fritz: I think that's
+a good way of putting it. Yeah.
+
+187
+00:11:35,160 --> 00:11:35,430
+So
+
+188
+00:11:35,429 --> 00:11:39,119
+Audrow Nash: what do you what do
+you do in the case? How do you
+
+189
+00:11:39,119 --> 00:11:41,819
+how do you make a smooth
+experience when a robot is
+
+190
+00:11:41,819 --> 00:11:43,559
+popping in and out of
+connectivity?
+
+191
+00:11:45,750 --> 00:11:49,260
+Christian Fritz: I think really,
+the key here is an intelligent
+
+192
+00:11:49,260 --> 00:11:53,040
+data synchronization where the
+robot essentially updates the
+
+193
+00:11:53,040 --> 00:11:58,980
+cloud, whenever it has
+connectivity. And then the cloud
+
+194
+00:11:58,980 --> 00:12:03,090
+serves the serve the users front
+end, right, so the user always
+
+195
+00:12:03,120 --> 00:12:07,020
+sees data, sometimes data will
+be a little bit delayed, because
+
+196
+00:12:07,020 --> 00:12:11,880
+the robot hasn't gotten an
+update through to the cloud. But
+
+197
+00:12:11,910 --> 00:12:13,950
+the cloud will be able to tell,
+hey, I haven't gotten a
+
+198
+00:12:13,950 --> 00:12:16,740
+heartbeat from this robot in 10
+seconds. So what you're seeing
+
+199
+00:12:16,770 --> 00:12:20,790
+maybe maybe a little bit old,
+but from the user's perspective,
+
+200
+00:12:21,510 --> 00:12:25,290
+pages, load fine. Everything
+will be there. And you will
+
+201
+00:12:25,290 --> 00:12:27,720
+always see the latest data that
+you could possibly get
+
+202
+00:12:27,720 --> 00:12:31,740
+independent of when you show
+data, some people think you
+
+203
+00:12:31,740 --> 00:12:34,560
+could just run a web server on
+the robot itself, and then
+
+204
+00:12:34,560 --> 00:12:36,780
+connect and then the problem is
+sometimes you try to build a
+
+205
+00:12:36,780 --> 00:12:40,470
+patient that just doesn't know
+because your servers down or not
+
+206
+00:12:40,470 --> 00:12:40,980
+connect you.
+
+207
+00:12:41,010 --> 00:12:43,680
+Audrow Nash: You mean literally
+host the website from the robot.
+
+208
+00:12:45,390 --> 00:12:48,000
+Christian Fritz: That's, that's
+a lead. So let's take an
+
+209
+00:12:48,000 --> 00:12:51,810
+alternative. Some people are
+this into the robot harvest or
+
+210
+00:12:51,930 --> 00:12:57,450
+like a non Ross users is a
+visualization tool for Ross. And
+
+211
+00:12:57,450 --> 00:13:01,110
+it's it's an awesome tool. But
+it's, it's not really meant to
+
+212
+00:13:01,110 --> 00:13:04,560
+be used remotely for for several
+reasons. One, it sends a
+
+213
+00:13:04,920 --> 00:13:08,430
+humongous amount of data because
+it actually thinks that the
+
+214
+00:13:08,430 --> 00:13:11,100
+connection is very good and fast
+and sending duplicate data is
+
+215
+00:13:11,100 --> 00:13:14,190
+not a problem. And it also just
+sends a ton of data. So there's
+
+216
+00:13:14,190 --> 00:13:18,330
+not a lot of filtering typically
+going on. Which means that
+
+217
+00:13:18,360 --> 00:13:22,110
+remote experience with harvest
+can be very choppy, and the
+
+218
+00:13:22,110 --> 00:13:24,630
+robot goes in and out of
+connectivity sometimes. So if
+
+219
+00:13:24,630 --> 00:13:26,760
+you lose that you won't have a
+lot of disruptions, you're
+
+220
+00:13:26,760 --> 00:13:30,780
+losing interest. So I think some
+kind of caching of the data in
+
+221
+00:13:30,780 --> 00:13:35,070
+the cloud. That's one, reducing
+the amount of data that you send
+
+222
+00:13:35,070 --> 00:13:37,530
+from the robot to the cloud is
+another Oh,
+
+223
+00:13:37,560 --> 00:13:39,420
+Audrow Nash: yeah, that's an
+important point, reducing it so
+
+224
+00:13:39,420 --> 00:13:43,560
+that you don't actually spend
+that many resources on kind of,
+
+225
+00:13:43,770 --> 00:13:46,530
+I don't know, perhaps you can
+get by with less. And then you
+
+226
+00:13:46,530 --> 00:13:50,310
+have less requirements of your
+connectivity to your network.
+
+227
+00:13:51,480 --> 00:13:53,460
+Christian Fritz: Yep, that's
+exactly right. A good example,
+
+228
+00:13:53,460 --> 00:13:57,960
+here is health monitoring. A lot
+of your your listeners may be
+
+229
+00:13:57,960 --> 00:14:02,010
+familiar with how Ross solves
+the diagnostics problem where
+
+230
+00:14:02,250 --> 00:14:06,540
+there is a nice hierarchy of
+message definitions that allow
+
+231
+00:14:06,540 --> 00:14:10,470
+us to share diagnostic
+information about your robot
+
+232
+00:14:10,470 --> 00:14:15,330
+such as set of values, battery
+stage, and so forth. But the way
+
+233
+00:14:15,330 --> 00:14:18,810
+that Ross publishes status,
+here's an update, here's an
+
+234
+00:14:18,810 --> 00:14:22,890
+update, here's an update, even
+if nothing changes, right. And
+
+235
+00:14:22,920 --> 00:14:26,250
+that's fine with Ross, that's
+not Ross is designed on the
+
+236
+00:14:26,250 --> 00:14:28,680
+robot. And that's, that's good.
+It's actually a good approach on
+
+237
+00:14:28,680 --> 00:14:30,870
+the robot, but not for the
+cloud, because you don't want to
+
+238
+00:14:30,870 --> 00:14:33,690
+repeat messages if they're
+literally the same as the
+
+239
+00:14:33,690 --> 00:14:37,560
+previous one. So even just
+duplicating sequences of
+
+240
+00:14:37,560 --> 00:14:41,280
+messages will already save you a
+ton of data.
+
+241
+00:14:41,730 --> 00:14:45,270
+Audrow Nash: Yes. So how I'm
+understanding what it sounds
+
+242
+00:14:45,270 --> 00:14:49,290
+like you're describing. So if
+you want some sort of way of
+
+243
+00:14:49,290 --> 00:14:52,680
+monitoring your robot, your
+robot has information it's
+
+244
+00:14:52,710 --> 00:14:55,800
+driving around, it may move in
+and out of networks. What you're
+
+245
+00:14:55,800 --> 00:14:59,460
+doing is you're placing a cloud
+component so some computer
+
+246
+00:14:59,460 --> 00:15:04,770
+somewhere else that's talking to
+the robot. This is basically
+
+247
+00:15:04,770 --> 00:15:09,690
+it's keeping up the whole time.
+And it's displaying whatever the
+
+248
+00:15:09,690 --> 00:15:13,560
+most relevant data is on there.
+And then I suppose, well,
+
+249
+00:15:13,560 --> 00:15:16,290
+actually, and then you have the
+user who looks at whatever the
+
+250
+00:15:16,290 --> 00:15:20,820
+cloud is doing. So the cloud has
+its own host, its own website is
+
+251
+00:15:20,820 --> 00:15:23,850
+hosting. And the user can look
+at that and get to see the state
+
+252
+00:15:23,850 --> 00:15:27,510
+of the robot. And then I assume
+on the robot, you have something
+
+253
+00:15:27,510 --> 00:15:30,900
+that's saying, this is necessary
+information to send up to the
+
+254
+00:15:30,900 --> 00:15:35,160
+cloud. So if it if it's
+overheated message that's being
+
+255
+00:15:35,160 --> 00:15:38,610
+sent, you don't bother sending
+it again, because of limited
+
+256
+00:15:38,670 --> 00:15:42,090
+bandwidth effectively, to try to
+send data to the cloud. Like we
+
+257
+00:15:42,090 --> 00:15:45,840
+only want to prioritize and send
+the most important updates,
+
+258
+00:15:45,840 --> 00:15:48,150
+probably, to the cloud. Yeah,
+
+259
+00:15:48,179 --> 00:15:50,609
+Christian Fritz: that's exactly
+right. That's exactly right. The
+
+260
+00:15:50,609 --> 00:15:54,179
+way that these decisions are
+made is that we believe in
+
+261
+00:15:54,179 --> 00:15:57,719
+vertically integrated
+capabilities. So I've described
+
+262
+00:15:57,719 --> 00:16:02,099
+so far is this very fundamental
+data synchronization layer, but
+
+263
+00:16:02,099 --> 00:16:05,609
+then what you build on top of
+that, we think in terms of apps,
+
+264
+00:16:05,669 --> 00:16:09,929
+right, so let's take a remote
+Tailor of capability. A lot of
+
+265
+00:16:10,409 --> 00:16:13,739
+people need that on the robot.
+So that involves sending video
+
+266
+00:16:13,739 --> 00:16:17,609
+from the robot to the to the
+front end, displaying the video
+
+267
+00:16:17,609 --> 00:16:21,209
+on the front end, and sending
+back some control signals from
+
+268
+00:16:21,209 --> 00:16:25,799
+the from the joystick. The
+transitive is structured is that
+
+269
+00:16:25,799 --> 00:16:28,799
+we have this concept, very
+strong concept of packages,
+
+270
+00:16:28,829 --> 00:16:33,389
+similar to Ross. But what's
+special about transitive is that
+
+271
+00:16:33,389 --> 00:16:36,119
+inside a package, you don't just
+have components that run on the
+
+272
+00:16:36,119 --> 00:16:38,849
+robot, or the code or the front
+end, you have all of them
+
+273
+00:16:38,849 --> 00:16:42,689
+together. And what's great about
+that, is that you can you have
+
+274
+00:16:42,689 --> 00:16:46,829
+an end to end exchange. And if
+you want to change the way that
+
+275
+00:16:46,829 --> 00:16:49,439
+things are visualized on the
+front end, if you need, say,
+
+276
+00:16:49,439 --> 00:16:51,959
+some new data that you didn't
+have in the previous version,
+
+277
+00:16:52,679 --> 00:16:55,679
+it's fine, because you're going
+to publish another version of
+
+278
+00:16:55,679 --> 00:16:58,229
+the code that runs on the robot
+and push us to the cloud as
+
+279
+00:16:58,229 --> 00:17:02,939
+well. So this gives you some
+really nice. We think of this as
+
+280
+00:17:02,939 --> 00:17:05,789
+cross device dependency
+management. Yeah, you don't have
+
+281
+00:17:05,789 --> 00:17:10,289
+to worry about oh, well, we just
+upgraded our front end. So we
+
+282
+00:17:10,289 --> 00:17:13,259
+now also need to upgrade our
+backend. It's all it's all taken
+
+283
+00:17:13,259 --> 00:17:13,799
+care of.
+
+284
+00:17:13,829 --> 00:17:18,689
+Audrow Nash: Yeah. Yeah.
+Interesting. Okay. So going
+
+285
+00:17:18,689 --> 00:17:24,479
+back. So some of the challenges
+with fleet management, we have,
+
+286
+00:17:24,959 --> 00:17:28,019
+basically the connectivity issue
+where it's going in and out of
+
+287
+00:17:28,019 --> 00:17:36,089
+the network, we have, perhaps,
+the, the so you have the robot,
+
+288
+00:17:36,089 --> 00:17:40,169
+it's sending data back and
+forth. The robot may or may not
+
+289
+00:17:40,169 --> 00:17:42,809
+be connected, you have health
+monitoring, and things like this
+
+290
+00:17:42,809 --> 00:17:47,789
+checking the status of the
+system, and you have updating
+
+291
+00:17:47,789 --> 00:17:50,129
+it, which you've kind of just
+mentioned, you can ship things
+
+292
+00:17:50,129 --> 00:17:53,189
+as components, and it's updated
+universally. Are those kind of
+
+293
+00:17:53,189 --> 00:17:58,079
+the other additional challenges
+to fleet management, and network
+
+294
+00:17:59,219 --> 00:18:04,199
+updates. And the second, but
+yes, those are there additional
+
+295
+00:18:04,199 --> 00:18:08,009
+ones that are kind of critical
+and fleet management, health
+
+296
+00:18:08,009 --> 00:18:08,459
+monitoring.
+
+297
+00:18:08,550 --> 00:18:11,130
+Christian Fritz: Actually, if
+you don't mind, I'm going to
+
+298
+00:18:11,130 --> 00:18:16,050
+share a kind of famous
+Greenbrier course. So this is a
+
+299
+00:18:16,050 --> 00:18:20,460
+list that we've put together off
+things that we needed at one
+
+300
+00:18:20,460 --> 00:18:26,010
+point or the other, in the past.
+And it's grouped by categories
+
+301
+00:18:26,040 --> 00:18:30,780
+of kind of apps or capabilities
+that you might need to run a
+
+302
+00:18:30,780 --> 00:18:33,690
+fleet successfully. So there's
+the category of DevOps and fleet
+
+303
+00:18:33,690 --> 00:18:37,380
+management software, super
+modular uploads a video is Iraq,
+
+304
+00:18:37,410 --> 00:18:39,480
+prospect view and health
+monitoring, and it goes
+
+305
+00:18:40,170 --> 00:18:43,080
+observability is a big one.
+alerting, right. A lot of people
+
+306
+00:18:43,080 --> 00:18:47,820
+like to integrate with pager
+duty and so forth. But then
+
+307
+00:18:47,820 --> 00:18:51,150
+there's also things like
+application logic, right Task
+
+308
+00:18:51,180 --> 00:18:55,500
+Entry to a queuing of tasks,
+user management, account
+
+309
+00:18:55,500 --> 00:18:58,980
+management, and a lot of those
+things are really not that much
+
+310
+00:18:58,980 --> 00:19:03,780
+fun. Yeah, so that and they're
+not really they're not
+
+311
+00:19:03,780 --> 00:19:08,010
+differentiating to a robotics
+company, right? So we were we
+
+312
+00:19:08,010 --> 00:19:11,670
+validated this with a lot of
+CEOs and CTOs of robotic
+
+313
+00:19:11,670 --> 00:19:14,340
+startups. And they always said
+the same thing. There are
+
+314
+00:19:14,340 --> 00:19:20,190
+certain things that we would
+like to focus on. Often, in the
+
+315
+00:19:20,190 --> 00:19:23,460
+ml or computer vision space, we
+were talking with an apple
+
+316
+00:19:23,460 --> 00:19:26,490
+picking robotics company, you
+can probably guess what that
+
+317
+00:19:26,490 --> 00:19:31,380
+was. And they said, well, our
+our secret sauce is in our
+
+318
+00:19:31,380 --> 00:19:35,310
+ability to identify grasping
+points from the computer vision,
+
+319
+00:19:35,610 --> 00:19:38,340
+we would never want to outsource
+that. And that's where we want
+
+320
+00:19:38,340 --> 00:19:40,860
+to differentiate ourselves. But
+there are so many things on your
+
+321
+00:19:40,860 --> 00:19:46,380
+list like CI CD, like anomaly
+detection, that's not that's not
+
+322
+00:19:46,380 --> 00:19:48,630
+important to us. We would love
+to outsource that. And that's
+
+323
+00:19:48,630 --> 00:19:53,580
+how we think about transitive a,
+a both a platform to develop
+
+324
+00:19:53,580 --> 00:19:56,730
+those kinds of capabilities and
+then also a company that will
+
+325
+00:19:56,760 --> 00:19:57,600
+that will offer them
+
+326
+00:19:57,629 --> 00:20:02,069
+Audrow Nash: yes to you So where
+are you guys currently in this
+
+327
+00:20:02,069 --> 00:20:05,039
+because the list of things,
+there must be like 40 items or
+
+328
+00:20:05,039 --> 00:20:08,969
+some large number of things that
+all seem really important to
+
+329
+00:20:08,969 --> 00:20:13,349
+shipping a robot application. Do
+you have all these implemented?
+
+330
+00:20:13,349 --> 00:20:15,509
+Or is it like a set of them? Or
+we're yet?
+
+331
+00:20:16,440 --> 00:20:19,830
+Christian Fritz: Yeah, no, not
+at all. This is the aspirational
+
+332
+00:20:20,400 --> 00:20:25,890
+slide so to say. And it's also
+meant to, perhaps give people
+
+333
+00:20:25,890 --> 00:20:29,700
+ideas of what they could develop
+and contribute. This is really
+
+334
+00:20:29,700 --> 00:20:32,460
+the motivation to do all of
+that. And the way we're going
+
+335
+00:20:32,460 --> 00:20:36,120
+about it is we want to develop
+the platform First, open
+
+336
+00:20:36,120 --> 00:20:40,050
+sources, and then start building
+the ecosystem to develop all of
+
+337
+00:20:40,050 --> 00:20:42,690
+them. Right now, if you go to
+our website, there's three
+
+338
+00:20:42,690 --> 00:20:46,080
+capabilities that you can try
+out right away. And they are
+
+339
+00:20:46,350 --> 00:20:49,110
+some of the ones that I've
+talked about. So far. The low
+
+340
+00:20:49,110 --> 00:20:51,930
+latency video streaming, remote
+telehealth and, and health
+
+341
+00:20:51,930 --> 00:20:54,780
+monitoring. Everything else?
+
+342
+00:20:55,230 --> 00:21:02,190
+Audrow Nash: So TBD? Yeah. So
+it's, so you have this list, you
+
+343
+00:21:02,190 --> 00:21:05,910
+kind of gathered this list, and
+I assume maybe it was somewhat
+
+344
+00:21:05,910 --> 00:21:10,890
+iterative in the process. But I
+assume this really informed the
+
+345
+00:21:10,890 --> 00:21:13,560
+data model that you're using,
+and the development of the
+
+346
+00:21:13,560 --> 00:21:17,130
+system so that you could fit all
+these cases under your
+
+347
+00:21:17,130 --> 00:21:17,940
+framework.
+
+348
+00:21:18,960 --> 00:21:20,670
+Christian Fritz: So that's
+exactly how we're thinking about
+
+349
+00:21:20,670 --> 00:21:21,120
+it. And
+
+350
+00:21:22,170 --> 00:21:26,910
+Audrow Nash: that's really cool.
+So the, I'm kind of imagining
+
+351
+00:21:26,910 --> 00:21:30,780
+this is, like, I'm mapping it to
+like web concepts, it's
+
+352
+00:21:30,780 --> 00:21:33,840
+eventually going to be like the
+hosting service. For robotics
+
+353
+00:21:33,840 --> 00:21:37,860
+applications, probably you have
+your specific logic running on
+
+354
+00:21:37,860 --> 00:21:42,960
+your robot. If you're using the
+Ross ecosystem, you get a lot of
+
+355
+00:21:42,960 --> 00:21:45,180
+things for free, that might be
+good enough for your
+
+356
+00:21:45,180 --> 00:21:48,750
+applications, like navigation or
+move it for motion planning of
+
+357
+00:21:48,750 --> 00:21:54,240
+arms, these kinds of things, and
+then you have this to make it so
+
+358
+00:21:54,240 --> 00:21:59,790
+you can quickly build your web
+interface to monitor your
+
+359
+00:21:59,790 --> 00:22:02,730
+application for the people that
+should make sure the robots are
+
+360
+00:22:02,730 --> 00:22:06,660
+running or I don't know,
+whatever it is that's engaging
+
+361
+00:22:06,690 --> 00:22:10,830
+and engaging with your robots,
+or whoever it is, yes, whatever
+
+362
+00:22:10,830 --> 00:22:11,310
+they're doing.
+
+363
+00:22:12,300 --> 00:22:14,970
+Christian Fritz: We're thinking
+about this in two different
+
+364
+00:22:14,970 --> 00:22:18,300
+ways. One is to get people
+started more quickly. So they
+
+365
+00:22:18,330 --> 00:22:22,050
+don't need to build these
+things. And then sometimes our
+
+366
+00:22:22,050 --> 00:22:25,680
+investors ask, well, aren't you
+going to lose those people, once
+
+367
+00:22:25,680 --> 00:22:28,080
+they grow to a certain scale?
+And they will, they will not
+
+368
+00:22:28,080 --> 00:22:31,470
+care? Because they are now they
+now have 200 employees, and they
+
+369
+00:22:31,470 --> 00:22:35,430
+will build it themselves? And my
+answer to that is they still not
+
+370
+00:22:35,430 --> 00:22:38,790
+want to. And the reason is, like
+my counter example is slack.
+
+371
+00:22:39,240 --> 00:22:43,320
+Yeah. Why do people use Slack?
+It's not impossible to do. In
+
+372
+00:22:43,320 --> 00:22:46,800
+fact, it's pretty trivial.
+However, are you really going to
+
+373
+00:22:46,800 --> 00:22:51,870
+bake it quite as well as slack?
+And that's all I do. Where,
+
+374
+00:22:51,900 --> 00:22:55,530
+exactly, it's, it's the value of
+specialization, right. And in
+
+375
+00:22:55,530 --> 00:22:59,040
+the end, you will use the best
+solution out there, startups in
+
+376
+00:22:59,040 --> 00:23:02,460
+especially in robotics are
+actually not as price sensitive
+
+377
+00:23:02,460 --> 00:23:05,820
+as you may think. And that's
+because the bulk cost of robots
+
+378
+00:23:05,820 --> 00:23:09,030
+all of the operations is not
+that cheap. So if they have to
+
+379
+00:23:09,030 --> 00:23:14,250
+shell out $20 a month for a
+capability, there's really well,
+
+380
+00:23:14,490 --> 00:23:17,250
+who cares, they're spending more
+on the LTD Bill per robot.
+
+381
+00:23:17,310 --> 00:23:22,830
+Right. So I actually think it
+this is something that I've felt
+
+382
+00:23:22,830 --> 00:23:27,660
+with Ross, too, is that I think
+Ross would actually benefit from
+
+383
+00:23:27,660 --> 00:23:32,460
+more entities having commercial
+a business plan behind them and
+
+384
+00:23:32,460 --> 00:23:36,450
+commercial backing, so that the
+contributions that are being
+
+385
+00:23:36,480 --> 00:23:41,250
+paid by those companies to Ross
+have have a longer a longer
+
+386
+00:23:41,250 --> 00:23:43,890
+outlook, right? There's, there's
+some real money behind it, we
+
+387
+00:23:43,890 --> 00:23:47,430
+can be certain that they will be
+maintained. And there's somebody
+
+388
+00:23:47,430 --> 00:23:50,520
+on the hook for making sure that
+they that they do that they work
+
+389
+00:23:50,520 --> 00:23:55,020
+well. Yeah, there was this
+really, I think I wrestled last
+
+390
+00:23:55,020 --> 00:23:58,260
+year somebody presented this
+paper, I think it was called
+
+391
+00:23:58,260 --> 00:24:01,230
+something like it takes a
+village, I forget the details,
+
+392
+00:24:01,230 --> 00:24:04,650
+you remember that? I don't think
+I thought it was really
+
+393
+00:24:04,650 --> 00:24:08,430
+interesting, because they did a
+study of Ross packages, and how
+
+394
+00:24:08,430 --> 00:24:12,300
+many which are used, like how
+many how many people use them,
+
+395
+00:24:12,810 --> 00:24:16,260
+and how well maintained they
+are. And it was really striking
+
+396
+00:24:16,260 --> 00:24:19,410
+that there are some like the
+core modules that are they're
+
+397
+00:24:19,410 --> 00:24:22,410
+all being used by almost
+everybody. But then the vast
+
+398
+00:24:22,410 --> 00:24:24,510
+majority of packages, and of
+course, there's a ton of
+
+399
+00:24:24,510 --> 00:24:28,200
+packages, they are not
+maintained very well. So that
+
+400
+00:24:28,200 --> 00:24:33,390
+puts users in a difficult spot.
+And in deciding of can I really
+
+401
+00:24:33,390 --> 00:24:37,260
+rely on this package? Or do I
+have to fork it if I want to if
+
+402
+00:24:37,260 --> 00:24:41,160
+I want to use it. And I think
+that the JavaScript community
+
+403
+00:24:41,160 --> 00:24:44,220
+does a very good job at that
+with their with the NPM package
+
+404
+00:24:44,220 --> 00:24:48,120
+manager where with every package
+that you can find on their site,
+
+405
+00:24:48,150 --> 00:24:51,360
+they will show you how about how
+well does it maintained me to
+
+406
+00:24:51,360 --> 00:24:54,870
+how many commits Have there been
+made lately? How popular is it?
+
+407
+00:24:54,870 --> 00:24:57,570
+How many people use it? And I
+think some other metric and I
+
+408
+00:24:57,570 --> 00:25:00,000
+think I think that's very
+helpful quality, some sort of
+
+409
+00:25:00,000 --> 00:25:00,630
+They bought the holiday
+
+410
+00:25:00,720 --> 00:25:02,640
+Audrow Nash: trick. I don't, I
+don't know how to get that, but
+
+411
+00:25:02,640 --> 00:25:03,300
+it's quite cool.
+
+412
+00:25:04,710 --> 00:25:07,230
+Christian Fritz: I think it's
+very helpful. And when I choose
+
+413
+00:25:07,260 --> 00:25:09,450
+libraries to use, that's
+definitely something that I look
+
+414
+00:25:09,450 --> 00:25:12,720
+at. And Oh, for sure, knowing
+that there's others who use it
+
+415
+00:25:12,990 --> 00:25:16,620
+is sometimes perhaps the most
+important factor. Because I know
+
+416
+00:25:16,620 --> 00:25:19,920
+that if I run into issues, I
+will not be alone, there will be
+
+417
+00:25:19,920 --> 00:25:22,320
+others who will be who are also
+invested
+
+418
+00:25:22,320 --> 00:25:27,390
+Audrow Nash: in it. And you can
+feel a little more secure in
+
+419
+00:25:27,390 --> 00:25:29,970
+that other people might pick up
+some of the slack, you can pick
+
+420
+00:25:29,970 --> 00:25:33,600
+up some of the slack, but it's
+not entirely on you to maintain
+
+421
+00:25:34,350 --> 00:25:38,760
+if the developer just goes
+silent, and maintaining it. Yep.
+
+422
+00:25:38,940 --> 00:25:39,420
+Gotcha.
+
+423
+00:25:39,480 --> 00:25:41,340
+Christian Fritz: And I think if
+we can stand something like that
+
+424
+00:25:41,340 --> 00:25:46,110
+up here, we're obviously taking
+the perspective of the full
+
+425
+00:25:46,110 --> 00:25:50,430
+stack. But I think some of those
+ideas translate into into other
+
+426
+00:25:50,430 --> 00:25:52,830
+Ross packages as well. And one
+thing that we haven't touched on
+
+427
+00:25:52,830 --> 00:25:56,370
+yet is you could have a rust
+package be part of one of these
+
+428
+00:25:56,370 --> 00:26:00,450
+apps, right? You can, the way
+that we actually designed our
+
+429
+00:26:00,450 --> 00:26:03,990
+deployment mechanism. These
+packages can contain whatever
+
+430
+00:26:03,990 --> 00:26:07,170
+you want. Some people cringe
+when they hear whatever you
+
+431
+00:26:07,170 --> 00:26:09,240
+want, because that sounds
+dangerous. And we can talk about
+
+432
+00:26:09,240 --> 00:26:15,990
+that in a second. Yeah. Yeah, so
+we we've designed this from the
+
+433
+00:26:15,990 --> 00:26:18,840
+bottom up as a framework that
+
+434
+00:26:19,020 --> 00:26:21,690
+Audrow Nash: what are the
+components? So in any one of
+
+435
+00:26:21,690 --> 00:26:25,680
+these packages? Or in any of
+these components? It has the
+
+436
+00:26:25,680 --> 00:26:29,550
+robot arm? Or what are the parts
+of it that are involved? And how
+
+437
+00:26:29,550 --> 00:26:31,530
+do they talk? And then
+sandboxing sounds very
+
+438
+00:26:31,530 --> 00:26:32,700
+interesting to talk about, too.
+
+439
+00:26:33,480 --> 00:26:36,120
+Christian Fritz: Okay, so let's,
+let's dive a little deeper up.
+
+440
+00:26:36,390 --> 00:26:39,150
+Before we before we get into
+that, I think I should mention
+
+441
+00:26:39,150 --> 00:26:42,480
+that we're using TGT as the
+underlying communication
+
+442
+00:26:42,480 --> 00:26:45,540
+mechanism for just about
+everything. I think that will
+
+443
+00:26:45,540 --> 00:26:46,860
+help our conversation here.
+
+444
+00:26:48,089 --> 00:26:49,289
+Audrow Nash: I don't know much
+about that. I don't know
+
+445
+00:26:49,289 --> 00:26:50,129
+anything about that.
+
+446
+00:26:50,790 --> 00:26:54,090
+Christian Fritz: Okay, so MQ TT
+is a Pub Sub mechanism, where
+
+447
+00:26:54,090 --> 00:26:57,840
+you have topics that are
+hierarchical, separated by
+
+448
+00:26:57,840 --> 00:27:00,120
+slashes, just like a path in
+Unix,
+
+449
+00:27:00,480 --> 00:27:03,900
+Audrow Nash: very similar to
+Ross topics, it seems like from
+
+450
+00:27:03,900 --> 00:27:07,440
+the description so far, in a
+sense that it's good topics, and
+
+451
+00:27:07,440 --> 00:27:11,040
+then it's hierarchical, like
+namespacing, and this kind of
+
+452
+00:27:11,040 --> 00:27:11,340
+thing.
+
+453
+00:27:12,030 --> 00:27:13,920
+Christian Fritz: That's right, I
+think the main difference rough
+
+454
+00:27:13,920 --> 00:27:16,320
+topics is that they don't have
+this notion of a message
+
+455
+00:27:16,320 --> 00:27:21,270
+definition. Any message in the
+end is just a buffer, or a
+
+456
+00:27:21,270 --> 00:27:25,830
+string, like a character buffer.
+And then on the receiving end,
+
+457
+00:27:25,830 --> 00:27:26,760
+where you will interpret
+
+458
+00:27:26,759 --> 00:27:28,979
+Audrow Nash: offers nicely. So
+yeah.
+
+459
+00:27:30,359 --> 00:27:33,089
+Christian Fritz: And other than
+that, I mean, it's a very well
+
+460
+00:27:33,089 --> 00:27:37,469
+developed technology, it's
+actually underneath all of the
+
+461
+00:27:37,469 --> 00:27:44,309
+IoT, cloud offerings like AWS,
+GCP, and Azure, all built on MQ
+
+462
+00:27:44,309 --> 00:27:48,749
+TT. So it's sort of battle
+tested. And it's meant for IoT
+
+463
+00:27:48,749 --> 00:27:53,909
+devices. So for low resource
+usage, very high throughput,
+
+464
+00:27:54,149 --> 00:27:59,129
+communication. And unlike Ross,
+it was really meant to be cross
+
+465
+00:27:59,129 --> 00:28:03,059
+device, like the typical IoT
+application, you have a large
+
+466
+00:28:03,059 --> 00:28:06,359
+fleet of small devices that all
+send data to the cloud, and from
+
+467
+00:28:06,359 --> 00:28:10,409
+there potentially onwards. So
+this seems like a very good
+
+468
+00:28:10,409 --> 00:28:14,549
+technology to build this on. And
+then our packages, they are
+
+469
+00:28:14,549 --> 00:28:18,509
+exactly like you suggested, they
+actually have three components,
+
+470
+00:28:18,509 --> 00:28:21,269
+there's the code that will get
+installed on the robot, there's
+
+471
+00:28:21,269 --> 00:28:24,809
+the code that will run in the
+cloud in a Docker container. And
+
+472
+00:28:24,809 --> 00:28:29,309
+then the third piece is, are any
+sort of front end components.
+
+473
+00:28:30,119 --> 00:28:33,239
+And there we are using this new
+technology called Web
+
+474
+00:28:33,239 --> 00:28:35,909
+Components, it's not a very good
+name, because it's not very
+
+475
+00:28:35,909 --> 00:28:39,959
+unique. But web components is a
+thing. And it's very nice,
+
+476
+00:28:39,959 --> 00:28:43,079
+because it's front end framework
+agnostic, you can use it in
+
+477
+00:28:43,079 --> 00:28:46,259
+React or Angular, or even
+without any of that. So it
+
+478
+00:28:46,259 --> 00:28:49,979
+really just is like a custom tag
+in HTML. So you have lots you've
+
+479
+00:28:49,979 --> 00:28:53,099
+loaded that component to that
+component, you can just type,
+
+480
+00:28:53,159 --> 00:28:56,489
+you know, pointy brackets, the
+name of your component, and it
+
+481
+00:28:56,489 --> 00:29:00,899
+will appear with where you want
+it to be. That's what we use for
+
+482
+00:29:00,899 --> 00:29:03,959
+the front end. And then
+underneath, they all communicate
+
+483
+00:29:03,959 --> 00:29:09,599
+through through MQ TT, in a in a
+namespace that is not just
+
+484
+00:29:09,599 --> 00:29:13,679
+specific to the capability, but
+actually even to the version of
+
+485
+00:29:13,679 --> 00:29:17,729
+the capability. And this is what
+allows us to create this cross
+
+486
+00:29:17,729 --> 00:29:21,869
+device dependency management.
+This is this was a very big pain
+
+487
+00:29:21,869 --> 00:29:25,199
+point that that I've faced at
+one point in my career where if
+
+488
+00:29:25,199 --> 00:29:28,979
+you update the cloud, you may be
+forced to also update all of
+
+489
+00:29:28,979 --> 00:29:32,129
+your robots, depending on what
+you've changed on the cloud.
+
+490
+00:29:32,279 --> 00:29:35,939
+Now, guess what? Your robots if
+you have more than 100 robots,
+
+491
+00:29:36,269 --> 00:29:39,239
+at no point in time, a lot of
+your robots be online at the
+
+492
+00:29:39,239 --> 00:29:42,929
+same time. So when do you make
+the switch? Right? And so
+
+493
+00:29:42,959 --> 00:29:44,969
+there's different ways to deal
+with it. Some people
+
+494
+00:29:46,109 --> 00:29:48,359
+Audrow Nash: get both, and you
+just have them send their
+
+495
+00:29:48,359 --> 00:29:52,289
+version messages. That's how we
+are solving it except super
+
+496
+00:29:52,289 --> 00:29:54,719
+cool. And then you kind of
+delete it once they're all on
+
+497
+00:29:54,719 --> 00:29:56,819
+board with the most recent
+version.
+
+498
+00:29:58,680 --> 00:30:00,990
+Christian Fritz: Nobody has been
+talking to me be on that version
+
+499
+00:30:00,990 --> 00:30:05,220
+for a month. So just got to shut
+off that Docker container.
+
+500
+00:30:05,550 --> 00:30:10,410
+Audrow Nash: That's super cool.
+Okay, so you use MQ TT, this
+
+501
+00:30:10,410 --> 00:30:15,390
+gives you that really nice
+version messaging behavior that
+
+502
+00:30:15,390 --> 00:30:19,080
+makes updates really cool. And I
+really like the idea of kind of
+
+503
+00:30:19,080 --> 00:30:25,200
+it trickles in as the robots
+become available. Okay.
+
+504
+00:30:26,550 --> 00:30:28,800
+Christian Fritz: So that that
+tells you how the three
+
+505
+00:30:28,830 --> 00:30:33,120
+components in the, say the three
+again, just explicitly, the
+
+506
+00:30:33,120 --> 00:30:36,660
+robot, yep, the cloud and the
+UI. Okay.
+
+507
+00:30:38,310 --> 00:30:42,990
+Audrow Nash: And so for these
+components, one thing, so are
+
+508
+00:30:42,990 --> 00:30:48,150
+they all? You get them to talk?
+Like, so if I'm writing one of
+
+509
+00:30:48,150 --> 00:30:52,860
+these components? How does it
+look? Like how can I test all of
+
+510
+00:30:52,860 --> 00:30:56,970
+these? What do you call with the
+components within the component?
+
+511
+00:30:56,970 --> 00:31:02,040
+Or how do you refer to the the
+web robots and cloud parts of
+
+512
+00:31:02,160 --> 00:31:02,700
+component?
+
+513
+00:31:03,960 --> 00:31:07,350
+Christian Fritz: We haven't, we
+should get that terminology. We
+
+514
+00:31:07,350 --> 00:31:08,610
+don't have a good name for them
+yet.
+
+515
+00:31:09,180 --> 00:31:11,790
+Audrow Nash: Gotcha. That
+component makes me think React
+
+516
+00:31:11,790 --> 00:31:15,300
+components, which is kind of
+it's a, and then that makes me
+
+517
+00:31:15,300 --> 00:31:20,550
+think just the web part of what
+your thing is. But
+
+518
+00:31:21,180 --> 00:31:23,310
+Christian Fritz: we could call
+them modules. And well,
+
+519
+00:31:23,310 --> 00:31:26,070
+actually, on right now we're
+referring to this whole thing as
+
+520
+00:31:26,070 --> 00:31:30,120
+a capability capability. Okay.
+And then the three underneath
+
+521
+00:31:30,150 --> 00:31:32,910
+are packages or modules. But
+okay.
+
+522
+00:31:35,430 --> 00:31:37,800
+Audrow Nash: Gotcha. Okay. I
+like the word capability better
+
+523
+00:31:38,640 --> 00:31:42,450
+for discussing it just so it's
+not as overloaded in my head. So
+
+524
+00:31:42,810 --> 00:31:47,190
+how do you write a module? And
+how do you write a capability
+
+525
+00:31:47,190 --> 00:31:50,940
+and test all these modules? How
+do they work from a developer's
+
+526
+00:31:50,970 --> 00:31:51,630
+point of view?
+
+527
+00:31:52,859 --> 00:31:55,199
+Christian Fritz: Some of this is
+still being developed right now,
+
+528
+00:31:55,229 --> 00:31:58,169
+we have not yet made the open
+source release. And one thing
+
+529
+00:31:58,169 --> 00:32:03,989
+that we want to get done well,
+is the SDK, which is kind of
+
+530
+00:32:03,989 --> 00:32:08,099
+what you're asking about, right?
+So there will be tools that will
+
+531
+00:32:08,099 --> 00:32:12,929
+allow you to create new
+capabilities, quickly in the
+
+532
+00:32:12,929 --> 00:32:16,619
+sense that they will, I'm taking
+a lot of inspiration from again,
+
+533
+00:32:16,619 --> 00:32:20,489
+how things like reactive office
+where you have like a CLI tool,
+
+534
+00:32:20,489 --> 00:32:23,999
+that's where you might say,
+transitive, create new
+
+535
+00:32:23,999 --> 00:32:27,899
+capability, whenever it will, it
+will set up the directory
+
+536
+00:32:27,899 --> 00:32:32,339
+structure and you know, the
+package json and the web, web
+
+537
+00:32:32,339 --> 00:32:35,099
+pack, whatever you need, in
+order to compile all of those.
+
+538
+00:32:35,249 --> 00:32:41,459
+Yeah, we do use I guess, I might
+have to say that we do use NPM
+
+539
+00:32:42,149 --> 00:32:45,899
+exhaustedly, and for those of
+you who don't know, NPM is the
+
+540
+00:32:45,899 --> 00:32:50,339
+node package manager. It's a
+very nice tool. A lot of people
+
+541
+00:32:50,339 --> 00:32:53,579
+think like, it's only for node.
+But it turns out, you can put
+
+542
+00:32:53,579 --> 00:32:56,849
+anything you want it to that
+package, it has a lot of
+
+543
+00:32:56,849 --> 00:33:01,589
+advantages over say Debian
+packages. That was probably too
+
+544
+00:33:01,589 --> 00:33:03,599
+much detail to go into, but I'll
+be
+
+545
+00:33:04,890 --> 00:33:06,870
+Audrow Nash: talking about it
+just a bit later in the
+
+546
+00:33:06,870 --> 00:33:09,090
+interview. Yeah, good.
+
+547
+00:33:10,020 --> 00:33:12,120
+Christian Fritz: So once you
+have these NPM packages,
+
+548
+00:33:12,870 --> 00:33:17,430
+there's, you know, scripts that
+you can have for NPM publish to
+
+549
+00:33:17,430 --> 00:33:21,030
+publish those capab those those
+packages have your capability
+
+550
+00:33:21,300 --> 00:33:26,970
+into a into a private registry
+or an Artifactory store. And
+
+551
+00:33:27,240 --> 00:33:30,570
+from there, your robots will be
+able to pull them and and run
+
+552
+00:33:30,570 --> 00:33:34,470
+them the connections that you
+were asking about for
+
+553
+00:33:34,470 --> 00:33:38,400
+communication, where they will
+be set up through the further
+
+554
+00:33:38,400 --> 00:33:42,030
+data synchronization. So from
+the from the developer's point
+
+555
+00:33:42,030 --> 00:33:45,990
+of view, all you're manipulating
+is actually one big JSON object.
+
+556
+00:33:46,530 --> 00:33:51,060
+And within that JSON object, you
+can decide which sub paths you
+
+557
+00:33:51,060 --> 00:33:54,270
+want to subscribe to which ones
+you want to publish. But you
+
+558
+00:33:54,270 --> 00:33:57,720
+will always be dealing with a
+JSON object as if it was just on
+
+559
+00:33:57,720 --> 00:33:58,590
+your machine, you know,
+
+560
+00:33:58,589 --> 00:34:01,349
+Audrow Nash: the thing that's
+being passed between the modules
+
+561
+00:34:01,349 --> 00:34:04,919
+in the capability correct. So
+you're sending that JSON object
+
+562
+00:34:04,919 --> 00:34:08,879
+around and that JSON object. So
+that's just a data structure for
+
+563
+00:34:08,879 --> 00:34:12,299
+viewing everything. JavaScript
+Object Notation, or whatever it
+
+564
+00:34:12,299 --> 00:34:12,959
+stands for.
+
+565
+00:34:13,740 --> 00:34:16,110
+Christian Fritz: That's what it
+stands for. And data data data
+
+566
+00:34:16,110 --> 00:34:18,930
+synchronization that I mentioned
+previously, basically just takes
+
+567
+00:34:18,930 --> 00:34:23,760
+care of making sure that what
+the robot sees from that tracing
+
+568
+00:34:23,760 --> 00:34:26,970
+is exactly the same as what what
+the capability in the front end
+
+569
+00:34:26,970 --> 00:34:29,070
+sees, and you don't have to
+worry about it, you just
+
+570
+00:34:29,070 --> 00:34:33,120
+manipulate it on the robot. And
+you will can see it like that on
+
+571
+00:34:33,120 --> 00:34:38,040
+the on the front end. For those
+of your listeners who know how,
+
+572
+00:34:38,070 --> 00:34:40,830
+you know, reactive web
+programming works is this is a
+
+573
+00:34:40,830 --> 00:34:44,730
+reactive data source. So if
+something changes here, your
+
+574
+00:34:44,760 --> 00:34:48,180
+React component will update.
+dynamically, you don't have to
+
+575
+00:34:48,180 --> 00:34:50,880
+pull you don't have to worry
+about it. I simply will take
+
+576
+00:34:50,880 --> 00:34:53,730
+care of the push. And in the
+moment there's a change on the
+
+577
+00:34:53,730 --> 00:34:57,000
+robot. You will see it on the
+front end without ever folding.
+
+578
+00:34:57,330 --> 00:35:00,750
+Audrow Nash: So what that means
+is at the second row About sends
+
+579
+00:35:00,780 --> 00:35:05,850
+a new image from the camera is
+your component updates and shows
+
+580
+00:35:05,850 --> 00:35:08,190
+that new image correct a web
+component.
+
+581
+00:35:08,700 --> 00:35:10,800
+Christian Fritz: I wouldn't
+necessarily use images or an
+
+582
+00:35:10,800 --> 00:35:15,330
+example here, okay, because that
+is more complex said for our web
+
+583
+00:35:15,330 --> 00:35:18,480
+RTC and like with good
+compression. But the example
+
+584
+00:35:18,480 --> 00:35:21,480
+still holds. If you if you could
+do that you could send an image
+
+585
+00:35:21,480 --> 00:35:25,350
+over that channel. Another
+example would be like, let's say
+
+586
+00:35:25,350 --> 00:35:27,960
+the battery charged, if your
+battery charged, that's probably
+
+587
+00:35:27,960 --> 00:35:32,490
+a better example. It will show
+up right away on the front end.
+
+588
+00:35:33,450 --> 00:35:36,360
+Audrow Nash: That's really cool.
+So how if I if I'm developing
+
+589
+00:35:36,360 --> 00:35:40,650
+this, like if I if I'm writing
+my own capability, how do I test
+
+590
+00:35:40,770 --> 00:35:44,220
+that all of the three modules
+are working well, for the
+
+591
+00:35:44,220 --> 00:35:48,630
+capability? Is there any like, I
+don't know, the thing that makes
+
+592
+00:35:48,630 --> 00:35:51,420
+sure that all of them are
+working well together, that data
+
+593
+00:35:51,420 --> 00:35:55,530
+is being sent around that I can
+test my components, my q&a
+
+594
+00:35:55,530 --> 00:35:58,980
+module for the web browser
+locally, these kinds of things,
+
+595
+00:35:59,310 --> 00:36:03,960
+like a storyboards for the mind,
+all these things. Component,
+
+596
+00:36:04,440 --> 00:36:06,960
+Christian Fritz: there's a lot
+of tooling, yet, so some of
+
+597
+00:36:06,960 --> 00:36:09,690
+these automated checks that
+you're alluding to don't yet
+
+598
+00:36:09,690 --> 00:36:14,460
+exist. But there's definitely
+the developer workflow and the
+
+599
+00:36:14,460 --> 00:36:18,120
+documentation on how to run it
+locally in a development server.
+
+600
+00:36:18,930 --> 00:36:21,570
+So that you can you can try this
+out. And I think that's a good
+
+601
+00:36:21,570 --> 00:36:26,760
+way to get started, you can use
+a simulator to run you know,
+
+602
+00:36:26,790 --> 00:36:30,450
+your, your, your robot, whenever
+we use turtle sim a lot, which
+
+603
+00:36:30,480 --> 00:36:35,070
+honestly is enough for a lot of
+work we want to do, and then you
+
+604
+00:36:35,100 --> 00:36:38,610
+open the local web page on your
+machine, and will you will be
+
+605
+00:36:38,610 --> 00:36:40,590
+able to see whether or not
+things are working.
+
+606
+00:36:41,310 --> 00:36:44,880
+Audrow Nash: Gotcha. That seems
+super cool. And what is the so
+
+607
+00:36:44,880 --> 00:36:49,830
+in the cloud component? So
+there's a web, the cloud the
+
+608
+00:36:49,830 --> 00:36:52,020
+robot, what does the cloud
+component do?
+
+609
+00:36:53,520 --> 00:36:56,070
+Christian Fritz: So the cloud
+component is actually a very
+
+610
+00:36:56,070 --> 00:37:03,720
+module. The Cloud Module,
+there's, there's obviously what
+
+611
+00:37:03,720 --> 00:37:05,970
+you what you want the
+functionality to be there can be
+
+612
+00:37:05,970 --> 00:37:10,050
+visualizations, and so forth.
+But before it can get there,
+
+613
+00:37:10,200 --> 00:37:13,710
+what the what the transitive
+wrapping for that, for that
+
+614
+00:37:13,710 --> 00:37:17,100
+module does is twofold. One, and
+that's very important is
+
+615
+00:37:17,130 --> 00:37:19,860
+authentication and
+authorization. Because if you
+
+616
+00:37:19,860 --> 00:37:23,610
+want to embed this, this
+component in a third party web
+
+617
+00:37:23,610 --> 00:37:27,330
+application, you need to get the
+appropriate permissions to
+
+618
+00:37:27,360 --> 00:37:30,630
+actually show the data of the
+robot, right? I mean, not, you
+
+619
+00:37:30,630 --> 00:37:33,450
+don't want the camera of your
+robot to be publicly available
+
+620
+00:37:33,450 --> 00:37:36,330
+on the internet. And obfuscation
+is not enough, you want some
+
+621
+00:37:36,330 --> 00:37:39,570
+really strong authentication,
+the way that we solve that is
+
+622
+00:37:39,570 --> 00:37:45,330
+through JSON web tokens, which
+is a security technology, it's
+
+623
+00:37:45,360 --> 00:37:49,140
+it basically allows you to take
+a JSON object and sign it with
+
+624
+00:37:49,140 --> 00:37:51,810
+an asymmetric or symmetric key
+depending on what you choose.
+
+625
+00:37:52,470 --> 00:37:58,860
+And we use that to basically get
+permission from the back end of
+
+626
+00:37:58,860 --> 00:38:02,880
+your service, whatever you're
+embedding it in, to show certain
+
+627
+00:38:02,880 --> 00:38:06,930
+things to the user. So you will
+basically give your user a
+
+628
+00:38:06,930 --> 00:38:11,190
+signed JSON web token that says
+this user has permission to see
+
+629
+00:38:11,190 --> 00:38:16,740
+this device, this capability for
+this and that long. And then it
+
+630
+00:38:16,740 --> 00:38:20,370
+will be embedded in the in the
+webpage that your user goes to
+
+631
+00:38:20,520 --> 00:38:25,290
+that webpage will talk to the
+transit server, whether you host
+
+632
+00:38:25,290 --> 00:38:28,260
+it yourself or whether you use
+our transit products hosting.
+
+633
+00:38:28,800 --> 00:38:32,160
+And it will let us know whether
+or not we are allowed to show
+
+634
+00:38:32,160 --> 00:38:36,960
+the users that that kind of
+data. So that's our Yeah, what
+
+635
+00:38:36,960 --> 00:38:39,690
+are they authorized to see that
+and that's that by itself. So
+
+636
+00:38:39,690 --> 00:38:43,590
+it's a big pain point that a lot
+of people struggle with just
+
+637
+00:38:43,590 --> 00:38:47,220
+this. For sure. It's complex.
+And we've seen some very
+
+638
+00:38:47,220 --> 00:38:50,610
+successful companies offering
+authentication as a service like
+
+639
+00:38:51,420 --> 00:38:55,710
+Okta. And for good reason. It's,
+it's not a lot of fun. And if
+
+640
+00:38:55,710 --> 00:38:59,250
+you make a mistake, a lot of at
+stake, right, your company,
+
+641
+00:38:59,280 --> 00:39:02,550
+you're sharing too much data
+than you then you wish you were.
+
+642
+00:39:02,939 --> 00:39:04,709
+Audrow Nash: Yeah. And I think
+that's an area where it's like,
+
+643
+00:39:04,709 --> 00:39:08,069
+oh, you need to go be an expert
+at to do well. And so it's nice
+
+644
+00:39:08,069 --> 00:39:11,249
+to specialize there and have
+another company that just does
+
+645
+00:39:11,249 --> 00:39:13,529
+this really well. But so you
+don't have to worry about doing
+
+646
+00:39:13,529 --> 00:39:18,089
+this for your application. So
+the cloud component for any of
+
+647
+00:39:18,089 --> 00:39:21,179
+these capabilities you're making
+is going to handle the
+
+648
+00:39:21,209 --> 00:39:24,569
+authentication and
+authorization. I imagine that's
+
+649
+00:39:24,569 --> 00:39:27,509
+kind of like baked in to what
+you're building. So they don't
+
+650
+00:39:27,509 --> 00:39:31,409
+probably have to handle that
+when writing their application.
+
+651
+00:39:32,219 --> 00:39:35,819
+Does it also handle is it on the
+robot that it's running? Like, I
+
+652
+00:39:35,819 --> 00:39:38,819
+know that sounds silly, but is
+it the thing that sends the
+
+653
+00:39:38,819 --> 00:39:42,539
+information up to the cloud? Or
+is it actually running on the
+
+654
+00:39:42,539 --> 00:39:44,699
+cloud? It's actually,
+
+655
+00:39:44,970 --> 00:39:47,670
+Christian Fritz: yeah, the human
+way the authentication is going
+
+656
+00:39:47,670 --> 00:39:48,480
+to be processed,
+
+657
+00:39:49,080 --> 00:39:55,500
+Audrow Nash: or I mean, I guess.
+So the authentic authentication.
+
+658
+00:39:55,950 --> 00:40:01,950
+That's I guess, I'm just I'm a
+little confused, because so for
+
+659
+00:40:01,950 --> 00:40:04,140
+that, I would think that that
+would be something that you
+
+660
+00:40:04,140 --> 00:40:07,770
+would set up very well. And
+maybe all the code lives in the
+
+661
+00:40:07,770 --> 00:40:11,100
+cloud component. And the person
+hardly who's the developer
+
+662
+00:40:11,100 --> 00:40:15,270
+hardly touches the cloud one it
+just like, because I don't think
+
+663
+00:40:15,270 --> 00:40:18,660
+like, if I want to use this to
+write capability, I don't
+
+664
+00:40:18,690 --> 00:40:21,780
+probably want to do the
+authentication and authorization
+
+665
+00:40:21,930 --> 00:40:25,350
+side. So I'm imagining that's
+probably generated or exists in
+
+666
+00:40:25,350 --> 00:40:28,380
+something that's already being
+used, like my code is using.
+
+667
+00:40:28,830 --> 00:40:31,440
+Christian Fritz: Yeah, that's
+part of the the essence of the
+
+668
+00:40:31,440 --> 00:40:36,330
+framework. And it's actually a
+feature of the MQ TT brokers
+
+669
+00:40:36,330 --> 00:40:39,870
+that we're using, where you can
+have custom authentication and
+
+670
+00:40:39,870 --> 00:40:44,730
+authorization, which which we
+try to offer. So the way it
+
+671
+00:40:44,730 --> 00:40:48,570
+works is that the the web
+component actually establishes a
+
+672
+00:40:48,570 --> 00:40:55,050
+web a MQ TT connection over web
+over WebSockets. Okay. And in
+
+673
+00:40:55,050 --> 00:40:58,950
+order to authenticate for that,
+for that connection, it will
+
+674
+00:40:58,950 --> 00:41:04,770
+send its Simes JSON Web Token.
+The MQ TT broker will interpret
+
+675
+00:41:04,770 --> 00:41:07,680
+that and say, first of all, yes,
+you are who you claimed you are,
+
+676
+00:41:07,710 --> 00:41:14,280
+because this is a valid JSON,
+valid DWT. And also I've decoded
+
+677
+00:41:14,280 --> 00:41:17,730
+that JSON web token. And in it,
+it says you have access to the
+
+678
+00:41:17,730 --> 00:41:21,840
+following topics. And this can
+be read or write access. And
+
+679
+00:41:21,840 --> 00:41:23,910
+that's all you need. Right?
+Because again, this is the
+
+680
+00:41:23,910 --> 00:41:28,050
+beauty of relying on MPT for
+everything. Now, you know, that
+
+681
+00:41:28,050 --> 00:41:31,170
+the broker knows which messages
+it is allowed to send to you,
+
+682
+00:41:31,170 --> 00:41:34,170
+and which ones you are allowed
+to write. And then it kind of
+
+683
+00:41:34,170 --> 00:41:37,110
+goes into the ether and and
+everybody connected to that.
+
+684
+00:41:37,920 --> 00:41:40,740
+That's it. Yeah, it's, yeah,
+
+685
+00:41:40,740 --> 00:41:43,740
+Audrow Nash: that's magic.
+That's so cool. I feel like it's
+
+686
+00:41:43,740 --> 00:41:46,680
+taking such a painful problem
+and making it a lot less
+
+687
+00:41:46,680 --> 00:41:53,310
+painful. So just so the cloud,
+if I'm a developer, using
+
+688
+00:41:53,340 --> 00:41:56,610
+writing my own capability to
+cloud component, I will probably
+
+689
+00:41:56,610 --> 00:42:00,480
+have the ability to use the
+default way of doing
+
+690
+00:42:00,630 --> 00:42:03,750
+authentication and
+authorization. Or I can write a
+
+691
+00:42:03,750 --> 00:42:07,920
+custom one, if I desire. And
+that's kind of all the cloud
+
+692
+00:42:07,920 --> 00:42:09,900
+component does, or is there
+anything else?
+
+693
+00:42:10,650 --> 00:42:12,150
+Christian Fritz: Well, I mean,
+the other thing that the cloud
+
+694
+00:42:12,150 --> 00:42:14,820
+component does is, of course,
+the data synchronization piece,
+
+695
+00:42:14,880 --> 00:42:18,210
+right? So that in the cloud
+component, you have immediately
+
+696
+00:42:18,210 --> 00:42:21,870
+access to you can subscribe to a
+subset of the of the topics that
+
+697
+00:42:21,870 --> 00:42:25,650
+you want, and they will enter
+data will magically appear on
+
+698
+00:42:25,650 --> 00:42:29,190
+your doorstep. And then you can
+visualize it in whichever way
+
+699
+00:42:29,190 --> 00:42:32,940
+you want. So that you can really
+focus on on just that, right?
+
+700
+00:42:32,940 --> 00:42:37,230
+How do I, how do I present the
+data. So you know, I mentioned
+
+701
+00:42:37,230 --> 00:42:39,360
+your little play, I like to
+think in terms of black boxes,
+
+702
+00:42:39,660 --> 00:42:43,140
+if you're a web component, your
+black box that you receive,
+
+703
+00:42:43,560 --> 00:42:45,930
+after all of the magic has
+happened, you receive a JSON
+
+704
+00:42:45,930 --> 00:42:49,140
+object. And what you're
+responsible for is outputting, a
+
+705
+00:42:49,140 --> 00:42:53,040
+nicely rendered HTML page or
+whatever or react whatever you
+
+706
+00:42:53,040 --> 00:42:55,710
+want to use. You have visualize
+that data, right? Health
+
+707
+00:42:55,710 --> 00:42:57,960
+Monitoring is a good example.
+Again, like you get a JSON
+
+708
+00:42:57,960 --> 00:43:00,720
+object that represents the
+health of your fleet. And you
+
+709
+00:43:00,720 --> 00:43:04,470
+decide to show that as a table
+with red and yellow and green
+
+710
+00:43:04,500 --> 00:43:07,560
+and and what have you. Right?
+That's that's really the that's
+
+711
+00:43:07,560 --> 00:43:10,170
+really what people want to use
+web components for. They don't
+
+712
+00:43:10,170 --> 00:43:12,720
+want to spend too much time on
+the on the plumbing, as I call
+
+713
+00:43:12,720 --> 00:43:14,910
+it. Yeah, they just want to
+visualize it. And then in the
+
+714
+00:43:14,910 --> 00:43:17,880
+reverse the same right, so your,
+your joystick opponent says the
+
+715
+00:43:17,880 --> 00:43:21,630
+user has been pressing the
+forward button, now you need to
+
+716
+00:43:21,630 --> 00:43:25,650
+send that to the robot. So you
+will send the appropriate data
+
+717
+00:43:25,680 --> 00:43:28,890
+into the onto on that topic
+where you know, the robot will
+
+718
+00:43:28,890 --> 00:43:29,280
+be
+
+719
+00:43:29,339 --> 00:43:33,539
+Audrow Nash: listening. Gotcha.
+That's really cool. What does it
+
+720
+00:43:33,539 --> 00:43:39,269
+look like on the robot? How,
+like, how do you set it up and
+
+721
+00:43:39,269 --> 00:43:43,349
+what's actually running on your
+robots when you actually are
+
+722
+00:43:43,349 --> 00:43:44,039
+using this.
+
+723
+00:43:44,700 --> 00:43:47,370
+Christian Fritz: So the the way
+to get started ended depends a
+
+724
+00:43:47,370 --> 00:43:51,090
+little bit on whether you want
+to use the hosted solution that
+
+725
+00:43:51,090 --> 00:43:53,880
+we offer or whether you want to
+sell photos. But in the hosted
+
+726
+00:43:53,880 --> 00:43:56,880
+solution, you just go to our
+website and create an account
+
+727
+00:43:56,880 --> 00:44:00,480
+and you will get a curl script
+that you can run on your robot,
+
+728
+00:44:00,690 --> 00:44:04,530
+which will install a transitive
+robotics agent. This is just a
+
+729
+00:44:04,530 --> 00:44:07,470
+small little piece of software
+that runs on the robot. And it's
+
+730
+00:44:07,470 --> 00:44:10,920
+primarily responsible for
+checking whether you are running
+
+731
+00:44:10,980 --> 00:44:13,740
+whether which packages are
+installed, which packages should
+
+732
+00:44:13,740 --> 00:44:16,140
+be installed, and then
+installing them and starting
+
+733
+00:44:16,140 --> 00:44:20,400
+them. And then once it is told
+to install a certain capability,
+
+734
+00:44:20,700 --> 00:44:24,450
+it will fetch that from the
+repository and install it and
+
+735
+00:44:24,450 --> 00:44:28,980
+run it in a sandbox. The Sandbox
+is one of the other pieces that
+
+736
+00:44:29,310 --> 00:44:31,650
+is really important to the way
+that we're thinking about this
+
+737
+00:44:31,650 --> 00:44:35,910
+because we want to enable third
+parties to develop for you. We
+
+738
+00:44:35,910 --> 00:44:37,770
+think that sandboxing is really
+important.
+
+739
+00:44:38,550 --> 00:44:40,950
+Audrow Nash: Tell me tell me
+what sandboxing is. I know what
+
+740
+00:44:40,950 --> 00:44:42,930
+it means, but just like describe
+it.
+
+741
+00:44:44,760 --> 00:44:47,850
+Christian Fritz: So the issue is
+always that when you're buying
+
+742
+00:44:47,850 --> 00:44:51,420
+software from a third party, you
+you may not want to trust it
+
+743
+00:44:51,420 --> 00:44:55,470
+100% So you want to reduce
+basically the damage it can do
+
+744
+00:44:55,470 --> 00:44:59,610
+you want to reduce the
+permissions that it has on both
+
+745
+00:44:59,640 --> 00:45:04,020
+iOS And Android has a very, very
+strong sandboxing model. So if
+
+746
+00:45:04,020 --> 00:45:06,870
+you install an app on your
+phone, it won't be able to read
+
+747
+00:45:06,900 --> 00:45:10,590
+the password from your from your
+other apps, right, which is kind
+
+748
+00:45:10,590 --> 00:45:16,950
+of important. Yeah. And the same
+thing here, right. And in the
+
+749
+00:45:16,950 --> 00:45:21,480
+Ross world, people are used to
+using sudo, to install Ross
+
+750
+00:45:21,480 --> 00:45:26,010
+packages. And that's a very
+honorable thing to do, as
+
+751
+00:45:26,010 --> 00:45:29,280
+opposed to give that much trust.
+But if you are dealing with a
+
+752
+00:45:29,280 --> 00:45:33,420
+much larger ecosystem, you may
+want to be a little bit more
+
+753
+00:45:33,420 --> 00:45:36,000
+careful about the trust that you
+give and not run everything as
+
+754
+00:45:36,000 --> 00:45:40,650
+root. So a lot of people
+wouldn't even want to run it in
+
+755
+00:45:40,650 --> 00:45:43,830
+the normal user space, because
+even the running user could have
+
+756
+00:45:43,890 --> 00:45:46,920
+could have secrets and so forth.
+That's one thing. The other
+
+757
+00:45:46,920 --> 00:45:51,120
+thing is you want to separate
+those the capabilities running
+
+758
+00:45:51,120 --> 00:45:53,640
+on your robot from one another
+so that they cannot see each
+
+759
+00:45:53,640 --> 00:45:57,030
+other's data. Otherwise, the
+authentication and authorization
+
+760
+00:45:57,030 --> 00:45:59,550
+is kind of goes out of the
+window, because somebody could
+
+761
+00:45:59,550 --> 00:46:04,050
+install everything. Yeah, and a
+malicious capability could just
+
+762
+00:46:05,370 --> 00:46:11,370
+listen in on everybody else. So
+you're solving this. Through a
+
+763
+00:46:11,370 --> 00:46:14,640
+number of technologies that all
+borrow from Docker, we do not
+
+764
+00:46:14,640 --> 00:46:17,700
+use Docker on the robot, because
+we don't want to use require
+
+765
+00:46:17,700 --> 00:46:21,510
+that as a as a as a requirement.
+But we use some of the same
+
+766
+00:46:21,510 --> 00:46:26,310
+technologies, we use the Linux
+namespaces, using the unshare
+
+767
+00:46:26,310 --> 00:46:32,280
+tool, to to isolate things. This
+allows us to do pretty cool
+
+768
+00:46:32,280 --> 00:46:37,590
+things, honestly, without
+requiring sudo on the on the
+
+769
+00:46:37,590 --> 00:46:43,590
+robot, for instance, we hide a
+lot of folders on the drive, we
+
+770
+00:46:43,590 --> 00:46:49,590
+can hide the home folders. And
+then we're also using overlay
+
+771
+00:46:49,590 --> 00:46:54,030
+Fs, which this technology
+exhaustively used by by Docker,
+
+772
+00:46:54,210 --> 00:46:57,090
+to minimize the number of copies
+of things that you need on the
+
+773
+00:46:57,090 --> 00:47:00,750
+system. So if a capability has a
+requirement for a Ross package,
+
+774
+00:47:01,020 --> 00:47:04,920
+it will it will first check is
+that already installed. And if
+
+775
+00:47:04,920 --> 00:47:08,490
+not, it will install it in an
+overlay on top of what's already
+
+776
+00:47:08,490 --> 00:47:12,720
+there. This way, we don't have
+to install Ross in each and
+
+777
+00:47:12,720 --> 00:47:16,290
+every component that we have,
+which would happen if we were
+
+778
+00:47:16,320 --> 00:47:19,110
+running in Docker containers,
+right, there would be a lot of
+
+779
+00:47:19,110 --> 00:47:21,930
+duplication, which we can, which
+we can elegantly avoid.
+
+780
+00:47:23,100 --> 00:47:25,080
+Audrow Nash: That is really
+cool. So you see if you have it
+
+781
+00:47:25,500 --> 00:47:28,350
+elsewhere. And then if you have
+it elsewhere, you use it from
+
+782
+00:47:28,350 --> 00:47:31,770
+that location. If not you
+install it. That's really cool.
+
+783
+00:47:32,970 --> 00:47:37,110
+So what about handling things?
+So that that handles? You
+
+784
+00:47:37,110 --> 00:47:39,300
+mentioned a lot of things? And I
+don't I'm not that familiar with
+
+785
+00:47:39,300 --> 00:47:43,110
+all those technologies. But it
+can you hide things like the
+
+786
+00:47:43,110 --> 00:47:47,790
+environmental variables that one
+capability can see versus
+
+787
+00:47:47,790 --> 00:47:51,810
+another one? Or it just like all
+of the different things you give
+
+788
+00:47:51,810 --> 00:47:56,520
+it access to only a small part
+of the file system. Yeah. How
+
+789
+00:47:56,520 --> 00:47:58,830
+does all this work? It sounds so
+cool.
+
+790
+00:47:59,010 --> 00:48:01,650
+Christian Fritz: Right? Now we
+go with a one size fits all type
+
+791
+00:48:01,650 --> 00:48:04,650
+sandbox, you don't actually
+customize it, we just we just
+
+792
+00:48:04,650 --> 00:48:09,360
+reduce it down to what we think
+is all you need. If you don't
+
+793
+00:48:09,360 --> 00:48:13,440
+see the environmental variables
+of your user, you you're either
+
+794
+00:48:13,440 --> 00:48:18,720
+home folders or hidden certain
+sensitive folders in the in the
+
+795
+00:48:18,780 --> 00:48:24,120
+file system such as var lib, or
+from you as much as possible,
+
+796
+00:48:24,120 --> 00:48:26,640
+like the data, if you're, if
+you're running a database, it
+
+797
+00:48:26,640 --> 00:48:32,070
+would live there and he wouldn't
+be able to see that. And you
+
+798
+00:48:32,070 --> 00:48:32,850
+explicitly
+
+799
+00:48:32,850 --> 00:48:35,400
+Audrow Nash: opt in to
+permissions with this, or is it
+
+800
+00:48:35,400 --> 00:48:38,250
+implicit in that, like, oh, this
+app needs this? And then we'll
+
+801
+00:48:38,250 --> 00:48:41,820
+give it that? I'm not sure it's
+explicit. So
+
+802
+00:48:41,850 --> 00:48:44,610
+Christian Fritz: so right now
+we, we think actually, we have
+
+803
+00:48:45,420 --> 00:48:49,830
+the permissions down to what
+most capabilities will will need
+
+804
+00:48:49,830 --> 00:48:53,550
+we there could certainly be some
+people have asked us about
+
+805
+00:48:53,550 --> 00:48:56,040
+things like user management on
+the robot, right? This is
+
+806
+00:48:56,040 --> 00:48:58,320
+clearly something that would
+need administrative rights. And
+
+807
+00:48:58,320 --> 00:49:01,920
+we don't currently support that.
+We are currently only supporting
+
+808
+00:49:01,920 --> 00:49:05,070
+things. It's a what one way to
+think about this, especially for
+
+809
+00:49:05,070 --> 00:49:09,720
+your audiences Ross and up if
+you a lot of capabilities run a
+
+810
+00:49:09,720 --> 00:49:13,650
+Ross node, they're able to talk
+to the other Ross notes. And
+
+811
+00:49:13,650 --> 00:49:17,040
+that's honestly all they need to
+do. Yeah, it's it's none of
+
+812
+00:49:17,040 --> 00:49:19,740
+their business what I have on my
+on my desk, right? That's that's
+
+813
+00:49:19,740 --> 00:49:24,000
+not what we're here to do. So,
+all of that accesses is going to
+
+814
+00:49:24,000 --> 00:49:28,260
+be very, very limited. Other
+than say, you know, what you
+
+815
+00:49:28,260 --> 00:49:31,470
+need for, for for Ross
+operations, such as the message
+
+816
+00:49:31,470 --> 00:49:34,590
+definitions, right. But most of
+the file system will be hidden
+
+817
+00:49:34,590 --> 00:49:34,980
+from
+
+818
+00:49:36,420 --> 00:49:40,920
+Audrow Nash: good I saw I'm
+imagining if I had some node
+
+819
+00:49:41,370 --> 00:49:45,930
+that so I have a module on my
+robot, and that's sending up
+
+820
+00:49:45,930 --> 00:49:51,990
+video. And maybe I want to send
+some sort of thing down from the
+
+821
+00:49:51,990 --> 00:49:56,490
+cloud, to say, hey, we're a bit
+bogged down right now. Reduce
+
+822
+00:49:56,490 --> 00:50:00,420
+the video quality you're sending
+up or something like this. And
+
+823
+00:50:00,420 --> 00:50:03,090
+maybe it's netstat and an
+environmental variable, like,
+
+824
+00:50:03,090 --> 00:50:04,980
+could you give it access to
+that? Or maybe there's a better
+
+825
+00:50:04,980 --> 00:50:06,990
+way to go about doing that kind
+of thing?
+
+826
+00:50:08,400 --> 00:50:11,010
+Christian Fritz: I would have to
+think about it. If by setting an
+
+827
+00:50:11,010 --> 00:50:13,740
+environmental variable, you mean
+one that would also be written,
+
+828
+00:50:13,800 --> 00:50:16,350
+read by all of the other
+capabilities, like some sort of
+
+829
+00:50:16,350 --> 00:50:20,760
+shared space? Yes, not currently
+possible, there is no shared
+
+830
+00:50:20,850 --> 00:50:25,470
+drive space. So another piece of
+technology that we've taken a
+
+831
+00:50:25,470 --> 00:50:30,810
+good look at is snaps on on
+Ubuntu. And they, they solve
+
+832
+00:50:30,810 --> 00:50:34,650
+this very elegantly to where
+they have, of course, you know,
+
+833
+00:50:34,650 --> 00:50:38,100
+containerized, or sandbox
+capabilities, but they also have
+
+834
+00:50:38,100 --> 00:50:41,700
+some, some shared folders,
+right, in which you can
+
+835
+00:50:41,910 --> 00:50:45,570
+collaborate if necessary. So
+that that certainly, that
+
+836
+00:50:45,570 --> 00:50:50,580
+certainly exists. In the example
+of the video streaming, I would,
+
+837
+00:50:50,640 --> 00:50:53,160
+I would argue that that's the
+capability itself, that then
+
+838
+00:50:53,160 --> 00:50:54,060
+reduces that.
+
+839
+00:50:54,720 --> 00:50:57,960
+Audrow Nash: But yeah, you
+probably wouldn't need to do it
+
+840
+00:50:57,960 --> 00:51:01,200
+the way I described. Because
+yeah, the capability would
+
+841
+00:51:01,200 --> 00:51:04,110
+probably just do it. And it'd be
+setting a variable inside the
+
+842
+00:51:04,500 --> 00:51:08,130
+module, robot module. That would
+be probably the best way to do
+
+843
+00:51:08,130 --> 00:51:08,340
+it.
+
+844
+00:51:08,610 --> 00:51:10,590
+Christian Fritz: And actually,
+so we do have that video
+
+845
+00:51:10,590 --> 00:51:14,970
+capability. And we use Web RTC,
+of course, and one of the
+
+846
+00:51:14,970 --> 00:51:17,520
+beauties of web RTC is that it
+will actually do that
+
+847
+00:51:17,520 --> 00:51:22,020
+automatically, right? That's so
+Turman, I can't get those frames
+
+848
+00:51:22,020 --> 00:51:26,010
+through, we're going to reduce
+quality for a little while, and
+
+849
+00:51:26,040 --> 00:51:30,060
+and it will adjust to that,
+which is very nice. And really
+
+850
+00:51:30,060 --> 00:51:32,130
+one of the reasons also to use
+Web RTC
+
+851
+00:51:32,520 --> 00:51:36,360
+Audrow Nash: for industry. Do
+you think that this idea of
+
+852
+00:51:36,390 --> 00:51:40,740
+sandboxing will catch on more
+generally, in robotics? Like I
+
+853
+00:51:40,740 --> 00:51:43,260
+mean, if I'm using a bunch of
+software from the internet, you
+
+854
+00:51:43,260 --> 00:51:48,810
+never know if something has been
+maliciously included? So
+
+855
+00:51:49,800 --> 00:51:53,730
+Christian Fritz: yep. Yeah, I, I
+think so. I mean, if you've been
+
+856
+00:51:53,730 --> 00:51:57,240
+following what Ubuntu has been
+doing with their push for four
+
+857
+00:51:57,240 --> 00:52:01,860
+snaps, for instance, they had a
+person that was also very active
+
+858
+00:52:01,860 --> 00:52:07,770
+in the Rust community. And he
+was in charge of Ross and snaps
+
+859
+00:52:07,770 --> 00:52:10,740
+on the canonical side. And he
+was making some very good points
+
+860
+00:52:10,740 --> 00:52:14,370
+as to why snaps are a good
+solution for that because they
+
+861
+00:52:14,370 --> 00:52:18,240
+are sandbox, like you say,
+right, they are snaps for, for
+
+862
+00:52:18,240 --> 00:52:21,360
+those of your listeners who
+don't know, basically, or you
+
+863
+00:52:21,360 --> 00:52:26,310
+can think of them as Docker
+containers that run apps on on
+
+864
+00:52:26,310 --> 00:52:29,670
+Ubuntu now, people will yell at
+me for describing it like that.
+
+865
+00:52:29,670 --> 00:52:32,910
+Because of course, in reality,
+it's more sophisticated, and it
+
+866
+00:52:32,910 --> 00:52:36,750
+actually doesn't use Docker. But
+for that, for the event, who
+
+867
+00:52:36,750 --> 00:52:39,360
+knows a little bit of Docker,
+that's roughly how it works. And
+
+868
+00:52:39,360 --> 00:52:43,680
+so you get all of the beauty of
+isolation, and, you know,
+
+869
+00:52:43,680 --> 00:52:47,490
+reliable requirements, like
+dependency, dependencies, and so
+
+870
+00:52:47,490 --> 00:52:52,980
+forth. So I think it's useful.
+I'm very curious to see how this
+
+871
+00:52:52,980 --> 00:52:56,370
+will evolve, and whether the
+sandboxing will get into the way
+
+872
+00:52:56,400 --> 00:52:59,760
+of development, whether people
+will prefer to install their
+
+873
+00:52:59,760 --> 00:53:06,060
+capabilities, quote, unquote,
+privileged. But I think it's the
+
+874
+00:53:06,090 --> 00:53:09,750
+I think it's a, it's a
+requirement for more broader
+
+875
+00:53:10,200 --> 00:53:13,500
+cooperation, like you said, if
+we want to enable third parties
+
+876
+00:53:13,500 --> 00:53:17,190
+to run, and it's our fleet of
+robots, right. I mean, for it
+
+877
+00:53:17,190 --> 00:53:20,790
+from the perspective of a
+business owner in robotics,
+
+878
+00:53:21,210 --> 00:53:24,210
+they're very conservative about
+what gets to run on the robot.
+
+879
+00:53:24,210 --> 00:53:28,200
+Because if you screw up, like,
+these are implications, there's
+
+880
+00:53:28,200 --> 00:53:31,500
+a lot of implications for on the
+security side, but also, even
+
+881
+00:53:31,500 --> 00:53:35,610
+just on the operational cost, if
+for some reason, your robots one
+
+882
+00:53:35,610 --> 00:53:39,630
+morning, don't do it anymore,
+or, or you know, they dropped
+
+883
+00:53:39,630 --> 00:53:42,150
+from the internet, you can't
+reach them, somebody is getting
+
+884
+00:53:42,150 --> 00:53:45,030
+on a plane flying somewhere.
+Very expensive.
+
+885
+00:53:45,900 --> 00:53:50,790
+Audrow Nash: Gosh, uh huh. One
+thing a little bit of a tangent,
+
+886
+00:53:50,790 --> 00:53:53,700
+but one thing that I thought was
+really interesting, and I am
+
+887
+00:53:53,700 --> 00:53:59,370
+hoping more things start to go
+this way. There's Dino, which is
+
+888
+00:53:59,370 --> 00:54:03,060
+a TypeScript library or
+TypeScript runtime environment.
+
+889
+00:54:03,630 --> 00:54:08,520
+And Dino, for us. It's kind of
+like Node, but better suited for
+
+890
+00:54:08,520 --> 00:54:13,440
+TypeScript also runs JavaScript.
+But if you explicitly opt in to
+
+891
+00:54:13,440 --> 00:54:16,650
+every permission that you want
+to use, you can say all if you
+
+892
+00:54:16,650 --> 00:54:22,050
+want, but so you can say this
+should only be accessing these
+
+893
+00:54:22,050 --> 00:54:24,660
+folders, this should only have
+access to this environmental
+
+894
+00:54:24,660 --> 00:54:28,230
+variable. And all of the
+software that you use can have
+
+895
+00:54:28,230 --> 00:54:31,380
+these permissions set, which is
+quite cool. Because I mean, if
+
+896
+00:54:31,380 --> 00:54:34,290
+you're running software, there's
+the chance that it's like trying
+
+897
+00:54:34,290 --> 00:54:36,870
+to access something you don't
+want it to use. And this would
+
+898
+00:54:36,870 --> 00:54:39,060
+be a nice way to bet that hey,
+there was an error or tried to
+
+899
+00:54:39,060 --> 00:54:44,130
+access some sensitive location.
+We denied it and the program
+
+900
+00:54:44,250 --> 00:54:44,910
+exited.
+
+901
+00:54:45,540 --> 00:54:47,580
+Christian Fritz: That's pretty
+cool. I had heard about the
+
+902
+00:54:47,580 --> 00:54:49,830
+though I didn't know that they
+have that feature. That's uh,
+
+903
+00:54:50,100 --> 00:54:52,320
+I'm actually gonna take a look
+at that. That's that sounds
+
+904
+00:54:52,320 --> 00:54:53,280
+really useful.
+
+905
+00:54:53,460 --> 00:54:56,790
+Audrow Nash: Yeah, I'm
+sponsoring site quite a few you
+
+906
+00:54:56,790 --> 00:54:59,970
+know, projects cuz I really like
+the direction that they're going
+
+907
+00:55:00,000 --> 00:55:04,080
+But the whole node ecosystem is
+really, really, it's just so
+
+908
+00:55:04,080 --> 00:55:08,520
+much there, that it's hard to
+use the you know, for anything
+
+909
+00:55:08,520 --> 00:55:10,470
+that you really want to build,
+like, I've just been doing it
+
+910
+00:55:10,470 --> 00:55:14,970
+for, like, command line tools
+that helped make my job at open
+
+911
+00:55:14,970 --> 00:55:18,720
+robotics easier to try them. And
+you know, but lately node is
+
+912
+00:55:18,720 --> 00:55:19,290
+kind of thing.
+
+913
+00:55:20,190 --> 00:55:22,440
+Christian Fritz: Gotcha. So it's
+not a replacement for Node js at
+
+914
+00:55:22,440 --> 00:55:22,890
+this point.
+
+915
+00:55:23,160 --> 00:55:26,820
+Audrow Nash: Not yet. But there
+are quite a few packages that
+
+916
+00:55:26,910 --> 00:55:31,230
+are like, I mean, I don't know,
+there's like an express like
+
+917
+00:55:31,230 --> 00:55:35,820
+thing for hosting web servers,
+and routing. But if you want to
+
+918
+00:55:35,820 --> 00:55:39,000
+do like, really nice date time
+stuff, or I don't know, there's
+
+919
+00:55:39,000 --> 00:55:42,450
+just a bunch of missing stuff.
+Or you can go look at the CDN
+
+920
+00:55:42,450 --> 00:55:45,210
+serialization or whatever it is,
+I don't actually know what that
+
+921
+00:55:45,270 --> 00:55:49,680
+does. But you can go some
+packages can be translated over
+
+922
+00:55:50,190 --> 00:55:54,330
+to it, but it has a different
+import setup. So it doesn't work
+
+923
+00:55:54,330 --> 00:55:57,420
+flawlessly with existing node
+things, which is a bit of a
+
+924
+00:55:57,420 --> 00:56:01,260
+bummer. But the ecosystem is
+growing. And there seem to be a
+
+925
+00:56:01,260 --> 00:56:05,310
+lot of really smart programmers
+doing stuff on it. And building
+
+926
+00:56:05,310 --> 00:56:05,850
+tools.
+
+927
+00:56:06,300 --> 00:56:11,130
+Christian Fritz: Yeah, I mean,
+that's really, I think, key to a
+
+928
+00:56:11,130 --> 00:56:17,130
+framework platform. You name a
+working ecosystem of developers,
+
+929
+00:56:17,130 --> 00:56:22,050
+right. And my favorite example
+there that the reason why Node
+
+930
+00:56:22,050 --> 00:56:24,900
+js is so popular and works so
+well is because it's so popular
+
+931
+00:56:24,900 --> 00:56:28,860
+and works so well, right? Like
+people use us developing more
+
+932
+00:56:28,860 --> 00:56:31,140
+things. And because they develop
+more thing, it's the network
+
+933
+00:56:31,140 --> 00:56:34,200
+effect, right? And then more
+things. So you can find a
+
+934
+00:56:34,200 --> 00:56:37,650
+library for just about anything
+if you don't need to develop it,
+
+935
+00:56:37,920 --> 00:56:41,610
+yourself. There's downsides, of
+course, and we've seen the news
+
+936
+00:56:41,610 --> 00:56:46,830
+about some, you know, either
+hostile takeovers of packages,
+
+937
+00:56:46,980 --> 00:56:50,520
+where people have have stopped
+maintaining it. Whereas
+
+938
+00:56:50,880 --> 00:56:55,140
+sometimes even malicious changes
+that people made sometimes out
+
+939
+00:56:55,140 --> 00:56:59,280
+of spite or break everything,
+yeah, yeah. And those issues
+
+940
+00:56:59,280 --> 00:57:01,770
+are, of course, serious, and we
+need to take care of them, and
+
+941
+00:57:01,770 --> 00:57:05,430
+it'd be worried about them. But
+it's a very cool technology to
+
+942
+00:57:05,430 --> 00:57:05,970
+build on.
+
+943
+00:57:06,989 --> 00:57:10,829
+Audrow Nash: Oh, definitely.
+Yeah, I find it. So I mean,
+
+944
+00:57:10,889 --> 00:57:15,869
+working at open robotics, we use
+a lot of C++ and Python. And
+
+945
+00:57:15,869 --> 00:57:19,109
+type like years and years of
+using Python. But I really like
+
+946
+00:57:19,109 --> 00:57:22,079
+TypeScript, because defining the
+interfaces is really nice. And
+
+947
+00:57:22,079 --> 00:57:26,519
+it helps me I feel like I'm much
+more productive in it. And so
+
+948
+00:57:26,519 --> 00:57:31,169
+now I'm getting familiar with
+the node, or NPM, packaging, and
+
+949
+00:57:31,259 --> 00:57:35,789
+just downloading libraries and
+software from it. And I'm very
+
+950
+00:57:35,789 --> 00:57:39,389
+impressed. And I feel like it's
+a, it's a lot more capable, in
+
+951
+00:57:39,389 --> 00:57:42,779
+my opinion, than a lot of the
+Python libraries. And there are
+
+952
+00:57:42,779 --> 00:57:46,169
+obviously exceptions, like,
+like, pandas is a really nice
+
+953
+00:57:46,169 --> 00:57:49,229
+Python library that I don't
+think has a good analogue in
+
+954
+00:57:49,229 --> 00:57:53,399
+TypeScript or JavaScript. But
+just it's an interesting space.
+
+955
+00:57:54,000 --> 00:57:56,580
+Christian Fritz: It absolutely
+is. And I like to play dog to
+
+956
+00:57:57,330 --> 00:58:01,440
+that. Note, J S is actually a
+bit faster than Python. And
+
+957
+00:58:01,440 --> 00:58:04,590
+that's because JavaScript is
+compiled just in time, it's not
+
+958
+00:58:04,590 --> 00:58:09,000
+actually interpreted, it's just
+compiled on the fly, which makes
+
+959
+00:58:09,000 --> 00:58:15,750
+the execution a lot faster. And
+then I can, you know, say a lot
+
+960
+00:58:15,750 --> 00:58:20,130
+of positive things about NPM. As
+a package manager, it's, it has
+
+961
+00:58:20,160 --> 00:58:23,970
+a lot of features. And it has a
+lot of capabilities that other
+
+962
+00:58:23,970 --> 00:58:27,330
+package package managers have
+within the past leg. So for
+
+963
+00:58:27,330 --> 00:58:31,800
+instance, one big one is having
+multiple versions of the same
+
+964
+00:58:31,800 --> 00:58:34,590
+package in the repository, you
+would think that this is a
+
+965
+00:58:34,590 --> 00:58:37,830
+trivial thing. But DVM, for
+instance, doesn't, doesn't
+
+966
+00:58:37,830 --> 00:58:41,400
+really support that apt, you're
+not really supposed to have
+
+967
+00:58:41,400 --> 00:58:43,890
+multiple versions of the same
+package in the in the
+
+968
+00:58:43,890 --> 00:58:47,430
+repository. But it is important
+
+969
+00:58:47,430 --> 00:58:49,740
+Audrow Nash: for your
+application where you're trying
+
+970
+00:58:49,740 --> 00:58:55,440
+to wean robots off of version,
+when they're when you're
+
+971
+00:58:55,440 --> 00:58:58,020
+updating them. This is, this
+would be very useful.
+
+972
+00:58:58,170 --> 00:59:01,140
+Christian Fritz: Next time, it
+also for the for strict
+
+973
+00:59:01,140 --> 00:59:05,520
+versioning. I think that strict
+versioning, of strict, strict
+
+974
+00:59:05,520 --> 00:59:10,620
+semantic versioning is a real
+benefit. Where you in npm date,
+
+975
+00:59:10,620 --> 00:59:13,080
+there's this concept of a lock
+file, where you will save I'm
+
+976
+00:59:13,080 --> 00:59:17,370
+going to lock down my versions.
+And when I commit to get is
+
+977
+00:59:17,370 --> 00:59:20,760
+exactly this, if you execute
+this, you will get the exact
+
+978
+00:59:20,790 --> 00:59:23,970
+same result, no matter what any
+of the dependencies have done in
+
+979
+00:59:23,970 --> 00:59:26,730
+the meantime, in terms of
+updating, you will get the exact
+
+980
+00:59:26,730 --> 00:59:30,900
+same. And and this is really
+helpful when you're dealing with
+
+981
+00:59:30,900 --> 00:59:34,320
+an ecosystem like NPM, where you
+have hierarchies of dependencies
+
+982
+00:59:34,320 --> 00:59:38,190
+that can be very, very deep,
+right? You can super nest 2000
+
+983
+00:59:38,280 --> 00:59:41,490
+packages being installed as part
+of your of your somewhat simple
+
+984
+00:59:41,490 --> 00:59:44,430
+application. And that's, that's
+a benefit, right? You don't want
+
+985
+00:59:44,430 --> 00:59:48,030
+to reinvent all of those 2000.
+But you do want to be certain
+
+986
+00:59:48,030 --> 00:59:51,000
+that if anything happens to
+either of them, maybe they
+
+987
+00:59:51,150 --> 00:59:54,330
+introduce a bug in the new
+version, your system doesn't go
+
+988
+00:59:54,330 --> 00:59:57,930
+down. So really locking down the
+versions and deciding Yes, I
+
+989
+00:59:57,930 --> 01:00:01,350
+want to update or I don't want
+to update it. Is, is very
+
+990
+01:00:01,350 --> 01:00:03,750
+powerful. And for that you need
+to be able to have multiple
+
+991
+01:00:03,750 --> 01:00:07,530
+versions of the same package in
+the repository. The other one
+
+992
+01:00:07,530 --> 01:00:11,640
+is, of course, all of the books
+like pre installed post install,
+
+993
+01:00:11,670 --> 01:00:15,690
+pre uninstalled post, uninstall,
+pre publish all of those kinds
+
+994
+01:00:15,690 --> 01:00:18,600
+of scripts that you may want to
+run as different types of the
+
+995
+01:00:18,630 --> 01:00:22,200
+software lifecycle, they are
+very powerful they can really
+
+996
+01:00:22,230 --> 01:00:27,360
+allow you to do I mean, us? They
+are, they are very powerful in
+
+997
+01:00:27,390 --> 01:00:32,220
+Debian packages as well. But
+because NPM has them you can do,
+
+998
+01:00:32,580 --> 01:00:36,000
+you can pretty much install
+anything through NPM packages
+
+999
+01:00:36,240 --> 01:00:39,690
+that you have, because the
+payload is just a tarball. And
+
+1000
+01:00:39,690 --> 01:00:42,840
+then you run these scripts when
+when it gets installed. And at
+
+1001
+01:00:42,840 --> 01:00:46,020
+that point, you can, you could
+install things out of the
+
+1002
+01:00:46,020 --> 01:00:50,220
+tarball that say you Debian
+packages, or play system files
+
+1003
+01:00:50,220 --> 01:00:53,130
+if you have the permissions to
+do that. So it's very, it's very
+
+1004
+01:00:53,130 --> 01:00:55,710
+versatile tool. And I think
+it's, it's a real good
+
+1005
+01:00:55,710 --> 01:00:58,710
+technology to build on and
+share.
+
+1006
+01:01:00,540 --> 01:01:05,400
+Audrow Nash: Let's see. So now
+segwaying, a little bit. Tell me
+
+1007
+01:01:05,400 --> 01:01:08,190
+a bit about your open core model
+at transitive.
+
+1008
+01:01:09,690 --> 01:01:13,380
+Christian Fritz: Yeah, this is
+still still in flux. But I am a
+
+1009
+01:01:13,380 --> 01:01:16,950
+big believer of open source
+businesses, I think that there
+
+1010
+01:01:16,950 --> 01:01:20,010
+are some very good examples that
+we've seen in the past. And so
+
+1011
+01:01:20,010 --> 01:01:24,210
+we, we really want to make this
+open source model work. And from
+
+1012
+01:01:24,210 --> 01:01:28,710
+everything that I've learned.
+There's, there's basically two
+
+1013
+01:01:28,710 --> 01:01:31,200
+things that work really well
+from, from an open source
+
+1014
+01:01:31,200 --> 01:01:35,310
+business model point of view,
+one is testing. So in our case,
+
+1015
+01:01:35,310 --> 01:01:38,340
+we are offering a hosted
+solution where the cloud will be
+
+1016
+01:01:38,340 --> 01:01:41,910
+taken care of by us, you can
+still, like I said, have the
+
+1017
+01:01:41,910 --> 01:01:44,580
+components and embed them in
+your own web applications, if
+
+1018
+01:01:44,610 --> 01:01:47,400
+even a web application is
+running somewhere completely
+
+1019
+01:01:47,400 --> 01:01:50,250
+different. But you don't have to
+worry about it, setting up the
+
+1020
+01:01:50,250 --> 01:01:55,380
+cloud, dealing with the
+maintenance and administration
+
+1021
+01:01:55,380 --> 01:01:59,430
+of that storage of data and
+whatever your capabilities want
+
+1022
+01:01:59,430 --> 01:02:03,900
+to do. That's the that's the one
+model. Some of our customers
+
+1023
+01:02:03,900 --> 01:02:07,380
+have asked about self hosted
+solution. So we are offering
+
+1024
+01:02:07,380 --> 01:02:11,610
+that as well. And this is still
+a work in progress. So that has
+
+1025
+01:02:11,610 --> 01:02:15,510
+not been released. And the
+business model in that case, is
+
+1026
+01:02:15,510 --> 01:02:19,110
+premium applications. So it's
+it's really similar, I guess, to
+
+1027
+01:02:19,110 --> 01:02:22,800
+Android, again, right? Where
+Android is open source, you can
+
+1028
+01:02:22,800 --> 01:02:26,610
+install it on any phone you
+want. But then the capability
+
+1029
+01:02:26,610 --> 01:02:31,140
+the apps in Android can also be
+free, or they can be they can be
+
+1030
+01:02:31,140 --> 01:02:35,160
+premium. And I think this is a
+good model, right? It allows
+
+1031
+01:02:35,160 --> 01:02:37,710
+people to first of all get
+started with it. They it
+
+1032
+01:02:37,740 --> 01:02:40,830
+provides developers with a
+marketplace where they can
+
+1033
+01:02:41,310 --> 01:02:44,940
+distribute their their their
+contributions, their work, they
+
+1034
+01:02:44,940 --> 01:02:48,390
+don't have to worry about, you
+know, advertisement and and
+
+1035
+01:02:48,630 --> 01:02:53,190
+billing and and all of that. And
+on the receiving end, you know,
+
+1036
+01:02:53,190 --> 01:02:58,980
+the the companies using those
+capabilities will have an
+
+1037
+01:02:58,980 --> 01:03:04,620
+ecosystem with writings with
+commercial support behind it
+
+1038
+01:03:05,820 --> 01:03:08,880
+that they can that they can rely
+on. So I think that this is a
+
+1039
+01:03:08,880 --> 01:03:10,800
+model that can that can really
+work.
+
+1040
+01:03:12,989 --> 01:03:15,629
+Audrow Nash: Gotcha. And so are
+you experimenting between those
+
+1041
+01:03:15,629 --> 01:03:19,619
+two models? Or your you'll think
+you'll kind of see what
+
+1042
+01:03:19,619 --> 01:03:23,159
+capabilities you have? And then
+possibly add? Actually, it seems
+
+1043
+01:03:23,159 --> 01:03:26,639
+like it makes sense to do the
+Android model for what you're
+
+1044
+01:03:26,669 --> 01:03:30,119
+talking about, where it's and
+then you're doing both in a
+
+1045
+01:03:30,119 --> 01:03:33,209
+sense, because you are providing
+the hosting, but you're also
+
+1046
+01:03:33,209 --> 01:03:37,049
+possibly going to have specific
+capabilities that people can opt
+
+1047
+01:03:37,049 --> 01:03:40,799
+into, by purchasing. Yeah,
+that's,
+
+1048
+01:03:41,220 --> 01:03:42,990
+Christian Fritz: yeah, that's
+exactly right. And both are
+
+1049
+01:03:42,990 --> 01:03:46,320
+evolving, we'll have to see
+which one will be more popular
+
+1050
+01:03:46,320 --> 01:03:50,730
+and how, for instance, what we
+are still keen to find out as to
+
+1051
+01:03:50,730 --> 01:03:53,580
+what extent will people prefer
+the hosted solution versus self
+
+1052
+01:03:53,580 --> 01:03:57,600
+hosting? There's definitely pros
+and cons with both. Some people
+
+1053
+01:03:57,630 --> 01:04:00,330
+really don't like the idea of
+relying on a third party,
+
+1054
+01:04:00,690 --> 01:04:03,510
+especially if it's a startup,
+right? Because it multiplies to
+
+1055
+01:04:03,510 --> 01:04:06,900
+whatever No. That's why the
+ability to self host is
+
+1056
+01:04:06,900 --> 01:04:09,660
+certainly desirable. Others
+really don't want to take care
+
+1057
+01:04:09,660 --> 01:04:12,480
+of the scaling of that
+infrastructure and would much
+
+1058
+01:04:12,480 --> 01:04:16,890
+rather outsource that. So this
+is mongos applet service, which
+
+1059
+01:04:16,920 --> 01:04:19,500
+I think is fantastic. If you if
+you just want to set up a
+
+1060
+01:04:19,500 --> 01:04:22,980
+database, you don't need to set
+it up yourself and manage it.
+
+1061
+01:04:24,480 --> 01:04:27,660
+But I Yeah, time will tell
+really. And we're curious to
+
+1062
+01:04:27,660 --> 01:04:31,860
+hear from from more people what
+they think. And also, on the
+
+1063
+01:04:31,860 --> 01:04:35,670
+premium app site, there's this
+additional persona of the third
+
+1064
+01:04:35,670 --> 01:04:39,000
+party developer, right. Are
+people interested in developing
+
+1065
+01:04:39,000 --> 01:04:42,270
+for this platform? I think so.
+I've spoken with a lot of people
+
+1066
+01:04:42,270 --> 01:04:45,450
+who have been working on
+specific capabilities, a lot of
+
+1067
+01:04:45,450 --> 01:04:48,450
+them in the ml or computer
+vision space that they want to
+
+1068
+01:04:48,450 --> 01:04:52,200
+market to robotics companies.
+And they like the idea to not
+
+1069
+01:04:52,200 --> 01:04:55,710
+having to do all of the legwork
+in terms of marketing it and
+
+1070
+01:04:56,070 --> 01:04:58,260
+figuring out deployment and so
+forth,
+
+1071
+01:04:58,440 --> 01:05:01,350
+Audrow Nash: having more of an
+app store third approach. Yeah,
+
+1072
+01:05:01,650 --> 01:05:04,440
+that would be super cool. I
+would love if we had that kind
+
+1073
+01:05:04,440 --> 01:05:08,580
+of thing in the robotics
+ecosystem. Just like Ross really
+
+1074
+01:05:08,580 --> 01:05:12,330
+solves a lot of problems, making
+it easier for people to build
+
+1075
+01:05:12,330 --> 01:05:16,050
+applications. But it's hard to
+get it outside of your robot, as
+
+1076
+01:05:16,050 --> 01:05:19,320
+you're saying, as we've kind of
+motivated with the whole first
+
+1077
+01:05:19,320 --> 01:05:24,720
+part of this conversation. And
+so if it was like, you just try
+
+1078
+01:05:24,720 --> 01:05:27,540
+to get you would just add
+different capabilities on
+
+1079
+01:05:27,540 --> 01:05:29,850
+through an app store like
+setting and you can use them
+
+1080
+01:05:29,850 --> 01:05:36,060
+elsewhere. That would be super
+cool. Yeah, that's it. Gotcha.
+
+1081
+01:05:37,170 --> 01:05:41,370
+How have you guys been funded so
+far? And like, Would you talk a
+
+1082
+01:05:41,370 --> 01:05:43,200
+bit more about the team and
+everything,
+
+1083
+01:05:43,920 --> 01:05:45,780
+Christian Fritz: the team is
+very small, you're looking at
+
+1084
+01:05:45,780 --> 01:05:50,430
+it. God's just, it's, I'm the
+only one fully committed right
+
+1085
+01:05:50,430 --> 01:05:54,930
+now and doing technical
+development, I have a short, I
+
+1086
+01:05:54,930 --> 01:05:59,820
+have a small list of advisors.
+First and foremost, my previous
+
+1087
+01:05:59,820 --> 01:06:03,510
+co founder, Bob Bauer, he was at
+Willow Garage, and he's still
+
+1088
+01:06:03,510 --> 01:06:07,230
+advising me. But he's not a
+developer. So there's not too
+
+1089
+01:06:07,230 --> 01:06:11,910
+much for him to do right now.
+And funding, it's, it's
+
+1090
+01:06:11,910 --> 01:06:15,510
+completely bootstrapped right
+now, where, where we're
+
+1091
+01:06:15,510 --> 01:06:18,720
+profitable in the sense that I'm
+doing consulting work for
+
+1092
+01:06:18,720 --> 01:06:22,530
+customers, helping them both
+doing custom development, and
+
+1093
+01:06:22,530 --> 01:06:26,880
+then helping them figure out how
+to use transitive as well, which
+
+1094
+01:06:26,910 --> 01:06:30,780
+is a good model, it's, as you
+can imagine, you don't get rich
+
+1095
+01:06:30,780 --> 01:06:36,630
+doing that. But it's, it's, it
+keeps the lights on. And one
+
+1096
+01:06:36,630 --> 01:06:40,650
+thing that I've seen with
+robotics companies, one, one way
+
+1097
+01:06:40,650 --> 01:06:45,180
+that they have failed, was that
+once they take money, they have
+
+1098
+01:06:45,180 --> 01:06:48,420
+to spend it once you once you
+because your investors want to
+
+1099
+01:06:48,420 --> 01:06:52,320
+use that money to hire a bigger
+team and scale faster, which,
+
+1100
+01:06:52,470 --> 01:06:57,180
+which means that you are lacking
+in a certain certain product, a
+
+1101
+01:06:57,180 --> 01:07:00,150
+certain business model, and a
+certain market fit. And if the
+
+1102
+01:07:00,180 --> 01:07:03,360
+market fit is not great, then
+you're trying to scale a
+
+1103
+01:07:03,360 --> 01:07:06,240
+business that was not meant to
+be, then you're making you're
+
+1104
+01:07:06,270 --> 01:07:09,660
+you're digging yourself a hole.
+And I really want to be certain
+
+1105
+01:07:09,660 --> 01:07:13,620
+that we have absolutely nailed
+market fit that we have gotten
+
+1106
+01:07:13,620 --> 01:07:16,470
+adoption that we have validated
+that this is something that
+
+1107
+01:07:16,470 --> 01:07:20,760
+people want before we take on
+money. And so yeah, I consulting
+
+1108
+01:07:20,760 --> 01:07:24,810
+that actually solves two
+problems here. Because, number
+
+1109
+01:07:24,810 --> 01:07:28,260
+one, yes, there's some money
+coming into the bank. And number
+
+1110
+01:07:28,260 --> 01:07:31,200
+two, we are actually getting
+validation from our customers.
+
+1111
+01:07:31,200 --> 01:07:34,980
+So this, this really lends
+itself to an iterative process
+
+1112
+01:07:34,980 --> 01:07:38,220
+that will make sure that we will
+build the right product for the
+
+1113
+01:07:38,520 --> 01:07:44,370
+market. Yeah. And I think we
+would get into race, no problem.
+
+1114
+01:07:44,370 --> 01:07:47,160
+We've had conversations with
+investors, they, they like the
+
+1115
+01:07:47,160 --> 01:07:50,250
+idea that we are basically
+indexing on the robotics market.
+
+1116
+01:07:50,580 --> 01:07:53,880
+And what they mean by that is,
+rather than so they have the
+
+1117
+01:07:53,880 --> 01:07:56,580
+choice of which companies to
+invest in. And they know that in
+
+1118
+01:07:56,580 --> 01:08:00,150
+robotics, the differences are
+stark, right? One company may be
+
+1119
+01:08:00,150 --> 01:08:03,750
+doing apple picking the other
+one maybe doing drywall
+
+1120
+01:08:04,050 --> 01:08:07,530
+construction, another one may be
+layout printing, and another one
+
+1121
+01:08:07,530 --> 01:08:10,260
+is doing delivery on sidewalk,
+another one on the street, if
+
+1122
+01:08:10,260 --> 01:08:13,470
+they don't know what to invest
+in, they all know that robotics
+
+1123
+01:08:13,470 --> 01:08:17,370
+is going to go up. And there's
+plenty of studies by IFR and all
+
+1124
+01:08:17,370 --> 01:08:20,760
+of those API research that tells
+us it's going to go through the
+
+1125
+01:08:20,760 --> 01:08:23,430
+roof. It's it's it's a
+phenomenal technology. And it's
+
+1126
+01:08:23,430 --> 01:08:26,100
+only sort of at the start, but
+they all want to invest and they
+
+1127
+01:08:26,100 --> 01:08:29,640
+don't know where to invest. So
+what they like about platforms
+
+1128
+01:08:29,640 --> 01:08:33,090
+like this is that they know that
+if robotics will succeed this
+
+1129
+01:08:33,090 --> 01:08:33,450
+company,
+
+1130
+01:08:33,960 --> 01:08:37,260
+Audrow Nash: as well, gotcha.
+That's really cool. I really
+
+1131
+01:08:37,260 --> 01:08:41,250
+like bootstrapping, too, as a
+model. In general, I get it.
+
+1132
+01:08:41,820 --> 01:08:45,720
+Because one of the other things
+with if you take investment is
+
+1133
+01:08:45,720 --> 01:08:48,450
+you kind of commit yourself to a
+timeline that you will have some
+
+1134
+01:08:48,450 --> 01:08:52,650
+sort of liquidation event within
+some period of years, like
+
+1135
+01:08:52,650 --> 01:08:56,490
+typically less than 10, maybe
+closer to five years that the
+
+1136
+01:08:56,760 --> 01:08:59,700
+investor would like to see a
+return on their investment. And
+
+1137
+01:08:59,700 --> 01:09:02,010
+that's tough, because as you
+said, you have to like really
+
+1138
+01:09:02,010 --> 01:09:05,730
+commit to the current fit, and
+it lends itself to a certain
+
+1139
+01:09:05,730 --> 01:09:11,670
+type of product. Yeah, and that
+being said, like cobalt
+
+1140
+01:09:11,730 --> 01:09:14,370
+robotics, they're doing the
+investment route, and they're
+
+1141
+01:09:14,370 --> 01:09:18,600
+doing a phenomenal job as far as
+I can tell. Which is really
+
+1142
+01:09:18,600 --> 01:09:22,140
+interesting. If you position
+everything well. And it'll be
+
+1143
+01:09:22,140 --> 01:09:25,410
+cool to see kind of if you start
+accepting investment, and how
+
+1144
+01:09:25,410 --> 01:09:28,320
+that helps you scale. But once
+you found that really good
+
+1145
+01:09:28,320 --> 01:09:30,900
+market fit, that seems like a
+very good approach. So me.
+
+1146
+01:09:31,380 --> 01:09:35,640
+Christian Fritz: Yeah, I'm keen
+to get into that point. And I do
+
+1147
+01:09:35,640 --> 01:09:38,100
+have a concrete plan on how to
+use that money in the employee
+
+1148
+01:09:38,100 --> 01:09:40,890
+to to foster third party
+development. I think there's,
+
+1149
+01:09:41,250 --> 01:09:44,430
+there's there's some really
+interesting models that you can
+
+1150
+01:09:44,730 --> 01:09:49,560
+that you can follow. Yeah, I
+think that there are a lot of
+
+1151
+01:09:49,560 --> 01:09:56,040
+capability. developers out there
+and I love this idea of, of the
+
+1152
+01:09:56,040 --> 01:09:59,340
+marketplace because it has
+inherent network effect. So more
+
+1153
+01:09:59,370 --> 01:10:02,730
+capabilities We have of high
+quality, the more people would
+
+1154
+01:10:02,730 --> 01:10:06,360
+want to use it, the more people
+who come to our, to our app
+
+1155
+01:10:06,360 --> 01:10:09,210
+store to look for capabilities
+to what people want to develop
+
+1156
+01:10:09,210 --> 01:10:11,790
+for it. And so that's, you know,
+that's the classical network
+
+1157
+01:10:11,790 --> 01:10:15,630
+effect that can that can
+actually justify exponential
+
+1158
+01:10:15,630 --> 01:10:18,510
+growth. And investors always
+want to see exponential growth.
+
+1159
+01:10:18,510 --> 01:10:21,270
+And I always ask them, Well,
+based on what, right, it's not,
+
+1160
+01:10:21,300 --> 01:10:24,060
+it doesn't just happen, right?
+There needs to be some sort of
+
+1161
+01:10:24,060 --> 01:10:27,810
+mechanism behind that. And it's
+not bouncing a QR code on the
+
+1162
+01:10:27,810 --> 01:10:31,650
+Super Bowl. In Super Bowl x,
+right? That's, that's a lot of
+
+1163
+01:10:31,650 --> 01:10:35,070
+money. No, you have to have
+something where the classical
+
+1164
+01:10:35,100 --> 01:10:38,880
+Atlas one, right if the ad plus
+one user has a better experience
+
+1165
+01:10:38,880 --> 01:10:42,210
+than all of the end before and
+makes the experience all of the
+
+1166
+01:10:42,210 --> 01:10:45,270
+end users before that better.
+That's network effect. That's
+
+1167
+01:10:45,270 --> 01:10:49,470
+why you have these these
+conversions effects where
+
+1168
+01:10:49,470 --> 01:10:53,010
+everybody will use the same
+social network, right? If, if
+
+1169
+01:10:53,010 --> 01:10:55,410
+you're the owner, if you and I
+go on to a social and create a
+
+1170
+01:10:55,410 --> 01:10:58,980
+new social network, and we're
+the only users Well, you don't
+
+1171
+01:10:59,040 --> 01:11:02,220
+have to have great
+conversations, but but it's not
+
+1172
+01:11:02,220 --> 01:11:05,130
+as useful as if they're more
+friends of ours on that same
+
+1173
+01:11:05,130 --> 01:11:08,310
+thing, right. And so for me, one
+that we had, it gets better. And
+
+1174
+01:11:08,310 --> 01:11:11,400
+I think, you know, marketing
+marketplaces have that dynamic,
+
+1175
+01:11:12,330 --> 01:11:15,540
+inherently built in, they're
+also hard to pull off. That's
+
+1176
+01:11:15,540 --> 01:11:19,830
+where money can be really
+helpful. But I think first and
+
+1177
+01:11:19,830 --> 01:11:22,470
+foremost, you have to make sure
+that it that it goes about it
+
+1178
+01:11:22,470 --> 01:11:26,490
+the right way and openness. And
+I think it's really the the key
+
+1179
+01:11:26,520 --> 01:11:27,750
+to all of that.
+
+1180
+01:11:28,530 --> 01:11:30,810
+Audrow Nash: Hmm, tell me a bit
+more about that. That seems very
+
+1181
+01:11:30,810 --> 01:11:31,350
+interesting.
+
+1182
+01:11:31,800 --> 01:11:34,860
+Christian Fritz: Well, I I just
+think that if you if you want to
+
+1183
+01:11:34,920 --> 01:11:37,920
+be if you want to establish
+yourself as the framework that
+
+1184
+01:11:37,920 --> 01:11:43,470
+everybody develops, on,
+contributes toward contributes
+
+1185
+01:11:43,470 --> 01:11:48,690
+to your store, and I'll use the
+Android example. Right? Then
+
+1186
+01:11:48,720 --> 01:11:53,640
+then being open is really what
+you is really the best thing
+
+1187
+01:11:53,640 --> 01:11:56,100
+that you can do, because you're
+you're going to benefit in the
+
+1188
+01:11:56,100 --> 01:11:59,220
+long term from people being on
+your platform, if you will find
+
+1189
+01:11:59,220 --> 01:12:03,990
+ways to pay your bills like
+that. I like this quote from
+
+1190
+01:12:03,990 --> 01:12:07,740
+Eric Schmidt, when he was still
+the CEO of Google, they asked
+
+1191
+01:12:07,740 --> 01:12:11,940
+him back in the day they asked
+him, so Eric, how are you ever
+
+1192
+01:12:11,940 --> 01:12:16,290
+going to make money from
+Android? And he said, In five
+
+1193
+01:12:16,290 --> 01:12:20,400
+years, there's going to be 1.8
+billion users using Android.
+
+1194
+01:12:21,060 --> 01:12:26,130
+We'll figure it out. I think was
+brilliant. And of course, he
+
+1195
+01:12:26,130 --> 01:12:29,280
+wasn't the first Microsoft
+obviously, famously gave away MS
+
+1196
+01:12:29,280 --> 01:12:32,490
+DOS for free at a time when
+others were charging for the
+
+1197
+01:12:32,490 --> 01:12:35,520
+operating systems. And we all
+know what that did, right?
+
+1198
+01:12:35,520 --> 01:12:38,760
+People started installing MS DOS
+on their phones, just like
+
+1199
+01:12:38,760 --> 01:12:41,640
+Android was free, right, and
+they installed Android. And now
+
+1200
+01:12:41,640 --> 01:12:45,570
+there's a big market for for
+Android applications. And so
+
+1201
+01:12:45,570 --> 01:12:48,630
+that can be that can be
+monetized. And that's, and I
+
+1202
+01:12:48,630 --> 01:12:51,630
+don't say monetize in the sense
+of, you know, really making as
+
+1203
+01:12:51,630 --> 01:12:54,390
+much money as possible. It's
+more about making enough money
+
+1204
+01:12:54,390 --> 01:12:58,080
+to do a good service and to keep
+running and to make sure that it
+
+1205
+01:12:58,080 --> 01:13:01,680
+is serving everybody involved in
+the best flip.
+
+1206
+01:13:02,220 --> 01:13:05,610
+Audrow Nash: Yeah, you can
+invest it back into it. And it's
+
+1207
+01:13:05,610 --> 01:13:10,980
+basically more ability to make a
+larger impact in the future. And
+
+1208
+01:13:10,980 --> 01:13:14,700
+then you just, I don't know,
+event like that, that seems
+
+1209
+01:13:14,700 --> 01:13:18,300
+Excellent. That is a good model,
+it's interesting to consider the
+
+1210
+01:13:18,300 --> 01:13:22,140
+network effect I had been
+previously thinking of, kind of
+
+1211
+01:13:22,140 --> 01:13:25,620
+like a zero replication cost as
+the way to get towards
+
+1212
+01:13:25,620 --> 01:13:28,980
+exponential growth, which is
+like, I don't know, coding is a
+
+1213
+01:13:28,980 --> 01:13:31,170
+good example. you code it once,
+and then you can use it
+
+1214
+01:13:31,170 --> 01:13:36,750
+anywhere. But network effects
+seems like a very good thing to
+
+1215
+01:13:36,750 --> 01:13:38,850
+think about, especially when
+thinking about like a
+
+1216
+01:13:38,850 --> 01:13:42,030
+marketplace, and this kind of
+thing, because as you get more
+
+1217
+01:13:42,030 --> 01:13:46,020
+products on there, it becomes
+more valuable. So the n plus
+
+1218
+01:13:46,020 --> 01:13:48,060
+one, as you're saying more
+valuable than all the previous
+
+1219
+01:13:48,060 --> 01:13:49,650
+people, venture
+
+1220
+01:13:49,650 --> 01:13:51,930
+Christian Fritz: capitalists,
+especially in the SAS world,
+
+1221
+01:13:52,320 --> 01:13:55,620
+look at one ratio more than any
+more than one software
+
+1222
+01:13:55,620 --> 01:13:57,810
+Audrow Nash: as a service,
+right? That Software as a
+
+1223
+01:13:57,810 --> 01:13:58,530
+Service, yes.
+
+1224
+01:13:59,700 --> 01:14:01,710
+Christian Fritz: They look at
+one ratio more more than
+
+1225
+01:14:01,710 --> 01:14:05,040
+anything else and that is the
+lifetime value of the customer
+
+1226
+01:14:05,070 --> 01:14:10,560
+over the customer acquisition
+cost. And they mostly because
+
+1227
+01:14:10,590 --> 01:14:13,380
+they know that the customer
+acquisition cost at first is
+
+1228
+01:14:13,380 --> 01:14:18,060
+tremendously high. They are
+totally fine or they almost
+
+1229
+01:14:18,060 --> 01:14:20,850
+expect you to spend three
+quarters of all of the money
+
+1230
+01:14:20,850 --> 01:14:23,880
+that they will invest in you on
+customer acquisition which
+
+1231
+01:14:23,880 --> 01:14:27,690
+sounds mind boggling at first,
+right? What you spent so much
+
+1232
+01:14:27,690 --> 01:14:30,450
+money just to get users why
+don't they get that at work?
+
+1233
+01:14:30,510 --> 01:14:34,680
+That's what Yeah, but it that's
+why these these network effects
+
+1234
+01:14:34,710 --> 01:14:38,040
+are so valuable from a growth
+perspective because it becomes
+
+1235
+01:14:38,040 --> 01:14:41,520
+cheaper and cheaper to acquire
+new users Facebook when you when
+
+1236
+01:14:41,520 --> 01:14:44,190
+you think back until not too
+long ago, they'd never
+
+1237
+01:14:44,190 --> 01:14:47,580
+advertised anything. It was all
+word of mouth and and of course
+
+1238
+01:14:47,580 --> 01:14:50,460
+it was because if I'm on
+Facebook, I will actively
+
+1239
+01:14:50,460 --> 01:14:53,610
+recruit my friends to come to
+Facebook because hey, I don't
+
+1240
+01:14:53,610 --> 01:14:58,050
+want to share my photos both in
+email. And then also on Facebook
+
+1241
+01:14:58,050 --> 01:15:00,420
+and also I want to know what's
+what's going on. Your Life,
+
+1242
+01:15:00,420 --> 01:15:05,160
+right? I would love to see that.
+And so friends, you know, are
+
+1243
+01:15:05,160 --> 01:15:08,040
+intrinsically motivated to
+recruit friends or it doesn't
+
+1244
+01:15:08,040 --> 01:15:10,440
+have to be friends, it can be
+developers, colleagues and
+
+1245
+01:15:10,440 --> 01:15:14,070
+whatnot, then there's a real
+good chance that things will
+
+1246
+01:15:14,070 --> 01:15:21,630
+grow. And so I think for that
+there's this concept of giving
+
+1247
+01:15:21,630 --> 01:15:24,780
+back in substances is important,
+right? If I'm a developer on
+
+1248
+01:15:24,780 --> 01:15:29,160
+transitive, I will be recruiting
+people to use it right? I will
+
+1249
+01:15:29,160 --> 01:15:32,610
+advertise the fact that I've I
+published something called
+
+1250
+01:15:32,610 --> 01:15:36,180
+transitive. Sure, the focus will
+be on what I've published. But
+
+1251
+01:15:36,180 --> 01:15:39,420
+in the process, I will still be
+advertising the platform as
+
+1252
+01:15:39,420 --> 01:15:43,050
+well. And then people may go,
+oh, yeah, I've been consuming
+
+1253
+01:15:43,110 --> 01:15:45,600
+capabilities through transit,
+CIF, and we have developed this
+
+1254
+01:15:45,600 --> 01:15:49,980
+cool, new, whatever it is map
+display map editing tool for for
+
+1255
+01:15:49,980 --> 01:15:52,410
+robotics, we could we could
+publish that back as well.
+
+1256
+01:15:55,200 --> 01:15:57,870
+Audrow Nash: What do you think
+will be so kind of going from
+
+1257
+01:15:57,870 --> 01:16:02,190
+where you are to starting a
+marketplace of different
+
+1258
+01:16:02,190 --> 01:16:06,150
+capabilities? What do you
+imagine? Like, how will you get
+
+1259
+01:16:06,150 --> 01:16:09,810
+from here to marketplace? Yeah,
+what are how are you thinking to
+
+1260
+01:16:09,810 --> 01:16:10,350
+proceed.
+
+1261
+01:16:10,500 --> 01:16:13,320
+Christian Fritz: So marketplace
+is, of course, the longer term
+
+1262
+01:16:13,350 --> 01:16:16,260
+vision and aspiration as you
+can, you can't even build a
+
+1263
+01:16:16,260 --> 01:16:20,340
+platform from from day one, you
+have to go vertical to
+
+1264
+01:16:20,340 --> 01:16:24,120
+horizontal, you have to have
+something that where your early
+
+1265
+01:16:24,120 --> 01:16:28,440
+users will get some real value
+out right away, before they even
+
+1266
+01:16:28,440 --> 01:16:30,450
+recognize that there's a
+platform and that they can do
+
+1267
+01:16:30,450 --> 01:16:33,480
+more things. So that's why we we
+will develop certain
+
+1268
+01:16:33,480 --> 01:16:36,030
+capabilities ourselves. And on
+our website, we already have
+
+1269
+01:16:36,030 --> 01:16:40,050
+three that you can people can
+use right away. And ease of
+
+1270
+01:16:40,050 --> 01:16:42,510
+getting started, I think it's
+really important there. So if
+
+1271
+01:16:42,510 --> 01:16:46,950
+people are totally within 30
+seconds, have can have a remote
+
+1272
+01:16:46,950 --> 01:16:51,240
+video streaming capability,
+which they previously thought
+
+1273
+01:16:51,240 --> 01:16:53,700
+would take them months to build.
+That's a great experience. And I
+
+1274
+01:16:53,700 --> 01:16:56,940
+think that's something that we
+can market and start growing up.
+
+1275
+01:16:59,280 --> 01:17:04,320
+This is actually again, going
+back to Facebook, not not very
+
+1276
+01:17:04,320 --> 01:17:07,290
+different from the way that they
+got started. If you if you may
+
+1277
+01:17:07,290 --> 01:17:11,700
+remember, they were first just
+an application for students at
+
+1278
+01:17:11,700 --> 01:17:15,510
+Harvard, right. And then for a
+while they were just for college
+
+1279
+01:17:15,510 --> 01:17:18,960
+students. And then they brought
+out like that. And it's it's a
+
+1280
+01:17:18,960 --> 01:17:21,450
+nice model, because when you
+think about it, first, you
+
+1281
+01:17:21,450 --> 01:17:25,170
+basically conquer a small part.
+But you try to get to something
+
+1282
+01:17:25,170 --> 01:17:29,580
+like 90% users, like 90% of the
+people are in that pond use it.
+
+1283
+01:17:29,880 --> 01:17:32,190
+And of course, at that point,
+okay, you've convinced yourself
+
+1284
+01:17:32,190 --> 01:17:34,170
+that first of all, young people
+want that second of all, the
+
+1285
+01:17:34,170 --> 01:17:37,470
+network effect works. And these
+people have friends outside of
+
+1286
+01:17:37,470 --> 01:17:39,930
+Harvard, right? So they will
+talk to them, and they will,
+
+1287
+01:17:39,990 --> 01:17:42,060
+they will talk about Facebook,
+and people are like, well, I
+
+1288
+01:17:42,060 --> 01:17:45,780
+can't use it yet. But that so
+that creates some some, some
+
+1289
+01:17:45,780 --> 01:17:48,840
+sense of desire. And I think
+that's, that's really the model
+
+1290
+01:17:48,840 --> 01:17:52,050
+of vertical to horizontal, you
+want to start with something
+
+1291
+01:17:52,050 --> 01:17:55,410
+that is very small, where you
+get a lot of value for
+
+1292
+01:17:55,410 --> 01:17:59,880
+potentially a very small market
+at first. But I have absolutely
+
+1293
+01:17:59,910 --> 01:18:02,070
+absolutely no doubt about the
+fact that
+
+1294
+01:18:02,100 --> 01:18:05,550
+Audrow Nash: they are how great
+it is. Yeah. How do you how do
+
+1295
+01:18:05,550 --> 01:18:09,300
+you think you'll get your first
+Harvard or whatever, in the
+
+1296
+01:18:09,300 --> 01:18:12,990
+robotics community? Is it the
+video streaming app that people
+
+1297
+01:18:12,990 --> 01:18:16,710
+will be using? Or where do you?
+Or is it sunset of the Ross
+
+1298
+01:18:16,710 --> 01:18:18,150
+community? Or what do you think?
+
+1299
+01:18:18,420 --> 01:18:20,100
+Christian Fritz: So we
+definitely target the rust
+
+1300
+01:18:20,100 --> 01:18:25,320
+community right now. And
+especially specifically, we're
+
+1301
+01:18:25,320 --> 01:18:28,050
+actually targeting the rust one
+community, which may surprise
+
+1302
+01:18:28,050 --> 01:18:31,470
+some of your listeners. It's
+gonna ask you both want to rush
+
+1303
+01:18:31,470 --> 01:18:34,380
+through? Yeah. So right now
+we're focusing on rust one. And
+
+1304
+01:18:34,380 --> 01:18:39,150
+that's for a very simple reason.
+From us pyramids, everybody who
+
+1305
+01:18:39,150 --> 01:18:43,350
+has an actual fleet of robots
+out there that grows up using
+
+1306
+01:18:43,350 --> 01:18:46,920
+Ross one, and I wish it was
+different, because I think Ross
+
+1307
+01:18:46,920 --> 01:18:52,380
+two has some has some really
+nice features. But until not too
+
+1308
+01:18:52,380 --> 01:18:55,500
+long ago, it wasn't necessarily
+perceived as really ready for
+
+1309
+01:18:55,500 --> 01:18:58,830
+primetime if we've seen all of
+those discussions on this course
+
+1310
+01:18:58,830 --> 01:19:03,090
+and elsewhere. So the vast
+majority of robots out there
+
+1311
+01:19:03,090 --> 01:19:06,570
+still using Ross one. And so
+breaking into that would be sort
+
+1312
+01:19:06,570 --> 01:19:11,070
+of the first step. The platform
+that we built is not specific to
+
+1313
+01:19:11,100 --> 01:19:14,070
+Ross to or Ross one that the
+capabilities that you will build
+
+1314
+01:19:14,130 --> 01:19:18,360
+are. And then in terms of which
+capabilities to focus on. Yeah,
+
+1315
+01:19:18,390 --> 01:19:21,420
+I think low latency video
+streaming and remote tailor some
+
+1316
+01:19:21,420 --> 01:19:25,020
+very good ones to get started
+with, we know from from from
+
+1317
+01:19:25,020 --> 01:19:27,960
+some of the existing offerings,
+that's also some of the most
+
+1318
+01:19:27,990 --> 01:19:33,360
+popular features. In fact, there
+are now companies like Dr. Yu
+
+1319
+01:19:33,390 --> 01:19:39,330
+and Fenton auto, that offer
+specific remote control
+
+1320
+01:19:39,330 --> 01:19:43,230
+capabilities for originally self
+driving cars, but now they are
+
+1321
+01:19:43,230 --> 01:19:47,190
+doing a lot of business with
+auto delivery robots. So there
+
+1322
+01:19:47,190 --> 01:19:51,360
+is a there's an absolute need
+there. And so I think that's a
+
+1323
+01:19:51,390 --> 01:19:54,330
+that's a good way to get
+started. Mm hmm.
+
+1324
+01:19:56,100 --> 01:20:04,410
+Audrow Nash: See, is there Well,
+I guess, do you? How do you
+
+1325
+01:20:04,410 --> 01:20:06,900
+imagine your team will grow over
+time?
+
+1326
+01:20:09,120 --> 01:20:10,920
+Christian Fritz: I mean, this
+is, of course, a little bit of a
+
+1327
+01:20:11,280 --> 01:20:15,630
+chicken and egg question. But we
+have to first get some traction
+
+1328
+01:20:15,630 --> 01:20:18,570
+so we can hire and then we can
+get a team. But of course, in
+
+1329
+01:20:18,570 --> 01:20:20,760
+order to high end, people may
+also want to know about that
+
+1330
+01:20:20,760 --> 01:20:27,330
+strategy at 70 of my entire team
+was remote. Which, at first, I
+
+1331
+01:20:27,330 --> 01:20:30,030
+thought is not possible for a
+robotics company, because we're
+
+1332
+01:20:30,030 --> 01:20:33,180
+dealing with hardware, right?
+How can I do that remotely, but
+
+1333
+01:20:33,390 --> 01:20:36,510
+I learned there that it is
+absolutely possible. And it has
+
+1334
+01:20:36,510 --> 01:20:42,330
+some real big benefits, like on
+so many levels, like, for one,
+
+1335
+01:20:42,360 --> 01:20:46,170
+you can tap into a much broader
+pool of talent, right? Great
+
+1336
+01:20:46,170 --> 01:20:49,710
+developers all around the world,
+not just in Silicon Valley.
+
+1337
+01:20:51,480 --> 01:20:54,540
+They, it also solves another
+problem that we have here in
+
+1338
+01:20:54,540 --> 01:20:57,720
+Silicon Valley, there's housing
+is insanely expensive, because
+
+1339
+01:20:57,720 --> 01:21:03,360
+everybody had water, if we can
+work remotely. We don't need to
+
+1340
+01:21:03,360 --> 01:21:07,530
+make this housing market here.
+Any works? I know. And, and
+
+1341
+01:21:07,560 --> 01:21:11,790
+yeah, so I'm a big believer in
+hiring remotely. We have worked
+
+1342
+01:21:11,790 --> 01:21:16,320
+in the past with people. I had
+people on my team from Germany,
+
+1343
+01:21:16,320 --> 01:21:21,540
+France, Spain, Argentina,
+several places in the US, one of
+
+1344
+01:21:21,540 --> 01:21:25,290
+my employees actually was
+driving his RV, through through
+
+1345
+01:21:25,290 --> 01:21:28,620
+the country almost every minute
+started by asking where are you
+
+1346
+01:21:28,620 --> 01:21:32,340
+today? And sometimes he had to
+apologize, because there was not
+
+1347
+01:21:32,340 --> 01:21:35,130
+enough sun to use the solar
+panels to charge this batteries.
+
+1348
+01:21:35,130 --> 01:21:40,350
+But that happened very rarely.
+But it worked. And I thought it
+
+1349
+01:21:40,350 --> 01:21:43,380
+was it really added to the
+diversity of the kind of
+
+1350
+01:21:43,380 --> 01:21:46,440
+perspective of the team. So I
+want to follow that same model
+
+1351
+01:21:46,470 --> 01:21:50,190
+and focus on like, build a
+remote first kind of company.
+
+1352
+01:21:52,080 --> 01:21:54,510
+Audrow Nash: Yeah, that seems
+super cool. What are some of the
+
+1353
+01:21:54,540 --> 01:21:57,630
+because you, you seem to like
+you've been implementing
+
+1354
+01:21:57,630 --> 01:22:02,490
+everything. So I imagine, like,
+I'm wondering what what will the
+
+1355
+01:22:02,490 --> 01:22:06,420
+first people? What will their
+roles be? Do you think as you
+
+1356
+01:22:06,420 --> 01:22:09,840
+start to grow, or as you start
+to have more interest and
+
+1357
+01:22:09,840 --> 01:22:13,200
+investment, and then have the
+ability to hire some people?
+
+1358
+01:22:13,260 --> 01:22:15,840
+Where do you think you'll start,
+I think
+
+1359
+01:22:15,840 --> 01:22:17,940
+Christian Fritz: we will be
+hiring mostly on the engineering
+
+1360
+01:22:17,940 --> 01:22:22,830
+side. And I will be handing off
+more and more to my team and
+
+1361
+01:22:22,830 --> 01:22:26,820
+focus more on the on the
+leadership in sort of external
+
+1362
+01:22:26,820 --> 01:22:32,550
+facing requirements. I also
+before law, will hire a product
+
+1363
+01:22:32,550 --> 01:22:36,960
+manager. Because I think it is
+actually really important to to
+
+1364
+01:22:36,960 --> 01:22:40,410
+really feel customers out and
+understand what what pain points
+
+1365
+01:22:40,410 --> 01:22:44,250
+they have and how we are
+addressing them. And I'm also
+
+1366
+01:22:44,250 --> 01:22:47,850
+just going by things that I know
+myself, I'm not very good at.
+
+1367
+01:22:48,600 --> 01:22:51,900
+That's perhaps the best advice
+that ever got for hiring to try
+
+1368
+01:22:51,900 --> 01:22:54,780
+to hire somebody is when you can
+find somebody who can do that
+
+1369
+01:22:54,780 --> 01:22:59,070
+role better than you. Not before
+that. They're not after it's not
+
+1370
+01:22:59,130 --> 01:23:02,430
+it's sometimes people think of
+oh, I'm too overburdened, I
+
+1371
+01:23:02,430 --> 01:23:04,560
+should hire somebody to do these
+things. But if you then don't
+
+1372
+01:23:04,560 --> 01:23:07,890
+find somebody who you really
+trust to do it better than you,
+
+1373
+01:23:08,220 --> 01:23:11,580
+it's too early to hire because
+you will be questioning them and
+
+1374
+01:23:11,580 --> 01:23:15,210
+to have micromanaging that that
+will not make anybody happy. So
+
+1375
+01:23:15,240 --> 01:23:18,840
+a lot of it will have to do also
+with finding the right people at
+
+1376
+01:23:18,840 --> 01:23:21,540
+the right time it filling in
+until then then yourself which
+
+1377
+01:23:21,540 --> 01:23:25,470
+again is is fine. Well, you're
+bootstrapping. And then once
+
+1378
+01:23:25,470 --> 01:23:28,380
+we've once we've raised money,
+it will be there will be a
+
+1379
+01:23:28,380 --> 01:23:31,020
+slightly different question. But
+that will still to the to the
+
+1380
+01:23:31,020 --> 01:23:32,400
+extent possible people model
+
+1381
+01:23:33,360 --> 01:23:35,970
+Audrow Nash: chacha, I really
+like that model. It's
+
+1382
+01:23:35,970 --> 01:23:39,420
+interesting, because I mean, you
+think if you hire someone, and
+
+1383
+01:23:39,480 --> 01:23:42,240
+like it is to take weight off
+your shoulders, if you're trying
+
+1384
+01:23:42,240 --> 01:23:45,390
+to do everything. But then if
+you don't trust them to do the
+
+1385
+01:23:45,390 --> 01:23:49,140
+work well, then it's like, well,
+now you're micromanaging. And
+
+1386
+01:23:49,140 --> 01:23:52,440
+now you have that job still
+through micromanaging. In a
+
+1387
+01:23:52,440 --> 01:23:52,980
+sense,
+
+1388
+01:23:53,280 --> 01:23:54,990
+Christian Fritz: I think it goes
+back to the question of
+
+1389
+01:23:54,990 --> 01:23:59,730
+accountability versus reliable,
+being responsible. And I think
+
+1390
+01:23:59,730 --> 01:24:03,780
+at the end, what you need us,
+people who distribute on to whom
+
+1391
+01:24:03,780 --> 01:24:06,330
+you can distribute the
+accountability, people who you
+
+1392
+01:24:06,330 --> 01:24:10,650
+can rely on being accountable
+for something happening and
+
+1393
+01:24:10,650 --> 01:24:15,060
+having that attitude to say,
+like, well, maybe I wasn't
+
+1394
+01:24:15,090 --> 01:24:17,820
+supposed to be working on this,
+maybe it was somebody on my
+
+1395
+01:24:17,820 --> 01:24:20,610
+team, but it's not there, I'm
+going to fix it, right. That's
+
+1396
+01:24:20,880 --> 01:24:25,020
+kind of the attitude that we
+need. I've seen this in
+
+1397
+01:24:25,020 --> 01:24:31,740
+engineering teams a lot like
+sometimes the the, the amount of
+
+1398
+01:24:31,740 --> 01:24:34,470
+features that you need to
+implement, you just have too
+
+1399
+01:24:34,470 --> 01:24:37,740
+many features or too much code
+for the size of your team. There
+
+1400
+01:24:37,800 --> 01:24:43,560
+needs to be I always think of
+attempt with tentacles. That way
+
+1401
+01:24:43,590 --> 01:24:46,080
+if you have two or three
+temples, you can cover a lot of
+
+1402
+01:24:46,080 --> 01:24:49,710
+ground just by you know spending
+something over but some but at
+
+1403
+01:24:49,710 --> 01:24:53,100
+certain points you have to hold
+up the tent. You cannot with one
+
+1404
+01:24:53,100 --> 01:24:58,620
+temple cover a lot, a lot of
+area because they cannot look
+
+1405
+01:24:58,620 --> 01:25:03,420
+there or the explanation There's
+what the amount of code that you
+
+1406
+01:25:03,420 --> 01:25:06,690
+are responsible for, as a
+developer, it cannot be
+
+1407
+01:25:06,690 --> 01:25:11,130
+infinitely not a one developer
+can be responsible for 100,000
+
+1408
+01:25:11,130 --> 01:25:13,950
+lines of code, a good rule of
+thumb that I have is between
+
+1409
+01:25:13,950 --> 01:25:17,430
+10,020 1000 lines of code per
+developer is a good number.
+
+1410
+01:25:18,480 --> 01:25:21,660
+Beyond that, you will just not
+be very effective. Because if
+
+1411
+01:25:21,660 --> 01:25:24,720
+every time you switch tasks, you
+have to re familiarize yourself
+
+1412
+01:25:24,720 --> 01:25:27,690
+with the code that you're
+dabbling in, then you are in
+
+1413
+01:25:27,690 --> 01:25:33,420
+trouble. Right. And so having
+that getting that ratio down, is
+
+1414
+01:25:33,480 --> 01:25:34,470
+it's quite important, I
+
+1415
+01:25:34,470 --> 01:25:37,110
+Audrow Nash: think. Gotcha. Do
+you think that's kind of the way
+
+1416
+01:25:37,110 --> 01:25:41,580
+to proceed? Where you have
+people in a sense specialize on
+
+1417
+01:25:41,580 --> 01:25:46,560
+specific spots of the code. So
+10 to 20,000 lines per person
+
+1418
+01:25:46,560 --> 01:25:49,440
+where they kind of like, divvy
+it up? Yeah, each person has
+
+1419
+01:25:49,440 --> 01:25:51,210
+like a little silo? In a sense.
+
+1420
+01:25:51,510 --> 01:25:53,460
+Christian Fritz: Yeah, I think
+so. And I think with our
+
+1421
+01:25:53,460 --> 01:25:56,520
+architecture, in particular, it
+lends itself to that, because we
+
+1422
+01:25:56,520 --> 01:25:59,760
+have the framework itself, which
+breaks down into the components
+
+1423
+01:25:59,760 --> 01:26:03,180
+for robot cloud front end. Yeah.
+But then we also have the
+
+1424
+01:26:03,180 --> 01:26:05,850
+capabilities which are super
+important, right? I mean, they
+
+1425
+01:26:05,850 --> 01:26:10,440
+aren't, and they are by design
+standalone. So you don't, in
+
+1426
+01:26:10,440 --> 01:26:13,260
+fact, it is a good thing, if
+you're not too familiar with
+
+1427
+01:26:13,260 --> 01:26:15,810
+what's going on in the platform,
+because you're supposed to treat
+
+1428
+01:26:15,810 --> 01:26:18,750
+it like a user, like the
+documentation says, I should be
+
+1429
+01:26:18,750 --> 01:26:21,060
+doing this. And that's what I
+done, and it doesn't work. Okay.
+
+1430
+01:26:21,750 --> 01:26:24,480
+Thanks, file a ticket, but you
+don't have to fix it, I will fix
+
+1431
+01:26:24,480 --> 01:26:28,680
+it. Right. And I think that's,
+that's how we can divide it up
+
+1432
+01:26:28,710 --> 01:26:32,670
+and also find interesting ways
+of working together, right. So
+
+1433
+01:26:33,540 --> 01:26:35,970
+you know, when you're working
+with a remote team, sometimes
+
+1434
+01:26:35,970 --> 01:26:38,730
+it's preferable to have
+contractors rather than
+
+1435
+01:26:38,730 --> 01:26:42,690
+employees, people may not want
+to commit full time completely,
+
+1436
+01:26:42,690 --> 01:26:48,210
+but only part of the time. And
+so having this actually a
+
+1437
+01:26:48,210 --> 01:26:51,510
+product, which is componentize,
+like that lends itself to
+
+1438
+01:26:51,720 --> 01:26:54,690
+offering all sorts of ways to
+work to get right. If somebody
+
+1439
+01:26:55,890 --> 01:26:58,740
+wants to work half time on this,
+and really just wants to develop
+
+1440
+01:26:58,740 --> 01:27:01,740
+a specific capability but wants
+to get paid for it, rather than
+
+1441
+01:27:01,740 --> 01:27:04,590
+selling it on the marketplace
+afterwards. That's great,
+
+1442
+01:27:04,620 --> 01:27:07,860
+Audrow Nash: we'd be we'd be
+open to that. That's super cool.
+
+1443
+01:27:07,860 --> 01:27:10,320
+It's very flexible, I haven't
+thought of that kind of model,
+
+1444
+01:27:10,800 --> 01:27:14,220
+where someone can be hired as a
+contractor just for a specific
+
+1445
+01:27:14,220 --> 01:27:17,430
+thing that they want to add. But
+it's maybe too large to take on.
+
+1446
+01:27:17,430 --> 01:27:22,050
+It's like a free project or this
+kind of thing. Very cool. Yeah,
+
+1447
+01:27:22,050 --> 01:27:22,110
+I
+
+1448
+01:27:22,110 --> 01:27:25,200
+Christian Fritz: think since the
+pandemic, we have seen more and
+
+1449
+01:27:25,200 --> 01:27:29,370
+more models for how to work
+remotely. And of course, they
+
+1450
+01:27:29,370 --> 01:27:31,410
+have been even before the
+pandemic, there have been things
+
+1451
+01:27:31,410 --> 01:27:35,430
+like, I think Upwork, and Zephyr
+and take these search kinds of
+
+1452
+01:27:35,430 --> 01:27:38,880
+tools that are platforms that
+allow you to outsource some
+
+1453
+01:27:38,880 --> 01:27:43,500
+work. But I think there's a
+spectrum of you know, from being
+
+1454
+01:27:43,500 --> 01:27:47,070
+a full time employee thing to
+being an hourly contractor for a
+
+1455
+01:27:47,070 --> 01:27:49,860
+short time, there's there's a
+lot to be explored in between.
+
+1456
+01:27:49,890 --> 01:27:53,280
+And only because you're a
+contractor, for instance,
+
+1457
+01:27:53,280 --> 01:27:55,800
+doesn't mean that you can't be
+treated like an employee. I
+
+1458
+01:27:55,800 --> 01:27:59,190
+mean, it's just, to me, that's
+just the burn Pratik aspect of
+
+1459
+01:27:59,190 --> 01:28:02,130
+what's, what are you call it on
+paper, but the relationship can
+
+1460
+01:28:02,130 --> 01:28:07,200
+still be that of an employee and
+location shouldn't matter for
+
+1461
+01:28:07,200 --> 01:28:07,500
+that at
+
+1462
+01:28:07,500 --> 01:28:10,530
+Audrow Nash: all? Yeah, for
+sure. Especially I feel like
+
+1463
+01:28:10,530 --> 01:28:14,220
+with, like with programming
+tasks, I mean, we work on
+
+1464
+01:28:14,220 --> 01:28:17,640
+GitHub, you do reviews and
+things like this, it works
+
+1465
+01:28:17,640 --> 01:28:22,560
+really well, asynchronously, is
+what I'm struck by. So far,
+
+1466
+01:28:22,710 --> 01:28:23,880
+being an open robotics,
+
+1467
+01:28:24,180 --> 01:28:26,520
+Christian Fritz: it does when
+you're set up for that. One
+
+1468
+01:28:26,520 --> 01:28:29,760
+thing that I've seen, of course,
+comparing those with a lot of my
+
+1469
+01:28:29,760 --> 01:28:33,600
+friends at other companies. One
+thing that I've seen, especially
+
+1470
+01:28:33,600 --> 01:28:36,420
+with some larger companies in
+the Bay Area that frown upon
+
+1471
+01:28:36,420 --> 01:28:40,110
+remote work, and I'm not going
+to mention their name. They,
+
+1472
+01:28:40,560 --> 01:28:43,890
+they have this problem that like
+90% of the people until the
+
+1473
+01:28:43,890 --> 01:28:47,100
+pandemic were in the office. And
+so anybody who was remote felt
+
+1474
+01:28:47,100 --> 01:28:50,250
+left out, right, there were a
+lot of decisions that were being
+
+1475
+01:28:50,250 --> 01:28:53,250
+made in person meetings that
+were not documented, and so
+
+1476
+01:28:53,250 --> 01:28:56,010
+forth. And that was really hard
+for the remote team. But if you
+
+1477
+01:28:56,010 --> 01:28:59,640
+set up like a remote first
+company, and some people just
+
+1478
+01:28:59,640 --> 01:29:02,790
+happen to meet in the office,
+that's it's a completely
+
+1479
+01:29:02,790 --> 01:29:05,100
+different ballgame. Every
+decision will be made in a
+
+1480
+01:29:05,100 --> 01:29:08,880
+ticket, and everybody can chime
+in, everybody can see what the
+
+1481
+01:29:08,880 --> 01:29:12,660
+record was what led to it. And
+that has so many benefits, not
+
+1482
+01:29:12,660 --> 01:29:16,110
+just for inclusion of the remote
+team. Also just for refreshing
+
+1483
+01:29:16,110 --> 01:29:17,640
+your memory two years later is
+gonna
+
+1484
+01:29:17,640 --> 01:29:18,630
+Audrow Nash: say future you.
+
+1485
+01:29:22,170 --> 01:29:23,880
+Christian Fritz: I always think
+of it like that every time I've
+
+1486
+01:29:23,880 --> 01:29:27,690
+write documentation. I'm sure
+that I'm doing my future self a
+
+1487
+01:29:27,690 --> 01:29:28,920
+favor. Yes.
+
+1488
+01:29:30,270 --> 01:29:34,920
+Audrow Nash: For sure. Now, I
+would love to get your thought
+
+1489
+01:29:34,920 --> 01:29:39,720
+more thoughts more on web and
+robotics, kind of how you see
+
+1490
+01:29:39,840 --> 01:29:44,130
+actually starting it super
+broad. How do you think web and
+
+1491
+01:29:44,130 --> 01:29:47,520
+robotics kind of? I don't know,
+like what do you see is the
+
+1492
+01:29:47,520 --> 01:29:50,400
+relationship between the two
+like web tools and robotics?
+
+1493
+01:29:51,000 --> 01:29:54,030
+Christian Fritz: Yeah, I mean,
+obviously I'm a big believer in
+
+1494
+01:29:54,030 --> 01:29:59,730
+web tools. I actually have a
+another bootstrap company that
+
+1495
+01:29:59,730 --> 01:30:03,720
+is Based on web technology, it's
+for scientists, I've been
+
+1496
+01:30:03,720 --> 01:30:06,660
+running it since 2006. So I've
+gone through this whole process
+
+1497
+01:30:06,660 --> 01:30:12,720
+of web development and really
+learn to love it. What I'm
+
+1498
+01:30:12,720 --> 01:30:16,320
+struggling with in the robotics
+community is that there's that
+
+1499
+01:30:16,320 --> 01:30:20,100
+there's still a little bit of a
+divide there sort of a, I
+
+1500
+01:30:20,100 --> 01:30:24,030
+sometimes call it the group of
+believers, and those who who
+
+1501
+01:30:24,030 --> 01:30:31,830
+don't yet believe in web
+technology, the tools I love
+
+1502
+01:30:31,830 --> 01:30:37,710
+Ross, but some of the UIs like
+Qt, it's not, it's not up to
+
+1503
+01:30:37,710 --> 01:30:41,850
+snuff these days anymore. It's
+not, it's not developing as fast
+
+1504
+01:30:41,850 --> 01:30:47,130
+as web technologies, it's not as
+accessible. The benefits of web
+
+1505
+01:30:47,130 --> 01:30:49,830
+technology, the perhaps the
+biggest benefit of web
+
+1506
+01:30:49,830 --> 01:30:53,010
+technology is that everybody
+immediately has access, because
+
+1507
+01:30:53,010 --> 01:30:56,250
+they have a web browser on any
+device that they have, like the
+
+1508
+01:30:56,250 --> 01:31:01,320
+desktop portable, and Linux,
+Windows, Mac, iOS, some people,
+
+1509
+01:31:01,380 --> 01:31:04,200
+I think, still run always to
+whatever you want, right? I
+
+1510
+01:31:04,200 --> 01:31:07,110
+think I have it on your phone,
+you will have access, you don't
+
+1511
+01:31:07,110 --> 01:31:10,320
+need to run Linux to visualize
+something, for instance. So I
+
+1512
+01:31:10,320 --> 01:31:15,060
+think that by itself is perhaps
+one of the biggest benefits. And
+
+1513
+01:31:15,120 --> 01:31:20,400
+it kind of enables a broader
+group of users to write side
+
+1514
+01:31:20,460 --> 01:31:24,150
+adservio, we had a very
+important part of the company
+
+1515
+01:31:24,150 --> 01:31:27,600
+was field ops, because of
+course, it's 70, we were running
+
+1516
+01:31:27,600 --> 01:31:30,450
+robotics as a service. So we
+were on the hook for making sure
+
+1517
+01:31:30,450 --> 01:31:32,700
+that our robots work in the
+field. And if there was a
+
+1518
+01:31:32,700 --> 01:31:35,640
+problem, we wouldn't just, you
+know, it wasn't our customers
+
+1519
+01:31:35,640 --> 01:31:38,850
+problem was our problem, we
+would fix it, and suddenly turn
+
+1520
+01:31:38,850 --> 01:31:42,390
+into robots, triaging, and so
+forth. That was a that was a big
+
+1521
+01:31:42,390 --> 01:31:45,780
+part of what we did. But we
+didn't want to have engineers to
+
+1522
+01:31:45,810 --> 01:31:48,390
+have that because engineers were
+busy writing, you know,
+
+1523
+01:31:48,390 --> 01:31:51,780
+improving the software. So we
+have this role of field ops
+
+1524
+01:31:51,780 --> 01:31:56,700
+engineers. And they may not know
+much about Ross nor nor do you
+
+1525
+01:31:56,700 --> 01:31:59,130
+want to train them, because that
+would be a real big limiting
+
+1526
+01:31:59,130 --> 01:32:02,910
+factor for hiring. So being able
+to give them tools that they
+
+1527
+01:32:02,910 --> 01:32:08,520
+know how to use really enables
+them, it lowers your cost, makes
+
+1528
+01:32:08,550 --> 01:32:12,960
+makes everything easier. And so
+there's a lot of a lot of good
+
+1529
+01:32:12,960 --> 01:32:17,730
+reasons, I think, like that for
+for web technologies. And now I
+
+1530
+01:32:17,730 --> 01:32:21,000
+think what we need to do is
+collectively build the tools to
+
+1531
+01:32:21,000 --> 01:32:25,170
+make exactly that development
+easier. You and I meet on the on
+
+1532
+01:32:25,170 --> 01:32:28,290
+the Ross web tools are working
+group every two weeks, and
+
+1533
+01:32:28,290 --> 01:32:30,990
+there's a group of others,
+especially the folks on
+
+1534
+01:32:30,990 --> 01:32:33,990
+foxglove. We're very active on
+that. And I think it's great
+
+1535
+01:32:34,830 --> 01:32:37,350
+that there's all of these
+contributions being made. And I
+
+1536
+01:32:37,350 --> 01:32:40,050
+think that's how we fit in with
+transitive as well, like being
+
+1537
+01:32:40,080 --> 01:32:45,660
+able to offer a piece of the
+puzzle that helps with with data
+
+1538
+01:32:45,690 --> 01:32:49,980
+synchronization across devices
+and remote, remote robots,
+
+1539
+01:32:51,480 --> 01:32:55,830
+hopefully will contribute to the
+to this open source, web
+
+1540
+01:32:55,860 --> 01:32:59,610
+technology ecosystem, that we
+can all kind of build the
+
+1541
+01:32:59,610 --> 01:33:00,120
+future.
+
+1542
+01:33:02,130 --> 01:33:05,370
+Audrow Nash: Do you this, this
+might be a crazy question. But
+
+1543
+01:33:05,370 --> 01:33:09,360
+do you ever see web technologies
+on the back end? Or robotic
+
+1544
+01:33:09,360 --> 01:33:12,930
+navigation? So like, maybe like
+a Ross client library and
+
+1545
+01:33:12,930 --> 01:33:15,090
+TypeScript or something like
+that? Do you think there's a
+
+1546
+01:33:15,090 --> 01:33:15,870
+place for this?
+
+1547
+01:33:15,990 --> 01:33:18,990
+Christian Fritz: Oh, absolutely.
+I guess I should mention that
+
+1548
+01:33:18,990 --> 01:33:22,920
+I'm one of the contributors of
+rational js, which is, you know,
+
+1549
+01:33:22,920 --> 01:33:30,240
+just like raw CPP, or Ross pi is
+a native binding for for Ross.
+
+1550
+01:33:30,810 --> 01:33:34,920
+So it speaks Ross, it just makes
+TCP connections to all of the
+
+1551
+01:33:34,920 --> 01:33:37,500
+other Ross nodes. But it's
+written in Node J. S. It's a
+
+1552
+01:33:37,500 --> 01:33:43,530
+it's a native implementation.
+And, yeah, I mean, I personally
+
+1553
+01:33:43,530 --> 01:33:48,090
+use it a lot, right? It's
+certainly not as fast as C++, if
+
+1554
+01:33:48,090 --> 01:33:51,510
+you have something that really
+requires high performance, like
+
+1555
+01:33:51,540 --> 01:33:54,930
+I wouldn't necessarily use it
+for point cloud transformation.
+
+1556
+01:33:55,530 --> 01:33:58,530
+But yeah, if you want to put
+something together quickly, it's
+
+1557
+01:33:58,530 --> 01:34:02,220
+similar. It really, I think
+scratches is similar as where
+
+1558
+01:34:02,220 --> 01:34:05,910
+you would use Python. Because
+you can write it very quickly.
+
+1559
+01:34:06,600 --> 01:34:09,390
+You can test it very easily
+because it has an interpreter.
+
+1560
+01:34:10,410 --> 01:34:12,750
+And yeah, so for sure. I mean,
+they are and there are others,
+
+1561
+01:34:12,750 --> 01:34:15,510
+right. There's Ross no Chase,
+which was originally started by
+
+1562
+01:34:15,510 --> 01:34:19,020
+Brendan Alexander and at Willow
+Garage. He later became the CEO
+
+1563
+01:34:19,020 --> 01:34:22,560
+of, of iron oxen. He was too
+busy to maintain it. I took it
+
+1564
+01:34:22,560 --> 01:34:25,200
+over at one point and around the
+same time, the folks that
+
+1565
+01:34:25,200 --> 01:34:29,100
+Rethink Robotics started to
+rewrite it. So the current
+
+1566
+01:34:29,100 --> 01:34:34,020
+version of Ross no chases based
+on on what Christmas, everything
+
+1567
+01:34:34,050 --> 01:34:38,280
+developed. And there's
+alternatives. There's similar
+
+1568
+01:34:38,280 --> 01:34:41,970
+libraries for Ross too, as well.
+I don't know I don't think it's
+
+1569
+01:34:41,970 --> 01:34:44,850
+crazy at all. I think it's a
+it's a fine language to develop
+
+1570
+01:34:44,850 --> 01:34:48,930
+in. It's very quick to develop
+in that and it's very, it has
+
+1571
+01:34:48,930 --> 01:34:52,590
+this very nice ecosystem that
+allows you to share very quickly
+
+1572
+01:34:56,580 --> 01:35:01,650
+Audrow Nash: see, so, where do
+you think robotics We'll be more
+
+1573
+01:35:01,650 --> 01:35:05,310
+generally in like, where do you
+see us going as a robotics
+
+1574
+01:35:05,310 --> 01:35:07,980
+community in the next, say, two
+to five years?
+
+1575
+01:35:09,630 --> 01:35:11,460
+Christian Fritz: Now, that's an
+interesting question. I don't I
+
+1576
+01:35:11,460 --> 01:35:14,250
+don't spend too much time
+thinking about that. But I guess
+
+1577
+01:35:14,250 --> 01:35:17,640
+I can extrapolate a little bit
+from my, from my view of the
+
+1578
+01:35:17,640 --> 01:35:24,210
+robotics, the startups in the
+space right now. Which I looked
+
+1579
+01:35:24,210 --> 01:35:29,160
+at very carefully after, after,
+after leaving Savio, Goodwin,
+
+1580
+01:35:29,370 --> 01:35:32,640
+wondering what to do next. One
+thing that struck me, of course
+
+1581
+01:35:32,640 --> 01:35:38,100
+was, and this shouldn't be too
+surprising, but I still think
+
+1582
+01:35:38,100 --> 01:35:40,740
+it's worth mentioning the
+successful robotic startups are
+
+1583
+01:35:40,740 --> 01:35:44,910
+the ones that find a problem
+worth solving first, and then
+
+1584
+01:35:44,910 --> 01:35:47,310
+convince themselves that
+robotics is the best way to
+
+1585
+01:35:47,310 --> 01:35:52,530
+solve it. And that's, which is
+honestly not happy. That's not
+
+1586
+01:35:52,530 --> 01:35:56,460
+always been the case. Right? In
+the past. There were a lot of
+
+1587
+01:35:56,460 --> 01:35:59,400
+robotics companies that that
+were trying to solve that hammer
+
+1588
+01:35:59,400 --> 01:36:03,240
+nail problem of we have a robot,
+but can we use for what to do
+
+1589
+01:36:03,240 --> 01:36:06,270
+with it? And so I'm very excited
+about this new model. And I
+
+1590
+01:36:06,270 --> 01:36:09,450
+think that's actually what's
+behind it. Again, not too
+
+1591
+01:36:09,450 --> 01:36:12,720
+surprisingly, behind the success
+of so many new robotics
+
+1592
+01:36:12,720 --> 01:36:17,190
+companies in so many different
+spaces. I mean, even just, what
+
+1593
+01:36:17,190 --> 01:36:20,970
+is it like eight years ago, they
+were they were all that many
+
+1594
+01:36:20,970 --> 01:36:23,610
+applications of robotics,
+outside of, you know, car
+
+1595
+01:36:23,610 --> 01:36:26,850
+manufacturing. And then at the
+time, that was roughly the time
+
+1596
+01:36:26,850 --> 01:36:29,370
+when the Kiva acquisition
+happened. So we were aware of
+
+1597
+01:36:29,370 --> 01:36:31,830
+the warehouse robots, which
+still was sort of a novelty.
+
+1598
+01:36:33,510 --> 01:36:36,450
+Apart from the AGVs, that were
+just following, you know, simple
+
+1599
+01:36:36,450 --> 01:36:39,780
+trucks. And now you look around
+and you find so many startups in
+
+1600
+01:36:39,780 --> 01:36:42,570
+so many different spaces, act
+Tech is a particularly
+
+1601
+01:36:42,570 --> 01:36:45,630
+interesting space. If you ask
+me, there are so many problems
+
+1602
+01:36:45,630 --> 01:36:50,820
+there. That the and that's where
+I live, like you're the title of
+
+1603
+01:36:50,820 --> 01:36:54,270
+your podcast, sit in a sense,
+plan, act, or sense Think Act
+
+1604
+01:36:54,300 --> 01:36:57,060
+works better than the blanket
+approach, because that's really
+
+1605
+01:36:57,060 --> 01:36:59,850
+what a robot does, right? It
+senses it decides what to do.
+
+1606
+01:36:59,850 --> 01:37:00,960
+And then it acts and
+
+1607
+01:37:02,220 --> 01:37:05,100
+when you look at for instance,
+what Blue River does in
+
+1608
+01:37:05,100 --> 01:37:07,680
+appetite, right, they will go
+over a field and rather than
+
+1609
+01:37:07,890 --> 01:37:12,750
+applying pesticides everywhere,
+they will actually take a good
+
+1610
+01:37:12,750 --> 01:37:15,750
+look at the crop that is
+growing. And they will decide
+
+1611
+01:37:15,810 --> 01:37:19,890
+how to act like what to where to
+apply pesticides. And the amount
+
+1612
+01:37:19,920 --> 01:37:24,090
+of pesticides that you use as a
+result is of course, much lower,
+
+1613
+01:37:24,120 --> 01:37:28,410
+which which is fantastic, from
+an ecological point of view, but
+
+1614
+01:37:28,410 --> 01:37:31,110
+also is a very good business
+proposition. You're building
+
+1615
+01:37:31,110 --> 01:37:35,100
+you're growing better crops. And
+that's I, I really congratulate
+
+1616
+01:37:35,100 --> 01:37:37,230
+you on that on the choice of
+that of that name for the
+
+1617
+01:37:37,230 --> 01:37:40,650
+podcast, because it is so it is
+core for for what a robot does.
+
+1618
+01:37:40,650 --> 01:37:43,080
+And it's also describes the
+value very much right. But
+
+1619
+01:37:43,080 --> 01:37:47,100
+there's so many areas that we
+could explore with this
+
+1620
+01:37:47,100 --> 01:37:50,160
+mentality of where are we
+currently doing a blanket
+
+1621
+01:37:50,160 --> 01:37:54,060
+approach where it would be
+smarter to take you to look that
+
+1622
+01:37:54,060 --> 01:37:56,970
+aside and then act and of
+course, this is now being made
+
+1623
+01:37:57,000 --> 01:38:00,540
+possible by better software,
+better compute that allows us to
+
+1624
+01:38:00,540 --> 01:38:03,900
+implement algorithms that do
+service and that do think,
+
+1625
+01:38:03,930 --> 01:38:08,340
+right, that that wasn't
+necessarily possible before. And
+
+1626
+01:38:08,340 --> 01:38:11,550
+I think it's it's super
+exciting. There's one particular
+
+1627
+01:38:11,550 --> 01:38:17,700
+area that I'm very curious of,
+and that is this whole idea of
+
+1628
+01:38:17,700 --> 01:38:24,870
+semi sorry, mixed initiative,
+operation, or no, that means, so
+
+1629
+01:38:24,990 --> 01:38:28,560
+any sort of tele operation where
+you are not controlling the
+
+1630
+01:38:28,620 --> 01:38:33,120
+robot entirely, but only perhaps
+giving certain signals and then
+
+1631
+01:38:33,120 --> 01:38:35,640
+having the robot do other
+things, to kind of falls into
+
+1632
+01:38:35,640 --> 01:38:38,340
+that category. And I think
+that's a, it's a very
+
+1633
+01:38:38,370 --> 01:38:41,640
+interesting space to look at.
+Because another thing that
+
+1634
+01:38:41,640 --> 01:38:44,700
+robotics companies in mind have
+done wrong. And I'm saying that
+
+1635
+01:38:44,700 --> 01:38:47,670
+now, I would have made the same
+mistake until a few years ago,
+
+1636
+01:38:47,670 --> 01:38:50,880
+but they made the mistake of
+trying to automate everything
+
+1637
+01:38:50,880 --> 01:38:54,450
+from the get go. Whereas
+nowadays, you see a lot of very
+
+1638
+01:38:54,450 --> 01:38:58,410
+successful robotics companies
+start with fully manual approach
+
+1639
+01:38:58,410 --> 01:39:02,400
+remote controlled, and basically
+say, Let's own the problem.
+
+1640
+01:39:02,400 --> 01:39:05,670
+First, let's build the business
+problem. First, let's, let's
+
+1641
+01:39:05,670 --> 01:39:09,150
+build a customer base, and then
+automated more and more and more
+
+1642
+01:39:09,150 --> 01:39:12,510
+to reduce our cost. And I think
+that's a fantastic model.
+
+1643
+01:39:12,720 --> 01:39:15,600
+Because you will be learning if
+you will know what to automate
+
+1644
+01:39:15,600 --> 01:39:18,960
+in the process. And the most of
+the value may actually come from
+
+1645
+01:39:18,960 --> 01:39:22,740
+something that is relatively
+easy, right. So I'll give the
+
+1646
+01:39:22,740 --> 01:39:27,540
+examples of sidewalk delivery
+robots. I personally have to
+
+1647
+01:39:27,570 --> 01:39:30,210
+admit that I was laughing at
+starship when I first saw the
+
+1648
+01:39:30,210 --> 01:39:33,210
+robot, because I looked at it
+and go like you will never be
+
+1649
+01:39:33,210 --> 01:39:36,900
+autonomous. And they laughed
+back and said, We don't try to
+
+1650
+01:39:36,900 --> 01:39:41,130
+be fully autonomous because they
+they basically recognize that
+
+1651
+01:39:41,130 --> 01:39:44,100
+they have evolved a lot since
+then. But in the other day,
+
+1652
+01:39:44,130 --> 01:39:47,610
+Steve recognized that if they
+have a robot that can reliably
+
+1653
+01:39:47,610 --> 01:39:50,940
+drive forward without bumping
+into anything and noticing when
+
+1654
+01:39:50,940 --> 01:39:54,480
+there is an obstacle and just
+stop as opposed to doing all of
+
+1655
+01:39:54,480 --> 01:39:57,000
+the great you know, path
+planning, like the stuff that
+
+1656
+01:39:57,000 --> 01:40:00,000
+you've discussed with Steve last
+time, about you know, going on
+
+1657
+01:40:00,000 --> 01:40:04,560
+around obstacles dilating the
+obstacles and dealing with, with
+
+1658
+01:40:04,560 --> 01:40:07,500
+all sorts of situations, if you
+just focus on this one thing,
+
+1659
+01:40:07,830 --> 01:40:11,610
+then all of a sudden you can
+have one pilot control, whatever
+
+1660
+01:40:11,610 --> 01:40:14,430
+it is 10 different robots at the
+same time, because most of the
+
+1661
+01:40:14,430 --> 01:40:17,610
+time, they are actually driving
+by themselves. And then when
+
+1662
+01:40:17,610 --> 01:40:19,470
+they get in trouble that they
+will ask you questions that you
+
+1663
+01:40:19,470 --> 01:40:22,500
+just, you know, we're pretty
+quick without without which we
+
+1664
+01:40:22,500 --> 01:40:25,110
+humans, right, we see this,
+decide what to do which other
+
+1665
+01:40:25,110 --> 01:40:30,360
+robot what to do. And so that
+way, you can really kind of make
+
+1666
+01:40:30,390 --> 01:40:34,440
+a step function, a gradient,
+right. And of course, anybody in
+
+1667
+01:40:34,440 --> 01:40:36,660
+machine learning will tell you
+that that's the secret behind
+
+1668
+01:40:37,140 --> 01:40:41,430
+all learning neural networks as
+well, that if you have, yes, in
+
+1669
+01:40:41,430 --> 01:40:43,560
+the end, you may need a step
+function. But to learn it, you
+
+1670
+01:40:43,560 --> 01:40:47,220
+need to smooth it out. And by
+smoothing it out by giving a way
+
+1671
+01:40:47,220 --> 01:40:50,220
+to move along that spectrum
+between full automation and for
+
+1672
+01:40:50,220 --> 01:40:54,360
+the remote control really
+enables a lot of a lot of
+
+1673
+01:40:54,360 --> 01:40:56,850
+innovation. So I'm really
+curious to see what will come
+
+1674
+01:40:56,850 --> 01:41:02,010
+from that. From a kind of vision
+point of view, I like to
+
+1675
+01:41:03,510 --> 01:41:07,080
+I sometimes ask myself, whether
+it will be possible to make
+
+1676
+01:41:07,110 --> 01:41:11,850
+everybody in the world able to
+work remotely. And what I mean
+
+1677
+01:41:11,850 --> 01:41:15,960
+by that is, we we've we've seen
+that during the during the
+
+1678
+01:41:15,960 --> 01:41:19,410
+pandemic, right, they were the I
+would call us, the fortunate
+
+1679
+01:41:19,410 --> 01:41:22,440
+ones who were able to just work
+remotely and those whose job
+
+1680
+01:41:22,440 --> 01:41:25,950
+required them to go in and they
+had a big problem, either. They
+
+1681
+01:41:25,950 --> 01:41:28,260
+couldn't go in because it was
+shut down because we had
+
+1682
+01:41:28,260 --> 01:41:30,930
+lockdowns and they suffered
+economically. And that caused a
+
+1683
+01:41:30,930 --> 01:41:33,810
+lot of hardship on a lot of
+people, or they weren't able to
+
+1684
+01:41:33,810 --> 01:41:36,930
+go in, but they sometimes, you
+know, suffered and had to take
+
+1685
+01:41:36,930 --> 01:41:39,930
+the risk of getting affected
+more easily with COVID. And
+
+1686
+01:41:39,930 --> 01:41:43,440
+that's exactly what happened. So
+from almost from a fairness
+
+1687
+01:41:43,440 --> 01:41:47,250
+perspective, I asked myself,
+well, what would it take to
+
+1688
+01:41:47,250 --> 01:41:50,100
+automate all of them not
+automate, but make it possible
+
+1689
+01:41:50,100 --> 01:41:54,330
+for everybody to work remotely.
+And we've seen some, some very,
+
+1690
+01:41:55,230 --> 01:42:00,180
+perhaps eyebrow raising examples
+of that of humanoid robots being
+
+1691
+01:42:00,180 --> 01:42:04,110
+remote control to stock shelves
+in seven elevens in Japan,
+
+1692
+01:42:04,950 --> 01:42:07,710
+where, you know, somebody was
+remote controlling the arms to
+
+1693
+01:42:07,740 --> 01:42:11,190
+take cans out of out of a tray
+and opening the fridge and
+
+1694
+01:42:11,190 --> 01:42:14,400
+putting them in there. And
+people laughed at that, but
+
+1695
+01:42:14,400 --> 01:42:17,010
+actually think that's, it's,
+it's tremendous. It's, it's
+
+1696
+01:42:17,010 --> 01:42:20,400
+exactly how we should be
+thinking about it. And if you
+
+1697
+01:42:20,400 --> 01:42:23,400
+start by remote controlling that
+and then ask yourself, well,
+
+1698
+01:42:23,400 --> 01:42:26,160
+which of these things can
+actually automate? And which
+
+1699
+01:42:26,160 --> 01:42:29,640
+ones are the really hard ones?
+And just identifying the problem
+
+1700
+01:42:29,640 --> 01:42:33,810
+and frame phrasing it? Well,
+there will be actually no
+
+1701
+01:42:33,810 --> 01:42:38,070
+shortage of people who will be
+interested in solving that. Both
+
+1702
+01:42:38,070 --> 01:42:41,370
+of us have been in academia for
+long enough to know that, in
+
+1703
+01:42:41,370 --> 01:42:44,010
+academia, often the problem is
+finding the problem, like
+
+1704
+01:42:44,010 --> 01:42:47,160
+finding a real product that fits
+my solution, right? So there's,
+
+1705
+01:42:47,280 --> 01:42:51,510
+there's almost a thirst for
+problems. So if you if we as as
+
+1706
+01:42:51,540 --> 01:42:57,030
+sort of a, the ecosystem of
+companies in robotics can
+
+1707
+01:42:57,060 --> 01:43:02,400
+identify problems worth solving,
+and frame them really well. So
+
+1708
+01:43:02,400 --> 01:43:06,120
+that we can sort of hand them
+over to academia, academia would
+
+1709
+01:43:06,120 --> 01:43:09,570
+love us, and we would love them
+back for the for the solutions
+
+1710
+01:43:09,570 --> 01:43:12,480
+that they give us. And I think
+that's like building bridges
+
+1711
+01:43:12,480 --> 01:43:16,470
+like that, between academia and
+applied research and robotics in
+
+1712
+01:43:16,470 --> 01:43:21,660
+particular, is something really
+worth working towards. And I
+
+1713
+01:43:21,660 --> 01:43:23,250
+think it's, it's really
+exciting.
+
+1714
+01:43:25,229 --> 01:43:27,929
+Audrow Nash: Awesome. Well, I
+think we'll end it there. Thank
+
+1715
+01:43:27,929 --> 01:43:33,689
+you very much. Thank you,
+everyone. Thanks for listening
+
+1716
+01:43:33,689 --> 01:43:36,899
+to this conversation with
+Christian Fritz. Thank you again
+
+1717
+01:43:36,899 --> 01:43:39,749
+to our founding sponsor, open
+robotics. See you next time.
+

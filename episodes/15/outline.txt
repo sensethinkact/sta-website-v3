@@ -1,0 +1,18 @@
+0:00:00 - Episode introduction
+0:01:09 - Introducing Christian and Transitive Robotics
+0:06:52 - Fleet management + networking challenges
+0:17:15 - Problems in fleet management
+0:21:23 - Business model
+0:26:21 - Using MQQT for message passing
+0:30:28 - Developing your own capabilities
+0:35:35 - Testing capabilities
+0:36:44 - Sending data: authentication and authorization
+0:43:32 - Sandboxing for safety
+0:56:10 - Discussing web technologies
+1:01:03 - Open source business models
+1:05:38 - Scaling, finding market fit, and taking investment
+1:15:57 - Plans in starting a marketplace
+1:20:01 - Plans to grow the team + remote work
+1:29:36 - Web and robotics
+1:33:08 - Web technologies on the backend
+1:34:59 - Future of robotics

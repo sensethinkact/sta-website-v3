@@ -1,0 +1,47 @@
+guests: Christian Fritz
+title: Full-stack Robotics and Growing an App Marketplace
+description: |
+  In this episode, Audrow Nash speaks to Christian Fritz, CEO and founder of Transitive Robotics.
+  Transitive Robotics makes software for building full stack robotics applications.
+  In this conversation, they talk about how Transitive Robotic's software works, their business model, sandboxing for security, creating a marketplace for robotics applications, and web tools, in general.
+excerpt: Christian Fritz is the CEO and founder of Transitive Robotics.
+duration:
+  hours: 1
+  minutes: 43
+  seconds: 42
+tags:
+  - web
+  - computer vision
+  - dashboard
+  - fleet management
+  - infrastructure
+  - startup
+  - market place
+links:
+  - name: Christian's LinkedIn
+    url: https://www.linkedin.com/in/christianfritz/
+  - name: Transitive Robotics' Website
+    url: https://transitiverobotics.com/
+  - name: Transitive Robotics on LinkedIn
+    url: https://www.linkedin.com/company/transitive-robotics/
+  - name: Transitive Robotics' Twitter
+    url: https://twitter.com/transitiverob
+  - name: Sign up for Transitive Robotics' Beta
+    url: https://docs.google.com/forms/d/e/1FAIpQLSctAX9NI6IlZ10e7n408NSxULLKbbSyx8rrQSsLVECtlpHbeg/viewform
+  - name: Contact Transitive Robotics
+    url: mailto:support@transitiverobotics.com
+mp3SizeBytes: 205695102
+publishDate: 2022-03-08
+youtube:
+  mainContentId: pbI-kKzx0SU
+  clips:
+    - title: They Still Wouldn't Want to Make It
+      videoId: XiwUCNN7MBQ
+    - title: Business Models for Open Source Software
+      videoId: 7NEtVdqozjI
+    - title: Openness and Market Fit
+      videoId: DZjMoAlSyH0
+    - title: Tent Poles
+      videoId: Yl1V890FUR0
+    - title: Web Tools and Robotics
+      videoId: v-qJopVDzB4
