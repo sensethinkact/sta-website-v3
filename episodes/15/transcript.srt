@@ -110,7 +110,7 @@ used to be the head of software
 
 23
 00:01:26,130 --> 00:01:29,820
-at Savvy oak. And for those who
+at Savioke. And for those who
 don't know, Savio, said hope
 
 24
@@ -145,12 +145,12 @@ seen all sorts of versions of
 
 30
 00:01:52,140 --> 00:01:58,620
-robotics, including before Ross,
+robotics, including before ROS,
 which was bearish. And then at
 
 31
 00:01:58,620 --> 00:02:02,910
-Savvy org, I learned about not
+Savioke, I learned about not
 just the robotics piece, but the
 
 32
@@ -210,7 +210,7 @@ interesting experience. Because
 
 43
 00:02:45,000 --> 00:02:49,950
-I found out that while Ross is
+I found out that while ROS is
 really great, there's, there's
 
 44
@@ -230,7 +230,7 @@ I came to start trying to
 47
 00:02:58,440 --> 00:03:01,680
 Audrow Nash: know, what exactly
-are you doing at transitive?
+are you doing at Transitive?
 
 48
 00:03:02,430 --> 00:03:05,730
@@ -489,7 +489,7 @@ that. And this is really kind of
 99
 00:05:57,300 --> 00:06:02,700
 a philosophical thing for us. We
-think that Ross has done such a
+think that ROS has done such a
 
 100
 00:06:02,700 --> 00:06:07,200
@@ -519,7 +519,7 @@ world and the world will be a
 105
 00:06:21,300 --> 00:06:25,770
 better flex, right. And I think
-Ross has done such a tremendous
+ROS has done such a tremendous
 
 106
 00:06:25,770 --> 00:06:29,250
@@ -745,7 +745,7 @@ so because of that, you have
 
 151
 00:09:23,820 --> 00:09:27,270
-transitive robotics, you're
+Transitive robotics, you're
 trying to make it so that you
 
 152
@@ -1036,8 +1036,8 @@ this into the robot harvest or
 
 210
 00:12:51,930 --> 00:12:57,450
-like a non Ross users is a
-visualization tool for Ross. And
+like a non ROS users is a
+visualization tool for ROS. And
 
 211
 00:12:57,450 --> 00:13:01,110
@@ -1131,7 +1131,7 @@ of your your listeners may be
 
 229
 00:13:57,960 --> 00:14:02,010
-familiar with how Ross solves
+familiar with how ROS solves
 the diagnostics problem where
 
 230
@@ -1151,7 +1151,7 @@ stage, and so forth. But the way
 
 233
 00:14:15,330 --> 00:14:18,810
-that Ross publishes status,
+that ROS publishes status,
 here's an update, here's an
 
 234
@@ -1161,8 +1161,8 @@ if nothing changes, right. And
 
 235
 00:14:22,920 --> 00:14:26,250
-that's fine with Ross, that's
-not Ross is designed on the
+that's fine with ROS, that's
+not ROS is designed on the
 
 236
 00:14:26,250 --> 00:14:28,680
@@ -1326,7 +1326,7 @@ back some control signals from
 268
 00:16:21,209 --> 00:16:25,799
 the from the joystick. The
-transitive is structured is that
+Transitive is structured is that
 
 269
 00:16:25,799 --> 00:16:28,799
@@ -1335,8 +1335,8 @@ strong concept of packages,
 
 270
 00:16:28,829 --> 00:16:33,389
-similar to Ross. But what's
-special about transitive is that
+similar to ROS. But what's
+special about Transitive is that
 
 271
 00:16:33,389 --> 00:16:36,119
@@ -1598,7 +1598,7 @@ to outsource that. And that's
 
 323
 00:19:48,630 --> 00:19:53,580
-how we think about transitive a,
+how we think about Transitive a,
 a both a platform to develop
 
 324
@@ -1750,7 +1750,7 @@ your specific logic running on
 354
 00:21:37,860 --> 00:21:42,960
 your robot. If you're using the
-Ross ecosystem, you get a lot of
+ROS ecosystem, you get a lot of
 
 355
 00:21:42,960 --> 00:21:45,180
@@ -1888,8 +1888,8 @@ this is something that I've felt
 
 382
 00:23:22,830 --> 00:23:27,660
-with Ross, too, is that I think
-Ross would actually benefit from
+with ROS, too, is that I think
+ROS would actually benefit from
 
 383
 00:23:27,660 --> 00:23:32,460
@@ -1903,7 +1903,7 @@ contributions that are being
 
 385
 00:23:36,480 --> 00:23:41,250
-paid by those companies to Ross
+paid by those companies to ROS
 have have a longer a longer
 
 386
@@ -1944,7 +1944,7 @@ I thought it was really
 393
 00:24:04,650 --> 00:24:08,430
 interesting, because they did a
-study of Ross packages, and how
+study of ROS packages, and how
 
 394
 00:24:08,430 --> 00:24:12,300
@@ -2105,7 +2105,7 @@ ideas translate into into other
 
 426
 00:25:50,430 --> 00:25:52,830
-Ross packages as well. And one
+ROS packages as well. And one
 thing that we haven't touched on
 
 427
@@ -2217,7 +2217,7 @@ Unix,
 449
 00:27:00,480 --> 00:27:03,900
 Audrow Nash: very similar to
-Ross topics, it seems like from
+ROS topics, it seems like from
 
 450
 00:27:03,900 --> 00:27:07,440
@@ -2289,7 +2289,7 @@ usage, very high throughput,
 
 464
 00:27:54,149 --> 00:27:59,129
-communication. And unlike Ross,
+communication. And unlike ROS,
 it was really meant to be cross
 
 465
@@ -2638,7 +2638,7 @@ where you have like a CLI tool,
 534
 00:32:20,489 --> 00:32:23,999
 that's where you might say,
-transitive, create new
+Transitive, create new
 
 535
 00:32:23,999 --> 00:32:27,899
@@ -3029,7 +3029,7 @@ But before it can get there,
 
 613
 00:37:10,200 --> 00:37:13,710
-what the what the transitive
+what the what the Transitive
 wrapping for that, for that
 
 614
@@ -3599,7 +3599,7 @@ that you can run on your robot,
 
 728
 00:44:00,690 --> 00:44:04,530
-which will install a transitive
+which will install a Transitive
 robotics agent. This is just a
 
 729
@@ -3704,8 +3704,8 @@ thing here, right. And in the
 
 749
 00:45:16,950 --> 00:45:21,480
-Ross world, people are used to
-using sudo, to install Ross
+ROS world, people are used to
+using sudo, to install ROS
 
 750
 00:45:21,480 --> 00:45:26,010
@@ -3825,7 +3825,7 @@ of things that you need on the
 773
 00:46:57,090 --> 00:47:00,750
 system. So if a capability has a
-requirement for a Ross package,
+requirement for a ROS package,
 
 774
 00:47:01,020 --> 00:47:04,920
@@ -3840,7 +3840,7 @@ overlay on top of what's already
 776
 00:47:08,490 --> 00:47:12,720
 there. This way, we don't have
-to install Ross in each and
+to install ROS in each and
 
 777
 00:47:12,720 --> 00:47:16,290
@@ -4003,13 +4003,13 @@ think about this, especially for
 
 809
 00:49:05,070 --> 00:49:09,720
-your audiences Ross and up if
+your audiences ROS and up if
 you a lot of capabilities run a
 
 810
 00:49:09,720 --> 00:49:13,650
-Ross node, they're able to talk
-to the other Ross notes. And
+ROS node, they're able to talk
+to the other ROS notes. And
 
 811
 00:49:13,650 --> 00:49:17,040
@@ -4033,7 +4033,7 @@ than say, you know, what you
 
 815
 00:49:28,260 --> 00:49:31,470
-need for, for for Ross
+need for, for for ROS
 operations, such as the message
 
 816
@@ -4246,7 +4246,7 @@ person that was also very active
 858
 00:52:01,860 --> 00:52:07,770
 in the Rust community. And he
-was in charge of Ross and snaps
+was in charge of ROS and snaps
 
 859
 00:52:07,770 --> 00:52:10,740
@@ -4669,7 +4669,7 @@ Yeah, I find it. So I mean,
 
 944
 00:57:10,889 --> 00:57:15,869
-working at open robotics, we use
+working at Open Robotics, we use
 a lot of C++ and Python. And
 
 945
@@ -4984,7 +4984,7 @@ segwaying, a little bit. Tell me
 1007
 01:01:05,400 --> 01:01:08,190
 a bit about your open core model
-at transitive.
+at Transitive.
 
 1008
 01:01:09,690 --> 01:01:13,380
@@ -5314,7 +5314,7 @@ would love if we had that kind
 1073
 01:05:04,440 --> 01:05:08,580
 of thing in the robotics
-ecosystem. Just like Ross really
+ecosystem. Just like ROS really
 
 1074
 01:05:08,580 --> 01:05:12,330
@@ -5414,7 +5414,7 @@ doing custom development, and
 1093
 01:06:22,530 --> 01:06:26,880
 then helping them figure out how
-to use transitive as well, which
+to use Transitive as well, which
 
 1094
 01:06:26,910 --> 01:06:30,780
@@ -6183,7 +6183,7 @@ right? If I'm a developer on
 
 1248
 01:15:24,780 --> 01:15:29,160
-transitive, I will be recruiting
+Transitive, I will be recruiting
 people to use it right? I will
 
 1249
@@ -6193,7 +6193,7 @@ published something called
 
 1250
 01:15:32,610 --> 01:15:36,180
-transitive. Sure, the focus will
+Transitive. Sure, the focus will
 be on what I've published. But
 
 1251
@@ -6428,7 +6428,7 @@ video streaming app that people
 1297
 01:18:12,990 --> 01:18:16,710
 will be using? Or where do you?
-Or is it sunset of the Ross
+Or is it sunset of the ROS
 
 1298
 01:18:16,710 --> 01:18:18,150
@@ -6471,8 +6471,8 @@ out there that grows up using
 
 1306
 01:18:43,350 --> 01:18:46,920
-Ross one, and I wish it was
-different, because I think Ross
+ROS one, and I wish it was
+different, because I think ROS
 
 1307
 01:18:46,920 --> 01:18:52,380
@@ -6496,7 +6496,7 @@ majority of robots out there
 
 1311
 01:19:03,090 --> 01:19:06,570
-still using Ross one. And so
+still using ROS one. And so
 breaking into that would be sort
 
 1312
@@ -6506,7 +6506,7 @@ that we built is not specific to
 
 1313
 01:19:11,100 --> 01:19:14,070
-Ross to or Ross one that the
+ROS 2 or ROS one that the
 capabilities that you will build
 
 1314
@@ -7265,7 +7265,7 @@ what I'm struck by. So far,
 
 1466
 01:28:22,710 --> 01:28:23,880
-being an open robotics,
+being an Open Robotics,
 
 1467
 01:28:24,180 --> 01:28:26,520
@@ -7442,7 +7442,7 @@ technology, the tools I love
 
 1502
 01:30:31,830 --> 01:30:37,710
-Ross, but some of the UIs like
+ROS, but some of the UIs like
 Qt, it's not, it's not up to
 
 1503
@@ -7553,7 +7553,7 @@ have this role of field ops
 1524
 01:31:51,780 --> 01:31:56,700
 engineers. And they may not know
-much about Ross nor nor do you
+much about ROS nor nor do you
 
 1525
 01:31:56,700 --> 01:31:59,130
@@ -7592,7 +7592,7 @@ easier. You and I meet on the on
 
 1532
 01:32:25,170 --> 01:32:28,290
-the Ross web tools are working
+the ROS web tools are working
 group every two weeks, and
 
 1533
@@ -7613,7 +7613,7 @@ contributions being made. And I
 1536
 01:32:37,350 --> 01:32:40,050
 think that's how we fit in with
-transitive as well, like being
+Transitive as well, like being
 
 1537
 01:32:40,080 --> 01:32:45,660
@@ -7652,7 +7652,7 @@ on the back end? Or robotic
 1544
 01:33:09,360 --> 01:33:12,930
 navigation? So like, maybe like
-a Ross client library and
+a ROS client library and
 
 1545
 01:33:12,930 --> 01:33:15,090
@@ -7675,17 +7675,17 @@ rational js, which is, you know,
 
 1549
 01:33:22,920 --> 01:33:30,240
-just like raw CPP, or Ross pi is
-a native binding for for Ross.
+just like raw CPP, or ROS pi is
+a native binding for for ROS.
 
 1550
 01:33:30,810 --> 01:33:34,920
-So it speaks Ross, it just makes
+So it speaks ROS, it just makes
 TCP connections to all of the
 
 1551
 01:33:34,920 --> 01:33:37,500
-other Ross nodes. But it's
+other ROS nodes. But it's
 written in Node J. S. It's a
 
 1552
@@ -7735,7 +7735,7 @@ they are and there are others,
 
 1561
 01:34:12,750 --> 01:34:15,510
-right. There's Ross no Chase,
+right. There's ROS no Chase,
 which was originally started by
 
 1562
@@ -7760,7 +7760,7 @@ rewrite it. So the current
 
 1566
 01:34:29,100 --> 01:34:34,020
-version of Ross no chases based
+version of ROS no chases based
 on on what Christmas, everything
 
 1567
@@ -7770,7 +7770,7 @@ alternatives. There's similar
 
 1568
 01:34:38,280 --> 01:34:41,970
-libraries for Ross too, as well.
+libraries for ROS 2, as well.
 I don't know I don't think it's
 
 1569

@@ -5983,7 +5983,7 @@ Well, I'm super excited about
 
 1207
 01:07:25,470 --> 01:07:27,960
-some of the ROS to you know,
+some of the ROS 2 you know,
 stuff that you can run, you
 
 1208
@@ -6381,7 +6381,7 @@ We're getting a little better
 
 1287
 01:11:43,050 --> 01:11:46,440
-with ROS too. Yeah, for some of
+with ROS 2. Yeah, for some of
 the testing resources, but I
 
 1288

@@ -1836,7 +1836,7 @@ the project out there, but like,
 
 372
 00:21:28,980 --> 00:21:31,470
-no one is building ROS to
+no one is building ROS 2
 support and the weapons are
 
 373
@@ -4237,7 +4237,7 @@ visualize the data you see, and
 
 856
 00:48:58,200 --> 00:49:03,360
-it's for live playing of ROS to
+it's for live playing of ROS 2
 data and also playing from a bag
 
 857

@@ -3607,7 +3607,7 @@ first people to actually use
 
 729
 00:45:14,570 --> 00:45:17,300
-production or ROS to in a
+production or ROS 2 in a
 production environment where,
 
 730
@@ -3758,7 +3758,7 @@ vice versa. And so that was like
 759
 00:47:11,990 --> 00:47:14,810
 another big change that went
-with ROS to was you know,
+with ROS 2 was you know,
 
 760
 00:47:14,810 --> 00:47:18,770
@@ -4327,7 +4327,7 @@ comments from customers, or
 874
 00:54:28,400 --> 00:54:32,330
 people that are coming to you?
-Or they're asking for ROS to or
+Or they're asking for ROS 2 or
 
 875
 00:54:32,840 --> 00:54:33,650

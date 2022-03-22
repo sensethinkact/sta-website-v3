@@ -4823,7 +4823,7 @@ files are still a little bit
 
 978
 00:57:12,390 --> 00:57:15,780
-rough in like ROS to Foxy I
+rough in like ROS 2 Foxy I
 think a lot of ethics and
 
 979

@@ -2011,7 +2011,7 @@ you know, streaking it up to the
 407
 00:24:21,000 --> 00:24:23,850
 open source Kool Aid and this
-idea of leveraging ROS to solve
+idea of leveraging ROS 2 solve
 
 408
 00:24:23,850 --> 00:24:27,000
@@ -3254,7 +3254,7 @@ so yes, so hence we've migrated
 
 658
 00:39:35,460 --> 00:39:39,180
-our training over to ROS to as
+our training over to ROS 2 as
 well we're trying to as I
 
 659
@@ -3274,7 +3274,7 @@ manage rolling out in the
 
 662
 00:39:52,140 --> 00:39:57,480
-direction of ROS to but but but
+direction of ROS 2 but but but
 we're getting right. Most
 
 663
@@ -4480,7 +4480,7 @@ on navigation. Right? Oh, we
 906
 00:53:47,010 --> 00:53:50,610
 generally, like we've started
-pushing out ROS to training and
+pushing out ROS 2 training and
 
 907
 00:53:50,610 --> 00:53:54,450
@@ -5889,7 +5889,7 @@ inconsistency in the interface.
 1192
 01:10:16,289 --> 01:10:19,049
 Audrow Nash: But we're trying to
-fix it for ROS too. So the
+fix it for ROS 2. So the
 
 1193
 01:10:19,049 --> 01:10:23,219
@@ -6158,7 +6158,7 @@ EMS interested in rolling out.
 1246
 01:13:07,259 --> 01:13:10,769
 And they're already looking at
-ROS to control. So that's good.
+ROS 2 control. So that's good.
 
 1247
 01:13:10,769 --> 01:13:12,809
@@ -7295,7 +7295,7 @@ actually, you guys, maybe we'll
 1477
 01:26:38,040 --> 01:26:42,180
 be making a pull request to the
-ROS to documentation and adding
+ROS 2 documentation and adding
 
 1478
 01:26:42,210 --> 01:26:46,410

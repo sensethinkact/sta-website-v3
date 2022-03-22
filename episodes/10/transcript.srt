@@ -2513,7 +2513,7 @@ other in other state machines,
 509
 00:34:54,239 --> 00:34:58,529
 we might use, you know,
-something like ROS to control
+something like ROS 2 control
 
 510
 00:34:58,559 --> 00:35:01,439
@@ -3357,7 +3357,7 @@ worked on the project. He's the
 
 680
 00:47:08,790 --> 00:47:14,550
-maintainer of ROS to control. A
+maintainer of ROS 2 control. A
 mathematician by the name of ROB
 
 681
@@ -3948,7 +3948,7 @@ smack for ROS, one in June. And
 800
 00:55:56,310 --> 00:55:59,640
 we immediately set out to create
-it for ROS too, because I
+it for ROS 2, because I
 
 801
 00:55:59,640 --> 00:56:03,900
@@ -8011,7 +8011,7 @@ develop something like nav two,
 1623
 01:50:59,250 --> 01:51:02,850
 or we have nav two and move it
-and ROS to control that if it's
+and ROS 2 control that if it's
 
 1624
 01:51:02,850 --> 01:51:09,000

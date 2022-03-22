@@ -36,7 +36,7 @@ I have heard a lot about the sub
 8
 00:00:28,020 --> 00:00:31,710
 D challenge around the edges
-here at open robotics. But it
+here at Open Robotics. But it
 
 9
 00:00:31,710 --> 00:00:34,590
@@ -81,7 +81,7 @@ Podcast. I'm Audrow. Nash. Thank
 17
 00:00:59,730 --> 00:01:03,390
 you to our founding sponsor,
-open robotics. And now, here is
+Open Robotics. And now, here is
 
 18
 00:01:03,390 --> 00:01:08,190
@@ -3167,7 +3167,7 @@ simulation
 639
 00:40:59,910 --> 00:41:02,610
 Audrow Nash: environment made by
-open robotics where I'm working.
+Open Robotics where I'm working.
 
 640
 00:41:02,610 --> 00:41:03,030
@@ -3176,7 +3176,7 @@ That's right.
 641
 00:41:03,480 --> 00:41:06,960
 Tim Chung: Yeah, that's right.
-So open robotics, provided that
+So Open Robotics, provided that
 
 642
 00:41:06,960 --> 00:41:11,070
