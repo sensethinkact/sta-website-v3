@@ -12,8 +12,9 @@ const Comments = ({pageUrl}: Props) => {
       </section>
 
       <Script
+        type="text/javascript"
         id="discourse-comments"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
             DiscourseEmbed = {
