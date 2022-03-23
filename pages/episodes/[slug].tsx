@@ -71,9 +71,9 @@ const Post = ({post, isDebug}: Props) => {
                         </li>
                       ))}
                   </ul>
-                  <h3 className="subtitle is-4">Comments</h3>
 
-                  <Comments pageUrl={post.url} />
+                  {/* <h3 className="subtitle is-4">Comments</h3>
+                  <Comments pageUrl={post.url} /> */}
 
                   {post.includes?.outline && (
                     <>
