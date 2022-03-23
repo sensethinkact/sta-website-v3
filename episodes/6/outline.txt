@@ -1,0 +1,22 @@
+0:00:00 - Start
+0:01:01 - Tobias introduces himself
+0:01:27 - About Blue River
+0:02:49 - Agriculture 101
+0:09:51 - How non-row crops are handled
+0:15:59 - Row crops and herbicide resistance
+0:21:04 - How weeds work
+0:24:20 - Strategy for row crops
+0:27:07 - Genetically modified crop
+0:28:55 - Blue River and John Deere
+0:31:36 - What Blue River does best
+0:37:34 - John Deere acquisition
+0:41:39 - Timeline for Blue River
+0:42:36 - What it means to Manage Quality at Blue River
+0:48:50 - Quality assurance in hardware
+0:52:32 - Machine learning in weed spraying
+1:01:12 - Testing systems in the fields
+1:04:22 - Thoughts on robotics and agriculture
+1:11:07 - Using AI in mechanical design
+1:14:45 - Encouraging kids to program + learn robotics
+1:29:32 - Advice for students
+1:37:14 - Links

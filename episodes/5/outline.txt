@@ -1,0 +1,31 @@
+0:00:00 - Start
+0:03:35 - Having their robot take elevators
+0:18:55 - How the sensors are used (aka, fulfilling IoT promises)
+0:22:17 - Training the robot as a security guard
+0:27:41 - Adding a taser on your robot? + What it means to be a security guard
+0:33:29 - On being a technology and security company
+0:36:32 - Stopping a thief with their robot
+0:38:08 - How fleets of security robots are controlled
+0:40:51 - Understanding the human operators
+0:44:42 - Tech stack
+0:45:34 - Experience with ROS
+0:46:37 - Extending ROS packages to work with elevators
+0:50:48 - On open source software
+0:52:23 - Growing the team
+0:54:13 - Manufacturing the Cobalt robot + battle-testing their robots
+0:56:18 - Sourcing components
+0:58:37 - Making people feel safe around the robot
+1:01:26 - Robot body language
+1:02:22 - “Dog-fooding” to improve robot body language
+1:04:29 - Working with the research community
+1:06:11 - Having the Cobalt robot behave like a receptionist during the day
+1:07:41 - Impact on security guard jobs
+1:11:19 - Human-in-the-loop with robotics applications + levels of autonomy
+1:17:26 - How are you using machine learning?
+1:21:40 - Erik’s background in startups
+1:24:10 - Advice on picking a problem
+1:28:50 - Cobalt’s funding
+1:31:02 - Advice for founders looking for investors
+1:32:41 - Advice on avoiding bad investment
+1:34:44 - Advice for a younger you
+1:35:46 - Getting in touch

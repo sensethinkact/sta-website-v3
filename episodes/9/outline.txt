@@ -1,0 +1,20 @@
+0:00:00 - Start
+0:00:51 - Introducing Youssef and GelSight
+0:07:18 - Background of GelSight technology
+0:08:12 - What’s hard about it
+0:11:56 - Miniaturization
+0:14:40 - DIGIT sensor + Collaboration with Meta AI (formerly, Facebook AI)
+0:21:57 - Bringing DIGIT from research to a product
+0:28:16 - Having a camera in your finger
+0:29:58 - DIGIT in robotics applications
+0:43:04 - Meta’s plans with tactile sensing
+0:49:12 - On the digitization of touch
+0:55:07 - On the current state of haptics
+0:58:06 - Haptics to verify products and parts
+1:01:06 - Growing GelSight
+1:06:03 - Open source software and datasets
+1:14:09 - Slipping objects and heavy loads
+1:22:44 - Youssef’s professional path
+1:32:21 - Advice
+1:34:44 - Useful habits
+1:36:17 - Links and getting in touch

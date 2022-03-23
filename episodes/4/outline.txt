@@ -1,0 +1,19 @@
+0:00:00 - Start
+0:00:57 - Introducing Adrian and Foxglove
+0:07:54 - Origin of Foxglove
+0:24:51 - Developer productivity and the future of robotics
+0:27:36 - Building the Foxglove team
+0:29:27 - Why Adrian’s optimistic about opportunities in robotics
+0:36:05 - On putting 1000 engineers on a problem
+0:39:35 - Role of open source
+0:42:03 - Foxglove’s business model
+0:45:15 - Why Foxglove “Studio”?
+0:46:53 - How name Foxglove?
+0:48:47 - Explaining Foxglove Studio
+0:50:45 - Web and robotics
+0:57:31 - Web technologies on the backend
+1:00:13 - Reflecting on his work at Coinbase and Cruise
+1:06:27 - Timeline for autonomous cars + levels of autonomy
+1:12:00 - Advice for those interested in robotics
+1:15:09 - Info on getting in touch and contributing
+1:16:33 - Outro
