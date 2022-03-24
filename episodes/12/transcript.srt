@@ -5637,7 +5637,7 @@ thing we've seen over time, from
 
 1141
 01:07:28,110 --> 01:07:33,180
-our experience in ROSS one, as
+our experience in ROS 1, as
 OEM, some OEMs, did pick up the
 
 1142

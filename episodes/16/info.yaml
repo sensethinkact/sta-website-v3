@@ -1,0 +1,41 @@
+guests: Helen Greiner
+title: Solar Powered Robotic Weeding
+description: |
+  In this episode, Audrow Nash speaks to Helen Greiner, CEO at Tertill, which makes a small solar powered weeding robot for vegetable gardens.
+  The conversation begins with an overview of Helen's previous robotics experience, including at as a student at MIT, Co-founder at iRobot, Founder and CEO at CyPhyWorks, and in advising government research in robotics, AI, and machine learning.
+  From there, Helen explains the design of the Tertill robot, how it works, and her high hopes for this simple robot: to help reduce the environmental impact of the agriculture industry by helping people to grow their own food.
+  In the last part of the conversation, Helen speaks broadly about her experience in robotics startups, the robotics industry, and the future of robotics.
+excerpt: Helen Greiner is the CEO of Tertill, which makes a small solar powered weeding robot for vegetable gardens.
+duration:
+  hours: 1
+  minutes: 30
+  seconds: 42
+tags:
+  - startup
+  - garden
+  - agriculture
+  - weeding
+  - outdoor
+  - consumer
+links:
+  - name: Tertill's Website
+    url: https://tertill.com/
+  - name: Helen's LinkedIn
+    url: https://www.linkedin.com/in/helen-greiner-382295/
+  - name: Tertill's on LinkedIn
+    url: https://www.linkedin.com/company/franklin-robotics/
+mp3SizeBytes: 177659219
+publishDate: 2022-03-22
+youtube:
+  mainContentId: TM9Hlqz31sc
+  clips:
+    - title: Cheating, Like a Good Roboticist
+      videoId: 4mbFdNWZS08
+    - title: Saving 11 Soldiers' Lives
+      videoId: https://youtu.be/fnayfYtQGF0
+    - title: High Powered Lasers
+      videoId: MCRAwZ8pDWE
+    - title: Helping the World
+      videoId: X8GdsGMDcco
+    - title: Bullish on Robotics
+      videoId: cFrj6T9oBCM
