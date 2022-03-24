@@ -6087,8 +6087,8 @@ for instance, that the move base
 
 1233
 01:06:50,790 --> 01:06:54,120
-was state machine back in ROSS
-one, you know, it statically
+was state machine back in ROS
+1, you know, it statically
 
 1234
 01:06:54,120 --> 01:06:57,120
