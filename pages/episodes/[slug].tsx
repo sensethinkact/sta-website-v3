@@ -3,7 +3,6 @@ import type {SerializedPost} from '@sta-podcast/types'
 import ErrorPage from 'next/error'
 import {useRouter} from 'next/router'
 import YouTube from 'react-youtube'
-import Comments from '../../components/comments'
 import CopyableContentLink from '../../components/copyable-content-link'
 import Layout from '../../components/layout'
 import LogoNav from '../../components/logo-nav'
@@ -72,8 +71,8 @@ const Post = ({post, isDebug}: Props) => {
                       ))}
                   </ul>
 
-                  <h3 className="subtitle is-4">Comments</h3>
-                  <Comments pageUrl={post.url} />
+                  {/* <h3 className="subtitle is-4">Comments</h3>
+                  <Comments pageUrl={post.url} /> */}
 
                   {post.includes?.outline && (
                     <>
