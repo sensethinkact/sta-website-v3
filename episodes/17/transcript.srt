@@ -1,0 +1,5413 @@
+1
+00:00:02,879 --> 00:00:05,489
+Audrow Nash: This is a
+conversation with Dayo McIntosh,
+
+2
+00:00:05,819 --> 00:00:10,289
+who is the CEO and founder of
+Yateou. Yateou is an early stage
+
+3
+00:00:10,289 --> 00:00:13,259
+startup that makes wellness
+products and has a customer
+
+4
+00:00:13,259 --> 00:00:17,339
+facing robot ADE, that
+personalizes customer orders.
+
+5
+00:00:17,759 --> 00:00:21,479
+One thing that I found cool
+about Yateou is that they put it
+
+6
+00:00:21,509 --> 00:00:25,859
+on a truck that's kind of like a
+big food truck that has a big
+
+7
+00:00:25,859 --> 00:00:29,849
+window so that customers can see
+it working to make a customized
+
+8
+00:00:29,849 --> 00:00:34,019
+order. It's an interesting way
+to draw people in so that Yateou
+
+9
+00:00:34,019 --> 00:00:37,319
+can start a conversation with
+them about wellness, which is
+
+10
+00:00:37,319 --> 00:00:41,969
+where Diana's interest in the
+idea started. I enjoyed talking
+
+11
+00:00:41,969 --> 00:00:45,329
+to Dayo to hear about her
+experience with Yateou. Her
+
+12
+00:00:45,329 --> 00:00:49,199
+background is in robotics. So
+it's interesting to hear about
+
+13
+00:00:49,199 --> 00:00:53,309
+how she came to using her robot
+arm ADE, as well as hearing
+
+14
+00:00:53,309 --> 00:00:56,519
+about the challenges she's
+encountered to get to where she
+
+15
+00:00:56,519 --> 00:01:02,489
+is, such as having her truck
+with the robot stolen. And it's
+
+16
+00:01:02,489 --> 00:01:06,449
+also interesting to hear about
+the clever things that she's
+
+17
+00:01:06,449 --> 00:01:11,339
+doing to manage the complexity
+in her growing new business. I'm
+
+18
+00:01:11,339 --> 00:01:15,299
+Audrow Nash. This is the sense
+think act podcast. Thank you to
+
+19
+00:01:15,299 --> 00:01:17,969
+our founding sponsor open
+robotics. If you enjoy this
+
+20
+00:01:17,969 --> 00:01:21,719
+interview, please consider
+subscribing. And now here's my
+
+21
+00:01:21,719 --> 00:01:27,149
+interview with Dayo. Hi, Dayo,
+would you introduce yourself?
+
+22
+00:01:27,870 --> 00:01:31,050
+Dayo McIntosh: Hi, Audrow My
+name is Dayo G. McIntosh,
+
+23
+00:01:31,080 --> 00:01:33,510
+and I'm the founder and CEO of
+Yeto.
+
+24
+00:01:34,800 --> 00:01:36,000
+Audrow Nash: Would you tell me
+about Yateou?
+
+25
+00:01:37,200 --> 00:01:40,080
+Dayo McIntosh: Yes, yeah, so is
+this sustainable clean beauty
+
+26
+00:01:40,110 --> 00:01:44,790
+and wellness brand. We create
+products that are all natural
+
+27
+00:01:44,790 --> 00:01:48,120
+vegan, cruelty free and
+ethically sourced. And the
+
+28
+00:01:48,120 --> 00:01:51,840
+unique thing about what we do is
+that we've incorporated robotics
+
+29
+00:01:52,080 --> 00:01:54,900
+to bring that technology front
+and center to the beauty and
+
+30
+00:01:54,900 --> 00:01:55,950
+wellness industries.
+
+31
+00:01:56,670 --> 00:01:58,020
+Audrow Nash: And how do you use
+robots?
+
+32
+00:01:59,490 --> 00:02:03,510
+Dayo McIntosh: So right now we
+have our essential oil
+
+33
+00:02:03,510 --> 00:02:10,710
+mixologist robot called ADE.
+ADE is the first consumer
+
+34
+00:02:10,710 --> 00:02:13,920
+facing robot for the beauty and
+wellness industries. And
+
+35
+00:02:13,920 --> 00:02:18,630
+currently we have ADE stationed
+in a moving truck, making it
+
+36
+00:02:18,630 --> 00:02:21,600
+mobile so we take Addie to
+different events, markets and
+
+37
+00:02:21,600 --> 00:02:26,190
+things like that. And people can
+interact and interface directly
+
+38
+00:02:26,190 --> 00:02:31,170
+with ADE to create customized
+and personalized personal care
+
+39
+00:02:31,170 --> 00:02:34,860
+and wellness products. Gotcha.
+What,
+
+40
+00:02:35,040 --> 00:02:36,120
+Audrow Nash: what does it look
+like?
+
+41
+00:02:38,039 --> 00:02:43,769
+Dayo McIntosh: Addie is a Kuka
+robot. It is about two feet
+
+42
+00:02:43,769 --> 00:02:49,349
+tall. And it's a manipulator.
+It's an arm. It's a robotic arm.
+
+43
+00:02:49,709 --> 00:02:54,689
+And again, it sits in a truck
+with a transparent glass that
+
+44
+00:02:54,689 --> 00:02:59,939
+people can see. See and watch
+ADE in action.
+
+45
+00:03:00,389 --> 00:03:03,359
+Audrow Nash: Gotcha. So you said
+Abby, Eddie's the next
+
+46
+00:03:03,389 --> 00:03:06,749
+mixologist. What does that mean?
+What does that actually doing?
+
+47
+00:03:08,220 --> 00:03:12,840
+Dayo McIntosh: So similar to a
+bartender, right? We have ADE
+
+48
+00:03:12,870 --> 00:03:18,570
+going to different dispensing
+vats to create products, again,
+
+49
+00:03:18,570 --> 00:03:25,050
+tailored to each individual
+person's like personal care and
+
+50
+00:03:25,050 --> 00:03:29,790
+wellness goals. And once. So for
+example, we have an interface
+
+51
+00:03:30,090 --> 00:03:33,030
+and someone like you would go up
+to the interface, for example, a
+
+52
+00:03:33,030 --> 00:03:38,790
+screen a tablet, and say, hey, I
+want to mix this ingredient with
+
+53
+00:03:38,790 --> 00:03:41,730
+this ingredient. And I want it
+to smell like this. And that
+
+54
+00:03:41,730 --> 00:03:44,820
+would kick it into gear. And
+that's how we create
+
+55
+00:03:44,820 --> 00:03:45,990
+personalized products.
+
+56
+00:03:46,530 --> 00:03:51,330
+Audrow Nash: Super cool. So for
+this, is there any like? So if I
+
+57
+00:03:51,330 --> 00:03:55,620
+say my skin is super dry, and I
+want it to smell like oranges,
+
+58
+00:03:55,650 --> 00:04:02,100
+or something like this? Does it?
+Does Addie come up with a recipe
+
+59
+00:04:02,100 --> 00:04:05,760
+or dive to say I want to this
+much I don't know, shea butter
+
+60
+00:04:05,760 --> 00:04:09,420
+in it or this much whatever. How
+does that work? Is it
+
+61
+00:04:09,420 --> 00:04:12,180
+recommended based on goals? Or
+is it like I know the
+
+62
+00:04:12,180 --> 00:04:12,930
+ingredients.
+
+63
+00:04:13,859 --> 00:04:17,219
+Dayo McIntosh: So the full
+picture, the full rein skill of
+
+64
+00:04:17,219 --> 00:04:22,499
+this is to have give consumers
+the options to customize and mix
+
+65
+00:04:22,499 --> 00:04:25,619
+and match however they want. But
+rolling out we're going to start
+
+66
+00:04:25,619 --> 00:04:30,149
+out with pre made orders that
+people can adjust. So it's more
+
+67
+00:04:30,149 --> 00:04:33,809
+of an adjustment than a full
+blown customization feature.
+
+68
+00:04:34,320 --> 00:04:39,240
+Audrow Nash: Yeah. Oh, gotcha.
+And how does so for ADE to do
+
+69
+00:04:39,240 --> 00:04:43,620
+its mixologist work? How does
+Addie actually go to the
+
+70
+00:04:43,620 --> 00:04:47,880
+dispensers or other dispensers
+robotic to does that he push
+
+71
+00:04:47,880 --> 00:04:51,180
+into something and it comes out
+like a soap container or how
+
+72
+00:04:51,180 --> 00:04:51,750
+does it work?
+
+73
+00:04:52,500 --> 00:04:55,470
+Dayo McIntosh: So the dispensers
+are not robotic. So they are
+
+74
+00:04:55,470 --> 00:05:02,400
+actually wine bottles that we've
+added dispenser or would you
+
+75
+00:05:02,400 --> 00:05:07,320
+call it droppers to them sort of
+thing. And the idea behind that
+
+76
+00:05:07,320 --> 00:05:10,800
+is that we wanted to eliminate
+as much or I wanted to eliminate
+
+77
+00:05:10,800 --> 00:05:16,020
+as many possible holdups by
+limiting the number of
+
+78
+00:05:16,050 --> 00:05:23,640
+automations or automated pieces
+we had in this operations. So
+
+79
+00:05:24,120 --> 00:05:27,690
+ADE is the only robotic
+automated piece in this whole
+
+80
+00:05:27,690 --> 00:05:30,480
+setup, and it goes to each
+bottle depending on what you
+
+81
+00:05:30,480 --> 00:05:34,050
+select and pushes up on the
+dispensing nozzle, that's what I
+
+82
+00:05:34,050 --> 00:05:37,650
+was looking for pushes up on the
+nozzle, and that releases a set
+
+83
+00:05:37,650 --> 00:05:41,820
+amount of liquid ingredients for
+the product.
+
+84
+00:05:42,329 --> 00:05:43,679
+Audrow Nash: So it's kind of
+like one of those soap
+
+85
+00:05:43,679 --> 00:05:46,319
+dispensers and restrooms where
+you you push the thing and a
+
+86
+00:05:46,319 --> 00:05:47,129
+little bit comes out
+
+87
+00:05:47,129 --> 00:05:49,919
+Dayo McIntosh: exactly, it's
+exactly like that, or something
+
+88
+00:05:49,919 --> 00:05:52,499
+you'd see at a bar, for example,
+I don't know if you've seen
+
+89
+00:05:52,499 --> 00:05:56,759
+those. Those dispenser actually,
+I think they have them now at
+
+90
+00:05:56,759 --> 00:06:02,279
+home, like you have those mobile
+bars that you can install in
+
+91
+00:06:02,279 --> 00:06:05,549
+your kitchen. And they all have
+like nozzles that you attach to
+
+92
+00:06:05,549 --> 00:06:11,069
+the bottom of, of Yeah, like a
+cocktail bottle or liquor
+
+93
+00:06:11,069 --> 00:06:13,769
+bottle, and then you just push
+up on that, and then you get
+
+94
+00:06:13,769 --> 00:06:14,339
+what you want.
+
+95
+00:06:15,240 --> 00:06:18,450
+Audrow Nash: Gotcha. And then
+how do you how do you control
+
+96
+00:06:18,450 --> 00:06:22,560
+Addie? For this? So does it does
+that he know the position of all
+
+97
+00:06:22,560 --> 00:06:25,200
+of the different ones. And you
+can say option one, option two
+
+98
+00:06:25,200 --> 00:06:28,170
+option, it will go push option
+one, option two, option three.
+
+99
+00:06:28,410 --> 00:06:31,020
+Dayo McIntosh: That's exactly
+how it's set up. Yes. And
+
+100
+00:06:31,020 --> 00:06:34,260
+currently it is not fully
+automated. And that's what I'm
+
+101
+00:06:34,260 --> 00:06:39,300
+working towards. So for the time
+being, we use the Teach pendant,
+
+102
+00:06:39,330 --> 00:06:42,870
+what we call a teach pendant.
+It's sort of like a controller.
+
+103
+00:06:42,900 --> 00:06:47,340
+So think of like a game, a game
+controller, for example that you
+
+104
+00:06:47,340 --> 00:06:53,400
+use to with your console. So
+instead of that, like we have
+
+105
+00:06:53,400 --> 00:06:57,750
+this teach pendant, and I can
+call out the different positions
+
+106
+00:06:57,750 --> 00:07:01,050
+that I want ADE to visit with
+the Teach pendant, and that
+
+107
+00:07:01,050 --> 00:07:02,070
+keeps adding together.
+
+108
+00:07:02,940 --> 00:07:05,400
+Audrow Nash: So how does the
+Teach pendant what I'm imagining
+
+109
+00:07:05,400 --> 00:07:09,330
+is like a big pen kind of thing
+with maybe like a bunch of QR
+
+110
+00:07:09,330 --> 00:07:12,780
+tags or some some fiducial
+markers on top and you like hold
+
+111
+00:07:12,780 --> 00:07:15,030
+it into a spot and there's a
+camera looking at it and you
+
+112
+00:07:15,030 --> 00:07:18,210
+click it or something? And it
+says okay, here is the location
+
+113
+00:07:18,210 --> 00:07:19,830
+I want? Or is that how it works?
+
+114
+00:07:19,860 --> 00:07:24,450
+Dayo McIntosh: No, think of a
+really industrial looking
+
+115
+00:07:24,480 --> 00:07:28,500
+tablet. Oh, okay. So that's
+exactly what the Teach pendant
+
+116
+00:07:28,500 --> 00:07:33,840
+is the controller. And so like,
+on this tablet, we have all the
+
+117
+00:07:33,840 --> 00:07:38,670
+different programs, we have
+different positions. And if I
+
+118
+00:07:38,670 --> 00:07:44,070
+want it to go to bottles one and
+seven, I enter that into the
+
+119
+00:07:44,070 --> 00:07:46,560
+Teach pendant on to the Teach
+candidate and make that
+
+120
+00:07:46,560 --> 00:07:54,150
+selection and click press or go
+play. And that again. gets it
+
+121
+00:07:54,150 --> 00:07:54,480
+going.
+
+122
+00:07:55,620 --> 00:07:58,080
+Audrow Nash: Gotcha. So you
+select all of the things you
+
+123
+00:07:58,080 --> 00:08:02,340
+want it to do on this. Exactly.
+It's like I want I want it to go
+
+124
+00:08:02,340 --> 00:08:06,270
+to one and seven, whatever. And
+then it will grab the bottle,
+
+125
+00:08:06,270 --> 00:08:09,210
+bring it over there. How do you
+get it to know the initial
+
+126
+00:08:09,210 --> 00:08:13,320
+positions of the bottles where
+it has to push to get the stuff?
+
+127
+00:08:14,190 --> 00:08:15,720
+Dayo McIntosh: I'm sorry? Can
+you how do we?
+
+128
+00:08:16,230 --> 00:08:19,410
+Audrow Nash: So if you if you
+have all the dispensers up? How
+
+129
+00:08:19,410 --> 00:08:23,160
+do you? So if you add a new
+dispenser to the right, say a
+
+130
+00:08:23,160 --> 00:08:26,820
+bit further away? How would you
+tell it that there's one over
+
+131
+00:08:26,820 --> 00:08:30,360
+there that it could go push for
+option 10? Say
+
+132
+00:08:30,420 --> 00:08:32,370
+Dayo McIntosh: so right now
+everything is controlled, we
+
+133
+00:08:32,370 --> 00:08:36,120
+have a limited amount of
+dispensers, we have 20 of them.
+
+134
+00:08:36,150 --> 00:08:40,800
+So 20 positions that are set. So
+if we're introducing a new
+
+135
+00:08:40,800 --> 00:08:44,490
+ingredient, we're taking
+something else out. So like it
+
+136
+00:08:44,490 --> 00:08:47,580
+doesn't go beyond the set
+parameters that we have in place
+
+137
+00:08:47,580 --> 00:08:48,930
+right now. And
+
+138
+00:08:50,070 --> 00:08:53,160
+Audrow Nash: warming up for the
+first ones. So for all 20 of
+
+139
+00:08:53,160 --> 00:08:56,430
+those. How did you tell Addie
+all those positions.
+
+140
+00:08:57,450 --> 00:09:00,480
+Dayo McIntosh: Um, so that was
+programmed. We programmed it.
+
+141
+00:09:00,480 --> 00:09:05,310
+And I worked with engineers to
+come up with a programming for
+
+142
+00:09:05,310 --> 00:09:10,620
+this. And so that was hard
+coded. Yeah. And so adding those
+
+143
+00:09:10,650 --> 00:09:17,520
+position one is, you know, to
+disagree. Yes. Away from Me. And
+
+144
+00:09:17,520 --> 00:09:21,480
+yeah, so you can get to all
+those positions. Without knowing
+
+145
+00:09:21,480 --> 00:09:24,390
+what exactly is there, right.
+It's just going to position.
+
+146
+00:09:24,960 --> 00:09:28,590
+Audrow Nash: Yep. And how does
+so if you want to do you want to
+
+147
+00:09:28,590 --> 00:09:33,300
+make a custom mix for someone?
+Is it kind of like these
+
+148
+00:09:33,300 --> 00:09:37,560
+different dispensers will top
+off the bottle. So you have
+
+149
+00:09:37,560 --> 00:09:40,140
+like, maybe you can pick the
+framework fragrance and that's
+
+150
+00:09:40,140 --> 00:09:45,120
+like one dispenser, and you can
+add some extra attribute like
+
+151
+00:09:45,180 --> 00:09:49,230
+extra moisturizing or whatever
+it might be. And that makes it a
+
+152
+00:09:49,230 --> 00:09:53,190
+little bit custom but is it
+largely made already, and you're
+
+153
+00:09:53,190 --> 00:09:54,780
+just adding like a little
+topping to it.
+
+154
+00:09:55,080 --> 00:09:58,920
+Dayo McIntosh: Exactly. It's
+largely made already and what
+
+155
+00:09:58,920 --> 00:10:02,250
+we're working on right now So
+you can make adjustments to the,
+
+156
+00:10:02,700 --> 00:10:03,570
+to the recipe.
+
+157
+00:10:04,410 --> 00:10:10,980
+Audrow Nash: Gotcha. Very cool.
+Yeah. So and then this is all in
+
+158
+00:10:10,980 --> 00:10:15,030
+a truck, and that truck has a
+big sheet of glass. So you can
+
+159
+00:10:15,030 --> 00:10:18,270
+look and watch the robots
+working. Can you tell me a bit
+
+160
+00:10:18,270 --> 00:10:18,840
+about that?
+
+161
+00:10:19,560 --> 00:10:23,640
+Dayo McIntosh: Yes. So when I
+set out the goal, and again, the
+
+162
+00:10:23,640 --> 00:10:28,590
+vision still for this is to be
+in a brick and mortar store, to
+
+163
+00:10:28,590 --> 00:10:31,110
+be sort of like the central
+point where people can come
+
+164
+00:10:31,110 --> 00:10:37,800
+together. And it's going to be a
+safe place for self discovery
+
+165
+00:10:37,800 --> 00:10:41,730
+for exploration, like finding
+clean, natural ingredients and
+
+166
+00:10:41,730 --> 00:10:45,930
+products that work for your
+hair, skin and wellness in
+
+167
+00:10:45,930 --> 00:10:49,650
+general. And so that was the
+goal. But living in the Bay
+
+168
+00:10:49,650 --> 00:10:52,620
+Area, we all know that real
+estate here is really expensive.
+
+169
+00:10:53,070 --> 00:10:57,750
+And so when that didn't seem
+feasible, I had to think outside
+
+170
+00:10:57,750 --> 00:11:01,080
+the box, and that's where the
+idea of the trucking came about,
+
+171
+00:11:01,770 --> 00:11:05,130
+I really liked the idea of
+having this experience, right,
+
+172
+00:11:05,130 --> 00:11:08,910
+we're building this experience
+for people that will sort of
+
+173
+00:11:08,910 --> 00:11:11,760
+engage them and get the
+conversation going about what
+
+174
+00:11:11,760 --> 00:11:15,810
+they're using, in their, like,
+on their bodies, for example,
+
+175
+00:11:15,960 --> 00:11:21,210
+and what their overall personal
+care and wellness like regimen.
+
+176
+00:11:21,750 --> 00:11:26,820
+Resume is. And so that was the
+idea behind this. So you walk up
+
+177
+00:11:26,820 --> 00:11:29,640
+to the truck and and immediately
+you get this experience, right,
+
+178
+00:11:29,640 --> 00:11:33,330
+you're walking up and right in
+front of us is robots, you know,
+
+179
+00:11:33,330 --> 00:11:36,180
+working to create a product
+tailored for you.
+
+180
+00:11:37,050 --> 00:11:40,020
+Audrow Nash: And so the way that
+it looks for the customer is
+
+181
+00:11:40,170 --> 00:11:42,870
+they come up to you and your
+truck or whoever you're working
+
+182
+00:11:42,870 --> 00:11:47,070
+for it. And then they talk to
+you for a little bit and then
+
+183
+00:11:47,070 --> 00:11:50,640
+you poke on your teach pendant
+or whatever you call it a
+
+184
+00:11:50,640 --> 00:11:55,590
+tablet. Yes. And then do you do
+you hand ADE a bottle? Does
+
+185
+00:11:55,590 --> 00:11:57,930
+that ego pick one up? Or how
+does it work?
+
+186
+00:11:58,560 --> 00:12:01,140
+Dayo McIntosh: So right now we
+have it set have different
+
+187
+00:12:01,140 --> 00:12:06,030
+trees, the different bottle
+sizes in the truck. So when we
+
+188
+00:12:06,030 --> 00:12:09,060
+make the selection, it knows
+what bottle to go to based on
+
+189
+00:12:09,060 --> 00:12:12,180
+what we've selected. So if we
+pick a small bottle, it will go
+
+190
+00:12:12,180 --> 00:12:17,370
+to tray one. Medium bottle tree
+two, large bottle tray three.
+
+191
+00:12:17,460 --> 00:12:20,940
+And so that's how it's currently
+set up. Yes. So we don't do any
+
+192
+00:12:20,940 --> 00:12:26,460
+of the like handling of bottles
+or ingredients like everything
+
+193
+00:12:26,460 --> 00:12:30,000
+is housed again in the truck.
+And ADE manages that whole
+
+194
+00:12:30,000 --> 00:12:30,990
+setup. So the same?
+
+195
+00:12:31,530 --> 00:12:34,500
+Audrow Nash: How does that he
+pick up the bottle? Because that
+
+196
+00:12:34,500 --> 00:12:39,270
+seems like a kind of tough task.
+So you have some sensors, like
+
+197
+00:12:39,300 --> 00:12:42,480
+you have a camera or some sort
+of like physical sensors or
+
+198
+00:12:42,480 --> 00:12:44,220
+something for telling where the
+bottles are?
+
+199
+00:12:44,820 --> 00:12:47,790
+Dayo McIntosh: Or how do you
+know. So that's something that
+
+200
+00:12:47,790 --> 00:12:51,300
+we're putting into place. But
+right now, everything is hard
+
+201
+00:12:51,300 --> 00:12:57,300
+coded. So we can't afford to,
+you know, move anything. So
+
+202
+00:12:57,300 --> 00:13:01,500
+those trays are bolted into the
+ground so that regardless of
+
+203
+00:13:01,500 --> 00:13:04,830
+where we go with the trust, like
+nothing moves, and so that
+
+204
+00:13:04,830 --> 00:13:09,180
+position is always constant. So
+it always knows if they want a
+
+205
+00:13:09,180 --> 00:13:13,080
+small bottle, I go to this
+position. Open up my gripper and
+
+206
+00:13:13,080 --> 00:13:14,520
+there's going to be something
+there for me.
+
+207
+00:13:15,060 --> 00:13:17,460
+Audrow Nash: Yeah, but so
+getting a bottle on a tray. The
+
+208
+00:13:17,460 --> 00:13:20,970
+tray is fixed, but like it has a
+bunch of bottles on it. Correct?
+
+209
+00:13:21,960 --> 00:13:27,660
+How does it go and grab a bottle
+on a fixed tray? Is it just you
+
+210
+00:13:27,660 --> 00:13:32,730
+have like a bunch of bottles
+sitting in kind of like, I don't
+
+211
+00:13:32,730 --> 00:13:35,730
+know, separate sections for each
+bottle and it goes in it knows
+
+212
+00:13:35,730 --> 00:13:37,860
+that this one is empty. Now it
+goes to the next one.
+
+213
+00:13:39,390 --> 00:13:42,090
+Dayo McIntosh: How does it sell
+a bottle? So everything that
+
+214
+00:13:42,090 --> 00:13:45,090
+we've done right now has been
+like really rudimentary, right?
+
+215
+00:13:45,120 --> 00:13:50,190
+eliminating any, any potential?
+Yes, any uncertainty or any
+
+216
+00:13:50,220 --> 00:13:52,710
+Audrow Nash: possibility of
+vacation for small, medium and
+
+217
+00:13:52,710 --> 00:13:54,660
+large and you replace it every
+time or
+
+218
+00:13:54,660 --> 00:13:57,810
+Dayo McIntosh: Yes. So we have a
+long tray and I feed in the
+
+219
+00:13:57,810 --> 00:14:00,510
+bottles or whoever feeds in the
+bottles. And then we have it on
+
+220
+00:14:00,510 --> 00:14:03,870
+an incline. So whenever ADE
+grabs up, it slides down.
+
+221
+00:14:03,870 --> 00:14:06,780
+Exactly, exactly. It's clever.
+Yeah.
+
+222
+00:14:08,520 --> 00:14:10,620
+Audrow Nash: I really liked the
+approach you're taking, which is
+
+223
+00:14:10,620 --> 00:14:14,970
+like, keep the problem as simple
+as possible, because you can
+
+224
+00:14:14,970 --> 00:14:17,940
+always grow and there's no need
+to like automate everything,
+
+225
+00:14:17,940 --> 00:14:21,450
+especially while you're testing
+out an idea. Right. And so I
+
+226
+00:14:21,450 --> 00:14:23,940
+really like it that it's so
+clever because you have three
+
+227
+00:14:23,940 --> 00:14:26,460
+spots and the bottles just slide
+down into it.
+
+228
+00:14:26,490 --> 00:14:29,130
+Dayo McIntosh: Exactly. So one
+of my biggest fear when I
+
+229
+00:14:29,130 --> 00:14:33,210
+started doing this, I did a lot
+of research about a lot of like
+
+230
+00:14:33,210 --> 00:14:37,830
+consumer facing robotic
+applications, right. And I found
+
+231
+00:14:37,830 --> 00:14:42,060
+that the number one problem that
+customers or people seem to
+
+232
+00:14:42,060 --> 00:14:48,600
+speak about was that these
+different applications they were
+
+233
+00:14:48,600 --> 00:14:52,200
+always down like they weren't.
+They weren't working. They
+
+234
+00:14:52,200 --> 00:14:56,820
+weren't working often. And the
+problem with that is if you have
+
+235
+00:14:56,820 --> 00:15:00,630
+so many are different stations
+that are all automated If you
+
+236
+00:15:00,630 --> 00:15:04,350
+run the risk of like one or the
+other going down, and so you're
+
+237
+00:15:04,350 --> 00:15:07,860
+constantly fixing a problem. And
+so when I set out to do this, I
+
+238
+00:15:07,860 --> 00:15:11,670
+wanted to simplify it as much as
+possible, again to begin with
+
+239
+00:15:11,700 --> 00:15:15,900
+and figure out the rest as we,
+as we grow as we as we move
+
+240
+00:15:15,900 --> 00:15:22,200
+forward. And so like everything
+is super simple. What I'm
+
+241
+00:15:22,200 --> 00:15:25,740
+building right now, yeah, yeah,
+it's it's been good so far.
+
+242
+00:15:26,550 --> 00:15:30,330
+Audrow Nash: And how so Okay,
+now ADE has picked up a bottle
+
+243
+00:15:30,330 --> 00:15:34,050
+from one of a set of spots. So
+you say a small medium or a
+
+244
+00:15:34,050 --> 00:15:37,830
+large bottle, or whatever the
+sizes are, she grabs one, and
+
+245
+00:15:37,830 --> 00:15:40,740
+then pushes and adds a few
+different things from the
+
+246
+00:15:40,740 --> 00:15:45,300
+dispensers. I assume the bottles
+have no tops. Yes, correct. So
+
+247
+00:15:45,300 --> 00:15:49,980
+you can squirt right into it.
+And then does ADE like, is
+
+248
+00:15:49,980 --> 00:15:52,470
+there like a little door or
+something where ADE puts the
+
+249
+00:15:52,470 --> 00:15:55,140
+bottle for you to give it to the
+customer? Or how does that like
+
+250
+00:15:55,170 --> 00:15:56,430
+the whole process now?
+
+251
+00:15:56,820 --> 00:16:00,480
+Dayo McIntosh: Okay, so let's
+say you walk up to the truck,
+
+252
+00:16:00,510 --> 00:16:05,130
+you're like, Hey, do I want this
+product. And I wanted this way,
+
+253
+00:16:05,520 --> 00:16:09,720
+I input that selection onto the
+Teach pendant that keeps adding
+
+254
+00:16:09,720 --> 00:16:14,880
+together, it moves over to the
+trays with the with the product
+
+255
+00:16:14,880 --> 00:16:19,710
+bottles grabs a bottle, small,
+medium, or large, takes that and
+
+256
+00:16:19,710 --> 00:16:24,690
+goes to the dispensers on the
+wall. So if you selected product
+
+257
+00:16:24,720 --> 00:16:28,140
+number one and seven, for
+example, it would go to product
+
+258
+00:16:28,140 --> 00:16:32,550
+one, or dispenser one dispenser
+seven. And once that's done
+
+259
+00:16:32,550 --> 00:16:36,840
+dispensing, it would deliver the
+bottle to two cutouts that we
+
+260
+00:16:36,840 --> 00:16:40,860
+have in the truck. So in the
+truck we have we cut out two
+
+261
+00:16:40,890 --> 00:16:47,880
+doors, think of it as a trap
+door, two doors with a revolving
+
+262
+00:16:48,330 --> 00:16:53,370
+revolving tray. So as you would
+place the bottle on the tray on
+
+263
+00:16:53,400 --> 00:16:56,850
+the inside of the truck, we
+would revolve that tray and it
+
+264
+00:16:56,850 --> 00:16:59,190
+would appear on the outside of
+the truck for the customer to
+
+265
+00:16:59,190 --> 00:16:59,490
+grab.
+
+266
+00:17:00,360 --> 00:17:05,460
+Audrow Nash: Cool. Okay. So,
+with this, how long have you
+
+267
+00:17:05,460 --> 00:17:07,740
+been doing this? So how long
+have you had the truck setup
+
+268
+00:17:07,740 --> 00:17:07,890
+with?
+
+269
+00:17:10,289 --> 00:17:13,619
+Dayo McIntosh: Ooh, two years.
+Two years? A little over two
+
+270
+00:17:13,619 --> 00:17:20,999
+years? Yeah. So we started doing
+our beta and showcasing it in q4
+
+271
+00:17:20,999 --> 00:17:27,029
+of 2019. And then, as we all
+know, COVID hit right, the next
+
+272
+00:17:27,029 --> 00:17:30,989
+year. And so all of that
+shutdown. And actually it was
+
+273
+00:17:30,989 --> 00:17:35,399
+stolen. And so that set us back.
+And so we've been in the process
+
+274
+00:17:35,399 --> 00:17:39,779
+of like rebuilding. So that, you
+know, as things have opened back
+
+275
+00:17:39,779 --> 00:17:42,689
+up, we can get back out there.
+I'm showcasing and doing what we
+
+276
+00:17:42,689 --> 00:17:42,989
+do.
+
+277
+00:17:43,559 --> 00:17:45,059
+Audrow Nash: So you don't
+currently have an Audi
+
+278
+00:17:47,639 --> 00:17:48,479
+replacement ADE.
+
+279
+00:17:48,720 --> 00:17:50,640
+Dayo McIntosh: Yeah, it's a
+funny story. So now I currently
+
+280
+00:17:50,640 --> 00:17:54,870
+have two ADDYs. So the original
+ADE was still the truck was
+
+281
+00:17:54,870 --> 00:18:01,140
+stolen with Abby. Yeah, they
+It's wild. They ended up
+
+282
+00:18:01,710 --> 00:18:08,460
+destroying the truck. Taking the
+computer, the brains behind it.
+
+283
+00:18:09,180 --> 00:18:13,020
+So it is a manipulator, right.
+It's just the arm, the hardware,
+
+284
+00:18:13,020 --> 00:18:16,620
+and then you have the controller
+the brains behind it. So they
+
+285
+00:18:16,620 --> 00:18:21,090
+took that I'm guessing they took
+it for the wires. So that was
+
+286
+00:18:21,090 --> 00:18:25,440
+missing. And so I have to start
+over purchasing you ADE. And so
+
+287
+00:18:25,440 --> 00:18:29,580
+now I just have the manipulator
+the arm for the first one.
+
+288
+00:18:31,830 --> 00:18:35,190
+Audrow Nash: That's crazy. I
+can't believe just how did they
+
+289
+00:18:35,190 --> 00:18:38,400
+steal your truck? With this? Did
+it like at night? You just found
+
+290
+00:18:38,400 --> 00:18:41,670
+your truck missing or Yeah, kind
+of thing? Are you in the Oakland
+
+291
+00:18:41,670 --> 00:18:42,510
+area? Or were
+
+292
+00:18:42,510 --> 00:18:46,830
+Dayo McIntosh: you? No, I'm
+actually I would consider this
+
+293
+00:18:46,830 --> 00:18:51,030
+the suburbs. I live in New work
+close to Fremont and just across
+
+294
+00:18:51,030 --> 00:18:57,090
+the bridge from like Menlo Park
+and Palo Alto. So yeah, that
+
+295
+00:18:57,150 --> 00:19:02,760
+that was devastating. Yeah, like
+I said, it was right before the
+
+296
+00:19:02,760 --> 00:19:07,500
+lockdown. So no one was working.
+Everything was shut down. And so
+
+297
+00:19:07,500 --> 00:19:10,740
+we just started rebuilding at
+the end of last year.
+
+298
+00:19:11,309 --> 00:19:13,949
+Audrow Nash: Gotcha. I just had
+a friend who had his car stolen,
+
+299
+00:19:13,949 --> 00:19:18,509
+and they just found it recently
+been so crazy that
+
+300
+00:19:18,900 --> 00:19:20,550
+Dayo McIntosh: it is. Yeah.
+
+301
+00:19:21,329 --> 00:19:23,039
+Audrow Nash: Yeah. Your robot
+truck.
+
+302
+00:19:24,240 --> 00:19:27,030
+Dayo McIntosh: And my robot
+truck. Yeah, like a whole truck.
+
+303
+00:19:27,030 --> 00:19:29,460
+I was like, how do you steal a
+whole truck? But yeah, that
+
+304
+00:19:29,460 --> 00:19:33,030
+happened. So it's part of the
+year two story.
+
+305
+00:19:34,829 --> 00:19:39,839
+Audrow Nash: Gosh, now, so two
+years a lot. Some have some
+
+306
+00:19:39,839 --> 00:19:44,099
+difficulties with like the truck
+being stolen and COVID. But how
+
+307
+00:19:44,099 --> 00:19:48,539
+have customers been engaging
+with ADE and how has the
+
+308
+00:19:48,539 --> 00:19:50,759
+experience been and the times
+that you have been in front of
+
+309
+00:19:50,759 --> 00:19:51,239
+people?
+
+310
+00:19:51,660 --> 00:19:56,670
+Dayo McIntosh: So um, so we
+debuted ADE unofficially at
+
+311
+00:19:56,670 --> 00:20:02,520
+Afro tech. So the time which is
+November berth 2019, it was just
+
+312
+00:20:02,520 --> 00:20:06,690
+a really great opportunity to,
+like, showcase Addie, and have a
+
+313
+00:20:06,690 --> 00:20:09,840
+crowd of people where we could
+get feedback and just kind of
+
+314
+00:20:09,840 --> 00:20:15,630
+gauge people's reactions. And so
+that was a really awesome
+
+315
+00:20:15,630 --> 00:20:17,940
+experience, we got a lot of
+feedback, we got a lot of
+
+316
+00:20:17,940 --> 00:20:21,840
+interest. And we were really
+excited to launch after that,
+
+317
+00:20:21,840 --> 00:20:24,990
+based on the interest and the
+excitement that we found, or
+
+318
+00:20:24,990 --> 00:20:31,830
+that we received, being at that
+event. And yeah, so it just,
+
+319
+00:20:31,860 --> 00:20:35,190
+again, all of that, the lock
+downs, the theft, all of that
+
+320
+00:20:35,190 --> 00:20:38,280
+set us back, but we're gearing
+up again, to go back out there.
+
+321
+00:20:38,670 --> 00:20:41,550
+And we know that we're going to
+have the same amount of like
+
+322
+00:20:41,550 --> 00:20:45,300
+excitement and interest that we
+had initially. So that's what
+
+323
+00:20:45,300 --> 00:20:48,030
+motivates us to keep going. And
+that's what we're looking
+
+324
+00:20:48,030 --> 00:20:48,510
+forward to.
+
+325
+00:20:49,859 --> 00:20:52,529
+Audrow Nash: And the any like
+funny stories about people being
+
+326
+00:20:52,529 --> 00:20:55,829
+just like, thrilled or anything
+when the robot gives them their
+
+327
+00:20:55,829 --> 00:20:58,919
+custom product or anything.
+
+328
+00:20:59,520 --> 00:21:02,490
+Dayo McIntosh: So when we
+launched, we weren't actually or
+
+329
+00:21:02,490 --> 00:21:05,580
+when we did our beta back then
+we weren't actually in
+
+330
+00:21:05,580 --> 00:21:11,010
+operation. So everything is just
+like, online right now. You can
+
+331
+00:21:11,010 --> 00:21:16,620
+buy premade products online, but
+we haven't actually ever started
+
+332
+00:21:17,310 --> 00:21:22,350
+selling via adding those
+evolving demos. And again, yeah,
+
+333
+00:21:22,380 --> 00:21:28,680
+we were we were all of our plans
+were, you know, shifted by but
+
+334
+00:21:28,680 --> 00:21:32,010
+in disarray, by everything that
+has happened. Yeah. When
+
+335
+00:21:33,990 --> 00:21:35,490
+Audrow Nash: that happened.
+Yeah.
+
+336
+00:21:36,089 --> 00:21:39,149
+Dayo McIntosh: So we were really
+excited to again, have this
+
+337
+00:21:39,149 --> 00:21:44,369
+experience of actually selling
+with Addie and gauging customer
+
+338
+00:21:44,519 --> 00:21:47,339
+experience, user experience.
+And, again, getting that
+
+339
+00:21:47,339 --> 00:21:50,609
+feedback. I think that's really
+important. As we iterate and as
+
+340
+00:21:50,609 --> 00:21:51,509
+we grow. Right. So
+
+341
+00:21:52,500 --> 00:21:54,720
+Audrow Nash: what So you
+mentioned it a little bit, but
+
+342
+00:21:54,720 --> 00:21:57,810
+the hope with Addie, is it
+start? So basically, people come
+
+343
+00:21:57,810 --> 00:22:01,500
+for the robot, and then it
+engages them in meaningful
+
+344
+00:22:01,500 --> 00:22:06,810
+conversation about their self
+care effectively. Yes, that's
+
+345
+00:22:06,810 --> 00:22:10,200
+yeah, the draw of the robot and
+then maybe build a community
+
+346
+00:22:10,200 --> 00:22:11,970
+around this. Yeah.
+
+347
+00:22:12,210 --> 00:22:15,870
+Dayo McIntosh: Well, so at ease,
+definitely a novelty, right. We
+
+348
+00:22:15,870 --> 00:22:20,280
+haven't built into a truck. And
+I don't think right now is with
+
+349
+00:22:20,280 --> 00:22:23,880
+the right love until like, it
+makes me super excited. And and
+
+350
+00:22:23,880 --> 00:22:27,510
+robotics is the future of so who
+knows what will happen. But it
+
+351
+00:22:27,510 --> 00:22:30,600
+is a novel team. And the idea is
+that the efficacy of our
+
+352
+00:22:30,600 --> 00:22:34,710
+products will bring people back
+to say that it serves two
+
+353
+00:22:34,710 --> 00:22:37,800
+purposes. First, it's
+experiential retail. So again,
+
+354
+00:22:37,800 --> 00:22:40,740
+you're having this experience,
+people have this fun, it's
+
+355
+00:22:40,770 --> 00:22:44,190
+you're having conversations,
+you're having community, right
+
+356
+00:22:44,220 --> 00:22:49,200
+around this really fun, this
+novel, really interactive,
+
+357
+00:22:50,160 --> 00:22:52,890
+unique experience, right. And
+then the other hand is
+
+358
+00:22:52,890 --> 00:22:57,150
+operational efficiency. So we
+envision a time where the second
+
+359
+00:22:57,180 --> 00:23:00,780
+it will be put to use in the
+back fulfilling orders and
+
+360
+00:23:00,780 --> 00:23:05,250
+manufacturing. And so that's
+that's the goal, the single
+
+361
+00:23:05,520 --> 00:23:09,540
+robotic arm can turn out based
+on our calculations, let's say
+
+362
+00:23:09,540 --> 00:23:14,760
+about 500 products in a 24 hour
+period. And even more than that,
+
+363
+00:23:14,760 --> 00:23:19,050
+so that definitely kicks into
+gear, what we're doing, and
+
+364
+00:23:19,050 --> 00:23:23,730
+we're able to put out huge
+volumes, as control all of them.
+
+365
+00:23:24,420 --> 00:23:27,300
+Audrow Nash: Doing it manually.
+How long would that take? You to
+
+366
+00:23:27,300 --> 00:23:27,450
+do?
+
+367
+00:23:27,480 --> 00:23:32,130
+Dayo McIntosh: Yeah. I mean, 500
+Do you have someone like making
+
+368
+00:23:32,130 --> 00:23:36,090
+that? I would say maybe, like
+less than half of that.
+
+369
+00:23:36,120 --> 00:23:39,720
+Possibly. But then you don't
+have people working? 24/7 Right.
+
+370
+00:23:39,720 --> 00:23:40,140
+Like,
+
+371
+00:23:40,650 --> 00:23:43,770
+Audrow Nash: definitely. We
+manual and repetitive and like
+
+372
+00:23:43,800 --> 00:23:44,400
+yeah, not
+
+373
+00:23:45,000 --> 00:23:49,200
+Dayo McIntosh: rather, exactly.
+would rather people would rather
+
+374
+00:23:49,200 --> 00:23:53,700
+the humans use that time to
+engage and interface with
+
+375
+00:23:53,700 --> 00:23:57,810
+customers and have meaningful
+conversations versus doing this
+
+376
+00:23:57,810 --> 00:24:00,420
+manual? Taxing indexing work?
+
+377
+00:24:00,869 --> 00:24:06,389
+Audrow Nash: For sure. Oh, what
+a cool thing. Yeah. Let's see.
+
+378
+00:24:06,389 --> 00:24:12,149
+So how, I guess how did you pick
+a Kuka arm? Like those are?
+
+379
+00:24:12,479 --> 00:24:16,049
+Like, I believe pretty expensive
+arms? They're like really nice
+
+380
+00:24:16,049 --> 00:24:20,669
+arms? Yeah. I think like, I
+mean, you don't have to give me
+
+381
+00:24:20,669 --> 00:24:23,429
+the exact number but I think
+like $40,000 for like one of
+
+382
+00:24:23,429 --> 00:24:24,539
+those arms. Something.
+
+383
+00:24:24,929 --> 00:24:28,469
+Dayo McIntosh: That's That's
+exactly right. They are quite
+
+384
+00:24:28,469 --> 00:24:35,099
+expensive. That is a very good
+question. I have to this day I I
+
+385
+00:24:35,099 --> 00:24:37,679
+don't know I just have this
+fascination with Kuka
+
+386
+00:24:37,679 --> 00:24:42,719
+specifically have this fixation
+on Kuka. And it again, it's
+
+387
+00:24:43,199 --> 00:24:47,789
+unexplainable. I don't know why.
+But I think the few times I've
+
+388
+00:24:47,789 --> 00:24:51,329
+been around robots, they've been
+cool. Cuz so that may explain
+
+389
+00:24:51,329 --> 00:24:55,679
+that. But as far as the cost,
+you're absolutely right. They're
+
+390
+00:24:55,679 --> 00:24:59,039
+all super expensive. And for
+someone who's like
+
+391
+00:24:59,039 --> 00:25:03,209
+bootstrapping, And so big
+expense all at once. It's a big
+
+392
+00:25:03,209 --> 00:25:08,519
+expense. And so when I set out
+working with limited funds, I
+
+393
+00:25:08,519 --> 00:25:12,449
+send an SOS and this is what I
+call it an SOS different
+
+394
+00:25:12,449 --> 00:25:17,189
+robotics groups that I was a
+part of asking if someone if
+
+395
+00:25:17,189 --> 00:25:21,329
+anyone had any, like, used
+robots, you know, that they
+
+396
+00:25:21,329 --> 00:25:24,959
+could sell sell to me for a
+certain amount of money. And
+
+397
+00:25:24,959 --> 00:25:29,189
+someone happened to respond. And
+at the time, she was the CEO for
+
+398
+00:25:29,369 --> 00:25:35,159
+Cafe X, the coffee robot in the
+Bay Area. Cool. And she just
+
+399
+00:25:35,189 --> 00:25:38,969
+responded and say, Hey, we have
+this, this arm in the back. It's
+
+400
+00:25:38,969 --> 00:25:41,939
+been there for years. We don't
+even know if it works. But
+
+401
+00:25:41,939 --> 00:25:45,419
+you're more than welcome to have
+it. Yeah. And so that's how we
+
+402
+00:25:45,419 --> 00:25:51,239
+got started. So I got that for
+like a fraction, like maybe 10%
+
+403
+00:25:51,239 --> 00:25:56,909
+of the cost of what so what
+else? Yeah, yeah. So that's,
+
+404
+00:25:56,939 --> 00:26:01,139
+that's my wild, wild acquisition
+story. The very first
+
+405
+00:26:01,440 --> 00:26:04,020
+Audrow Nash: one. Did you did
+something similar for come
+
+406
+00:26:04,020 --> 00:26:05,640
+through for the second one? Or
+how did
+
+407
+00:26:05,670 --> 00:26:08,640
+Dayo McIntosh: for the second
+one, we just got? We're able to
+
+408
+00:26:08,640 --> 00:26:13,350
+use the insurance money? Payout
+from the last Yeah, to
+
+409
+00:26:13,890 --> 00:26:16,170
+Audrow Nash: whatever. I mean,
+that like it works out for I
+
+410
+00:26:16,170 --> 00:26:16,470
+mean,
+
+411
+00:26:16,500 --> 00:26:18,810
+Dayo McIntosh: it I mean, yeah,
+I would rather that didn't
+
+412
+00:26:18,810 --> 00:26:22,680
+happen. But like, I know, you
+know, that was that was great,
+
+413
+00:26:22,680 --> 00:26:26,370
+right, that we had this option?
+And because replace Yeah, we
+
+414
+00:26:26,370 --> 00:26:30,210
+could we could very easily
+replace what was so
+
+415
+00:26:30,839 --> 00:26:32,489
+Audrow Nash: I'm glad it was
+insured. Gosh,
+
+416
+00:26:32,730 --> 00:26:36,990
+Dayo McIntosh: I know. Yeah, it
+all worked out well.
+
+417
+00:26:38,309 --> 00:26:42,449
+Audrow Nash: And then. So now,
+actually, would you would you
+
+418
+00:26:42,449 --> 00:26:45,209
+tell me a bit about your
+background? Because you've
+
+419
+00:26:45,209 --> 00:26:48,359
+mentioned so you're not an
+engineer, but you this whole
+
+420
+00:26:48,419 --> 00:26:50,519
+project? Like? How did you come
+to this?
+
+421
+00:26:51,480 --> 00:26:54,210
+Dayo McIntosh: That is a very
+good question. Like I get that
+
+422
+00:26:54,210 --> 00:26:58,440
+question a lot. Because it just
+doesn't make sense. Right? And
+
+423
+00:27:00,420 --> 00:27:01,980
+Audrow Nash: well, it doesn't
+matter. It's I think it makes
+
+424
+00:27:01,980 --> 00:27:02,790
+sense. But yeah,
+
+425
+00:27:03,150 --> 00:27:06,330
+Dayo McIntosh: I love robotics.
+So for me personally, I've
+
+426
+00:27:06,330 --> 00:27:10,830
+always been fascinated by
+innovation and just technology
+
+427
+00:27:10,830 --> 00:27:15,210
+in general. I think that's just
+my personality. There's this, I
+
+428
+00:27:15,210 --> 00:27:17,940
+have this very curious nature.
+And I'm again, fascinated,
+
+429
+00:27:17,970 --> 00:27:20,910
+that's that's the only way to
+put it fascinated by how things
+
+430
+00:27:20,910 --> 00:27:25,230
+work, and just the innovation
+behind it. And so when I started
+
+431
+00:27:25,260 --> 00:27:31,110
+set out to create a business, I
+wanted to incorporate that
+
+432
+00:27:31,110 --> 00:27:36,240
+fascination with innovation with
+robotics into what I was doing,
+
+433
+00:27:36,390 --> 00:27:39,960
+again, knowing that this is the
+future. So I tell people, I'm
+
+434
+00:27:39,960 --> 00:27:42,810
+not an engineer, I'm not a
+technologist by any stretch of
+
+435
+00:27:42,810 --> 00:27:46,860
+the imagination. My background
+is actually in project
+
+436
+00:27:46,860 --> 00:27:49,470
+management and program
+management. And I've done that
+
+437
+00:27:49,710 --> 00:27:56,280
+for the last. I did that over 10
+years across the energy, oil and
+
+438
+00:27:56,280 --> 00:28:01,620
+gas tech industry and real
+estate industry. And so I think
+
+439
+00:28:01,620 --> 00:28:06,420
+those the acquired skill sets
+over you know, 10 years has
+
+440
+00:28:06,420 --> 00:28:11,220
+really helped me in my
+bootstrapping efforts with the
+
+441
+00:28:11,220 --> 00:28:15,690
+limited resources I have to get
+it and yet so to where it is
+
+442
+00:28:15,690 --> 00:28:16,050
+today.
+
+443
+00:28:18,840 --> 00:28:23,700
+Audrow Nash: How did you so how
+did you pick that you wanted to
+
+444
+00:28:23,730 --> 00:28:26,460
+I mean, that just the all the
+decisions along the way are
+
+445
+00:28:26,460 --> 00:28:33,780
+really how did you pick Consu?
+So robotics okay, I get it.
+
+446
+00:28:33,780 --> 00:28:36,840
+You're fascinated by technology.
+And so you wanted to do
+
+447
+00:28:36,840 --> 00:28:40,290
+something with technology didn't
+Is that how it started? But then
+
+448
+00:28:40,440 --> 00:28:45,630
+like, how did you get into
+beauty products? Or like self
+
+449
+00:28:45,630 --> 00:28:46,590
+care products?
+
+450
+00:28:46,950 --> 00:28:48,930
+Unknown: Yeah. Yeah, kind
+
+451
+00:28:48,930 --> 00:28:50,220
+Audrow Nash: of marry the two
+ideas
+
+452
+00:28:51,150 --> 00:28:54,720
+Dayo McIntosh: that's yeah, I
+was laughing because yeah, go
+
+453
+00:28:54,720 --> 00:28:54,960
+on.
+
+454
+00:28:55,470 --> 00:28:58,770
+Audrow Nash: And then fit them
+to the together and say we can
+
+455
+00:28:58,770 --> 00:29:02,670
+make a robot through the final
+mix further. Yeah. It's
+
+456
+00:29:02,670 --> 00:29:04,920
+interesting how you how you've
+arrived at this
+
+457
+00:29:05,010 --> 00:29:07,590
+Dayo McIntosh: Yeah, like
+hearing you say it and hearing
+
+458
+00:29:07,590 --> 00:29:12,120
+people say it I had made it is
+crazy. Like I could never have
+
+459
+00:29:12,660 --> 00:29:15,930
+you know, orchestrated this on
+my own. I think things just came
+
+460
+00:29:15,930 --> 00:29:19,740
+together and lined up in a way
+that made so much sense. And now
+
+461
+00:29:19,740 --> 00:29:26,280
+looking back I'm just I guess,
+amazed at what has transpired.
+
+462
+00:29:27,000 --> 00:29:32,430
+So I started yet so after going
+through a really challenging
+
+463
+00:29:32,430 --> 00:29:38,730
+point in my life. I don't know
+if you're familiar with, you
+
+464
+00:29:38,730 --> 00:29:41,580
+know, the stats that the medical
+community has put out has put
+
+465
+00:29:41,580 --> 00:29:46,320
+out about the lack of safe
+products in the market. And like
+
+466
+00:29:46,320 --> 00:29:50,520
+the toxic ingredients and
+chemicals that we've seen, okay,
+
+467
+00:29:50,700 --> 00:29:55,770
+so the beauty industry is
+unfortunately, notorious for
+
+468
+00:29:55,770 --> 00:29:59,640
+lacks regulations around the
+ingredients and chemicals in a
+
+469
+00:29:59,640 --> 00:30:04,380
+lot of the products that we use.
+And not only that, it hasn't
+
+470
+00:30:04,380 --> 00:30:07,980
+always been inclusive, it didn't
+always cater to everybody,
+
+471
+00:30:07,980 --> 00:30:10,920
+right? There were certain
+demographics that were left out
+
+472
+00:30:10,920 --> 00:30:16,920
+such as myself women of color.
+And you learn that the average
+
+473
+00:30:16,920 --> 00:30:20,700
+woman uses about 12 products on
+a daily basis that exposes her
+
+474
+00:30:20,700 --> 00:30:26,370
+to about 168, chemicals,
+ingredients, a lot of which have
+
+475
+00:30:26,370 --> 00:30:30,120
+now been linked to everything
+from like allergies to cancer,
+
+476
+00:30:30,270 --> 00:30:33,270
+and even reproductive
+dysfunction, which hits a bit
+
+477
+00:30:33,270 --> 00:30:36,090
+too close to home for me. And so
+that's my story. That's the
+
+478
+00:30:36,090 --> 00:30:39,960
+background of of this, right.
+And so going through that really
+
+479
+00:30:39,960 --> 00:30:44,040
+challenging point in my life, I
+decided or determined that I
+
+480
+00:30:44,040 --> 00:30:46,710
+wanted to take better care of
+myself, I wanted to invest in my
+
+481
+00:30:46,710 --> 00:30:50,070
+well being, I wanted to be
+conscious about the products
+
+482
+00:30:50,070 --> 00:30:54,390
+that I was using, just as I was
+conscious about the food I was
+
+483
+00:30:54,390 --> 00:30:59,280
+eating, right. So I, I tend to
+eat healthy. And so I wanted to
+
+484
+00:30:59,430 --> 00:31:03,450
+also have that reflected in, you
+know, the rest of my my well
+
+485
+00:31:03,450 --> 00:31:07,770
+being, like the products I use
+and things like that. So I spend
+
+486
+00:31:07,770 --> 00:31:10,980
+time doing a lot of research,
+but I was really disappointed
+
+487
+00:31:10,980 --> 00:31:13,170
+with the lack of safe and again,
+inclusive products in the
+
+488
+00:31:13,170 --> 00:31:16,470
+market, things have gotten much
+better, because there's more
+
+489
+00:31:16,470 --> 00:31:20,940
+awareness now. But at the time,
+it was just sorely lacking. And
+
+490
+00:31:20,940 --> 00:31:24,270
+so I started mixing and matching
+products in my kitchen, I
+
+491
+00:31:24,270 --> 00:31:28,140
+started creating products for
+myself. And that process was
+
+492
+00:31:28,140 --> 00:31:32,970
+just very restorative and very
+therapeutic. And so I wanted to,
+
+493
+00:31:33,330 --> 00:31:36,300
+I guess offer that to others who
+were on similar paths who are
+
+494
+00:31:36,300 --> 00:31:41,610
+looking for solutions that were
+chemical free, non toxic, vegan,
+
+495
+00:31:41,700 --> 00:31:45,960
+cruelty free. And so that's how
+yet to get started. And from
+
+496
+00:31:45,960 --> 00:31:50,910
+that, the idea of marrying
+technology to that because
+
+497
+00:31:50,910 --> 00:31:54,900
+again, where the world is
+evolving, right? And so I wanted
+
+498
+00:31:54,900 --> 00:31:58,830
+to evolve or create a brand, the
+company that will be around and
+
+499
+00:31:58,830 --> 00:32:02,400
+relevant not just for today, but
+for the future. And so that's
+
+500
+00:32:02,400 --> 00:32:05,580
+where the idea of robotics came
+into intervene and marrying that
+
+501
+00:32:05,580 --> 00:32:06,090
+together.
+
+502
+00:32:06,690 --> 00:32:11,910
+Audrow Nash: So the desire to
+start the company because of the
+
+503
+00:32:11,910 --> 00:32:16,020
+lack of options, lack of
+inclusive options, and then the
+
+504
+00:32:16,050 --> 00:32:21,600
+lack of safe options that came
+first. And then yes, you then
+
+505
+00:32:21,600 --> 00:32:26,370
+had the idea to put the robot.
+How did you fit the robot into
+
+506
+00:32:26,370 --> 00:32:30,270
+the like, how did you go? This
+is how I can use a robot in this
+
+507
+00:32:30,270 --> 00:32:30,960
+situation?
+
+508
+00:32:31,470 --> 00:32:38,190
+Dayo McIntosh: Like the aha
+moments? Yeah, I don't. Again, I
+
+509
+00:32:38,580 --> 00:32:41,550
+couldn't even tell you a
+pinpoint like, this is exactly
+
+510
+00:32:41,550 --> 00:32:44,820
+what happened that, that set
+that in motion. It's just
+
+511
+00:32:44,820 --> 00:32:48,450
+something clicked at some point.
+And I was like, I'm going to use
+
+512
+00:32:48,450 --> 00:32:52,170
+the robots to create this really
+awesome experience for people
+
+513
+00:32:52,410 --> 00:32:55,860
+and get that conversation
+started. And who knows, it may
+
+514
+00:32:55,860 --> 00:33:00,330
+have been I mean, I've been
+primed from, you know, maybe
+
+515
+00:33:00,480 --> 00:33:03,780
+robots as seen throughout my
+life, or just different
+
+516
+00:33:03,780 --> 00:33:09,000
+impressions. I can't exactly
+pinpoint, you know, the specific
+
+517
+00:33:09,000 --> 00:33:12,420
+moment and the specific moments,
+but it just clicked one day, I
+
+518
+00:33:12,420 --> 00:33:15,600
+was just like, and this is what
+we're doing. And we're going to
+
+519
+00:33:15,600 --> 00:33:19,110
+incorporate robotics and it's
+all going to like mesh. I like
+
+520
+00:33:19,110 --> 00:33:23,940
+the way you said it. I say this
+a lot. We married the apothecary
+
+521
+00:33:23,970 --> 00:33:27,780
+with robotics. And that's what
+we're doing at marrying this
+
+522
+00:33:27,779 --> 00:33:31,109
+Audrow Nash: security. Or it's
+what's apothecary, I don't know
+
+523
+00:33:31,109 --> 00:33:31,529
+the word.
+
+524
+00:33:31,739 --> 00:33:34,649
+Dayo McIntosh: And the classic
+carry is for Yeah, in the past
+
+525
+00:33:34,649 --> 00:33:39,149
+where you'd go to have I guess
+someone that came to a
+
+526
+00:33:39,149 --> 00:33:44,309
+pharmacist back then create
+these like potions or
+
+527
+00:33:44,519 --> 00:33:49,469
+concoctions that you use for
+you. Exactly. So I like that
+
+528
+00:33:49,469 --> 00:33:53,579
+idea of being very authentic,
+being very traditional, right?
+
+529
+00:33:53,579 --> 00:33:57,329
+We're not we're not using
+product or ingredients that
+
+530
+00:33:57,329 --> 00:34:00,029
+people have never heard don't
+know how to pronounce. It's all
+
+531
+00:34:00,029 --> 00:34:04,649
+natural stuff. Right? And so
+just again, going with that age
+
+532
+00:34:04,649 --> 00:34:09,149
+old idea and marry that with
+this technology. I think it just
+
+533
+00:34:09,149 --> 00:34:17,639
+checks the box for me of this
+beautiful like the old for
+
+534
+00:34:17,639 --> 00:34:21,719
+representation. Yeah, exactly.
+Just marrying the old and the
+
+535
+00:34:21,719 --> 00:34:23,969
+new. Yeah, it's I think it's
+beautiful. So
+
+536
+00:34:24,000 --> 00:34:27,450
+Audrow Nash: yeah, no, yeah, I
+like it too. And one thing I'm
+
+537
+00:34:27,450 --> 00:34:32,370
+struck by is your care about the
+experience rather than just like
+
+538
+00:34:32,370 --> 00:34:36,150
+pumping out products. How did
+you decide to focus on the
+
+539
+00:34:36,150 --> 00:34:41,010
+experience more than like, say
+just making a bunch of them and
+
+540
+00:34:41,010 --> 00:34:44,130
+like promoting with ads or like
+whatever other companies often
+
+541
+00:34:44,130 --> 00:34:44,430
+do.
+
+542
+00:34:48,330 --> 00:34:51,090
+Dayo McIntosh: It goes back to
+So yeah, tell means exceptional.
+
+543
+00:34:52,590 --> 00:35:00,120
+And it's from yerba. It is
+Nigerian so Yoruba is a true I
+
+544
+00:35:00,120 --> 00:35:04,830
+live in Nigeria. And yet so
+comes from the Yerba tribe. So
+
+545
+00:35:04,830 --> 00:35:11,070
+yes, it means exceptional
+because we acknowledge that
+
+546
+00:35:11,070 --> 00:35:13,260
+there's no one size fits all,
+when it comes to beauty and
+
+547
+00:35:13,260 --> 00:35:16,710
+wellness, like we're all
+different. What might work for
+
+548
+00:35:16,710 --> 00:35:20,040
+you might not necessarily work
+for me and vice versa, right.
+
+549
+00:35:20,400 --> 00:35:25,920
+And so, the idea behind this was
+that people have this platform
+
+550
+00:35:26,250 --> 00:35:31,140
+to create products tailored to
+their unique goals and needs and
+
+551
+00:35:31,140 --> 00:35:35,250
+wants. And that was the idea,
+the driving force behind like,
+
+552
+00:35:35,280 --> 00:35:37,980
+the name, the brand, everything
+we're doing, right, the
+
+553
+00:35:38,010 --> 00:35:41,490
+individual individualization and
+personalization of creating
+
+554
+00:35:41,490 --> 00:35:47,370
+something for you, that will
+force you or encourage you, or
+
+555
+00:35:47,370 --> 00:35:49,980
+empower you to invest in your
+well being and take better care
+
+556
+00:35:49,980 --> 00:35:53,100
+of yourself. Because when you do
+that, when you feel good, when
+
+557
+00:35:53,100 --> 00:35:57,090
+you look good, it all translates
+to every aspect of your life and
+
+558
+00:35:57,090 --> 00:36:01,230
+your your quality of life is so
+much better. And so that is that
+
+559
+00:36:01,230 --> 00:36:04,590
+is what we're about, right? We
+want people to have a better
+
+560
+00:36:04,590 --> 00:36:08,340
+quality of life, so that they
+can really enjoy the one life
+
+561
+00:36:08,340 --> 00:36:09,120
+they have to live.
+
+562
+00:36:09,600 --> 00:36:13,470
+Audrow Nash: Gotcha. Now, I
+don't know very much about like,
+
+563
+00:36:14,400 --> 00:36:16,950
+I don't know, like, I mean, I
+use lotion, but that's about the
+
+564
+00:36:16,950 --> 00:36:22,950
+extent. Okay. Can you tell me
+like, I don't really know, the
+
+565
+00:36:22,950 --> 00:36:26,280
+so if I didn't use lotion? Or if
+I, and then all the what are
+
+566
+00:36:26,280 --> 00:36:28,620
+some of the other products? And
+what's kind of the importance of
+
+567
+00:36:28,620 --> 00:36:33,030
+all of these? Like, you say you
+feel really good. And that's if
+
+568
+00:36:33,030 --> 00:36:35,880
+you feel really good, you're
+more confident or things like
+
+569
+00:36:35,880 --> 00:36:39,360
+Yes, but how does it kind of
+fit? And how can it specifically
+
+570
+00:36:39,360 --> 00:36:43,680
+help a person to invest in their
+own? What do you call it?
+
+571
+00:36:43,680 --> 00:36:49,020
+Dayo McIntosh: Well, being well
+being? Yes. So we don't do like
+
+572
+00:36:49,020 --> 00:36:53,940
+makeup, right? We're more about
+the personal care. So it's,
+
+573
+00:36:54,120 --> 00:36:58,350
+again, if you think about all
+those chemicals and ingredients
+
+574
+00:36:58,350 --> 00:37:01,950
+that are toxic and affect your
+health. That's what we mean
+
+575
+00:37:01,950 --> 00:37:06,180
+about feel good, right? It's not
+an artificial, we're, we're
+
+576
+00:37:06,420 --> 00:37:11,730
+really concerned about actually
+feeling good. You know, like,
+
+577
+00:37:11,730 --> 00:37:14,700
+you're healthy, you're, well,
+when you're healthy, you're
+
+578
+00:37:14,700 --> 00:37:18,660
+happy, right? Imagine if you
+have allergies, or you have
+
+579
+00:37:18,660 --> 00:37:22,830
+cancer as a result of what
+you're using. It affects your
+
+580
+00:37:22,830 --> 00:37:27,450
+outlook, right and your, your
+carriage in general, just
+
+581
+00:37:27,450 --> 00:37:30,900
+because you're you're miserable,
+you're in pain or your whatever
+
+582
+00:37:30,900 --> 00:37:33,690
+it may be. So imagine being
+well, you're well, you're
+
+583
+00:37:33,690 --> 00:37:35,910
+healthy, you feel good, you're
+able to enjoy
+
+584
+00:37:35,910 --> 00:37:37,860
+Audrow Nash: things in life that
+you want to do that you
+
+585
+00:37:37,860 --> 00:37:43,080
+Dayo McIntosh: want to do. Yeah,
+and I think it seems, or right.
+
+586
+00:37:43,080 --> 00:37:46,650
+And it might seem so yes,
+exactly. And it might seem so
+
+587
+00:37:46,650 --> 00:37:50,220
+trivial, but like things like
+that really matter. And again,
+
+588
+00:37:50,220 --> 00:37:53,160
+it's it translates to every
+aspect of your life. If you're
+
+589
+00:37:53,160 --> 00:37:59,850
+healthy. And well, you're,
+you're happy, you know, because
+
+590
+00:37:59,850 --> 00:38:03,060
+you're not afflicted by, you
+know, all these other things
+
+591
+00:38:03,060 --> 00:38:09,540
+that might, you know, casts cast
+a shadow or impact you
+
+592
+00:38:09,540 --> 00:38:10,920
+negatively, you know,
+
+593
+00:38:10,950 --> 00:38:13,980
+Audrow Nash: yeah, you're never
+I don't know, it's like, if
+
+594
+00:38:13,980 --> 00:38:15,990
+you're healthy, you don't think
+about it. But if you're
+
+595
+00:38:15,990 --> 00:38:17,280
+unhealthy about it.
+
+596
+00:38:17,460 --> 00:38:20,700
+Dayo McIntosh: Oh, you think
+about it. Yeah. And your
+
+597
+00:38:20,700 --> 00:38:24,840
+constant. It's a constant
+reminder. Yeah.
+
+598
+00:38:25,169 --> 00:38:26,759
+Audrow Nash: And so you can't do
+other things, because you're
+
+599
+00:38:26,759 --> 00:38:30,869
+preoccupied with just like
+health and existence and this
+
+600
+00:38:30,869 --> 00:38:34,259
+kind of Exactly, exactly. You're
+saying allergies, you said
+
+601
+00:38:34,259 --> 00:38:39,119
+reproductive issues. cancer,
+cancer. Yeah. And these are
+
+602
+00:38:39,149 --> 00:38:43,559
+these are coming. Like they're
+positively linked to products
+
+603
+00:38:43,559 --> 00:38:45,539
+that are often used in the
+beauty industry.
+
+604
+00:38:46,530 --> 00:38:48,720
+Dayo McIntosh: There are links
+to chemicals and ingredients
+
+605
+00:38:48,720 --> 00:38:53,910
+that we see in everyday products
+that that we use, and that's
+
+606
+00:38:53,910 --> 00:38:58,950
+alarming, right? For sure. It's
+alarming. And again, these are,
+
+607
+00:38:59,340 --> 00:39:02,520
+it's it's new research, right?
+The the medical community is now
+
+608
+00:39:02,520 --> 00:39:05,700
+linking them to these things,
+but it's because of the
+
+609
+00:39:05,700 --> 00:39:10,680
+awareness. So there's a
+organization called the EW G and
+
+610
+00:39:10,680 --> 00:39:13,800
+there's several other ones
+coming out, that are focused on
+
+611
+00:39:13,800 --> 00:39:18,570
+bringing awareness to things
+like this so that we can change
+
+612
+00:39:18,600 --> 00:39:22,080
+or the government can change
+those lacks regulations, like we
+
+613
+00:39:22,080 --> 00:39:26,490
+need to do better, because
+people are ill, they're they're
+
+614
+00:39:26,490 --> 00:39:30,750
+unwell because of I mean,
+there's a direct correlation
+
+615
+00:39:30,750 --> 00:39:34,470
+many times. So if we're able to,
+like make those adjustments and
+
+616
+00:39:34,470 --> 00:39:38,910
+make those changes, just imagine
+how happier how, like, better
+
+617
+00:39:38,910 --> 00:39:40,380
+off people would be in general.
+
+618
+00:39:40,439 --> 00:39:42,449
+Audrow Nash: Yeah, they get on
+with their lives rather than
+
+619
+00:39:42,449 --> 00:39:46,259
+worrying about things or what
+exactly yeah, and have lived the
+
+620
+00:39:46,259 --> 00:39:49,859
+life they want to live rather
+than what they're Yeah, they're
+
+621
+00:39:49,859 --> 00:39:53,279
+having health difficulties or
+unable to have kids. Yeah,
+
+622
+00:39:53,279 --> 00:39:54,089
+something like that.
+
+623
+00:39:54,390 --> 00:39:57,270
+Dayo McIntosh: Exactly. And so
+we're going to, you know, get
+
+624
+00:39:57,270 --> 00:40:01,050
+that conversation started with
+ADE. Big engage people draw
+
+625
+00:40:01,050 --> 00:40:05,430
+them in again with this, you
+know, fascination, this novelty.
+
+626
+00:40:06,150 --> 00:40:11,520
+But really we're after the, the
+the core of the matter, like the
+
+627
+00:40:11,580 --> 00:40:16,200
+meat of it is that we want
+people to be intentional about
+
+628
+00:40:16,530 --> 00:40:20,580
+how they take care of themselves
+what they use, so that they have
+
+629
+00:40:20,580 --> 00:40:21,420
+a better life.
+
+630
+00:40:22,320 --> 00:40:25,470
+Audrow Nash: Oh, yeah, I really
+like that. Yeah. So what's the
+
+631
+00:40:25,500 --> 00:40:29,220
+what's the range of products
+that you're mostly offering?
+
+632
+00:40:29,910 --> 00:40:34,260
+Dayo McIntosh: Yeah. So we
+started off with Hair Skin and
+
+633
+00:40:34,290 --> 00:40:38,730
+aromatherapy oils. So right now
+we just offer oils and butters.
+
+634
+00:40:38,760 --> 00:40:42,630
+So you mentioned you use lotion.
+And butter is similar to lotion,
+
+635
+00:40:42,630 --> 00:40:46,380
+but it doesn't have water. Like,
+the consistency of lotion is
+
+636
+00:40:46,410 --> 00:40:50,100
+like very light. Yeah, butter is
+very thick. So think of mushy
+
+637
+00:40:50,100 --> 00:40:54,450
+butter. Yeah, exactly. Oh, do
+you Okay, yeah, exactly. So we
+
+638
+00:40:54,450 --> 00:40:58,980
+offer things like that. Again, I
+talked about the hair for your
+
+639
+00:40:58,980 --> 00:41:02,610
+skin. And then the diffuser
+oils, there are my therapy oils
+
+640
+00:41:02,610 --> 00:41:07,800
+or the fuser oils. So essential
+oil blends, that you would add
+
+641
+00:41:07,800 --> 00:41:15,420
+to your diffuser. And it just,
+it's it, it changes the mood,
+
+642
+00:41:15,420 --> 00:41:20,790
+right, it has an impact on your
+mood. And those are, again, when
+
+643
+00:41:20,790 --> 00:41:24,240
+we say we say well being,
+because that encapsulates
+
+644
+00:41:24,630 --> 00:41:28,560
+personal care, beauty and
+wellness in general.
+
+645
+00:41:29,400 --> 00:41:31,710
+Audrow Nash: Gotcha. And just
+for the essential oils and
+
+646
+00:41:31,710 --> 00:41:34,890
+things that so that the world
+smells like the oils, right? So
+
+647
+00:41:34,890 --> 00:41:37,380
+like you put it in something and
+it like bubbles it or something,
+
+648
+00:41:37,380 --> 00:41:40,560
+and it makes it so that
+everything smells really nice.
+
+649
+00:41:40,800 --> 00:41:44,160
+And you're saying that's tied to
+mood and things like this. I
+
+650
+00:41:44,160 --> 00:41:45,630
+admit I'm really
+unsophisticated.
+
+651
+00:41:47,550 --> 00:41:50,850
+Dayo McIntosh: That's fine. A
+lot of people don't know about
+
+652
+00:41:50,850 --> 00:41:56,310
+this. But it's so essential oils
+have because they are very
+
+653
+00:41:56,310 --> 00:42:00,390
+natural. They're very potent, do
+derived from plants from roots,
+
+654
+00:42:00,390 --> 00:42:04,980
+whatever, they're potent, and
+they're effective, right?
+
+655
+00:42:04,980 --> 00:42:09,930
+They've been known, we can make
+any claims because those haven't
+
+656
+00:42:09,930 --> 00:42:12,150
+been cleared yet. But they've
+been known to help with, like
+
+657
+00:42:12,150 --> 00:42:18,240
+stress to, to help with
+depression many times, like
+
+658
+00:42:18,240 --> 00:42:21,720
+there's a long list of what are
+the benefits of essential oils?
+
+659
+00:42:21,870 --> 00:42:25,050
+Again, we can't make any direct
+claims, because there's still a
+
+660
+00:42:25,050 --> 00:42:30,930
+lot of like research and that
+needs to go into that. To make
+
+661
+00:42:30,930 --> 00:42:36,960
+them you know, things that are
+allowable of sorts. Yeah. So
+
+662
+00:42:37,230 --> 00:42:40,860
+they've been known to, to help
+with certain things with health,
+
+663
+00:42:40,860 --> 00:42:44,610
+right, and the well being and
+they've been used for years for,
+
+664
+00:42:45,090 --> 00:42:47,790
+you know, for a long time only
+say since the beginning of the
+
+665
+00:42:47,790 --> 00:42:52,260
+world, but very long, so So
+yeah, so we're just tapping into
+
+666
+00:42:52,260 --> 00:42:56,040
+the benefits of those things.
+And again, when you defuse these
+
+667
+00:42:56,040 --> 00:43:00,270
+things, they they help with
+those ailments. Like for
+
+668
+00:43:00,270 --> 00:43:04,290
+example, we have a blend we call
+sleep. It has camo mill, it has
+
+669
+00:43:04,290 --> 00:43:07,950
+cedar wood, and it has French
+lavender. And that is to help
+
+670
+00:43:07,950 --> 00:43:13,770
+you have like a retinol. Yeah,
+it does. It smells amazing. It
+
+671
+00:43:13,770 --> 00:43:18,720
+helps you have like restful,
+peaceful sleep, or sleep. And so
+
+672
+00:43:19,560 --> 00:43:23,280
+again, it all ties back to
+improving the quality of life.
+
+673
+00:43:23,280 --> 00:43:29,100
+Right? If you get good rest your
+you function better during the
+
+674
+00:43:29,100 --> 00:43:29,820
+day, so yeah,
+
+675
+00:43:30,450 --> 00:43:33,990
+Audrow Nash: yeah, I mean, I,
+like even I am not speaking
+
+676
+00:43:33,990 --> 00:43:36,870
+about the efficiency of any of
+these towards like actually
+
+677
+00:43:36,900 --> 00:43:41,010
+carrying anything, or fixing or
+reducing. But even from like a
+
+678
+00:43:41,010 --> 00:43:44,970
+habit perspective, which I'm big
+into habits, like if you play
+
+679
+00:43:44,970 --> 00:43:48,240
+the same music at the same time,
+every day can make it easier to
+
+680
+00:43:48,240 --> 00:43:52,560
+get into a specific state of
+like consciousness or something.
+
+681
+00:43:52,560 --> 00:43:55,620
+And so if you were to do the
+same essential oil, and you
+
+682
+00:43:55,620 --> 00:43:59,070
+smell it, and it's like, Okay,
+now it's sleepy time, this kind
+
+683
+00:43:59,070 --> 00:44:02,070
+of thing that could be very
+valuable. Yeah, exactly.
+
+684
+00:44:02,880 --> 00:44:05,850
+Ingredients. So you're not like
+poisoning yourself while you're
+
+685
+00:44:05,850 --> 00:44:06,630
+trying to get good.
+
+686
+00:44:06,930 --> 00:44:10,980
+Dayo McIntosh: Exactly. Right.
+Yeah, exactly. So like we're
+
+687
+00:44:10,980 --> 00:44:14,880
+very conscious about, again,
+like, the stuff that we're
+
+688
+00:44:14,880 --> 00:44:17,550
+giving people because it
+matters, right? We source
+
+689
+00:44:17,550 --> 00:44:21,210
+everything from like one
+supplier that works to like
+
+690
+00:44:21,210 --> 00:44:25,890
+local farmers that are paid well
+above, you know, what others are
+
+691
+00:44:25,890 --> 00:44:29,640
+getting because again, all of it
+matters like it all. It all ties
+
+692
+00:44:29,640 --> 00:44:34,380
+together. We're very social
+conscious brand. And that ties
+
+693
+00:44:34,380 --> 00:44:37,590
+again into our mission to help
+people live their best lives.
+
+694
+00:44:38,490 --> 00:44:39,060
+Sam,
+
+695
+00:44:40,350 --> 00:44:44,010
+Audrow Nash: so you, you say
+where, who else is in our How is
+
+696
+00:44:44,010 --> 00:44:48,360
+your team and is it how many
+people are helping you guys out
+
+697
+00:44:48,360 --> 00:44:48,810
+yet? So
+
+698
+00:44:49,770 --> 00:44:55,740
+Dayo McIntosh: I am a solo
+founder. And but I have built a
+
+699
+00:44:55,740 --> 00:44:59,970
+village and I've had like
+incredible partners along the
+
+700
+00:45:00,000 --> 00:45:05,820
+way that have helped me get to
+where I am. It's it hasn't been
+
+701
+00:45:05,820 --> 00:45:10,410
+easy because again, it's so much
+easier when you have a team. And
+
+702
+00:45:10,410 --> 00:45:15,000
+you're you have a co founder and
+you guys are able to share the
+
+703
+00:45:15,000 --> 00:45:19,530
+burdens of building a business
+but specialize to some level to
+
+704
+00:45:19,680 --> 00:45:27,450
+exactly. But yeah, it's been me
+from the concepts of design, the
+
+705
+00:45:27,450 --> 00:45:33,750
+operations, all of it. And I've
+just been really resourceful
+
+706
+00:45:33,750 --> 00:45:39,330
+about finding the right people
+along different paths of the
+
+707
+00:45:39,330 --> 00:45:42,840
+journey to come on board to get
+me to the next level.
+
+708
+00:45:43,229 --> 00:45:46,529
+Audrow Nash: Gotcha. Do you. So
+how do you work with software
+
+709
+00:45:46,529 --> 00:45:49,829
+engineers and things like the
+people who programmed the arm
+
+710
+00:45:49,829 --> 00:45:53,879
+about the specific positions?
+And what to do?
+
+711
+00:45:55,260 --> 00:45:56,580
+Dayo McIntosh: How do I work
+with them?
+
+712
+00:45:56,700 --> 00:45:58,800
+Audrow Nash: Like, do you hire
+like a do contract?
+
+713
+00:45:59,250 --> 00:46:02,100
+Dayo McIntosh: Or? You do? Yes,
+yeah. So they've been
+
+714
+00:46:02,100 --> 00:46:06,420
+contractors. I've had a couple
+of books, one of them has really
+
+715
+00:46:06,420 --> 00:46:10,890
+been instrumental in getting it
+to where it is. And I tell the
+
+716
+00:46:10,890 --> 00:46:16,320
+story, because it's part of our
+startup story, right? i He
+
+717
+00:46:16,320 --> 00:46:22,140
+happens to work at Tesla. And
+when I set out to, when I
+
+718
+00:46:22,140 --> 00:46:25,530
+acquired the arm from Cafe X, I
+didn't know what to do, right? I
+
+719
+00:46:25,530 --> 00:46:29,070
+had, again, limited funds,
+you're like I have. Now I have
+
+720
+00:46:29,070 --> 00:46:32,580
+this now what? What do I do with
+it? I didn't know what to do
+
+721
+00:46:32,580 --> 00:46:36,600
+with it, and hired some people
+who had no idea what to do with
+
+722
+00:46:36,600 --> 00:46:41,070
+it. Because Kuka tends to be
+very proprietary. And it's
+
+723
+00:46:41,070 --> 00:46:45,450
+pretty, as far as I understand.
+Yeah, with a lot of the stuff
+
+724
+00:46:45,450 --> 00:46:49,170
+that he do, and not a lot of
+people really know how to use
+
+725
+00:46:49,170 --> 00:46:52,590
+the Kuka. But I live in New
+York, which is right next to
+
+726
+00:46:52,590 --> 00:46:56,190
+Fremont. And I remember that
+Tesla, just down the street from
+
+727
+00:46:56,190 --> 00:47:01,020
+me and happens to be one of the
+biggest customers of poucos. And
+
+728
+00:47:01,020 --> 00:47:04,740
+so I just started super clever.
+Okay, yeah, I just started
+
+729
+00:47:05,010 --> 00:47:10,440
+spamming is what I call it
+spamming Tesla employees who had
+
+730
+00:47:10,440 --> 00:47:16,680
+like, robotics or anything like
+that, on their LinkedIn profile.
+
+731
+00:47:16,710 --> 00:47:22,470
+And that's how I met my engineer
+that again, that has been really
+
+732
+00:47:22,470 --> 00:47:27,090
+instrumental in in the build out
+for adding so yeah,
+
+733
+00:47:27,479 --> 00:47:29,939
+Audrow Nash: gotcha. That's
+really cool. That's so funny to
+
+734
+00:47:29,939 --> 00:47:32,849
+spam. Yeah, the talent.
+
+735
+00:47:33,360 --> 00:47:34,920
+Dayo McIntosh: I am the queen of
+spamming.
+
+736
+00:47:36,360 --> 00:47:39,540
+Audrow Nash: I've heard this a
+lot from startups, where it's
+
+737
+00:47:39,540 --> 00:47:44,670
+like, you have a task, and you
+need someone with a specific
+
+738
+00:47:44,700 --> 00:47:47,670
+skill set. But you probably
+can't hire them fully. Because
+
+739
+00:47:47,670 --> 00:47:50,280
+you're bootstrapping. Yeah,
+yeah. So you can contract them a
+
+740
+00:47:50,280 --> 00:47:53,400
+little bit. But the clever thing
+that I've seen a few companies
+
+741
+00:47:53,400 --> 00:48:00,330
+do is hire someone on like a
+contract basis to do a specific
+
+742
+00:48:00,330 --> 00:48:05,370
+task. And you look to the top
+companies like Tesla, because
+
+743
+00:48:05,400 --> 00:48:09,720
+the they're basically a talent
+filter in some ways. And also,
+
+744
+00:48:09,720 --> 00:48:12,960
+like, especially you being very
+clever, and going, Oh, Tesla
+
+745
+00:48:12,960 --> 00:48:17,190
+uses a lot of Kuka arms, I can
+find someone there. Yeah. So
+
+746
+00:48:17,400 --> 00:48:17,910
+that seems like,
+
+747
+00:48:18,270 --> 00:48:20,880
+Dayo McIntosh: like starting
+starting a business forces you
+
+748
+00:48:20,880 --> 00:48:24,150
+to think outside the box. I
+mean, for sure. Many times your
+
+749
+00:48:24,150 --> 00:48:27,990
+back is against the wall, and
+you either sink or swim. And so
+
+750
+00:48:28,020 --> 00:48:34,500
+it's in those moments that I
+would say your your all your
+
+751
+00:48:34,830 --> 00:48:38,730
+creativity. Yes. Let's use that
+word creativity really.
+
+752
+00:48:42,870 --> 00:48:48,720
+Desperation masked as
+creativity. Yes. Yes. Correct.
+
+753
+00:48:48,750 --> 00:48:53,520
+Yeah, that's when it really
+comes to light. And so yeah,
+
+754
+00:48:53,580 --> 00:48:57,000
+that's, that's how we got to
+where we are. But speaking about
+
+755
+00:48:57,600 --> 00:49:02,190
+hiring people for specific
+tasks. Outside of the engineer
+
+756
+00:49:02,190 --> 00:49:06,240
+that we used, have gone to have
+used the Upwork. I don't know if
+
+757
+00:49:06,240 --> 00:49:12,720
+you're familiar with. They seem
+cool. Yeah. Some a lot to to get
+
+758
+00:49:12,720 --> 00:49:16,830
+people on board for what I need.
+For example, as we're looking to
+
+759
+00:49:16,830 --> 00:49:23,430
+fully automate adding a portion
+of that is something we call a
+
+760
+00:49:23,430 --> 00:49:28,920
+PLC, programmable logic control
+controller. Yeah. And then
+
+761
+00:49:28,920 --> 00:49:33,780
+having an HMI like the human
+machine interface for the tablet
+
+762
+00:49:33,780 --> 00:49:36,690
+I talked about. So like people
+are, you're tapping on the
+
+763
+00:49:36,690 --> 00:49:39,840
+tablet, you're tapping on the
+screen, and that keeps adding to
+
+764
+00:49:39,840 --> 00:49:46,320
+Garin. So all of that is powered
+by this PLC. And that has been
+
+765
+00:49:46,320 --> 00:49:49,020
+the most challenging part of
+trying to automate versus
+
+766
+00:49:49,020 --> 00:49:53,970
+finding someone. Yeah, who can
+who can develop that or build,
+
+767
+00:49:54,210 --> 00:50:00,000
+you know that on top of what we
+have, and so I've gone to Upwork
+
+768
+00:50:00,000 --> 00:50:02,700
+work several times to try to
+find the right talent.
+
+769
+00:50:03,600 --> 00:50:05,700
+Audrow Nash: Has that been
+successful for you generally, to
+
+770
+00:50:05,700 --> 00:50:07,770
+find someone who's good with DLC
+stuff?
+
+771
+00:50:09,030 --> 00:50:13,890
+Dayo McIntosh: Um, generally, I
+mean, we're still, you know,
+
+772
+00:50:13,920 --> 00:50:18,780
+working that out, but I think
+Upwork Upwork is a good is a
+
+773
+00:50:18,780 --> 00:50:22,470
+good resource for for startups
+or founders who are looking for
+
+774
+00:50:22,470 --> 00:50:25,470
+contractors. Yeah. Yeah.
+
+775
+00:50:26,370 --> 00:50:30,030
+Audrow Nash: Gotcha. Yeah, the
+PLC stuff, as I don't know too
+
+776
+00:50:30,030 --> 00:50:35,490
+much about it. But in my, my
+impression of it is it's like,
+
+777
+00:50:35,880 --> 00:50:40,080
+older factory robots. Or maybe,
+maybe not, maybe not even older.
+
+778
+00:50:40,080 --> 00:50:43,260
+But like factory robots, they
+would have programmable logic
+
+779
+00:50:43,260 --> 00:50:45,570
+controllers. And that would be
+how you control the robot. And
+
+780
+00:50:45,570 --> 00:50:49,320
+it was like, this was like, from
+the 60s or something like this,
+
+781
+00:50:49,320 --> 00:50:52,710
+that it was used? Oh, really?
+Okay. And maybe maybe way off?
+
+782
+00:50:52,710 --> 00:50:57,000
+Maybe 80s? Maybe you I don't
+know. But it's amazing to me
+
+783
+00:50:57,000 --> 00:51:00,330
+that those skills are still
+very, like, there's still if you
+
+784
+00:51:00,330 --> 00:51:02,820
+if you are a PLC program, I
+think you can make a good
+
+785
+00:51:02,820 --> 00:51:07,980
+salary. But it's, to me, it
+sounds like painful work
+
+786
+00:51:08,640 --> 00:51:12,600
+Dayo McIntosh: is just really
+challenging. And then you factor
+
+787
+00:51:12,600 --> 00:51:15,420
+in the Kuka part, which a lot of
+people don't have experience
+
+788
+00:51:15,420 --> 00:51:18,780
+with. But yeah, PLCs is what
+it's sort of like the brains,
+
+789
+00:51:18,780 --> 00:51:22,560
+right? Especially if you have
+different different components
+
+790
+00:51:22,590 --> 00:51:26,160
+outside of the robot. So we have
+a payment system, we have the
+
+791
+00:51:26,160 --> 00:51:31,680
+HMI, we have the robot. So the
+PLC serves as, again, the brains
+
+792
+00:51:31,680 --> 00:51:36,240
+the the project manager, in a
+sense like that, that knows when
+
+793
+00:51:36,240 --> 00:51:38,610
+to call each component into
+action.
+
+794
+00:51:39,210 --> 00:51:41,400
+Audrow Nash: For sure, like the
+high level organizer of
+
+795
+00:51:41,400 --> 00:51:41,850
+everything,
+
+796
+00:51:41,850 --> 00:51:45,210
+Dayo McIntosh: yes, yes,
+exactly. Yeah.
+
+797
+00:51:45,930 --> 00:51:51,300
+Audrow Nash: How do you? I
+guess, what's next for you guys?
+
+798
+00:51:51,300 --> 00:51:53,880
+Like we're Where do you think
+that's always headed.
+
+799
+00:51:55,830 --> 00:51:58,290
+Dayo McIntosh: So we definitely
+want to get back out there, that
+
+800
+00:51:58,290 --> 00:52:03,720
+is a dream that was deferred.
+And so we want to pick up right
+
+801
+00:52:03,720 --> 00:52:07,590
+where we started, which is
+hitting the road with adding
+
+802
+00:52:07,620 --> 00:52:11,790
+demoing, but now actually
+selling now that we have
+
+803
+00:52:11,790 --> 00:52:19,230
+products and, you know, products
+that people can buy. So that
+
+804
+00:52:19,230 --> 00:52:23,340
+that is in the works. Right now,
+we partnered with this company
+
+805
+00:52:23,340 --> 00:52:29,430
+full speed automation to work on
+the automation part of of what
+
+806
+00:52:29,430 --> 00:52:32,190
+we're doing. We say they've been
+a part of
+
+807
+00:52:32,190 --> 00:52:36,210
+Audrow Nash: it, like from the
+web to distributing or what what
+
+808
+00:52:36,210 --> 00:52:36,570
+part
+
+809
+00:52:36,630 --> 00:52:40,230
+Dayo McIntosh: No, just just the
+ADDIE part the operation of the
+
+810
+00:52:40,230 --> 00:52:46,260
+process, from when a person
+orders to what ADE does next.
+
+811
+00:52:46,890 --> 00:52:50,430
+And then the final piece of
+that. So they've been a really
+
+812
+00:52:50,430 --> 00:52:54,150
+great partner so far, the
+ability in the first no code,
+
+813
+00:52:55,650 --> 00:53:02,160
+sort of automated platform, for
+manufacturing for robotics in
+
+814
+00:53:02,160 --> 00:53:08,820
+general. And so they, they saw a
+potential opportunity to, to
+
+815
+00:53:08,850 --> 00:53:13,710
+utilize their program for a
+robot and see what it does. And
+
+816
+00:53:13,710 --> 00:53:18,870
+so we're able to work with them
+to see what comes of that. And I
+
+817
+00:53:18,870 --> 00:53:22,980
+think that will be done in May,
+and will finally be able to take
+
+818
+00:53:22,980 --> 00:53:27,900
+it out. And again, yeah, hit the
+ground running and see what
+
+819
+00:53:27,900 --> 00:53:28,920
+happens from there.
+
+820
+00:53:30,750 --> 00:53:35,220
+Audrow Nash: And then growing,
+so you'll be selling your
+
+821
+00:53:35,220 --> 00:53:40,980
+product. And then I guess you'll
+figure out how to reinvest it at
+
+822
+00:53:40,980 --> 00:53:45,330
+the time. Whether it's making
+more of the operation autonomous
+
+823
+00:53:45,330 --> 00:53:50,670
+or I guess, yeah. I don't know.
+I love the idea of a robot like
+
+824
+00:53:50,670 --> 00:53:53,460
+food truck doing a service. I
+think that's the coolest thing.
+
+825
+00:53:54,240 --> 00:53:56,490
+Dayo McIntosh: Yeah, I mean,
+there's so many places we can
+
+826
+00:53:56,490 --> 00:54:00,690
+take this. I mean, one of the
+things again, because this is
+
+827
+00:54:00,690 --> 00:54:05,100
+experiential, like we see an
+avenue where I talked about
+
+828
+00:54:05,100 --> 00:54:08,430
+having it at festivals, or like
+even private and corporate
+
+829
+00:54:08,430 --> 00:54:12,690
+events. So something akin to
+like a photo booth that you'd
+
+830
+00:54:12,690 --> 00:54:16,440
+see at a company party, but
+instead are like a wedding and
+
+831
+00:54:16,650 --> 00:54:21,930
+you have custom, you know,
+diffuser oils, essential oils
+
+832
+00:54:21,930 --> 00:54:25,020
+for your guests, and they get to
+like play with a robot to create
+
+833
+00:54:25,020 --> 00:54:29,670
+that. So there's that avenue.
+And then we're currently in the
+
+834
+00:54:29,670 --> 00:54:33,270
+process of trying to patent our
+application. And so being able
+
+835
+00:54:33,270 --> 00:54:38,970
+to like monetize that, I think
+is is the next next step. Like
+
+836
+00:54:38,970 --> 00:54:42,180
+if we're able to do that I think
+that changes the game right? It
+
+837
+00:54:42,180 --> 00:54:43,200
+changes everything.
+
+838
+00:54:45,030 --> 00:54:47,010
+Audrow Nash: So you mean get a
+pat and then maybe you'll
+
+839
+00:54:47,010 --> 00:54:48,870
+license it out or something so
+others
+
+840
+00:54:48,900 --> 00:54:53,550
+Dayo McIntosh: exactly there's
+that yeah, or franchising. Do
+
+841
+00:54:53,550 --> 00:54:57,990
+vending so, so that is again
+another path that we can take
+
+842
+00:54:57,990 --> 00:55:03,480
+but for the immediate Future
+were focused on, you know, the
+
+843
+00:55:03,480 --> 00:55:07,170
+road, just getting back to the
+road with our one truck and then
+
+844
+00:55:07,590 --> 00:55:11,340
+leasing it out the truck out for
+like events and things like
+
+845
+00:55:11,340 --> 00:55:15,750
+that. So that is the immediate
+future. And yeah, we're excited
+
+846
+00:55:15,750 --> 00:55:17,040
+to see what happens with that.
+
+847
+00:55:17,490 --> 00:55:20,490
+Audrow Nash: Do you think your
+first show will be in May? Or
+
+848
+00:55:20,490 --> 00:55:21,060
+your first I
+
+849
+00:55:21,060 --> 00:55:24,600
+Dayo McIntosh: mean, at the end
+of May? Yes. And we're actually
+
+850
+00:55:24,600 --> 00:55:31,740
+moving we're relocating to Reno.
+So we, Reno, Nevada, Reno,
+
+851
+00:55:31,740 --> 00:55:40,080
+Nevada. Gotcha. The tech scene
+is really up and coming there. I
+
+852
+00:55:40,080 --> 00:55:44,850
+noticed. It's also well, it's
+close to the California it's
+
+853
+00:55:44,850 --> 00:55:48,090
+close to the Bay Area, which I
+love. So I feel like that's,
+
+854
+00:55:48,210 --> 00:55:51,480
+that's still an option for me,
+right, I can very easily come
+
+855
+00:55:51,480 --> 00:55:58,320
+back as needed. And then
+finally, it's just a great, I
+
+856
+00:55:58,320 --> 00:56:00,900
+think it's going to be a great
+exposure, because you have
+
+857
+00:56:00,900 --> 00:56:05,760
+people from all over coming to
+Tahoe, or like that area for
+
+858
+00:56:05,760 --> 00:56:10,260
+vacation for whatever it may be.
+And so you have this element of
+
+859
+00:56:10,260 --> 00:56:14,460
+like a big fish in a small pond
+type deal. We were able to get
+
+860
+00:56:14,580 --> 00:56:20,100
+Yeah, so able to build brand.
+Brand Awareness quick, quicker
+
+861
+00:56:20,670 --> 00:56:24,750
+than we would here and just meet
+the right people and meet the
+
+862
+00:56:24,750 --> 00:56:28,800
+right investors, all in that
+area. So that's what I'm
+
+863
+00:56:28,890 --> 00:56:31,440
+gambling on. And we'll see what
+happens.
+
+864
+00:56:32,070 --> 00:56:34,650
+Audrow Nash: Oh, yeah, I like
+it. I like that.
+
+865
+00:56:36,720 --> 00:56:40,140
+Dayo McIntosh: Big fan. Yeah. I
+mean, I mean, we'll see what
+
+866
+00:56:40,140 --> 00:56:43,410
+happens. Right. And I think your
+worst case scenario, we can
+
+867
+00:56:43,410 --> 00:56:46,890
+always come back. But I think I
+think that's that's going to be
+
+868
+00:56:46,890 --> 00:56:53,070
+a great dreaming, ground for for
+us to like really gloat, grow
+
+869
+00:56:53,070 --> 00:56:54,720
+and flourish? For sure.
+
+870
+00:56:54,870 --> 00:56:59,040
+Audrow Nash: Do you want to our
+once the ground has been hit,
+
+871
+00:56:59,040 --> 00:57:02,910
+and you're off? What do you
+imagine will be the first people
+
+872
+00:57:02,910 --> 00:57:07,410
+you'll hire? That that's easy to
+be co founder? Oh, it's easy.
+
+873
+00:57:07,919 --> 00:57:11,249
+Dayo McIntosh: That is easy.
+Straight up, I need a marketing
+
+874
+00:57:11,309 --> 00:57:16,109
+expert, that my first hire is
+going to be someone highly
+
+875
+00:57:16,109 --> 00:57:21,209
+skilled in marketing in the
+beauty industry. I am I am great
+
+876
+00:57:21,209 --> 00:57:25,259
+at executing I'm great at
+operations. I'm great ads, you
+
+877
+00:57:25,259 --> 00:57:31,499
+know, creating. I mean, I think
+everything I've done so far, has
+
+878
+00:57:31,499 --> 00:57:36,359
+been has been great, right? And
+the ability to do that. But one
+
+879
+00:57:36,359 --> 00:57:39,239
+area that I struggle with is
+marketing, especially in the
+
+880
+00:57:39,239 --> 00:57:43,559
+beauty industry, which is key
+like that is crucial for a
+
+881
+00:57:43,559 --> 00:57:47,579
+beauty brand. And so finding
+someone who has that background,
+
+882
+00:57:47,579 --> 00:57:53,069
+that experience expertise, all
+of that is is the critical hire.
+
+883
+00:57:54,029 --> 00:57:59,699
+I need I need that person. And
+quickly. So yeah, that is that
+
+884
+00:57:59,699 --> 00:58:02,369
+is the first first hire for
+sure.
+
+885
+00:58:02,970 --> 00:58:08,970
+Audrow Nash: Hell yeah. And then
+investment are you? Have you
+
+886
+00:58:08,970 --> 00:58:13,200
+taken any money yet? Are you? A
+well? Are you looking for angel
+
+887
+00:58:13,200 --> 00:58:16,830
+investors? Are you like, where
+are you at in terms of funding?
+
+888
+00:58:17,880 --> 00:58:25,290
+Dayo McIntosh: Yeah. So I, I
+went, this is just an idea. I
+
+889
+00:58:25,290 --> 00:58:29,040
+was part of a founder Institute
+accelerator. And so there you're
+
+890
+00:58:29,040 --> 00:58:33,600
+kind of like, coached on like,
+like, pitching, trying to raise
+
+891
+00:58:33,600 --> 00:58:37,170
+money. But it was just an idea
+and such a wild idea that it
+
+892
+00:58:37,170 --> 00:58:43,320
+just wasn't. I mean, I wasn't
+having like serious
+
+893
+00:58:43,320 --> 00:58:48,030
+conversations, right. And so I
+just decided that I needed to
+
+894
+00:58:48,030 --> 00:58:52,080
+put my head down, build, have
+traction, and then go back to
+
+895
+00:58:52,080 --> 00:58:55,710
+the table for these people to
+take me seriously. And so that's
+
+896
+00:58:55,710 --> 00:59:00,540
+what I set my mind on doing. I
+got a business loan, an SBA
+
+897
+00:59:00,540 --> 00:59:05,220
+loan, cashed out my 401 K. And
+that's what has gotten me this
+
+898
+00:59:05,220 --> 00:59:09,120
+far. I am now at the point where
+I do need to get some sort of
+
+899
+00:59:09,120 --> 00:59:14,760
+investment. I have, you know,
+working prototypes, some
+
+900
+00:59:14,760 --> 00:59:20,070
+traction, you know, and I feel
+like I can now go back to that
+
+901
+00:59:20,070 --> 00:59:24,720
+table to have those, those
+conversations. And so I'm just
+
+902
+00:59:24,720 --> 00:59:28,860
+starting down that path. Again,
+I think Angel invests investors
+
+903
+00:59:28,860 --> 00:59:32,340
+are who I need at this point,
+before bringing in any
+
+904
+00:59:32,340 --> 00:59:37,920
+institutional like larger, like
+venture venture capital
+
+905
+00:59:37,920 --> 00:59:41,610
+investors, probably so yeah, I
+just I need someone that
+
+906
+00:59:41,610 --> 00:59:44,910
+believes in the vision and the
+dream and sometimes when I sit
+
+907
+00:59:44,910 --> 00:59:52,020
+in front of investors, they
+don't quite get it. And so I
+
+908
+00:59:52,020 --> 00:59:55,050
+know that they're not the right
+partners, right? I need someone
+
+909
+00:59:55,050 --> 00:59:58,560
+that that is like I bind I see
+where you're going with this and
+
+910
+00:59:58,560 --> 01:00:01,920
+I'm excited because I See the
+potential. That's who I'm
+
+911
+01:00:01,920 --> 01:00:03,720
+looking for. And that's what I
+need. So
+
+912
+01:00:04,830 --> 01:00:07,110
+Audrow Nash: you're starting a
+conversation, and then you'll
+
+913
+01:00:07,110 --> 01:00:11,130
+have quality products behind it,
+is how I kind of see it. And the
+
+914
+01:00:11,130 --> 01:00:13,920
+robot is a great way to start
+that conversation, get people
+
+915
+01:00:13,920 --> 01:00:18,510
+excited. Like that. I mean, I,
+I'm trying to imagine like other
+
+916
+01:00:19,530 --> 01:00:23,400
+beauty products, were there,
+like we would have, we would be
+
+917
+01:00:23,400 --> 01:00:26,070
+at a wedding or something like
+some special event. And it's
+
+918
+01:00:26,070 --> 01:00:29,760
+like, it would just be like, a
+shelf with their things. Whereas
+
+919
+01:00:29,760 --> 01:00:32,250
+you like people will come over
+and see, it'll be like a big
+
+920
+01:00:32,250 --> 01:00:36,180
+hit. Yeah, because everyone is
+an experienced robot work? Yeah.
+
+921
+01:00:36,449 --> 01:00:40,049
+Dayo McIntosh: Yeah, you have it
+a sweet 16 party or a bar
+
+922
+01:00:40,049 --> 01:00:43,559
+mitzvah? Or whatever. Like,
+it's, it's an experience. It's
+
+923
+01:00:43,559 --> 01:00:48,899
+like, I mean, just like when the
+photo booths came out, right?
+
+924
+01:00:48,899 --> 01:00:51,719
+Like people are constantly
+looking for entertainment or
+
+925
+01:00:51,719 --> 01:00:55,139
+experiences at their events. And
+so this is just going to be one
+
+926
+01:00:55,139 --> 01:00:56,549
+other option for them.
+
+927
+01:00:57,030 --> 01:00:59,550
+Audrow Nash: Yeah. And then it
+starts off, it kicks off that
+
+928
+01:00:59,550 --> 01:01:05,250
+wellness conversation, too. And
+also the conversation about a
+
+929
+01:01:05,250 --> 01:01:09,180
+lot of the other companies or
+maybe not a lot, I don't know,
+
+930
+01:01:09,360 --> 01:01:13,440
+many other products having
+toxins and unhealthy things.
+
+931
+01:01:13,440 --> 01:01:15,600
+Yeah. So then making people more
+conscious,
+
+932
+01:01:16,590 --> 01:01:22,050
+Dayo McIntosh: more aware, yeah,
+I feel like healthy eating. I
+
+933
+01:01:22,050 --> 01:01:24,960
+mean, similar to the path that
+that took, right, it just became
+
+934
+01:01:24,960 --> 01:01:33,180
+a thing. And like maybe the last
+six, seven years, maybe maybe
+
+935
+01:01:33,240 --> 01:01:36,390
+more in the Bay Area in
+California, but around the
+
+936
+01:01:36,390 --> 01:01:41,400
+country, if you really got that
+urgency, or that we started to
+
+937
+01:01:41,400 --> 01:01:44,970
+see change in the last five or
+six years around healthy, like
+
+938
+01:01:44,970 --> 01:01:47,820
+healthy eating organic, things
+like that. So I think this is
+
+939
+01:01:47,820 --> 01:01:52,920
+going to take that same path of
+progression. You starting the
+
+940
+01:01:52,920 --> 01:01:55,830
+conversation, and then people
+become fully aware, and they
+
+941
+01:01:55,830 --> 01:01:58,830
+start making those necessary
+changes. Lifestyle changes.
+
+942
+01:01:58,860 --> 01:02:02,700
+Audrow Nash: Yeah. Let's see
+what are just kind of a bit of a
+
+943
+01:02:02,700 --> 01:02:04,950
+side tangent. But what are some
+things people should look out
+
+944
+01:02:04,950 --> 01:02:10,320
+for in products to make sure
+they're not putting toxic
+
+945
+01:02:10,380 --> 01:02:11,310
+products on them?
+
+946
+01:02:12,750 --> 01:02:16,380
+Dayo McIntosh: You've heard of
+like, parrot beings? Well, you
+
+947
+01:02:16,380 --> 01:02:25,110
+may not have heard of it, but
+like parabens. fragrances. You
+
+948
+01:02:25,110 --> 01:02:30,630
+want to avoid things like that.
+And there's there's a long list,
+
+949
+01:02:31,050 --> 01:02:33,390
+which I know there's some debate
+about that, because you can't
+
+950
+01:02:33,390 --> 01:02:37,260
+cut out all like chemicals.
+Right? Yeah, I mean, even like,
+
+951
+01:02:37,290 --> 01:02:40,110
+you need some of them to numb
+and things like this. So
+
+952
+01:02:40,380 --> 01:02:44,640
+exactly. But it's just being
+mindful about what you're using.
+
+953
+01:02:44,880 --> 01:02:50,160
+So the US compared to I think,
+the UK, Europe, has they have
+
+954
+01:02:50,160 --> 01:02:55,410
+better, better regulations?
+They've limited the ingredients
+
+955
+01:02:55,410 --> 01:02:58,140
+and the chemicals that can be
+used. And yeah, you know,
+
+956
+01:02:58,140 --> 01:03:01,560
+they're they're doing well, I
+mean, they still have those
+
+957
+01:03:01,560 --> 01:03:04,530
+companies and those companies
+have adjusted right to meet
+
+958
+01:03:04,530 --> 01:03:08,310
+those, those charges. So I think
+we can do the same thing over
+
+959
+01:03:08,310 --> 01:03:08,970
+here as well.
+
+960
+01:03:09,810 --> 01:03:14,760
+Audrow Nash: Gotcha. And, like
+going back to the angel investor
+
+961
+01:03:14,790 --> 01:03:19,860
+talk, and you don't have to
+answer if either it's too new or
+
+962
+01:03:19,980 --> 01:03:22,770
+whatever. But what would be like
+a meaningful amount of money
+
+963
+01:03:22,770 --> 01:03:27,090
+that you'd be looking for
+investment, like how much would
+
+964
+01:03:27,090 --> 01:03:30,360
+kind of be a nice step for you,
+to help you keep the vision
+
+965
+01:03:30,360 --> 01:03:30,750
+going.
+
+966
+01:03:32,370 --> 01:03:35,640
+Dayo McIntosh: I'm looking to
+raise 500,000 At this point, and
+
+967
+01:03:35,640 --> 01:03:39,720
+I've kind of projected that that
+will be like a 1212 month runway
+
+968
+01:03:39,720 --> 01:03:45,000
+to get us to profitability is
+what I'm looking at in my mind.
+
+969
+01:03:45,000 --> 01:03:50,370
+And that's to hire the right
+people to get the inventory we
+
+970
+01:03:50,370 --> 01:03:55,290
+need for you know, some of the
+proceeds that have come our way
+
+971
+01:03:55,290 --> 01:04:00,540
+such as like b2b opportunities,
+and then fully automating Addie,
+
+972
+01:04:00,540 --> 01:04:03,240
+and having that in house
+manufacturing that I that I
+
+973
+01:04:03,240 --> 01:04:07,380
+spoke about. So that's, that's
+what I'm looking at raising
+
+974
+01:04:07,380 --> 01:04:10,680
+right now. And then we'll adjust
+as we move forward.
+
+975
+01:04:11,040 --> 01:04:15,240
+Audrow Nash: Gotcha. And what
+what lessons have you learned
+
+976
+01:04:15,240 --> 01:04:19,020
+from this whole process? Like,
+what were some of the biggest
+
+977
+01:04:19,020 --> 01:04:22,590
+takeaways, if you had to do this
+all again, other than lock up
+
+978
+01:04:22,590 --> 01:04:23,130
+the truck?
+
+979
+01:04:28,320 --> 01:04:32,310
+Dayo McIntosh: I'd say start,
+first of all, start small and
+
+980
+01:04:32,310 --> 01:04:38,220
+start with just start somewhere.
+I find sometimes I'm very much
+
+981
+01:04:38,220 --> 01:04:43,080
+of a perfectionist and it can be
+crippling right and it took me a
+
+982
+01:04:43,080 --> 01:04:46,020
+while to actually get out the
+gate because I wanted things to
+
+983
+01:04:46,020 --> 01:04:48,840
+be perfect. So it had to be a
+certain way had to look a
+
+984
+01:04:48,840 --> 01:04:52,260
+certain way and sometimes you
+need to be in the market and and
+
+985
+01:04:52,290 --> 01:04:55,680
+generate feedback from people so
+that you can build a better
+
+986
+01:04:55,680 --> 01:05:01,230
+product right? That that would
+be my advice to myself, even if
+
+987
+01:05:01,230 --> 01:05:04,110
+I could start over, it's just
+start go with the strength you
+
+988
+01:05:04,110 --> 01:05:07,860
+have start where you are. And
+then you can build on that as
+
+989
+01:05:07,860 --> 01:05:10,830
+you go along. And then when I
+got started with a premade
+
+990
+01:05:10,830 --> 01:05:12,900
+products, there were just so
+many things that I went to
+
+991
+01:05:12,900 --> 01:05:16,740
+market with so many options,
+because I wanted everyone to
+
+992
+01:05:16,740 --> 01:05:21,510
+have an option like for
+themselves, right. And it's very
+
+993
+01:05:21,510 --> 01:05:24,630
+hard to like market that and to
+build on that when you get
+
+994
+01:05:24,630 --> 01:05:29,370
+started. So I always say start
+small, get a small, niche
+
+995
+01:05:29,370 --> 01:05:32,340
+following people that are crazy,
+absolutely crazy about what
+
+996
+01:05:32,340 --> 01:05:36,450
+you're building, like fanatical,
+even about what you're building
+
+997
+01:05:36,450 --> 01:05:40,320
+because that excitement that
+that passion, like spreads and
+
+998
+01:05:40,320 --> 01:05:43,920
+grows. Right. And and then
+you're able to draw more people
+
+999
+01:05:43,920 --> 01:05:48,390
+in. Based on their their, their
+excitement. Yeah.
+
+1000
+01:05:49,020 --> 01:05:52,170
+Audrow Nash: Yeah. Also, I mean,
+I've heard of this whole idea of
+
+1001
+01:05:52,170 --> 01:05:56,460
+like, I don't know, there's
+like, if you have 10,000 fans,
+
+1002
+01:05:56,490 --> 01:06:01,380
+or if you have 100 fans or
+something, like if you have that
+
+1003
+01:06:01,830 --> 01:06:05,190
+group. So if you have the 10,000
+fans, and they are, let's say
+
+1004
+01:06:05,190 --> 01:06:09,030
+1000, and they give you $1 Each
+or something like that, sorry,
+
+1005
+01:06:09,030 --> 01:06:11,640
+if you have 100 fans, and they
+give you $10 Each, they're kind
+
+1006
+01:06:11,640 --> 01:06:15,360
+of the same thing. Yeah. So if
+you if you have like that core
+
+1007
+01:06:15,360 --> 01:06:18,660
+group that really likes what
+you're doing. Yeah. And have a
+
+1008
+01:06:18,660 --> 01:06:23,040
+small audience that's just like
+so behind you. And they really
+
+1009
+01:06:23,040 --> 01:06:24,660
+have this kind of thing.
+
+1010
+01:06:25,200 --> 01:06:28,080
+Dayo McIntosh: Yeah. And again,
+that excitement that passion is
+
+1011
+01:06:28,080 --> 01:06:35,220
+contagious. They talk about it.
+People get curious. Exactly. You
+
+1012
+01:06:35,220 --> 01:06:38,190
+have the people that are curious
+now because they've heard so
+
+1013
+01:06:38,190 --> 01:06:43,170
+much about this. Yeah, it's just
+it's just I think the way to go.
+
+1014
+01:06:43,200 --> 01:06:47,520
+And it's a good lesson lesson
+for me going forward.
+
+1015
+01:06:47,760 --> 01:06:51,120
+Audrow Nash: Yes. Do you have
+any, any ideas on how to like
+
+1016
+01:06:51,120 --> 01:06:54,810
+foster that? Have you as
+anything you've done work to yet
+
+1017
+01:06:54,810 --> 01:06:59,790
+or? I don't know. I'm wondering,
+how's it? How's that going? It
+
+1018
+01:06:59,790 --> 01:07:00,720
+seems so far.
+
+1019
+01:07:01,230 --> 01:07:02,700
+Dayo McIntosh: It seems well, go
+ahead seems like
+
+1020
+01:07:02,700 --> 01:07:05,040
+Audrow Nash: a challenging
+thing, because in theory, it
+
+1021
+01:07:05,040 --> 01:07:09,990
+makes a lot of sense. I'm just,
+I don't know, the practical way
+
+1022
+01:07:09,990 --> 01:07:12,540
+of getting there seems a little
+murky to me.
+
+1023
+01:07:13,320 --> 01:07:20,850
+Dayo McIntosh: Yeah. I used to
+think social media was like, so
+
+1024
+01:07:20,850 --> 01:07:26,610
+easy. Like marketing in general.
+You put up a picture and like,
+
+1025
+01:07:26,670 --> 01:07:30,750
+you know, people come or
+whatever it may be, but I'm
+
+1026
+01:07:30,750 --> 01:07:36,120
+finding it. It's Rocket Science.
+Like there's a, there's a method
+
+1027
+01:07:36,120 --> 01:07:40,680
+to the madness, there's, you
+know, it's, I mean, you have to
+
+1028
+01:07:40,680 --> 01:07:42,990
+know what you're doing. And
+again, back to the beauty
+
+1029
+01:07:42,990 --> 01:07:49,980
+industry. People are hesitant to
+try the unknown, right? Because
+
+1030
+01:07:49,980 --> 01:07:52,530
+you're talking about their
+health, which is kind of ironic,
+
+1031
+01:07:52,530 --> 01:07:56,040
+because we're trying to, like
+help them do better. What are
+
+1032
+01:07:56,040 --> 01:07:59,490
+you talking about your health
+and like overall, like
+
+1033
+01:07:59,520 --> 01:08:02,130
+presentation and Outlook, right?
+So people are very cautious
+
+1034
+01:08:02,130 --> 01:08:06,120
+about what they use. And so
+they're very hesitant to try
+
+1035
+01:08:06,120 --> 01:08:09,780
+something new or something that
+hasn't been validated by a
+
+1036
+01:08:09,780 --> 01:08:13,530
+celebrity or an influencer, or
+someone like that, that they
+
+1037
+01:08:13,530 --> 01:08:16,140
+will trust. And so that's one of
+the challenges that we're
+
+1038
+01:08:16,140 --> 01:08:20,220
+running into is, is finding that
+partnership or finding someone
+
+1039
+01:08:20,220 --> 01:08:25,290
+who can sort of give that that
+validation or that blessing to
+
+1040
+01:08:25,290 --> 01:08:29,010
+take us to the next level. So in
+the meantime, we're just, you
+
+1041
+01:08:29,010 --> 01:08:33,060
+know, trying different things to
+see what works. And then just
+
+1042
+01:08:33,060 --> 01:08:37,830
+trying to have conversations and
+connect with people, too. Yeah.
+
+1043
+01:08:37,890 --> 01:08:38,670
+To grow from there.
+
+1044
+01:08:39,210 --> 01:08:41,670
+Audrow Nash: Oh, yeah. Can you
+imagine any other ways that
+
+1045
+01:08:41,670 --> 01:08:44,850
+robots will be used in your
+whole process? Or I mean, so you
+
+1046
+01:08:44,850 --> 01:08:47,730
+have the arm as a mixologist and
+you have an arm as kind of a
+
+1047
+01:08:47,730 --> 01:08:53,010
+front show? mixologist? Can you
+imagine any other ways robots
+
+1048
+01:08:53,130 --> 01:08:54,120
+can use or
+
+1049
+01:08:55,110 --> 01:08:58,050
+Dayo McIntosh: what do you mean
+by French show? Like, wanting to
+
+1050
+01:08:58,050 --> 01:09:00,900
+manufacture? Okay, so yeah, so
+we haven't won in a
+
+1051
+01:09:00,900 --> 01:09:02,400
+Audrow Nash: Trump manufacturing
+one?
+
+1052
+01:09:02,700 --> 01:09:08,520
+Dayo McIntosh: Yes, exactly.
+Yes. So the patent we we filed
+
+1053
+01:09:09,420 --> 01:09:15,210
+doesn't limit us to just like
+robotic arm, if that makes
+
+1054
+01:09:15,210 --> 01:09:19,920
+sense. So we have like, it can
+it can look like whatever form
+
+1055
+01:09:19,920 --> 01:09:23,520
+that is, you know, provided it's
+approved, right? can look like a
+
+1056
+01:09:23,520 --> 01:09:27,390
+different form. And so, in the
+future, like we're going to
+
+1057
+01:09:27,390 --> 01:09:32,160
+explore what else we can do with
+that. Again, as you know,
+
+1058
+01:09:32,220 --> 01:09:37,170
+technology evolves as people
+become more familiar and
+
+1059
+01:09:37,200 --> 01:09:41,520
+comfortable with robots in
+general. We can we can really
+
+1060
+01:09:41,520 --> 01:09:43,230
+explore that then down the road.
+
+1061
+01:09:44,070 --> 01:09:46,740
+Audrow Nash: Gotcha. Well, I
+look forward to seeing that.
+
+1062
+01:09:47,160 --> 01:09:52,080
+Dayo McIntosh: Yeah, me too. I,
+again, I'm so excited about what
+
+1063
+01:09:52,080 --> 01:09:55,770
+I'm building here, right because
+I married this and passionate
+
+1064
+01:09:55,770 --> 01:10:00,930
+about, you know, having making a
+call positive impact on the
+
+1065
+01:10:00,930 --> 01:10:05,280
+world. And for me, that looks
+like helping people like live a
+
+1066
+01:10:05,280 --> 01:10:10,080
+better life. Because that's
+connected to my personal story.
+
+1067
+01:10:10,410 --> 01:10:15,000
+And then like just dealing with
+innovation robots in general,
+
+1068
+01:10:15,000 --> 01:10:19,260
+like how cool so I'm super
+excited to be, you know,
+
+1069
+01:10:19,260 --> 01:10:22,710
+building this brand where I get
+to marry those two things and,
+
+1070
+01:10:24,240 --> 01:10:29,220
+and just see this crazy dream
+come to life. It just makes me
+
+1071
+01:10:29,220 --> 01:10:33,450
+really happy and excited. So I'm
+just, I'm very excited to see
+
+1072
+01:10:33,450 --> 01:10:36,360
+what comes of this. I don't know
+where it's gonna go. I don't
+
+1073
+01:10:36,360 --> 01:10:39,870
+know what it's gonna look like,
+you know, five years, 10 years
+
+1074
+01:10:39,870 --> 01:10:42,480
+down the road, but I am excited
+about the journey.
+
+1075
+01:10:42,960 --> 01:10:45,870
+Audrow Nash: Oh, yeah. I love
+that. Yeah. Yeah. See? So
+
+1076
+01:10:45,900 --> 01:10:50,640
+wrapping up. Is there any
+contact info, website info,
+
+1077
+01:10:50,640 --> 01:10:53,970
+anything you'd like to pass on
+to our listeners and watchers?
+
+1078
+01:10:54,570 --> 01:10:55,260
+Yeah,
+
+1079
+01:10:55,800 --> 01:11:00,000
+Dayo McIntosh: you can find us
+online on yeto.com. And that's
+
+1080
+01:11:00,000 --> 01:11:06,180
+why@eou.com. On there, we have a
+contact form, you can reach out
+
+1081
+01:11:06,180 --> 01:11:10,440
+to us on there. You could also
+send us an email at Hello at
+
+1082
+01:11:10,470 --> 01:11:17,550
+Yateou, which is why@eou.com. And,
+yeah, we respond really quickly.
+
+1083
+01:11:17,670 --> 01:11:25,440
+And yeah. If anyone is looking
+for technical specs on the robot
+
+1084
+01:11:25,440 --> 01:11:32,130
+we have it's a Kuka agilus spot.
+The smaller one is a QR six or
+
+1085
+01:11:32,130 --> 01:11:37,380
+700. And the larger one is a QR
+six are 900. So that one is
+
+1086
+01:11:37,380 --> 01:11:40,890
+slightly bigger than the one we
+had previously. And it has a
+
+1087
+01:11:41,010 --> 01:11:41,970
+longer reach.
+
+1088
+01:11:42,810 --> 01:11:45,660
+Audrow Nash: Awesome. Thank you.
+Yeah.
+
+1089
+01:11:45,690 --> 01:11:48,090
+Dayo McIntosh: Thank you so
+much. I really enjoyed chatting
+
+1090
+01:11:48,090 --> 01:11:55,740
+with you. And yeah, I, I hoped,
+you know you're able to. Well, I
+
+1091
+01:11:55,740 --> 01:11:58,020
+can't really say that. So it's
+good to see. I hope you have a
+
+1092
+01:11:58,020 --> 01:12:03,420
+good move. But it was nice
+chatting with you. Audrow. Thank
+
+1093
+01:12:03,420 --> 01:12:05,190
+you. Thank you for the
+opportunity.
+
+1094
+01:12:05,520 --> 01:12:11,850
+Audrow Nash: Yeah. Oh, yeah. All
+right. Hi, everyone. Thanks for
+
+1095
+01:12:11,850 --> 01:12:15,120
+listening to this conversation
+with dial Macintosh. If you
+
+1096
+01:12:15,120 --> 01:12:19,020
+enjoyed this interview, consider
+subscribing. Thank you again to
+
+1097
+01:12:19,020 --> 01:12:22,290
+our founding sponsor, open
+robotics. See you next time.
+
