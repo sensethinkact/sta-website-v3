@@ -1,4 +1,5 @@
 import type {SerializedPost} from '@sta-podcast/types'
+import endent from 'endent'
 import ErrorPage from 'next/error'
 import {useRouter} from 'next/router'
 import {ChangeEventHandler, useState} from 'react'
@@ -31,10 +32,25 @@ const PostContentHelper = ({post}: Props) => {
   const title = getTitle(podcastConfig, post)
   checkYoutubeTitle(title, MAX_TITLE_LENGTH)
 
+  const fileName = post.mp3.url.replaceAll('%20', ' ').match(/[^/]*$/)
+  if (!fileName) {
+    throw new Error('Could not get file name from URL')
+  }
+
   return (
     <Layout title={`Copy Content for ${post.title}`}>
       <div className="container">
         <h1 className="title">{post.title} Content</h1>
+        <h2 className="subtitle">Rsync command</h2>
+        <TextAreaWithCopy
+          startingText={endent`
+          FILE_OUT="${fileName}"
+          mv <FILE_IN> $FILE_OUT
+          rsync -av $FILE_OUT ros@ftp-osl.osuosl.org:/home/ros/data/download.ros.org/sensethinkact/episodes/
+          ssh ros@ftp-osl.osuosl.org /home/ros/trigger-ros
+          ls -l $FILE_OUT # for file size
+          `}
+        />
         <h2 className="subtitle">Youtube</h2>
         <h3 className="subtitle is-6">Title</h3>
         <TextAreaWithCopy startingText={title} />
