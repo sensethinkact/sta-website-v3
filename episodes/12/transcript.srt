@@ -4490,7 +4490,7 @@ like, Hey, this is fine. But
 908
 00:53:54,510 --> 00:53:57,570
 like, how do we make it run with
-our ROS one stuff? Right. So we
+our ROS 1 stuff? Right. So we
 
 909
 00:53:57,570 --> 00:54:01,680
@@ -5894,7 +5894,7 @@ fix it for ROS 2. So the
 1193
 01:10:19,049 --> 01:10:23,219
 ecosystem doesn't develop quite
-as much as ROS one without
+as much as ROS 1 without
 
 1194
 01:10:23,819 --> 01:10:28,619

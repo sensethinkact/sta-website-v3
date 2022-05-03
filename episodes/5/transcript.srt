@@ -4102,18 +4102,18 @@ Exactly. Which, which ROS are
 
 833
 00:45:05,370 --> 00:45:07,920
-using are using ROS one are
-using ROS two.
+using are using ROS 1 are
+using ROS 2.
 
 834
 00:45:08,790 --> 00:45:11,670
 Erik Schluntz: Yeah, so we're
-using ROS one. We haven't yet
+using ROS 1. We haven't yet
 
 835
 00:45:11,670 --> 00:45:15,540
 seen a lot of other people
-switch to ROS two for, you
+switch to ROS 2 for, you
 
 836
 00:45:15,540 --> 00:45:19,650

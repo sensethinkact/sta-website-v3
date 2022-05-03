@@ -1628,11 +1628,11 @@ standard data. You know, I
 329
 00:18:39,270 --> 00:18:42,060
 Audrow Nash: guess they're
-missing depth by using ROS one
+missing depth by using ROS 1
 
 330
 00:18:42,060 --> 00:18:42,960
-or ROS two.
+or ROS 2.
 
 331
 00:18:42,990 --> 00:18:45,090
@@ -1641,7 +1641,7 @@ currently our current generation
 
 332
 00:18:45,090 --> 00:18:49,290
-stack is on ROS one. And I
+stack is on ROS 1. And I
 think we're on melodic, and I
 
 333
@@ -1681,7 +1681,7 @@ even do that in field. So but
 
 340
 00:19:14,340 --> 00:19:20,160
-we're enjoying the ROS one
+we're enjoying the ROS 1
 ecosystem. But yeah, so you
 
 341

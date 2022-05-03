@@ -6471,7 +6471,7 @@ out there that grows up using
 
 1306
 01:18:43,350 --> 01:18:46,920
-ROS one, and I wish it was
+ROS 1, and I wish it was
 different, because I think ROS
 
 1307
@@ -6496,7 +6496,7 @@ majority of robots out there
 
 1311
 01:19:03,090 --> 01:19:06,570
-still using ROS one. And so
+still using ROS 1. And so
 breaking into that would be sort
 
 1312
@@ -6506,7 +6506,7 @@ that we built is not specific to
 
 1313
 01:19:11,100 --> 01:19:14,070
-ROS 2 or ROS one that the
+ROS 2 or ROS 1 that the
 capabilities that you will build
 
 1314

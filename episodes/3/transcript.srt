@@ -3593,7 +3593,7 @@ autos talking to our fleet, our
 726
 00:45:05,420 --> 00:45:08,690
 fleet manager, that's all based
-on ROS two, since that's
+on ROS 2, since that's
 
 727
 00:45:08,690 --> 00:45:12,560
@@ -3623,7 +3623,7 @@ the entire stack, right? Like
 732
 00:45:24,110 --> 00:45:28,010
 our autonomy system is still
-very ROS one based. Didn't
+very ROS 1 based. Didn't
 
 733
 00:45:28,010 --> 00:45:30,710
@@ -3717,7 +3717,7 @@ like how it was implemented. So
 
 751
 00:46:34,820 --> 00:46:43,610
-for example, with with ROS one,
+for example, with with ROS 1,
 both the c++ language, the c++
 
 752
@@ -3798,7 +3798,7 @@ but yeah, there's there's all
 767
 00:47:37,790 --> 00:47:40,610
 sorts of other you know, little
-things like ROS one was really
+things like ROS 1 was really
 
 768
 00:47:40,610 --> 00:47:44,510
@@ -3858,7 +3858,7 @@ ROS on a microcontroller which
 779
 00:48:19,100 --> 00:48:23,090
 is now really interesting with
-the ROS one days you would have
+the ROS 1 days you would have
 
 780
 00:48:23,090 --> 00:48:26,420
@@ -4180,7 +4180,7 @@ all the custom software we do is
 
 844
 00:52:37,970 --> 00:52:38,660
-ROS one right now
+ROS 1 right now
 
 845
 00:52:39,380 --> 00:52:42,440
@@ -4214,7 +4214,7 @@ use gotcha so that's like
 851
 00:53:05,120 --> 00:53:09,920
 everything there is remains you
-know ROS one for the time being
+know ROS 1 for the time being
 
 852
 00:53:10,310 --> 00:53:15,080
@@ -4356,7 +4356,7 @@ ROS tooth right now. And they're
 880
 00:54:52,160 --> 00:54:55,190
 developing you know, very real,
-very serious things in ROS two.
+very serious things in ROS 2.
 
 881
 00:54:56,060 --> 00:54:59,060

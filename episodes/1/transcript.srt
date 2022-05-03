@@ -3948,7 +3948,7 @@ turtle sim I wrote.
 801
 00:51:47,970 --> 00:51:50,790
 Audrow Nash: That's so funny.
-And now in ROS two, it's the
+And now in ROS 2, it's the
 
 802
 00:51:50,790 --> 00:51:54,240
@@ -3997,7 +3997,7 @@ she, I think she ported a lot of
 
 811
 00:52:20,280 --> 00:52:22,320
-the ROS one tutorials to ROS
+the ROS 1 tutorials to ROS
 Who?
 
 812

@@ -3944,7 +3944,7 @@ source pieces. For example, we
 
 805
 00:53:13,470 --> 00:53:18,600
-use ROS one, we use the px for
+use ROS 1, we use the px for
 autopilot stack. And I kind of
 
 806
