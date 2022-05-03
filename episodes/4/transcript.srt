@@ -313,7 +313,7 @@ galactic and many of the other
 
 64
 00:03:42,899 --> 00:03:48,749
-ROS two distributions also work
+ROS 2 distributions also work
 on Windows not very well I think
 
 65
@@ -343,7 +343,7 @@ a rough one. Or Weber's Yeah, we
 70
 00:04:06,900 --> 00:04:10,320
 Adrian Macneil: support both
-ROS one roster Yeah. But yeah,
+ROS 1 roster Yeah. But yeah,
 
 71
 00:04:10,320 --> 00:04:13,380
@@ -372,7 +372,7 @@ then Mac actually you know, Mac
 
 76
 00:04:26,610 --> 00:04:28,740
-came out I think ROS two
+came out I think ROS 2
 initially came out and said
 
 77
@@ -757,7 +757,7 @@ company, so it was a ROS stack
 
 154
 00:08:44,550 --> 00:08:49,410
-originally, on ROS one, and you
+originally, on ROS 1, and you
 have a bunch of people just, you
 
 155
@@ -812,7 +812,7 @@ rather than using the standard
 
 165
 00:09:25,919 --> 00:09:30,629
-ROS one arvis. Or our Qt graph.
+ROS 1 arvis. Or our Qt graph.
 Yeah. Anything?
 
 166
@@ -823,7 +823,7 @@ It started out as as visit
 167
 00:09:33,690 --> 00:09:36,900
 Accutane. As I mentioned, they
-started out on a ROS one
+started out on a ROS 1
 
 168
 00:09:36,900 --> 00:09:40,200
@@ -5205,7 +5205,7 @@ bridge project lately and
 1051
 00:59:56,580 --> 01:00:00,300
 getting that up and running with
-ROS two, which has been You
+ROS 2, which has been You
 
 1052
 01:00:00,300 --> 01:00:03,690

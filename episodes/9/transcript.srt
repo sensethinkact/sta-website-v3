@@ -4263,7 +4263,7 @@ that you have I think human
 865
 00:54:56,360 --> 00:55:00,230
 touch being used or where, where
-basically using a cow A
+basically using a
 
 866
 00:55:00,260 --> 00:55:02,570
@@ -5784,7 +5784,7 @@ already supporting ROS even. I
 
 1174
 01:13:48,620 --> 01:13:51,440
-bet. I wonder if it's ROS one. A
+bet. I wonder if it's ROS 1. A
 lot of people are moving ROS 2,
 
 1175

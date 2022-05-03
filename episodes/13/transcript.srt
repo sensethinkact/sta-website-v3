@@ -293,7 +293,7 @@ know, 2019 or so when, you know,
 
 60
 00:03:12,779 --> 00:03:16,349
-ROS two started hitting kind of
+ROS 2 started hitting kind of
 more mature milestones. So I
 
 61
@@ -414,21 +414,21 @@ started at Willow Garage in
 84
 00:04:28,590 --> 00:04:34,440
 navigation library, and then
-ROS one came out. And it was
+ROS 1 came out. And it was
 
 85
 00:04:34,500 --> 00:04:38,010
-used with ROS one. So the
+used with ROS 1. So the
 general navigation code was
 
 86
 00:04:38,010 --> 00:04:42,180
-using ROS one. It continued and
+using ROS 1. It continued and
 people were using that. And then
 
 87
 00:04:42,210 --> 00:04:46,620
-ROS two came out in an early
+ROS 2 came out in an early
 version, he said bouncy, and
 
 88

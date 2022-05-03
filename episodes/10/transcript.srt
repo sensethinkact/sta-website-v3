@@ -2528,7 +2528,7 @@ And we've had we've built
 512
 00:35:04,559 --> 00:35:08,849
 examples and navigation in ROS,
-one where it uses the ROS two
+one where it uses the ROS 2
 
 513
 00:35:08,939 --> 00:35:12,179

@@ -4788,7 +4788,7 @@ reminder is just move it
 
 971
 00:56:49,290 --> 00:56:52,770
-migrated to ROS two. Except
+migrated to ROS 2. Except
 it's not just that because we've
 
 972
