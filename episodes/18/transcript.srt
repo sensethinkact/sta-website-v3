@@ -1,0 +1,4856 @@
+1
+00:00:02,550 --> 00:00:04,560
+Audrow Nash: This is a
+conversation with our friends
+
+2
+00:00:04,560 --> 00:00:09,300
+who is the founder and CEO of
+MangDang. MangDang makes an open source
+
+3
+00:00:09,330 --> 00:00:13,200
+robot dog aimed Minipupper,
+that's roughly the size of a
+
+4
+00:00:13,200 --> 00:00:17,190
+shoebox, and runs the robot
+operating system. What I think
+
+5
+00:00:17,190 --> 00:00:20,580
+is so cool about Minipupper is
+that it seems well positioned to
+
+6
+00:00:20,580 --> 00:00:25,170
+lower the barrier of entry for a
+good robotics education. I think
+
+7
+00:00:25,170 --> 00:00:29,430
+this is true for two reasons.
+Many poppers inexpensive, yet
+
+8
+00:00:29,430 --> 00:00:32,580
+quite capable, so you can do and
+learn interesting robotics
+
+9
+00:00:32,580 --> 00:00:37,920
+things with it. And many popper
+has a community around it, both
+
+10
+00:00:37,950 --> 00:00:42,000
+with the robot operating system
+for software, and as an open
+
+11
+00:00:42,000 --> 00:00:46,260
+source hardware platform with a
+good number of users. This
+
+12
+00:00:46,260 --> 00:00:49,860
+community is important so that
+people can turn online for help
+
+13
+00:00:49,890 --> 00:00:54,450
+rather than requiring an in
+house expert. I'm Audrow Nash.
+
+14
+00:00:54,570 --> 00:00:57,600
+This is the Sense Think Act
+Podcast. Thank you to our
+
+15
+00:00:57,600 --> 00:01:00,960
+founding sponsor Open Robotics.
+If you enjoy this episode,
+
+16
+00:01:00,990 --> 00:01:05,100
+please consider subscribing. And
+now here's my conversation with
+
+17
+00:01:05,130 --> 00:01:09,510
+Afreez. I have friends,
+would you introduce yourself?
+
+18
+00:01:09,000 --> 00:01:16,260
+Afreez Gan: Hi, Audrow. Sure.
+I'm Afreez. I'm the founder and
+
+19
+00:01:16,290 --> 00:01:18,390
+Product Manager of MangDang
+company.
+
+20
+00:01:18,780 --> 00:01:22,260
+Audrow Nash: Yeah. And what do
+you guys make at MangDang?
+
+21
+00:01:24,090 --> 00:01:28,950
+Afreez Gan: Yeah, MangDang. When
+you set up a company, you have
+
+22
+00:01:28,980 --> 00:01:38,580
+to give a name. Finally, I left
+my hometown. MangDang is my home
+
+23
+00:01:38,580 --> 00:01:38,700
+town.
+
+24
+00:01:39,630 --> 00:01:43,830
+Audrow Nash: Gotcha. That's a
+nice name. And you make the
+
+25
+00:01:43,830 --> 00:01:46,650
+Minipupper? Would you tell me a
+bit about the Minipupper?
+
+26
+00:01:48,480 --> 00:01:55,830
+Afreez Gan: Yeah, Minipupper is
+is a ROS, OpenCV, robot dog
+
+27
+00:01:56,880 --> 00:02:03,810
+platform meant for education.
+actually come from Stanford, the
+
+28
+00:02:04,110 --> 00:02:10,740
+Pupper project. Another very
+awesome. Open Source project.
+
+29
+00:02:11,250 --> 00:02:11,550
+Yeah.
+
+30
+00:02:13,170 --> 00:02:16,350
+Audrow Nash: And what does the
+Minipupper look like? I think
+
+31
+00:02:16,350 --> 00:02:18,570
+you have one there, but just for
+our listeners.
+
+32
+00:02:19,950 --> 00:02:25,590
+Afreez Gan: Yeah. This is the
+Minipupper. It have LCD display.
+
+33
+00:02:26,730 --> 00:02:32,760
+Audrow Nash: Yep. So it's, uh,
+oh, go ahead. Yeah, I can
+
+34
+00:02:32,760 --> 00:02:37,290
+describe it if you like, from
+how I think it looks. It's it's
+
+35
+00:02:37,290 --> 00:02:42,270
+kind of like a little Spot from
+Boston Dynamics. Like a little
+
+36
+00:02:42,300 --> 00:02:48,690
+quadruped, robot dog. It has. Oh,
+yeah, go ahead.
+
+37
+00:02:50,069 --> 00:02:54,989
+Afreez Gan: Yeah, you know, you
+maybe I think most of the guys
+
+38
+00:02:55,019 --> 00:03:01,619
+are already see the demo from
+Boston Dynamics spotted me. And
+
+39
+00:03:02,369 --> 00:03:05,279
+as you know, most of the guys
+that want to own their own robot
+
+40
+00:03:05,279 --> 00:03:10,349
+that was to explore. Definitely.
+But you know, you notice that
+
+41
+00:03:10,649 --> 00:03:17,699
+the pricing is so high and it is
+hard to to accept it. So. So we
+
+42
+00:03:17,699 --> 00:03:26,579
+wanted to make a similar meaning
+robot everywhere. All right.
+
+43
+00:03:27,179 --> 00:03:27,779
+Exactly.
+
+44
+00:03:28,979 --> 00:03:31,229
+Audrow Nash: Yes. And then one
+thing that's very different
+
+45
+00:03:31,229 --> 00:03:35,099
+between the Boston Dynamics one,
+and Minipupper is Minipupper
+
+46
+00:03:35,099 --> 00:03:40,019
+is very small. It's like, how
+long is the body? Maybe it's 30
+
+47
+00:03:40,019 --> 00:03:48,269
+centimeters or a foot long. And
+it stands out maybe? Ah, okay,
+
+48
+00:03:48,269 --> 00:03:52,049
+so eight inches long and it
+probably stands What 10
+
+49
+00:03:52,049 --> 00:04:00,599
+centimeters high, or 15
+centimeters high. Okay. 1515 six
+
+50
+00:04:00,599 --> 00:04:05,279
+inches high. So it's really cute
+and then has the LCD or the
+
+51
+00:04:05,309 --> 00:04:09,149
+display on its front. So you can
+have eyes and this kind of
+
+52
+00:04:09,149 --> 00:04:11,369
+thing. Oh, yeah.
+
+53
+00:04:12,329 --> 00:04:18,389
+Afreez Gan: We can also add
+later and camera sensor to
+
+54
+00:04:19,079 --> 00:04:19,529
+those.
+
+55
+00:04:21,660 --> 00:04:25,830
+Audrow Nash: Yes. And then so
+how did Minipupper come out of
+
+56
+00:04:25,830 --> 00:04:31,080
+the Standford Pupper? How What's
+the origin of Minipupper?
+
+57
+00:04:32,190 --> 00:04:40,710
+Afreez Gan: Okay, is a story
+beginning 20th 20th At first I
+
+58
+00:04:40,710 --> 00:04:46,830
+was only a fan Oh was Stanford a
+pupper project and sometimes I
+
+59
+00:04:46,830 --> 00:04:50,130
+will answer some a normal
+question. He is a group for
+
+60
+00:04:50,130 --> 00:04:58,920
+other guys. Other new guys. And
+then we made made a good friend
+
+61
+00:04:58,920 --> 00:05:04,440
+of his amazing car. As the
+project owner, and they has
+
+62
+00:05:04,590 --> 00:05:09,720
+Stanford a paper vendor, we ship
+to many staff for the keys
+
+63
+00:05:09,750 --> 00:05:15,090
+worldwide, and have just started
+global to head with sample
+
+64
+00:05:15,090 --> 00:05:20,490
+paper, we've got a ton of
+feedback from as the customers,
+
+65
+00:05:20,940 --> 00:05:25,470
+what do our customers want in
+their products? And What Kind Of
+
+66
+00:05:26,370 --> 00:05:30,420
+Products Do They like? We learn
+that a lot of our crew lessons
+
+67
+00:05:32,460 --> 00:05:38,280
+and how to make a robot after
+more than one years, we will
+
+68
+00:05:38,280 --> 00:05:43,530
+release the manufacturer
+product. Yeah, actually, and
+
+69
+00:05:43,530 --> 00:05:48,030
+help that brought us to the side
+by staff for the PEPFAR and the
+
+70
+00:05:48,030 --> 00:05:51,240
+Enlightened collaboration with
+anything out so really no
+
+71
+00:05:51,510 --> 00:05:53,130
+creator of a snapper Pupper.
+
+72
+00:05:54,510 --> 00:05:56,880
+Audrow Nash: How is it
+different? How so Minipupper is
+
+73
+00:05:56,880 --> 00:06:00,390
+a little smaller than the
+Standford Pupper? Right, Mike? Is
+
+74
+00:06:00,600 --> 00:06:04,560
+there any other differences? So
+the maybe the Standford Pupper is
+
+75
+00:06:04,620 --> 00:06:08,010
+I don't know it stands a foot
+high or something like this or
+
+76
+00:06:08,010 --> 00:06:09,210
+30 centimeter side
+
+77
+00:06:10,440 --> 00:06:14,700
+Afreez Gan: is it bigger than
+that? Yeah, about all this
+
+78
+00:06:15,390 --> 00:06:19,380
+searching certified I remember
+35 or
+
+79
+00:06:20,610 --> 00:06:26,820
+Audrow Nash: 35 Okay, 14 inches
+I something like this, okay. So,
+
+80
+00:06:26,820 --> 00:06:30,210
+how else is the Minipupper
+different than the Stanford
+
+81
+00:06:30,210 --> 00:06:35,580
+popper you made it so that it
+could be better manufactured or?
+
+82
+00:06:36,030 --> 00:06:36,690
+Yeah.
+
+83
+00:06:37,890 --> 00:06:42,360
+Afreez Gan: Actually, as I said
+before, we delivered many
+
+84
+00:06:42,630 --> 00:06:46,830
+several hangers Stanford a
+Pupper device and it got a
+
+85
+00:06:46,830 --> 00:06:54,060
+market cap and we know actually,
+we find Sen staff at a Pupper
+
+86
+00:06:54,060 --> 00:06:58,530
+project he is awesome project
+manager they are also some
+
+87
+00:06:59,010 --> 00:07:06,000
+problem. So we want to fix them
+for what kind of problems Yeah.
+
+88
+00:07:08,880 --> 00:07:16,980
+For example, about assemble or
+somebody we actually optimize
+
+89
+00:07:17,970 --> 00:07:21,600
+something or some point for
+example, way more we're waiting
+
+90
+00:07:21,600 --> 00:07:30,240
+here. So please yeah, to make it
+a more easier to assemble and
+
+91
+00:07:30,270 --> 00:07:36,450
+remove eliminate something
+wrong. This is the assemble and
+
+92
+00:07:37,020 --> 00:07:43,050
+about as a calibration staffer
+Pupper are really no project we
+
+93
+00:07:43,050 --> 00:07:49,560
+should use a command line tool
+calibration. Yeah, in Nicaragua,
+
+94
+00:07:49,560 --> 00:07:56,610
+we emplacement CUI tool and the
+user can use it very convenient.
+
+95
+00:07:58,290 --> 00:08:06,060
+And just not the same point is
+we make a smaller much smaller
+
+96
+00:08:06,090 --> 00:08:12,180
+to make it a more safe security,
+you know, when you're debugging
+
+97
+00:08:12,180 --> 00:08:18,540
+a robot, sometimes enemy the out
+of control exists of performance
+
+98
+00:08:18,540 --> 00:08:25,080
+is so powerful, it may be a
+security risk. So, we make a
+
+99
+00:08:25,350 --> 00:08:30,210
+huge especially for the children
+Yeah, for sure we make it much
+
+100
+00:08:30,210 --> 00:08:37,980
+smaller. And it is said even for
+children and adolescents
+
+101
+00:08:37,980 --> 00:08:42,780
+software to your point that is a
+sample pack for our project is
+
+102
+00:08:42,780 --> 00:08:56,370
+based around leanings we it is
+good for for programmer at the
+
+103
+00:08:56,370 --> 00:09:04,230
+end of February we Haussler the
+software you know we supply is
+
+104
+00:09:04,680 --> 00:09:10,020
+open source for
+the last SLAM navigation and
+
+105
+00:09:10,020 --> 00:09:17,010
+the Open City functions people
+can use data to do a much more
+
+106
+00:09:18,210 --> 00:09:27,030
+use case and they the document
+way especially opposed actually
+
+107
+00:09:28,290 --> 00:09:33,180
+when when they think How are
+released Standford Pupper project
+
+108
+00:09:33,810 --> 00:09:40,350
+I began I began to follow this
+piece of project and by all
+
+109
+00:09:40,350 --> 00:09:46,350
+those components the firm's USA
+and studied as a project at
+
+110
+00:09:46,350 --> 00:09:51,120
+first. The source code is now
+stables document that is not
+
+111
+00:09:52,200 --> 00:09:59,520
+very well but now it is okay.
+But actually I remember I used
+
+112
+00:09:59,520 --> 00:10:06,240
+it on last two months tools to
+rise, staffer the Minipupper project.
+
+113
+00:10:06,750 --> 00:10:13,080
+So I think if we're, if we want
+to release a project, we hope
+
+114
+00:10:13,470 --> 00:10:18,690
+our user can use it very easily
+and very quickly. For example,
+
+115
+00:10:19,260 --> 00:10:23,700
+when they do they have several
+hours, they can assemble it and
+
+116
+00:10:24,060 --> 00:10:30,270
+enjoy it. So that way we supply
+more document or user guide.
+
+117
+00:10:31,050 --> 00:10:31,320
+Yeah.
+
+118
+00:10:34,110 --> 00:10:37,800
+Audrow Nash: Gotcha. That's
+nice. I mean, if it has poor
+
+119
+00:10:37,800 --> 00:10:41,670
+documentation, and the source
+code is tough to go through, it
+
+120
+00:10:41,670 --> 00:10:44,760
+can be such a bottle neck to
+like actually getting anything
+
+121
+00:10:44,760 --> 00:10:48,120
+done with it or trying things on
+it. And then the fun robotics
+
+122
+00:10:48,120 --> 00:10:52,500
+project can be very difficult.
+So this sounds really nice if
+
+123
+00:10:52,500 --> 00:10:55,740
+you improve the documentation
+and give it ROS interfaces and
+
+124
+00:10:56,190 --> 00:10:57,090
+things like this.
+
+125
+00:11:00,210 --> 00:11:05,400
+Afreez Gan: And saying they were
+also held as pre immediate, pre
+
+126
+00:11:05,790 --> 00:11:13,710
+pre compile that I need. People
+are fo user, customer don't want
+
+127
+00:11:13,710 --> 00:11:17,550
+to compile the source code for
+several hours so they can
+
+128
+00:11:17,550 --> 00:11:21,210
+download the image. And the
+flesh is that as the cat, okay.
+
+129
+00:11:23,070 --> 00:11:26,250
+Audrow Nash: So you can set it
+up more easily. To have it all.
+
+130
+00:11:27,510 --> 00:11:33,450
+Wonderful. Yes. Let's see. So
+I'd like to get into I would
+
+131
+00:11:33,450 --> 00:11:35,820
+love to talk about the software.
+But I'd like to get a little bit
+
+132
+00:11:35,820 --> 00:11:40,230
+into the hardware of the mini
+popper. And like what it has on
+
+133
+00:11:40,230 --> 00:11:46,680
+board. So how you first off, it
+has a Raspberry Pi for the
+
+134
+00:11:46,680 --> 00:11:51,690
+computer, right? Yeah. Yeah, the
+main controller is the Raspberry
+
+135
+00:11:51,690 --> 00:11:57,120
+Pi. Okay. Yes. And then
+
+136
+00:11:58,350 --> 00:12:02,160
+Afreez Gan: that's also based on
+rest path.
+
+137
+00:12:04,290 --> 00:12:08,100
+Audrow Nash: Yes. Awesome. And
+then then you probably what do
+
+138
+00:12:08,100 --> 00:12:11,010
+you have like a motor driver
+board or something that the
+
+139
+00:12:11,010 --> 00:12:14,760
+Raspberry Pi controls? Or how
+does it How does it work? And
+
+140
+00:12:14,760 --> 00:12:16,230
+then it's connected to servos?
+
+141
+00:12:17,970 --> 00:12:24,120
+Afreez Gan: Yeah, we actually we
+cut some much. Cut them about
+
+142
+00:12:24,480 --> 00:12:25,620
+connected to earthbath.
+
+143
+00:12:27,090 --> 00:12:30,810
+Audrow Nash: Oh, good Arduino.
+Is that Arduino? I can't quite
+
+144
+00:12:30,810 --> 00:12:31,500
+tell with the
+
+145
+00:12:33,390 --> 00:12:37,080
+Afreez Gan: Yeah, we connect all
+the servers to our cutter MOBA.
+
+146
+00:12:38,070 --> 00:12:40,380
+Audrow Nash: Ah, or your custom
+board? Oh, okay.
+
+147
+00:12:43,740 --> 00:12:48,270
+Afreez Gan: Yeah, this could be
+the because this is
+
+148
+00:12:52,590 --> 00:12:56,010
+Audrow Nash: Yep, there's a
+Raspberry Pi. Custom board. I
+
+149
+00:12:56,010 --> 00:13:00,270
+mean, yeah, just pop right in.
+And that custom board has a
+
+150
+00:13:00,990 --> 00:13:05,700
+circle missing from it. And I
+guess that's for some peripheral
+
+151
+00:13:05,700 --> 00:13:08,160
+or something that the Raspberry
+Pi that has that sticks through
+
+152
+00:13:08,160 --> 00:13:17,550
+it. That's very cool. Yeah. So
+then, you how many servos? Does
+
+153
+00:13:18,180 --> 00:13:26,850
+the minibuffer have? 12. Gotcha.
+And so for each leg. What's so I
+
+154
+00:13:26,850 --> 00:13:28,950
+assume that it's three per leg?
+
+155
+00:13:30,450 --> 00:13:31,320
+Afreez Gan: Three steps.
+
+156
+00:13:32,220 --> 00:13:34,350
+Audrow Nash: You're so prepared
+with all the different pieces
+
+157
+00:13:34,350 --> 00:13:35,550
+for explaining it. Love it.
+
+158
+00:13:36,870 --> 00:13:38,040
+Afreez Gan: Yeah. Okay.
+
+159
+00:13:39,240 --> 00:13:43,260
+Audrow Nash: So you have one. So
+you have the, basically that
+
+160
+00:13:43,320 --> 00:13:47,610
+elbow of the leg, the shoulder
+of the leg, which moves one
+
+161
+00:13:47,610 --> 00:13:52,020
+direction and the shoulder also
+moves. Let's see. So you have
+
+162
+00:13:52,020 --> 00:13:55,380
+two degrees of freedom in the
+shoulder. Yeah, you could have
+
+163
+00:13:55,380 --> 00:14:01,380
+done it. Very cool. And these so
+they're servo motors. And you
+
+164
+00:14:01,410 --> 00:14:04,890
+custom built them right for this
+for the mini bumper.
+
+165
+00:14:06,720 --> 00:14:11,880
+Afreez Gan: Yeah, yes. Actually,
+we don't have to cut them a
+
+166
+00:14:12,360 --> 00:14:19,710
+hater, but we have to, because
+at first the we buy all kinds of
+
+167
+00:14:20,100 --> 00:14:26,160
+ministers from the market, but
+we don't, we don't find that
+
+168
+00:14:26,160 --> 00:14:35,610
+anyone can meet our requirement.
+You know, if we, we, we we want
+
+169
+00:14:35,610 --> 00:14:42,930
+to design a mini size Dhokla dog
+and we'd have to use mini mini
+
+170
+00:14:42,930 --> 00:14:53,730
+serve as small as possible. But
+we pies on the shelf. Sir. We
+
+171
+00:14:53,730 --> 00:14:58,800
+cannot find anyone can meet our
+requirements. You know, we can
+
+172
+00:14:59,550 --> 00:15:05,580
+sometimes times we assemble it
+and arrive our robot several
+
+173
+00:15:05,580 --> 00:15:13,380
+minutes or several hours. So
+we'll book break. Yeah. So we,
+
+174
+00:15:13,620 --> 00:15:21,030
+we, I last week where we spend,
+I remember above the three
+
+175
+00:15:21,030 --> 00:15:29,520
+months to work with our factory
+with our sub factory to cotton
+
+176
+00:15:29,520 --> 00:15:31,140
+was a syrup. Yeah.
+
+177
+00:15:32,310 --> 00:15:36,240
+Audrow Nash: Gotcha. And you
+made them? What was the major
+
+178
+00:15:36,240 --> 00:15:39,870
+challenge in making your own
+one? Like, what? Why? Why
+
+179
+00:15:39,870 --> 00:15:43,290
+couldn't you use the existing
+ones? They weren't small enough?
+
+180
+00:15:43,290 --> 00:15:46,320
+They weren't reliable enough.
+You said they break frequently?
+
+181
+00:15:46,680 --> 00:15:48,120
+Is it just reliability?
+
+182
+00:15:49,590 --> 00:15:58,050
+Afreez Gan: Yeah, yes, it will.
+If you want to make cameras if
+
+183
+00:15:58,050 --> 00:16:02,340
+you have enough party to add
+them. Because if you want to
+
+184
+00:16:02,340 --> 00:16:08,340
+make a custom component, the
+factory will ask your forecast
+
+185
+00:16:09,000 --> 00:16:13,470
+and your budget. Yeah, if you're
+in a party, that there is no
+
+186
+00:16:13,470 --> 00:16:18,930
+problem. But actually, we have
+not much value that at first. So
+
+187
+00:16:18,930 --> 00:16:27,570
+we have to reuse as many as
+their components and also meet
+
+188
+00:16:27,600 --> 00:16:28,440
+our requirement.
+
+189
+00:16:29,340 --> 00:16:33,420
+Audrow Nash: So you're saying
+the factory wanted to reuse its
+
+190
+00:16:33,420 --> 00:16:37,410
+existing tooling to make the
+servos? Or do I understand,
+
+191
+00:16:37,410 --> 00:16:42,270
+right? So you can keep the price
+down? Because it's already what
+
+192
+00:16:42,270 --> 00:16:43,410
+the factory has.
+
+193
+00:16:44,340 --> 00:16:49,800
+Afreez Gan: Yeah, but we, we
+could work with cell factory and
+
+194
+00:16:51,150 --> 00:17:01,590
+replaced the motor inside, we
+use the best motor and we can
+
+195
+00:17:01,590 --> 00:17:09,210
+can we adjust some parameters?
+Control power inside is us. So
+
+196
+00:17:09,210 --> 00:17:09,750
+Mita
+
+197
+00:17:09,810 --> 00:17:14,580
+Audrow Nash: Gotcha. Yeah. Yeah.
+And the motors, their servo
+
+198
+00:17:14,580 --> 00:17:18,240
+motors, so there's no series
+elastic components? You know
+
+199
+00:17:18,240 --> 00:17:21,210
+what I mean, with that there's
+no spring in series with the
+
+200
+00:17:21,210 --> 00:17:23,010
+motor or anything? Or is there?
+
+201
+00:17:23,370 --> 00:17:27,420
+Afreez Gan: No. Agenda thought?
+Or the inside is a third was a
+
+202
+00:17:28,080 --> 00:17:31,380
+very small motor. Yeah, yep.
+
+203
+00:17:32,490 --> 00:17:36,900
+Audrow Nash: Is there? Is there
+a spring in the motor? Or do you
+
+204
+00:17:36,930 --> 00:17:40,530
+because you know how with some
+of the legged robots, they'll do
+
+205
+00:17:40,800 --> 00:17:44,910
+series, elastic actuation they
+have a spring in parallel or in
+
+206
+00:17:44,910 --> 00:17:50,940
+series with the motor. So it can
+deform and deal with the heart
+
+207
+00:17:50,940 --> 00:17:55,170
+impact of the motor hitting the
+ground or of the feet hitting
+
+208
+00:17:55,170 --> 00:17:55,620
+the ground
+
+209
+00:17:55,650 --> 00:18:00,330
+Afreez Gan: that way? Yeah. Are
+you doing wait? Yeah, when we
+
+210
+00:18:00,330 --> 00:18:05,460
+run the robot, there will be
+there will be very hot inside.
+
+211
+00:18:05,850 --> 00:18:14,910
+So, so we have to, we have to
+find a solution. How to Win way.
+
+212
+00:18:14,940 --> 00:18:20,820
+So how to how to make it work
+stable. And what
+
+213
+00:18:20,820 --> 00:18:25,230
+Audrow Nash: do you do? Are you
+just downright solution to that?
+
+214
+00:18:27,030 --> 00:18:33,570
+Afreez Gan: Yeah. Actually, as a
+sort of factory and as to learn
+
+215
+00:18:33,570 --> 00:18:40,830
+how to test and also just some
+parameters about the control
+
+216
+00:18:40,830 --> 00:18:43,290
+board inside sir.
+
+217
+00:18:47,190 --> 00:18:50,670
+Audrow Nash: Okay, what kind of
+parameters? What did they
+
+218
+00:18:50,670 --> 00:18:55,140
+adjust? So is it is it basically
+how far the servo will try to
+
+219
+00:18:55,140 --> 00:18:59,520
+maintain an accurate position or
+what, like how much effort it
+
+220
+00:18:59,520 --> 00:19:03,420
+will put into that I'm not
+terribly knowledgeable about
+
+221
+00:19:03,540 --> 00:19:04,980
+servos and controlling them.
+
+222
+00:19:06,420 --> 00:19:13,980
+Afreez Gan: Yeah. Actually, I
+don't remember very clear, I
+
+223
+00:19:13,980 --> 00:19:18,870
+think because they are about to
+two centimeters, and one is way
+
+224
+00:19:19,590 --> 00:19:24,630
+just as parameters and another
+solution is the way they think
+
+225
+00:19:24,630 --> 00:19:30,180
+it they replace that much better
+motor inside and other
+
+226
+00:19:30,780 --> 00:19:33,990
+mechanical optimization.
+
+227
+00:19:36,330 --> 00:19:38,490
+Audrow Nash: Gotcha. Now, to
+make it so you can handle the
+
+228
+00:19:38,490 --> 00:19:46,560
+heat and make it suitable for a
+legged robot. Gotcha. So is, is
+
+229
+00:19:46,560 --> 00:19:50,460
+Minipupper is it basically, you
+have the control board in the
+
+230
+00:19:50,460 --> 00:19:54,030
+middle and then you have a way
+of communicating to the servos
+
+231
+00:19:54,390 --> 00:19:58,860
+and driving power through it.
+But otherwise the legs the legs
+
+232
+00:19:58,860 --> 00:20:02,910
+are just the server was
+connected. Basically in order,
+
+233
+00:20:02,910 --> 00:20:07,080
+there's no springs, there's no
+soft components, there's this
+
+234
+00:20:07,080 --> 00:20:09,300
+kind of thing. And it works
+because it's a small little
+
+235
+00:20:09,300 --> 00:20:13,860
+robot. Right? Or is that? Is
+that a fair way to describe it?
+
+236
+00:20:15,630 --> 00:20:19,170
+Afreez Gan: Yes. You mean,
+whether it is there any feedback
+
+237
+00:20:19,260 --> 00:20:22,620
+about a position feedback about
+the chart feedback? I'm
+
+238
+00:20:22,620 --> 00:20:25,230
+Audrow Nash: sure there's
+position feedback. I mean,
+
+239
+00:20:27,720 --> 00:20:36,360
+Afreez Gan: what is this for?
+Now? What? Now? Is silver fair?
+
+240
+00:20:36,360 --> 00:20:40,170
+There are no any feedback. Wow,
+it's all
+
+241
+00:20:40,170 --> 00:20:40,770
+Audrow Nash: open loop.
+
+242
+00:20:42,060 --> 00:20:52,080
+Afreez Gan: Yeah. But you will
+know if we use we always
+
+243
+00:20:53,010 --> 00:20:58,620
+balances the price and as a
+performance Yes. How also used
+
+244
+00:20:58,620 --> 00:21:07,260
+today by just with many with
+many feedback, but a surprising
+
+245
+00:21:07,260 --> 00:21:09,360
+Yes. So hi. Oh,
+
+246
+00:21:09,390 --> 00:21:12,930
+Audrow Nash: so your servos
+don't even have feedback really?
+
+247
+00:21:14,340 --> 00:21:17,550
+Yes. Now, what I thought I
+thought servos were all closed
+
+248
+00:21:17,550 --> 00:21:20,850
+loop. But I guess if you
+
+249
+00:21:22,200 --> 00:21:27,510
+Afreez Gan: if you if so, now, I
+mean, you have our country
+
+250
+00:21:28,800 --> 00:21:35,850
+control algorithm is the open
+loop control, it is simple. But
+
+251
+00:21:35,850 --> 00:21:45,840
+it is also if you want to do
+some deep play algorism it is it
+
+252
+00:21:45,840 --> 00:21:54,150
+is hard to because there is the
+open loop is on extraversion we
+
+253
+00:21:54,150 --> 00:21:57,750
+are designing our next quarter
+where we will analyze the
+
+254
+00:21:57,750 --> 00:22:04,590
+feedback but as I said before we
+we have to balance the price and
+
+255
+00:22:04,740 --> 00:22:05,550
+performance
+
+256
+00:22:08,580 --> 00:22:12,000
+Audrow Nash: what is the mini
+popper now Yeah,
+
+257
+00:22:12,780 --> 00:22:21,360
+Afreez Gan: about $500 for the
+kid gotcha yeah don't put any
+
+258
+00:22:21,360 --> 00:22:26,220
+also is in our next reversion we
+will add his position and
+
+259
+00:22:26,220 --> 00:22:34,530
+feedback with not much high
+price almost the same price. We
+
+260
+00:22:34,530 --> 00:22:39,540
+find a simple way to get the
+position and feedback.
+
+261
+00:22:40,410 --> 00:22:43,530
+Audrow Nash: Very cool. Okay,
+when do you think that next
+
+262
+00:22:43,530 --> 00:22:48,660
+version will come out? As you
+just had this current version, I
+
+263
+00:22:48,660 --> 00:22:49,050
+think
+
+264
+00:22:49,620 --> 00:22:52,860
+Afreez Gan: hey, this is kind of
+our our next version and we hope
+
+265
+00:22:52,860 --> 00:22:56,580
+to we can release eight into
+outline
+
+266
+00:22:57,780 --> 00:23:02,850
+Audrow Nash: wow so fast. Okay,
+yeah, that's awesome. How do you
+
+267
+00:23:04,020 --> 00:23:08,100
+how do you get the robot to walk
+do you use is there like an open
+
+268
+00:23:08,100 --> 00:23:15,600
+source robot legged locomotion
+lab or is our open source open
+
+269
+00:23:15,600 --> 00:23:19,290
+source library that you can use
+or did you write it from scratch
+
+270
+00:23:19,290 --> 00:23:23,790
+or how do you do your control
+your legged locomotion control?
+
+271
+00:23:25,770 --> 00:23:36,660
+Afreez Gan: Yeah, this is
+another story at first you were
+
+272
+00:23:36,690 --> 00:23:42,720
+at a frosted away our software
+base roster for the Pupper
+
+273
+00:23:42,900 --> 00:23:52,560
+software we have we have to work
+software, why is the base work
+
+274
+00:23:52,950 --> 00:23:58,950
+it is a similar stamp at the
+Pupper paper okay and the other
+
+275
+00:23:58,950 --> 00:24:06,210
+version is loss worship. Again
+the nose warfare we have to
+
+276
+00:24:06,240 --> 00:24:15,330
+implement the framework to
+control the lag very common
+
+277
+00:24:15,330 --> 00:24:19,860
+framework for the wheel robot,
+you know there there is a turtle
+
+278
+00:24:19,860 --> 00:24:29,220
+bot platform many guys Yeah, it
+is a very common framework for
+
+279
+00:24:29,220 --> 00:24:34,320
+the wheel the project that
+badger April, we if we want to
+
+280
+00:24:34,320 --> 00:24:41,490
+implement as a lag robot based
+on Joe's platform, we have to
+
+281
+00:24:41,520 --> 00:24:49,740
+design and implement has the
+framework at first we I asked
+
+282
+00:24:49,920 --> 00:24:56,310
+several technical guys and it is
+has almost I remember almost two
+
+283
+00:24:56,310 --> 00:25:02,820
+months, how to design it or how
+to end Dementor How long do can
+
+284
+00:25:02,820 --> 00:25:09,720
+we implement as a laughter? We
+are very lucky, we found there
+
+285
+00:25:09,720 --> 00:25:17,220
+are already a good project, you
+could have another open source
+
+286
+00:25:17,220 --> 00:25:25,590
+project. Then Kemper lead by
+Biogen, who is located in
+
+287
+00:25:25,620 --> 00:25:30,330
+Singapore. We are now we are
+very good friends now. And
+
+288
+00:25:30,750 --> 00:25:37,650
+during our project we he also
+give us a much have. Yeah.
+
+289
+00:25:39,360 --> 00:25:42,420
+Audrow Nash: Wonderful. So, you
+found an open source solution
+
+290
+00:25:42,420 --> 00:25:46,470
+you were able to use with ROS
+and that gets you most of the
+
+291
+00:25:46,470 --> 00:25:50,910
+way did you have to extend it or
+did you put code back into the
+
+292
+00:25:50,910 --> 00:25:54,330
+original to improve it? Or do
+you just use it as is
+
+293
+00:25:56,010 --> 00:26:00,930
+Afreez Gan: actually way way it
+is not only just the integrated
+
+294
+00:26:01,260 --> 00:26:07,350
+way which we are based his
+project that by the way are also
+
+295
+00:26:07,710 --> 00:26:12,480
+double confirm with you and
+discuss with you and how to use
+
+296
+00:26:12,480 --> 00:26:15,660
+data. Much better. And you
+Pupper? Yeah.
+
+297
+00:26:17,670 --> 00:26:19,620
+Audrow Nash: Yeah, you optimize
+it from there. So it works
+
+298
+00:26:19,620 --> 00:26:27,300
+really well. Yeah. Awesome.
+Okay, how did you? How did you
+
+299
+00:26:27,300 --> 00:26:31,140
+optimize it for Minipupper?
+Like I've seen some things where
+
+300
+00:26:31,410 --> 00:26:35,730
+they would have they for you
+know, the robot soccer
+
+301
+00:26:35,970 --> 00:26:39,240
+tournaments and they'd have a
+little now robot go and try to
+
+302
+00:26:39,240 --> 00:26:44,040
+kick the ball. I would they were
+trying to make them the now
+
+303
+00:26:44,040 --> 00:26:47,580
+robots really fast. I think it
+was now actually, maybe I may be
+
+304
+00:26:47,580 --> 00:26:49,800
+wrong. I think it's not an hour
+robot. I think it's some other
+
+305
+00:26:49,800 --> 00:26:53,520
+humanoid robot. But what they
+did is they would set them up
+
+306
+00:26:53,520 --> 00:26:56,520
+and have them race back and
+forth with different parameter
+
+307
+00:26:56,820 --> 00:27:03,390
+sets. To try to find the fastest
+parameters. How did you? How did
+
+308
+00:27:03,390 --> 00:27:07,320
+you get it prepared for mini
+popper? Did you do something
+
+309
+00:27:07,320 --> 00:27:11,010
+similar? Where you're racing
+back and forth? Or how did you
+
+310
+00:27:11,010 --> 00:27:12,270
+find what works really? Well?
+
+311
+00:27:13,380 --> 00:27:18,060
+Afreez Gan: Yeah, our target
+mini perpetuity is for the
+
+312
+00:27:18,450 --> 00:27:25,140
+education, but not for the race
+competition. So we have to make
+
+313
+00:27:25,140 --> 00:27:33,060
+it as simple as possible to make
+other guys to study or catamaran
+
+314
+00:27:34,530 --> 00:27:40,440
+if we have a freezer robot,
+because it is a very small robot
+
+315
+00:27:40,440 --> 00:27:47,070
+dog and component, the surf is
+is a low cost result is the
+
+316
+00:27:47,070 --> 00:27:52,350
+performance is okay for me
+Pupper patter. Eight is a view
+
+317
+00:27:52,350 --> 00:27:57,150
+want to write very quickly.
+Maybe it will not as stable.
+
+318
+00:27:57,180 --> 00:28:04,470
+Maybe. Yeah. All over. Yeah.
+Yeah. But if it didn't write up,
+
+319
+00:28:04,470 --> 00:28:09,720
+I don't have enough. You cannot
+use the leader ADCs encoder for
+
+320
+00:28:09,930 --> 00:28:16,110
+later to do your system and
+navigation because it is another
+
+321
+00:28:16,110 --> 00:28:17,940
+stable and Amanda,
+
+322
+00:28:18,000 --> 00:28:20,220
+Audrow Nash: it's shifting
+shifting. Yeah. keeps breaking
+
+323
+00:28:20,220 --> 00:28:20,640
+its map
+
+324
+00:28:21,930 --> 00:28:26,550
+Afreez Gan: to build as a map.
+Yeah. Yes, because
+
+325
+00:28:26,580 --> 00:28:31,830
+Audrow Nash: you use the planar
+LIDAR. Right? On many bumper. So
+
+326
+00:28:31,830 --> 00:28:35,070
+it's the LIDAR that shoots
+straight out. And so if you have
+
+327
+00:28:35,070 --> 00:28:37,650
+the plane going out, and it's
+tipping, tipping tipping, and
+
+328
+00:28:37,650 --> 00:28:39,810
+you're trying to use that as
+your map, that would be really
+
+329
+00:28:39,810 --> 00:28:43,290
+difficult, I imagine to build a
+world map.
+
+330
+00:28:44,430 --> 00:28:47,340
+Afreez Gan: Yeah, well, you
+could imagine and make a that
+
+331
+00:28:47,580 --> 00:28:51,480
+around more stable, stable,
+they're able to do
+
+332
+00:28:53,760 --> 00:28:55,980
+Audrow Nash: so stability was
+kind of the big thing you
+
+333
+00:28:55,980 --> 00:29:00,810
+optimized for when trying to
+make Minipupper walk, not like
+
+334
+00:29:00,810 --> 00:29:04,650
+speed or anything because you're
+interested in it for education.
+
+335
+00:29:04,650 --> 00:29:07,620
+And that means like, can you
+learn with this as a platform?
+
+336
+00:29:07,620 --> 00:29:11,820
+Yeah. Yeah. And so then you can
+try learning about Lidar and
+
+337
+00:29:12,180 --> 00:29:18,120
+whatever other sensors, your
+cameras. Okay, yeah. Tell me a
+
+338
+00:29:18,120 --> 00:29:22,620
+bit more. So, is this robot
+already being used in education
+
+339
+00:29:22,800 --> 00:29:26,730
+and where and how is it being
+used in the curriculum?
+
+340
+00:29:29,550 --> 00:29:37,230
+Afreez Gan: Humans education,
+right. Yes. Yeah, yeah. deoria
+
+341
+00:29:37,530 --> 00:29:45,930
+we deliver as Stanford a Pupper
+our units, we, we found many.
+
+342
+00:29:46,890 --> 00:29:54,570
+Some of the user come from the
+university, most of the
+
+343
+00:29:54,570 --> 00:30:01,980
+university. Yeah. Even some PhD
+students. Yeah. And they, yeah,
+
+344
+00:30:01,980 --> 00:30:10,290
+they hope they they can they
+looking forward acceptable a
+
+345
+00:30:10,290 --> 00:30:17,400
+robot have a platform to test
+their algorithm, maybe as video
+
+346
+00:30:17,400 --> 00:30:25,500
+algorithm or other AI algorithm.
+So wait, you have the with. And
+
+347
+00:30:26,400 --> 00:30:34,200
+now, as I know, some, some
+universities are trying to, to
+
+348
+00:30:34,200 --> 00:30:40,140
+use me Pupper for their lessons.
+And we are also discussing with
+
+349
+00:30:41,700 --> 00:30:48,300
+how to improve MiniPro. And what
+they are looking for. Yeah, I
+
+350
+00:30:48,300 --> 00:30:54,990
+think it is a long, long journey
+to improve the education
+
+351
+00:30:54,990 --> 00:30:57,330
+platform. Yeah.
+
+352
+00:30:57,720 --> 00:31:02,970
+Audrow Nash: So it's mostly
+targeting universities, not like
+
+353
+00:31:02,970 --> 00:31:07,020
+high schools or middle schools
+or anything like this.
+
+354
+00:31:07,860 --> 00:31:15,750
+Afreez Gan: Yeah. Actually, at
+current our, our level now, the
+
+355
+00:31:15,750 --> 00:31:20,010
+most students come from the
+university, but they are also
+
+356
+00:31:20,010 --> 00:31:25,830
+some come from the middle
+school, high school. Okay, if
+
+357
+00:31:25,830 --> 00:31:26,280
+we,
+
+358
+00:31:26,429 --> 00:31:29,069
+Audrow Nash: yes, just starting?
+Yeah.
+
+359
+00:31:31,080 --> 00:31:34,680
+Afreez Gan: Because it's not
+easy.
+
+360
+00:31:35,400 --> 00:31:39,420
+Audrow Nash: Yeah. Yes, for
+sure. Especially I imagine going
+
+361
+00:31:39,420 --> 00:31:43,170
+from university like starting
+with grad students, and then
+
+362
+00:31:43,170 --> 00:31:46,230
+going towards maybe undergrads
+and you teach them during your
+
+363
+00:31:46,230 --> 00:31:51,330
+education. And then like, the
+further the lower and age you
+
+364
+00:31:51,330 --> 00:31:54,690
+go, are there like the lower and
+education level? I imagine the
+
+365
+00:31:54,690 --> 00:31:58,170
+harder it is because you need to
+develop a more structured
+
+366
+00:31:58,620 --> 00:32:03,300
+curriculum, I would imagine.
+Yeah. Like, with the PhD
+
+367
+00:32:03,300 --> 00:32:06,330
+students, you say, here's some
+documentation on how it works.
+
+368
+00:32:06,570 --> 00:32:11,250
+And they go off and do things.
+And then with the with the
+
+369
+00:32:11,880 --> 00:32:16,740
+undergrads are doing their
+coursework? I imagine you still
+
+370
+00:32:16,740 --> 00:32:19,860
+have to put together a little
+bit of a curriculum or work with
+
+371
+00:32:19,860 --> 00:32:23,880
+professors or technicians at the
+university to put together a
+
+372
+00:32:23,880 --> 00:32:26,670
+curriculum. Have you done much
+of that, where you're putting
+
+373
+00:32:26,670 --> 00:32:29,400
+together a curriculum around
+Minipupper and the kinds of
+
+374
+00:32:29,400 --> 00:32:30,210
+things that can do?
+
+375
+00:32:32,130 --> 00:32:39,120
+Afreez Gan: Yeah. Now, we are,
+we are just supplying the proper
+
+376
+00:32:39,120 --> 00:32:45,420
+answers there. based platform.
+You know, your university
+
+377
+00:32:45,420 --> 00:32:52,530
+students have the technical
+background. And we only can
+
+378
+00:32:52,530 --> 00:33:01,440
+supply the the general user
+guide and the time period. And
+
+379
+00:33:01,440 --> 00:33:05,430
+if they have some problem, we
+can they can say No, for me, I
+
+380
+00:33:05,429 --> 00:33:06,149
+Audrow Nash: come to you.
+
+381
+00:33:06,630 --> 00:33:10,350
+Afreez Gan: Yeah. So we kind of
+suppose that. Yeah.
+
+382
+00:33:12,300 --> 00:33:15,930
+Audrow Nash: Gotcha. Any plans
+in the future to possibly help
+
+383
+00:33:15,930 --> 00:33:20,250
+with the curriculum design
+around the Minipupper? Or is it
+
+384
+00:33:20,250 --> 00:33:25,440
+kind of your documentation is in
+a sense, the well it is the
+
+385
+00:33:25,440 --> 00:33:29,850
+documentation you're planning on
+using or not? Not necessarily
+
+386
+00:33:29,850 --> 00:33:31,410
+attaching a course to it?
+
+387
+00:33:32,580 --> 00:33:37,590
+Afreez Gan: Yeah, actually, we
+were planning how to make a
+
+388
+00:33:38,070 --> 00:33:48,360
+detailed document or user guide,
+where we hope to make a a real
+
+389
+00:33:48,390 --> 00:33:52,680
+education platform, not only for
+the university is to say that we
+
+390
+00:33:52,680 --> 00:33:58,650
+can also hope we'll also have
+the middle school high school
+
+391
+00:33:58,980 --> 00:34:07,710
+students to learn understanding.
+We can make a detailed document
+
+392
+00:34:07,920 --> 00:34:09,990
+for all level users.
+
+393
+00:34:13,380 --> 00:34:16,200
+Audrow Nash: Gotcha. Have you
+started that? Or is it it's a
+
+394
+00:34:16,200 --> 00:34:17,400
+future efforts?
+
+395
+00:34:18,059 --> 00:34:23,159
+Afreez Gan: Yeah, we are. Where
+are you in? Yeah, we have online
+
+396
+00:34:23,429 --> 00:34:32,639
+online document that we will add
+as a additional part, standby
+
+397
+00:34:32,639 --> 00:34:43,709
+snap. Yeah, we hope we can.
+Finish is a document we see as
+
+398
+00:34:43,709 --> 00:34:45,299
+three or five months.
+
+399
+00:34:46,619 --> 00:34:49,409
+Audrow Nash: Ah, very exciting.
+And then maybe you'll see more
+
+400
+00:34:49,409 --> 00:34:53,519
+universities using it and it
+will grow from there. That'd be
+
+401
+00:34:53,519 --> 00:34:58,499
+very cool to have a very nice,
+inexpensive legged robot like
+
+402
+00:34:58,499 --> 00:35:03,209
+how cool I mean In my robotics
+education I was using lucky to
+
+403
+00:35:03,269 --> 00:35:06,959
+have the thing, but like little
+tiny robots that had a lidar on
+
+404
+00:35:06,959 --> 00:35:10,469
+top and didn't navigation, and
+legged robots are just so much.
+
+405
+00:35:10,649 --> 00:35:14,219
+There I am. I'm so much more
+interested in legged robots than
+
+406
+00:35:14,489 --> 00:35:17,639
+wheeled robots. And so it's
+really cool if that can be in
+
+407
+00:35:17,639 --> 00:35:24,089
+the education program. Yeah. How
+do you how do you work to make
+
+408
+00:35:24,149 --> 00:35:28,229
+really good documentation?
+Because I think a lot of like,
+
+409
+00:35:28,259 --> 00:35:31,079
+many of the robots I've used
+that have come from factories,
+
+410
+00:35:31,379 --> 00:35:35,189
+have had pretty terrible
+documentation. How do you try to
+
+411
+00:35:35,189 --> 00:35:40,889
+make good documentation any, any
+ideas on what you can do to make
+
+412
+00:35:40,889 --> 00:35:42,209
+it as good as possible? Or?
+
+413
+00:35:43,290 --> 00:35:50,850
+Afreez Gan: Yeah. And of course,
+we have many improvements of the
+
+414
+00:35:50,880 --> 00:35:55,590
+document. And of course, the we
+made our first version document,
+
+415
+00:35:55,620 --> 00:36:01,590
+and user will give you many,
+many feedback. And the user can
+
+416
+00:36:01,590 --> 00:36:12,210
+maybe make their own User Guide.
+For example, when it is the many
+
+417
+00:36:12,630 --> 00:36:17,790
+hundreds of a device to Japan
+marking and sun. Japan makers
+
+418
+00:36:17,790 --> 00:36:22,200
+that make their own token are
+very detailed a document, so I
+
+419
+00:36:23,970 --> 00:36:25,440
+Audrow Nash: will put it back
+in.
+
+420
+00:36:26,340 --> 00:36:31,530
+Afreez Gan: Yeah. So we actually
+a lot of money is not only come
+
+421
+00:36:31,530 --> 00:36:39,150
+from us, but also come from all
+the guys, all the customers, we
+
+422
+00:36:39,150 --> 00:36:43,950
+are cool, and contributing to
+the Terminator data, and making
+
+423
+00:36:43,950 --> 00:36:46,410
+it more and more better.
+
+424
+00:36:48,030 --> 00:36:51,540
+Audrow Nash: Gotcha. Very cool.
+And so you mentioned a little
+
+425
+00:36:51,540 --> 00:36:56,790
+bit, you can put a lidar on top
+of the menu upper. I think you
+
+426
+00:36:56,790 --> 00:37:01,770
+can also put a what is it? Is it
+an oak D? 3d camera?
+
+427
+00:37:02,550 --> 00:37:08,340
+Afreez Gan: Yeah, open CV? 3d
+camera module? Yeah, yeah. So
+
+428
+00:37:08,400 --> 00:37:16,890
+yeah, ideas. Lead by branding,
+branding team. Branding is open
+
+429
+00:37:16,890 --> 00:37:24,060
+CVA, a key architect, architect.
+And, yeah, he's also the CEO of
+
+430
+00:37:24,060 --> 00:37:27,600
+Orlok. Sonics company, located
+the AAMC. Okay.
+
+431
+00:37:29,280 --> 00:37:33,840
+Audrow Nash: Gotcha. So, you put
+these sensors on, and these are
+
+432
+00:37:33,870 --> 00:37:36,300
+so that people who are
+interested in playing around
+
+433
+00:37:36,300 --> 00:37:38,790
+with it. So whether it be
+students or I can even see
+
+434
+00:37:38,790 --> 00:37:41,910
+hobbyists being very interested
+in playing with mining like I,
+
+435
+00:37:41,910 --> 00:37:45,900
+for example, I'm interested in
+playing with one of the many
+
+436
+00:37:45,900 --> 00:37:50,040
+buffers, but so you can put the
+sensors on it. And with the
+
+437
+00:37:50,040 --> 00:37:53,190
+camera and the LiDAR, you can
+build a map. And you can do a
+
+438
+00:37:53,190 --> 00:37:56,700
+lot of different robotics
+things. Because you can have the
+
+439
+00:37:56,700 --> 00:38:00,330
+robot map its space and move
+around in the space and do some
+
+440
+00:38:00,330 --> 00:38:03,930
+understanding of the scene or
+the environment. That's kind of
+
+441
+00:38:03,930 --> 00:38:06,660
+the intention with those to
+enable it so people can use
+
+442
+00:38:06,660 --> 00:38:10,560
+them, or, yeah, it's quite cool.
+
+443
+00:38:11,489 --> 00:38:17,999
+Afreez Gan: Yeah, you're right,
+we've put later this place and
+
+444
+00:38:18,029 --> 00:38:23,519
+we can put his camera at this
+place. Yeah, we
+
+445
+00:38:23,730 --> 00:38:26,280
+Audrow Nash: do that later kind
+of sits on the back. And the
+
+446
+00:38:26,280 --> 00:38:28,650
+camera sits a bit further
+forward, kind of on top of the
+
+447
+00:38:28,650 --> 00:38:29,130
+body.
+
+448
+00:38:30,150 --> 00:38:35,340
+Afreez Gan: Yeah, we also, we
+also supplies a user guide for
+
+449
+00:38:35,340 --> 00:38:39,780
+the leader. And as a 3d camera
+module, you also can look at our
+
+450
+00:38:39,960 --> 00:38:45,810
+guide, and now is only the basic
+guide. And user can use our
+
+451
+00:38:45,810 --> 00:38:52,620
+guided tool, Ryan as the sensor.
+But if a user wants to implement
+
+452
+00:38:52,620 --> 00:39:00,090
+that some use case, they have to
+study and implemented their use
+
+453
+00:39:00,090 --> 00:39:00,480
+case
+
+454
+00:39:00,630 --> 00:39:05,850
+Audrow Nash: themselves. Gotcha.
+And so this is and it's running
+
+455
+00:39:05,850 --> 00:39:09,180
+the robot operating system or
+ROS is it running ROS 1 or
+
+456
+00:39:09,180 --> 00:39:09,870
+ROS 2?
+
+457
+00:39:10,559 --> 00:39:11,279
+Afreez Gan: I just one
+
+458
+00:39:12,480 --> 00:39:20,580
+Audrow Nash: plus one. How did
+so see? How did you decide to
+
+459
+00:39:20,820 --> 00:39:25,590
+Well, for us one was the
+Stanford upper running was the
+
+460
+00:39:25,590 --> 00:39:28,590
+Stanford PACCAR running ROS 1
+are you brought over ROS 1
+
+461
+00:39:28,950 --> 00:39:31,830
+for this and implemented or
+found that one package that
+
+462
+00:39:31,830 --> 00:39:34,350
+worked really well? For the Lego
+
+463
+00:39:34,650 --> 00:39:37,770
+Afreez Gan: auction? Yeah, we've
+built a real city environment.
+
+464
+00:39:37,980 --> 00:39:42,090
+That's our Pupper. Only is the
+product leanings. Meaning so
+
+465
+00:39:42,090 --> 00:39:42,480
+ask.
+
+466
+00:39:45,120 --> 00:39:47,280
+Audrow Nash: Okay, so this was
+you were saying you found that
+
+467
+00:39:47,280 --> 00:39:53,550
+one repository online that did a
+lot of the legged locomotion for
+
+468
+00:39:53,550 --> 00:39:59,580
+you the control of the legs for
+walking? And that was ROS 1
+
+469
+00:40:00,270 --> 00:40:04,140
+And then you've kind of Gotcha.
+Do you have any plans on moving
+
+470
+00:40:04,140 --> 00:40:07,440
+to ROS to? Or is is ROS 1
+the good one for now?
+
+471
+00:40:09,659 --> 00:40:14,369
+Afreez Gan: It was Ryan's work
+very well now. But till we we
+
+472
+00:40:14,369 --> 00:40:19,529
+are also discussing on several
+time how to update the tour ROS
+
+473
+00:40:19,529 --> 00:40:27,749
+to version. And we hope I think
+I didn't need a lot of work to
+
+474
+00:40:28,169 --> 00:40:34,799
+update updated. Yeah, and I
+think we have still not very
+
+475
+00:40:34,799 --> 00:40:41,999
+clear plan to update two rows
+for but we also, we also hope to
+
+476
+00:40:41,999 --> 00:40:48,509
+update. Maybe I hope we can
+update the two rows to people
+
+477
+00:40:48,509 --> 00:40:54,569
+the end of this year. Yeah, we
+can update this version in about
+
+478
+00:40:54,569 --> 00:40:56,339
+and I want that robot.
+
+479
+00:40:58,829 --> 00:41:00,749
+Audrow Nash: Yeah, it seems like
+a lot of companies are kind of
+
+480
+00:41:00,749 --> 00:41:03,749
+feeling this pain of
+transitioning from ROS, one to
+
+481
+00:41:03,749 --> 00:41:04,469
+ROS to
+
+482
+00:41:05,040 --> 00:41:06,180
+Afreez Gan: Yeah.
+
+483
+00:41:08,940 --> 00:41:11,610
+Audrow Nash: There is something
+if you use the Python client
+
+484
+00:41:11,610 --> 00:41:19,500
+library for ROS. One, there's a
+thing that it's underscore ROS
+
+485
+00:41:19,500 --> 00:41:23,970
+py. And you can import it and it
+just uses ROS to but it keeps
+
+486
+00:41:23,970 --> 00:41:26,640
+all the same ROS 1
+interfaces. I thought that was
+
+487
+00:41:26,640 --> 00:41:30,780
+quite cool. Okay, I don't know
+if that would ease the
+
+488
+00:41:30,780 --> 00:41:33,930
+transition. But there I don't
+think there's a c plus, like, I
+
+489
+00:41:33,930 --> 00:41:37,770
+don't think there's a C Plus
+Plus client library analog to
+
+490
+00:41:37,770 --> 00:41:42,330
+that at the moment. But it's a
+cool idea to just switch it out.
+
+491
+00:41:42,330 --> 00:41:46,830
+So you can use it. And then you
+can gradually replace things. As
+
+492
+00:41:46,830 --> 00:41:47,550
+you go from their
+
+493
+00:41:48,690 --> 00:41:51,750
+Afreez Gan: way I try our best
+to move forward step by step.
+
+494
+00:41:52,230 --> 00:41:53,670
+But yeah.
+
+495
+00:41:55,530 --> 00:42:00,750
+Audrow Nash: Gotcha. Let's see.
+So when a user orders one of
+
+496
+00:42:00,750 --> 00:42:05,100
+these mini poppers, it's a kit
+and they have to assemble it
+
+497
+00:42:05,160 --> 00:42:06,660
+themselves. Is that correct?
+
+498
+00:42:09,210 --> 00:42:18,420
+Afreez Gan: Yeah, we we supply
+several, several stos. One is
+
+499
+00:42:19,080 --> 00:42:26,070
+the basic Acade. You know, you
+know, some, some some makers,
+
+500
+00:42:26,640 --> 00:42:30,480
+they already have their resume
+bought, they don't want buy
+
+501
+00:42:30,660 --> 00:42:37,500
+additional box. So they only
+want some some components. So
+
+502
+00:42:37,500 --> 00:42:42,330
+with supplies, the basic Okay,
+and not include them. And then
+
+503
+00:42:42,360 --> 00:42:49,020
+some, I said I, I hope to buy
+all the components, and I can
+
+504
+00:42:49,110 --> 00:42:57,240
+assemble it easily. Yeah,
+sometimes. I hope by is a pre
+
+505
+00:42:57,240 --> 00:43:02,520
+assembled unit. And after I get
+it, I can see jointer right now.
+
+506
+00:43:03,270 --> 00:43:08,430
+So actually, yeah, we supply
+three eSkills.
+
+507
+00:43:10,139 --> 00:43:15,599
+Audrow Nash: Gotcha. That's
+cool. And the body of it is 3d
+
+508
+00:43:15,599 --> 00:43:19,229
+printed. Right. And the legs as
+well or several of the
+
+509
+00:43:19,229 --> 00:43:21,179
+components are 3d printed.
+Right?
+
+510
+00:43:22,260 --> 00:43:27,660
+Afreez Gan: Yes, this is one of
+the challenges for our, to our
+
+511
+00:43:28,380 --> 00:43:38,700
+product. Yeah. We are 3d
+printed. You know, if you if you
+
+512
+00:43:38,790 --> 00:43:44,580
+only make a prototype, 3d
+printed, there is no problem.
+
+513
+00:43:44,790 --> 00:43:52,650
+You can print it with several
+hours or many hours. Yeah. If
+
+514
+00:43:52,650 --> 00:43:59,370
+you want to mass production, for
+example, we I traveled to
+
+515
+00:43:59,370 --> 00:44:08,370
+shinjang. Our lender? I asked
+them, I need several 1000 units.
+
+516
+00:44:10,140 --> 00:44:18,750
+3d printed, it is hard to find
+is the vendor. Yeah. Wow.
+
+517
+00:44:20,099 --> 00:44:25,409
+Audrow Nash: So let's see. And
+the trade off is that you can 3d
+
+518
+00:44:25,409 --> 00:44:27,809
+print and it's really good for
+prototypes when you're doing
+
+519
+00:44:27,809 --> 00:44:32,759
+like one here and one there and
+learning. But mass production if
+
+520
+00:44:32,759 --> 00:44:37,349
+you were gonna make 100,000 of
+them, then you go and you get
+
+521
+00:44:37,349 --> 00:44:40,949
+the molds done. So you can like
+cast the parts or something and
+
+522
+00:44:40,949 --> 00:44:44,609
+it's very efficient, but it's
+very expensive upfront, right.
+
+523
+00:44:45,689 --> 00:44:50,609
+But so that and many popper is
+kind of in the middle where your
+
+524
+00:44:50,609 --> 00:44:55,409
+volume is not incredibly large.
+It's not like hundreds of 1000s
+
+525
+00:44:55,709 --> 00:45:00,539
+It's like 1000s Perhaps. And so
+that's why you're thinking 3d
+
+526
+00:45:00,539 --> 00:45:00,899
+print?
+
+527
+00:45:02,550 --> 00:45:07,470
+Afreez Gan: Yes. You know, for
+for some part? Well, yeah,
+
+528
+00:45:07,500 --> 00:45:12,030
+you'll see for some yellow
+pattern, they actually, at first
+
+529
+00:45:12,030 --> 00:45:19,200
+that house components are 3d
+printed. And then it is harder
+
+530
+00:45:19,200 --> 00:45:26,940
+for us to find the vendor who
+can supply so many 3d printed 3d
+
+531
+00:45:26,940 --> 00:45:35,400
+printed parts. So some of the
+some of the path we actually now
+
+532
+00:45:35,400 --> 00:45:41,280
+is load from both. And that
+sounds really balanced. Let's
+
+533
+00:45:41,280 --> 00:45:45,330
+Audrow Nash: see. Yeah, the
+cost. And the end of the day.
+
+534
+00:45:47,250 --> 00:45:50,700
+Gotcha. And the so maybe for the
+next model that you think will
+
+535
+00:45:50,700 --> 00:45:55,320
+come out, you said like June or
+July or something, I think that
+
+536
+00:45:55,320 --> 00:45:58,320
+one, are you moving more and
+more towards molds for
+
+537
+00:45:58,320 --> 00:46:02,460
+everything? Like, grab, try to
+reuse as many of the pieces as
+
+538
+00:46:02,460 --> 00:46:07,320
+you are already having molds
+for? And then eventually have it
+
+539
+00:46:07,440 --> 00:46:08,700
+be more? Yeah. So
+
+540
+00:46:09,719 --> 00:46:15,059
+Afreez Gan: we, yeah, we'll
+reuse some sums and both paths?
+
+541
+00:46:16,739 --> 00:46:23,639
+Yeah. Yes, we have. Maybe our
+natural working is, you'll see,
+
+542
+00:46:24,149 --> 00:46:31,259
+we can we can remove this path,
+rest path. This path? Yeah, we
+
+543
+00:46:31,259 --> 00:46:36,359
+can have a very good platform,
+you can. So
+
+544
+00:46:36,360 --> 00:46:39,150
+Audrow Nash: if you remove kind
+of a bump in the front, then you
+
+545
+00:46:39,150 --> 00:46:43,020
+can have a big flat space to put
+sensors and whatever it is you
+
+546
+00:46:43,020 --> 00:46:50,400
+want. Yeah. Awesome. Let's see,
+would you so we're touching on
+
+547
+00:46:50,400 --> 00:46:53,850
+it a little bit. Would you tell
+me a bit about the manufacturing
+
+548
+00:46:54,150 --> 00:46:57,120
+process of this? And so you were
+saying before we started
+
+549
+00:46:57,120 --> 00:47:00,780
+recording, you go down to
+Shenzhen, and they work on like,
+
+550
+00:47:00,780 --> 00:47:04,080
+it's easy to prototype? And just
+tell me a little bit about the
+
+551
+00:47:04,080 --> 00:47:05,370
+manufacturing down there?
+
+552
+00:47:07,260 --> 00:47:16,110
+Afreez Gan: That's yeah, you
+know, yeah. First, we, it is not
+
+553
+00:47:16,110 --> 00:47:23,940
+easy. For the hardware. Hardware
+device, especially and now was
+
+554
+00:47:24,300 --> 00:47:32,430
+now situation, you'll have to
+you'll have to powerful supply,
+
+555
+00:47:33,360 --> 00:47:38,250
+supply chain capabilities.
+Otherwise, you know, you're you
+
+556
+00:47:38,250 --> 00:47:44,730
+can talk as your opponent is a
+good, but the coolest thing is,
+
+557
+00:47:45,750 --> 00:47:53,970
+actually I have several years of
+hardware products. And I also
+
+558
+00:47:53,970 --> 00:48:01,920
+have some resource supply chain
+resource, so we can get get our
+
+559
+00:48:01,920 --> 00:48:09,360
+components. Yeah. Yeah, we also,
+you know, we use the rest, Pat.
+
+560
+00:48:10,470 --> 00:48:13,350
+And there is also very hard to
+get the book.
+
+561
+00:48:14,460 --> 00:48:16,680
+Audrow Nash: I've heard Yeah.
+Yeah.
+
+562
+00:48:17,760 --> 00:48:23,220
+Afreez Gan: But we are so lucky.
+And we were I'm wondering and
+
+563
+00:48:23,250 --> 00:48:28,830
+thinking about how, after our
+campaign, and we have to prepare
+
+564
+00:48:28,830 --> 00:48:36,000
+the production, the most
+important commodity is Rat Pack.
+
+565
+00:48:37,170 --> 00:48:45,420
+Before we can buy merch by
+either name, and price, after
+
+566
+00:48:45,750 --> 00:48:51,630
+end of our campaign, it is hard
+to get get as much fat. But we
+
+567
+00:48:51,630 --> 00:48:59,730
+are so lucky. And we bet Westpac
+to like our product. Wonderful.
+
+568
+00:49:02,220 --> 00:49:06,240
+Yeah, we are so lucky. And so I
+connected with Sylvester talking
+
+569
+00:49:06,240 --> 00:49:12,780
+about we needed less hype for
+our product. And so, actually,
+
+570
+00:49:14,160 --> 00:49:21,630
+we've got enough respite from
+from ROS back come there. UK.
+
+571
+00:49:21,780 --> 00:49:23,640
+Yeah. Okay, so
+
+572
+00:49:25,619 --> 00:49:27,659
+Audrow Nash: it's so funny.
+Yeah, the part shortages have
+
+573
+00:49:27,659 --> 00:49:31,229
+been really tough, especially
+for hardware companies. And
+
+574
+00:49:31,229 --> 00:49:34,589
+especially like, I don't know, I
+hear stories about companies
+
+575
+00:49:34,589 --> 00:49:38,819
+ripping out Raspberry Pi's from
+other devices so that they can
+
+576
+00:49:38,819 --> 00:49:41,549
+use them. So like buy a $200
+thing and then rip out the
+
+577
+00:49:41,549 --> 00:49:45,509
+Raspberry Pi, which was like $40
+Before this whole supply
+
+578
+00:49:45,539 --> 00:49:50,459
+shortage. Gotcha. So it's really
+nice that you have the ability
+
+579
+00:49:50,459 --> 00:49:57,089
+to keep getting Raspberry Pi's.
+Let's see. And so
+
+580
+00:49:59,219 --> 00:50:03,149
+Afreez Gan: here's a theory As a
+manufacturer, the leading time
+
+581
+00:50:03,149 --> 00:50:06,899
+is another risk because of
+
+582
+00:50:06,900 --> 00:50:10,590
+Audrow Nash: the waiting time,
+so parts what is the leading
+
+583
+00:50:10,590 --> 00:50:11,100
+time
+
+584
+00:50:12,179 --> 00:50:18,809
+Afreez Gan: while the story is
+at first we have to we have a
+
+585
+00:50:18,809 --> 00:50:25,979
+tool release also our device how
+that came to our backers before
+
+586
+00:50:25,979 --> 00:50:36,179
+the end of last year during
+during I poacher our effect, I
+
+587
+00:50:36,179 --> 00:50:42,839
+also look at our factory last
+year and push that progress. But
+
+588
+00:50:42,839 --> 00:50:48,869
+you know, last year shinjang as
+COVID COVID-19 situation is not
+
+589
+00:50:48,869 --> 00:50:55,349
+very good. And we already have
+we have to delay a shipment. So
+
+590
+00:50:55,349 --> 00:51:02,099
+it is it is very hard to
+control. Accurate deadline for
+
+591
+00:51:02,099 --> 00:51:02,879
+the shipping for
+
+592
+00:51:02,880 --> 00:51:05,790
+Audrow Nash: the whole world.
+Yeah, especially. I mean, it
+
+593
+00:51:05,790 --> 00:51:09,840
+touches so many places in so
+many industries, the raspberry
+
+594
+00:51:09,840 --> 00:51:12,270
+pies, I don't know where they're
+made, but you said it's a UK
+
+595
+00:51:12,270 --> 00:51:16,290
+company. And then you have the
+Schengen area. And then there's
+
+596
+00:51:16,290 --> 00:51:19,110
+the whole global pandemic
+situation, there's parts and
+
+597
+00:51:19,110 --> 00:51:22,800
+materials that need to come
+together. So yeah, I could
+
+598
+00:51:22,800 --> 00:51:26,280
+imagine that it would be very
+difficult to predict the lead
+
+599
+00:51:26,280 --> 00:51:28,230
+tie for all the parts.
+
+600
+00:51:28,800 --> 00:51:34,740
+Afreez Gan: Yeah, yeah.
+fracture, I really hope many
+
+601
+00:51:34,740 --> 00:51:41,490
+thanks for many guys for Okay,
+well give our madhhab ROS, a
+
+602
+00:51:42,300 --> 00:51:47,640
+Mac Suissa. Team give us and the
+hardware.
+
+603
+00:51:50,340 --> 00:51:52,470
+Audrow Nash: What's the what's
+the process when you go down to
+
+604
+00:51:52,470 --> 00:51:57,030
+Shenzhen? And you have an idea
+that you want to get made? How
+
+605
+00:51:57,030 --> 00:52:00,540
+does it work? You go to
+different companies and or
+
+606
+00:52:00,540 --> 00:52:04,530
+different factories and you say
+I want to make this and then
+
+607
+00:52:04,530 --> 00:52:07,320
+they work out what they can do?
+Or how does it work? How does it
+
+608
+00:52:07,320 --> 00:52:09,780
+work to manufacture something?
+
+609
+00:52:10,889 --> 00:52:16,559
+Afreez Gan: Yeah, actually, it
+is not a lot of hard work and
+
+610
+00:52:16,739 --> 00:52:23,699
+tissue work. Because if you know
+you want to, for example, I was
+
+611
+00:52:23,789 --> 00:52:28,109
+cutting myself, I don't know
+first. Just terrible kind of
+
+612
+00:52:28,109 --> 00:52:37,079
+work. But it is a to cannot work
+best. So I just leave. I try to
+
+613
+00:52:37,079 --> 00:52:42,479
+leave a hotel very near that as
+a satisfactory. I really, I went
+
+614
+00:52:42,479 --> 00:52:45,419
+to their factory, and it works
+out and then push them.
+
+615
+00:52:46,920 --> 00:52:51,330
+Audrow Nash: Oh, wow. That's
+crazy. Yeah. Yeah, I
+
+616
+00:52:51,330 --> 00:52:56,280
+Afreez Gan: said, we have to
+find a better solution for the
+
+617
+00:52:56,310 --> 00:53:02,820
+better performance. At first it
+is possible, but a real person
+
+618
+00:53:02,850 --> 00:53:06,450
+day and day. Finally, we found a
+solution.
+
+619
+00:53:08,909 --> 00:53:13,169
+Audrow Nash: I've heard that a
+number of times where like, the
+
+620
+00:53:13,169 --> 00:53:17,219
+CEO or CFO or whoever is
+responsible for manufacturing
+
+621
+00:53:17,249 --> 00:53:20,969
+will go and just basically stay
+with the factory and keep
+
+622
+00:53:20,969 --> 00:53:24,509
+pushing them to try to make
+refinements and improve the
+
+623
+00:53:24,509 --> 00:53:28,619
+quality or get it to work in
+some way. This kind of thing.
+
+624
+00:53:30,270 --> 00:53:36,660
+Afreez Gan: Yeah. You know, we
+you know, we are a very small
+
+625
+00:53:36,660 --> 00:53:44,400
+startup company and before the
+campaign layers. I was the only
+
+626
+00:53:44,400 --> 00:53:52,080
+guy the full time because other
+guys I promise. And
+
+627
+00:53:52,230 --> 00:53:53,340
+Audrow Nash: how large are you
+now?
+
+628
+00:53:54,750 --> 00:53:58,620
+Afreez Gan: Yeah. Now we have
+several full time guys. Yeah.
+
+629
+00:53:59,130 --> 00:54:02,160
+Audrow Nash: Gotcha. Several,
+like five or several.
+
+630
+00:54:03,360 --> 00:54:08,280
+Afreez Gan: Right about Friday
+for full time and several hours
+
+631
+00:54:08,280 --> 00:54:08,970
+that are part time.
+
+632
+00:54:10,020 --> 00:54:10,980
+Audrow Nash: Guys, gotcha.
+
+633
+00:54:11,579 --> 00:54:12,929
+Afreez Gan: We'll tell you about
+10. Guys.
+
+634
+00:54:14,700 --> 00:54:17,760
+Audrow Nash: Yeah, about 10 guys
+with full and part time I see.
+
+635
+00:54:21,450 --> 00:54:27,660
+Five Guys. Gotcha. Okay. Yeah,
+that's it's, uh, you were the
+
+636
+00:54:27,660 --> 00:54:31,620
+only full time when? Before the
+campaign and so the campaign.
+
+637
+00:54:32,190 --> 00:54:35,490
+That's a Kickstarter campaign
+you're referring to, right?
+
+638
+00:54:36,449 --> 00:54:41,309
+Afreez Gan: Yeah. Yes. That
+campaign is not have a funny,
+
+639
+00:54:41,339 --> 00:54:46,649
+interesting story. And I would
+love to hear that. But let me
+
+640
+00:54:46,649 --> 00:54:53,759
+share your story. Here's our
+last story. All right. Yeah, at
+
+641
+00:54:53,759 --> 00:55:01,169
+first, you know, back to 2010.
+Here we are. The term for the
+
+642
+00:55:01,169 --> 00:55:05,429
+Pupper vendor, and a co worker
+is anything how. And after we
+
+643
+00:55:05,429 --> 00:55:11,069
+release the Minipupper, a
+Nathan Kao also told me Pupper
+
+644
+00:55:11,309 --> 00:55:18,449
+onto their staff at the Pupper
+website. And I think maybe we
+
+645
+00:55:18,449 --> 00:55:25,769
+can seal or deliver Minipupper
+just like snapper Pupper. They
+
+646
+00:55:25,769 --> 00:55:29,039
+put that information on their
+website. It was a category one,
+
+647
+00:55:29,489 --> 00:55:34,829
+get a good visibility. Yeah,
+they can send a mail and pay by
+
+648
+00:55:35,099 --> 00:55:40,709
+by paper or other online
+payment. Yeah, so I have no, I
+
+649
+00:55:40,709 --> 00:55:47,009
+have no any crowdfunding
+campaign knowledge before.
+
+650
+00:55:48,599 --> 00:55:54,269
+Before Ming Pupper, but some
+day, nice. And Tao said, why not
+
+651
+00:55:54,269 --> 00:56:03,269
+try campaign? I said I have no
+any background. Maybe it's
+
+652
+00:56:03,359 --> 00:56:11,909
+impossible or difficult for me.
+So some days later, they say
+
+653
+00:56:12,119 --> 00:56:17,249
+send me a same method yet again.
+And again. Why not try campaign?
+
+654
+00:56:18,509 --> 00:56:25,709
+I Sunday. Sunday I have was free
+time. And two was was a media
+
+655
+00:56:25,709 --> 00:56:33,269
+campaign. I started to study how
+to make work campaign. Yeah.
+
+656
+00:56:33,539 --> 00:56:43,199
+Yeah. So I'm not very clear. You
+know, it's hard for me to make
+
+657
+00:56:43,199 --> 00:56:47,159
+it clear. And we I made a
+decision to do a campaign. I
+
+658
+00:56:47,159 --> 00:56:50,849
+thought whatever the result,
+issue shouldn't be very
+
+659
+00:56:50,999 --> 00:56:56,339
+interesting. Another another
+increase in DNS for me. So it is
+
+660
+00:56:56,819 --> 00:57:03,149
+for sure. Yeah, if you decide to
+campaign, you have to prepare
+
+661
+00:57:03,239 --> 00:57:08,069
+all kinds of lawyer all kinds of
+lessons and prepare all kinds of
+
+662
+00:57:08,069 --> 00:57:15,839
+work. And I also double confirm
+with some lenders or some
+
+663
+00:57:16,169 --> 00:57:24,449
+friends, ask them what how to do
+the campaign. Some questions you
+
+664
+00:57:24,449 --> 00:57:31,649
+can get to the answer easily
+about the campaign process, by
+
+665
+00:57:31,649 --> 00:57:39,509
+the some standard question is
+not easy to find his answer.
+
+666
+00:57:39,809 --> 00:57:46,019
+Because if you want to do the
+campaign, you have to prepare
+
+667
+00:57:46,019 --> 00:57:54,899
+the PR video, the Samza pictures
+and the campaign pay design and
+
+668
+00:57:54,899 --> 00:58:02,129
+all kinds of work. So at first,
+we discussed with several
+
+669
+00:58:02,129 --> 00:58:10,199
+vendors, how to do the PR video,
+the if you have enough data, you
+
+670
+00:58:10,199 --> 00:58:16,049
+can do it and use it. And our
+professional. Yeah, lots of
+
+671
+00:58:16,049 --> 00:58:20,309
+professional team connect you
+and then they can do the QA
+
+672
+00:58:20,309 --> 00:58:27,089
+video. But yeah, the budget is,
+for example. 20k dollars. Yeah,
+
+673
+00:58:27,089 --> 00:58:31,469
+but but not, but at that time at
+the different code for me to
+
+674
+00:58:31,469 --> 00:58:35,279
+decide. Because it's a big
+investment decide Yeah,
+
+675
+00:58:35,310 --> 00:58:37,320
+Audrow Nash: especially if it's
+just you, for sure.
+
+676
+00:58:40,320 --> 00:58:46,440
+Afreez Gan: And the last we I
+asked the my friends brain team
+
+677
+00:58:49,230 --> 00:58:59,160
+to take us to record a video.
+But the unities is before before
+
+678
+00:58:59,190 --> 00:59:05,130
+one week before the campaign.
+The guy who happened to make his
+
+679
+00:59:05,160 --> 00:59:11,430
+PR video heard his hand and he
+cannot edit his video.
+
+680
+00:59:12,599 --> 00:59:13,409
+Audrow Nash: Oh, no way.
+
+681
+00:59:14,429 --> 00:59:19,559
+Afreez Gan: Yeah, we haven't
+prepared the voice because we
+
+682
+00:59:19,589 --> 00:59:25,679
+have to prepare the video and
+the voice. I lost that. Yeah, I
+
+683
+00:59:25,679 --> 00:59:33,299
+lost. I finished as laughter
+snap finals. Voice and
+
+684
+00:59:33,599 --> 00:59:43,229
+integrators combines video and
+audio. Yeah. Gotcha. Yeah. So a
+
+685
+00:59:43,229 --> 00:59:49,949
+lot although the final PR video
+is not so professional, but it
+
+686
+00:59:49,949 --> 00:59:56,699
+can work it's quite another
+Yeah, another another very
+
+687
+00:59:56,699 --> 01:00:02,549
+interesting is you know if
+you're a If you want to make a
+
+688
+01:00:02,549 --> 01:00:08,909
+successful Kickstarter campaign
+you will have to God's
+
+689
+01:00:11,129 --> 01:00:15,779
+Kickstarter campaign official
+platform project we love label.
+
+690
+01:00:16,619 --> 01:00:27,029
+Ah, yeah, yeah. Yeah. But even
+but, you know, we I have no any
+
+691
+01:00:27,029 --> 01:00:34,229
+other. No any I know how about
+the campaign? The question for
+
+692
+01:00:34,229 --> 01:00:41,759
+me is how to get the project
+will have a label? I asked. I
+
+693
+01:00:41,759 --> 01:00:49,349
+asked another guy hired me to do
+the campaign. At first before,
+
+694
+01:00:49,799 --> 01:00:57,299
+even before was one week before
+the campaign I asked him when we
+
+695
+01:00:57,299 --> 01:01:03,839
+can't get as a project, we love
+labor. He said, If your project
+
+696
+01:01:03,839 --> 01:01:12,029
+is good enough, you will get it.
+Yeah. But this is a Das? Is that
+
+697
+01:01:12,599 --> 01:01:18,209
+the answer I want to get? So I
+asked him Well, time and time
+
+698
+01:01:18,599 --> 01:01:26,549
+and time again. And it is harder
+to have data that you like to
+
+699
+01:01:26,609 --> 01:01:33,839
+answer. But I'm not alike. We
+can just retweeting the labor so
+
+700
+01:01:33,839 --> 01:01:40,139
+I'll try to find the picture
+campaign contact window and I
+
+701
+01:01:40,139 --> 01:01:45,239
+want to African chrome with the
+official contact window. So I
+
+702
+01:01:45,239 --> 01:01:54,239
+the last time that I found
+contact window hazard here she
+
+703
+01:01:54,239 --> 01:02:01,409
+is Heather and I was at design
+tech category our pigs trap. And
+
+704
+01:02:03,299 --> 01:02:08,189
+here's the icing I sent her a
+male introduced our programming
+
+705
+01:02:08,189 --> 01:02:18,209
+power project and how to book a
+video conference. I remember one
+
+706
+01:02:18,899 --> 01:02:28,949
+Saturday afternoon so before the
+surprise happens our video
+
+707
+01:02:28,949 --> 01:02:34,649
+meeting is before the meet here
+before the video meet him ice
+
+708
+01:02:34,649 --> 01:02:40,349
+and we already may we already
+made campaign paid but it is
+
+709
+01:02:40,889 --> 01:02:46,679
+very rough. Very proper. The
+video is not to the fixed
+
+710
+01:02:46,679 --> 01:02:51,359
+version. Some pictures are not
+the fixed version looks not
+
+711
+01:02:51,359 --> 01:02:52,469
+good. And is
+
+712
+01:02:52,740 --> 01:02:54,930
+Audrow Nash: not very
+professional. Yeah. The page
+
+713
+01:02:56,969 --> 01:03:02,579
+Afreez Gan: actually looks bad.
+Okay, but But before before the
+
+714
+01:03:03,899 --> 01:03:07,529
+meeting with hedsor Western is a
+meeting are we saying is
+
+715
+01:03:07,529 --> 01:03:13,919
+appealing to her and introduce
+our more information our me
+
+716
+01:03:13,919 --> 01:03:19,199
+Pupper our immediate
+information. Our video is a
+
+717
+01:03:19,919 --> 01:03:27,179
+Sunday afternoon. And we are
+surprised and added that just
+
+718
+01:03:27,209 --> 01:03:33,359
+the pneumonia we find our
+project already has already give
+
+719
+01:03:33,419 --> 01:03:40,169
+our valuable project we love the
+labor. Very surprised. Yeah.
+
+720
+01:03:40,499 --> 01:03:41,039
+Yeah.
+
+721
+01:03:42,119 --> 01:03:44,519
+Audrow Nash: That was so nice.
+Very happy. Yeah, I would
+
+722
+01:03:44,519 --> 01:03:44,999
+imagine.
+
+723
+01:03:45,030 --> 01:03:48,240
+Afreez Gan: Yeah, very happy.
+And the other week as a laborer.
+
+724
+01:03:48,630 --> 01:03:54,060
+I asked the guy who had who
+support me to do the campaign.
+
+725
+01:03:56,250 --> 01:04:00,960
+Yeah, I we already finished our
+target that before the campaign
+
+726
+01:04:01,530 --> 01:04:03,300
+was our next target.
+
+727
+01:04:04,860 --> 01:04:10,950
+Audrow Nash: Yeah. Yeah. So
+interesting. That's crazy. Yeah,
+
+728
+01:04:10,980 --> 01:04:13,920
+it was a very successful
+campaigns. Congratulations. Oh,
+
+729
+01:04:13,920 --> 01:04:15,210
+yeah. Yeah,
+
+730
+01:04:15,240 --> 01:04:17,580
+Afreez Gan: thank you. Thank
+you. Another Yeah. Another
+
+731
+01:04:17,580 --> 01:04:27,750
+interesting is open CV open time
+away. Branding team will also do
+
+732
+01:04:27,840 --> 01:04:32,880
+their Kickstarter campaign added
+at a time away away, almost to
+
+733
+01:04:32,880 --> 01:04:34,320
+the campaign at the same time.
+
+734
+01:04:35,880 --> 01:04:37,380
+Audrow Nash: Yeah. Ah,
+
+735
+01:04:38,490 --> 01:04:43,800
+Afreez Gan: you could see his
+brand name is Ken Scott is also
+
+736
+01:04:43,800 --> 01:04:44,250
+your
+
+737
+01:04:44,909 --> 01:04:47,429
+Audrow Nash: local robotics.
+Yeah. See, see
+
+738
+01:04:47,429 --> 01:04:50,459
+Afreez Gan: traducida brand new
+to me to link the US together.
+
+739
+01:04:50,909 --> 01:04:56,819
+And wonderful. We are very close
+to here wonderful. crew
+
+740
+01:04:56,969 --> 01:05:01,799
+together, more and more deeply
+and granted him are now have
+
+741
+01:05:01,889 --> 01:05:08,819
+already failed at their Docker
+Hub. Yeah, they have a we'll use
+
+742
+01:05:08,819 --> 01:05:14,219
+our mean Pupper. And we will run
+it together. Yeah. More in the
+
+743
+01:05:14,729 --> 01:05:15,149
+pipeline.
+
+744
+01:05:17,609 --> 01:05:19,649
+Audrow Nash: That'd be great.
+What do you think? So you'll
+
+745
+01:05:19,649 --> 01:05:25,019
+work together? I guess where?
+Where do you see many pupper?
+
+746
+01:05:25,019 --> 01:05:28,319
+Going? So you already mentioned
+that there's another version
+
+747
+01:05:28,499 --> 01:05:32,189
+coming out? And you're putting
+together the documentation?
+
+748
+01:05:32,489 --> 01:05:35,909
+Where do you kind of see it
+going? Maybe two to five years
+
+749
+01:05:36,029 --> 01:05:36,719
+from now?
+
+750
+01:05:37,050 --> 01:05:42,690
+Afreez Gan: Yeah. In my dream,
+we hope or we have a tool or
+
+751
+01:05:42,690 --> 01:05:50,670
+product line. Why is education
+we really hope to release Good,
+
+752
+01:05:52,230 --> 01:05:56,790
+good, local data platform for
+education. They're everywhere.
+
+753
+01:05:57,360 --> 01:06:02,550
+Not only universities, but also
+middle school, high school
+
+754
+01:06:02,550 --> 01:06:10,020
+students and other any guys who
+like as Loboda they can study
+
+755
+01:06:10,020 --> 01:06:17,070
+and enjoy as your product
+product. And another product
+
+756
+01:06:17,070 --> 01:06:24,000
+line is the home robot. We hope
+Yeah, we hope or we can release
+
+757
+01:06:25,470 --> 01:06:32,670
+useful and valuable and
+acceptable home robot, home
+
+758
+01:06:32,670 --> 01:06:38,730
+robot we lag from global dark,
+consumer, consumer double dark,
+
+759
+01:06:39,150 --> 01:06:47,160
+but you know, it is alien not do
+that. Because we have to we have
+
+760
+01:06:47,160 --> 01:06:50,100
+to move forward carefully step
+by step.
+
+761
+01:06:52,139 --> 01:06:54,809
+Audrow Nash: What do you mean?
+What? What are some of the
+
+762
+01:06:54,809 --> 01:06:59,609
+obstacles that you must figure
+out to move forward? For the
+
+763
+01:06:59,609 --> 01:07:00,719
+consumer robot dog?
+
+764
+01:07:02,010 --> 01:07:06,480
+Afreez Gan: Yeah, for the
+consumer of our dog, we have to
+
+765
+01:07:06,480 --> 01:07:13,770
+make it as a product. As simple
+as possible. You know, if you
+
+766
+01:07:13,770 --> 01:07:18,090
+have some technical background,
+we can we can discuss how to
+
+767
+01:07:18,090 --> 01:07:23,550
+calibration. But if for the
+normal for the consumer product
+
+768
+01:07:23,550 --> 01:07:30,390
+that you you don't you cannot
+say you cannot teach your
+
+769
+01:07:30,540 --> 01:07:32,340
+customers to calibrate
+
+770
+01:07:33,540 --> 01:07:38,250
+Audrow Nash: it. So it has to
+have like one button like a
+
+771
+01:07:38,250 --> 01:07:42,150
+Roomba and then turn on and do
+things and also has to be cheap
+
+772
+01:07:42,300 --> 01:07:42,750
+to
+
+773
+01:07:43,740 --> 01:07:46,530
+Afreez Gan: hear. Yeah, the
+price is gonna be very cheap.
+
+774
+01:07:46,710 --> 01:07:53,220
+And as the function to the
+various stable. Yeah, yes. We
+
+775
+01:07:53,220 --> 01:07:58,980
+hope we are trying our best
+maybe because the end of this
+
+776
+01:07:58,980 --> 01:08:05,910
+year, maybe we can release our
+consumer local Target prototype.
+
+777
+01:08:06,780 --> 01:08:10,050
+Maybe later this year, early
+next year.
+
+778
+01:08:11,340 --> 01:08:17,670
+What do you think? Oh, go ahead.
+Yeah, we have the study was that
+
+779
+01:08:17,670 --> 01:08:19,440
+year? Yeah. That a
+
+780
+01:08:21,329 --> 01:08:27,629
+the real requirements from the
+customers, you know, during our
+
+781
+01:08:27,629 --> 01:08:33,659
+staff are probably released
+about 580. device. And mini
+
+782
+01:08:33,659 --> 01:08:40,499
+paper with we already released
+about 2k. Wow, this wonderful
+
+783
+01:08:40,499 --> 01:08:47,909
+device. Yeah. And our next
+version I next. I mean, I named
+
+784
+01:08:47,909 --> 01:08:53,489
+the mini Piper v2, we hope to
+really say that the two outlier.
+
+785
+01:08:54,389 --> 01:08:59,039
+And I hope we can release a
+final sound in the outtakes of
+
+786
+01:08:59,039 --> 01:09:04,649
+the device. If you are released.
+The more device the already is,
+
+787
+01:09:05,519 --> 01:09:11,069
+the more feedback you can get.
+Yeah, if you're not to the more
+
+788
+01:09:11,069 --> 01:09:15,839
+feedback, you can make it up
+better and better. Definitely,
+
+789
+01:09:15,869 --> 01:09:19,769
+Someday, you'll find a consumer
+solution.
+
+790
+01:09:21,480 --> 01:09:25,110
+Audrow Nash: Yes, it seems like
+the Minipupper and Minipupper
+
+791
+01:09:25,110 --> 01:09:32,310
+v2. It's a smart way to one get
+feedback as you're saying and to
+
+792
+01:09:32,550 --> 01:09:35,610
+grow the number of units that
+you're making, because the
+
+793
+01:09:36,420 --> 01:09:39,960
+consumer one will probably be
+fairly similar. And you can
+
+794
+01:09:39,960 --> 01:09:42,960
+refine the control algorithms
+and you can refine everything
+
+795
+01:09:42,960 --> 01:09:48,210
+else about it. So it's a nice
+way to go from a small market
+
+796
+01:09:48,420 --> 01:09:52,560
+that lets you keep growing to a
+much bigger market to grow a lot
+
+797
+01:09:52,560 --> 01:09:55,290
+more, I think sounds like a good
+plan
+
+798
+01:09:55,290 --> 01:09:59,970
+Afreez Gan: to make that fit.
+Yeah, because such a very cool
+
+799
+01:10:00,000 --> 01:10:05,820
+Actually we Yeah, because we
+actually we have we have not
+
+800
+01:10:06,810 --> 01:10:12,690
+much a Makita. To to try. We
+have to areas them very
+
+801
+01:10:12,690 --> 01:10:13,680
+carefully. Yep.
+
+802
+01:10:14,670 --> 01:10:19,380
+Audrow Nash: I see, yes, it's a
+very much taking what you have
+
+803
+01:10:19,620 --> 01:10:22,560
+getting a little more
+reinvesting it back into your
+
+804
+01:10:22,560 --> 01:10:25,320
+company grow a little bit
+bigger, and do the same thing,
+
+805
+01:10:25,320 --> 01:10:28,500
+grow, grow, grow, grow, until
+eventually you can be a big
+
+806
+01:10:28,650 --> 01:10:32,730
+company. Ah, I hope to look back
+in the future and see you guys
+
+807
+01:10:32,730 --> 01:10:41,820
+be enormous. And very successful
+company. So with the consumer
+
+808
+01:10:42,150 --> 01:10:47,010
+robot dog that you're imagining,
+what will it do? So is it is it
+
+809
+01:10:47,010 --> 01:10:50,790
+just gonna walk around? Is there
+the the human interaction part
+
+810
+01:10:50,790 --> 01:10:54,630
+seems really difficult for that,
+but what's going to be kind of
+
+811
+01:10:54,660 --> 01:10:56,490
+the thing that people buy it
+for?
+
+812
+01:10:58,230 --> 01:11:06,780
+Afreez Gan: Ya got to dot your
+point? Yeah. I was asked by many
+
+813
+01:11:06,780 --> 01:11:14,700
+guys the same question. Yeah,
+yes. In my opinion, in my
+
+814
+01:11:14,700 --> 01:11:22,530
+opinion, it is. I think no one
+can give a very clear answer.
+
+815
+01:11:23,580 --> 01:11:31,140
+For example, if that answer is
+very clear. I think,
+
+816
+01:11:31,620 --> 01:11:33,060
+Audrow Nash: oh, everyone else
+has already done.
+
+817
+01:11:34,620 --> 01:11:40,530
+Afreez Gan: Yeah, I think a
+marketer is very clear. And as a
+
+818
+01:11:40,530 --> 01:11:47,370
+product feature is very clear.
+We have no opportunity for the
+
+819
+01:11:47,700 --> 01:11:56,850
+startup company, the big company
+will. But for me, I believe you
+
+820
+01:11:56,850 --> 01:12:01,950
+can make it after three or five
+years later. I think those are
+
+821
+01:12:02,430 --> 01:12:08,850
+the home home robot market that
+will come. I believe it doesn't
+
+822
+01:12:09,870 --> 01:12:15,150
+matter what kind of a home robot
+looks like. I believe he should
+
+823
+01:12:15,150 --> 01:12:23,520
+be as a lateral robot, but not
+the wheel robot. So so so if the
+
+824
+01:12:24,120 --> 01:12:29,820
+if it is the leg robot, we can
+we can immediately add a four
+
+825
+01:12:29,820 --> 01:12:39,300
+leg or two leg for now, maybe?
+Finally. I think AI is used for
+
+826
+01:12:39,300 --> 01:12:48,270
+leg because it is more like two
+animals. Yes. So yeah, I believe
+
+827
+01:12:48,270 --> 01:12:54,450
+was the maintenance. So we, we
+moved with their target stamp I
+
+828
+01:12:54,450 --> 01:12:59,490
+stamp. But I did that first.
+Maybe in the end of this year or
+
+829
+01:12:59,490 --> 01:13:06,480
+early next year, our first home
+robot prototype, or maybe you
+
+830
+01:13:06,480 --> 01:13:15,210
+can think that it is a mobile
+smart speaker on mobile. Yeah.
+
+831
+01:13:15,270 --> 01:13:15,690
+Yep.
+
+832
+01:13:17,490 --> 01:13:20,040
+Audrow Nash: Kind of like Amazon
+is doing and a lot of these
+
+833
+01:13:20,040 --> 01:13:27,780
+other companies. Gotcha. Yeah,
+and legs. I mean, like carpet is
+
+834
+01:13:27,780 --> 01:13:30,510
+not a problem if you have to
+like step up onto the carpet or
+
+835
+01:13:30,510 --> 01:13:33,990
+stairs or anything. Like if you
+have a legged robot, there's a
+
+836
+01:13:33,990 --> 01:13:39,300
+lot of advantages for getting
+around the home. Especially if
+
+837
+01:13:39,300 --> 01:13:43,050
+it's a consumer products, like
+you buy a Roomba. And it can't
+
+838
+01:13:43,260 --> 01:13:47,280
+go in the like little dip in the
+living room or something like
+
+839
+01:13:47,280 --> 01:13:51,180
+this that has a stair to editor,
+whatever it might be. So legs
+
+840
+01:13:51,210 --> 01:13:55,320
+clearly have those advantages.
+Four versus two is an
+
+841
+01:13:55,320 --> 01:13:58,410
+interesting discussion for is a
+lot easier, I think as a
+
+842
+01:13:58,410 --> 01:14:01,680
+roboticist because you can be
+passively stable at anytime
+
+843
+01:14:01,680 --> 01:14:04,980
+because you can have three
+points of contact or this kind
+
+844
+01:14:04,980 --> 01:14:06,750
+of thing. Yeah.
+
+845
+01:14:08,430 --> 01:14:14,220
+Afreez Gan: Yeah, you'll think
+maybe five or 10 years later, a
+
+846
+01:14:14,220 --> 01:14:20,070
+few days. Home robot with four
+leg you may be feel very good.
+
+847
+01:14:20,100 --> 01:14:23,430
+It is like animals, but maybe
+you will find as they are two
+
+848
+01:14:23,430 --> 01:14:28,320
+leg like a human in your home.
+Maybe it is not feel better.
+
+849
+01:14:29,489 --> 01:14:31,169
+Audrow Nash: It's like a little
+human. Yeah, it's a little
+
+850
+01:14:31,169 --> 01:14:35,669
+stressful. I could see that. I
+wonder I mean, birds birds have
+
+851
+01:14:35,669 --> 01:14:40,049
+two legs, also. So like chickens
+and things like this. And we're
+
+852
+01:14:40,049 --> 01:14:42,779
+not terribly intimidated by
+them. But I think a chicken
+
+853
+01:14:42,779 --> 01:14:46,859
+shaped robot would be very
+funny. Like it's not a design
+
+854
+01:14:46,859 --> 01:14:52,289
+that I see. I think ever but
+yeah, I see what you mean. And
+
+855
+01:14:52,289 --> 01:14:56,309
+then also easier to manufacture
+probably point like feet are
+
+856
+01:14:56,309 --> 01:15:00,959
+really hard as far as I
+understand for you like buy big
+
+857
+01:15:01,529 --> 01:15:07,679
+needle robots? Because like, a
+lot easier with like sore
+
+858
+01:15:07,679 --> 01:15:09,839
+points, like you're doing with
+Minipupper?
+
+859
+01:15:11,849 --> 01:15:16,379
+Afreez Gan: Yeah, the most of
+the most time consuming data
+
+860
+01:15:16,379 --> 01:15:26,669
+users use lag. Yeah. Here, yeah,
+we have a tool. Now what I need,
+
+861
+01:15:26,669 --> 01:15:33,659
+I still need about three hours
+to assemble it, and additional
+
+862
+01:15:33,929 --> 01:15:39,629
+half an hour to calibration it.
+And our next version all my
+
+863
+01:15:39,629 --> 01:15:45,359
+Takita is Katherine was, you
+know, I need more than three
+
+864
+01:15:45,359 --> 01:15:46,979
+hours to assemble it.
+
+865
+01:15:47,070 --> 01:15:48,750
+Audrow Nash: And you've done a
+lot of that's yeah.
+
+866
+01:15:50,010 --> 01:15:54,840
+Afreez Gan: But other customers
+maybe need more time to assemble
+
+867
+01:15:54,840 --> 01:16:02,940
+and enjoined? Yeah, one extra
+version? I hope the assemble. We
+
+868
+01:16:02,940 --> 01:16:09,450
+can assemble it within one hour.
+And don't need to any more
+
+869
+01:16:09,450 --> 01:16:13,380
+calibration. Any maybe the auto
+calibration?
+
+870
+01:16:14,670 --> 01:16:20,790
+Audrow Nash: That would be nice.
+Yeah. Yeah. Let's see. Bigger
+
+871
+01:16:20,790 --> 01:16:24,000
+Picture. I'd love to so
+segwaying a little bit. I would
+
+872
+01:16:24,000 --> 01:16:27,720
+love to hear your because I
+mean, I'm in the United States.
+
+873
+01:16:27,990 --> 01:16:30,300
+I would love to hear your
+impression of kind of the
+
+874
+01:16:30,300 --> 01:16:33,960
+robotics industry in China. And
+the manufacturing is very
+
+875
+01:16:33,960 --> 01:16:38,880
+interesting. So like, I don't
+know, how do you how do you
+
+876
+01:16:38,880 --> 01:16:39,480
+think of it?
+
+877
+01:16:42,660 --> 01:16:45,150
+Afreez Gan: You me as a robot I
+manufacture?
+
+878
+01:16:46,350 --> 01:16:49,230
+Audrow Nash: Yes. In the
+Schengen area, and then around
+
+879
+01:16:49,230 --> 01:16:54,030
+China? Just yeah. I don't know
+how, like for the whole robotics
+
+880
+01:16:54,030 --> 01:16:59,280
+field, how how do we how can we
+think of Shin Jen? And? I don't
+
+881
+01:16:59,280 --> 01:16:59,550
+know.
+
+882
+01:17:01,320 --> 01:17:05,880
+Afreez Gan: Yeah, I think,
+shouldn't they, the supply chain
+
+883
+01:17:05,880 --> 01:17:12,390
+is a huge one for us in general.
+And you can find all kinds of
+
+884
+01:17:12,390 --> 01:17:21,390
+vendors. And they can't give you
+some solution. But if you want
+
+885
+01:17:21,390 --> 01:17:28,500
+to do some innovation, you have
+to you have to design the
+
+886
+01:17:28,500 --> 01:17:33,570
+Pycelle you can find all kinds
+of solutions. The common
+
+887
+01:17:33,570 --> 01:17:37,020
+solution, it is easy to find a
+common solution in ancient in
+
+888
+01:17:37,230 --> 01:17:43,530
+Makeda, and a winner. But if you
+want to make some innovation
+
+889
+01:17:43,530 --> 01:17:47,010
+product, or you have to design
+it myself.
+
+890
+01:17:48,450 --> 01:17:52,890
+Audrow Nash: Yeah. Gotcha. And
+so if you do design it, oh, go
+
+891
+01:17:52,890 --> 01:17:53,190
+ahead.
+
+892
+01:17:54,840 --> 01:18:01,020
+Afreez Gan: I mean, if you
+review, product, manufacture a
+
+893
+01:18:01,050 --> 01:18:07,710
+common hardware device, it is
+very easy. Because it certainly
+
+894
+01:18:08,430 --> 01:18:09,570
+is a very convenient.
+
+895
+01:18:12,810 --> 01:18:15,330
+Audrow Nash: Gotcha. So if you
+say you do come up with
+
+896
+01:18:15,330 --> 01:18:18,840
+something new like you with your
+servo motors that are a little
+
+897
+01:18:18,840 --> 01:18:22,560
+different than what's been done
+or maybe I don't know anything
+
+898
+01:18:22,560 --> 01:18:26,790
+else that's new. How does it
+work? To get a factory in
+
+899
+01:18:26,790 --> 01:18:33,660
+Shenzhen? Making it like do you
+have to work with them a lot? Do
+
+900
+01:18:33,660 --> 01:18:36,210
+you kind of give them what you
+need? And they'll figure it out?
+
+901
+01:18:36,210 --> 01:18:38,970
+Or how does it work? Yeah.
+
+902
+01:18:40,980 --> 01:18:48,960
+Afreez Gan: Yes, about you can
+also find many vendors initially
+
+903
+01:18:49,350 --> 01:18:56,640
+market and during a tutorial
+deliver staff at a Pupper, I
+
+904
+01:18:56,640 --> 01:19:03,930
+already know some sub so
+vendors. So we asked them one by
+
+905
+01:19:03,930 --> 01:19:10,500
+one and compare their service
+and as a technology background,
+
+906
+01:19:11,070 --> 01:19:16,080
+and their selectors. The better
+battle rounds and then to
+
+907
+01:19:16,110 --> 01:19:23,520
+discuss to to give give them our
+detailed requirement and discuss
+
+908
+01:19:23,970 --> 01:19:28,860
+our solution discusses the
+solutions maybe, you know, as
+
+909
+01:19:29,010 --> 01:19:32,850
+the forecast. Now the fourth
+category is to not match and
+
+910
+01:19:33,750 --> 01:19:41,700
+you'll need I didn't not a very
+easy to to push them to some
+
+911
+01:19:41,760 --> 01:19:45,420
+ketema Yep.
+
+912
+01:19:46,680 --> 01:19:49,140
+Audrow Nash: Gotcha. Unless
+you're making I don't know a
+
+913
+01:19:49,140 --> 01:19:52,560
+million of them or some crazy
+number. That it's really worth
+
+914
+01:19:52,560 --> 01:19:56,280
+it for them to customize. This
+kind of thing. Yes, yeah.
+
+915
+01:19:56,880 --> 01:19:59,970
+Afreez Gan: Yeah, yeah, I want
+an extra wash. I will resist
+
+916
+01:20:00,000 --> 01:20:05,400
+that serves, because, you know,
+if you're wanting to do some
+
+917
+01:20:05,430 --> 01:20:10,680
+innovation or some big change,
+to make it simple, you will have
+
+918
+01:20:10,680 --> 01:20:15,000
+to redesign some, some key
+components.
+
+919
+01:20:16,260 --> 01:20:22,680
+Audrow Nash: Yep. Gotcha. How,
+how is the I mean, this kind of
+
+920
+01:20:22,680 --> 01:20:26,520
+two questions. How are you guys
+funded? And how is the investor
+
+921
+01:20:26,520 --> 01:20:28,470
+climate in China to you?
+
+922
+01:20:36,030 --> 01:20:41,640
+Afreez Gan: Okay, so the first
+question is, how to get the data
+
+923
+01:20:41,670 --> 01:20:41,910
+right?
+
+924
+01:20:42,960 --> 01:20:46,890
+Audrow Nash: For you, so are you
+are you bootstrapping Are you
+
+925
+01:20:46,890 --> 01:20:49,860
+putting your own money in and
+are you accepting investment
+
+926
+01:20:50,310 --> 01:20:54,240
+from people from? Are you
+locally funded? Does the
+
+927
+01:20:54,240 --> 01:20:58,110
+government help with your
+funding? Or I'm just wondering
+
+928
+01:20:58,110 --> 01:21:02,550
+how the funding so far so are
+you guys
+
+929
+01:21:03,600 --> 01:21:10,860
+Afreez Gan: different? i Let's
+go back to Stanford as a
+
+930
+01:21:10,860 --> 01:21:14,700
+Stanford a paracord project. And
+at first saw it I used my own
+
+931
+01:21:14,700 --> 01:21:21,150
+money to buy all the components
+about Africa and and they enjoy
+
+932
+01:21:21,150 --> 01:21:27,930
+it and Alaska, i becomes the
+vendor of the temple Pupper and
+
+933
+01:21:29,310 --> 01:21:34,680
+the bigger because after we said
+rotis castle with Nathan Kao by
+
+934
+01:21:34,680 --> 01:21:40,530
+mail or videoconference, Nathan
+asked me whether it is possible
+
+935
+01:21:41,010 --> 01:21:46,800
+to supply as a kid from China
+marketer because China supply
+
+936
+01:21:46,800 --> 01:21:53,640
+chain is convenient and as the
+price is, is lower. So I look
+
+937
+01:21:53,640 --> 01:21:58,560
+around and all the components
+from the Kenya market and
+
+938
+01:21:59,100 --> 01:22:03,570
+deliver a stamp or the Pupper
+with with low price. But
+
+939
+01:22:05,580 --> 01:22:12,270
+frankly, speaking of the day,
+the some profit after deliver
+
+940
+01:22:12,690 --> 01:22:20,550
+several hundreds of staff for
+the Pupper project we got we got
+
+941
+01:22:20,550 --> 01:22:29,040
+some profit. And I use a profit
+to developer Minipupper. So
+
+942
+01:22:29,340 --> 01:22:35,010
+yeah, so when the Pupper
+campaign after the campaign, we
+
+943
+01:22:35,010 --> 01:22:43,170
+got much more funding. And then
+we use that money to developer
+
+944
+01:22:43,200 --> 01:22:53,880
+our next version. So Ron and Rob
+Yep. Actually, now or now. Now
+
+945
+01:22:53,910 --> 01:23:04,890
+it is. I I didn't actually i not
+i did not use the notch in my
+
+946
+01:23:04,920 --> 01:23:05,490
+own money.
+
+947
+01:23:06,930 --> 01:23:11,430
+Audrow Nash: In the latest mini
+popper? Yeah, yeah. Nice. That's
+
+948
+01:23:11,430 --> 01:23:16,290
+great. Let's see. And then, um,
+do you think going forward? Will
+
+949
+01:23:16,290 --> 01:23:21,900
+you take investor money or try
+to bootstrap the whole time and
+
+950
+01:23:21,900 --> 01:23:22,830
+keep becoming?
+
+951
+01:23:24,270 --> 01:23:29,490
+Afreez Gan: Yes. We have as a
+plan to get investment maybe
+
+952
+01:23:29,520 --> 01:23:37,920
+later this year. And we are so
+lucky. And we actually now we
+
+953
+01:23:37,920 --> 01:23:46,800
+already got to the incubator
+wacky incubator program approval
+
+954
+01:23:46,860 --> 01:23:52,230
+in Hong Kong. Congrats. Yeah,
+they will. Yeah. They will give
+
+955
+01:23:52,230 --> 01:23:59,520
+us some support and not only
+offers some funding, but also,
+
+956
+01:23:59,760 --> 01:24:07,590
+you know, in Hong Kong. The VC
+environment is very, very
+
+957
+01:24:07,590 --> 01:24:14,940
+convenient. Yeah. Yeah, well, we
+can. Yeah, well, I hope we can
+
+958
+01:24:15,300 --> 01:24:21,000
+get our first round an investor
+later this year, and then we can
+
+959
+01:24:21,000 --> 01:24:28,800
+use the fun to to look more.
+More technical guys, and
+
+960
+01:24:28,830 --> 01:24:32,640
+accelerator our, our rd and
+marketing.
+
+961
+01:24:34,080 --> 01:24:40,770
+Audrow Nash: Gotcha. Yeah. Let's
+see. So beginning to wrap up.
+
+962
+01:24:41,280 --> 01:24:47,400
+What do you think? What do you
+think robotics will look like?
+
+963
+01:24:47,790 --> 01:24:53,520
+Going forward? So the next like
+two to five years. Where do you
+
+964
+01:24:53,520 --> 01:24:55,290
+think we'll be in robotics?
+
+965
+01:24:57,240 --> 01:25:02,670
+Afreez Gan: Yeah, I'm very
+positive. Go to the robotics
+
+966
+01:25:03,210 --> 01:25:11,010
+market. And you know, now,
+vision technology, speak as a
+
+967
+01:25:11,010 --> 01:25:18,660
+voice or re as maker Ria, voice
+technology. There are many, many
+
+968
+01:25:18,660 --> 01:25:25,080
+solutions. And I think that we
+are already ready. The only need
+
+969
+01:25:27,180 --> 01:25:34,770
+the only thing we need to do is
+how to combine all kinds of all
+
+970
+01:25:34,770 --> 01:25:40,320
+kinds of functions or
+technologies into a total
+
+971
+01:25:40,320 --> 01:25:44,520
+product require the product, and
+they release it to the customer
+
+972
+01:25:44,520 --> 01:25:51,750
+with acceptable price, and
+variable use aka. And I think
+
+973
+01:25:52,560 --> 01:25:57,270
+I'm very positive, but I think
+maybe within five years, three
+
+974
+01:25:57,270 --> 01:26:01,980
+or five years later, I think
+most people will see more and
+
+975
+01:26:02,010 --> 01:26:08,700
+more robot products. And I also
+believe, within three years we
+
+976
+01:26:09,510 --> 01:26:16,980
+we can release as home robot top
+consumer product will be sold in
+
+977
+01:26:16,980 --> 01:26:24,900
+no time, but some company will
+release it. Okay. Well,
+
+978
+01:26:24,900 --> 01:26:27,120
+Audrow Nash: I hope it's you
+guys. Fingers crossed for it.
+
+979
+01:26:28,560 --> 01:26:33,960
+Yeah, let's see. So we're
+wrapping up. Is there any links
+
+980
+01:26:33,990 --> 01:26:37,440
+or contact info or anything
+you'd like to share with our
+
+981
+01:26:37,440 --> 01:26:43,950
+watchers and listeners? Yeah.
+All right.
+
+982
+01:26:44,010 --> 01:26:47,430
+Afreez Gan: Also, talk a minute
+and a resource of Amitabha is
+
+983
+01:26:47,940 --> 01:26:55,170
+your company data on our GitHub?
+Link? I think you can get all
+
+984
+01:26:55,170 --> 01:26:58,980
+the all the things on our
+GitHub.
+
+985
+01:27:01,440 --> 01:27:06,720
+Audrow Nash: Awesome. All right.
+Very good. Thank you. Nice
+
+986
+01:27:06,720 --> 01:27:07,650
+speaking with you. Yeah.
+
+987
+01:27:07,680 --> 01:27:10,860
+Afreez Gan: Thank you so much.
+Yes. Thank you so much. That is
+
+988
+01:27:10,860 --> 01:27:15,600
+amazing. Hi, everyone. Okay. Hi.
+
+989
+01:27:17,580 --> 01:27:19,350
+Audrow Nash: Thanks for
+listening to this conversation
+
+990
+01:27:19,350 --> 01:27:22,260
+with our friends. Thank you
+again to our founding sponsor
+
+991
+01:27:22,260 --> 01:27:25,500
+open robotics. If you enjoy this
+interview, please consider
+
+992
+01:27:25,500 --> 01:27:27,600
+subscribing. See you next time.
+

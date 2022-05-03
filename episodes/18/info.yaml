@@ -1,0 +1,40 @@
+guests: Afreez Gan
+title: Open Source Robot Dog, Kickstarter, and Robot Companion
+description: |
+  In this episode, Audrow Nash speaks to Afreez Gan, who is the founder and CEO of MangDang;
+  MangDang is a Chinese startup that make Minipupper, an open source robot dog that uses the Robot Operating System (ROS).
+  Minipupper was inspired by and built from lessons learned from the Stanford Pupper, open source robot dog.
+  In this interview, Afreez speaks about Minipupper's hardware, software, and documentation, about manufacturing Minipupper, and about his eventual goal of building a home robot dog.
+excerpt: Afreez Gan is the founder and CEO of MangDang, which makes Minipupper, an open source robot dog that uses the Robot Operating System.
+duration:
+  hours: 1
+  minutes: 27
+  seconds: 24
+tags:
+  - startup
+  - education
+  - quadruped
+  - open source
+  - china
+links:
+  - name: Afreez's LinkedIn
+    url: https://www.linkedin.com/in/afreez-gan-b606615/
+  - name: MangDang's website
+    url: https://www.mangdang.net/
+  - name: Minipupper's Kickstarter
+    url: https://www.kickstarter.com/projects/336477435/mini-pupper-open-sourceros-robot-dog-kit
+  - name: MangDang's Github
+    url: https://github.com/mangdangroboticsclub
+mp3SizeBytes: 171897527
+publishDate: 2022-05-03
+youtube:
+  mainContentId: aFBhgRr6pyI
+  clips:
+    - title: Dreaming of Home Robot Dogs
+      videoId: Y4bLlke4Djk
+    - title: \"You should start a Kickstarter\"
+      videoId: JXtxT-DGPFA
+    - title: Scaling Up Production for Bigger Markets
+      videoId: zplE5hqriPU
+    - title: Beating the Big Companies with a Leap of Faith
+      videoId: 2uKJB-boWrw

@@ -1,0 +1,17 @@
+0:00:00 - Start
+0:01:07 - Introduction
+0:04:21 - Origin of Mini Pupper
+0:11:27 - Mini Pupper’s hardware
+0:22:59 - Minipupper’s software
+0:29:08 - Minipupper for education
+0:35:19 - Making high quality documentation
+0:39:03 - Using ROS 1
+0:41:57 - Assembling Minipupper
+0:44:17 - The challenges of scaling up manufacturing
+0:54:24 - Kickstarter campaign
+1:05:22 - Future of Minipupper
+1:10:41 - Consumer robot dog
+1:16:17 - Manufacturing in China
+1:20:18 - Funding
+1:24:38 - Future of robotics
+1:26:23 - Links
