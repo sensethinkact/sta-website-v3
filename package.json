@@ -29,7 +29,7 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.1.0",
     "react-youtube": "^9.0.2",
-    "sharp": "^0.30.5",
+    "sharp": "^0.30.6",
     "yaml": "^2.1.1"
   },
   "devDependencies": {
