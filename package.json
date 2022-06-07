@@ -20,7 +20,7 @@
     "@sta-podcast/post-loader": "^1.4.1",
     "bulma": "^0.9.4",
     "classnames": "^2.3.1",
-    "dayjs": "^1.11.2",
+    "dayjs": "^1.11.3",
     "next": "12.1.6",
     "node-fetch": "^3.2.5",
     "podcast": "^2.0.0",
