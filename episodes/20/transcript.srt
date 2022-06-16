@@ -1,0 +1,8751 @@
+1
+00:00:03,210 --> 00:00:05,130
+Audrow Nash: This is a
+conversation with Maria
+
+2
+00:00:05,160 --> 00:00:09,690
+Telleria, who is a co founder
+and the CTO of Canvas. Canvas
+
+3
+00:00:09,690 --> 00:00:13,410
+makes a drywall finishing robot
+for construction sites. One
+
+4
+00:00:13,410 --> 00:00:16,980
+thing that I think is especially
+interesting about Canvas is that
+
+5
+00:00:16,980 --> 00:00:20,790
+they are working closely with a
+trade union. In case you don't
+
+6
+00:00:20,790 --> 00:00:25,560
+know, quoting from the AFSCME,
+a large trade union in the
+
+7
+00:00:25,560 --> 00:00:29,730
+US. A union is an organization
+formed by workers who joined
+
+8
+00:00:29,730 --> 00:00:32,850
+together and use their strength
+to have a voice in their
+
+9
+00:00:32,850 --> 00:00:38,070
+workplace. Unions help workers
+negotiate for better wages,
+
+10
+00:00:38,100 --> 00:00:41,850
+benefits and job safety, among
+other things. I'm not very
+
+11
+00:00:41,850 --> 00:00:45,090
+knowledgeable about unions. But
+my impression before this
+
+12
+00:00:45,090 --> 00:00:49,050
+interview, was that unions often
+slow the adoption of new
+
+13
+00:00:49,050 --> 00:00:53,370
+technology in a trade. And I
+think most robotics companies
+
+14
+00:00:53,370 --> 00:00:57,900
+I've talked to avoid or try to
+automate unions out of
+
+15
+00:00:57,900 --> 00:01:02,490
+relevance. So I was surprised to
+hear how Canvas is working
+
+16
+00:01:02,490 --> 00:01:06,360
+closely with a trade union, and
+that both canvas and the trade
+
+17
+00:01:06,360 --> 00:01:10,200
+union seem to be benefiting from
+the collaboration. In the
+
+18
+00:01:10,200 --> 00:01:13,800
+future, I expect to see more
+robotics companies following
+
+19
+00:01:13,800 --> 00:01:17,880
+Canvas's lead. Since I think
+working with unions can help
+
+20
+00:01:17,910 --> 00:01:21,450
+robotics companies understand
+their problem, get into
+
+21
+00:01:21,450 --> 00:01:25,200
+industries much faster, and
+avoid resistance from people
+
+22
+00:01:25,890 --> 00:01:30,780
+already in the trade. At the
+same time, I believe unions can
+
+23
+00:01:30,780 --> 00:01:34,380
+benefit from automation in
+canvases case, their drywall
+
+24
+00:01:34,380 --> 00:01:38,100
+robot helps to reduce the rate
+of repetitive injuries that end
+
+25
+00:01:38,100 --> 00:01:41,370
+people's careers. And they help
+a trade that is significantly
+
+26
+00:01:41,370 --> 00:01:45,240
+short on people to meet their
+demand. I'm Audrow. Nash. This
+
+27
+00:01:45,240 --> 00:01:48,870
+is the Sense Think Act Podcast. Thank
+you to our founding sponsor,
+
+28
+00:01:48,900 --> 00:01:58,380
+open robotics. And now here's my
+conversation with Maria. Hi,
+
+29
+00:01:58,380 --> 00:02:00,120
+Maria, would you introduce
+yourself?
+
+30
+00:02:01,650 --> 00:02:04,200
+Maria Telleria: Yeah, driver
+euteller. Yeah, I am co founder
+
+31
+00:02:04,200 --> 00:02:08,520
+and CTO of Canvas. And we're a
+robotics company bringing
+
+32
+00:02:08,940 --> 00:02:11,670
+drywall finishing robots to the
+construction industry.
+
+33
+00:02:13,200 --> 00:02:16,800
+Audrow Nash: Now, tell me about
+your drywall finishing robot.
+
+34
+00:02:18,420 --> 00:02:20,700
+Maria Telleria: Yeah, so when
+we, you know, we come from a
+
+35
+00:02:20,700 --> 00:02:24,150
+research background, and we've
+been always looking at why are
+
+36
+00:02:24,150 --> 00:02:27,750
+robots used? In other words,
+they are used, but not really
+
+37
+00:02:27,750 --> 00:02:30,780
+widely use outside of
+manufacturing and logistics. And
+
+38
+00:02:30,780 --> 00:02:33,090
+read I think is a challenge that
+probably many in the audience
+
+39
+00:02:33,090 --> 00:02:35,820
+know that construction
+environments are much more
+
+40
+00:02:35,820 --> 00:02:39,510
+difficult for robotics. And so
+my co founder, Kevin, Albert,
+
+41
+00:02:39,510 --> 00:02:42,450
+and myself, were always driven
+by like, hey, let's bring robots
+
+42
+00:02:42,450 --> 00:02:45,450
+to another place. We got
+fascinated by construction,
+
+43
+00:02:45,450 --> 00:02:50,010
+right, the size of the market is
+huge, the problem, but then, you
+
+44
+00:02:50,010 --> 00:02:52,560
+know, you kind of keep digging
+and digging. And that's where we
+
+45
+00:02:52,560 --> 00:02:56,010
+found drywall finishing. And we
+pick this test, because it is
+
+46
+00:02:56,010 --> 00:02:59,610
+particularly painful in terms of
+like a lot of wear and tear on
+
+47
+00:02:59,610 --> 00:03:04,080
+the body. A lot of like
+repetitive steps, you know, long
+
+48
+00:03:04,080 --> 00:03:06,630
+schedule, even if the work is
+not consistently being done,
+
+49
+00:03:06,630 --> 00:03:09,510
+because you have drying steps.
+So really, the goal was like,
+
+50
+00:03:09,630 --> 00:03:12,720
+Okay, this seems to have all the
+adult dirty dangerous for
+
+51
+00:03:12,720 --> 00:03:17,280
+robotics. Let's go at it. And so
+yeah, robot is, I keep saying
+
+52
+00:03:17,280 --> 00:03:21,090
+tool because it is really meant
+to be an augmentation of the
+
+53
+00:03:21,090 --> 00:03:25,050
+worker. So we do have a worker
+in the loop, they are a key part
+
+54
+00:03:25,050 --> 00:03:28,110
+of the component. They're a key
+part of how we actually solve
+
+55
+00:03:28,110 --> 00:03:31,080
+this problem, the unstructured
+environment. But it is, you
+
+56
+00:03:31,080 --> 00:03:34,650
+know, this robotic system, it's
+a robotic arm with very
+
+57
+00:03:34,650 --> 00:03:37,590
+specialized and the factors that
+allowed it to spray on the joint
+
+58
+00:03:37,590 --> 00:03:40,590
+compound, which is where you
+apply on the drywall sheets to
+
+59
+00:03:40,590 --> 00:03:44,730
+cover kind of the seams, and
+then a sanding and detector that
+
+60
+00:03:44,730 --> 00:03:48,390
+sends it down so that it looks
+smooth. And that robot arm is on
+
+61
+00:03:48,390 --> 00:03:50,940
+a mobile base that allows the
+right to reach all the different
+
+62
+00:03:50,940 --> 00:03:52,740
+places in the construction site.
+
+63
+00:03:53,130 --> 00:03:55,560
+Audrow Nash: Gotcha. So what
+does it look like when the robot
+
+64
+00:03:55,560 --> 00:03:58,260
+is actually doing its spraying
+and sanding? You kind of just
+
+65
+00:03:58,260 --> 00:04:02,130
+position it near a wall and it
+goes in slowly covers everything
+
+66
+00:04:02,130 --> 00:04:03,600
+with its arm? Or how does it
+look?
+
+67
+00:04:04,860 --> 00:04:07,800
+Maria Telleria: Yeah, I mean,
+maybe this is where a picture's
+
+68
+00:04:07,800 --> 00:04:12,300
+worth 1000 words. So pull up the
+video to share it you.
+
+69
+00:04:20,010 --> 00:04:24,180
+screen here, you know this is
+pretty much a quick peek. But
+
+70
+00:04:24,180 --> 00:04:27,240
+I'll describe it as we go right
+now really, you know, starting
+
+71
+00:04:27,240 --> 00:04:29,340
+with the idea that there is a
+lot of construction going on.
+
+72
+00:04:29,580 --> 00:04:33,030
+This is what the job site looks
+like when we come in. It has
+
+73
+00:04:33,030 --> 00:04:36,210
+been taped. So you have to apply
+the state between the jump the
+
+74
+00:04:36,210 --> 00:04:38,970
+different drywall sheets that
+you come in, and you go ahead
+
+75
+00:04:38,970 --> 00:04:42,960
+and install that spray and the
+factor that you see there. A big
+
+76
+00:04:42,960 --> 00:04:45,270
+part here. I'll pause it to talk
+a little bit about it. Because
+
+77
+00:04:45,270 --> 00:04:48,300
+you mentioned like, right you
+position it, like keep our
+
+78
+00:04:48,300 --> 00:04:51,690
+promises we have to build our
+map to make this happen, right.
+
+79
+00:04:51,870 --> 00:04:55,470
+We don't have a map when we
+start you know there is things
+
+80
+00:04:55,470 --> 00:04:58,890
+like bid models. So the models
+the building information model.
+
+81
+00:04:59,190 --> 00:05:02,520
+It's kind of like the had
+construction sites, right? They
+
+82
+00:05:02,520 --> 00:05:04,890
+do exist, they're pretty
+detailed, they have everything
+
+83
+00:05:04,890 --> 00:05:08,220
+done that. Rarely, by the time
+we come in are those that
+
+84
+00:05:08,220 --> 00:05:11,100
+accurate because nobody's
+updated when like, things had to
+
+85
+00:05:11,100 --> 00:05:13,680
+move a little bit, you cannot
+make that decision as long as
+
+86
+00:05:13,680 --> 00:05:16,230
+not something structural people
+can move a wall a little bit
+
+87
+00:05:16,230 --> 00:05:19,710
+because of whatever recent
+happened on site. So one is not
+
+88
+00:05:19,710 --> 00:05:22,620
+accurate in two, they don't
+often get shared all the way
+
+89
+00:05:22,620 --> 00:05:26,190
+down the chain of people who are
+working right there kind of more
+
+90
+00:05:26,190 --> 00:05:29,430
+useable design and modeling
+stage rather than in the build
+
+91
+00:05:29,430 --> 00:05:32,670
+stage. So most of our customers
+just have a floorplan, so 2d
+
+92
+00:05:32,670 --> 00:05:36,270
+plan, and they say, right, I
+gotta finish these walls. So one
+
+93
+00:05:36,270 --> 00:05:38,940
+of the key things that we
+implemented was said, we can't
+
+94
+00:05:38,940 --> 00:05:42,180
+depend on them having a male
+have been mobile, excuse me, and
+
+95
+00:05:42,180 --> 00:05:44,820
+we can't depend on the BIM model
+being accurate. So we're going
+
+96
+00:05:44,820 --> 00:05:47,940
+to have to map ourselves. So
+basically, the robot comes in
+
+97
+00:05:48,120 --> 00:05:52,530
+recruit scans to space
+identifies the different areas
+
+98
+00:05:52,530 --> 00:05:56,040
+that it has to treat. And then a
+key part here is that it splits
+
+99
+00:05:56,040 --> 00:05:58,800
+them up into workspaces, right,
+this goes along with the fact
+
+100
+00:05:58,800 --> 00:06:01,800
+that the robot arm can only
+reach so much right just like
+
+101
+00:06:01,800 --> 00:06:04,080
+your arm, you at some point, you
+have to use your legs to move
+
+102
+00:06:04,080 --> 00:06:07,140
+along. So by splitting up into
+these workspaces, we really
+
+103
+00:06:07,140 --> 00:06:10,860
+think of the mobile base that
+you see this pretty big base
+
+104
+00:06:11,070 --> 00:06:14,970
+position said roughly to this
+spot, and then the robot arm can
+
+105
+00:06:14,970 --> 00:06:18,450
+use all of its precision to go
+ahead and target it in a blank
+
+106
+00:06:18,450 --> 00:06:21,750
+here, you see our operator
+select the workspace is the
+
+107
+00:06:21,750 --> 00:06:24,540
+rows, columns that he wants to
+do. And then you see how it
+
+108
+00:06:24,540 --> 00:06:29,130
+sprays the material work life is
+very consistent code across and
+
+109
+00:06:29,130 --> 00:06:32,430
+making sure that we target the
+low spots and and then by the
+
+110
+00:06:32,430 --> 00:06:35,310
+end of it, right, you have a
+full coverage of your machine.
+
+111
+00:06:36,690 --> 00:06:39,330
+This part we can touch on later.
+But one of the hardest parts
+
+112
+00:06:39,330 --> 00:06:43,410
+with construction is reporting
+back on what's happening, right,
+
+113
+00:06:43,440 --> 00:06:47,280
+a lot of the problem is when
+work is done manually, you have
+
+114
+00:06:47,280 --> 00:06:49,950
+to kind of call people up and
+get kind of an update on what
+
+115
+00:06:49,950 --> 00:06:53,730
+happened. And really report them
+back. I think that's one of the
+
+116
+00:06:53,880 --> 00:06:57,060
+secondary effects of robotics
+and logistics and automate in
+
+117
+00:06:57,090 --> 00:06:59,970
+manufacturing is that you also
+get that data for free. So we're
+
+118
+00:06:59,970 --> 00:07:03,390
+just showing a little bit of
+what's possible here. When the
+
+119
+00:07:03,390 --> 00:07:06,180
+robots in the loop, you know,
+the supervisor can get updates
+
+120
+00:07:06,180 --> 00:07:11,280
+that are live and they're very
+accurate. And then the next day,
+
+121
+00:07:11,730 --> 00:07:15,360
+same robot arm mobile base,
+different end effector. So we
+
+122
+00:07:15,360 --> 00:07:19,140
+put the sanding header comes in,
+it uses the same map that we
+
+123
+00:07:19,140 --> 00:07:22,110
+created the day before, and it
+starts standing away. And this
+
+124
+00:07:22,110 --> 00:07:25,230
+is, you know, again, a lot of
+our development has gone around
+
+125
+00:07:25,260 --> 00:07:28,380
+the sanding, because it is a
+very soft material, right? If
+
+126
+00:07:28,380 --> 00:07:31,260
+you reach out across the wall,
+you could scratch it with your
+
+127
+00:07:31,260 --> 00:07:33,990
+nail, it's so soft material that
+you need to make it look really
+
+128
+00:07:33,990 --> 00:07:36,570
+flat. So you have all of these
+things that you have to work
+
+129
+00:07:36,570 --> 00:07:40,050
+around to make sure that you get
+the night consistent finish. And
+
+130
+00:07:40,050 --> 00:07:42,930
+this is again, talking back to
+the data reporting that you can
+
+131
+00:07:42,930 --> 00:07:46,980
+get back. This video is a
+little, I think, from 2020. So
+
+132
+00:07:47,040 --> 00:07:49,920
+this has 25 projects completed,
+but we're now in the more like
+
+133
+00:07:49,920 --> 00:07:52,380
+40 plus range. Oh, that's so
+exciting. And doing.
+
+134
+00:07:55,950 --> 00:07:58,470
+Audrow Nash: Awesome. The video
+was very informative. Oh, yeah.
+
+135
+00:07:58,530 --> 00:08:05,760
+Okay. So let's see, what what
+exactly does the Operator do?
+
+136
+00:08:07,710 --> 00:08:10,530
+Maria Telleria: Yeah, so I think
+the operator really does all the
+
+137
+00:08:10,530 --> 00:08:15,180
+things around it that allow the
+robot to be successful in a
+
+138
+00:08:15,300 --> 00:08:18,180
+structured and dynamic
+environment, right. So they do
+
+139
+00:08:18,180 --> 00:08:21,180
+things like selecting which
+areas you want to skip, right,
+
+140
+00:08:21,180 --> 00:08:23,460
+there might be a reason that you
+don't finish that right then and
+
+141
+00:08:23,460 --> 00:08:26,370
+there. They can provide feedback
+to the machine as well on the
+
+142
+00:08:26,370 --> 00:08:29,730
+quality so that the machine can
+tune in and get that feedback
+
+143
+00:08:29,730 --> 00:08:33,090
+process from it. You're also
+doing a lot around coordinating
+
+144
+00:08:33,210 --> 00:08:35,910
+around with other trades, right?
+So the reality is the
+
+145
+00:08:35,910 --> 00:08:38,640
+electrician is also in there,
+you know, the floor guys coming
+
+146
+00:08:38,640 --> 00:08:41,100
+in the painters right behind
+you. So that coordination with
+
+147
+00:08:41,100 --> 00:08:44,880
+all the different people, but in
+reality, we they really are the
+
+148
+00:08:44,880 --> 00:08:47,400
+ones that at the end of the day,
+they're the quality assurance,
+
+149
+00:08:47,430 --> 00:08:50,130
+right? They make sure your
+feedback or even sometimes a
+
+150
+00:08:50,130 --> 00:08:53,130
+little bit of manual work to
+ensure that the final bullet so
+
+151
+00:08:53,130 --> 00:08:56,010
+that the machine really takes
+the 90% plus of the brunt of the
+
+152
+00:08:56,010 --> 00:08:59,310
+work. But they're the ones who
+are skilled who have this. So
+
+153
+00:08:59,310 --> 00:09:03,030
+our operators are tapers,
+they're journeyman takers who
+
+154
+00:09:03,030 --> 00:09:05,670
+have been trained and the
+skilled and so they can pick up
+
+155
+00:09:05,670 --> 00:09:08,550
+a tool if they need to, like a
+manual tool and fix up anything.
+
+156
+00:09:08,670 --> 00:09:11,310
+But more importantly, they have
+that eye in that training to
+
+157
+00:09:11,310 --> 00:09:14,460
+say, Okay, this needs a little
+bit more here. A little bit less
+
+158
+00:09:14,460 --> 00:09:16,860
+there. Okay, that's how you get
+a wall to look.
+
+159
+00:09:17,250 --> 00:09:20,010
+Audrow Nash: Yeah, so you said
+they're called tapers. So that's
+
+160
+00:09:20,010 --> 00:09:24,090
+the construction role, like job
+role for someone who would do
+
+161
+00:09:24,090 --> 00:09:29,220
+this. It's really interesting to
+me that you are having the
+
+162
+00:09:29,250 --> 00:09:32,520
+person who would do this
+normally be the robot operator.
+
+163
+00:09:33,000 --> 00:09:34,440
+Can you tell me a bit more about
+that?
+
+164
+00:09:35,399 --> 00:09:37,619
+Maria Telleria: Sure. Yeah. And
+I like spend a little bit on the
+
+165
+00:09:37,679 --> 00:09:41,459
+call papers because you string
+this paper tape across it so
+
+166
+00:09:41,459 --> 00:09:44,009
+right that's where the name
+comes from. There you know it's
+
+167
+00:09:44,009 --> 00:09:47,699
+more like drywall finishers.
+It's kind of the more formal
+
+168
+00:09:47,699 --> 00:09:49,799
+term but everybody in the
+construction side be like oh the
+
+169
+00:09:49,799 --> 00:09:54,839
+tape you know, construction they
+ended up getting to that to the
+
+170
+00:09:54,839 --> 00:09:59,099
+point do you string tape your
+tape? Up to your point the plug
+
+171
+00:09:59,099 --> 00:10:01,229
+why? Right because we can have
+gone a lot of different ways.
+
+172
+00:10:01,229 --> 00:10:04,559
+But as we really thought about
+it, again, to ensure that we get
+
+173
+00:10:04,559 --> 00:10:08,159
+that quality finish, we needed
+that expertise that skill level,
+
+174
+00:10:08,459 --> 00:10:11,159
+there's going to be things that
+may never make sense for the
+
+175
+00:10:11,159 --> 00:10:13,649
+robot to automate, right?
+Imagine somebody decided to make
+
+176
+00:10:13,649 --> 00:10:16,949
+like a gothic column out of
+drywall, you could do it, I
+
+177
+00:10:16,949 --> 00:10:19,379
+don't think I'd want to spend
+the time programming it because
+
+178
+00:10:19,499 --> 00:10:22,499
+you'll never see it again,
+right? But a worker has the
+
+179
+00:10:22,499 --> 00:10:26,279
+years of experience that
+delicate touch that adaptability
+
+180
+00:10:26,279 --> 00:10:29,249
+that a robot doesn't do. And
+it's okay, I'm going to start
+
+181
+00:10:29,249 --> 00:10:32,279
+the robot here, finish the brunt
+of my work. And I'm going to use
+
+182
+00:10:32,279 --> 00:10:35,039
+my skills where it's really
+needed, right to provide that
+
+183
+00:10:35,039 --> 00:10:38,969
+feedback or to finish some
+delicate part of it. And for us,
+
+184
+00:10:38,999 --> 00:10:41,429
+really to be successful there.
+You needed somebody who could
+
+185
+00:10:41,819 --> 00:10:44,159
+work with a robot, right? So
+it's like, oh, we have this
+
+186
+00:10:44,159 --> 00:10:47,609
+great, skilled, talented person,
+we augment them. That's the way
+
+187
+00:10:47,609 --> 00:10:50,669
+to go. Right? As opposed to
+maybe bringing in somebody who's
+
+188
+00:10:50,669 --> 00:10:53,969
+like a robotics expert. Okay,
+maybe the robot kept running,
+
+189
+00:10:53,969 --> 00:10:55,259
+but not sure that well, we?
+
+190
+00:10:56,940 --> 00:11:01,650
+Audrow Nash: Yeah, for sure.
+Okay, that's so interesting. And
+
+191
+00:11:01,920 --> 00:11:04,200
+so what are some of the
+challenges? So if you brought in
+
+192
+00:11:04,200 --> 00:11:07,140
+a robotics person, the robotic
+person may not know anything
+
+193
+00:11:07,140 --> 00:11:09,630
+about the wall, but can keep the
+robot running, as you're saying.
+
+194
+00:11:10,590 --> 00:11:14,580
+But so if you work with a taper,
+then, like, what would have been
+
+195
+00:11:14,580 --> 00:11:17,040
+some of the challenges of
+working with the taper kind of
+
+196
+00:11:17,190 --> 00:11:19,830
+bringing the robot to the craft
+instead of the craft to the
+
+197
+00:11:19,830 --> 00:11:21,240
+robot? is what it seems?
+
+198
+00:11:21,990 --> 00:11:23,730
+Maria Telleria: Yeah, yeah,
+that's a really good way to put
+
+199
+00:11:23,730 --> 00:11:28,020
+it, it really is making it super
+easy to use, right. And so
+
+200
+00:11:28,020 --> 00:11:30,900
+because we want their time that
+they have, right, where the
+
+201
+00:11:30,900 --> 00:11:33,900
+robots running autonomous to be
+doing other things, like we
+
+202
+00:11:33,900 --> 00:11:36,990
+said, coordinating, tackling
+tough spots. So it's really
+
+203
+00:11:36,990 --> 00:11:40,080
+about like, making like a tool,
+right, they learn it, they do
+
+204
+00:11:40,080 --> 00:11:43,170
+come to a training and Canvas,
+but after that, they should just
+
+205
+00:11:43,170 --> 00:11:45,930
+keep on running. Right? They
+it's sort of be asking them
+
+206
+00:11:46,710 --> 00:11:48,810
+things in a robotics manner,
+right? Like, would you like to
+
+207
+00:11:48,810 --> 00:11:51,270
+increase your workspace? Right?
+That might be a little bit or
+
+208
+00:11:51,270 --> 00:11:55,800
+like, Hey, your inverse
+kinematics failed to solve like
+
+209
+00:11:55,800 --> 00:11:58,710
+that, that would have mean
+something to them, but something
+
+210
+00:11:58,710 --> 00:12:02,550
+like, Hey, what's the body look
+like to you? Right? And that's
+
+211
+00:12:02,640 --> 00:12:05,100
+more your, I guess, specific
+example, for example, we
+
+212
+00:12:05,100 --> 00:12:08,160
+wouldn't be like, is the
+thickness, you know, 1.2
+
+213
+00:12:08,160 --> 00:12:11,700
+millimeters as specified? They
+don't, that's not what it works.
+
+214
+00:12:11,700 --> 00:12:13,740
+But we could say like, Hey, do
+you think this needs more
+
+215
+00:12:13,740 --> 00:12:17,010
+material added? Right? Yeah. Are
+there most faults? Are they have
+
+216
+00:12:17,010 --> 00:12:20,400
+spots, that's language that they
+know, that then we can translate
+
+217
+00:12:20,400 --> 00:12:23,340
+into? Okay, they said there was
+low spots, we gotta build up
+
+218
+00:12:23,340 --> 00:12:27,300
+more material here, you know, go
+from 1.2 millimeters to 1.4. So
+
+219
+00:12:27,300 --> 00:12:31,590
+I think it's a lot about think
+about translating things to the,
+
+220
+00:12:31,800 --> 00:12:35,190
+you know, the words around them
+that the craft words, if you
+
+221
+00:12:35,190 --> 00:12:38,250
+will that make sense. And then
+really making sure that your
+
+222
+00:12:38,610 --> 00:12:41,370
+robot is a tool, right? Not
+something that has to require
+
+223
+00:12:41,370 --> 00:12:45,120
+programming. We also haven't
+really kind of on site support
+
+224
+00:12:45,120 --> 00:12:48,540
+within the user interface. So
+when they do run into these
+
+225
+00:12:48,540 --> 00:12:51,120
+problems, which they might,
+there's somebody just on the
+
+226
+00:12:51,120 --> 00:12:54,240
+other end, to keep them running
+and to do that kind of debugging
+
+227
+00:12:54,240 --> 00:12:56,070
+that you'd expect a roboticist
+to do.
+
+228
+00:12:56,400 --> 00:13:00,360
+Audrow Nash: Gotcha. So what
+does the whole step setup look
+
+229
+00:13:00,360 --> 00:13:04,740
+like in terms of even the
+infrastructure behind the robot?
+
+230
+00:13:04,740 --> 00:13:08,010
+Like, I guess it gets to the
+business model? Is it like you
+
+231
+00:13:08,010 --> 00:13:11,190
+lease the robot to a company and
+then you surprise the service?
+
+232
+00:13:11,190 --> 00:13:12,360
+Or how does it work?
+
+233
+00:13:13,380 --> 00:13:16,500
+Maria Telleria: Yeah, we are
+doing a leasing model for the
+
+234
+00:13:16,500 --> 00:13:19,440
+customer. So they come to get
+trained, they trained their
+
+235
+00:13:19,440 --> 00:13:22,800
+operators, and then they lose
+the machine, you know, for year
+
+236
+00:13:22,800 --> 00:13:26,040
+long leases. And then they have
+different projects that they
+
+237
+00:13:26,040 --> 00:13:28,800
+would move in, we help them with
+the logistics of moving the
+
+238
+00:13:28,800 --> 00:13:31,470
+machine since it's something
+new, but from the other part,
+
+239
+00:13:31,470 --> 00:13:35,640
+right, they pay per day, and
+then they have access to all the
+
+240
+00:13:35,640 --> 00:13:39,090
+support around so they have
+remote support that they can
+
+241
+00:13:39,090 --> 00:13:42,180
+call that's usually the what
+they would normally use. But if
+
+242
+00:13:42,210 --> 00:13:44,940
+you know something really big
+happened on site, there's also
+
+243
+00:13:45,210 --> 00:13:50,220
+people from campus who can go
+and support them on site. And it
+
+244
+00:13:50,220 --> 00:13:53,280
+was a problem if needed. It's
+very rare. But it is something
+
+245
+00:13:53,310 --> 00:13:56,040
+right now, we're only in the Bay
+Area, because one of the things
+
+246
+00:13:56,040 --> 00:13:59,700
+we wanted to make sure is like,
+be really successful in a small
+
+247
+00:13:59,700 --> 00:14:03,240
+radius, such that you can ensure
+that your customers get their
+
+248
+00:14:03,240 --> 00:14:06,000
+work out the kinks, keep them
+running, for sure. Actually,
+
+249
+00:14:06,000 --> 00:14:09,420
+when we first started, we did
+the service ourselves. So we
+
+250
+00:14:09,420 --> 00:14:13,890
+became drywall subcontractors,
+and hire tapers onto our
+
+251
+00:14:13,890 --> 00:14:17,970
+payroll, and have our own people
+running it right. And that was
+
+252
+00:14:17,970 --> 00:14:20,730
+really important. Because for
+the customers, I'm excited about
+
+253
+00:14:20,730 --> 00:14:23,400
+the idea of a robot. I'm not
+really sure how it's gonna work
+
+254
+00:14:23,400 --> 00:14:27,180
+for me. So we said, Fine, you
+buy drywall at $1 for you know,
+
+255
+00:14:27,180 --> 00:14:30,720
+certain dollars per square foot,
+a canvas the same amount. And
+
+256
+00:14:30,720 --> 00:14:33,150
+we'll get it done, right. We
+just got into AP robots that do
+
+257
+00:14:33,150 --> 00:14:37,230
+it with our operators. So that
+was the first two, three years,
+
+258
+00:14:37,560 --> 00:14:40,230
+once they started working and
+really like saw how it works,
+
+259
+00:14:40,230 --> 00:14:43,470
+and they're like, oh, okay, this
+works into my workflow. They
+
+260
+00:14:43,470 --> 00:14:46,140
+started saying, Okay, now we
+want to run it right? We want to
+
+261
+00:14:46,140 --> 00:14:48,480
+scale up with it. So that's
+really the transition point
+
+262
+00:14:48,480 --> 00:14:52,110
+we've entered around the middle
+of last year is really saying,
+
+263
+00:14:52,110 --> 00:14:55,920
+okay, the robots that a state
+that you guys can run it will
+
+264
+00:14:55,920 --> 00:14:58,440
+rent it to you and we'll help
+you make sure it's successful.
+
+265
+00:14:58,919 --> 00:15:01,829
+Audrow Nash: Gotcha. That's
+really Cool. So it sounds like
+
+266
+00:15:01,829 --> 00:15:06,689
+it was extremely iterative to
+get to where you are now, would
+
+267
+00:15:06,689 --> 00:15:09,119
+you? Would you tell me a bit
+about that like, so now, I
+
+268
+00:15:09,119 --> 00:15:13,499
+assume you guys are somewhat of
+drywall experts. But like, you
+
+269
+00:15:13,499 --> 00:15:17,549
+have this problem, and you think
+it's going to be a valuable good
+
+270
+00:15:17,639 --> 00:15:24,359
+big value add kind of thing. And
+then you start in this way that
+
+271
+00:15:24,359 --> 00:15:26,909
+you were talking about where you
+work with the contractors, and
+
+272
+00:15:26,909 --> 00:15:30,149
+you basically become the
+contractors, but hire people to
+
+273
+00:15:30,149 --> 00:15:33,599
+amend your robot. And then
+growing that to the point where
+
+274
+00:15:33,599 --> 00:15:36,539
+it's like useful enough that you
+can just give it to that
+
+275
+00:15:36,539 --> 00:15:39,509
+contractors to do with
+themselves. Like, just tell me a
+
+276
+00:15:39,509 --> 00:15:40,709
+bit about that whole process?
+
+277
+00:15:41,580 --> 00:15:44,370
+Maria Telleria: Sure, one of the
+big things from the beginning
+
+278
+00:15:44,370 --> 00:15:48,180
+has been testing on site as
+quickly as possible, right. So
+
+279
+00:15:48,210 --> 00:15:51,060
+the very early tests, like, I
+mean, probably now I'd be
+
+280
+00:15:51,060 --> 00:15:55,470
+embarrassed to call that a
+robotic system. But you know, it
+
+281
+00:15:55,470 --> 00:15:56,730
+has to be moved manually
+
+282
+00:15:56,910 --> 00:16:00,510
+Audrow Nash: to cart. It's so
+funny that one
+
+283
+00:16:00,510 --> 00:16:02,970
+Maria Telleria: of our team
+members is much stronger than
+
+284
+00:16:02,970 --> 00:16:06,570
+being so he had to come to every
+site because exactly how to
+
+285
+00:16:06,570 --> 00:16:11,400
+position the robot. But it was a
+way to do point break on paper.
+
+286
+00:16:11,460 --> 00:16:15,480
+And in the lab, there's a lot of
+value. But we all know that the
+
+287
+00:16:15,480 --> 00:16:19,230
+real issue is this. So we took
+out that, you know, cart with a
+
+288
+00:16:19,230 --> 00:16:22,380
+robot arm demonstrated that they
+kept iterating, right? We're
+
+289
+00:16:22,380 --> 00:16:25,230
+like, Okay, we can't hire, you
+know, just a person to move the
+
+290
+00:16:25,230 --> 00:16:29,490
+robot. So we ended the mobile
+things, and all of that. In with
+
+291
+00:16:29,490 --> 00:16:32,850
+that we did learn a lot about
+drywall finishing itself. But
+
+292
+00:16:32,850 --> 00:16:35,820
+even before very early, when
+we're going to do drywall
+
+293
+00:16:35,820 --> 00:16:38,850
+finishing. Yeah, let's hire
+somebody who knows what the
+
+294
+00:16:38,850 --> 00:16:42,300
+drywall finishing is. So we
+brought on team members who, you
+
+295
+00:16:42,300 --> 00:16:46,770
+know, years of expertise, you
+know, journeyman unique people
+
+296
+00:16:46,770 --> 00:16:50,490
+themselves who just been trained
+in that skill. And when I sat
+
+297
+00:16:50,790 --> 00:16:54,570
+next to them, I really said,
+Okay, how do we get to that
+
+298
+00:16:54,570 --> 00:16:57,240
+level? The really interesting
+part, their radius, and we were
+
+299
+00:16:57,240 --> 00:17:00,270
+both learning from each other,
+right? Because people have
+
+300
+00:17:00,270 --> 00:17:03,090
+optimized the street incredibly
+right standings that were
+
+301
+00:17:03,090 --> 00:17:05,820
+sparked. So they bought to my
+stick to reduce the amount of
+
+302
+00:17:05,820 --> 00:17:09,690
+Sandy. You know, so when we've
+reached brought them in, and
+
+303
+00:17:09,690 --> 00:17:11,640
+what I think a lot of people
+think with robotics is like,
+
+304
+00:17:11,640 --> 00:17:14,550
+Okay, well, let's do what the
+person does. But we have to take
+
+305
+00:17:14,550 --> 00:17:17,340
+a step back and be like, your
+constraints are different,
+
+306
+00:17:17,370 --> 00:17:20,670
+right? Yep. Standing robot
+doesn't care, you know, I'll
+
+307
+00:17:20,670 --> 00:17:24,210
+say, we'll spray whatever you
+tell it to do, it'll do it. And
+
+308
+00:17:24,210 --> 00:17:26,190
+so if you remove that
+constraint, maybe you approach
+
+309
+00:17:26,190 --> 00:17:29,520
+it differently. And so you sold
+the video, we applied all of the
+
+310
+00:17:29,520 --> 00:17:32,760
+material in one go, and then
+Stanmore versus a person applies
+
+311
+00:17:32,760 --> 00:17:36,810
+that day over day slip, slip on,
+sorry, slowly building up the
+
+312
+00:17:36,870 --> 00:17:39,690
+profile that they want to get,
+and then just stance a little
+
+313
+00:17:39,690 --> 00:17:40,470
+bit at the end. So
+
+314
+00:17:40,710 --> 00:17:43,320
+Audrow Nash: is it so it dries
+like you, you keep letting it
+
+315
+00:17:43,320 --> 00:17:46,230
+dry, so it drives very evenly,
+because you do like thin layer
+
+316
+00:17:46,230 --> 00:17:48,810
+after thin layer, where each
+layer can be quite even. And
+
+317
+00:17:48,810 --> 00:17:50,580
+therefore the whole thing
+appears even?
+
+318
+00:17:51,540 --> 00:17:54,780
+Maria Telleria: Yeah, it's
+really minimal. That minimal
+
+319
+00:17:54,780 --> 00:17:57,840
+sanding and you need to use kind
+of the data breaks of the sheets
+
+320
+00:17:57,840 --> 00:18:00,270
+gonna look like this, there's a
+gap between them and use the
+
+321
+00:18:00,330 --> 00:18:03,810
+edges to apply the material, but
+then that shrinks. And as it
+
+322
+00:18:03,810 --> 00:18:06,090
+dries, so then the next day, you
+come in with like, a little bit
+
+323
+00:18:06,090 --> 00:18:09,240
+bigger, and you use the next
+data. And this is how people do
+
+324
+00:18:09,240 --> 00:18:11,670
+it, right, because they need a
+reference point, they need to
+
+325
+00:18:11,670 --> 00:18:15,150
+touch the wall. And it means to
+your point, they have to be thin
+
+326
+00:18:15,150 --> 00:18:17,700
+layers, they have to wait till
+it dries, even though maybe
+
+327
+00:18:17,700 --> 00:18:19,530
+they're done for the day. And
+they're like, Oh, I wish I could
+
+328
+00:18:19,530 --> 00:18:22,050
+apply the next coat. Because
+it's right, you can't do
+
+329
+00:18:22,050 --> 00:18:25,110
+anything. As we looked at me,
+like, oh, robot doesn't need
+
+330
+00:18:25,110 --> 00:18:28,710
+that data, right? It has this
+really good map around it. It
+
+331
+00:18:28,710 --> 00:18:31,290
+can spray material very
+consistently versus a person,
+
+332
+00:18:31,290 --> 00:18:34,470
+right? Imagine trying to move a
+point one meters a second, for
+
+333
+00:18:34,500 --> 00:18:38,820
+eight hours a day, might be a
+little hard. It was sitting with
+
+334
+00:18:38,820 --> 00:18:42,300
+each other and be like, Okay,
+you guys do it this way. But
+
+335
+00:18:42,660 --> 00:18:45,360
+you're also really good at
+adaptability, you're also
+
+336
+00:18:45,480 --> 00:18:48,360
+getting the world's best
+feedback control system through
+
+337
+00:18:48,360 --> 00:18:50,760
+vision to touch right, the
+amount that they gather through
+
+338
+00:18:50,760 --> 00:18:54,480
+their touch is incredible. And
+then we said, well, robots don't
+
+339
+00:18:54,480 --> 00:18:58,560
+have that. But they have really
+high repeatability. Right. And
+
+340
+00:18:58,560 --> 00:19:01,110
+that's it, they don't get tired
+of sanding. So is it Oh, and
+
+341
+00:19:01,110 --> 00:19:03,210
+then let's make the process a
+little bit differently. Let's
+
+342
+00:19:03,210 --> 00:19:06,780
+make a process that the robot
+can be successful at, apply all
+
+343
+00:19:06,780 --> 00:19:10,020
+the material ones, and then sand
+a lot. But you're really using
+
+344
+00:19:10,020 --> 00:19:12,630
+the things that the robot is
+good at, and not depending on
+
+345
+00:19:12,690 --> 00:19:13,650
+what people are good at.
+
+346
+00:19:14,070 --> 00:19:16,530
+Audrow Nash: Gotcha. So I
+imagined during this, there's a
+
+347
+00:19:16,530 --> 00:19:22,170
+lot of like, picking the brain
+of the tapers, and your roll up
+
+348
+00:19:22,200 --> 00:19:25,230
+your roboticists to really try
+to understand kind of like,
+
+349
+00:19:25,230 --> 00:19:27,990
+what's the whole process what's
+actually being done, not just
+
+350
+00:19:27,990 --> 00:19:30,270
+the way that they do it, so
+you're not trying to recreate
+
+351
+00:19:30,270 --> 00:19:33,990
+what they're doing. And then
+from there, you try to then
+
+352
+00:19:33,990 --> 00:19:37,920
+optimize for what's best with
+the robot, given the way that
+
+353
+00:19:37,920 --> 00:19:40,500
+the robot behaves and what it's
+good at and what it's not.
+
+354
+00:19:41,430 --> 00:19:43,410
+Maria Telleria: Exactly, yeah, I
+think that's the right way to
+
+355
+00:19:43,410 --> 00:19:46,890
+think about it is like what are
+you trying to accomplish? Not
+
+356
+00:19:46,890 --> 00:19:49,200
+necessarily how but let's start
+with what are you trying to
+
+357
+00:19:49,230 --> 00:19:53,130
+accomplish? And then we can work
+out the how and the actually are
+
+358
+00:19:53,280 --> 00:19:56,160
+the people we had to reassess
+our superintendent. You know,
+
+359
+00:19:56,160 --> 00:19:58,050
+she came with all this
+experience. So one of the first
+
+360
+00:19:58,050 --> 00:20:00,690
+things she was like, You guys
+have to take care So you don't
+
+361
+00:20:00,690 --> 00:20:04,110
+have all the engineers out there
+we take. I don't think we've
+
+362
+00:20:04,110 --> 00:20:07,500
+passed her quality standard yet,
+but she lets us run the robot.
+
+363
+00:20:09,900 --> 00:20:12,570
+But it was a little bit of like,
+yeah, I understand why you're
+
+364
+00:20:12,570 --> 00:20:14,880
+doing it. And it was seeing
+those things and understanding
+
+365
+00:20:14,880 --> 00:20:16,980
+that we're like, Okay, well,
+that would be difficult for a
+
+366
+00:20:16,980 --> 00:20:19,710
+robot. What were you trying to
+do is create this profile? Okay.
+
+367
+00:20:19,710 --> 00:20:22,350
+Well, there's other ways to
+create a profile, right? If the
+
+368
+00:20:22,350 --> 00:20:23,340
+same constraints,
+
+369
+00:20:23,820 --> 00:20:26,610
+Audrow Nash: can you tell me
+some of the difficulties about
+
+370
+00:20:26,760 --> 00:20:30,390
+spraying and sanding that you
+guys came across?
+
+371
+00:20:31,950 --> 00:20:34,560
+Maria Telleria: Definitely in
+the spring side, right, that
+
+372
+00:20:34,620 --> 00:20:38,610
+that consistency, you are the
+one deliver delivers about three
+
+373
+00:20:38,610 --> 00:20:41,520
+and a half gallons per minute.
+So it's a lot of material coming
+
+374
+00:20:41,520 --> 00:20:45,660
+pretty fast. And you have to
+apply it fairly consistently. So
+
+375
+00:20:45,660 --> 00:20:47,970
+that all sounds for you don't
+robot can do that. The problem
+
+376
+00:20:47,970 --> 00:20:51,390
+is more. And I guess, upstream,
+if you will, the materials that
+
+377
+00:20:51,390 --> 00:20:54,840
+have been developed so far have
+been for people. And so they're
+
+378
+00:20:54,840 --> 00:20:57,360
+not very tightly controlled
+materials, right? The viscosity
+
+379
+00:20:57,360 --> 00:21:00,840
+varies widely, which when you're
+assuming that you have the same
+
+380
+00:21:00,840 --> 00:21:03,450
+viscosity, and you get the same
+result, that assumption, yeah,
+
+381
+00:21:03,510 --> 00:21:07,440
+exactly the problem versus but
+from the manufacturer side,
+
+382
+00:21:07,440 --> 00:21:10,560
+they've always had the person in
+the loop. People like their own,
+
+383
+00:21:11,130 --> 00:21:14,610
+you know, viscosity, so they add
+a little bit more water a little
+
+384
+00:21:14,610 --> 00:21:17,280
+bit less. So it's, for them,
+it's also not worth it to
+
+385
+00:21:17,310 --> 00:21:19,830
+optimize to a certain thing,
+because people are so varied.
+
+386
+00:21:19,980 --> 00:21:22,980
+Right? So you, that was one of
+our biggest challenges. We're
+
+387
+00:21:22,980 --> 00:21:26,880
+working with a material that is
+not designed for robotic, right?
+
+388
+00:21:26,880 --> 00:21:30,360
+Imagine like paints that go into
+painting your car, I'm sure
+
+389
+00:21:30,360 --> 00:21:33,180
+there's very little variation
+when they go into that paint
+
+390
+00:21:33,180 --> 00:21:35,490
+shop. Right? And then the robot
+sure does its thing, and it's
+
+391
+00:21:35,490 --> 00:21:38,010
+going to be great. We were
+working with materials that
+
+392
+00:21:38,010 --> 00:21:40,620
+weren't designed for that. So we
+had to think a lot about like,
+
+393
+00:21:40,620 --> 00:21:43,830
+how do we close the loop on
+that? And again, hey, how do we
+
+394
+00:21:43,830 --> 00:21:46,650
+use the operator who knows that
+to help us close the loop? So
+
+395
+00:21:46,650 --> 00:21:49,770
+the the helped us a little bit
+with preparing the material to
+
+396
+00:21:49,770 --> 00:21:51,990
+the right one, but also
+providing that feedback of it's
+
+397
+00:21:51,990 --> 00:21:55,320
+still in? Well, I would say
+that's the biggest challenge
+
+398
+00:21:55,320 --> 00:21:59,010
+with the spraying is the
+material itself and modeling
+
+399
+00:21:59,010 --> 00:21:59,340
+that.
+
+400
+00:21:59,670 --> 00:22:02,910
+Audrow Nash: So how does it
+work? Now the person gives you
+
+401
+00:22:02,910 --> 00:22:07,080
+feedback on how it is, but they
+do some prep work. So make it so
+
+402
+00:22:07,080 --> 00:22:09,630
+it's like a fairly consistent
+viscosity, or
+
+403
+00:22:10,740 --> 00:22:12,630
+Maria Telleria: we'll kind of
+give them some guidelines, but
+
+404
+00:22:12,630 --> 00:22:14,970
+they do have to the material
+comes in, it's a little too
+
+405
+00:22:14,970 --> 00:22:18,840
+thick for spring. And so they
+have to thin it down with some
+
+406
+00:22:18,840 --> 00:22:21,300
+water. But this is where we've
+seen right at the beginning, we
+
+407
+00:22:21,300 --> 00:22:25,380
+were like, only at this amount
+of water, you know, and that's
+
+408
+00:22:25,380 --> 00:22:30,240
+where they provided the feedback
+and a lot. So that we started
+
+409
+00:22:30,240 --> 00:22:33,780
+being like, okay, let's be more
+descriptive, get into this type
+
+410
+00:22:33,780 --> 00:22:36,990
+of consistency, right makes me
+think of the baking shows, to
+
+411
+00:22:36,990 --> 00:22:42,060
+the peaks. So we started being
+more rounded, like, Okay, what
+
+412
+00:22:42,060 --> 00:22:45,330
+we really need to do is to get
+it to this consistency. And then
+
+413
+00:22:45,330 --> 00:22:47,640
+they use their own feedback
+system to be like, Oh, well,
+
+414
+00:22:47,640 --> 00:22:51,000
+this batch was a little bit more
+liquid, I'm only gonna add half
+
+415
+00:22:51,000 --> 00:22:53,790
+the water that I normally do our
+dispatch in this actually
+
+416
+00:22:53,790 --> 00:22:56,280
+temperature dependent to when
+it's really cold and material.
+
+417
+00:22:56,460 --> 00:23:01,380
+So yeah, everything that could
+be different about it are
+
+418
+00:23:01,380 --> 00:23:05,430
+processing. So as a couple,
+everything is variable. And we
+
+419
+00:23:05,430 --> 00:23:08,970
+need to declare a process that
+achieves the right result, even
+
+420
+00:23:08,970 --> 00:23:09,990
+with all that variability.
+
+421
+00:23:10,290 --> 00:23:13,170
+Audrow Nash: Have you ever I'm
+sure you consider this, but I'd
+
+422
+00:23:13,170 --> 00:23:16,290
+like to hear your thoughts on it
+anyways, did you ever think of
+
+423
+00:23:16,290 --> 00:23:20,010
+working with a manufacturer of
+these materials to try to like
+
+424
+00:23:20,040 --> 00:23:23,850
+get them to control it pretty
+consistently. So you could, I
+
+425
+00:23:23,850 --> 00:23:25,410
+don't know, work with it more
+easily.
+
+426
+00:23:26,490 --> 00:23:28,470
+Maria Telleria: Like where your
+head is that we have, and
+
+427
+00:23:28,500 --> 00:23:32,430
+they've been really great. I
+think they also see a place
+
+428
+00:23:32,430 --> 00:23:35,760
+where introducer robotics,
+robotics also allows you to
+
+429
+00:23:36,090 --> 00:23:38,880
+maybe improved on the materials,
+because again, your constraints
+
+430
+00:23:38,880 --> 00:23:41,340
+have changed. So they've been
+great. We've been working with
+
+431
+00:23:41,370 --> 00:23:44,580
+them for since the beginning,
+really. But you also have to
+
+432
+00:23:44,580 --> 00:23:49,080
+manage that when, like, what's
+already acceptable on site. So,
+
+433
+00:23:49,110 --> 00:23:51,630
+you know, we kind of did it in
+parallel said, like, let's work
+
+434
+00:23:51,630 --> 00:23:55,380
+with, again, as few barriers as
+possible for our customers. So
+
+435
+00:23:55,440 --> 00:23:58,620
+you know, no map, no, this.
+Okay, let's also develop the
+
+436
+00:23:58,620 --> 00:24:01,320
+site because there is a future
+work, you know, don't have a
+
+437
+00:24:01,320 --> 00:24:03,990
+better result. So that's
+happening. Yeah, they've been
+
+438
+00:24:03,990 --> 00:24:07,260
+great. I think they also see the
+vision and especially their
+
+439
+00:24:07,260 --> 00:24:09,900
+scientists get excited, right?
+Because, like giving them a new
+
+440
+00:24:09,900 --> 00:24:13,230
+design space, the design space
+for people, is this, the design
+
+441
+00:24:13,230 --> 00:24:16,110
+space for robotics, like, Oh,
+you wanted 1.3 millimeters
+
+442
+00:24:16,110 --> 00:24:18,660
+thick? Done? We'll do that for
+you. And then what? Well,
+
+443
+00:24:20,730 --> 00:24:23,820
+Audrow Nash: that's so funny.
+Yeah, it is interesting. It's so
+
+444
+00:24:23,850 --> 00:24:27,510
+it's so interesting to consider
+when you change the constrained
+
+445
+00:24:27,510 --> 00:24:30,960
+space, like you were working
+with people, people are really
+
+446
+00:24:30,960 --> 00:24:33,420
+good at certain things, not good
+at other things. And now you
+
+447
+00:24:33,420 --> 00:24:36,540
+take a robot totally good at
+different things and bad at
+
+448
+00:24:36,540 --> 00:24:39,120
+other things. And so it's like,
+okay, you can use the best of
+
+449
+00:24:39,120 --> 00:24:41,760
+both. And this is very
+interesting. It's an interesting
+
+450
+00:24:41,760 --> 00:24:42,390
+spot to be.
+
+451
+00:24:43,560 --> 00:24:49,980
+Maria Telleria: Yeah, they're
+just like, Oh, these ideas like
+
+452
+00:24:49,980 --> 00:24:53,610
+constrained space of cost,
+because it is a very labor
+
+453
+00:24:53,610 --> 00:24:56,790
+intensive task. The materials
+budget, if you will, is very
+
+454
+00:24:56,790 --> 00:24:59,820
+small, right. It's all when the
+cost has gone to labor.
+
+455
+00:25:00,000 --> 00:25:04,380
+especially as things get harder
+and harder, it's just so with
+
+456
+00:25:04,380 --> 00:25:06,990
+the materials manufacturers will
+also have that conversation of
+
+457
+00:25:06,990 --> 00:25:09,540
+like, hey, maybe you can have a
+little bit more expensive
+
+458
+00:25:09,540 --> 00:25:13,350
+material, if it gives you more
+productivity. That works, right.
+
+459
+00:25:13,350 --> 00:25:16,080
+And so they also start seeing
+the idea of maybe there's
+
+460
+00:25:16,080 --> 00:25:19,620
+greener materials, you know, or
+materials would better, and
+
+461
+00:25:19,620 --> 00:25:21,750
+properties, right? What if we
+could have better sound
+
+462
+00:25:21,750 --> 00:25:25,200
+absorption in your drywall
+walls, or you get into really
+
+463
+00:25:25,200 --> 00:25:28,680
+cool spaces once you start
+opening up that space? And so I
+
+464
+00:25:28,680 --> 00:25:32,010
+think we're really excited for
+that future where you a robotics
+
+465
+00:25:32,010 --> 00:25:34,470
+coming in also change some other
+of the upstream
+
+466
+00:25:34,500 --> 00:25:36,780
+Audrow Nash: assumptions. Yeah,
+it's so interesting. So if you
+
+467
+00:25:36,780 --> 00:25:39,900
+can almost, I mean, like, if you
+take this to the limit, where
+
+468
+00:25:39,900 --> 00:25:43,080
+you have like, infinite robots
+flying this and all the dry
+
+469
+00:25:43,080 --> 00:25:46,350
+walls are, so then you have the
+robots already. And then it's
+
+470
+00:25:46,350 --> 00:25:49,170
+basically free to have the
+robots do it other than like,
+
+471
+00:25:49,170 --> 00:25:51,570
+the cost of energy and
+transporting them and this kind
+
+472
+00:25:51,570 --> 00:25:55,320
+of thing. And then maybe, like,
+really nice, highly optimized
+
+473
+00:25:55,320 --> 00:26:00,810
+materials, because and then the
+materials cost rises. But the
+
+474
+00:26:00,810 --> 00:26:03,990
+total cost even in like, would
+be less because the robot would
+
+475
+00:26:03,990 --> 00:26:07,410
+be affected, effectively free
+labor. That would be very cool.
+
+476
+00:26:07,440 --> 00:26:13,530
+I like where that the like, new
+potential optimisation space? Or
+
+477
+00:26:13,680 --> 00:26:15,900
+I don't know if space you can
+optimize? That seems awesome.
+
+478
+00:26:17,130 --> 00:26:20,040
+Maria Telleria: Oh, yeah. For us
+the you know, it really, we will
+
+479
+00:26:20,040 --> 00:26:24,990
+always have that operator in the
+loop. So it's about their costs,
+
+480
+00:26:25,020 --> 00:26:28,350
+because there'll be time
+spreading it over more square
+
+481
+00:26:28,350 --> 00:26:31,650
+footage, right? If Yeah, I
+produce 1000 square feet in one
+
+482
+00:26:31,650 --> 00:26:34,260
+day. That's something if I could
+do 2000 square feet. Now there's
+
+483
+00:26:34,260 --> 00:26:36,480
+that ROOM FOR THEM materials,
+there's that room for that
+
+484
+00:26:36,510 --> 00:26:39,810
+optimization? So no, I think
+that that gets pretty exciting
+
+485
+00:26:39,810 --> 00:26:43,800
+for us. And it also protects
+their themselves where they can
+
+486
+00:26:43,800 --> 00:26:47,190
+have a longer career while we're
+working with better materials
+
+487
+00:26:47,190 --> 00:26:49,560
+and better things. So it's kind
+of this win win by really
+
+488
+00:26:49,560 --> 00:26:51,570
+thinking about that
+augmentation, because it's about
+
+489
+00:26:51,570 --> 00:26:55,290
+the how much can that person
+produce? Rather than replacing
+
+490
+00:26:55,290 --> 00:26:59,280
+them? Not necessary? It's better
+to augment what they can do.
+
+491
+00:26:59,310 --> 00:27:00,540
+Right? Yeah, not necessary,
+
+492
+00:27:00,540 --> 00:27:02,730
+Audrow Nash: and probably not
+even possible to because you
+
+493
+00:27:02,730 --> 00:27:07,800
+need their expertise. I was
+thinking, it's a little bit like
+
+494
+00:27:07,830 --> 00:27:10,890
+the grocery store model, like
+the clerk where you have one
+
+495
+00:27:10,890 --> 00:27:14,400
+person Manning 10, registers,
+but this kind of thing, but it's
+
+496
+00:27:14,400 --> 00:27:17,040
+also different in that the
+person is highly, highly
+
+497
+00:27:17,040 --> 00:27:20,340
+skilled, which may puts it into
+an interesting space.
+
+498
+00:27:21,630 --> 00:27:23,880
+Maria Telleria: Yeah, that's a
+really good analogy. I think
+
+499
+00:27:23,910 --> 00:27:26,280
+this idea of like, I can
+supervise more, but you know, my
+
+500
+00:27:26,280 --> 00:27:29,340
+job does change. Right now
+they're much more technical it
+
+501
+00:27:29,340 --> 00:27:32,550
+is, they're much more customer
+success, right? Making sure that
+
+502
+00:27:32,550 --> 00:27:35,340
+they're making these things.
+It's kind of how things evolve.
+
+503
+00:27:35,340 --> 00:27:38,820
+But if you completely tried to
+remove the person, I think once
+
+504
+00:27:38,820 --> 00:27:42,570
+your body senses to that gets
+really hard, why not utilize
+
+505
+00:27:42,570 --> 00:27:45,480
+them with their best, like,
+utilize their, you know, their
+
+506
+00:27:45,510 --> 00:27:48,060
+adaptability, their smarts? We
+don't have to wear down their
+
+507
+00:27:48,060 --> 00:27:49,530
+shoulder to get this word. Yes.
+
+508
+00:27:49,710 --> 00:27:55,710
+Audrow Nash: It sounds awful.
+For sure, for so with this, I
+
+509
+00:27:55,710 --> 00:28:01,200
+How, how has the building
+climate, like economic climate?
+
+510
+00:28:01,230 --> 00:28:06,180
+And in that, like I've had
+several interviews, where
+
+511
+00:28:06,210 --> 00:28:10,800
+there's shortages and people to
+do different work, is there a
+
+512
+00:28:10,830 --> 00:28:15,120
+shortage of tapers? Or is it
+like, does this let you stretch
+
+513
+00:28:15,120 --> 00:28:20,040
+it taper to do what 20 tapers
+could do? Or like, is there a
+
+514
+00:28:20,040 --> 00:28:21,690
+big shortage there? Also,
+
+515
+00:28:23,280 --> 00:28:25,620
+Maria Telleria: construction is
+facing an incredible shortage,
+
+516
+00:28:25,650 --> 00:28:28,410
+you know, across all traits.
+vaping is definitely one of
+
+517
+00:28:28,410 --> 00:28:32,340
+them. It's you know, one in 40%
+stand shoulder surgery. Oh,
+
+518
+00:28:32,400 --> 00:28:35,640
+that's so bad. Yeah, yeah. And
+you know those things, right.
+
+519
+00:28:35,640 --> 00:28:38,310
+They maybe fix it, but it's
+never the same. And so they
+
+520
+00:28:38,490 --> 00:28:41,730
+often either have to retire
+early, or you know, work live
+
+521
+00:28:41,730 --> 00:28:42,510
+with that pain, which
+
+522
+00:28:42,509 --> 00:28:45,059
+Audrow Nash: is that's because
+of the sanding, the like,
+
+523
+00:28:45,690 --> 00:28:47,670
+Maria Telleria: sanding, that
+repetitive motion on your
+
+524
+00:28:47,670 --> 00:28:51,120
+rotator cuff. Right? Oh, god.
+Yeah, ceilings, also really
+
+525
+00:28:51,120 --> 00:28:56,250
+hard. There's also a dust, which
+the sandy part? Exactly. They
+
+526
+00:28:56,250 --> 00:28:59,010
+optimized to reduce it, but it's
+still there. And even if you're
+
+527
+00:28:59,010 --> 00:29:01,650
+not standing that much use the
+tools that they pick up, you
+
+528
+00:29:01,650 --> 00:29:06,510
+know, 10 to 20 pounds and their
+hours. Yeah, that's crazy.
+
+529
+00:29:06,510 --> 00:29:09,990
+Somebody's just wears down on
+you. It's icy really? Yeah,
+
+530
+00:29:10,020 --> 00:29:13,650
+think about that. The it's been
+really hard for like the union
+
+531
+00:29:13,650 --> 00:29:16,800
+where we work very closely with
+to recruit new people. You can
+
+532
+00:29:16,800 --> 00:29:19,650
+see that right. It's like, such
+a really good paying job. Like I
+
+533
+00:29:19,650 --> 00:29:23,040
+said, it's amazing the skill
+these people have, but when you
+
+534
+00:29:23,220 --> 00:29:27,660
+put them in front of like, maybe
+he'll return 50 Your shoulder
+
+535
+00:29:27,660 --> 00:29:30,660
+will be blown out because their
+shoulder. Exactly. And you're
+
+536
+00:29:30,690 --> 00:29:33,000
+definitely be hurting. You know,
+at the end of the day, you're
+
+537
+00:29:33,000 --> 00:29:35,940
+gonna have a long day and you're
+just Yeah, so I think it's hard
+
+538
+00:29:35,940 --> 00:29:38,460
+for them to bring in thankful
+dust themselves, right? They're
+
+539
+00:29:38,460 --> 00:29:41,100
+having a really hard time
+bringing people in, even with
+
+540
+00:29:41,100 --> 00:29:44,340
+the people we have. There's a
+lot of work right, we have to
+
+541
+00:29:44,340 --> 00:29:47,370
+double our building stock and
+there's just not enough people.
+
+542
+00:29:47,370 --> 00:29:50,790
+The shortage in construction is
+just outstanding. Yeah. So how
+
+543
+00:29:50,790 --> 00:29:53,550
+do you bring new people in and I
+think that's giving them to so
+
+544
+00:29:53,550 --> 00:29:56,250
+then you are excited to do that
+work like Oh, for sure. You
+
+545
+00:29:56,250 --> 00:29:59,970
+know, I could protect myself and
+then also for those people that
+
+546
+00:30:00,000 --> 00:30:01,920
+You do bring in getting more
+done.
+
+547
+00:30:02,250 --> 00:30:05,070
+Audrow Nash: You're letting them
+be, like craftsmen with
+
+548
+00:30:05,100 --> 00:30:07,740
+underlings kind of thing. It's
+like the apprentice model. But
+
+549
+00:30:07,740 --> 00:30:10,320
+the robots are the apprentice in
+a sense, that does some of the
+
+550
+00:30:10,320 --> 00:30:15,420
+work. That's really cool. What
+do you so just Just curious on
+
+551
+00:30:15,420 --> 00:30:19,680
+your perspective on this? So do
+you think it's the more skilled
+
+552
+00:30:19,710 --> 00:30:25,410
+jobs that are harder to fill? Or
+the less skilled jobs in the
+
+553
+00:30:25,410 --> 00:30:28,710
+construction industry? Like, is
+it? Is it the tapers or I don't
+
+554
+00:30:28,710 --> 00:30:33,570
+know, the general construction
+worker? That I assume the
+
+555
+00:30:33,570 --> 00:30:36,870
+shortage is in both? But are
+they kind of is it more in the
+
+556
+00:30:36,870 --> 00:30:39,720
+tapering area or more in the
+general worker? area?
+
+557
+00:30:41,880 --> 00:30:44,460
+Maria Telleria: I don't know
+exactly. But my sense is, in
+
+558
+00:30:44,460 --> 00:30:48,420
+general, everybody's having a
+shortage, but you see it in
+
+559
+00:30:48,420 --> 00:30:53,490
+those harder on your body. So I
+think they all have like our
+
+560
+00:30:53,610 --> 00:30:57,540
+journey men that we work with is
+a believe a four year process to
+
+561
+00:30:57,540 --> 00:30:59,700
+get trained. So it's a long
+apprenticeship. Similar
+
+562
+00:30:59,700 --> 00:31:03,180
+electricians have to have their
+apprenticeship. But the wear and
+
+563
+00:31:03,180 --> 00:31:06,570
+tear is not equivalent across
+trades. So I think trade like
+
+564
+00:31:06,570 --> 00:31:09,930
+drywall finishing, in particular
+suffer from that, like, well, if
+
+565
+00:31:09,930 --> 00:31:13,320
+I'm gonna pick a trade, I might
+pick one that is not as hard on
+
+566
+00:31:13,320 --> 00:31:18,450
+my body or before, they were in
+a different time. And people see
+
+567
+00:31:18,450 --> 00:31:20,610
+you like our controller, and
+they get excited, right? They
+
+568
+00:31:20,640 --> 00:31:22,980
+this is things that grown up
+with, it looks like an Xbox
+
+569
+00:31:22,980 --> 00:31:26,190
+controller. It's a robot. So
+there's also that like,
+
+570
+00:31:26,670 --> 00:31:29,790
+engagement of like, I'm working
+with a really cool tool. So I
+
+571
+00:31:29,790 --> 00:31:33,570
+think between that in making
+their day to day just be a lot
+
+572
+00:31:33,570 --> 00:31:36,720
+less painful. Yeah, it's the
+right way to bring people in.
+
+573
+00:31:37,140 --> 00:31:39,660
+Audrow Nash: I imagine it's like
+the you keep that because I
+
+574
+00:31:39,660 --> 00:31:42,540
+imagine that they got into it,
+because they enjoy it somewhat
+
+575
+00:31:42,540 --> 00:31:46,890
+like the meticulous attention
+required for this kind of task.
+
+576
+00:31:47,130 --> 00:31:50,250
+I imagine like I mean, I love
+programming. And it's like the
+
+577
+00:31:50,250 --> 00:31:54,330
+same kind of thing, I imagine
+where it's, I enjoy the details.
+
+578
+00:31:54,780 --> 00:31:58,560
+And so I can imagine them
+enjoying the details. And in
+
+579
+00:31:58,560 --> 00:32:01,440
+this case, they get to they love
+the inspection, they love going
+
+580
+00:32:01,440 --> 00:32:04,020
+this needs a little more of
+this. And then the problem
+
+581
+00:32:04,020 --> 00:32:06,360
+solving that probably goes along
+with it that I don't understand
+
+582
+00:32:06,360 --> 00:32:10,980
+what it would be. But so you let
+them do that. But you let them
+
+583
+00:32:10,980 --> 00:32:14,790
+delegate all of that repetitive
+work to the robot. That seems
+
+584
+00:32:14,790 --> 00:32:15,600
+really great to me.
+
+585
+00:32:17,820 --> 00:32:19,530
+Maria Telleria: Like you said,
+Yeah, that's right that the
+
+586
+00:32:19,560 --> 00:32:22,800
+people have on their workers you
+know, they love Yeah, created
+
+587
+00:32:22,800 --> 00:32:25,200
+that your wall looks amazing,
+right? This those walls, they
+
+588
+00:32:25,200 --> 00:32:28,320
+call them like walls where you
+have like, the skylight that
+
+589
+00:32:28,320 --> 00:32:31,590
+shines on it is glossy, when you
+know, the architect really went
+
+590
+00:32:31,590 --> 00:32:34,140
+out laughing to get something
+like that they look beautiful.
+
+591
+00:32:34,320 --> 00:32:37,710
+So there's a ton of pride and a
+lot of our feedback with them
+
+592
+00:32:37,740 --> 00:32:40,770
+working especially on the user
+interfaces, how do I give you
+
+593
+00:32:40,770 --> 00:32:44,550
+that ability to use your crap to
+use that and get that
+
+594
+00:32:44,550 --> 00:32:47,580
+engagement, right? Because they
+do want to keep that in theirs?
+
+595
+00:32:47,610 --> 00:32:49,920
+You know, they want to keep that
+pride that's building up for
+
+596
+00:32:49,920 --> 00:32:53,400
+years of training, you know,
+that you're, you're that person,
+
+597
+00:32:53,400 --> 00:32:56,370
+not everybody can do it. Right.
+So even if I gave you the robot,
+
+598
+00:32:56,400 --> 00:33:00,750
+we could easily get you trained,
+probably faster. But I don't
+
+599
+00:33:02,640 --> 00:33:04,380
+Audrow Nash: click a giant hole.
+And it's like, no, no, it's
+
+600
+00:33:04,380 --> 00:33:09,540
+good. Other than that, yeah,
+just put that picture as the
+
+601
+00:33:09,540 --> 00:33:17,400
+plant over there. Yeah, that
+sounds very funny. Okay, so what
+
+602
+00:33:17,400 --> 00:33:20,580
+what other challenges did you
+have with so sit spraying the
+
+603
+00:33:20,580 --> 00:33:24,810
+big challenge was the viscosity?
+Were there big challenges with
+
+604
+00:33:24,810 --> 00:33:27,390
+sanding as well? Or was that
+kind of straightforward?
+
+605
+00:33:28,710 --> 00:33:31,560
+Maria Telleria: No 10 Things
+really where we started with a,
+
+606
+00:33:31,560 --> 00:33:35,190
+like a research phase, because
+sanding requires contacting the
+
+607
+00:33:35,190 --> 00:33:39,150
+surface, right? A lot of the,
+you know, robots started a lot
+
+608
+00:33:39,150 --> 00:33:41,190
+in welding. That was nice,
+because you have that little bit
+
+609
+00:33:41,190 --> 00:33:43,560
+like, I don't have to be perfect
+as long as I can get the arc
+
+610
+00:33:43,560 --> 00:33:46,590
+across it good enough, right.
+And then of course, you say,
+
+611
+00:33:46,590 --> 00:33:48,660
+well control everything around
+it, and then we're gonna get
+
+612
+00:33:48,660 --> 00:33:51,480
+there. But the moment you needed
+to stand, you needed to have
+
+613
+00:33:51,480 --> 00:33:54,960
+that contract. And it's not
+just, you know, the, I guess,
+
+614
+00:33:54,960 --> 00:33:57,570
+this sense of the wall, but
+like, your angle of approach,
+
+615
+00:33:58,080 --> 00:34:01,350
+and that soft materials I was
+mentioning, so that was a lot of
+
+616
+00:34:01,350 --> 00:34:04,770
+our work was like, how do you
+make this thing happen without a
+
+617
+00:34:04,770 --> 00:34:07,920
+perfect map? Right? We do map
+our own space, but you're gonna
+
+618
+00:34:07,920 --> 00:34:08,850
+get there's still
+
+619
+00:34:09,720 --> 00:34:11,610
+Audrow Nash: accuracy, right?
+Yeah. So that's three
+
+620
+00:34:11,610 --> 00:34:15,720
+centimeters. Okay, that's pretty
+big. For a precise job.
+
+621
+00:34:16,590 --> 00:34:18,930
+Maria Telleria: Yeah, exactly.
+And so part of that is just your
+
+622
+00:34:18,930 --> 00:34:19,500
+project is
+
+623
+00:34:20,820 --> 00:34:22,890
+Audrow Nash: probably not more
+than not much more than three
+
+624
+00:34:22,890 --> 00:34:23,610
+centimeters.
+
+625
+00:34:24,090 --> 00:34:26,370
+Maria Telleria: Yeah, it's about
+Yeah, I'm gonna go two inches,
+
+626
+00:34:26,370 --> 00:34:29,730
+but like half inch drywall is
+very common. I mean, we put up
+
+627
+00:34:29,880 --> 00:34:32,610
+Audrow Nash: yeah, that's three
+centimeters or something. 2.4 or
+
+628
+00:34:32,610 --> 00:34:34,860
+whatever it is. Or so you.
+
+629
+00:34:35,610 --> 00:34:37,980
+Maria Telleria: So you might not
+be right, you know, know
+
+630
+00:34:37,980 --> 00:34:41,010
+exactly, plus or minus. So
+really about thinking about how
+
+631
+00:34:41,010 --> 00:34:43,860
+do you approach that Walbert? I
+have a good guess where it is. I
+
+632
+00:34:43,860 --> 00:34:47,430
+have a good guess of the angle
+that it is. But I want to make
+
+633
+00:34:47,430 --> 00:34:50,610
+that really soft contact, right
+because I can scratch it. I'm
+
+634
+00:34:50,610 --> 00:34:53,550
+going to create more damage. So
+this is where other research
+
+635
+00:34:53,550 --> 00:34:56,070
+came back to compliance. We
+really thought that one of the
+
+636
+00:34:56,070 --> 00:34:59,220
+ways to get robots out into the
+world is make them compliant,
+
+637
+00:34:59,220 --> 00:35:02,340
+right? They don't have To be,
+have a perfect map as long as
+
+638
+00:35:02,340 --> 00:35:05,460
+you can tolerate that. And by
+doing compliance, so we build a
+
+639
+00:35:05,460 --> 00:35:08,640
+ton of compliance into our
+sending end effectors such that
+
+640
+00:35:08,850 --> 00:35:11,640
+you do your best to get the best
+map, but then you say, at the
+
+641
+00:35:11,640 --> 00:35:14,250
+end of the day, I'm going to
+have to, you know, start this,
+
+642
+00:35:14,490 --> 00:35:18,060
+the reality to like, the joints
+will be like hump or zip. And
+
+643
+00:35:18,060 --> 00:35:21,330
+you don't want to like fault or
+cut through that hump, you
+
+644
+00:35:21,330 --> 00:35:23,910
+actually want to write it out,
+that's what people do is that
+
+645
+00:35:23,910 --> 00:35:27,150
+reflect is just the illusion of
+flat. So you also need that your
+
+646
+00:35:27,150 --> 00:35:30,300
+Sandy had to kind of write that
+hump and spread it out. So it's,
+
+647
+00:35:30,810 --> 00:35:34,050
+that was a lot of work. And, you
+know, we have like, four years
+
+648
+00:35:34,050 --> 00:35:37,500
+of research with the government
+before even doing this that
+
+649
+00:35:38,280 --> 00:35:38,910
+leverage.
+
+650
+00:35:39,180 --> 00:35:42,780
+Audrow Nash: So what do you mean
+compliance in this? Is it like,
+
+651
+00:35:43,290 --> 00:35:46,290
+springs? Or do you mean like,
+what what do you mean by
+
+652
+00:35:46,290 --> 00:35:47,280
+compliance? I guess?
+
+653
+00:35:48,330 --> 00:35:49,650
+Maria Telleria: Yeah, in
+general, we're looking at it,
+
+654
+00:35:49,740 --> 00:35:51,690
+achieving it whichever way you
+want, right? Because spring is a
+
+655
+00:35:51,690 --> 00:35:55,050
+perfect example where it allows
+you to right absorbed that
+
+656
+00:35:57,480 --> 00:36:00,060
+positioning. Exactly. So we
+look, you know, their spring
+
+657
+00:36:00,060 --> 00:36:03,390
+scampers, but also under your
+control side, how do you detect
+
+658
+00:36:03,390 --> 00:36:06,810
+that compliance and react to it?
+So you don't have to have all of
+
+659
+00:36:06,810 --> 00:36:10,440
+your compliance be mechanical,
+some of it can be coming in from
+
+660
+00:36:10,440 --> 00:36:11,340
+your control system?
+
+661
+00:36:11,790 --> 00:36:14,640
+Audrow Nash: Gotcha. So do you
+do a mix, where you might have
+
+662
+00:36:14,640 --> 00:36:17,640
+some, you might have something
+so you have the sanding head,
+
+663
+00:36:17,640 --> 00:36:20,820
+and then you might have
+something where it can kind of
+
+664
+00:36:20,820 --> 00:36:25,110
+move a little bit given, like
+with a spring? I don't know,
+
+665
+00:36:25,140 --> 00:36:27,720
+keeping it kind of facing
+forward. But like giving up
+
+666
+00:36:27,750 --> 00:36:31,260
+giving a little bit if the wall
+is a slightly different shape
+
+667
+00:36:31,290 --> 00:36:35,040
+than you expect? And then you do
+it in hardware? Or in software
+
+668
+00:36:35,040 --> 00:36:40,770
+to where, hmm, and that's, you
+kind of just do emulate
+
+669
+00:36:40,800 --> 00:36:45,570
+additional springs in the, in
+the motors or what do you? What
+
+670
+00:36:45,570 --> 00:36:46,530
+kind of approach is that?
+
+671
+00:36:47,010 --> 00:36:49,380
+Maria Telleria: Yeah, there's a
+few ways. But one could just be,
+
+672
+00:36:49,440 --> 00:36:53,430
+you know, enabling, or sensing
+that mechanical displacement, if
+
+673
+00:36:53,430 --> 00:36:56,580
+you will, that you're having and
+then utilizing your software to
+
+674
+00:36:56,610 --> 00:36:59,760
+give you a larger range, right?
+So you're coming in like this,
+
+675
+00:36:59,760 --> 00:37:01,830
+and you're already detecting but
+you're going to hit your heart
+
+676
+00:37:01,830 --> 00:37:05,910
+stop, you go ahead and like tilt
+your arm, which some of it is
+
+677
+00:37:05,910 --> 00:37:09,330
+more like a feedback. But
+there's other ways, right? How
+
+678
+00:37:09,330 --> 00:37:12,810
+you run your control system
+around it, allowing me to, you
+
+679
+00:37:12,810 --> 00:37:15,450
+know, be tolerant, right? My
+ultimate goal is not perfect
+
+680
+00:37:15,450 --> 00:37:19,050
+position. My ultimate goal is
+perfect force, right? constant
+
+681
+00:37:19,050 --> 00:37:21,300
+force it elsewhere control
+system.
+
+682
+00:37:22,590 --> 00:37:24,900
+Audrow Nash: Your goal is
+constant force is that is that
+
+683
+00:37:24,930 --> 00:37:29,010
+that's really useful for
+sanding. Interesting,
+
+684
+00:37:29,730 --> 00:37:31,710
+Maria Telleria: okay, that this
+goes back to that hump where you
+
+685
+00:37:31,710 --> 00:37:35,790
+want to write those out and
+like, apply the right force to
+
+686
+00:37:35,940 --> 00:37:38,670
+level it out. But I don't
+necessarily want to grind down.
+
+687
+00:37:38,760 --> 00:37:42,120
+Yeah. Because that's even going
+to get through the other side of
+
+688
+00:37:42,120 --> 00:37:44,820
+drywall. One of the big
+challenge rates is it's not just
+
+689
+00:37:44,820 --> 00:37:47,490
+the drywall, but it's how it was
+formed. So if somebody didn't
+
+690
+00:37:47,490 --> 00:37:49,710
+hanger very well, you have that?
+And then how it was framed?
+
+691
+00:37:49,920 --> 00:37:52,890
+Yeah. So all sudden, you start,
+like, there's a lot of personal
+
+692
+00:37:54,060 --> 00:37:56,430
+for sure. Yeah, they're the ones
+who fix everybody's mistakes.
+
+693
+00:37:58,110 --> 00:38:01,020
+Everybody, it's true, right?
+It's like accumulation of the
+
+694
+00:38:01,020 --> 00:38:04,560
+error that then you have to then
+they refined back. So you need
+
+695
+00:38:04,560 --> 00:38:09,060
+that. That approach of, you
+know, let's move that out, not
+
+696
+00:38:09,060 --> 00:38:10,320
+necessarily flattening it out.
+
+697
+00:38:10,560 --> 00:38:13,740
+Audrow Nash: So if you have a
+hump in your drywall, so it's
+
+698
+00:38:13,740 --> 00:38:16,680
+hanging, and there's a hump, and
+you're trying to apply a
+
+699
+00:38:16,680 --> 00:38:20,610
+constant force throughout it.
+Now what I'm thinking, if you
+
+700
+00:38:20,610 --> 00:38:24,690
+had a point sander, like, then
+it would just make everything
+
+701
+00:38:25,290 --> 00:38:28,800
+deeper, like shorter into the
+material by the same amount, but
+
+702
+00:38:28,800 --> 00:38:33,990
+because you have a, I don't
+know, a sander that has an area,
+
+703
+00:38:34,290 --> 00:38:36,960
+and you move it around, it kind
+of averages everything out. And
+
+704
+00:38:36,960 --> 00:38:39,990
+that's why constant pressure is
+important. Is it correct or?
+
+705
+00:38:40,529 --> 00:38:42,569
+Maria Telleria: Yep, that's
+correct. Yeah. And then you also
+
+706
+00:38:42,569 --> 00:38:47,369
+have to look at, you know,
+having your compliance also in
+
+707
+00:38:47,369 --> 00:38:51,029
+your tip tilt, so that you can
+can also write out that thing.
+
+708
+00:38:51,029 --> 00:38:53,129
+Good. both axes, right. You want
+to be able to
+
+709
+00:38:53,310 --> 00:38:56,610
+Audrow Nash: adjust different
+ways. Yeah, I was. My
+
+710
+00:38:56,610 --> 00:39:03,810
+explanation was 2d, but yeah.
+Yeah, I imagine the same thing
+
+711
+00:39:03,810 --> 00:39:09,030
+holds true. 2d and 3d for that.
+Okay, and how do you get your
+
+712
+00:39:09,030 --> 00:39:11,190
+initial map? For the robot?
+
+713
+00:39:12,300 --> 00:39:14,970
+Maria Telleria: Yeah, we use a
+lidar system to create our map,
+
+714
+00:39:15,330 --> 00:39:17,850
+you know, and then from the
+point cloud, because this also
+
+715
+00:39:17,850 --> 00:39:20,130
+has to be fairly fast, right?
+Anytime that you're not running
+
+716
+00:39:20,130 --> 00:39:23,820
+the tool, it's not productive
+time. So from the point cloud,
+
+717
+00:39:24,060 --> 00:39:27,720
+find the planes and then work
+off of those, subdivide them
+
+718
+00:39:27,720 --> 00:39:30,810
+into spaces. So it's a little
+bit it's, it's a different
+
+719
+00:39:30,810 --> 00:39:34,320
+application, right? So much work
+around LiDAR, some point clouds,
+
+720
+00:39:34,320 --> 00:39:36,750
+but it's what are you trying to
+do with it? For us? It's finding
+
+721
+00:39:36,780 --> 00:39:40,110
+surfaces, right, as opposed to
+maybe identifying objects like
+
+722
+00:39:40,140 --> 00:39:41,880
+an autonomous car has to do.
+
+723
+00:39:42,120 --> 00:39:44,670
+Audrow Nash: So do you? Is it
+like a person carries around
+
+724
+00:39:44,670 --> 00:39:47,760
+something or do you drive your
+robot by it or how does it work?
+
+725
+00:39:48,630 --> 00:39:50,760
+Maria Telleria: We drive the
+robot by it. So the operator
+
+726
+00:39:51,810 --> 00:39:54,420
+they have a little like, do a
+little loop and they get some
+
+727
+00:39:54,420 --> 00:39:56,970
+feedback from the user interface
+if we're getting a good little
+
+728
+00:39:57,210 --> 00:40:01,620
+good map, and then they also get
+to do once it pops up, they can
+
+729
+00:40:01,860 --> 00:40:04,740
+use again their smarts to say
+like, I'm missing a wall or
+
+730
+00:40:04,740 --> 00:40:05,430
+something like that.
+
+731
+00:40:07,319 --> 00:40:09,839
+Audrow Nash: Gotcha. Was that
+part pretty straightforward? Or
+
+732
+00:40:09,839 --> 00:40:14,339
+was that there? Was there
+challenges there too? Yeah,
+
+733
+00:40:14,399 --> 00:40:16,229
+Maria Telleria: I would say,
+definitely feels more
+
+734
+00:40:16,229 --> 00:40:18,839
+straightforward because it is
+mostly a technical challenges.
+
+735
+00:40:18,839 --> 00:40:21,179
+And you know, sometimes I get
+excited when we find just
+
+736
+00:40:21,179 --> 00:40:21,629
+technical.
+
+737
+00:40:23,220 --> 00:40:25,440
+Audrow Nash: Because it'll be
+one thing that's relatively easy
+
+738
+00:40:25,500 --> 00:40:27,960
+and fairly established to Yeah.
+
+739
+00:40:28,980 --> 00:40:30,540
+Maria Telleria: Don't get me
+wrong, right. It took a lot of
+
+740
+00:40:30,540 --> 00:40:33,630
+work and optimizing and getting
+it right. And we're all still
+
+741
+00:40:33,630 --> 00:40:36,720
+tuning and stuff. But it is
+something that like, it's well
+
+742
+00:40:36,720 --> 00:40:40,800
+within our control. And probably
+one of the, it's a little bit of
+
+743
+00:40:40,800 --> 00:40:44,130
+a challenge. But also exciting
+is the technology advancements
+
+744
+00:40:44,130 --> 00:40:47,610
+on the lighter side has been
+incredible for starting. So a
+
+745
+00:40:47,610 --> 00:40:50,580
+lot of it has actually been
+like, Okay, should we upgrade to
+
+746
+00:40:50,580 --> 00:40:54,120
+the next LIDAR? And that means
+retuning our mapping algorithm
+
+747
+00:40:54,120 --> 00:40:56,880
+and so play that trade off. Yep.
+But yeah, I like those
+
+748
+00:40:56,880 --> 00:40:59,220
+challenges that are mostly
+technical, not that the other
+
+749
+00:40:59,220 --> 00:41:01,050
+ones are interesting. But
+definitely, when you're trying
+
+750
+00:41:01,050 --> 00:41:04,740
+to change people's perceptions,
+or construction business
+
+751
+00:41:04,740 --> 00:41:06,870
+alignments, you're just like,
+well, that's a lot harder.
+
+752
+00:41:08,040 --> 00:41:11,520
+Audrow Nash: Oh, totally, I
+think. To me, it seems like
+
+753
+00:41:11,700 --> 00:41:14,910
+successful companies are founded
+on just a few very hard
+
+754
+00:41:14,910 --> 00:41:17,610
+challenges like one or like two
+or something like this, this is
+
+755
+00:41:17,610 --> 00:41:20,820
+your sanding and spraying. But
+if it was like every single
+
+756
+00:41:20,820 --> 00:41:25,350
+thing is an incredible, like
+moonshot, then it probably
+
+757
+00:41:25,350 --> 00:41:28,200
+wouldn't be a good long term bet
+for the company, because one of
+
+758
+00:41:28,200 --> 00:41:31,320
+those moonshots will be a giant
+bottleneck, or those kinds of
+
+759
+00:41:31,320 --> 00:41:34,140
+thing. So it is nice when you
+have just an engineering
+
+760
+00:41:34,170 --> 00:41:34,710
+problem.
+
+761
+00:41:35,580 --> 00:41:37,680
+Maria Telleria: definitely agree
+that we think about it, it's
+
+762
+00:41:37,680 --> 00:41:40,260
+like, let's make sure you're
+successful with like, just just
+
+763
+00:41:40,260 --> 00:41:43,020
+two or three challenges they're
+picking up. Yep. And then we
+
+764
+00:41:43,020 --> 00:41:45,150
+talked about material
+development, that's great, but
+
+765
+00:41:45,150 --> 00:41:50,130
+don't depend on that. It's a
+longer timeline. But so we work
+
+766
+00:41:50,130 --> 00:41:53,700
+on some of this research on the
+side. And as those kind of get
+
+767
+00:41:53,700 --> 00:41:57,780
+proven out, we end up but you
+cannot keep this team running on
+
+768
+00:41:57,810 --> 00:41:58,950
+more researchy stuff.
+
+769
+00:41:59,460 --> 00:42:01,770
+Audrow Nash: And it's almost
+like a parallel thread to the
+
+770
+00:42:01,770 --> 00:42:05,010
+main value add for the company.
+So it's like, we're going to be
+
+771
+00:42:05,010 --> 00:42:08,280
+around in 10 years and like,
+then maybe that'll kick in. And
+
+772
+00:42:08,280 --> 00:42:10,770
+we can have these conversations
+now. But they're not like,
+
+773
+00:42:11,220 --> 00:42:15,210
+you're not waiting to be a
+profitable company before. For
+
+774
+00:42:15,210 --> 00:42:18,720
+that to work. It's like, we got
+it we can we can just make do we
+
+775
+00:42:18,720 --> 00:42:21,510
+have to mix it to approximately
+the same consistency. And it's
+
+776
+00:42:21,510 --> 00:42:21,990
+all fine.
+
+777
+00:42:22,799 --> 00:42:26,549
+Maria Telleria: Exactly. Yeah,
+just sure you provide value at
+
+778
+00:42:26,549 --> 00:42:28,769
+that point to the customer,
+right? Because they're like,
+
+779
+00:42:28,799 --> 00:42:32,249
+that's great that you're gonna
+do that in seven years. But I
+
+780
+00:42:32,249 --> 00:42:33,959
+have a project tomorrow, what
+can you do?
+
+781
+00:42:34,770 --> 00:42:37,530
+Audrow Nash: And venture
+capitalists are like, Oh, seven
+
+782
+00:42:37,530 --> 00:42:40,740
+years, I think you'll start to
+be it's like, oh, it's a
+
+783
+00:42:40,740 --> 00:42:44,130
+robotics company with all got
+all the infrastructure and
+
+784
+00:42:44,130 --> 00:42:46,140
+funding that that requires?
+Yeah,
+
+785
+00:42:46,230 --> 00:42:48,420
+Maria Telleria: exactly. It is
+definitely yeah, that's where
+
+786
+00:42:48,420 --> 00:42:51,810
+you I think you really want to
+show this inability to get out
+
+787
+00:42:51,870 --> 00:42:55,590
+on site sooner. And so having
+those things and I act, do you
+
+788
+00:42:55,590 --> 00:42:59,610
+know, where we began, where it's
+like, keep the person allowed
+
+789
+00:42:59,610 --> 00:43:02,610
+them to do that helped you get
+to that place, right? And that's
+
+790
+00:43:02,610 --> 00:43:05,730
+why it's both, I think, the
+right way to do it for Mark
+
+791
+00:43:05,730 --> 00:43:07,980
+values, but also the right way
+to do it. When you look at the
+
+792
+00:43:07,980 --> 00:43:10,590
+problem, you're like, Okay,
+let's do that. Let's get the
+
+793
+00:43:10,590 --> 00:43:12,270
+person in there and help us get
+out there.
+
+794
+00:43:13,680 --> 00:43:17,370
+Audrow Nash: And so I'm, I'm
+torn between two segues for this
+
+795
+00:43:17,400 --> 00:43:23,160
+the first one. So how are you?
+So we talked, I mentioned just a
+
+796
+00:43:23,160 --> 00:43:25,050
+little bit with like venture
+capital in this kind of thing.
+
+797
+00:43:25,050 --> 00:43:26,190
+How are you guys funded?
+
+798
+00:43:27,480 --> 00:43:29,550
+Maria Telleria: Yet, we're a
+venture backed, we raised our
+
+799
+00:43:29,550 --> 00:43:33,300
+series B, about a year, a little
+bit over a year ago. So it's
+
+800
+00:43:33,300 --> 00:43:36,330
+been great. We previous to that,
+like I mentioned a little bit
+
+801
+00:43:36,330 --> 00:43:38,850
+was we were doing research for
+the government. So we did have
+
+802
+00:43:38,850 --> 00:43:43,050
+some NRA dollars. So it was a
+great way to develop the A get
+
+803
+00:43:43,050 --> 00:43:46,260
+back to your point, to many
+problems. So research was a
+
+804
+00:43:46,260 --> 00:43:49,410
+great place. So we worked with
+NASA and Office of Naval
+
+805
+00:43:49,410 --> 00:43:51,600
+Research, they were really
+looking at this, you know,
+
+806
+00:43:51,600 --> 00:43:54,600
+compliance in the spaces. You
+know, they're the most
+
+807
+00:43:54,600 --> 00:43:58,800
+unstructured of spaces. So then
+we we sold some of them. Yeah,
+
+808
+00:43:58,890 --> 00:44:02,670
+in construction, much better.
+And yeah, once we really found
+
+809
+00:44:02,670 --> 00:44:05,790
+that application, that was
+another decision for us is like
+
+810
+00:44:06,690 --> 00:44:10,230
+the, you know, the Swiss Army
+knife of robotics. That's pretty
+
+811
+00:44:10,230 --> 00:44:12,990
+hard to do, right? Trying to
+solve all those problems. So we
+
+812
+00:44:12,990 --> 00:44:15,510
+knew we couldn't just be the
+construction robot that did
+
+813
+00:44:15,510 --> 00:44:19,110
+everything we've said, let's
+find one trade, one task that we
+
+814
+00:44:19,110 --> 00:44:22,080
+do really well. Yeah. And then
+from there, we can expand. And
+
+815
+00:44:22,080 --> 00:44:25,950
+so once we found the task, and
+we had demonstrated that there
+
+816
+00:44:25,950 --> 00:44:30,000
+was value with the current
+technical challenges as opposed
+
+817
+00:44:30,000 --> 00:44:34,350
+to future, that's when we went
+and fundraise around and did a
+
+818
+00:44:34,380 --> 00:44:37,800
+follow up round in 2020. Gotcha.
+
+819
+00:44:38,100 --> 00:44:42,300
+Audrow Nash: That's exciting.
+Oh, yeah. Can you talk a little
+
+820
+00:44:42,300 --> 00:44:45,750
+bit about kind of bringing on
+investors and the process of
+
+821
+00:44:45,750 --> 00:44:50,010
+that because getting really
+savvy investors can be a huge
+
+822
+00:44:50,010 --> 00:44:54,570
+benefit, but getting ones that
+have like incredibly draconian
+
+823
+00:44:54,570 --> 00:44:58,170
+clauses and flood their funding
+agreements can I've seen it kill
+
+824
+00:44:58,170 --> 00:45:01,680
+several companies? So I Assuming
+you guys are doing fantastic,
+
+825
+00:45:01,710 --> 00:45:04,950
+like, it sounds like things are
+really good. But would you tell
+
+826
+00:45:04,950 --> 00:45:07,290
+me a little bit about kind of
+picking the right investors?
+
+827
+00:45:08,820 --> 00:45:10,680
+Maria Telleria: Yeah, I think a
+big challenge is when your
+
+828
+00:45:10,680 --> 00:45:13,770
+hardware, you're already
+probably looking at a different
+
+829
+00:45:14,010 --> 00:45:17,220
+space of investors, right? At
+least here in the Valley. It's
+
+830
+00:45:17,220 --> 00:45:20,400
+like, there's so so many
+investing firms, but you should
+
+831
+00:45:20,790 --> 00:45:24,060
+research what they invest in,
+what are the pieces, right? If
+
+832
+00:45:24,060 --> 00:45:27,960
+they've never done a hardware
+company, let alone a robotics
+
+833
+00:45:27,960 --> 00:45:31,470
+company. They might not be the,
+the right fit. And early on, we
+
+834
+00:45:31,470 --> 00:45:33,930
+talked to everybody. And then
+very quickly, you realize, Oh,
+
+835
+00:45:33,930 --> 00:45:37,620
+you guys are used to software,
+and all the software? And maybe
+
+836
+00:45:37,620 --> 00:45:40,470
+that's, you know, you guys are
+great. But do we really see
+
+837
+00:45:40,470 --> 00:45:43,020
+like, are you set up in a way
+where your fund can support
+
+838
+00:45:43,020 --> 00:45:45,480
+something like where you wanted
+them to have secondaries because
+
+839
+00:45:45,480 --> 00:45:52,710
+we know this is a longer process
+that you kind of like they can
+
+840
+00:45:52,710 --> 00:45:55,530
+come in and reinvest in the
+future around so like, have you
+
+841
+00:45:55,530 --> 00:45:59,100
+researched, you know, they're
+putting x amount into your first
+
+842
+00:45:59,100 --> 00:46:02,790
+round? Do the reserve some
+amount? They don't have to use
+
+843
+00:46:02,790 --> 00:46:04,890
+it. But do they reserve some
+amounts so that when you're
+
+844
+00:46:04,890 --> 00:46:09,330
+raising your next one, they can
+reinvest it? It's just a nice
+
+845
+00:46:09,330 --> 00:46:12,630
+way to support that it I think,
+it just shows that they thought
+
+846
+00:46:12,630 --> 00:46:15,960
+through like, look, this is not
+going to be one round hit,
+
+847
+00:46:15,990 --> 00:46:18,870
+right, we are going to have to
+develop it just the nature of
+
+848
+00:46:18,870 --> 00:46:22,590
+Harvard, it's a huge, awesome
+win rate, the defensibility is
+
+849
+00:46:22,590 --> 00:46:27,180
+much higher, but it is a longer
+path. So a lot for us was really
+
+850
+00:46:27,210 --> 00:46:30,600
+a search problem, right? Find
+those people who do, who
+
+851
+00:46:30,600 --> 00:46:33,150
+understood us. And then to your
+point of like kind of that
+
+852
+00:46:34,020 --> 00:46:37,620
+relationship, who supported one
+that company we wanted to build,
+
+853
+00:46:37,620 --> 00:46:40,920
+but also brought in maybe the
+areas that we weren't so good at
+
+854
+00:46:40,920 --> 00:46:44,610
+right and provided that guidance
+and really served as advisors at
+
+855
+00:46:44,610 --> 00:46:45,090
+the center.
+
+856
+00:46:46,440 --> 00:46:49,620
+Audrow Nash: Now, so you
+mentioned you have like 40 jobs
+
+857
+00:46:49,620 --> 00:46:55,170
+or so done so far. So I assume
+this means you don't have that
+
+858
+00:46:55,200 --> 00:46:58,440
+maybe you probably have less
+than 40 robots with this, which
+
+859
+00:46:58,440 --> 00:47:03,570
+makes me think less than, like,
+it's not a manufacturing
+
+860
+00:47:03,570 --> 00:47:08,190
+problem, really for you guys,
+because it's kind of so this is
+
+861
+00:47:08,190 --> 00:47:10,530
+interesting to me, because it
+changes possibly the type of
+
+862
+00:47:10,530 --> 00:47:13,950
+investor that you would want to
+get. Would you tell me a bit
+
+863
+00:47:13,950 --> 00:47:14,550
+about this?
+
+864
+00:47:15,720 --> 00:47:17,610
+Maria Telleria: Yeah, that's
+definitely a big challenge,
+
+865
+00:47:17,610 --> 00:47:21,690
+right? It's We're just two
+things, the way that we're
+
+866
+00:47:21,690 --> 00:47:24,510
+looking at it is breeding a lot
+of value with one machine. So
+
+867
+00:47:24,510 --> 00:47:28,530
+we're not going to be a consumer
+electronics, Molly, right, where
+
+868
+00:47:28,530 --> 00:47:31,920
+it's like literal value, but you
+still didn't really know that
+
+869
+00:47:31,980 --> 00:47:35,070
+you're doing great, right? It's,
+it's a much different approach
+
+870
+00:47:35,070 --> 00:47:39,180
+is much smaller volumes, but
+create a lot of value for them.
+
+871
+00:47:39,180 --> 00:47:41,580
+So that already changes your
+perspective on how you're going
+
+872
+00:47:41,580 --> 00:47:44,820
+to manufacture. Right, you're
+not talking 1000s of units to
+
+873
+00:47:44,820 --> 00:47:47,040
+your point, right? We're talking
+10s of units now and then
+
+874
+00:47:47,040 --> 00:47:51,090
+scaling up from there. It's your
+design space changes from when
+
+875
+00:47:51,090 --> 00:47:53,940
+building it right, there's maybe
+manufacturing methods that you
+
+876
+00:47:53,940 --> 00:47:56,250
+don't have as high X as you
+might, you know, you can't
+
+877
+00:47:57,210 --> 00:48:00,120
+injection mold every piece, you
+have to come up with another way
+
+878
+00:48:00,120 --> 00:48:02,430
+because you know, every move is
+so expensive. They're like how
+
+879
+00:48:02,430 --> 00:48:09,420
+many un 20,000,020 20
+
+880
+00:48:09,420 --> 00:48:10,590
+Audrow Nash: million. That's
+that sounds.
+
+881
+00:48:14,790 --> 00:48:17,040
+Maria Telleria: So it just makes
+it a little bit but it so it
+
+882
+00:48:17,040 --> 00:48:20,970
+just comes again to pay you
+create enough value and then
+
+883
+00:48:20,970 --> 00:48:23,700
+your product of the lifetime to
+support it, right? Because it
+
+884
+00:48:23,700 --> 00:48:26,910
+can be an expensive product. But
+if it runs over the lifetime,
+
+885
+00:48:27,240 --> 00:48:30,090
+and brings in the revenue, you
+can actually have very good
+
+886
+00:48:30,090 --> 00:48:33,030
+payback periods. And that's been
+a metric for us, like, Hey, make
+
+887
+00:48:33,030 --> 00:48:36,300
+sure this robot pays itself back
+in within a year. And then you
+
+888
+00:48:36,300 --> 00:48:39,840
+have a five, five year lifetime.
+Yeah, it's a good business
+
+889
+00:48:39,840 --> 00:48:41,970
+model, right, as opposed to
+maybe it could be something
+
+890
+00:48:41,970 --> 00:48:44,250
+cheap. But if it only brings so
+little value, so I think you're
+
+891
+00:48:44,250 --> 00:48:47,850
+really like have to look at
+payback periods, to see if your
+
+892
+00:48:47,850 --> 00:48:51,480
+hardware has the right thing.
+And then work with your design
+
+893
+00:48:51,480 --> 00:48:55,920
+team to say, Alright, how do you
+get a good cost? What with
+
+894
+00:48:55,980 --> 00:48:59,160
+without access to maybe the
+cheapest manufacturing methods
+
+895
+00:48:59,160 --> 00:48:59,910
+that are out there?
+
+896
+00:49:00,150 --> 00:49:01,950
+Audrow Nash: Definitely, yeah,
+it's a totally different problem
+
+897
+00:49:02,100 --> 00:49:04,260
+for this. And you can also kind
+of embrace that it's not going
+
+898
+00:49:04,260 --> 00:49:08,250
+to be like the one off thing and
+try to get it so you can make 10
+
+899
+00:49:08,250 --> 00:49:13,920
+of them at like, not very well
+or not, like not as optimized as
+
+900
+00:49:13,920 --> 00:49:17,460
+possible to be the lowest costs.
+But then you're focusing on kind
+
+901
+00:49:17,460 --> 00:49:20,730
+of the longevity of it, and then
+it kind of pays itself back so
+
+902
+00:49:20,730 --> 00:49:25,110
+you can invest a little more.
+How do you so I'm just
+
+903
+00:49:25,110 --> 00:49:30,300
+wondering, and maybe I'm a bit
+naive with this how do you with
+
+904
+00:49:30,300 --> 00:49:33,810
+robotics being fairly new and
+things coming out all the time?
+
+905
+00:49:33,900 --> 00:49:36,240
+Like you're getting a robotic
+arm maybe it's fairly well
+
+906
+00:49:36,240 --> 00:49:39,150
+established? Maybe it's not and
+then some of the light are how
+
+907
+00:49:39,150 --> 00:49:42,390
+do you predict how long
+something will last is there?
+
+908
+00:49:43,050 --> 00:49:45,390
+Like like this kind of thing is
+an interesting problem to me
+
+909
+00:49:45,390 --> 00:49:47,730
+because I don't know that every
+part would have a track record
+
+910
+00:49:47,910 --> 00:49:48,900
+for many years.
+
+911
+00:49:49,860 --> 00:49:52,950
+Maria Telleria: Now you're 100%
+corrected. Not every part has
+
+912
+00:49:52,950 --> 00:49:55,740
+said some parts do or mobile
+basis actually we retrofit a
+
+913
+00:49:55,740 --> 00:49:58,590
+construction based on these
+things actually fought for like,
+
+914
+00:49:58,770 --> 00:50:02,400
+I feel like you find everybody
+years later be like, maybe
+
+915
+00:50:02,400 --> 00:50:05,370
+change the batteries. So it's
+kind of going through your
+
+916
+00:50:05,370 --> 00:50:08,340
+components, and then also build
+your model to be realistic,
+
+917
+00:50:08,340 --> 00:50:11,490
+those things that you're not
+super sure about, or maybe
+
+918
+00:50:11,490 --> 00:50:13,920
+sensors that maybe they do have
+the lifetime. But do you
+
+919
+00:50:13,920 --> 00:50:16,740
+actually want to keep it for
+five years and be using that old
+
+920
+00:50:16,800 --> 00:50:17,640
+or the company could
+
+921
+00:50:17,640 --> 00:50:20,790
+Audrow Nash: die, and then it's
+like, you have to support and
+
+922
+00:50:20,820 --> 00:50:24,570
+they had a closed, like a
+closed, proprietary sensor
+
+923
+00:50:24,570 --> 00:50:27,870
+driver that you can access for
+this kind of thing, no longer
+
+924
+00:50:27,870 --> 00:50:30,900
+works on a bun to 2026, or
+whatever it will be in a couple
+
+925
+00:50:30,900 --> 00:50:31,290
+of years.
+
+926
+00:50:32,160 --> 00:50:34,830
+Maria Telleria: That's right.
+It's a what we found is like, I
+
+927
+00:50:34,830 --> 00:50:37,530
+build that into the model. So is
+that either we're not so sure
+
+928
+00:50:37,530 --> 00:50:41,370
+that the lifetime will be the
+five years that we target? Okay,
+
+929
+00:50:41,400 --> 00:50:43,470
+just built in, that there's
+going to be replacement parts,
+
+930
+00:50:43,560 --> 00:50:45,840
+or the ones that we're like,
+we're not sure we're gonna want
+
+931
+00:50:45,840 --> 00:50:49,350
+to use this either company's not
+stable, or, you know, there's a
+
+932
+00:50:49,350 --> 00:50:52,080
+much better sensor, why would I
+still be using, you know, five
+
+933
+00:50:52,080 --> 00:50:55,890
+year old LIDAR technology when I
+can get this one? That you build
+
+934
+00:50:55,890 --> 00:50:57,990
+that into your models? Like,
+hey, there's gonna be so many
+
+935
+00:50:57,990 --> 00:51:00,540
+1000 flowers, so replacement
+parts that I do over the
+
+936
+00:51:00,540 --> 00:51:03,660
+lifetime? Do I still get a good
+payback period? Right? Does it
+
+937
+00:51:03,660 --> 00:51:06,990
+still pay itself off if I make
+those changes, but of course,
+
+938
+00:51:06,990 --> 00:51:09,330
+you also don't want to be
+changing them every minute, just
+
+939
+00:51:09,330 --> 00:51:12,540
+because it's a better sensor,
+you gotta make that ROI analysis
+
+940
+00:51:12,540 --> 00:51:16,080
+for, for component, but do your
+best and then keep really good
+
+941
+00:51:16,080 --> 00:51:18,420
+track, right, as we're out
+there. We've been running now
+
+942
+00:51:18,420 --> 00:51:23,250
+for almost four years. So we
+know that those machines are
+
+943
+00:51:23,250 --> 00:51:25,440
+still going. So that's good. But
+you also have to keep track,
+
+944
+00:51:25,650 --> 00:51:29,190
+what things take your replays?
+Was there any leading indicators
+
+945
+00:51:29,190 --> 00:51:31,230
+that could have told you that
+you needed to replace that
+
+946
+00:51:31,230 --> 00:51:34,290
+before? A true failure? So you
+know, predictive maintenance is
+
+947
+00:51:34,290 --> 00:51:37,140
+like this awesome future that,
+you know, manufacturing and
+
+948
+00:51:37,140 --> 00:51:40,320
+logistics already has so many
+cycles, but we're making sure
+
+949
+00:51:40,320 --> 00:51:43,290
+to, like collect the data. Now,
+even if you're not sure what
+
+950
+00:51:43,290 --> 00:51:45,870
+you're looking for later, if you
+have a failure, you can go back
+
+951
+00:51:46,950 --> 00:51:52,080
+increasing? A little bit more?
+Yeah, what was my leading
+
+952
+00:51:52,080 --> 00:51:54,030
+indicator that would have told
+me to replace it?
+
+953
+00:51:54,150 --> 00:51:55,680
+Audrow Nash: That's so
+interesting, I've never really
+
+954
+00:51:55,680 --> 00:51:59,100
+thought about that. I really, I
+like that perspective, you kind
+
+955
+00:51:59,100 --> 00:52:02,010
+of gather the data and then
+after, and you just, like,
+
+956
+00:52:02,010 --> 00:52:05,010
+preemptively are gathering it,
+because perhaps you'll be able
+
+957
+00:52:05,010 --> 00:52:07,710
+to see trends in the future. And
+it's probably fairly cheap to
+
+958
+00:52:07,710 --> 00:52:13,080
+grab now. That's really cool.
+Yeah, and I guess manufacturing
+
+959
+00:52:13,080 --> 00:52:17,790
+and logistics probably has that
+down. But that's very cool for
+
+960
+00:52:17,790 --> 00:52:19,470
+you to apply to your systems.
+
+961
+00:52:20,880 --> 00:52:23,190
+Maria Telleria: Yeah, I think
+some years ago, maybe the data
+
+962
+00:52:23,190 --> 00:52:25,530
+would have gone expensive. But
+now it's so cheap that sometimes
+
+963
+00:52:25,530 --> 00:52:28,200
+when we do we need all this
+data, that it's worth it to keep
+
+964
+00:52:28,200 --> 00:52:30,060
+it and then look back. And
+there, there has been some
+
+965
+00:52:30,060 --> 00:52:32,460
+things where we've been able to
+kind of look back and go, Oh,
+
+966
+00:52:32,820 --> 00:52:35,670
+okay, we saw that here. We saw
+that there. Right? This is
+
+967
+00:52:35,670 --> 00:52:38,220
+starting to be at least
+something to look out for,
+
+968
+00:52:38,250 --> 00:52:40,590
+right. And we put maintenance in
+the week to service our
+
+969
+00:52:40,590 --> 00:52:42,630
+customers right after every job
+that comes in and gets
+
+970
+00:52:42,630 --> 00:52:45,360
+inspected. And so we can at
+least check for those things,
+
+971
+00:52:45,390 --> 00:52:48,720
+you know, and identify those
+areas that okay, maybe built
+
+972
+00:52:48,720 --> 00:52:51,510
+into the model, that being a
+batteries will be your place.
+
+973
+00:52:51,510 --> 00:52:54,330
+And let's go ahead and adjust
+for that in the cost.
+
+974
+00:52:54,450 --> 00:52:57,420
+Audrow Nash: Gotcha. Now, this
+question, I don't know if it's
+
+975
+00:52:58,170 --> 00:53:01,110
+too early. But I wonder what
+you're thinking around these
+
+976
+00:53:01,110 --> 00:53:05,190
+lines. So in my understanding,
+when you take venture capital
+
+977
+00:53:05,220 --> 00:53:08,280
+money, they're typically
+expecting an exit I hear like,
+
+978
+00:53:08,460 --> 00:53:10,590
+the timeline they say is 10
+years, but it's often a lot
+
+979
+00:53:10,590 --> 00:53:15,300
+closer to five. I'm wondering,
+and so there's several different
+
+980
+00:53:15,300 --> 00:53:18,540
+types of exit events. You can be
+bought by someone you can IPO.
+
+981
+00:53:19,440 --> 00:53:23,640
+Or you can wait, I don't know if
+there's other things too. Are
+
+982
+00:53:23,640 --> 00:53:26,550
+you where do you think do you
+think you'll have what kind of
+
+983
+00:53:26,550 --> 00:53:29,340
+liquidation event Do you think
+you guys will have at some
+
+984
+00:53:29,340 --> 00:53:33,480
+point? And what are thoughts
+around that? I suppose.
+
+985
+00:53:34,140 --> 00:53:36,240
+Maria Telleria: Yeah, I plan
+around and we've always thought
+
+986
+00:53:36,240 --> 00:53:40,470
+is like, built a successful
+company. So build with the goal
+
+987
+00:53:40,470 --> 00:53:44,280
+of IPO or something like that,
+in your mind. If you're doing
+
+988
+00:53:44,280 --> 00:53:49,470
+that successfully, the other
+liquidation events? Yeah,
+
+989
+00:53:49,470 --> 00:53:52,860
+exactly. It's your think when
+you build too, like acquisition,
+
+990
+00:53:52,860 --> 00:53:55,710
+you get into a really tricky
+spot, right? Where like, you're
+
+991
+00:53:55,740 --> 00:53:58,770
+now trying to guess what they
+want, or you build so much into
+
+992
+00:53:58,770 --> 00:54:01,200
+them. And then they're like,
+actually, we decided we don't
+
+993
+00:54:01,200 --> 00:54:08,610
+like B vs. sustainable company,
+right? Build a company. That's,
+
+994
+00:54:08,610 --> 00:54:11,400
+you know, at some point, you
+stop taking venture capital, you
+
+995
+00:54:11,400 --> 00:54:14,880
+can produce your own things,
+right? We want to expand drywall
+
+996
+00:54:14,880 --> 00:54:17,460
+finishing is our starting point,
+we want to expand and really be
+
+997
+00:54:17,460 --> 00:54:21,000
+the tool that you just know that
+Oh, but structure you use
+
+998
+00:54:21,000 --> 00:54:24,450
+Canvas, great tool that you use
+to make everything. And so make
+
+999
+00:54:24,450 --> 00:54:27,150
+sure that your models and your
+plants are built to a point
+
+1000
+00:54:27,150 --> 00:54:30,840
+where you do have that feature
+where you can support that r&d
+
+1001
+00:54:30,840 --> 00:54:32,940
+And the new product lines off of
+what you're
+
+1002
+00:54:33,540 --> 00:54:36,540
+Audrow Nash: growing and keep
+building. I see. Yeah. And then
+
+1003
+00:54:36,750 --> 00:54:36,990
+that
+
+1004
+00:54:36,990 --> 00:54:38,610
+Maria Telleria: way, it's under
+your control. You're building
+
+1005
+00:54:38,610 --> 00:54:41,790
+what you want to build. And it
+should mean that all your
+
+1006
+00:54:41,790 --> 00:54:45,120
+liquidation takes care of itself
+possible, right? And
+
+1007
+00:54:45,600 --> 00:54:47,250
+Audrow Nash: you're basically
+aiming at the one that gives you
+
+1008
+00:54:47,250 --> 00:54:51,300
+the most option, in a sense by
+being such a compelling business
+
+1009
+00:54:52,350 --> 00:54:58,230
+as opposed to overfitting to one
+customer buying you or I don't
+
+1010
+00:54:58,230 --> 00:55:01,110
+know, or I've seen people be
+like companies be bought when
+
+1011
+00:55:01,110 --> 00:55:04,710
+they like Miss A funding round
+or something like this, this
+
+1012
+00:55:04,710 --> 00:55:08,910
+kind of thing. But if you stay
+competitive and keep, keep
+
+1013
+00:55:09,300 --> 00:55:13,020
+growing what you can do and stay
+profitable? I mean, that sounds
+
+1014
+00:55:13,020 --> 00:55:16,200
+fantastic. And then you'll be in
+a wonderful situation to like,
+
+1015
+00:55:16,380 --> 00:55:18,990
+get the best investor and all
+this other stuff. That sounds
+
+1016
+00:55:18,990 --> 00:55:23,760
+wonderful. Oh, yeah, shoot for
+that. For sure. It's just an
+
+1017
+00:55:23,760 --> 00:55:26,190
+interesting thing, because it's
+a trade off in a sense with
+
+1018
+00:55:26,190 --> 00:55:29,850
+venture capital, as opposed to
+so you get to grow quicker, but
+
+1019
+00:55:29,880 --> 00:55:33,090
+you are on their timeline to
+some level, because you they are
+
+1020
+00:55:33,090 --> 00:55:36,120
+expecting some sort of event
+where they'll be able to get
+
+1021
+00:55:36,120 --> 00:55:40,470
+their money out for more. And so
+just working with that.
+
+1022
+00:55:41,430 --> 00:55:44,310
+Maria Telleria: That's right.
+And that continued progress
+
+1023
+00:55:44,310 --> 00:55:47,550
+towards that event. Right. So
+like, increasing validation with
+
+1024
+00:55:47,550 --> 00:55:50,310
+ROS No, it's It's definitely,
+you know, a decision that you
+
+1025
+00:55:50,310 --> 00:55:52,890
+have to make and look at and for
+sure, yeah, like you said,
+
+1026
+00:55:52,890 --> 00:55:56,220
+speed, they definitely have the
+what you need. If you want to go
+
+1027
+00:55:56,220 --> 00:55:59,190
+fast, you just gotta make sure
+that you can deliver and, and
+
+1028
+00:55:59,190 --> 00:56:01,080
+you look each other in the eye,
+and you're very honest, and
+
+1029
+00:56:01,080 --> 00:56:03,360
+like, this is what we'll
+deliver. We're looking, you
+
+1030
+00:56:03,360 --> 00:56:05,940
+know, we talked about building
+that successful company, what's
+
+1031
+00:56:05,940 --> 00:56:08,580
+your timeframe? What's the
+timeline? Do we all agree that
+
+1032
+00:56:08,580 --> 00:56:11,190
+that's a reasonable timeline,
+right? Have they been like, in a
+
+1033
+00:56:11,190 --> 00:56:11,850
+year you have?
+
+1034
+00:56:13,560 --> 00:56:17,610
+Audrow Nash: A five years, but
+we meant to? We want a unicorn
+
+1035
+00:56:17,610 --> 00:56:18,660
+immediately. Yeah.
+
+1036
+00:56:19,680 --> 00:56:21,330
+Maria Telleria: And that was
+actually that's a perfect one
+
+1037
+00:56:21,330 --> 00:56:24,660
+for us with the expansion,
+right. We knew that having been
+
+1038
+00:56:24,660 --> 00:56:27,450
+in robotics for a while, like,
+staying in the Bay Area was the
+
+1039
+00:56:27,450 --> 00:56:29,970
+best way for us to move really
+fast and iterate, right? And we
+
+1040
+00:56:29,970 --> 00:56:32,310
+knew if we started shipping
+these across the country or the
+
+1041
+00:56:32,310 --> 00:56:35,340
+world, we're spreading ourselves
+thin. And now you're dealing
+
+1042
+00:56:35,340 --> 00:56:38,370
+with operational problems, as
+well as technical problems. So
+
+1043
+00:56:38,370 --> 00:56:41,820
+it's like, iterate here, the
+market is big enough here. And
+
+1044
+00:56:41,820 --> 00:56:44,340
+so we lay that in front of our
+investors from the beginning,
+
+1045
+00:56:44,340 --> 00:56:46,680
+like, Look, we're not going to
+be that grow everywhere,
+
+1046
+00:56:46,680 --> 00:56:51,030
+quickly. Nope. Because that one
+area Exactly. Nailed it. And
+
+1047
+00:56:51,030 --> 00:56:53,910
+then almost half the customers
+be like, Why don't you come over
+
+1048
+00:56:53,910 --> 00:56:54,150
+here?
+
+1049
+00:56:55,560 --> 00:56:57,630
+Audrow Nash: I'd be wonderful.
+Yeah, that funded growth would
+
+1050
+00:56:57,630 --> 00:57:01,290
+be fantastic. When they're like,
+We have a big project over here.
+
+1051
+00:57:01,290 --> 00:57:04,710
+We need you over there. It's
+like, I don't know, it's
+
+1052
+00:57:04,710 --> 00:57:06,330
+logistically challenging for us.
+
+1053
+00:57:10,590 --> 00:57:12,150
+Maria Telleria: And then we can
+support it right, then your
+
+1054
+00:57:12,150 --> 00:57:15,720
+support team is not eight
+engineers that have to your
+
+1055
+00:57:15,750 --> 00:57:19,200
+right your time. Yeah, exactly.
+
+1056
+00:57:19,200 --> 00:57:21,660
+Audrow Nash: I'm always
+surprised. companies doing that,
+
+1057
+00:57:21,690 --> 00:57:23,610
+when they're like, we're here
+and there. And they're there.
+
+1058
+00:57:23,610 --> 00:57:26,760
+It's like you, there's 10 of
+you. It's like how, but
+
+1059
+00:57:27,989 --> 00:57:29,999
+Maria Telleria: that has been
+the approach. I think that a lot
+
+1060
+00:57:29,999 --> 00:57:33,389
+of firms and venture capital
+firms have pushed and for some
+
+1061
+00:57:33,419 --> 00:57:36,029
+models, I think it makes sense,
+right? The first set the market
+
+1062
+00:57:36,029 --> 00:57:38,759
+is more important than anything.
+But once you when do you have
+
+1063
+00:57:38,759 --> 00:57:42,659
+hardware? It'd be that easy.
+Yeah. And it's
+
+1064
+00:57:42,660 --> 00:57:45,330
+Audrow Nash: logistically a lot
+of challenge to coordinate. I
+
+1065
+00:57:45,330 --> 00:57:47,910
+mean, you have to like so even
+if you're not going to fly one
+
+1066
+00:57:47,910 --> 00:57:50,910
+of your skilled engineers there
+when the robot is down for some
+
+1067
+00:57:50,910 --> 00:57:54,900
+reason. It's still like, Okay,
+now you need to train a few very
+
+1068
+00:57:54,900 --> 00:57:58,710
+highly skilled technicians in
+the area, and coordinate with
+
+1069
+00:57:58,890 --> 00:58:02,880
+them and give them updates and
+all sorts of things. So that
+
+1070
+00:58:02,880 --> 00:58:06,420
+sounds hard to me. It sounds
+like a smart approach to stay
+
+1071
+00:58:06,420 --> 00:58:11,130
+just in the Bay Area. That's a
+hell yeah. Let's see. So now the
+
+1072
+00:58:11,250 --> 00:58:13,380
+other really interesting thing
+that I was thinking about with
+
+1073
+00:58:13,650 --> 00:58:18,360
+the Segway earlier, you are
+working directly with unions
+
+1074
+00:58:18,660 --> 00:58:20,700
+with your robot, and then just
+tell me a bit about that.
+
+1075
+00:58:22,260 --> 00:58:24,390
+Maria Telleria: Yeah, when we
+first started writing, we were
+
+1076
+00:58:24,390 --> 00:58:27,600
+learning about construction and
+found drywall finishing. It was
+
+1077
+00:58:27,600 --> 00:58:29,940
+actually interesting, because we
+weren't thinking as roboticists,
+
+1078
+00:58:29,940 --> 00:58:32,190
+I would hear drywall screenful
+We were thinking of being in the
+
+1079
+00:58:32,190 --> 00:58:34,470
+sheets. And it was talking to
+construction. People were like,
+
+1080
+00:58:34,500 --> 00:58:38,550
+oh, yeah, that's hard. But let
+me tell you. We don't think we
+
+1081
+00:58:38,550 --> 00:58:41,520
+had even thought about that. And
+no, it's like this perfect. That
+
+1082
+00:58:41,520 --> 00:58:44,910
+was it. As we looked at a right
+one was look at your market,
+
+1083
+00:58:44,940 --> 00:58:47,400
+right? And we want to we just
+talked about it, we want it to
+
+1084
+00:58:47,400 --> 00:58:51,210
+be in the Bay Area, state type.
+commercial construction is what
+
+1085
+00:58:51,210 --> 00:58:53,730
+makes sense for robotics, right?
+Unless you have a pretty big
+
+1086
+00:58:53,730 --> 00:58:57,060
+house, maybe the logistics of
+moving the robot might not make
+
+1087
+00:58:57,060 --> 00:59:00,510
+sense instead of the square
+footage your house has to do. So
+
+1088
+00:59:00,510 --> 00:59:03,510
+we knew that there was like a
+minimum project size that it
+
+1089
+00:59:03,510 --> 00:59:06,510
+makes sense to maneuver a robot.
+And so that was like, okay,
+
+1090
+00:59:06,510 --> 00:59:11,460
+commercial area. It's a Union
+Market. Right. And I think that
+
+1091
+00:59:11,460 --> 00:59:13,470
+could maybe upstairs a lot.
+People will be like, Alright,
+
+1092
+00:59:13,500 --> 00:59:17,040
+Audrow Nash: here's me. Yeah.
+But I also don't
+
+1093
+00:59:19,950 --> 00:59:21,630
+Maria Telleria: know, it's a
+little bit of the reputation,
+
+1094
+00:59:21,630 --> 00:59:23,610
+right, like unions are hard to
+work with. We just said, Let's
+
+1095
+00:59:23,610 --> 00:59:25,710
+go talk to them. Right? Like,
+why assume this thing is I'm
+
+1096
+00:59:25,710 --> 00:59:28,920
+sure they, you know, have heard
+things like robots just wanted
+
+1097
+00:59:28,920 --> 00:59:31,830
+to take your job. So we each
+have our own biases. Let's just
+
+1098
+00:59:31,830 --> 00:59:34,740
+stop. And so we reached out to
+them and just said that pretty
+
+1099
+00:59:34,740 --> 00:59:37,230
+much I think we even maybe we
+have that prototype with the
+
+1100
+00:59:37,230 --> 00:59:39,750
+cart. It was it was pretty
+rough. But we were just like,
+
+1101
+00:59:39,870 --> 00:59:44,070
+hey, we don't have the tool yet.
+But we want to invest our time
+
+1102
+00:59:44,070 --> 00:59:47,460
+to develop a tool for your
+trade. What do you think? And
+
+1103
+00:59:47,460 --> 00:59:52,530
+kind of like we're like, Yeah,
+but they're just like, all the
+
+1104
+00:59:52,530 --> 00:59:55,230
+things we talked about. Like we
+can't get new people in the
+
+1105
+00:59:55,230 --> 00:59:58,230
+trade. You know, there's more
+work out there that we can do.
+
+1106
+00:59:58,680 --> 01:00:01,710
+And we're kind of tired of you
+You know, all the injuries that
+
+1107
+01:00:01,710 --> 01:00:04,440
+we have and everything. And the
+last piece to their product,
+
+1108
+01:00:04,440 --> 01:00:07,470
+they have recognized that in the
+past, they had to post new
+
+1109
+01:00:07,470 --> 01:00:10,680
+technology. And the result had
+always been loss of market
+
+1110
+01:00:10,680 --> 01:00:13,710
+share. So they're like we we
+post certain things, we lost
+
+1111
+01:00:13,710 --> 01:00:17,850
+residential. And so there was
+also like, that really nice
+
+1112
+01:00:17,850 --> 01:00:23,700
+reflection on there and like,
+okay, that's exactly what what
+
+1113
+01:00:23,700 --> 01:00:27,360
+did we oppose, you know, painted
+our union to split the drywall
+
+1114
+01:00:27,360 --> 01:00:30,240
+finishing and painting even
+those two different traits. And
+
+1115
+01:00:30,240 --> 01:00:32,880
+so they had lost a lot of the
+big market by opposing the
+
+1116
+01:00:32,880 --> 01:00:36,090
+airless sprayers. And so they
+were like, Okay, we learned our
+
+1117
+01:00:36,090 --> 01:00:39,450
+lesson. Let's got it. And then
+we, there was also that
+
+1118
+01:00:39,630 --> 01:00:42,780
+seriously being like, we want
+you all to be running the
+
+1119
+01:00:42,780 --> 01:00:45,660
+machine, right? We want the
+tapers to be the ones running.
+
+1120
+01:00:45,810 --> 01:00:49,800
+So I think that was also like
+where we both were looking at it
+
+1121
+01:00:49,890 --> 01:00:53,070
+as a shared future. And then we
+committed when we became a
+
+1122
+01:00:54,270 --> 01:00:57,630
+subcontractor. We said, We'll
+sign the union agreement, right,
+
+1123
+01:00:57,630 --> 01:01:01,080
+we want to work with you all
+here in the Bay Area. And so
+
+1124
+01:01:01,080 --> 01:01:03,540
+they've been great. They've let
+us test at their facility, they
+
+1125
+01:01:03,540 --> 01:01:05,910
+have this really cool facility
+with all these like doors and
+
+1126
+01:01:05,910 --> 01:01:07,980
+windows, right? Because they
+have to train around them. And
+
+1127
+01:01:07,980 --> 01:01:12,900
+so we bring the robots. So they
+just been amazing introduction,
+
+1128
+01:01:12,900 --> 01:01:16,140
+we run user studies and a user
+interface with their members who
+
+1129
+01:01:16,140 --> 01:01:19,590
+maybe never seen the robot says,
+hey, if I just showed you this
+
+1130
+01:01:19,620 --> 01:01:22,410
+with you, what would you think
+it does? And so they've been
+
+1131
+01:01:22,410 --> 01:01:26,010
+really a great ally in building
+this and then supporting it, and
+
+1132
+01:01:26,010 --> 01:01:27,900
+then getting people trained in
+using it.
+
+1133
+01:01:28,230 --> 01:01:36,030
+Audrow Nash: Gotcha. So with all
+the, I guess, the so the union,
+
+1134
+01:01:36,930 --> 01:01:40,530
+their job is to protect the
+people who are in this trade.
+
+1135
+01:01:41,130 --> 01:01:45,150
+And so then you're coming to
+them. And you're saying, well,
+
+1136
+01:01:45,180 --> 01:01:49,050
+they recognize that the people
+are hard to find people are
+
+1137
+01:01:49,050 --> 01:01:52,860
+leaving with injuries, they're
+losing share, because maybe
+
+1138
+01:01:52,860 --> 01:01:55,800
+other people are coming in, that
+are not people in this union,
+
+1139
+01:01:56,280 --> 01:02:00,210
+and doing similar jobs. So then
+you come and you say, I have
+
+1140
+01:02:00,210 --> 01:02:02,400
+this robot, it's going to make
+it a bit easier for your people
+
+1141
+01:02:02,400 --> 01:02:07,770
+to be efficient, they won't get
+as injured. And then now you two
+
+1142
+01:02:07,770 --> 01:02:10,920
+are working there, you and the
+Union are working together, you
+
+1143
+01:02:10,920 --> 01:02:16,140
+being canvas. And now then
+there's a bunch of mutually
+
+1144
+01:02:16,140 --> 01:02:18,540
+beneficial things that are
+occurring that you were saying,
+
+1145
+01:02:18,540 --> 01:02:21,780
+which is like they're helping
+with training, they're probably
+
+1146
+01:02:21,780 --> 01:02:24,930
+helping you understand the
+landscape. A good bit better.
+
+1147
+01:02:25,080 --> 01:02:26,760
+Would you tell me a bit about
+that?
+
+1148
+01:02:27,990 --> 01:02:30,630
+Maria Telleria: Yeah, I mean,
+the cool thing about the union
+
+1149
+01:02:30,630 --> 01:02:34,530
+is like, all of the people who
+do this are on Well, in the
+
+1150
+01:02:34,530 --> 01:02:38,370
+market that we serve are in the
+union. So we have to sell to all
+
+1151
+01:02:38,370 --> 01:02:40,560
+the different customers, right?
+We don't sell to the Union, we
+
+1152
+01:02:40,560 --> 01:02:43,080
+sell to the people that employ
+them. Yeah. But they have kind
+
+1153
+01:02:43,080 --> 01:02:45,810
+of like the gather knowledge of
+the market, right? They know
+
+1154
+01:02:45,990 --> 01:02:49,170
+which companies busy, we know
+which company likes what,
+
+1155
+01:02:49,170 --> 01:02:52,980
+because they have to work with
+them on a day to day basis. So
+
+1156
+01:02:53,220 --> 01:02:56,970
+they do have kind of that more,
+if you just talk to Yeah,
+
+1157
+01:02:56,970 --> 01:02:59,640
+exactly. What are the customer,
+you might get, like, a little
+
+1158
+01:02:59,640 --> 01:03:01,770
+bit of a bias or something. But
+if you talk to the hub that
+
+1159
+01:03:01,770 --> 01:03:05,130
+hears that, you know, these 20
+customers? Yeah, exactly. They
+
+1160
+01:03:05,130 --> 01:03:09,090
+can help us. Okay, we're hearing
+this helpless translator oh,
+
+1161
+01:03:09,090 --> 01:03:11,370
+what's happening is blah, blah,
+blah, or no, that's customer
+
+1162
+01:03:11,370 --> 01:03:13,590
+specific. Let me tell you a
+story. Right, like the
+
+1163
+01:03:14,580 --> 01:03:21,600
+background like, Ooh, yeah.
+Yeah. And then they speak for
+
+1164
+01:03:21,600 --> 01:03:24,600
+the people right at the end of
+the day, because the customers
+
+1165
+01:03:25,800 --> 01:03:29,010
+is the labor right is not like
+their employees that you paid
+
+1166
+01:03:29,010 --> 01:03:33,630
+the union wage. So they also are
+better to speak for the people
+
+1167
+01:03:33,630 --> 01:03:36,900
+doing the work than maybe our
+direct customers who are more
+
+1168
+01:03:37,110 --> 01:03:40,320
+part of our costs, right? People
+are part of our costs, but
+
+1169
+01:03:40,320 --> 01:03:43,800
+they're not necessarily our
+employees. So I think it's also
+
+1170
+01:03:43,800 --> 01:03:46,080
+good to touch that there.
+Because if we just touched our
+
+1171
+01:03:46,080 --> 01:03:49,500
+customers, we might miss
+something about the people who
+
+1172
+01:03:49,500 --> 01:03:51,750
+are doing the work, right.
+They're just one step removed
+
+1173
+01:03:51,750 --> 01:03:52,170
+from them.
+
+1174
+01:03:52,590 --> 01:03:56,400
+Audrow Nash: Yeah, that's
+clever. It's funny, because it
+
+1175
+01:03:56,400 --> 01:04:00,150
+sounds like it sounds like it
+was initially a hard decision to
+
+1176
+01:04:00,150 --> 01:04:04,200
+decide to go to the union. Like,
+it's like, do we just avoid
+
+1177
+01:04:04,200 --> 01:04:06,960
+them, and then try to do
+whatever. And then it turns out
+
+1178
+01:04:06,960 --> 01:04:12,180
+to be this big advantage.
+Because they connect you to
+
+1179
+01:04:12,180 --> 01:04:14,520
+everything they kind of let you
+in on this. And then it's like,
+
+1180
+01:04:15,030 --> 01:04:18,450
+once you're working with the
+union, now everyone in the union
+
+1181
+01:04:18,450 --> 01:04:20,670
+is aware of this great thing
+you're doing.
+
+1182
+01:04:22,980 --> 01:04:25,290
+Maria Telleria: Yeah, that's a
+very good summary. I'll say the
+
+1183
+01:04:25,290 --> 01:04:27,810
+first decision was stuff. I
+think there was a lot of people
+
+1184
+01:04:27,810 --> 01:04:31,350
+advising against it, correct?
+I'm sure. I've seen it not play
+
+1185
+01:04:31,350 --> 01:04:34,740
+out well, or different things
+are like, hey, maybe go to them
+
+1186
+01:04:34,740 --> 01:04:37,020
+once you're pretty well
+established. Right, you know,
+
+1187
+01:04:37,020 --> 01:04:40,320
+negotiation table. And we just
+decided to go with the approach
+
+1188
+01:04:40,320 --> 01:04:44,130
+of like, Hey, pretty honest.
+This is what we have right now.
+
+1189
+01:04:44,220 --> 01:04:47,610
+It's not great. But we see the
+potential. Do you see the
+
+1190
+01:04:47,610 --> 01:04:51,090
+potential and by having that
+relationship early to also felt
+
+1191
+01:04:51,090 --> 01:04:53,130
+a little bit like there wasn't
+like, they would have heard
+
+1192
+01:04:53,130 --> 01:04:55,980
+about us, right? And they would
+have been like this like you're
+
+1193
+01:04:55,980 --> 01:04:59,970
+developing around, versus like,
+know when customers can have you
+
+1194
+01:05:00,000 --> 01:05:02,400
+heard of the trophy? Like, yeah,
+we're working with them. We're
+
+1195
+01:05:02,400 --> 01:05:05,970
+like, oh, so it also helps with
+our customers and even their own
+
+1196
+01:05:06,240 --> 01:05:08,880
+labor force who might be scared
+if they heard of this thing
+
+1197
+01:05:08,880 --> 01:05:11,730
+versus the union telling them,
+Hey, this is why we're
+
+1198
+01:05:11,730 --> 01:05:14,580
+supporting it. Let me explain.
+So it also helps with those
+
+1199
+01:05:14,580 --> 01:05:15,930
+misconceptions that you have.
+
+1200
+01:05:15,990 --> 01:05:20,580
+Audrow Nash: That's interesting,
+does it? We're so I'm not
+
+1201
+01:05:20,580 --> 01:05:23,430
+terribly knowledgeable about
+unions. Is this union, like
+
+1202
+01:05:23,460 --> 01:05:28,800
+local to the bay? Or is it
+California wide? Or is it us
+
+1203
+01:05:28,800 --> 01:05:32,280
+wide or international? Or how
+does the union work?
+
+1204
+01:05:34,170 --> 01:05:37,170
+Maria Telleria: Yeah, it's both
+right. There's the larger
+
+1205
+01:05:37,170 --> 01:05:41,310
+international national unions
+more more national, but they
+
+1206
+01:05:41,310 --> 01:05:44,820
+have kind of their locales, and
+they can run independently. So
+
+1207
+01:05:45,060 --> 01:05:47,460
+when we say working with the
+union, it's been directly
+
+1208
+01:05:47,460 --> 01:05:51,870
+working with the DC 16 Is that
+district council that we work
+
+1209
+01:05:51,870 --> 01:05:54,480
+with directly because they
+represent that area. So that
+
+1210
+01:05:54,480 --> 01:05:57,570
+also made it easy. It was like
+this conversation directly with
+
+1211
+01:05:57,570 --> 01:06:01,800
+each other. There's a larger
+union of unions, if we will, but
+
+1212
+01:06:01,800 --> 01:06:05,040
+they all kind of report. They've
+been great at saying like, hey,
+
+1213
+01:06:05,070 --> 01:06:07,620
+once you guys are ready, we can
+also introduce you to our
+
+1214
+01:06:07,620 --> 01:06:10,710
+friends, right. And I'll say
+thanks. But at the same time, we
+
+1215
+01:06:10,740 --> 01:06:13,080
+were in like, Let's not fight
+off too much. Let's start by
+
+1216
+01:06:13,080 --> 01:06:16,440
+this your piece of the
+agreements, were only with them
+
+1217
+01:06:16,500 --> 01:06:17,130
+to start with.
+
+1218
+01:06:17,250 --> 01:06:18,840
+Audrow Nash: And as you were
+saying earlier, make it so
+
+1219
+01:06:18,840 --> 01:06:22,110
+they're pulling you over, like
+please, please bring your robot
+
+1220
+01:06:22,110 --> 01:06:26,580
+over to us and somewhere else.
+Okay, has there has there been
+
+1221
+01:06:26,580 --> 01:06:28,800
+any challenges working with the
+union?
+
+1222
+01:06:32,010 --> 01:06:34,620
+Maria Telleria: Trying to think
+I think there's always maybe not
+
+1223
+01:06:34,650 --> 01:06:37,530
+union specific, but just working
+with the labor force, right,
+
+1224
+01:06:37,530 --> 01:06:41,010
+that has misconceptions about
+recordings? It's always
+
+1225
+01:06:41,010 --> 01:06:43,680
+difficult, right? I think
+there's a lot of that, you know,
+
+1226
+01:06:43,680 --> 01:06:46,740
+why are you here? But no, I
+don't think there was anything
+
+1227
+01:06:46,770 --> 01:06:49,920
+specific about the union, right?
+The agreements get to be more
+
+1228
+01:06:49,920 --> 01:06:53,280
+complicated, but lawyers will
+understand that. So as an
+
+1229
+01:06:53,280 --> 01:06:55,590
+engineer, I don't have to figure
+out what a collective bargaining
+
+1230
+01:06:55,590 --> 01:06:59,220
+agreement is. Yeah. But that the
+details, right could be
+
+1231
+01:06:59,220 --> 01:07:01,830
+overwhelming if you're not used
+to. But this is worth getting
+
+1232
+01:07:01,830 --> 01:07:05,040
+people who understand this, what
+are their ultimate goals? Let's
+
+1233
+01:07:05,040 --> 01:07:07,590
+find a way right? Because that
+agreement, for example, didn't
+
+1234
+01:07:07,590 --> 01:07:10,050
+have anything about a robotic
+tool. So we have to work with
+
+1235
+01:07:10,050 --> 01:07:14,130
+them to make sure that that was
+covered. So just that I would
+
+1236
+01:07:14,130 --> 01:07:17,640
+say, that's maybe more work.
+That might be the only difficult
+
+1237
+01:07:17,640 --> 01:07:20,280
+but the challenges around the
+workforce have been more
+
+1238
+01:07:20,280 --> 01:07:23,160
+general, rather than like Union
+specific, more just the
+
+1239
+01:07:23,160 --> 01:07:24,480
+misconception. Yeah. So
+
+1240
+01:07:24,930 --> 01:07:26,520
+Audrow Nash: how do you how do
+you address those
+
+1241
+01:07:26,520 --> 01:07:30,240
+misconceptions? I guess you can
+show them your robot. But any
+
+1242
+01:07:30,240 --> 01:07:35,340
+like, I don't know, stories or
+approaches you found that have
+
+1243
+01:07:35,340 --> 01:07:36,210
+been really useful. I
+
+1244
+01:07:37,350 --> 01:07:40,320
+Maria Telleria: think the best
+one has been not me telling them
+
+1245
+01:07:40,350 --> 01:07:43,950
+that it's okay. But people like
+our team for tapers who have
+
+1246
+01:07:43,950 --> 01:07:48,600
+trained with them, explaining to
+them why it's a tool. Why are
+
+1247
+01:07:48,600 --> 01:07:52,170
+two men right? I think there's
+something about like, somebody
+
+1248
+01:07:52,170 --> 01:07:54,540
+who's lived your shared
+experience, who understands how
+
+1249
+01:07:54,540 --> 01:07:57,690
+tough the work, so I can shout
+it from the mountains. Oh, that
+
+1250
+01:07:57,690 --> 01:08:00,720
+sounds interesting. But what do
+you know, kind of like, yeah,
+
+1251
+01:08:00,720 --> 01:08:04,230
+which is fair. And then both.
+That's why having again, our
+
+1252
+01:08:04,230 --> 01:08:07,890
+team members are experts be part
+of campus, one of the directly
+
+1253
+01:08:07,890 --> 01:08:10,470
+would tell us if we ever, were
+not going in the right
+
+1254
+01:08:10,470 --> 01:08:12,810
+direction, right, they could
+race it, before we kind of
+
+1255
+01:08:12,810 --> 01:08:15,960
+stepped into it in front of
+everybody. They can raise it.
+
+1256
+01:08:15,960 --> 01:08:18,720
+But then when we go on site,
+they're usually the ones that
+
+1257
+01:08:18,720 --> 01:08:22,110
+are most of our direct customer
+success in the field is our
+
+1258
+01:08:22,110 --> 01:08:24,930
+field team. Who knows? And so
+when they expect, like, Hey,
+
+1259
+01:08:24,930 --> 01:08:28,470
+I've been using it for two plus
+years, let me tell you what is
+
+1260
+01:08:28,470 --> 01:08:31,140
+good about it, like, let me tell
+you what it's not. Let me tell
+
+1261
+01:08:31,140 --> 01:08:34,260
+you what parts are why it's
+exciting for me to use it. I
+
+1262
+01:08:34,260 --> 01:08:37,260
+think that goes a long way. And
+then of course, being able to
+
+1263
+01:08:37,260 --> 01:08:40,770
+say like, look, we're working
+with your union, like, you know,
+
+1264
+01:08:40,980 --> 01:08:43,560
+what you've signed on to be kind
+of like this agreement of
+
+1265
+01:08:43,560 --> 01:08:46,140
+working together, making sure
+that we're protected. And so
+
+1266
+01:08:46,140 --> 01:08:48,150
+that also helps go along with.
+
+1267
+01:08:49,140 --> 01:08:52,530
+Audrow Nash: Yeah, it's very
+interesting. And it's funny to
+
+1268
+01:08:52,530 --> 01:08:57,570
+me, but makes total sense that
+they are most except, or people
+
+1269
+01:08:57,570 --> 01:09:00,810
+are, in general, most except
+accepting of something when
+
+1270
+01:09:00,810 --> 01:09:03,900
+someone kind of in the same boat
+is like, no, no, this is really
+
+1271
+01:09:03,900 --> 01:09:08,490
+good. As opposed to like, I am a
+tech person. And I say this is
+
+1272
+01:09:08,490 --> 01:09:12,840
+good. It's like someone who also
+does this job is like, this is
+
+1273
+01:09:12,840 --> 01:09:16,350
+great. This really makes our
+lives easier than they support
+
+1274
+01:09:16,350 --> 01:09:26,280
+it. Let's see. So another so
+where do you see yourselves like
+
+1275
+01:09:26,280 --> 01:09:30,030
+where do you see Canvas going?
+In the next like five to 10
+
+1276
+01:09:30,030 --> 01:09:30,600
+years?
+
+1277
+01:09:32,670 --> 01:09:35,160
+Maria Telleria: Look, two big
+areas, right? One is expansion,
+
+1278
+01:09:35,190 --> 01:09:38,550
+like we will leave the bay area
+that's coming sooner rather than
+
+1279
+01:09:38,550 --> 01:09:41,730
+later. Right? We've tested it.
+It's been successful on sites.
+
+1280
+01:09:41,760 --> 01:09:45,120
+Now it's time to go out there.
+We have the you know, we have
+
+1281
+01:09:45,120 --> 01:09:48,630
+our support manuals, we have our
+you know, instruction schedules
+
+1282
+01:09:48,630 --> 01:09:51,510
+to feel comfortable that as we
+expand, we're not going to be
+
+1283
+01:09:51,510 --> 01:09:54,810
+stretching ourselves. So that's
+one of the big areas in Yeah,
+
+1284
+01:09:55,140 --> 01:09:58,350
+five to 10 years right cover the
+metropolitan areas in the US
+
+1285
+01:09:58,350 --> 01:10:01,410
+right New York, Atlanta. Hello,
+so at least to start, right,
+
+1286
+01:10:01,620 --> 01:10:04,620
+where there's concentrating
+building. And then the other
+
+1287
+01:10:04,620 --> 01:10:08,010
+area is on the, like I
+mentioned, I want cannabis to be
+
+1288
+01:10:08,010 --> 01:10:11,280
+the tool for other traits as
+well. The benefit we can provide
+
+1289
+01:10:11,280 --> 01:10:14,760
+with drywall finishing, it is a
+particularly good trade for it.
+
+1290
+01:10:14,760 --> 01:10:18,090
+But it's not the only trade and
+a lot of the challenges that we
+
+1291
+01:10:18,090 --> 01:10:22,380
+already solved our common right,
+we live robot localizing
+
+1292
+01:10:22,380 --> 01:10:26,430
+yourself breaking down the task
+into workspaces, all of that are
+
+1293
+01:10:26,430 --> 01:10:30,720
+common to other tasks. So I'm
+excited by also starting to look
+
+1294
+01:10:30,720 --> 01:10:34,290
+at those other pieces. And how
+do we change the end effector.
+
+1295
+01:10:34,920 --> 01:10:37,710
+To be able to tackle a different
+trade or different types of
+
+1296
+01:10:38,910 --> 01:10:41,220
+Audrow Nash: gotcha, that's
+really interesting to you think
+
+1297
+01:10:41,220 --> 01:10:43,950
+about how to use the same
+platform, like basically a vase
+
+1298
+01:10:43,950 --> 01:10:47,130
+with an arm. And what tasks is
+going to do that makes a lot of
+
+1299
+01:10:47,130 --> 01:10:47,580
+sense,
+
+1300
+01:10:49,380 --> 01:10:51,150
+Maria Telleria: then you can
+start optimizing in two ways,
+
+1301
+01:10:51,150 --> 01:10:55,290
+right? One is like, which task
+required the least change. And
+
+1302
+01:10:55,290 --> 01:10:57,630
+that's exciting. But you also
+might want to optimize by which
+
+1303
+01:10:57,630 --> 01:11:01,830
+tasks are next to you in the
+construction cycle. Because if I
+
+1304
+01:11:01,830 --> 01:11:04,230
+can optimize protests, that
+happens right after or right
+
+1305
+01:11:04,230 --> 01:11:06,690
+before drywall finishing, I
+don't have to move my robot
+
+1306
+01:11:06,690 --> 01:11:09,630
+twice as opposed to maybe one
+that's, you know, three months
+
+1307
+01:11:09,630 --> 01:11:12,150
+before drywall finishing. So
+there's two ways to optimize I
+
+1308
+01:11:12,150 --> 01:11:15,060
+think, and we look for that
+space of like, not too different
+
+1309
+01:11:15,090 --> 01:11:18,000
+technically. But also, hey, I
+want to target things
+
+1310
+01:11:18,030 --> 01:11:20,910
+surrounding drywall finishing to
+start to get the most use out of
+
+1311
+01:11:20,910 --> 01:11:22,620
+my mobilization costs. Yeah.
+
+1312
+01:11:22,620 --> 01:11:24,960
+Audrow Nash: And if there's any
+intersection in those two
+
+1313
+01:11:25,110 --> 01:11:29,190
+optimization problems, then you
+could probably do that. And that
+
+1314
+01:11:29,190 --> 01:11:31,800
+might have been what spraying
+was after you did, Sandy.
+
+1315
+01:11:33,090 --> 01:11:38,070
+Exactly. Gotcha. What do you So
+you mentioned that, how do you
+
+1316
+01:11:38,070 --> 01:11:41,730
+handle the logistics of getting
+your robot to the actual
+
+1317
+01:11:41,730 --> 01:11:42,630
+construction site?
+
+1318
+01:11:44,370 --> 01:11:47,580
+Maria Telleria: We, like I
+mentioned, we use a mobile base
+
+1319
+01:11:47,580 --> 01:11:51,000
+or started with a very dumb, but
+fake your bus to mobile base
+
+1320
+01:11:51,000 --> 01:11:54,030
+that is using constructor, so
+you know, it's a flatbed or just
+
+1321
+01:11:54,030 --> 01:11:58,470
+a truck with a lift gate, and
+put it into the machine, drive
+
+1322
+01:11:58,470 --> 01:12:02,700
+it in and out at the site. And
+then when we when the sites when
+
+1323
+01:12:02,700 --> 01:12:05,670
+we come in, usually, you know
+they're close off, elevators are
+
+1324
+01:12:05,670 --> 01:12:08,280
+in place and everything. So
+you're just gonna writing in as
+
+1325
+01:12:08,280 --> 01:12:11,460
+if they were bringing in another
+man lift, as they call them,
+
+1326
+01:12:11,460 --> 01:12:14,640
+right? Just because people need
+to realize we haven't talked
+
+1327
+01:12:14,640 --> 01:12:17,580
+about that. But one of the big
+wings of the robot is it can,
+
+1328
+01:12:17,670 --> 01:12:21,450
+you know, lift up to in finish
+up to 17 feet. Wow, that avoids
+
+1329
+01:12:21,450 --> 01:12:24,720
+a person having to go up and
+down. So it's all based on lift
+
+1330
+01:12:24,720 --> 01:12:27,480
+in that norm that really
+constitutes kind of a component.
+
+1331
+01:12:27,480 --> 01:12:30,780
+Cool. And so but these are
+common in the sense of people
+
+1332
+01:12:30,780 --> 01:12:35,070
+have to go to the 17 feet to
+finish. Yeah, yeah, we move it
+
+1333
+01:12:35,070 --> 01:12:37,620
+very similar like to that they
+moved this where you the
+
+1334
+01:12:37,650 --> 01:12:40,860
+operator has the remote control,
+they drag it around site, no
+
+1335
+01:12:40,860 --> 01:12:43,740
+autonomy there, we just say,
+Hey, this is complicated.
+
+1336
+01:12:44,370 --> 01:12:47,880
+Operator, one to one move the
+robot to the site. Yeah, once
+
+1337
+01:12:47,880 --> 01:12:50,460
+you get into a space, now you
+can start talking about some
+
+1338
+01:12:50,460 --> 01:12:51,000
+autonomy.
+
+1339
+01:12:51,420 --> 01:12:53,340
+Audrow Nash: Gotcha. Yeah. And
+it's quick enough to just have
+
+1340
+01:12:53,340 --> 01:12:56,820
+them drive around. And that's
+really nice that it lifts to 17
+
+1341
+01:12:56,820 --> 01:12:59,430
+feet, because I imagine I
+imagine now, it's like, you're
+
+1342
+01:12:59,430 --> 01:13:02,310
+hurting your shoulder through
+repetitive motion of a heavy
+
+1343
+01:13:02,310 --> 01:13:05,850
+object for eight hours a day.
+But also, you're up high. And
+
+1344
+01:13:05,850 --> 01:13:08,490
+I'm sure that there's, as you
+get tired, there's more
+
+1345
+01:13:08,490 --> 01:13:12,120
+accidents occurring when people
+are like on a ladder, finishing
+
+1346
+01:13:12,120 --> 01:13:15,480
+and you have to like, go down,
+move the ladder, or if you're on
+
+1347
+01:13:15,480 --> 01:13:18,450
+one of those, I guess if they're
+on a lift, it's a little bit
+
+1348
+01:13:18,450 --> 01:13:20,670
+different. Like one of those a
+little
+
+1349
+01:13:20,670 --> 01:13:23,970
+Maria Telleria: bit. Yeah, they
+they'll drive it but in general,
+
+1350
+01:13:23,970 --> 01:13:28,470
+your productivity usually goes
+down to half a woman that is
+
+1351
+01:13:28,470 --> 01:13:31,200
+about eight feet, because up and
+down. Because think of the
+
+1352
+01:13:31,200 --> 01:13:33,600
+material, right? You don't have
+all of it. So you're coming up
+
+1353
+01:13:33,600 --> 01:13:37,320
+and down. And like you said the
+the moving and injuries. Yeah,
+
+1354
+01:13:37,320 --> 01:13:39,510
+there's one of the biggest
+sources of accidents in any
+
+1355
+01:13:39,660 --> 01:13:42,690
+construction. Trade is that you
+know, the moment you're on a
+
+1356
+01:13:42,690 --> 01:13:46,110
+ladder, and it's hard, right?
+People are tasked with, hey,
+
+1357
+01:13:46,110 --> 01:13:49,470
+finish this much by this time of
+the day. And so there is also
+
+1358
+01:13:49,470 --> 01:13:52,230
+pressure to run. And so you
+start seeing the ladder
+
+1359
+01:13:52,230 --> 01:13:54,300
+scooting, or the you know, the
+
+1360
+01:13:57,000 --> 01:13:59,730
+Audrow Nash: screws are, like,
+hurt, and they bump over when
+
+1361
+01:13:59,730 --> 01:14:02,280
+they're pretty good at it. But
+yeah, you shouldn't do it.
+
+1362
+01:14:02,730 --> 01:14:05,310
+That's why I imagined like even
+like, if you could walk on it
+
+1363
+01:14:05,310 --> 01:14:08,040
+for a little bit by tilting it
+back, that would be horrified.
+
+1364
+01:14:09,780 --> 01:14:11,520
+Maria Telleria: But it is this
+pressure right to get the
+
+1365
+01:14:11,520 --> 01:14:15,750
+productivity number sense. I
+think it pushes people to, you
+
+1366
+01:14:15,750 --> 01:14:18,450
+know, rush through things. So it
+leads to more injuries versus
+
+1367
+01:14:18,450 --> 01:14:21,090
+again, if your tool makes you
+more productive. There's other
+
+1368
+01:14:21,090 --> 01:14:24,450
+ways for you to hit those
+productivity or get a better
+
+1369
+01:14:24,450 --> 01:14:28,260
+update. Right? Hey, early on,
+were this ahead or this much
+
+1370
+01:14:28,260 --> 01:14:32,010
+behind? Let's, you know, let's
+plan tomorrow. But even right
+
+1371
+01:14:32,010 --> 01:14:34,620
+now, they have a hard time,
+right? Because it's so hard to
+
+1372
+01:14:34,620 --> 01:14:37,680
+track of all the work. So the
+work the boss might just be like
+
+1373
+01:14:37,680 --> 01:14:39,690
+faster, faster, and they're
+actually doing really well.
+
+1374
+01:14:41,940 --> 01:14:44,610
+Audrow Nash: Yes, actually, this
+goes to something you mentioned
+
+1375
+01:14:44,610 --> 01:14:48,240
+earlier. Reporting. Can you tell
+me a bit about how your robot
+
+1376
+01:14:48,240 --> 01:14:51,210
+does reporting on the task at
+hand?
+
+1377
+01:14:52,320 --> 01:14:55,050
+Maria Telleria: Yeah, I think
+because we have that map. And we
+
+1378
+01:14:55,050 --> 01:14:57,810
+can correlate back to the work.
+We can report you know, the
+
+1379
+01:14:57,810 --> 01:15:01,320
+square feet finished. And so
+that already used to win. But
+
+1380
+01:15:01,320 --> 01:15:03,870
+the other part is we changed the
+process. So we apply all the
+
+1381
+01:15:03,870 --> 01:15:07,410
+with the material in one day and
+then sand in another day versus
+
+1382
+01:15:07,410 --> 01:15:10,530
+a manual task right now it's
+multiple steps. So if you're the
+
+1383
+01:15:10,530 --> 01:15:13,500
+supervisor, you have to walk
+around the site, figure out
+
+1384
+01:15:13,500 --> 01:15:16,890
+overdue in step two or three,
+and it's hard to tolerate that.
+
+1385
+01:15:18,180 --> 01:15:20,340
+Audrow Nash: It looks the same,
+basically, exactly.
+
+1386
+01:15:20,550 --> 01:15:22,620
+Maria Telleria: If you're in
+three, are you going to achieve
+
+1387
+01:15:22,980 --> 01:15:25,830
+the final quality? And four,
+because it's dictated by number
+
+1388
+01:15:25,830 --> 01:15:27,870
+of steps, but the reality is
+that they could be charged up,
+
+1389
+01:15:27,870 --> 01:15:30,510
+right? If you're not doing a
+good job in step one, you're I
+
+1390
+01:15:30,510 --> 01:15:33,660
+don't care. You know, if your
+step four, you're not done. So
+
+1391
+01:15:33,660 --> 01:15:37,860
+they have a really hard time
+tracking, what is the progress
+
+1392
+01:15:37,860 --> 01:15:40,470
+on site, right? So they're just
+doing their best to keep up with
+
+1393
+01:15:40,470 --> 01:15:43,290
+the, with all the different
+inputs to check everything out
+
+1394
+01:15:43,290 --> 01:15:46,530
+and then calculate versus a
+robot intrinsically right? You
+
+1395
+01:15:46,530 --> 01:15:49,830
+ask it to report exactly where
+are you in this? Like, I'm 50%
+
+1396
+01:15:49,830 --> 01:15:52,680
+done, or I've done 400 square
+feet? Because here's what I do.
+
+1397
+01:15:52,830 --> 01:15:55,560
+Versus if I ask you to report
+you'd have to look around you.
+
+1398
+01:15:55,620 --> 01:16:00,060
+That was a little bit. This was
+Yeah, I think I'm 30% done. But
+
+1399
+01:16:00,090 --> 01:16:00,810
+you know, I'm not sure.
+
+1400
+01:16:02,730 --> 01:16:04,380
+Audrow Nash: That's funny. Yeah,
+it's nice that you can really
+
+1401
+01:16:04,380 --> 01:16:07,680
+improve that reporting process
+make it so much better. Like
+
+1402
+01:16:07,680 --> 01:16:11,760
+you're like, we are 50% done by
+square footage. And we have done
+
+1403
+01:16:11,760 --> 01:16:15,990
+step one and step two, or
+something. That's really nice.
+
+1404
+01:16:16,860 --> 01:16:18,930
+Maria Telleria: Yeah, we found
+that our customer spent like
+
+1405
+01:16:19,020 --> 01:16:22,620
+four min, which are kind of the
+supervisors spent four hours a
+
+1406
+01:16:22,620 --> 01:16:26,850
+week just walking around trying
+to figure out what that has
+
+1407
+01:16:26,850 --> 01:16:30,060
+been. Yeah, exactly. That's,
+that's a hard process to like,
+
+1408
+01:16:30,300 --> 01:16:32,700
+and then coordinate with
+everybody else around it, versus
+
+1409
+01:16:32,820 --> 01:16:35,250
+I think this is the kind of the
+exciting future of construction,
+
+1410
+01:16:35,250 --> 01:16:37,560
+if you have all of these
+progress reports, right? That
+
+1411
+01:16:37,560 --> 01:16:40,170
+optimization is much easier to
+say like, oh, well, we need more
+
+1412
+01:16:40,170 --> 01:16:42,930
+painters, because they're
+falling behind. Drywall is going
+
+1413
+01:16:42,930 --> 01:16:45,900
+fast enough, like schedule this
+and construction schedules could
+
+1414
+01:16:45,900 --> 01:16:49,260
+start reducing versus right now,
+because of all the variability,
+
+1415
+01:16:49,260 --> 01:16:52,830
+they have to build a lot of
+pillows and nobody wants to get
+
+1416
+01:16:52,830 --> 01:16:55,560
+rid of those pillows. So you
+know, projects take a long time.
+
+1417
+01:16:55,770 --> 01:16:59,970
+Audrow Nash: Yes. Gotcha.
+Interesting. Yeah, it would be
+
+1418
+01:16:59,970 --> 01:17:03,900
+nice to make it more efficient,
+because of those buffers that
+
+1419
+01:17:03,900 --> 01:17:06,690
+are built in, you can remove
+them, because you can have
+
+1420
+01:17:06,690 --> 01:17:09,390
+really accurate reporting where
+the robot goes, I know exactly
+
+1421
+01:17:09,390 --> 01:17:14,430
+how far I am. And exactly when
+I'll be done. That's really
+
+1422
+01:17:14,430 --> 01:17:17,670
+nice. That'd be really cool,
+too. As you guys grow and cover
+
+1423
+01:17:17,670 --> 01:17:21,780
+more and more of the whole
+construction space. You can grab
+
+1424
+01:17:21,780 --> 01:17:24,150
+the all of those adjacent things
+and make them really efficient.
+
+1425
+01:17:24,210 --> 01:17:34,320
+That'll be super cool. Well,
+let's see. So we're coming close
+
+1426
+01:17:34,320 --> 01:17:39,390
+to the end of this, I'd love to
+talk about you and your path for
+
+1427
+01:17:39,390 --> 01:17:44,430
+a little bit. Before we end. So
+can you just like at a high
+
+1428
+01:17:44,430 --> 01:17:47,640
+level kind of say how you got
+involved in robotics, and then
+
+1429
+01:17:47,640 --> 01:17:51,120
+up to your consulting, which
+then led you here? We're not not
+
+1430
+01:17:51,120 --> 01:17:53,430
+necessarily consulting. But you
+What are you doing? Taking
+
+1431
+01:17:53,430 --> 01:17:57,600
+government funding? This kind of
+thing? How'd you get here?
+
+1432
+01:17:58,410 --> 01:18:02,010
+Maria Telleria: Yeah, happy to.
+So I'm actually my co founder,
+
+1433
+01:18:02,010 --> 01:18:06,510
+Kevin Albert, founded Rotary, a
+research company within other
+
+1434
+01:18:06,510 --> 01:18:11,100
+lab, which is really cool lab in
+San Francisco that is, you know,
+
+1435
+01:18:11,400 --> 01:18:13,890
+kind of academic life. But
+imagine if the output is not
+
+1436
+01:18:13,890 --> 01:18:17,070
+papers, but spinning out
+companies, so they get a lot of
+
+1437
+01:18:17,070 --> 01:18:20,190
+money through research, but take
+on these challenges. I look,
+
+1438
+01:18:20,190 --> 01:18:22,620
+they're just not ready for VC
+funding, right? It's just way
+
+1439
+01:18:22,620 --> 01:18:25,950
+too out there. But say, Hey,
+this is where research money is
+
+1440
+01:18:25,950 --> 01:18:28,290
+really great. And once you
+figure out what company you want
+
+1441
+01:18:28,290 --> 01:18:30,960
+to build, research, money's not
+so great that they spin out into
+
+1442
+01:18:30,960 --> 01:18:35,520
+your thing. But we had John and
+I had originally met at MIT. I
+
+1443
+01:18:35,520 --> 01:18:39,600
+was finishing up my PhD, and he
+was at Boston Dynamics. And we,
+
+1444
+01:18:39,630 --> 01:18:42,420
+you know, MIT and Boston
+Dynamics, we're collaborating on
+
+1445
+01:18:42,420 --> 01:18:45,390
+a project for the government,
+research money, we're looking at
+
+1446
+01:18:45,390 --> 01:18:48,900
+making really small robots. So
+it's a little bit of a different
+
+1447
+01:18:48,900 --> 01:18:52,890
+space. But the idea of like, Can
+the design and the control
+
+1448
+01:18:52,950 --> 01:18:56,160
+approach for the robot itself
+allow you to go different
+
+1449
+01:18:56,160 --> 01:18:58,860
+places, right, so these were
+almost thought to be disposable
+
+1450
+01:18:58,860 --> 01:19:02,010
+robots that were really small.
+And so we met there, you know,
+
+1451
+01:19:02,010 --> 01:19:05,070
+kind of connected, it was a cool
+like, project, because it's so
+
+1452
+01:19:05,070 --> 01:19:08,700
+out there. And, you know, for
+us, students getting to work
+
+1453
+01:19:08,700 --> 01:19:11,040
+with Boston Dynamics was also
+really cool, right? These are
+
+1454
+01:19:11,040 --> 01:19:13,950
+awesome. These are big dog he
+was working with on that and the
+
+1455
+01:19:13,950 --> 01:19:16,140
+algorithms for that. So it was
+like, just such a cool
+
+1456
+01:19:16,140 --> 01:19:20,790
+experience. You know, that. I
+graduated, went and worked in
+
+1457
+01:19:20,790 --> 01:19:24,060
+Lincoln Laboratory for a year,
+which is I was still really
+
+1458
+01:19:24,060 --> 01:19:27,390
+excited by new technical
+challenges. It's a national lab,
+
+1459
+01:19:27,390 --> 01:19:30,930
+right? They get to work on
+really cool things, like, design
+
+1460
+01:19:30,960 --> 01:19:35,280
+of telescopes and satellites. I
+thought it was really cool. But
+
+1461
+01:19:35,280 --> 01:19:37,950
+I had a really hard time with
+the timeline to my project,
+
+1462
+01:19:38,130 --> 01:19:40,470
+getting to see the time of day,
+right it was these are like 10
+
+1463
+01:19:40,470 --> 01:19:44,400
+year plus projects, because you
+gotta go through everything to
+
+1464
+01:19:44,400 --> 01:19:47,760
+get to launch so that they
+didn't match as well. But I was
+
+1465
+01:19:47,760 --> 01:19:50,580
+moving to California and you
+know, you start contacting
+
+1466
+01:19:50,580 --> 01:19:53,070
+everybody, probably anybody
+who's moved across the country
+
+1467
+01:19:53,310 --> 01:19:57,390
+who can give me a job. It was
+funny that somebody was like,
+
+1468
+01:19:57,450 --> 01:20:00,000
+Oh, do you know this guy? Kevin.
+He was, he was like, oh yeah, we
+
+1469
+01:20:00,000 --> 01:20:03,390
+work together. It's like, well,
+he's hiring. He just got a grant
+
+1470
+01:20:03,420 --> 01:20:07,500
+from the government to do these
+compliance robots. Why don't you
+
+1471
+01:20:07,500 --> 01:20:10,050
+connect? So it was like kind of
+a fun, like, reconnect and be
+
+1472
+01:20:10,050 --> 01:20:13,350
+like, hey, I want to move out. I
+hear you have money. So the
+
+1473
+01:20:13,350 --> 01:20:16,350
+source kind of the line where
+he's got money to hire me.
+
+1474
+01:20:16,650 --> 01:20:20,430
+Audrow Nash: Wow. That's so
+funny. You're moving out. I hear
+
+1475
+01:20:20,430 --> 01:20:24,810
+you have money. It's so funny.
+Yeah, let's be friends
+
+1476
+01:20:24,810 --> 01:20:27,900
+Maria Telleria: again. It was
+yeah, it was just really cool.
+
+1477
+01:20:27,900 --> 01:20:30,570
+Because, you know, the vision
+was there. You know, what, once
+
+1478
+01:20:30,570 --> 01:20:34,110
+he explained what his vision was
+of like redesigning robots,
+
+1479
+01:20:34,470 --> 01:20:37,980
+right, not just, from a software
+perspective, all the way down to
+
+1480
+01:20:37,980 --> 01:20:41,280
+the hardware, really rethink
+robots, such that you approach
+
+1481
+01:20:41,430 --> 01:20:43,860
+the problem of unstructured
+environments, right. And he had
+
+1482
+01:20:43,860 --> 01:20:46,560
+come from Boston Dynamics who
+did that, but he wanted me to go
+
+1483
+01:20:46,800 --> 01:20:50,280
+a little bit more into a
+solution for industry, right at
+
+1484
+01:20:50,280 --> 01:20:53,820
+that time, Boston Dynamics was
+very research driven still. And
+
+1485
+01:20:53,820 --> 01:20:57,270
+so yeah, it just kind of came
+together in, like I said, we did
+
+1486
+01:20:57,270 --> 01:20:59,970
+for two years of like,
+discovered research. And then
+
+1487
+01:20:59,970 --> 01:21:03,120
+once we cracked it, we said,
+this is it, let's found it. And
+
+1488
+01:21:03,120 --> 01:21:07,710
+let's, let's make our company
+and fundraise. And it was funny.
+
+1489
+01:21:07,710 --> 01:21:09,930
+At the beginning, we thought we
+just leased the robots right
+
+1490
+01:21:09,930 --> 01:21:14,160
+away. Or it does make sense. But
+it was listening to our
+
+1491
+01:21:14,160 --> 01:21:17,550
+customers and everything that we
+were like, Okay, this will be
+
+1492
+01:21:17,550 --> 01:21:21,330
+less friction. If you hired us
+as a service, we can train our
+
+1493
+01:21:21,330 --> 01:21:23,880
+own operators, they can sit next
+to the engineer and complain
+
+1494
+01:21:23,880 --> 01:21:27,780
+about everything that went
+wrong, right. And so that's what
+
+1495
+01:21:27,780 --> 01:21:30,960
+led us to the self contracting
+route, to at least get the
+
+1496
+01:21:30,960 --> 01:21:33,420
+machines out there and really
+make it frictionless for the
+
+1497
+01:21:33,420 --> 01:21:35,940
+customers while the machine was
+getting to, you know, from that
+
+1498
+01:21:35,940 --> 01:21:37,650
+prototype to that product stage.
+
+1499
+01:21:37,680 --> 01:21:41,130
+Audrow Nash: Gotcha. Awesome.
+That's cool to hear your whole
+
+1500
+01:21:41,130 --> 01:21:44,490
+story, how it's kind of come?
+Well, I mean, parts of it. It's
+
+1501
+01:21:44,490 --> 01:21:49,890
+so I don't know, it's cool. I've
+been struck recently by how many
+
+1502
+01:21:49,890 --> 01:21:54,900
+companies start by doing like
+contracting or whatever, for
+
+1503
+01:21:54,900 --> 01:21:58,470
+government related research, or
+they start doing government
+
+1504
+01:21:58,470 --> 01:22:02,550
+research. And then that's like,
+solving a lot of the problems,
+
+1505
+01:22:02,550 --> 01:22:05,760
+kind of as you were mentioning
+earlier, and then once you find,
+
+1506
+01:22:05,850 --> 01:22:09,060
+like, Okay, this problem can be
+solved by robots, then you can
+
+1507
+01:22:09,060 --> 01:22:14,370
+jump out and do a company around
+this. So that was the compliance
+
+1508
+01:22:14,370 --> 01:22:19,050
+where Kevin was doing this was
+did it? Was it this idea of
+
+1509
+01:22:19,050 --> 01:22:24,240
+Canvas and dry wall robot? Or
+was it just general, and then
+
+1510
+01:22:24,240 --> 01:22:25,410
+you found this application?
+
+1511
+01:22:26,790 --> 01:22:28,800
+Maria Telleria: It was more
+general, it was really thinking
+
+1512
+01:22:28,800 --> 01:22:31,500
+about compliance. And we had
+gotten down to the level where
+
+1513
+01:22:31,500 --> 01:22:34,650
+like, everything was, you know,
+air driven. So like, the robot
+
+1514
+01:22:34,650 --> 01:22:38,130
+was super compliant, which was
+great for like, you know, we
+
+1515
+01:22:38,130 --> 01:22:41,010
+were especially underwater, we
+were actually hydraulic driven,
+
+1516
+01:22:41,010 --> 01:22:44,250
+but you were super compliant.
+You could sounds like a really
+
+1517
+01:22:44,280 --> 01:22:48,120
+cool approach, but had a lot of
+technical challenges for us as
+
+1518
+01:22:48,120 --> 01:22:52,200
+we started solving. Exactly.
+Some of them. It was also
+
+1519
+01:22:52,200 --> 01:22:54,120
+looking at each other and be
+like, Okay, we found the
+
+1520
+01:22:54,120 --> 01:22:57,480
+application, what do we really
+need our research, and that's
+
+1521
+01:22:57,480 --> 01:23:00,030
+where it was like, okay, more
+about the compliance at the end,
+
+1522
+01:23:00,030 --> 01:23:02,160
+effector, you know, your whole
+arm doesn't have to be
+
+1523
+01:23:02,160 --> 01:23:05,910
+inflatable, for compliance to be
+there. So we also have to leave
+
+1524
+01:23:05,910 --> 01:23:09,060
+a lot of our research ideas
+behind because they were more
+
+1525
+01:23:09,060 --> 01:23:11,670
+research than they were
+solutions, or
+
+1526
+01:23:13,200 --> 01:23:15,720
+Audrow Nash: what was so what
+were some of the challenges. I
+
+1527
+01:23:15,720 --> 01:23:19,890
+don't know about? I guess I
+don't know too much about your
+
+1528
+01:23:19,890 --> 01:23:23,820
+past with this. But it sounds
+like coming from academia to now
+
+1529
+01:23:23,820 --> 01:23:27,000
+being in the startup, what have
+been some of the challenges for
+
+1530
+01:23:27,000 --> 01:23:27,330
+you?
+
+1531
+01:23:29,610 --> 01:23:32,370
+Maria Telleria: Oh, I think the
+biggest challenge was maybe the
+
+1532
+01:23:32,400 --> 01:23:36,420
+mindset shift, right? I lost a
+lot of academia, but also, they
+
+1533
+01:23:36,420 --> 01:23:40,170
+didn't want to be in academia.
+So Lincoln Lab was kind of these
+
+1534
+01:23:40,170 --> 01:23:43,500
+happy middle steps, right?
+Because you were still Yeah, so
+
+1535
+01:23:43,500 --> 01:23:46,650
+I kind of baby stepped into the
+world outside of academia
+
+1536
+01:23:47,820 --> 01:23:51,270
+Audrow Nash: seems like most
+into the real world that you can
+
+1537
+01:23:51,270 --> 01:23:55,140
+be to me, because it's entirely
+merit driven for this kind of
+
+1538
+01:23:55,140 --> 01:23:58,050
+thing. And can you actually
+provide value? So it's, I don't
+
+1539
+01:23:58,050 --> 01:23:59,910
+know, you're saying baby steps,
+but then it's like to the
+
+1540
+01:23:59,910 --> 01:24:01,350
+bleeding edge kind of thing.
+
+1541
+01:24:02,850 --> 01:24:04,710
+Maria Telleria: Yeah, there were
+big, big show. No, you're right.
+
+1542
+01:24:04,710 --> 01:24:06,660
+I think the first two were baby.
+And then it was like,
+
+1543
+01:24:08,970 --> 01:24:09,750
+Audrow Nash: Yeah, for sure.
+
+1544
+01:24:10,170 --> 01:24:14,610
+Maria Telleria: It was probably
+the excitement was always like,
+
+1545
+01:24:14,850 --> 01:24:18,330
+building something new, or, you
+know, designing something new
+
+1546
+01:24:18,330 --> 01:24:21,030
+and different. You know, there's
+a lot of ingenuity that's
+
+1547
+01:24:21,030 --> 01:24:25,080
+optimizing and getting a better
+cost or precision, but I was a
+
+1548
+01:24:25,080 --> 01:24:28,590
+little more driven by, I want to
+create something new. And so
+
+1549
+01:24:28,590 --> 01:24:32,340
+that was kind of the thread
+between academia. But then also
+
+1550
+01:24:32,340 --> 01:24:35,730
+being like, you had to make sure
+that you were okay, letting go
+
+1551
+01:24:35,730 --> 01:24:40,110
+of those things. Right. And I
+think that was yeah, that was a
+
+1552
+01:24:40,110 --> 01:24:43,140
+real test that we were ready for
+that lunch was like, can you
+
+1553
+01:24:43,140 --> 01:24:46,650
+guys leave behind the things you
+don't really? Right? I think
+
+1554
+01:24:46,650 --> 01:24:49,560
+some people can't. And that's
+hard, where you develop with
+
+1555
+01:24:49,560 --> 01:24:52,050
+research and then you find this
+perfect opportunity. But then
+
+1556
+01:24:52,500 --> 01:24:55,440
+you take that same research
+solution and try to apply it to
+
+1557
+01:24:55,440 --> 01:24:58,950
+the real world and it starts
+breaking on your academia rights
+
+1558
+01:24:58,950 --> 01:25:01,230
+and things like that. Got you
+up. Paper doesn't mean it's
+
+1559
+01:25:01,230 --> 01:25:05,130
+gonna get you anything else.
+Anything else? So I think that
+
+1560
+01:25:05,130 --> 01:25:08,130
+was a good test for us. Like, if
+we were ready for the launch was
+
+1561
+01:25:08,130 --> 01:25:11,220
+like, Ooh, we really need this
+arm that we've been working on
+
+1562
+01:25:11,220 --> 01:25:15,690
+for, you know, Blood Sweat Tears
+around and we were like, No, we
+
+1563
+01:25:15,690 --> 01:25:18,540
+don't, we can move it to this
+and you know, buy an off the
+
+1564
+01:25:18,540 --> 01:25:20,730
+shelf. It was the time to do it.
+
+1565
+01:25:20,790 --> 01:25:22,650
+Audrow Nash: That's so
+interesting. It's so interesting
+
+1566
+01:25:22,650 --> 01:25:26,670
+to hear that it was like a
+process of letting go. Because
+
+1567
+01:25:26,670 --> 01:25:30,210
+you can't carry all this stuff
+with you. And so you have to so
+
+1568
+01:25:30,210 --> 01:25:32,820
+that you can move forward.
+That's so interesting. It's cool
+
+1569
+01:25:32,820 --> 01:25:35,610
+to me how that's like a
+psychological shift was
+
+1570
+01:25:35,610 --> 01:25:39,540
+required. It's kind of thing.
+Yeah. I would have never thought
+
+1571
+01:25:39,540 --> 01:25:44,100
+of that. That makes total sense,
+though. Very interesting. And so
+
+1572
+01:25:45,420 --> 01:25:49,680
+coming from academia, kind of
+getting into this and actually
+
+1573
+01:25:49,680 --> 01:25:53,700
+being, I guess, what is your
+experience been? Like? How have
+
+1574
+01:25:53,700 --> 01:25:58,440
+you been thinking of this whole
+startup time? I don't know. What
+
+1575
+01:25:58,440 --> 01:25:59,550
+are your impressions so far?
+
+1576
+01:26:01,620 --> 01:26:04,950
+Maria Telleria: It's, it's
+awesome. But it's hard to like,
+
+1577
+01:26:04,950 --> 01:26:07,920
+tell people were like, I want to
+join a startup. Which one? Like,
+
+1578
+01:26:07,920 --> 01:26:12,540
+I don't know, a startup on? What
+are we doing? Just? Yeah, I just
+
+1579
+01:26:12,540 --> 01:26:17,040
+started just for the road. I
+think for me, it was more like,
+
+1580
+01:26:17,070 --> 01:26:20,430
+I want to do this, the way to do
+it is to do a startup, right? It
+
+1581
+01:26:20,430 --> 01:26:23,520
+was more like the venue to do
+it. And so then it was really
+
+1582
+01:26:23,520 --> 01:26:26,310
+cool. I want to be in a company
+that solving this problem,
+
+1583
+01:26:26,310 --> 01:26:28,650
+everything okay, then you have
+to build it right. As opposed
+
+1584
+01:26:28,650 --> 01:26:31,860
+to, I just want to go through
+the because it does have its
+
+1585
+01:26:31,860 --> 01:26:35,220
+hard parts, right. I think it's
+it's also interesting,
+
+1586
+01:26:35,310 --> 01:26:38,040
+especially coming from very
+technical background, both of us
+
+1587
+01:26:38,040 --> 01:26:41,220
+like, at one point, you really
+say most of our problems are not
+
+1588
+01:26:41,220 --> 01:26:45,810
+technical. We get jealous when
+the other one gets to do a
+
+1589
+01:26:45,810 --> 01:26:50,190
+little bit of technical work.
+Like, how do you hire people,
+
+1590
+01:26:50,190 --> 01:26:53,610
+right? People have concerns that
+you have to address, how do you
+
+1591
+01:26:53,610 --> 01:26:57,000
+build a company that has good
+values? And as things get tough,
+
+1592
+01:26:57,240 --> 01:27:00,900
+you stand by those values,
+right? And so those kind of
+
+1593
+01:27:00,930 --> 01:27:03,270
+challenges, like you're not
+thinking when you first pick it
+
+1594
+01:27:03,270 --> 01:27:05,700
+right? You're like, how are we
+going to solve it technically.
+
+1595
+01:27:05,700 --> 01:27:08,610
+But as you've kind of grow,
+those become some of the work
+
+1596
+01:27:08,610 --> 01:27:11,610
+that you really have to do. And
+I think there it has to be that
+
+1597
+01:27:11,610 --> 01:27:13,920
+you have to be excited about
+building company, because
+
+1598
+01:27:13,920 --> 01:27:17,880
+otherwise, it'll just feel like
+wearing down like I just want to
+
+1599
+01:27:17,880 --> 01:27:20,370
+do and at that point, you might
+say like, Hey, let's bring in
+
+1600
+01:27:20,370 --> 01:27:23,220
+somebody to do the company
+management. And I'll just do the
+
+1601
+01:27:23,220 --> 01:27:27,060
+technical work. But we both kind
+of really liked also the idea of
+
+1602
+01:27:27,060 --> 01:27:30,450
+like forming a company that are
+excited to go into everyday. So
+
+1603
+01:27:30,570 --> 01:27:33,180
+that's why we got neck state in
+those positions. Yeah,
+
+1604
+01:27:33,420 --> 01:27:36,840
+Audrow Nash: I really like this
+how it seems. So I mean, to me,
+
+1605
+01:27:36,840 --> 01:27:39,960
+it seems like often the best
+robotics companies are ones that
+
+1606
+01:27:39,960 --> 01:27:42,960
+didn't decide to use robotics,
+because like they weren't like
+
+1607
+01:27:42,960 --> 01:27:45,540
+at the beginning, I'm going to
+use robotics, they were like,
+
+1608
+01:27:45,570 --> 01:27:49,170
+oh, robotics happens to be the
+best way to solve this problem.
+
+1609
+01:27:49,440 --> 01:27:52,260
+And for you with this company,
+it seems like an analogous thing
+
+1610
+01:27:52,260 --> 01:27:55,470
+where it's, I don't really want
+to do a startup. But it seems
+
+1611
+01:27:55,470 --> 01:27:58,920
+like the best way to make this
+change that I would like to
+
+1612
+01:27:58,920 --> 01:28:01,950
+make. I think that's really
+cool. It's not and then it
+
+1613
+01:28:01,950 --> 01:28:06,060
+sounds like also, as opposed to
+the viewpoint of I just want to
+
+1614
+01:28:06,060 --> 01:28:12,060
+be in a startup. It's it's a
+very pragmatic choice. And you
+
+1615
+01:28:12,060 --> 01:28:16,530
+are sustained by like, a larger
+mission, which is to make this
+
+1616
+01:28:16,530 --> 01:28:19,920
+change to kind of help this area
+as opposed to I just want to be
+
+1617
+01:28:19,920 --> 01:28:22,590
+in a startup for that startup
+sake, it doesn't, I have no
+
+1618
+01:28:22,590 --> 01:28:24,690
+greater mission for it, I
+probably just want to be rich
+
+1619
+01:28:24,690 --> 01:28:28,980
+one day, or whatever it is that
+I think of startups for this
+
+1620
+01:28:28,980 --> 01:28:29,250
+kind of
+
+1621
+01:28:29,610 --> 01:28:31,140
+Maria Telleria: thing. Some
+people have this idea of like
+
+1622
+01:28:31,140 --> 01:28:33,990
+the payout is going to be great,
+or I'll get great experience.
+
+1623
+01:28:33,990 --> 01:28:36,780
+And that is a really good
+target. Because you get the
+
+1624
+01:28:38,640 --> 01:28:42,090
+Yeah, for me, it's definitely
+more like, okay, I get to build
+
+1625
+01:28:42,090 --> 01:28:45,570
+this I get to put into center,
+right. It's like if something is
+
+1626
+01:28:45,570 --> 01:28:49,500
+not the way I want it to be like
+it's up to me go change it,
+
+1627
+01:28:49,500 --> 01:28:52,320
+right. Make the company that you
+want. So I think that gets me
+
+1628
+01:28:52,320 --> 01:28:55,140
+through the days that are not
+Assisi, Korea, and also through
+
+1629
+01:28:55,140 --> 01:28:58,800
+the high skips you grounded,
+right? Yes. This is like, oh,
+
+1630
+01:28:59,490 --> 01:29:03,210
+oh, so much responsibility. To
+do it, right.
+
+1631
+01:29:03,420 --> 01:29:07,050
+Audrow Nash: Oh, for sure. Have
+you? So in your experience
+
+1632
+01:29:07,050 --> 01:29:11,340
+consulting or in academia? Did
+you ever lead teams? For this?
+
+1633
+01:29:11,340 --> 01:29:13,830
+Like, did you ever lead large
+groups of people? Because it
+
+1634
+01:29:13,860 --> 01:29:17,190
+sounds like you're very involved
+in this now. And how has that
+
+1635
+01:29:17,190 --> 01:29:17,850
+been for you?
+
+1636
+01:29:19,770 --> 01:29:22,170
+Maria Telleria: I learned a
+little bit even from in grad
+
+1637
+01:29:22,170 --> 01:29:24,840
+school, I always enjoyed kind of
+the mentoring side. So
+
+1638
+01:29:25,290 --> 01:29:29,280
+undergraduates, you know, one or
+two, yeah, one or two people.
+
+1639
+01:29:29,280 --> 01:29:32,670
+And it's a little different,
+right? Because it's it's smaller
+
+1640
+01:29:32,670 --> 01:29:35,580
+scale, you can spend the time so
+I knew I had enjoyed that I'd
+
+1641
+01:29:35,580 --> 01:29:38,640
+done like, the, you know, class
+projects and been kind of the
+
+1642
+01:29:38,640 --> 01:29:42,180
+lead. So I was happy to go that
+route, right. Like, I was like,
+
+1643
+01:29:42,180 --> 01:29:44,790
+I want to make this versus other
+people very quickly. Like, I'm
+
+1644
+01:29:44,790 --> 01:29:48,270
+an IC. I'm great at it. Right?
+But that's, that's what I want
+
+1645
+01:29:48,270 --> 01:29:50,910
+to do. And you know, if you come
+in with that self awareness,
+
+1646
+01:29:50,910 --> 01:29:53,250
+it's always a lot easier as a
+founding team, right? If
+
+1647
+01:29:53,250 --> 01:29:57,150
+everybody knows, but once I
+started another lab with Kevin
+
+1648
+01:29:57,150 --> 01:30:00,300
+Right, it was like, thinking
+myself and another person To
+
+1649
+01:30:00,300 --> 01:30:02,310
+start, and then we started
+growing, we needed more
+
+1650
+01:30:02,310 --> 01:30:06,150
+engineers. And you know, he was
+CEO. So he was running kind of
+
+1651
+01:30:06,150 --> 01:30:08,910
+the sport. And I just kind of
+said to him like, Hey, you cool
+
+1652
+01:30:08,910 --> 01:30:11,670
+if I start managing this group,
+right? It's, you're starting to
+
+1653
+01:30:11,670 --> 01:30:17,760
+get a little bit late and things
+like that. Yep. Of course, yeah.
+
+1654
+01:30:18,360 --> 01:30:21,150
+This gradual, and I got to grow
+with it, right? Because at first
+
+1655
+01:30:21,150 --> 01:30:23,910
+it was like, three, report, and
+then five, and then 20. And then
+
+1656
+01:30:23,910 --> 01:30:26,700
+you're just like, Oh, so you're
+just like, okay, it all cut out?
+
+1657
+01:30:26,760 --> 01:30:29,610
+I love me the time to grow with
+it. I imagine some other
+
+1658
+01:30:29,610 --> 01:30:33,330
+companies have these humongous
+steps. And Oh, totally, you just
+
+1659
+01:30:33,450 --> 01:30:36,930
+roll with it? Yeah, so far, it's
+allowed me to grow it. And then
+
+1660
+01:30:36,960 --> 01:30:39,750
+the other piece of thing, like,
+what areas are you weak on, get
+
+1661
+01:30:39,750 --> 01:30:43,020
+somebody, you know, just be very
+self aware throughout the whole
+
+1662
+01:30:43,020 --> 01:30:45,270
+journey, because otherwise,
+you'll just kind of bounce, you
+
+1663
+01:30:45,270 --> 01:30:47,670
+know, hit your head against the
+wall and be frustrated when
+
+1664
+01:30:47,670 --> 01:30:52,350
+you're just gonna enjoy this.
+Or, and or, I'm not that good at
+
+1665
+01:30:52,350 --> 01:30:56,670
+this, either get training, get a
+coach, but also probably get
+
+1666
+01:30:56,670 --> 01:30:58,530
+somebody within the company to
+help you with that.
+
+1667
+01:30:59,910 --> 01:31:03,150
+Audrow Nash: For sure, yeah, I
+think being really realistic.
+
+1668
+01:31:03,210 --> 01:31:06,030
+And being like, I'm good at
+this, I'm not good at this, and
+
+1669
+01:31:06,090 --> 01:31:09,060
+US addressing whatever it is,
+like I'm good at this, I'm gonna
+
+1670
+01:31:09,060 --> 01:31:12,120
+do more of that. I'm not good at
+this, I'm gonna hire that out.
+
+1671
+01:31:12,510 --> 01:31:15,180
+These kinds of things that I
+don't know, a very deep
+
+1672
+01:31:15,180 --> 01:31:17,730
+connection to reality seems like
+a really important thing to
+
+1673
+01:31:17,760 --> 01:31:19,770
+startups success, in my opinion.
+
+1674
+01:31:20,760 --> 01:31:21,570
+Maria Telleria: 100%
+
+1675
+01:31:22,979 --> 01:31:28,139
+Audrow Nash: What would you so
+advice for like, a 20 year old
+
+1676
+01:31:28,139 --> 01:31:31,619
+you? Or something like this?
+Like? What, uh, what advice
+
+1677
+01:31:31,619 --> 01:31:34,949
+would you give to someone who's
+like 20? Now, just starting
+
+1678
+01:31:34,949 --> 01:31:37,109
+school, or in the middle of
+school?
+
+1679
+01:31:37,679 --> 01:31:40,829
+Maria Telleria: Yeah. From the
+technical side, I would say
+
+1680
+01:31:40,829 --> 01:31:45,839
+like, explore outside of your
+domain, right? Your politics in
+
+1681
+01:31:45,839 --> 01:31:48,689
+particular requires that cross
+domain. But I think in general,
+
+1682
+01:31:48,689 --> 01:31:52,889
+we're just seeing more and more
+like jobs blending, right? I
+
+1683
+01:31:52,889 --> 01:31:55,799
+don't think there's as there are
+very few people who do one only
+
+1684
+01:31:55,799 --> 01:31:59,759
+one thing, right. And so I would
+say explore, really, even if
+
+1685
+01:31:59,759 --> 01:32:02,579
+you're a mechanical engineer,
+take some software classes, or
+
+1686
+01:32:02,579 --> 01:32:05,549
+even sit in on those, like, get
+yourself in there, do some
+
+1687
+01:32:05,549 --> 01:32:09,209
+projects that maybe expose you
+to that. And then that'd be the
+
+1688
+01:32:09,209 --> 01:32:12,809
+other side of like, I was lucky.
+And it just interested in
+
+1689
+01:32:12,809 --> 01:32:15,449
+business, right, taking some
+business classes at MIT and
+
+1690
+01:32:15,479 --> 01:32:18,209
+participate in some of the
+Entrepreneurship Center work.
+
+1691
+01:32:18,689 --> 01:32:21,119
+But that exposed me to it. So I
+think for people who are
+
+1692
+01:32:21,119 --> 01:32:23,729
+thinking like, maybe I want to
+do a startup, there's a lot of
+
+1693
+01:32:23,729 --> 01:32:26,759
+opportunities to dip your toes
+while in college and doing like,
+
+1694
+01:32:26,819 --> 01:32:29,039
+you know, learning about
+business plans and stuff like
+
+1695
+01:32:29,039 --> 01:32:32,759
+that. And just kind of see back
+to that really sick. Like, maybe
+
+1696
+01:32:32,759 --> 01:32:34,649
+that's not for you, you know,
+you might be really happy in a
+
+1697
+01:32:34,649 --> 01:32:38,039
+big company, or something or you
+know, a big national lab doing
+
+1698
+01:32:38,039 --> 01:32:41,789
+just research or academia, but
+kind of go out there and test it
+
+1699
+01:32:41,789 --> 01:32:43,829
+out, rather than I think
+sometimes you don't you didn't
+
+1700
+01:32:43,829 --> 01:32:45,689
+like to hear the latest thing,
+and that's what you're going to
+
+1701
+01:32:45,689 --> 01:32:50,039
+do. I'm not going to be a
+founder, I don't know what that
+
+1702
+01:32:50,039 --> 01:32:55,469
+means. A lot about experience
+using that time in school, it is
+
+1703
+01:32:55,469 --> 01:32:57,959
+about getting the grade, but
+it's also about like, what
+
+1704
+01:32:57,959 --> 01:33:00,749
+awesome opportunity for your
+students experience, like the
+
+1705
+01:33:00,899 --> 01:33:03,419
+lectures that you get to go to
+right that you're just never
+
+1706
+01:33:03,419 --> 01:33:06,719
+gonna have the time to do that
+kind of exploration, like do it
+
+1707
+01:33:06,719 --> 01:33:10,049
+then and it's true. Get to know
+really who you are back to that
+
+1708
+01:33:10,049 --> 01:33:13,229
+self awareness, the more you
+discovered, then the less 30
+
+1709
+01:33:13,229 --> 01:33:17,039
+It's a lot harder to be picky.
+You're self aware, for sure.
+
+1710
+01:33:17,040 --> 01:33:20,820
+Audrow Nash: With all the life
+things that come up. Yeah, for
+
+1711
+01:33:20,820 --> 01:33:26,430
+sure. Okay, awesome. Where do
+you so if you look out like two
+
+1712
+01:33:26,430 --> 01:33:29,400
+and five years, where do you
+think robotics is gonna go?
+
+1713
+01:33:31,410 --> 01:33:33,900
+Maria Telleria: Definitely think
+that there's gonna be a huge
+
+1714
+01:33:33,900 --> 01:33:38,940
+growth in other markets, if you
+will, or other areas, right? I
+
+1715
+01:33:38,940 --> 01:33:42,840
+think logistics and
+manufacturing, logistics and
+
+1716
+01:33:42,840 --> 01:33:47,550
+manufacturing will continue to
+kind of increase. But to some
+
+1717
+01:33:47,550 --> 01:33:50,160
+point, we're getting to like the
+optimization problem, rather
+
+1718
+01:33:50,160 --> 01:33:53,040
+than the adoption problem. And I
+just think areas like
+
+1719
+01:33:53,040 --> 01:33:57,180
+construction, but there's so
+many other ones are really need
+
+1720
+01:33:57,480 --> 01:33:59,910
+that kind of productivity game,
+we always look at that plot, if
+
+1721
+01:33:59,910 --> 01:34:02,010
+you plot like manufacturing,
+productivity versus
+
+1722
+01:34:02,010 --> 01:34:05,250
+construction, manufacturing,
+like 300% infrastructure and
+
+1723
+01:34:05,250 --> 01:34:08,370
+decrease so we've actually
+gotten less productive over
+
+1724
+01:34:08,370 --> 01:34:08,700
+time.
+
+1725
+01:34:08,760 --> 01:34:10,560
+Audrow Nash: And it's regulation
+that just isn't it.
+
+1726
+01:34:11,550 --> 01:34:15,840
+Maria Telleria: I think it's
+Yeah, regulation. Just exactly
+
+1727
+01:34:15,990 --> 01:34:19,110
+like your regulation, and then
+don't give people new tools. So
+
+1728
+01:34:19,110 --> 01:34:21,900
+you say I'm gonna make it a
+little harder, you know, reboot,
+
+1729
+01:34:21,900 --> 01:34:24,210
+people use these stills, for
+example, to finish the line.
+
+1730
+01:34:24,660 --> 01:34:27,810
+That's not very safe. I'm gonna
+remove that. But you still have
+
+1731
+01:34:27,810 --> 01:34:30,990
+the same tools. What's gonna
+happen, right, or even the
+
+1732
+01:34:30,990 --> 01:34:33,660
+designs got more interesting
+people, architects got real
+
+1733
+01:34:33,660 --> 01:34:37,590
+designs, but you still have the
+same tool from 50 years ago.
+
+1734
+01:34:37,830 --> 01:34:40,680
+Something has to give in product
+and base what's given and so for
+
+1735
+01:34:40,680 --> 01:34:43,950
+me, I really see robotics,
+especially with the sensing
+
+1736
+01:34:43,950 --> 01:34:48,180
+technology that we've gotten in
+the computational power, but
+
+1737
+01:34:48,180 --> 01:34:50,400
+also the approach of people
+started approaching them
+
+1738
+01:34:50,400 --> 01:34:52,560
+differently, right, more than
+the Cobots more the
+
+1739
+01:34:52,560 --> 01:34:56,190
+augmentation, you start opening
+up the idea of like, okay, maybe
+
+1740
+01:34:56,190 --> 01:35:01,140
+a robot is not a fixed equipment
+but a tool I just see that
+
+1741
+01:35:01,230 --> 01:35:04,980
+really exploding. And people
+really being able to protect
+
+1742
+01:35:04,980 --> 01:35:08,340
+their bodies more by having
+access to these tools that all
+
+1743
+01:35:08,340 --> 01:35:10,890
+of these kind of things are
+coming together at this time. So
+
+1744
+01:35:10,890 --> 01:35:13,440
+I don't think it'll be just
+construction construction will
+
+1745
+01:35:13,440 --> 01:35:16,320
+be one of the big ones, but some
+of the other spaces will also
+
+1746
+01:35:16,320 --> 01:35:17,280
+get really interesting.
+
+1747
+01:35:17,759 --> 01:35:21,629
+Audrow Nash: Awesome. Do you
+have any links or contact info
+
+1748
+01:35:21,629 --> 01:35:23,519
+you'd like to share with our
+listeners and watchers?
+
+1749
+01:35:24,750 --> 01:35:27,000
+Maria Telleria: Yeah, we always
+encourage people to go to our
+
+1750
+01:35:27,000 --> 01:35:31,530
+website at Campus dot build in
+Yeah, you can reach out to over
+
+1751
+01:35:31,530 --> 01:35:34,980
+you know, LinkedIn or over
+email. It's just Maria Canvas
+
+1752
+01:35:34,980 --> 01:35:38,490
+dot build. But we're always
+excited. We also have an
+
+1753
+01:35:38,490 --> 01:35:42,390
+Instagram that got to post a lot
+of pictures on site. And I like
+
+1754
+01:35:42,390 --> 01:35:45,780
+because you get to see the
+reality right of like, what it's
+
+1755
+01:35:45,780 --> 01:35:47,880
+like, you can see those nice
+pictures where everything's
+
+1756
+01:35:47,880 --> 01:35:50,370
+clean and the robots there. It's
+beautiful. And then you see the
+
+1757
+01:35:50,370 --> 01:35:52,740
+ones where there's buckets
+everywhere that you go around,
+
+1758
+01:35:52,740 --> 01:35:54,870
+and you're just like, oh, that's
+why it's hard to be in an
+
+1759
+01:35:54,870 --> 01:35:56,190
+unstructured environment. Yeah,
+
+1760
+01:35:56,190 --> 01:35:59,760
+Audrow Nash: for sure. Oh,
+that's so funny. All right. Hell
+
+1761
+01:35:59,760 --> 01:36:02,160
+yeah. Well, this was a blast.
+Thank you, Maria.
+
+1762
+01:36:03,210 --> 01:36:05,220
+Maria Telleria: Thank you so
+much. It was fun to get to talk
+
+1763
+01:36:05,220 --> 01:36:07,260
+to you. Awesome. Bye, everyone.
+
+1764
+01:36:13,979 --> 01:36:16,199
+Audrow Nash: I hope you enjoyed
+my conversation with Maria
+
+1765
+01:36:16,199 --> 01:36:20,309
+Delaria. Thank you again to our
+founding sponsor, open robotics.
+
+1766
+01:36:20,459 --> 01:36:21,359
+See you next time.
+
