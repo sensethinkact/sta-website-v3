@@ -1,0 +1,39 @@
+guests: Maria Telleria
+title: Construction Robots and Working with Unions
+description: |
+  In this episode, Audrow Nash speaks to Maria Telleria, who is a co-founder and the CTO of Canvas.
+  Canvas makes a drywall finishing robot and is based in the Bay Area.
+  In this interview, Maria talks about Canvas's drywall finishing robot, how Canvas works with unions, Canvas's business model, and about her career path.
+excerpt: Maria Telleria is a co-founder and the CTO of Canvas Robotics.
+duration:
+  hours: 1
+  minutes: 36
+  seconds: 25
+tags:
+  - startup
+  - hardware
+  - construction
+  - drywall
+  - unions
+links:
+  - name: Canvas's website
+    url: https://www.canvas.build/
+  - name: Maria's LinkedIn
+    url: https://www.linkedin.com/in/mariatelleria/
+mp3SizeBytes: 187793629
+publishDate: 2022-06-16
+youtube:
+  mainContentId: -ywF78S6KDQ
+  clips:
+    - title: Picking a Next Task to Solve
+      videoId: kn17pYzT704
+    - title: Getting People to Embrace Robots in the Workspace
+      videoId: AFYTxNbYA3o
+    - title: Low Volume Manufacturing
+      videoId: Rp51_DzyUYQ
+    - title: Picking Investors for Hardware Startups
+      videoId: q0V1D4H47Tc
+    - title: New Designs with Robotics
+      videoId: RHpSu8ZLhCU
+    - title: Leveraging Human and Robot Strengths
+      videoId: YMUnXL5IUwE
