@@ -1,0 +1,7661 @@
+1
+00:00:02,970 --> 00:00:05,490
+Audrow Nash: This is a
+conversation with Dan Mantz, who
+
+2
+00:00:05,490 --> 00:00:08,670
+is the CEO of The Robotics
+Education at Competition
+
+3
+00:00:08,670 --> 00:00:11,940
+Foundation, also known as the
+REC Foundation, which is a
+
+4
+00:00:11,940 --> 00:00:15,270
+nonprofit that works with VEX
+robotics to build interest in
+
+5
+00:00:15,270 --> 00:00:18,000
+STEM related career
+opportunities. In this
+
+6
+00:00:18,000 --> 00:00:22,440
+interview, Dan reveals that he
+sees a problem. We have a large
+
+7
+00:00:22,440 --> 00:00:25,260
+labor shortage for technical
+positions. This includes
+
+8
+00:00:25,260 --> 00:00:27,840
+engineers, but also more
+vocational roles like
+
+9
+00:00:27,840 --> 00:00:31,860
+technicians, and this shortage
+might get worse. So Dan and the
+
+10
+00:00:31,860 --> 00:00:36,360
+REC Foundation are working to
+expose students to stem through
+
+11
+00:00:36,360 --> 00:00:40,290
+robotics competitions. These
+competitions balance difficulty,
+
+12
+00:00:40,320 --> 00:00:43,470
+how much they appeal to
+students, how easy they are to
+
+13
+00:00:43,470 --> 00:00:47,700
+facilitate for the schools, and
+the cost of the equipment so
+
+14
+00:00:47,700 --> 00:00:51,000
+that they can be as widely
+available as possible. It was
+
+15
+00:00:51,000 --> 00:00:54,450
+great talking to Dan and I
+learned how he and his team are
+
+16
+00:00:54,450 --> 00:00:57,570
+trying to pragmatically solve
+the labor shortage through
+
+17
+00:00:57,570 --> 00:01:02,130
+education. And I think their
+mission is important. Also, it
+
+18
+00:01:02,130 --> 00:01:05,250
+was surprising to me to learn
+how their program really helped
+
+19
+00:01:05,250 --> 00:01:08,760
+students to learn soft skills,
+such as working on a team and
+
+20
+00:01:08,760 --> 00:01:12,180
+problem solving, almost as a
+byproduct of the students
+
+21
+00:01:12,180 --> 00:01:16,260
+participating. Yet Dan says
+that those soft skills are one
+
+22
+00:01:16,260 --> 00:01:19,080
+of the most valuable things for
+students to learn in their
+
+23
+00:01:19,080 --> 00:01:21,720
+careers, whether they stay in
+robotics or do something
+
+24
+00:01:21,720 --> 00:01:25,650
+different. I'm Audrow Nash.
+This is the Sense Think Act
+
+25
+00:01:25,650 --> 00:01:29,100
+Podcast. Thank you to our
+founding sponsor, Open Robotics.
+
+26
+00:01:29,130 --> 00:01:34,260
+And now here's my conversation
+with Dan Mantz. Will you
+
+27
+00:01:34,260 --> 00:01:35,100
+introduce yourself?
+
+28
+00:01:36,660 --> 00:01:39,720
+Dan Mantz: Hi, first, thanks for
+having me on today. But my name
+
+29
+00:01:39,720 --> 00:01:43,500
+is Dan Mantz. I am the CEO of
+The Robotics Education and
+
+30
+00:01:43,500 --> 00:01:47,730
+Competition Foundation. You'll
+hear me say REC Foundation,
+
+31
+00:01:47,940 --> 00:01:51,810
+throughout the course of the
+discussion. And we're based here
+
+32
+00:01:51,810 --> 00:01:56,550
+in Greenville, Texas, about 45
+miles east of Dallas. So you'll
+
+33
+00:01:56,550 --> 00:01:59,730
+hear me just say we're in the
+Dallas area. And we're one of
+
+34
+00:01:59,730 --> 00:02:04,170
+the largest not for profits for
+STEM education, with a
+
+35
+00:02:04,290 --> 00:02:08,970
+specialist on robotics and
+drones and workforce
+
+36
+00:02:08,970 --> 00:02:09,510
+development.
+
+37
+00:02:10,830 --> 00:02:12,750
+Audrow Nash: Can you give me an
+idea of some of your
+
+38
+00:02:12,750 --> 00:02:14,610
+competitions that you guys host?
+
+39
+00:02:14,640 --> 00:02:17,730
+Dan Mantz: Absolutely. So our
+largest competition, what we're
+
+40
+00:02:17,730 --> 00:02:21,480
+most known for is the VEX
+Robotics Competition. And that
+
+41
+00:02:21,480 --> 00:02:25,680
+was launched over 15 years ago
+now or 15 years into the VEX
+
+42
+00:02:25,680 --> 00:02:30,480
+Robotics continuum. It started
+basically as a high school
+
+43
+00:02:30,480 --> 00:02:34,560
+middle school program, but it's
+evolved into so much more. So we
+
+44
+00:02:34,560 --> 00:02:37,650
+call the high school program
+with the metal parts and the
+
+45
+00:02:37,650 --> 00:02:42,750
+larger motors that's VRC. We
+also have a very, very popular
+
+46
+00:02:42,930 --> 00:02:48,660
+Middle School and mid elementary
+program called VEX IQ. That's
+
+47
+00:02:48,660 --> 00:02:52,530
+our fastest growing program.
+It's even larger now than our
+
+48
+00:02:52,560 --> 00:02:56,280
+VEX Robotics Competition, our
+VRC program, interesting for
+
+49
+00:02:56,430 --> 00:03:01,050
+early elementary, we have FX go,
+which is a fantastic, really
+
+50
+00:03:01,080 --> 00:03:04,860
+great program that we developed
+and released during the
+
+51
+00:03:04,860 --> 00:03:08,730
+pandemic, for students to really
+start learning how to build
+
+52
+00:03:08,730 --> 00:03:14,610
+things in programming. There's
+Vex 123 4k through two. And then
+
+53
+00:03:14,610 --> 00:03:17,640
+unlike so many other robotics
+competitions out there, we
+
+54
+00:03:17,640 --> 00:03:22,230
+actually have a university
+program called FX u. And that
+
+55
+00:03:22,440 --> 00:03:26,520
+draws students from across the
+across the world of both two
+
+56
+00:03:26,520 --> 00:03:30,750
+year and four year colleges.
+Also, another competition we
+
+57
+00:03:30,750 --> 00:03:33,990
+launched last year is Vex AI for
+artificial intelligence
+
+58
+00:03:33,990 --> 00:03:38,280
+competition, and that's where
+the robots use cameras and GPS
+
+59
+00:03:38,280 --> 00:03:43,110
+sensors, and they do everything
+without manual driving. Outside
+
+60
+00:03:43,110 --> 00:03:46,020
+of our VEX robotics
+competitions, we run the
+
+61
+00:03:46,020 --> 00:03:51,750
+robotics competitions for
+SkillsUSA. And for TSA. We also
+
+62
+00:03:52,410 --> 00:03:56,430
+run Bell VRC, which stands for
+vertical robotics competition.
+
+63
+00:03:56,700 --> 00:04:01,080
+So Bell Helicopter, based here
+in Texas, we run their
+
+64
+00:04:01,080 --> 00:04:06,210
+competitions, we have some rad
+competitions. We call it rad C,
+
+65
+00:04:06,240 --> 00:04:10,440
+which stands for REC Foundation,
+aerial drones competition. And
+
+66
+00:04:10,440 --> 00:04:13,890
+then one of my favorite programs
+that we run is our factory
+
+67
+00:04:13,890 --> 00:04:17,430
+automation competition. And
+that's for students, build
+
+68
+00:04:17,430 --> 00:04:21,510
+conveyors and robots that
+simulates a distribution center.
+
+69
+00:04:21,750 --> 00:04:25,170
+So we do the full spectrum of
+mobile robotics. That's the Vex
+
+70
+00:04:25,170 --> 00:04:30,450
+platform, aerial, which is the
+Bell Helicopter, and then our
+
+71
+00:04:30,450 --> 00:04:33,600
+drones as well as workforce
+development with our factory
+
+72
+00:04:33,600 --> 00:04:35,220
+automation competition.
+
+73
+00:04:35,250 --> 00:04:39,720
+Audrow Nash: That's quite a lot.
+How so how large are you guys?
+
+74
+00:04:40,620 --> 00:04:42,240
+Dan Mantz: Yeah, it's
+interesting, somewhat, a lot of
+
+75
+00:04:42,240 --> 00:04:45,060
+people haven't heard the REC
+foundation or they just think
+
+76
+00:04:45,060 --> 00:04:51,090
+VEX robotics, but we're actually
+in 80 countries. We're in all 50
+
+77
+00:04:51,090 --> 00:04:56,640
+states. Pre pandemic, we had
+30,000 teams just in our FX
+
+78
+00:04:56,640 --> 00:05:01,650
+program since often and between
+our on in education and our
+
+79
+00:05:01,650 --> 00:05:06,660
+coding programs, we reach over a
+million students. And you know,
+
+80
+00:05:06,660 --> 00:05:09,930
+the pandemic didn't really slow
+us down. It caused us to look at
+
+81
+00:05:09,930 --> 00:05:13,140
+things a little bit differently.
+But we put a lot more emphasis
+
+82
+00:05:13,170 --> 00:05:17,310
+on virtual and remote. But we do
+believe building robots and
+
+83
+00:05:17,310 --> 00:05:21,690
+building drones is a key to what
+we do. So we actually still
+
+84
+00:05:21,690 --> 00:05:25,290
+continued to the pandemic, we
+had real competitions, but we
+
+85
+00:05:25,290 --> 00:05:29,070
+developed a technology called
+live remote competition, live
+
+86
+00:05:29,070 --> 00:05:32,820
+remote tournament, and students
+still built their robots. And we
+
+87
+00:05:32,820 --> 00:05:36,450
+connected students from
+different places across the
+
+88
+00:05:36,450 --> 00:05:39,210
+world. And they still competed.
+Of course, we had to modify the
+
+89
+00:05:39,210 --> 00:05:43,380
+game. But we persevered through
+the pandemic, and we continue to
+
+90
+00:05:43,380 --> 00:05:47,430
+grow. So I have a staff of 50 in
+the United States, full time
+
+91
+00:05:47,430 --> 00:05:51,180
+employees, we have another 30
+part time employees that help us
+
+92
+00:05:51,180 --> 00:05:54,810
+run competitions. And then
+internationally, we have a team
+
+93
+00:05:54,810 --> 00:05:59,160
+of six regional support managers
+based in different countries
+
+94
+00:05:59,160 --> 00:06:01,530
+that support our international
+competitions.
+
+95
+00:06:02,099 --> 00:06:06,299
+Audrow Nash: How do you? How do
+you get funding? So like it's a
+
+96
+00:06:06,299 --> 00:06:07,229
+lot of people to?
+
+97
+00:06:07,980 --> 00:06:13,200
+Dan Mantz: Yes, it is. We're an
+interesting model. It's a it's a
+
+98
+00:06:13,200 --> 00:06:15,630
+kind of like a what I call a
+museum model, right. So we have
+
+99
+00:06:15,630 --> 00:06:20,010
+multiple revenue sources, which
+is really good for us. So our
+
+100
+00:06:20,010 --> 00:06:24,780
+largest revenue is actually from
+our registration fees. So VEX
+
+101
+00:06:24,780 --> 00:06:29,010
+robotics team will pay $150 for
+the first team. And then if they
+
+102
+00:06:29,010 --> 00:06:32,340
+have multiple teams in the
+organization, it's $100. All so
+
+103
+00:06:32,340 --> 00:06:36,630
+if you're talking 30,000 teams,
+you can do the math, we also get
+
+104
+00:06:36,660 --> 00:06:41,490
+a lot of corporate sponsorship.
+Now, Northrop Grumman Foundation
+
+105
+00:06:41,520 --> 00:06:45,960
+is our presenting sponsor, but
+so many of the names that you
+
+106
+00:06:45,960 --> 00:06:51,210
+know, are big supporters of our
+program, Google, Dell, Texas
+
+107
+00:06:51,210 --> 00:06:55,530
+Instruments, NAFSA, Tesla, all
+those organizations, and many,
+
+108
+00:06:55,530 --> 00:07:01,620
+many others, give us funding to
+keep our programs going and to
+
+109
+00:07:01,620 --> 00:07:05,130
+grow our programs. And then
+we're also get government
+
+110
+00:07:05,130 --> 00:07:07,710
+funding to through grants. So
+for example, that we were the
+
+111
+00:07:07,710 --> 00:07:11,970
+recipient of advanced robotics
+and manufacturing grant on ARM
+
+112
+00:07:11,970 --> 00:07:15,240
+grant out of Pittsburgh, that
+helped us develop our factory
+
+113
+00:07:15,240 --> 00:07:20,250
+work cell competition, we get
+money from the Department of
+
+114
+00:07:20,340 --> 00:07:25,200
+Defense for growing programs.
+For example, in Hawaii, we have
+
+115
+00:07:25,260 --> 00:07:28,620
+a grant right now to grow
+programs in Hawaii. And we get a
+
+116
+00:07:28,620 --> 00:07:31,290
+lot of state funding. So for
+example, in Texas, we're
+
+117
+00:07:31,290 --> 00:07:34,350
+recipients of the Texas
+Workforce Commission that helps
+
+118
+00:07:34,350 --> 00:07:38,970
+us grow competitions and teams
+in Texas. So it's not quite a
+
+119
+00:07:38,970 --> 00:07:41,400
+third, third, third, but it's
+definitely three different
+
+120
+00:07:41,400 --> 00:07:44,460
+revenue sources, marine
+government grants, corporate
+
+121
+00:07:44,460 --> 00:07:46,470
+funding, and team registrations,
+
+122
+00:07:46,500 --> 00:07:49,680
+Audrow Nash: Team registrations
+and team registrations. Are the
+
+123
+00:07:49,680 --> 00:07:54,900
+like student teams registering
+to compete in the challenges,
+
+124
+00:07:55,140 --> 00:07:56,670
+right? Or they're absolutely
+
+125
+00:07:56,670 --> 00:08:00,210
+Dan Mantz: yeah, so we keep our
+price entry really, really low
+
+126
+00:08:00,210 --> 00:08:04,440
+compared to some other programs
+out there. Again, it's $150 for
+
+127
+00:08:04,440 --> 00:08:08,880
+that first team, and probably
+about 70% of our teams compete,
+
+128
+00:08:08,880 --> 00:08:13,140
+their extracurricular. Over half
+of them are tied to schools. But
+
+129
+00:08:13,140 --> 00:08:16,740
+we also have teams that are tied
+to Girl Scouts, for example, a
+
+130
+00:08:16,740 --> 00:08:19,680
+great partnership with the Girl
+Scouts. So we have Girl Scout
+
+131
+00:08:19,680 --> 00:08:23,160
+teams, and we have private club
+teams, we even have homeschool
+
+132
+00:08:23,160 --> 00:08:27,360
+teams. And then the another
+growing trend in this industry
+
+133
+00:08:27,360 --> 00:08:32,070
+is robotics is becoming more and
+more integrated into classrooms,
+
+134
+00:08:32,070 --> 00:08:35,700
+science and engineering
+programs. So a lot of times we
+
+135
+00:08:35,700 --> 00:08:39,360
+see this in Nevada, for example,
+they don't meet extracurricular,
+
+136
+00:08:39,360 --> 00:08:41,730
+they actually have their
+robotics team as part of their
+
+137
+00:08:41,730 --> 00:08:45,750
+classroom. Oh, I love that. And,
+and so but to compete in our
+
+138
+00:08:45,750 --> 00:08:49,440
+program, you do have to register
+that covers the overhead of
+
+139
+00:08:49,440 --> 00:08:53,400
+running the programs. But we
+actually don't charge for the
+
+140
+00:08:53,400 --> 00:08:56,850
+events that we run, we actually
+have a network of volunteers
+
+141
+00:08:56,850 --> 00:09:00,480
+called Event partners, and they
+run the events on our behalf.
+
+142
+00:09:00,510 --> 00:09:03,300
+You know, we're the overseeing
+organization, think about Little
+
+143
+00:09:03,300 --> 00:09:06,510
+League. And our event partners
+will charge a token amount
+
+144
+00:09:06,510 --> 00:09:11,550
+anywhere from 35 to $100 to run
+an event, and then they keep the
+
+145
+00:09:11,550 --> 00:09:16,230
+revenue. So over the course of a
+year, we'll have 3000 robotics
+
+146
+00:09:16,230 --> 00:09:20,100
+competitions, we'll have
+hundreds of drones competitions,
+
+147
+00:09:20,190 --> 00:09:24,540
+and then with like our Vex go
+program will have many, many in
+
+148
+00:09:24,540 --> 00:09:28,740
+class challenges and
+competitions. Yeah. Wow.
+
+149
+00:09:28,799 --> 00:09:33,269
+Audrow Nash: That's not how does
+it work with countries. Other so
+
+150
+00:09:33,269 --> 00:09:36,299
+you mentioned a lot of countries
+are doing this as well. And you
+
+151
+00:09:36,299 --> 00:09:38,279
+mentioned most of the sponsors,
+maybe it's just the ones you
+
+152
+00:09:38,279 --> 00:09:41,639
+mentioned mentioned are US based
+or US government and this kind
+
+153
+00:09:41,639 --> 00:09:44,639
+of thing. How does it How does
+it work with other countries
+
+154
+00:09:44,639 --> 00:09:45,629
+outside of the US?
+
+155
+00:09:46,140 --> 00:09:49,950
+Dan Mantz: Sure, absolutely. So
+we still as the REC Foundation,
+
+156
+00:09:49,950 --> 00:09:53,730
+we still have the same rules for
+the challengers in games and
+
+157
+00:09:53,730 --> 00:09:57,390
+stuff like that, but we use our
+support outside and they will
+
+158
+00:09:57,390 --> 00:10:00,870
+collect registrations if they're
+a federal Lau for example, in
+
+159
+00:10:00,870 --> 00:10:04,500
+China, we have 4000 teams in
+China. And they actually don't
+
+160
+00:10:04,500 --> 00:10:07,920
+pay a registration fee. It's
+covered by the government, for
+
+161
+00:10:07,920 --> 00:10:10,920
+example. But at the end of the
+day, the teams still register
+
+162
+00:10:10,920 --> 00:10:14,100
+and they still play the same
+game. And then our competition
+
+163
+00:10:14,100 --> 00:10:18,390
+model is it's you start locally,
+and a lot of local competitions
+
+164
+00:10:18,390 --> 00:10:21,210
+and then you'll go to a regional
+level and a national level,
+
+165
+00:10:21,330 --> 00:10:24,060
+we're under playing with the
+same rules, the same game, the
+
+166
+00:10:24,060 --> 00:10:27,510
+same game elements. And that's
+what's so popular is it
+
+167
+00:10:27,540 --> 00:10:30,810
+culminates in our world
+championship, which is actually
+
+168
+00:10:30,810 --> 00:10:34,200
+being held in Dallas in May.
+It's the VEX robotics world
+
+169
+00:10:34,200 --> 00:10:38,880
+championship, where 3000 of the
+top teams from across the world
+
+170
+00:10:38,880 --> 00:10:43,890
+come together, we have four
+different competitions, and each
+
+171
+00:10:43,890 --> 00:10:47,760
+competition will crown a world
+champion. That's awesome. But it
+
+172
+00:10:47,760 --> 00:10:51,030
+the funding to you do bring up a
+really good point, as we talk
+
+173
+00:10:51,030 --> 00:10:55,410
+about a lot of times we talk
+about our global sponsors, but
+
+174
+00:10:55,440 --> 00:10:58,830
+each country, each state, even
+every town will have a sponsor.
+
+175
+00:10:58,830 --> 00:11:02,310
+And here's a good example,
+Honda. So Honda is technically
+
+176
+00:11:02,310 --> 00:11:06,240
+not a sponsor of the REC
+foundation. But Honda does so
+
+177
+00:11:06,240 --> 00:11:10,200
+much for VEX robotics programs
+in Ohio. And so they give to
+
+178
+00:11:10,200 --> 00:11:14,640
+local chapters, and they sponsor
+teams, a TVA, Tennessee Valley
+
+179
+00:11:14,640 --> 00:11:17,790
+Authority, while they are sort
+of sponsor the REC Foundation,
+
+180
+00:11:17,790 --> 00:11:22,350
+they do an incredible job of
+giving funding, giving equipment
+
+181
+00:11:22,350 --> 00:11:27,030
+to teams in the Tennessee Valley
+area. And internationally, for
+
+182
+00:11:27,030 --> 00:11:31,680
+example, shell Exxon Mobil,
+those companies will sponsor
+
+183
+00:11:31,680 --> 00:11:35,910
+teams and programs. Matter of
+fact, of pre pandemic I was even
+
+184
+00:11:35,910 --> 00:11:39,510
+in China have sponsored by
+Alibaba. So if you don't know
+
+185
+00:11:39,510 --> 00:11:43,110
+Alibaba is like the Google of
+China, for example, or excuse
+
+186
+00:11:43,110 --> 00:11:47,610
+me, Amazon of China, and they
+actually fund the national
+
+187
+00:11:47,610 --> 00:11:52,140
+championship there, they brought
+me over. So it's and then but we
+
+188
+00:11:52,140 --> 00:11:54,870
+shouldn't even forget about the
+mom and pop stores to the subway
+
+189
+00:11:54,870 --> 00:11:59,220
+shops, the pizza shops, the
+local gas station, they all fund
+
+190
+00:11:59,220 --> 00:12:02,580
+teams and stuff like that. So
+it's a huge ecosystem of how
+
+191
+00:12:02,580 --> 00:12:06,330
+teams get funded. And it's
+emerging to I mean, right now,
+
+192
+00:12:06,330 --> 00:12:09,690
+it's not just private, its
+schools are really investing in
+
+193
+00:12:09,690 --> 00:12:12,300
+these type of programs, and
+putting more and more of their
+
+194
+00:12:12,300 --> 00:12:15,330
+budget into in class and
+extracurricular robotics
+
+195
+00:12:15,330 --> 00:12:16,140
+competitions.
+
+196
+00:12:16,170 --> 00:12:19,800
+Audrow Nash: Yeah. Gotcha. It's
+amazing to me your reach with
+
+197
+00:12:19,800 --> 00:12:23,790
+this, how far it's going and
+with a staff of only 50 people,
+
+198
+00:12:24,330 --> 00:12:26,880
+and then 30 that are part time
+in this kind of thing. And then
+
+199
+00:12:26,880 --> 00:12:30,330
+you have the volunteers. How
+does it? So from your
+
+200
+00:12:30,330 --> 00:12:33,510
+perspective of actually running
+this and setting this up and
+
+201
+00:12:33,510 --> 00:12:37,470
+having this big reach? What do
+you guys do? Is it like you're
+
+202
+00:12:37,470 --> 00:12:40,710
+setting the standards? Or you're
+creating the curriculum? Or how
+
+203
+00:12:40,710 --> 00:12:41,400
+does it work?
+
+204
+00:12:41,909 --> 00:12:44,699
+Dan Mantz: All of the above. And
+it's interesting, because I'm
+
+205
+00:12:44,699 --> 00:12:47,639
+glad you appreciate what we're
+able to accomplish lost a small
+
+206
+00:12:47,639 --> 00:12:51,509
+staff, it's, it's not a fact,
+sometimes I think I've stretched
+
+207
+00:12:51,509 --> 00:12:56,459
+our staff too much. But it's the
+model that we chose. And the
+
+208
+00:12:56,459 --> 00:13:00,269
+model is to rely on volunteers
+and partners that aren't on the
+
+209
+00:13:00,269 --> 00:13:04,769
+payroll, right. And but what we
+do you know, a lot of teams say,
+
+210
+00:13:04,769 --> 00:13:08,189
+hey, what do I get for my $150?
+Right? What do I get for my $100
+
+211
+00:13:08,189 --> 00:13:11,729
+registration fee. So primarily,
+one of the most visible things
+
+212
+00:13:11,729 --> 00:13:15,449
+we do is we work for example,
+with the VEX Robotics on
+
+213
+00:13:15,449 --> 00:13:20,429
+designing the games every year.
+So the IQ program has the VEX IQ
+
+214
+00:13:20,429 --> 00:13:24,869
+challenge to go Mexico program
+has their little competition,
+
+215
+00:13:24,869 --> 00:13:29,669
+and then the VRC competition. So
+a lot of our staff are spending
+
+216
+00:13:29,669 --> 00:13:32,969
+their time to develop that game
+and develop the resources, it
+
+217
+00:13:32,969 --> 00:13:35,879
+comes with manuals, it comes
+with videos, you have to support
+
+218
+00:13:35,879 --> 00:13:39,929
+it. So that's a you know, one of
+the things that we do, we also
+
+219
+00:13:39,929 --> 00:13:43,049
+work with our event partners to
+help them run good events. And
+
+220
+00:13:43,049 --> 00:13:45,869
+that's where a lot of our part
+time employees come in. So we
+
+221
+00:13:45,869 --> 00:13:48,989
+have a series of team engagement
+managers and of engagement
+
+222
+00:13:48,989 --> 00:13:52,259
+managers that support
+competitions in the United
+
+223
+00:13:52,259 --> 00:13:54,329
+States. And then we have
+regional support managers
+
+224
+00:13:54,359 --> 00:13:58,709
+internationally. And they work
+very, very closely with our
+
+225
+00:13:58,709 --> 00:14:04,079
+volunteers to make sure that
+they run events that meet our
+
+226
+00:14:04,079 --> 00:14:07,199
+standards. So again, I think
+good models, if you think about
+
+227
+00:14:07,199 --> 00:14:11,159
+Little League, you know, the
+Little League Association sets
+
+228
+00:14:11,159 --> 00:14:15,299
+the rules, but each local level
+runs their own baseball camps,
+
+229
+00:14:15,299 --> 00:14:19,379
+right? So we kind of do the same
+thing, but we're very important.
+
+230
+00:14:19,679 --> 00:14:21,359
+And one of the things that
+distinguishes us from other
+
+231
+00:14:21,359 --> 00:14:25,049
+programs is we really believe in
+student centered. So we're not a
+
+232
+00:14:25,049 --> 00:14:27,929
+program that encourages the
+parents or coaches to do the
+
+233
+00:14:27,929 --> 00:14:32,849
+work. Matter of fact, in our
+program, our code of conduct and
+
+234
+00:14:32,849 --> 00:14:35,819
+our students centered policies
+is about the students doing the
+
+235
+00:14:35,819 --> 00:14:38,729
+work. It's not about building
+the world's best robot. It's
+
+236
+00:14:38,729 --> 00:14:41,909
+about learning, engineering and
+problem solving and
+
+237
+00:14:41,909 --> 00:14:46,019
+communication skills through the
+students doing hands on work. So
+
+238
+00:14:46,169 --> 00:14:49,049
+a lot of my staff are team
+engagement managers or event
+
+239
+00:14:49,049 --> 00:14:51,959
+engagement managers, they're
+working with the coaches and the
+
+240
+00:14:51,959 --> 00:14:55,139
+event partners to make sure that
+we follow the ecosystem. And
+
+241
+00:14:55,139 --> 00:14:58,709
+like any organization of course,
+we have accounting. We have
+
+242
+00:14:58,709 --> 00:15:01,589
+marketing, we have to
+development we have those
+
+243
+00:15:01,619 --> 00:15:05,189
+infrastructure to it's I pay my
+staff, we try to pay
+
+244
+00:15:05,189 --> 00:15:09,389
+competitively. And we give our
+staff free health care, for
+
+245
+00:15:09,389 --> 00:15:13,889
+example. wonderlands. So we have
+an HR department. So we have all
+
+246
+00:15:13,889 --> 00:15:16,439
+those types of things that are
+standard business as to
+
+247
+00:15:16,950 --> 00:15:20,850
+Audrow Nash: how does it work?
+Can you tell me a little bit
+
+248
+00:15:20,850 --> 00:15:22,890
+about being a nonprofit with
+that?
+
+249
+00:15:23,520 --> 00:15:27,840
+Dan Mantz: Sure. So I personally
+come from the for profit world,
+
+250
+00:15:28,110 --> 00:15:31,950
+my entire career was for profit,
+I joined the REC foundation
+
+251
+00:15:31,950 --> 00:15:35,610
+board over five years ago, and
+ultimately ended up as the CEO
+
+252
+00:15:35,610 --> 00:15:39,030
+here. But I didn't have a lot of
+experience. So I'm learning to
+
+253
+00:15:39,030 --> 00:15:42,750
+but you know, I'm not for profit
+still has to pay their bills,
+
+254
+00:15:42,780 --> 00:15:46,470
+definitely, we still have to
+generate revenue, provide value
+
+255
+00:15:46,470 --> 00:15:49,890
+and pay our bills for being a
+not for profit, what allows us
+
+256
+00:15:49,890 --> 00:15:54,600
+to do is get those foundation
+donations, for example, the
+
+257
+00:15:54,600 --> 00:15:57,780
+Northrop Grumman Foundation are
+our largest presenting sponsor,
+
+258
+00:15:57,960 --> 00:16:00,690
+and allows us to get those
+government funds, but we have to
+
+259
+00:16:00,690 --> 00:16:03,990
+do due diligence, we have to
+show the funders of our
+
+260
+00:16:03,990 --> 00:16:07,110
+organization, whether it's the
+government or private, that
+
+261
+00:16:07,110 --> 00:16:10,260
+we're good stewards of their
+money. So again, we have
+
+262
+00:16:10,290 --> 00:16:14,550
+probably spend, you know, 4000
+hours a year between audits and
+
+263
+00:16:14,550 --> 00:16:18,270
+reporting and stuff like that.
+So like anybody familiar with
+
+264
+00:16:18,270 --> 00:16:21,330
+any business out there, we get
+revenue, and we have expenses.
+
+265
+00:16:21,330 --> 00:16:25,410
+And at the end of the year, the
+board that I report to expects
+
+266
+00:16:25,410 --> 00:16:29,940
+me to bring in more money than
+I've spent. But then we have to
+
+267
+00:16:29,940 --> 00:16:32,310
+account for that money to the
+people that fund us.
+
+268
+00:16:33,059 --> 00:16:37,649
+Audrow Nash: How do you think of
+profit versus nonprofit in this?
+
+269
+00:16:38,820 --> 00:16:41,160
+Dan Mantz: Well, I think that's
+a great question. And actually
+
+270
+00:16:41,160 --> 00:16:45,510
+one that I've never really been
+asked before. But I think I
+
+271
+00:16:45,510 --> 00:16:48,360
+think the challenges of a not
+for profit, is there's an
+
+272
+00:16:48,390 --> 00:16:51,780
+expectation that you can do
+things cheaper. So there's an
+
+273
+00:16:51,780 --> 00:16:54,810
+expectation, you can hire people
+cheaper and something like that.
+
+274
+00:16:54,900 --> 00:16:58,620
+And that's not true. If we want
+to be the best STEM education
+
+275
+00:16:58,620 --> 00:17:01,740
+and robotics not for profit out
+there, we still have to pay
+
+276
+00:17:01,740 --> 00:17:06,090
+competitively. But because we
+have, we don't have just a
+
+277
+00:17:06,090 --> 00:17:09,990
+customer buying our product that
+basically tells us whether we're
+
+278
+00:17:09,990 --> 00:17:13,770
+successful or not. We have so
+many different customers in our
+
+279
+00:17:13,770 --> 00:17:17,460
+program. I mean, primarily for
+us, the teak the students, and
+
+280
+00:17:17,460 --> 00:17:20,520
+the educators are our primary
+customer, our programs are for
+
+281
+00:17:20,520 --> 00:17:24,060
+them. So that's who I'm trying
+to please first. But we also
+
+282
+00:17:24,060 --> 00:17:27,540
+have to make sure that if we get
+federal money, that they're
+
+283
+00:17:27,540 --> 00:17:29,790
+satisfied with how we're
+spending the money, if we're
+
+284
+00:17:29,790 --> 00:17:32,760
+getting corporate sponsorship,
+we're doing the things they
+
+285
+00:17:32,760 --> 00:17:35,640
+expect us to do. And I think
+that's the big difference. So I
+
+286
+00:17:35,640 --> 00:17:39,210
+was president of a company
+called rack solutions. We made
+
+287
+00:17:39,210 --> 00:17:42,270
+infrastructure products for data
+centers, primarily sheet metal
+
+288
+00:17:42,270 --> 00:17:45,720
+products. And if I came out with
+a new product, if rock solutions
+
+289
+00:17:45,720 --> 00:17:49,440
+came out with a new product, and
+it's sold, we knew it was
+
+290
+00:17:49,440 --> 00:17:52,950
+successful. That was our answer.
+And if it didn't sell, then we
+
+291
+00:17:52,950 --> 00:17:56,790
+made a bad engineering or sales
+decision for a not for profit,
+
+292
+00:17:56,790 --> 00:18:00,180
+it's not so black and white,
+right? So I can have a program
+
+293
+00:18:00,180 --> 00:18:03,630
+that the students love. But if
+the coaches and the teachers
+
+294
+00:18:03,630 --> 00:18:06,690
+don't like it, it's not a
+success, I can have a program
+
+295
+00:18:06,990 --> 00:18:10,410
+that the funders think is
+excellent. But if nobody wants
+
+296
+00:18:10,410 --> 00:18:13,380
+to do it in their schools or
+extracurricular, it's not so the
+
+297
+00:18:13,950 --> 00:18:17,430
+city's argue your customer? I'm
+sorry, can you have to satisfy
+
+298
+00:18:17,430 --> 00:18:20,760
+all of the parties in it? And
+that's the challenge. And it's
+
+299
+00:18:20,880 --> 00:18:23,700
+people ask me, Is it easier to
+run a not for profit, you don't
+
+300
+00:18:23,700 --> 00:18:26,670
+have this pressure of like
+having a return on investment
+
+301
+00:18:26,670 --> 00:18:29,940
+for? You know, like a
+stockholder? I'm like, no, it's
+
+302
+00:18:29,940 --> 00:18:32,370
+actually for me much more
+difficult to run a not for
+
+303
+00:18:32,370 --> 00:18:32,880
+profit.
+
+304
+00:18:32,970 --> 00:18:35,610
+Audrow Nash: Yeah. I mean, so
+I've been involved with like,
+
+305
+00:18:35,610 --> 00:18:37,980
+when I was very involved with
+Robo hub, which is a robotics
+
+306
+00:18:37,980 --> 00:18:41,430
+news organization, we were a
+nonprofit. So I, I feel like
+
+307
+00:18:41,430 --> 00:18:44,340
+I've been through some of the
+like pain of being in a
+
+308
+00:18:44,430 --> 00:18:47,520
+nonprofit. But I think you can
+do a lot of good work and not be
+
+309
+00:18:47,520 --> 00:18:51,930
+accountable to not necessarily
+have the economics drive the
+
+310
+00:18:51,930 --> 00:18:55,440
+mission of the thing. But can
+you tell me kind of like, why
+
+311
+00:18:55,440 --> 00:18:59,250
+not go for profit, or this kind
+of thing?
+
+312
+00:18:59,970 --> 00:19:03,930
+Dan Mantz: Well, I think the
+biggest reason is, we don't want
+
+313
+00:19:03,930 --> 00:19:07,800
+to become a for profit is
+because I want to be able to
+
+314
+00:19:07,800 --> 00:19:10,140
+just breakeven for one sec for
+the year, I don't want to have
+
+315
+00:19:10,140 --> 00:19:13,170
+to have a return to
+shareholders. So that really
+
+316
+00:19:13,170 --> 00:19:17,010
+allows us to keep the prices as
+low as possible and maximize
+
+317
+00:19:17,010 --> 00:19:21,180
+value for our customers. So
+that's one good reason. So we
+
+318
+00:19:21,180 --> 00:19:24,030
+had the difficult decision of
+raising our registration fee.
+
+319
+00:19:24,030 --> 00:19:26,670
+After five years, we've gone
+five years without raising
+
+320
+00:19:26,670 --> 00:19:29,820
+registration fees. But if you're
+reading the news, you know how
+
+321
+00:19:29,820 --> 00:19:33,330
+bad inflation is right now. And
+that affects us to insurance
+
+322
+00:19:33,330 --> 00:19:36,480
+costs are up the gasoline
+everything. So we had to raise
+
+323
+00:19:36,480 --> 00:19:40,710
+our registration fees for the
+first time in five years, but
+
+324
+00:19:40,770 --> 00:19:45,300
+because I am just trying to
+break even, it wouldn't have
+
+325
+00:19:45,300 --> 00:19:48,960
+been as large as maybe if I was
+trying to maximize revenue for
+
+326
+00:19:48,960 --> 00:19:53,100
+shareholders. But then again,
+also being a not for profit.
+
+327
+00:19:53,100 --> 00:19:57,630
+There's great companies out
+there. Google, for example, that
+
+328
+00:19:57,630 --> 00:20:04,170
+really invest deeply into our,
+our programs for the underserved
+
+329
+00:20:04,170 --> 00:20:07,560
+community for Title One
+students, women in STEM, etc.
+
+330
+00:20:07,920 --> 00:20:11,250
+And that's another reason to
+stay as a not for profit,
+
+331
+00:20:11,250 --> 00:20:15,330
+because these corporate sponsors
+will really invest in you if
+
+332
+00:20:15,330 --> 00:20:18,300
+you're doing something that they
+feel is going to help them out
+
+333
+00:20:18,300 --> 00:20:21,810
+the long term to our corporate
+sponsors are amazing when NASA
+
+334
+00:20:21,810 --> 00:20:26,940
+invests in us because they want
+that next generation of people
+
+335
+00:20:26,940 --> 00:20:30,750
+developing the Mars Rover
+mission. For example, when Tesla
+
+336
+00:20:30,750 --> 00:20:33,840
+invests in us, it's because they
+want that next generation of
+
+337
+00:20:33,840 --> 00:20:38,130
+workers for their new truck
+factory in Austin, and for the
+
+338
+00:20:38,130 --> 00:20:42,360
+Gigafactory, outside of Reno,
+Nevada, right. So they're about
+
+339
+00:20:42,540 --> 00:20:45,660
+us developing the workforce. And
+you know, NASA is about
+
+340
+00:20:45,660 --> 00:20:49,650
+developing the engineers and ti
+tech system, it's about the next
+
+341
+00:20:49,650 --> 00:20:53,370
+generation of computer
+scientists. And that allows us
+
+342
+00:20:53,400 --> 00:20:57,570
+as a not for profit to better
+serve those funders of our
+
+343
+00:20:57,570 --> 00:20:58,410
+programs.
+
+344
+00:20:59,430 --> 00:21:05,370
+Audrow Nash: Awesome. How does
+it? So how do the different
+
+345
+00:21:05,400 --> 00:21:09,960
+competitions compare? So when
+you have the young elementary
+
+346
+00:21:09,960 --> 00:21:12,690
+school students or you have the
+middle school or high school?
+
+347
+00:21:12,870 --> 00:21:16,230
+How do these different
+university as well? How do these
+
+348
+00:21:16,890 --> 00:21:19,350
+different programs and different
+challenges compare?
+
+349
+00:21:20,280 --> 00:21:22,620
+Dan Mantz: Yeah, that's a great
+question. And in a sense,
+
+350
+00:21:22,620 --> 00:21:24,780
+they're a progression, a word
+that I like to use as they
+
+351
+00:21:24,780 --> 00:21:29,100
+progress. So if you're doing Vex
+go, you still have a challenge,
+
+352
+00:21:29,100 --> 00:21:33,660
+and you're still building cars
+that the first thing I have, is
+
+353
+00:21:33,660 --> 00:21:37,290
+our first competition. So as you
+know, third, and fourth graders
+
+354
+00:21:37,290 --> 00:21:38,040
+is the priority,
+
+355
+00:21:38,100 --> 00:21:41,070
+Audrow Nash: low IQ, RC, and I
+don't remember what the
+
+356
+00:21:41,070 --> 00:21:42,150
+university wants. So
+
+357
+00:21:42,180 --> 00:21:45,420
+Dan Mantz: what technically have
+123 That's an entry level
+
+358
+00:21:45,420 --> 00:21:48,090
+programming K through two, but
+we don't have a competition for
+
+359
+00:21:48,090 --> 00:21:52,110
+that we have in class
+activities, then we have Vex go,
+
+360
+00:21:52,260 --> 00:21:55,140
+which is third and fourth
+graders. Again, it's simpler,
+
+361
+00:21:55,140 --> 00:21:58,710
+build simpler programming,
+understand the concepts, then
+
+362
+00:21:58,710 --> 00:22:02,700
+you get up to IQ. And that's not
+a competition where two teams
+
+363
+00:22:02,700 --> 00:22:05,490
+are facing each other, they're
+actually collaborating. When
+
+364
+00:22:05,490 --> 00:22:09,000
+things I love about IQ, as the
+students work together, the two
+
+365
+00:22:09,000 --> 00:22:12,780
+teams work together to get the
+most points. And now you get to
+
+366
+00:22:12,780 --> 00:22:17,010
+VRC and NBRC. Now, it's a two v
+two competition, right, so now
+
+367
+00:22:17,010 --> 00:22:20,430
+you're playing defense, and
+you're strategizing with a
+
+368
+00:22:20,430 --> 00:22:24,240
+partner, and how to beat an
+opposing Alliance and, and the
+
+369
+00:22:24,240 --> 00:22:28,290
+power of the motors is bigger,
+and the programming, all of our
+
+370
+00:22:28,290 --> 00:22:32,880
+competition and VRC starts with
+a 15 second autonomous mode,
+
+371
+00:22:32,880 --> 00:22:36,540
+right? So the first 15 seconds
+are robots moving to score
+
+372
+00:22:36,540 --> 00:22:39,900
+points and win the odd time
+bonus. And then you get to vex
+
+373
+00:22:39,900 --> 00:22:44,520
+you, which now it's the same way
+bigger motors, but now you're 3d
+
+374
+00:22:44,520 --> 00:22:48,090
+printing your parts, and there's
+a lot more customization. And
+
+375
+00:22:48,090 --> 00:22:51,270
+then you get to the AI
+competition. And now it's
+
+376
+00:22:51,270 --> 00:22:55,290
+advanced programming. And now
+you're using GPS sensors. And
+
+377
+00:22:55,290 --> 00:22:59,460
+you're using high end cameras to
+do data exchanges between robots
+
+378
+00:22:59,460 --> 00:23:03,870
+to solve it. So. But the nice
+thing about our program is if
+
+379
+00:23:03,870 --> 00:23:08,490
+you start with, you know, 123,
+and you start coding, all that
+
+380
+00:23:08,490 --> 00:23:12,060
+coding just grows and grows and
+grows, and the concepts of how
+
+381
+00:23:12,060 --> 00:23:15,450
+you build, and the soft skills,
+which are so important to these
+
+382
+00:23:15,450 --> 00:23:19,800
+programs, how you troubleshoot.
+I'm an engineer, by background,
+
+383
+00:23:19,800 --> 00:23:24,000
+I worked 21 years at FANUC,
+robotics and core to the REC
+
+384
+00:23:24,000 --> 00:23:27,840
+foundation programs is our
+design process. So wherever you
+
+385
+00:23:27,840 --> 00:23:32,910
+start in our programs, the
+design process of identifying
+
+386
+00:23:32,910 --> 00:23:35,310
+your challenge and how you're
+going to solve the challenge and
+
+387
+00:23:35,310 --> 00:23:38,880
+score points, and then the
+process of iteration design,
+
+388
+00:23:38,880 --> 00:23:42,450
+right. So trying something
+designing something, building it
+
+389
+00:23:42,450 --> 00:23:46,200
+failing, and then persevering
+that permeates through our
+
+390
+00:23:46,200 --> 00:23:49,560
+entire program, whether you're
+at the very beginning, or you're
+
+391
+00:23:49,560 --> 00:23:51,390
+doing facts you and AI.
+
+392
+00:23:52,020 --> 00:23:54,210
+Audrow Nash: Gotcha, I really
+like that. I feel like failing
+
+393
+00:23:54,210 --> 00:23:58,230
+is so important. Because if you
+don't ever fail, you don't it's
+
+394
+00:23:58,230 --> 00:24:01,170
+like you you learn limitations.
+And you have to work with those
+
+395
+00:24:01,170 --> 00:24:03,720
+limitations. And you can't
+really make anything interesting
+
+396
+00:24:03,720 --> 00:24:06,420
+unless you're failing, most
+likely. So I like that it's
+
+397
+00:24:06,420 --> 00:24:07,230
+baked into the
+
+398
+00:24:07,260 --> 00:24:10,260
+Dan Mantz: curriculum. Yeah.
+When I became CEO, we stepped
+
+399
+00:24:10,260 --> 00:24:12,420
+back and we looked at our
+mission and vision and we just
+
+400
+00:24:12,420 --> 00:24:15,270
+tweaked our mission. mean, our
+mission is to increase student
+
+401
+00:24:15,270 --> 00:24:19,080
+interest in STEM by engaging
+students and hands on affordable
+
+402
+00:24:19,080 --> 00:24:21,240
+and sustainable Robotics
+Engineering Programs. Right. So
+
+403
+00:24:21,240 --> 00:24:24,240
+we made it less worried that if
+that stayed the same, but what
+
+404
+00:24:24,240 --> 00:24:29,700
+we really changed was our
+vision. Because for me, I wanted
+
+405
+00:24:29,700 --> 00:24:32,310
+people to know that we want
+students to innovate and
+
+406
+00:24:32,310 --> 00:24:35,640
+experience failure and
+persevere, right. So we
+
+407
+00:24:35,640 --> 00:24:39,750
+literally set our vision is
+where students design and
+
+408
+00:24:39,750 --> 00:24:43,380
+innovate as part of a team and
+they actually fail and in our
+
+409
+00:24:43,380 --> 00:24:46,710
+program, because we're a year
+round program, students fail a
+
+410
+00:24:46,710 --> 00:24:49,920
+lot, but that's not a bad thing.
+I mean, they learn from that and
+
+411
+00:24:49,920 --> 00:24:53,790
+they persevere and then they
+become much more confident and
+
+412
+00:24:53,790 --> 00:24:56,850
+they work the world better
+place, right. And these skills,
+
+413
+00:24:56,850 --> 00:25:00,210
+whether they go into robotics,
+or they go into medicine, or or
+
+414
+00:25:00,210 --> 00:25:05,370
+they work in marketing, or
+they're working, you know, as a
+
+415
+00:25:05,370 --> 00:25:09,420
+technician, those skills by
+failing and persevering are
+
+416
+00:25:09,420 --> 00:25:10,620
+lifelong skills.
+
+417
+00:25:12,300 --> 00:25:15,150
+Audrow Nash: What do you So you
+mentioned mission and the
+
+418
+00:25:15,150 --> 00:25:17,580
+mission is to increase
+engagement and your mission
+
+419
+00:25:17,610 --> 00:25:21,330
+vision, how do those how to
+mission and vision relate to
+
+420
+00:25:21,330 --> 00:25:21,630
+you?
+
+421
+00:25:22,859 --> 00:25:25,289
+Dan Mantz: I think, you know,
+first of all, one of the things
+
+422
+00:25:25,319 --> 00:25:28,649
+we talk, if we circle back to
+working for a not for profit,
+
+423
+00:25:28,739 --> 00:25:31,499
+one of the things I really try
+to do is make sure that the
+
+424
+00:25:31,499 --> 00:25:34,199
+decisions we make in this
+organization are missing driven,
+
+425
+00:25:34,499 --> 00:25:37,799
+we have so many opportunities to
+go into the next great thing.
+
+426
+00:25:38,129 --> 00:25:41,639
+But that mission of increasing
+student interest in STEM
+
+427
+00:25:41,639 --> 00:25:46,139
+through, you know, hands on
+affordable robotics programs, is
+
+428
+00:25:46,139 --> 00:25:49,949
+the core of what we do. And so
+we have our mission, we're
+
+429
+00:25:49,949 --> 00:25:53,639
+developing these robotics and
+engineering programs for our
+
+430
+00:25:53,639 --> 00:25:57,029
+students. And it's evolving,
+that's also workforce
+
+431
+00:25:57,029 --> 00:26:01,319
+development programs, too. And
+then the vision is, is more
+
+432
+00:26:01,319 --> 00:26:05,279
+captured of what we want to see
+these students do in the future.
+
+433
+00:26:05,279 --> 00:26:08,819
+And that's, you know, persevere,
+become lifelong learners.
+
+434
+00:26:09,119 --> 00:26:12,569
+Audrow Nash: Gotcha. How do you
+so when you are developing these
+
+435
+00:26:12,569 --> 00:26:15,989
+curriculum, or these
+competitions? How do you
+
+436
+00:26:15,989 --> 00:26:20,009
+balance, like, all of the
+different factors, so there, you
+
+437
+00:26:20,009 --> 00:26:23,489
+could make it too difficult? You
+could make it to like, really,
+
+438
+00:26:23,489 --> 00:26:25,709
+really appealing to the
+students, but it's like a video
+
+439
+00:26:25,709 --> 00:26:29,399
+game, and they're not actually
+learning anything? Or, like,
+
+440
+00:26:29,399 --> 00:26:32,069
+there's all these different
+things. How do you think about
+
+441
+00:26:32,069 --> 00:26:35,639
+actually designing these
+competitions to make them and
+
+442
+00:26:35,669 --> 00:26:36,929
+gauging for students?
+
+443
+00:26:37,020 --> 00:26:39,120
+Dan Mantz: That's a great
+question. And it's a really hard
+
+444
+00:26:39,120 --> 00:26:42,360
+process. When I joined the REC
+foundation, I would have never
+
+445
+00:26:42,360 --> 00:26:45,240
+guessed help difficult game
+designers. And that's what we
+
+446
+00:26:45,240 --> 00:26:49,020
+call it, we call it game design.
+And so there is a game design
+
+447
+00:26:49,020 --> 00:26:53,850
+committee. It's a collaboration
+between VEX robotics and the REC
+
+448
+00:26:53,850 --> 00:26:58,230
+foundation for the Vex programs.
+It's a collaboration with NASA
+
+449
+00:26:58,230 --> 00:27:04,350
+for the win, and REC Foundation
+staff for our our drones,
+
+450
+00:27:04,350 --> 00:27:08,400
+competition, and then Bell and
+many Bell suppliers in the REC
+
+451
+00:27:08,400 --> 00:27:11,490
+foundation for our bell VRC
+program. So first of all, all
+
+452
+00:27:11,490 --> 00:27:14,520
+three programs that have
+competitions, it starts as a
+
+453
+00:27:14,520 --> 00:27:18,030
+collaboration. And then you're
+really trying to define what
+
+454
+00:27:18,030 --> 00:27:21,570
+your outcome for that season is
+going to be. But our program has
+
+455
+00:27:21,570 --> 00:27:26,040
+a bell curve, right. And on the
+competition side, especially the
+
+456
+00:27:26,040 --> 00:27:29,910
+top teams, which are the top
+10%, they care about winning
+
+457
+00:27:29,910 --> 00:27:33,000
+more than anything, right. But
+from my perspective as CEO for
+
+458
+00:27:33,000 --> 00:27:36,060
+the REC Foundation, that's not
+what we're trying to do, we're
+
+459
+00:27:36,060 --> 00:27:39,480
+looking at the entire bell
+curve, and making sure that they
+
+460
+00:27:39,480 --> 00:27:42,900
+can, you know, get something
+that matches our mission out of
+
+461
+00:27:42,900 --> 00:27:46,590
+this. So we will literally
+design a game with an easy
+
+462
+00:27:46,590 --> 00:27:49,230
+scoring component, right?
+Something that every team can
+
+463
+00:27:49,230 --> 00:27:52,560
+do. And then we have more
+complex. And we want to make
+
+464
+00:27:52,560 --> 00:27:55,350
+sure that we wait it. So what
+are the challenges even after
+
+465
+00:27:55,350 --> 00:27:58,470
+you brainstorm games, and you
+get it down on paper. And of
+
+466
+00:27:58,470 --> 00:28:01,650
+course, you have to design your
+field elements and your game
+
+467
+00:28:01,650 --> 00:28:04,200
+elements. So you have mechanical
+engineers, and electrical
+
+468
+00:28:04,200 --> 00:28:07,020
+engineers that are designing
+this, you have to hit a cost
+
+469
+00:28:07,020 --> 00:28:10,380
+target, right, we can develop
+some of the world's best games.
+
+470
+00:28:10,410 --> 00:28:14,910
+But if it costs $5,000, for each
+team to buy game elements, it
+
+471
+00:28:14,910 --> 00:28:18,510
+can't do it. So we have very
+strong cost elements. So you do
+
+472
+00:28:18,510 --> 00:28:22,140
+all that. But then you start
+designing how you're going to
+
+473
+00:28:22,140 --> 00:28:25,590
+play the game, and the REC
+foundation and VEX robotics for
+
+474
+00:28:25,590 --> 00:28:29,700
+our Vex competitions, we
+actually release a couple of
+
+475
+00:28:29,700 --> 00:28:32,970
+robots for different levels so
+that everybody that plays the
+
+476
+00:28:32,970 --> 00:28:36,450
+game can achieve at least some
+of the game objectives. And
+
+477
+00:28:36,540 --> 00:28:39,330
+that's the key, right? Like,
+I'll admit, we've made games
+
+478
+00:28:39,330 --> 00:28:42,360
+that people have figured out in
+the first month, and they've
+
+479
+00:28:42,360 --> 00:28:45,720
+maxed the score, and we've had
+to tweak the rules. And we've
+
+480
+00:28:45,720 --> 00:28:50,190
+made our games that were maybe
+just a little more complex than
+
+481
+00:28:50,190 --> 00:28:54,060
+we expected to at the beginning.
+But it's a team of engineers and
+
+482
+00:28:54,060 --> 00:28:58,050
+non engineers that are looking
+everything. And also, you know,
+
+483
+00:28:58,050 --> 00:28:59,520
+the other thing, people don't
+realize this, so we have to
+
+484
+00:28:59,520 --> 00:29:02,820
+think about transportation.
+Because we're running 3000
+
+485
+00:29:02,820 --> 00:29:06,480
+competitions a year, somebody's
+got to go set this game up at
+
+486
+00:29:06,480 --> 00:29:10,350
+the library or the school or the
+gym, you know, different places.
+
+487
+00:29:10,410 --> 00:29:12,840
+So we have to make sure that the
+game can be torn down and
+
+488
+00:29:12,840 --> 00:29:16,470
+assembled easily too. So that
+all goes into it. So when people
+
+489
+00:29:16,470 --> 00:29:19,320
+ask like you did earlier, you
+know, where's that registration
+
+490
+00:29:19,320 --> 00:29:22,650
+fee goes to the game design
+committee is 12 people. We're
+
+491
+00:29:22,650 --> 00:29:25,650
+all in different roles. And
+there's a lot of engineering
+
+492
+00:29:25,650 --> 00:29:29,130
+behind that. And it's expensive
+to develop one of these games
+
+493
+00:29:29,130 --> 00:29:34,020
+and we release new games every
+single year for both IQ and for
+
+494
+00:29:34,020 --> 00:29:39,030
+VRC. And our drones programs to
+we have new games every year for
+
+495
+00:29:39,030 --> 00:29:39,840
+drones to
+
+496
+00:29:40,740 --> 00:29:44,220
+Audrow Nash: Gotcha. So you
+mentioned you said you have
+
+497
+00:29:44,220 --> 00:29:48,660
+different robots for it. So it's
+like people will register their
+
+498
+00:29:48,660 --> 00:29:53,400
+team that happens each year I
+suppose. And then you have like
+
+499
+00:29:53,400 --> 00:29:56,640
+different key basically how to
+teams get their parts and I
+
+500
+00:29:56,640 --> 00:29:59,970
+think you were saying something
+about like different levels of
+
+501
+00:30:00,000 --> 00:30:03,690
+robot that they can have for the
+competition or something.
+
+502
+00:30:03,930 --> 00:30:06,540
+Dan Mantz: Yeah, so every one of
+the things about our program is
+
+503
+00:30:06,540 --> 00:30:09,480
+we want it to be affordable and
+accessible and sustainable.
+
+504
+00:30:09,480 --> 00:30:13,170
+Right. So once you've bought for
+them talking next program here,
+
+505
+00:30:13,170 --> 00:30:17,580
+but once you bought a Vex kit,
+you can reuse that those parts
+
+506
+00:30:17,580 --> 00:30:20,670
+year after year, now there's
+some wear and tear over time,
+
+507
+00:30:20,670 --> 00:30:23,490
+you're probably going to buy a
+replacement motor to etcetera,
+
+508
+00:30:23,730 --> 00:30:27,780
+but use those parts. But you
+know, you can build with a with
+
+509
+00:30:27,780 --> 00:30:30,510
+a basic robotics kit, you can
+build a claw bot, right and a
+
+510
+00:30:30,510 --> 00:30:34,350
+call bot can do a couple basic
+functions, what Vex engineering
+
+511
+00:30:34,350 --> 00:30:37,620
+does every year, they also
+design a hero bot. And so a hero
+
+512
+00:30:37,620 --> 00:30:41,340
+bot can play the game at a
+little bit higher level, right.
+
+513
+00:30:41,340 --> 00:30:43,350
+So they're not going to be a
+state champion or world
+
+514
+00:30:43,350 --> 00:30:47,280
+champion, but at least allows
+you to execute and be successful
+
+515
+00:30:47,280 --> 00:30:50,040
+at more of the game challenges.
+And then, you know, we work with
+
+516
+00:30:50,040 --> 00:30:52,800
+other people, and people will
+develop an even more advanced
+
+517
+00:30:52,800 --> 00:30:56,430
+version of the robot for that
+game. But ultimately, we're not
+
+518
+00:30:56,430 --> 00:31:00,120
+going to release a design. For
+the world's best robot, we want
+
+519
+00:31:00,120 --> 00:31:03,420
+the teams and the students to do
+that. But it's really important
+
+520
+00:31:03,420 --> 00:31:06,240
+to understand there's a lot of
+clubs out there and a lot of
+
+521
+00:31:06,240 --> 00:31:08,790
+classrooms that they're just
+going to compete one or two
+
+522
+00:31:08,790 --> 00:31:12,240
+times, and they don't care about
+winning, they want the the fun
+
+523
+00:31:12,240 --> 00:31:15,780
+of going to a competition and
+seeing how they do. And so we
+
+524
+00:31:15,780 --> 00:31:18,600
+want them to be successful. So
+that's why we released some,
+
+525
+00:31:18,660 --> 00:31:21,510
+some designs the hero bot so
+that they can at least achieve
+
+526
+00:31:21,510 --> 00:31:23,220
+success at certain parts of the
+game.
+
+527
+00:31:24,240 --> 00:31:26,880
+Audrow Nash: Definitely, how do
+you find your price point for
+
+528
+00:31:26,880 --> 00:31:30,090
+that? So if you, you're going to
+make a robot kit and that robot
+
+529
+00:31:30,090 --> 00:31:33,450
+kit? You want it accessible to
+the majority of schools? How do
+
+530
+00:31:33,450 --> 00:31:36,570
+you? How do you figure out what
+they can afford? And what you
+
+531
+00:31:36,570 --> 00:31:39,570
+can include and what you can do
+with that? Well, that's
+
+532
+00:31:39,570 --> 00:31:41,640
+Dan Mantz: always the debate,
+right? What can what can people
+
+533
+00:31:41,640 --> 00:31:43,470
+afford? So if we're talking
+about the game elements, that's
+
+534
+00:31:43,470 --> 00:31:47,610
+probably an easier one, right?
+So every year, we want teams to
+
+535
+00:31:47,610 --> 00:31:51,330
+be able to if you're in IQ, you
+spend $100, so you can get that
+
+536
+00:31:51,330 --> 00:31:55,260
+game element. So it's a little
+bit more expensive for the VRC
+
+537
+00:31:55,260 --> 00:31:59,670
+program. So basically, that is a
+limiting factor, to be honest.
+
+538
+00:31:59,670 --> 00:32:02,400
+So anyway, any engineers
+listening to this will tell you
+
+539
+00:32:02,700 --> 00:32:06,990
+that if you have tooling costs
+for these parts, there's a real
+
+540
+00:32:06,990 --> 00:32:10,500
+cost to make these parts, you
+got to cover shipping. So it's a
+
+541
+00:32:10,500 --> 00:32:13,740
+really limiting factor. Here's a
+good example. So this year is
+
+542
+00:32:13,740 --> 00:32:16,950
+game, you could shoot balls,
+right? And they were more like
+
+543
+00:32:16,950 --> 00:32:21,030
+hacky sack balls, this is in the
+IQ. And I forget how many we
+
+544
+00:32:21,030 --> 00:32:25,170
+have on the field, shame on me,
+but say there was 24 Maybe the
+
+545
+00:32:25,170 --> 00:32:29,100
+game would have been harder to
+max out if we would have had 28.
+
+546
+00:32:29,430 --> 00:32:34,170
+But you know, for $100, we can
+only afford to design tool,
+
+547
+00:32:34,320 --> 00:32:39,030
+manufacturing chips. So that's a
+like a limiting factor. Or maybe
+
+548
+00:32:39,060 --> 00:32:41,370
+everybody in the community
+always wants a water game,
+
+549
+00:32:41,370 --> 00:32:44,730
+right? Everybody always want to
+have a water game. Could we do a
+
+550
+00:32:44,730 --> 00:32:48,210
+water game? Yes. Will we do a
+water game someday to the
+
+551
+00:32:48,210 --> 00:32:52,290
+community out there? You never
+say never. But the price point
+
+552
+00:32:52,290 --> 00:32:55,770
+to now have waterproof motors
+and sensors and stuff like that
+
+553
+00:32:55,800 --> 00:32:58,560
+just doesn't make it realistic.
+I mean, we these are high
+
+554
+00:32:58,560 --> 00:33:02,370
+schools and in junior High's and
+middle schools and elementary
+
+555
+00:33:02,370 --> 00:33:05,880
+schools that are primarily
+buying this. So we can't have
+
+556
+00:33:05,880 --> 00:33:07,650
+very expensive products out
+there.
+
+557
+00:33:08,970 --> 00:33:11,580
+Audrow Nash: And what are the
+kids look like? Like I've seen
+
+558
+00:33:11,580 --> 00:33:16,170
+some images and things. It's
+like a little similar to Lego in
+
+559
+00:33:16,170 --> 00:33:18,690
+terms of how you make it. But
+like, how would you describe the
+
+560
+00:33:18,690 --> 00:33:19,680
+kids? Yeah, so
+
+561
+00:33:19,680 --> 00:33:24,570
+Dan Mantz: let's talk about VRC.
+First, so VRC is metal parts.
+
+562
+00:33:24,600 --> 00:33:28,080
+I've always described it as,
+yeah, this is for high school.
+
+563
+00:33:28,080 --> 00:33:30,900
+And you know, a lot of eighth
+grade seventh and eighth grade
+
+564
+00:33:30,900 --> 00:33:34,080
+teams that have been doing Vex
+for a long time. They'll they'll
+
+565
+00:33:34,080 --> 00:33:37,860
+also do VRC. So those are metal
+parts with bigger motors. And I
+
+566
+00:33:37,860 --> 00:33:41,280
+think I described them as an
+erector set. So I think as its
+
+567
+00:33:41,280 --> 00:33:45,180
+generations get older, it's
+maybe people know what Erector
+
+568
+00:33:45,180 --> 00:33:48,930
+sets, but those are metal pieces
+that they can be cut in and bent
+
+569
+00:33:48,930 --> 00:33:54,300
+and stuff like that. The Middle
+School in late elementary the
+
+570
+00:33:54,300 --> 00:33:57,300
+Audrow Nash: IQ is like a
+modular design where you'll have
+
+571
+00:33:57,300 --> 00:33:59,550
+a piece and it has a bunch of
+holes in it. And then you can
+
+572
+00:33:59,550 --> 00:34:03,060
+insert something in and then you
+can exactly anything to that. So
+
+573
+00:34:03,060 --> 00:34:03,270
+from
+
+574
+00:34:03,270 --> 00:34:06,210
+Dan Mantz: the metal pieces
+you're using fasteners for for
+
+575
+00:34:06,210 --> 00:34:11,040
+IQ and Mexico you're using pins,
+and the pins index go that's the
+
+576
+00:34:11,040 --> 00:34:14,730
+third fourth grade, the pins are
+larger and easier to take in and
+
+577
+00:34:14,730 --> 00:34:18,360
+out. So IQ. Um, there's a lot
+more parts, but that's exactly
+
+578
+00:34:18,360 --> 00:34:21,210
+what they are. There are parts
+that you can put pins in,
+
+579
+00:34:21,210 --> 00:34:25,530
+there's different sizes. I don't
+think, you know, some people say
+
+580
+00:34:25,530 --> 00:34:29,700
+like Lego, but the connection is
+so much different. And the IQ
+
+581
+00:34:29,700 --> 00:34:32,310
+parts honestly stay together a
+lot better, right, you can
+
+582
+00:34:32,310 --> 00:34:36,930
+actually build so if you do
+Lego, you know, you're not
+
+583
+00:34:36,930 --> 00:34:39,990
+really running into stuff and
+stuff like that you're more it's
+
+584
+00:34:39,990 --> 00:34:42,930
+more like a programming
+challenge versus IQ. These
+
+585
+00:34:42,930 --> 00:34:45,840
+robots need to be a lot more
+robust, so and the motors are
+
+586
+00:34:45,840 --> 00:34:48,840
+more stronger. There's a lot
+more mechanisms. One of the
+
+587
+00:34:48,840 --> 00:34:51,810
+things I always ask subjects to
+do every six months is release
+
+588
+00:34:51,810 --> 00:34:55,440
+new sensors. So as someone who's
+come from industrial robotics
+
+589
+00:34:55,470 --> 00:34:58,650
+sensors are everything to me.
+And that's the other beauty of
+
+590
+00:34:58,650 --> 00:35:02,880
+all of our programs they can Um,
+with sensors, cameras, color
+
+591
+00:35:02,880 --> 00:35:07,260
+sensors, potentiometers, etc. So
+it's, you know, you have to make
+
+592
+00:35:07,260 --> 00:35:10,800
+sure that your electronics are
+robust enough to do the sensors
+
+593
+00:35:10,800 --> 00:35:14,040
+and stuff like that. But that's
+the best way to teach coding to
+
+594
+00:35:14,040 --> 00:35:17,550
+is when you include sensors, and
+you make sure that your game you
+
+595
+00:35:17,550 --> 00:35:21,750
+can win, you can play the game
+without having sensors, but
+
+596
+00:35:21,750 --> 00:35:24,120
+you'll do better if you
+integrate sensors. And that's
+
+597
+00:35:24,120 --> 00:35:28,350
+really, really important to me.
+Is that, that students that are
+
+598
+00:35:28,350 --> 00:35:30,360
+learning this Learn sensors,
+too.
+
+599
+00:35:31,140 --> 00:35:33,870
+Audrow Nash: So how do they so
+if a student has a robot,
+
+600
+00:35:33,870 --> 00:35:37,500
+they've put it together? It has
+motors, and it has a whole suite
+
+601
+00:35:37,500 --> 00:35:41,010
+of sensors that it can access?
+How do they program it?
+
+602
+00:35:42,390 --> 00:35:44,310
+Dan Mantz: Well, one of the
+things that Vex has done an
+
+603
+00:35:44,310 --> 00:35:48,840
+amazing job is they have Vex
+code, and you get Vex code for
+
+604
+00:35:48,840 --> 00:35:53,070
+free. And I do want to say
+there's third party programs out
+
+605
+00:35:53,070 --> 00:35:55,830
+there, like pros and stuff like
+that, that you can use to but
+
+606
+00:35:55,860 --> 00:35:59,250
+for the simplicity, we'll just
+talk about flex code. So a lot
+
+607
+00:35:59,250 --> 00:36:03,510
+of our students start with
+blocks. And then they transition
+
+608
+00:36:03,510 --> 00:36:07,350
+into text based programming, you
+know, it's looks very much like
+
+609
+00:36:07,680 --> 00:36:12,180
+C or you know, or something like
+that. So, you know, it's, but
+
+610
+00:36:12,180 --> 00:36:16,620
+most of the most time students
+will start with block coding,
+
+611
+00:36:16,620 --> 00:36:19,770
+and when they're comfortable,
+they switch to text coding. And
+
+612
+00:36:19,770 --> 00:36:23,670
+it's, and then you have lots of
+libraries that you can bring in.
+
+613
+00:36:24,060 --> 00:36:27,570
+And with the advanced
+programming and our programs are
+
+614
+00:36:27,570 --> 00:36:31,770
+amazing. And same with with cat
+two, even though teams start
+
+615
+00:36:31,770 --> 00:36:36,090
+with a kit of parts, our high
+school teams, over 75% of our
+
+616
+00:36:36,090 --> 00:36:39,420
+high school teams CAD up their
+robot and cat the parts too. So
+
+617
+00:36:40,050 --> 00:36:42,990
+you start at the very basic
+level and early elementary
+
+618
+00:36:42,990 --> 00:36:46,860
+school. And it's a continuum,
+you just continue to progress.
+
+619
+00:36:47,400 --> 00:36:48,060
+It's awesome.
+
+620
+00:36:48,540 --> 00:36:51,420
+Audrow Nash: For the coding. So
+we have the block language that
+
+621
+00:36:51,420 --> 00:36:53,400
+kind of looks like Scratch, I
+think.
+
+622
+00:36:53,880 --> 00:36:57,330
+Dan Mantz: Yeah, I think I think
+that's safe to say that it's it
+
+623
+00:36:57,330 --> 00:37:01,020
+looks like Scratch, right? And
+then as you move on from blocks,
+
+624
+00:37:01,020 --> 00:37:04,410
+then it looks like Python and c
+plus plus.
+
+625
+00:37:04,890 --> 00:37:08,310
+Audrow Nash: Okay. I imagine
+like a little subset of it
+
+626
+00:37:08,310 --> 00:37:10,260
+because C++ can be quite
+complex.
+
+627
+00:37:10,620 --> 00:37:13,740
+Dan Mantz: Yeah, I can. It's
+it's a simpler version of C++.
+
+628
+00:37:13,740 --> 00:37:17,880
+But as someone who used to be a
+professional programmer, I think
+
+629
+00:37:17,880 --> 00:37:21,510
+that it's a good subset, you can
+do some really good subset, I
+
+630
+00:37:21,510 --> 00:37:24,420
+feel very comfortable that
+students that are programming
+
+631
+00:37:24,450 --> 00:37:29,340
+are robots with the C Plus Plus
+and Python will be able to
+
+632
+00:37:29,370 --> 00:37:32,460
+transition that skill set
+outside of robotics.
+
+633
+00:37:32,700 --> 00:37:35,310
+Audrow Nash: How do you so for
+both of these, these are kind of
+
+634
+00:37:35,370 --> 00:37:40,710
+both your custom things? How do
+you? How do you decide to make
+
+635
+00:37:40,710 --> 00:37:44,370
+it? I mean, so you're a team of
+50 people with 30 additional
+
+636
+00:37:44,370 --> 00:37:47,670
+people as part time, how do you
+decide to go make your own
+
+637
+00:37:47,670 --> 00:37:51,810
+programming languages as opposed
+to like using Scratch, or using
+
+638
+00:37:51,810 --> 00:37:55,140
+Arduino or using something that
+exists out there
+
+639
+00:37:55,140 --> 00:37:57,420
+Dan Mantz: the difference
+between us as the not for profit
+
+640
+00:37:57,420 --> 00:38:00,840
+and then Vex as a product
+company? So okay, so VEX
+
+641
+00:38:00,840 --> 00:38:05,790
+Robotics is one of the leading
+education, STEM education
+
+642
+00:38:05,790 --> 00:38:10,290
+companies in the world, right?
+So we just take their, their
+
+643
+00:38:10,320 --> 00:38:13,350
+products that they develop,
+right, so we collaborate with
+
+644
+00:38:13,350 --> 00:38:18,600
+them, we explain what we see the
+needs, but but Vex themselves
+
+645
+00:38:18,660 --> 00:38:22,710
+has an incredible resource of
+mechanical electrical engineers
+
+646
+00:38:22,710 --> 00:38:26,250
+and programmers so so it's Vex
+that actually develops the
+
+647
+00:38:26,520 --> 00:38:30,600
+hardware, develops the motors
+and develops all the coding
+
+648
+00:38:30,600 --> 00:38:35,280
+resources. So Vax has a division
+Vex education in Pittsburgh, and
+
+649
+00:38:35,280 --> 00:38:38,700
+they provide some of the best
+products are as for example, I
+
+650
+00:38:38,700 --> 00:38:42,390
+would highly encourage the
+people listening today or
+
+651
+00:38:42,390 --> 00:38:47,430
+watching today to look at Vex
+code, and virtual robots VR,
+
+652
+00:38:47,430 --> 00:38:51,180
+there's free resources out there
+that are absolutely incredible.
+
+653
+00:38:51,180 --> 00:38:53,310
+And again, they're free
+resources. And these are
+
+654
+00:38:53,430 --> 00:38:58,740
+designed to for the education
+market, right? So Vex is there
+
+655
+00:38:58,740 --> 00:39:02,430
+in classrooms across the world.
+And so we're focused on the
+
+656
+00:39:02,430 --> 00:39:06,270
+competition piece. So again, I
+always remind people index does
+
+657
+00:39:06,270 --> 00:39:09,390
+the same thing. They're a
+product company. Their goal is
+
+658
+00:39:09,390 --> 00:39:12,930
+to make money and sell products.
+And we're a not for profit that
+
+659
+00:39:12,930 --> 00:39:17,220
+runs competition, and camps and
+education activities. And we
+
+660
+00:39:17,220 --> 00:39:20,010
+have the same thing at our
+drones too. So we have partners
+
+661
+00:39:20,010 --> 00:39:24,510
+for our drones, competition,
+that design and make drones. And
+
+662
+00:39:24,510 --> 00:39:27,930
+then we take the drone partners
+and we integrate them into a
+
+663
+00:39:27,930 --> 00:39:31,470
+competition and education
+curriculum. Gotcha. When
+
+664
+00:39:31,470 --> 00:39:33,810
+Audrow Nash: you're making a
+competition and you are
+
+665
+00:39:33,810 --> 00:39:37,740
+selecting the robots to use how
+closely do you work with Vex to
+
+666
+00:39:37,740 --> 00:39:40,290
+kind of get the parts prepared
+and get the kids
+
+667
+00:39:41,310 --> 00:39:44,670
+Dan Mantz: question and we
+actually on the game design
+
+668
+00:39:44,670 --> 00:39:49,680
+committee. It's actually half
+Vex half REC foundation. So it's
+
+669
+00:39:49,680 --> 00:39:53,520
+100% cooperation, right? So we
+go in there from the perspective
+
+670
+00:39:53,520 --> 00:39:56,940
+of our event partners, our
+coaches, our students, what they
+
+671
+00:39:56,940 --> 00:40:00,000
+need, what parents need, with
+the rules, and more importantly,
+
+672
+00:40:00,000 --> 00:40:03,420
+Are we going to be able to
+support the competition? So
+
+673
+00:40:03,420 --> 00:40:06,960
+that's, that's what are our big
+contribution on the Vex side?
+
+674
+00:40:07,920 --> 00:40:10,620
+You know, they have the
+engineers and the programmers,
+
+675
+00:40:10,620 --> 00:40:13,290
+and that's what they contribute.
+So it's a truly collaborative
+
+676
+00:40:13,290 --> 00:40:16,680
+effort. And we always design our
+games two years ahead of time,
+
+677
+00:40:16,680 --> 00:40:20,070
+right. So the game that we're
+going to reveal in March, and
+
+678
+00:40:20,070 --> 00:40:23,580
+May, has been designed already
+for a year, and it's been
+
+679
+00:40:23,580 --> 00:40:26,880
+totaled up and the parks are in
+the warehouse, and we already
+
+680
+00:40:26,880 --> 00:40:31,410
+have the game ready for 2023.
+Right? So we'll start working on
+
+681
+00:40:31,410 --> 00:40:33,660
+the 2024 game very, very soon.
+
+682
+00:40:34,110 --> 00:40:37,290
+Audrow Nash: Gotcha. So being
+two years ahead, does that mean
+
+683
+00:40:37,290 --> 00:40:40,530
+you do like small groups of
+students that are approximately
+
+684
+00:40:40,530 --> 00:40:43,950
+the age you're looking for? And
+you like, run it by them? And
+
+685
+00:40:43,950 --> 00:40:46,740
+have them try it? Or, like early
+feedback? Or
+
+686
+00:40:46,740 --> 00:40:49,500
+Dan Mantz: what do you guys we
+don't, they're glad that the
+
+687
+00:40:49,500 --> 00:40:52,350
+students from our programs that
+were listening would say, Man,
+
+688
+00:40:52,350 --> 00:40:56,670
+please do that, please do it. At
+this point, security is very,
+
+689
+00:40:56,670 --> 00:41:00,960
+very key. Because when we
+announce our new game, and may,
+
+690
+00:41:01,470 --> 00:41:03,960
+you know, competitions will
+start happening, you know, a
+
+691
+00:41:03,960 --> 00:41:08,940
+month later, and Singapore and
+Australia, etc. But we have to
+
+692
+00:41:08,940 --> 00:41:12,720
+be very, very sensitive about
+keeping the game private,
+
+693
+00:41:12,720 --> 00:41:16,770
+because it is a competition. And
+so we actually keep the circle
+
+694
+00:41:16,770 --> 00:41:20,220
+pretty small, that's aware of
+the game. So some some people
+
+695
+00:41:20,220 --> 00:41:24,630
+from the RSAF will, will play
+it, you know, simulate it. Same
+
+696
+00:41:24,630 --> 00:41:28,470
+with some of the Vex engineers,
+but we actually don't do any pre
+
+697
+00:41:28,470 --> 00:41:32,220
+testing. We also try to be
+flexible, just like we want our
+
+698
+00:41:32,220 --> 00:41:36,330
+students to be flexible. So for
+example, last year's game, the
+
+699
+00:41:36,330 --> 00:41:42,510
+IQ game where one month into the
+season, basically, we you have
+
+700
+00:41:42,540 --> 00:41:44,880
+you can lift yourself up at the
+end, it's called the end game,
+
+701
+00:41:44,880 --> 00:41:47,580
+you can lift yourself up for
+points, and we didn't have a
+
+702
+00:41:47,580 --> 00:41:51,540
+possession limit. And so teams
+just filled up and then they
+
+703
+00:41:51,540 --> 00:41:54,990
+lifted and dumped. And they were
+maxing out the game one month
+
+704
+00:41:54,990 --> 00:41:58,380
+into the season. So that's where
+we evolve and stuff like that.
+
+705
+00:41:58,380 --> 00:42:02,610
+We're like, Okay, if you're in
+the air, you can only possess X
+
+706
+00:42:02,610 --> 00:42:06,000
+amount of product, right? So,
+but for the most part, we try to
+
+707
+00:42:06,000 --> 00:42:10,320
+do all our scenarios, the person
+who leads the GDC, the game
+
+708
+00:42:10,320 --> 00:42:13,560
+design committee, he's very
+meticulous, and looking at all
+
+709
+00:42:13,560 --> 00:42:16,110
+the what if scenarios, and for
+the most part, we get it right.
+
+710
+00:42:16,380 --> 00:42:19,800
+And if we make a mistake, we
+acknowledge it, we make a rule
+
+711
+00:42:19,800 --> 00:42:23,790
+and we give, we send out rule
+updates, at least every couple
+
+712
+00:42:23,790 --> 00:42:27,450
+months throughout the season for
+clarification. A lot of times we
+
+713
+00:42:27,450 --> 00:42:30,450
+do that, for the benefit of our
+referees, the referees have a
+
+714
+00:42:30,450 --> 00:42:33,660
+very difficult job, especially
+at the high school level, right?
+
+715
+00:42:33,660 --> 00:42:38,280
+So we're always evolving to make
+sure that we're clear on our
+
+716
+00:42:38,280 --> 00:42:38,970
+rules.
+
+717
+00:42:39,390 --> 00:42:41,250
+Audrow Nash: By at the high
+school level, is it especially
+
+718
+00:42:41,250 --> 00:42:41,850
+difficult,
+
+719
+00:42:42,600 --> 00:42:45,900
+Dan Mantz: I believe that it's
+just more competitive, I think
+
+720
+00:42:45,930 --> 00:42:50,010
+teams, the bell curve I talked
+to there's more students at the
+
+721
+00:42:50,010 --> 00:42:53,970
+high school that are motivated
+to win, you know, so I think you
+
+722
+00:42:53,970 --> 00:42:56,550
+know, the earlier like, you
+know, these kids that are at
+
+723
+00:42:56,550 --> 00:42:58,800
+second and third, they're
+playing, and they're just having
+
+724
+00:42:58,800 --> 00:43:00,960
+fun, and they're learning stem,
+and they're learning soft
+
+725
+00:43:00,960 --> 00:43:03,810
+skills, and they don't care
+about winning or losing. But the
+
+726
+00:43:03,960 --> 00:43:06,600
+older you get, the more
+important winning and losing is.
+
+727
+00:43:06,600 --> 00:43:10,230
+So I think our our, our high
+school students are a little
+
+728
+00:43:10,230 --> 00:43:14,310
+more crafty about finding the
+loopholes in our roles. So and I
+
+729
+00:43:14,310 --> 00:43:17,490
+mean, that affectionally to you
+students out there, but they're
+
+730
+00:43:17,490 --> 00:43:22,680
+definitely better at identifying
+and the loopholes and taking
+
+731
+00:43:22,680 --> 00:43:23,220
+advantage of
+
+732
+00:43:23,220 --> 00:43:28,530
+Audrow Nash: those. That's so
+funny. Okay, and you mentioned,
+
+733
+00:43:28,860 --> 00:43:32,130
+you mentioned a couple of times
+drones and the whole set of
+
+734
+00:43:32,130 --> 00:43:35,190
+drone competitions. How does
+that fit? Or how does that fit
+
+735
+00:43:35,190 --> 00:43:36,660
+with everything? Yeah,
+
+736
+00:43:36,660 --> 00:43:39,840
+Dan Mantz: so you know, a few
+years ago, I love mobile
+
+737
+00:43:39,840 --> 00:43:43,110
+robotics. And we'll talk about
+my background a little bit
+
+738
+00:43:43,110 --> 00:43:46,590
+later, but I come from from
+robotics, industrial robotics.
+
+739
+00:43:46,890 --> 00:43:49,800
+But when I joined the REC
+Foundation, when the board asked
+
+740
+00:43:49,800 --> 00:43:55,050
+me to join as the CEO, there's a
+couple things that I asked for.
+
+741
+00:43:55,050 --> 00:43:58,230
+I said, I'll take the position,
+but I want to be able to move
+
+742
+00:43:58,230 --> 00:44:01,080
+outside of just stem, I want us
+to focus on workforce
+
+743
+00:44:01,080 --> 00:44:04,140
+development. And I think there's
+a large set of students that
+
+744
+00:44:04,140 --> 00:44:07,440
+aren't doing mobile robotics for
+different reasons. And I want to
+
+745
+00:44:07,440 --> 00:44:11,280
+try to reach those students too.
+And when you look about a drone
+
+746
+00:44:11,280 --> 00:44:14,610
+technology is everywhere. I'm a
+country boy, myself, and you
+
+747
+00:44:14,610 --> 00:44:18,150
+know, drones are used in
+agriculture for identifying, you
+
+748
+00:44:18,150 --> 00:44:20,700
+know, fields that have bug
+infestations, or need more
+
+749
+00:44:20,700 --> 00:44:24,600
+watering or need less watering.
+And drones are fun, and a lot of
+
+750
+00:44:24,600 --> 00:44:28,560
+people love flying them. So we
+dipped our toe into drones about
+
+751
+00:44:28,560 --> 00:44:31,140
+three and a half years ago. And
+I think a lot of people honestly
+
+752
+00:44:31,140 --> 00:44:34,140
+were skeptical. They weren't
+sure that I was making a good
+
+753
+00:44:34,140 --> 00:44:37,860
+decision there. But I just felt
+that mobile robotics aren't for
+
+754
+00:44:37,860 --> 00:44:39,960
+everybody. And by mobile
+
+755
+00:44:39,960 --> 00:44:43,230
+Audrow Nash: robotics, you mean
+ground robots? Yes. Drive
+
+756
+00:44:43,230 --> 00:44:43,740
+around.
+
+757
+00:44:43,800 --> 00:44:46,770
+Dan Mantz: Exactly. The ones
+with wheels are true thank
+
+758
+00:44:46,770 --> 00:44:50,340
+tread, etc. And so there's a
+whole group of students that
+
+759
+00:44:50,340 --> 00:44:54,090
+maybe weren't going to do STEM.
+They weren't going to analysis
+
+760
+00:44:54,090 --> 00:44:58,020
+because it's fun to fly a drone.
+So now they start programming a
+
+761
+00:44:58,020 --> 00:45:00,780
+drone and they add sensors to
+the trunk. Under, they build the
+
+762
+00:45:00,780 --> 00:45:04,680
+drone. And they're getting that
+same skill set that you get in
+
+763
+00:45:04,680 --> 00:45:08,730
+the ground based robotics. And
+so that's why we did it. And,
+
+764
+00:45:09,000 --> 00:45:12,510
+and then for our our V five
+workcell, our factory automation
+
+765
+00:45:12,510 --> 00:45:16,080
+competition, same thing,
+students out there, they're not
+
+766
+00:45:16,080 --> 00:45:19,710
+going into engineering, they may
+not have the financial, you
+
+767
+00:45:19,710 --> 00:45:24,240
+know, ability to do it, they may
+not have the background, and
+
+768
+00:45:24,240 --> 00:45:26,970
+they want or they just may not
+like, you know, school, right,
+
+769
+00:45:26,970 --> 00:45:31,410
+so, but they need good, good
+jobs, too. And robotics is the
+
+770
+00:45:31,410 --> 00:45:34,410
+fastest growing industry, right?
+There's robotics everywhere. So
+
+771
+00:45:34,470 --> 00:45:37,710
+we didn't know develop, we
+developed a program where
+
+772
+00:45:37,710 --> 00:45:41,550
+students, they build a robot
+that looks a lot like a factory
+
+773
+00:45:41,550 --> 00:45:45,300
+automation, an industrial robot,
+they build conveyor systems, and
+
+774
+00:45:45,300 --> 00:45:49,500
+they figure out how to make the
+robots work and how to
+
+775
+00:45:49,530 --> 00:45:54,960
+collaboratively stack cargo and
+by color, sort by color and
+
+776
+00:45:54,960 --> 00:45:58,500
+stuff like that. So we felt it
+was really important to reach
+
+777
+00:45:58,890 --> 00:46:02,850
+all the students that we need so
+desperately for our workforce.
+
+778
+00:46:04,320 --> 00:46:06,840
+Audrow Nash: Why do you? So I
+mean, I know that there's labor
+
+779
+00:46:06,840 --> 00:46:09,960
+shortages, and I know that we
+have an aging population. And
+
+780
+00:46:10,200 --> 00:46:13,380
+there's a lot of other things.
+But why do you? Why do you say
+
+781
+00:46:13,380 --> 00:46:14,400
+that the last statement?
+
+782
+00:46:15,059 --> 00:46:17,789
+Dan Mantz: Well, I mean, just
+even Department of Defense and
+
+783
+00:46:17,789 --> 00:46:21,509
+Department of Workforce studies.
+Now we have a gap. You know,
+
+784
+00:46:21,509 --> 00:46:25,019
+even a couple years ago, there
+was 2 million more STEM jobs
+
+785
+00:46:25,019 --> 00:46:28,169
+being created every year than we
+had people to fill them. And
+
+786
+00:46:28,169 --> 00:46:31,019
+when I say stem, I'm not talking
+engineers and scientists, I'm
+
+787
+00:46:31,019 --> 00:46:34,439
+talking robot technicians,
+people that are doing technical
+
+788
+00:46:34,439 --> 00:46:38,129
+jobs in the workforce, because
+even in retail, now, there are
+
+789
+00:46:38,159 --> 00:46:41,669
+technical jobs, you know, you go
+into WalMart, you see the robots
+
+790
+00:46:41,669 --> 00:46:44,669
+that are doing inventory and
+stocking and you need people to
+
+791
+00:46:44,669 --> 00:46:48,959
+maintain those. So technology is
+permeating themselves in all
+
+792
+00:46:48,959 --> 00:46:52,169
+industries right now. So those
+jobs are growing much faster
+
+793
+00:46:52,319 --> 00:46:56,339
+than non technical jobs. I mean,
+they're growing 30% faster. And
+
+794
+00:46:56,339 --> 00:46:59,429
+there's a huge gap of people
+that have the talents to use
+
+795
+00:46:59,429 --> 00:47:02,609
+these to do these jobs. And
+that's the challenge that we're
+
+796
+00:47:02,609 --> 00:47:05,459
+trying to face. Of course, we
+want the next generation of
+
+797
+00:47:05,459 --> 00:47:08,519
+scientists and engineers and
+technicians, I don't want to
+
+798
+00:47:08,519 --> 00:47:11,699
+minimize that. But we also have
+so many students that didn't,
+
+799
+00:47:11,699 --> 00:47:16,079
+the good paying jobs out there
+are maintaining the robot on the
+
+800
+00:47:16,079 --> 00:47:21,449
+factory floor are tweaking the
+inventory robots at a retail
+
+801
+00:47:21,449 --> 00:47:26,579
+store, they are the ones setting
+up the cameras, so that, you
+
+802
+00:47:26,579 --> 00:47:29,039
+know they can do better
+scanning, and those don't
+
+803
+00:47:29,039 --> 00:47:32,429
+necessarily have to have college
+degrees to do these jobs. But
+
+804
+00:47:32,429 --> 00:47:36,029
+you do need to have a technical
+aptitude. So that's a gap that
+
+805
+00:47:36,029 --> 00:47:38,849
+the US government has
+identified, it's that gap exists
+
+806
+00:47:38,849 --> 00:47:42,299
+everywhere in the world is that
+tech jobs are growing so much
+
+807
+00:47:42,299 --> 00:47:45,689
+faster than non tech jobs. And
+we need our students to have
+
+808
+00:47:45,689 --> 00:47:47,519
+those skills to fill these jobs.
+
+809
+00:47:49,710 --> 00:47:55,350
+Audrow Nash: So it's from I
+guess, this is kind of a big
+
+810
+00:47:55,350 --> 00:47:59,310
+picture perspective, where
+you're trying to think of where
+
+811
+00:47:59,310 --> 00:48:02,940
+the world will be in the future,
+and you're trying to make it so
+
+812
+00:48:02,940 --> 00:48:05,460
+that this knee that keeps
+growing, that we can kind of
+
+813
+00:48:05,460 --> 00:48:10,770
+match it by exposing more people
+to robotics, getting them
+
+814
+00:48:10,770 --> 00:48:15,540
+interested, even if it's at a
+much even if it's not like PhD
+
+815
+00:48:15,540 --> 00:48:20,940
+in robotics, or like a leak
+researcher or robotics engineer,
+
+816
+00:48:21,090 --> 00:48:21,600
+but
+
+817
+00:48:23,850 --> 00:48:26,640
+Dan Mantz: I think your your
+audience has probably heard of,
+
+818
+00:48:26,640 --> 00:48:30,000
+you know, the industry 4.0 the
+fourth industrial revolution,
+
+819
+00:48:30,000 --> 00:48:34,350
+right, that it's, yeah, it's
+rapid technology and stuff like
+
+820
+00:48:34,350 --> 00:48:37,440
+that. And that's where we are
+right now. And, you know, I like
+
+821
+00:48:37,440 --> 00:48:40,050
+to think at the Rec Foundation,
+we were slightly ahead of the
+
+822
+00:48:40,050 --> 00:48:44,520
+curve as far as developing
+programs for the fourth
+
+823
+00:48:44,520 --> 00:48:48,780
+industrial revolution, right for
+industry 4.0. But it's not in
+
+824
+00:48:48,780 --> 00:48:52,020
+the future anymore. It's here
+now smack smart factories are
+
+825
+00:48:52,020 --> 00:48:56,580
+here. Now, artificial
+intelligence is here. Now, you
+
+826
+00:48:56,580 --> 00:48:59,730
+know, data learning is here.
+Now, all those things are here,
+
+827
+00:49:00,390 --> 00:49:03,420
+there when you when you type in
+something in your search bar,
+
+828
+00:49:03,720 --> 00:49:08,070
+and all sudden it does a profile
+on you. Those are technology
+
+829
+00:49:08,070 --> 00:49:13,380
+jobs, that is the industry 4.0.
+And, you know, and so we need to
+
+830
+00:49:13,380 --> 00:49:16,440
+make sure that we're not
+preparing students for the
+
+831
+00:49:16,440 --> 00:49:18,900
+future jobs, we're preparing
+them for the jobs that are here
+
+832
+00:49:18,900 --> 00:49:21,900
+now. And it's just going to tend
+to continue to grow. And again,
+
+833
+00:49:21,900 --> 00:49:25,500
+it's not just factories, it's
+just not manufacturing. It's
+
+834
+00:49:25,500 --> 00:49:29,580
+agriculture. For example, I
+mean, if you've ever gone into a
+
+835
+00:49:29,580 --> 00:49:32,250
+dairy farm, and I've been to
+many, many dairy farms growing
+
+836
+00:49:32,250 --> 00:49:35,640
+up in rural Pennsylvania, they
+have some of the most advanced
+
+837
+00:49:35,640 --> 00:49:38,310
+technology and it's been there
+forever. I mean, they would, you
+
+838
+00:49:38,310 --> 00:49:41,370
+know, or the cows are being fed,
+right, you know, or how's the
+
+839
+00:49:41,370 --> 00:49:44,940
+quality of the milk and stuff
+like that? And of course,
+
+840
+00:49:44,940 --> 00:49:48,180
+military, right. That's the
+military's high tech now, and
+
+841
+00:49:48,180 --> 00:49:53,670
+we're very, very proud that the
+junior JROTC army JROTC chose
+
+842
+00:49:53,670 --> 00:49:57,690
+the REC foundation to be one of
+their partners. And it's not
+
+843
+00:49:57,690 --> 00:50:02,040
+about people joining charity
+See, as engineers, it's about
+
+844
+00:50:02,040 --> 00:50:05,670
+these students building our
+robots programming our robots,
+
+845
+00:50:05,730 --> 00:50:09,780
+building our job, drones, flying
+our drones, they're just giving
+
+846
+00:50:09,780 --> 00:50:13,380
+them the basic skill set. So
+when these students enlist in
+
+847
+00:50:13,380 --> 00:50:16,710
+the military, they have the
+skill sets to use the modern
+
+848
+00:50:16,740 --> 00:50:20,580
+tanks and, and to do all that
+type of stuff. It's we're here
+
+849
+00:50:20,580 --> 00:50:23,880
+now industry 4.0 is here now.
+And we're just one of many
+
+850
+00:50:23,880 --> 00:50:26,220
+organizations out there that are
+trying to make sure that our
+
+851
+00:50:26,220 --> 00:50:29,640
+students are ready. And I think
+that, because of our model, we
+
+852
+00:50:29,640 --> 00:50:33,900
+keep prices affordable and
+accessible. And I think we have
+
+853
+00:50:33,900 --> 00:50:36,270
+a really, really good model,
+which is why we're growing so
+
+854
+00:50:36,270 --> 00:50:36,810
+quickly.
+
+855
+00:50:38,970 --> 00:50:42,120
+Audrow Nash: What what
+explicitly in terms of skills
+
+856
+00:50:42,150 --> 00:50:47,040
+and like, how explicitly do you
+see the REC program,
+
+857
+00:50:47,400 --> 00:50:50,640
+contributing to preparing people
+for the jobs you were
+
+858
+00:50:50,640 --> 00:50:54,090
+mentioning, like maybe setting
+up a camera or whatever it might
+
+859
+00:50:54,090 --> 00:50:54,390
+be.
+
+860
+00:50:54,450 --> 00:50:57,780
+Dan Mantz: So I do think in our
+program, you learned some hands
+
+861
+00:50:57,780 --> 00:51:01,020
+on tech skills. I do, I think,
+you know, you'd learn
+
+862
+00:51:01,020 --> 00:51:05,550
+programming, you learn, you
+know, without even know you're
+
+863
+00:51:05,550 --> 00:51:08,430
+learning math, you're learning
+about gear ratios, and torque
+
+864
+00:51:08,430 --> 00:51:10,680
+and some of those things. So
+you're learning some, some
+
+865
+00:51:10,830 --> 00:51:14,430
+technical skills, but what our
+program really, really does, in
+
+866
+00:51:14,430 --> 00:51:17,130
+my opinion, and many programs
+like ours is we're really
+
+867
+00:51:17,130 --> 00:51:20,550
+teaching the soft skills. And
+you hear more and more people
+
+868
+00:51:20,550 --> 00:51:24,090
+talking about the soft skills,
+but our data shows that students
+
+869
+00:51:24,090 --> 00:51:26,700
+coming out of the program to the
+soft skills. So let me step back
+
+870
+00:51:26,700 --> 00:51:28,740
+and say what that is. So
+students that are in our
+
+871
+00:51:28,740 --> 00:51:32,460
+program, really learn how to
+communicate, to be successful in
+
+872
+00:51:32,460 --> 00:51:35,460
+our programming, you have to
+communicate with your teammates,
+
+873
+00:51:35,460 --> 00:51:37,380
+you have to communicate to your
+coach and you have to
+
+874
+00:51:37,380 --> 00:51:39,930
+communicate with the teams
+you're playing against a force.
+
+875
+00:51:39,930 --> 00:51:43,650
+So you learn communication, you
+learn problem solving, and
+
+876
+00:51:43,650 --> 00:51:46,290
+troubleshooting. I mean, that's
+a skill set. No matter what you
+
+877
+00:51:46,290 --> 00:51:50,010
+do. In our program, you are
+learning how to troubleshoot and
+
+878
+00:51:50,010 --> 00:51:54,510
+to solve problems. And I think
+that's really, really clear. And
+
+879
+00:51:54,510 --> 00:51:56,460
+you're and you're learning the
+perseverance, and you're
+
+880
+00:51:56,460 --> 00:51:59,880
+learning patience. So all these
+skills aren't necessarily
+
+881
+00:51:59,880 --> 00:52:02,970
+technical skills, but they're
+what employers really, really
+
+882
+00:52:02,970 --> 00:52:06,480
+want. I myself, I used to hire
+lots of engineers, I didn't
+
+883
+00:52:06,480 --> 00:52:10,500
+always hire the engineer that
+had the highest GPA. I hired
+
+884
+00:52:10,500 --> 00:52:13,140
+engineers that were good
+communicators and good problem
+
+885
+00:52:13,140 --> 00:52:15,810
+solvers, because I could teach
+them the tech skills, right? I
+
+886
+00:52:15,810 --> 00:52:18,840
+could teach them that. But I
+really had a harder time
+
+887
+00:52:19,020 --> 00:52:21,600
+teaching people how to
+communicate and troubleshoot and
+
+888
+00:52:21,600 --> 00:52:26,370
+stuff like that. So I feel with
+with very strong confidence, and
+
+889
+00:52:26,370 --> 00:52:29,340
+the data shows that the the
+universities that study our
+
+890
+00:52:29,340 --> 00:52:32,940
+students, the data shows that
+students in our programs come
+
+891
+00:52:32,940 --> 00:52:35,880
+out with advanced soft skills,
+they really are good
+
+892
+00:52:35,880 --> 00:52:38,310
+troubleshooters, good
+communicators good problem
+
+893
+00:52:38,310 --> 00:52:39,060
+solvers.
+
+894
+00:52:39,540 --> 00:52:42,300
+Audrow Nash: Yeah, it's funny to
+me, it's almost ironic, in a
+
+895
+00:52:42,300 --> 00:52:46,740
+sense that it's the whole, the
+mission is to increase stem
+
+896
+00:52:46,860 --> 00:52:51,360
+engagement. And then the big
+outcome is increasing soft
+
+897
+00:52:51,360 --> 00:52:56,190
+skills, which is not exactly
+stem to me, but very, very
+
+898
+00:52:56,190 --> 00:52:56,730
+important.
+
+899
+00:52:57,060 --> 00:53:00,690
+Dan Mantz: Yeah, that's actually
+very insightful. And four and a
+
+900
+00:53:00,690 --> 00:53:02,640
+half years of doing these,
+you're the first person that's
+
+901
+00:53:02,640 --> 00:53:05,550
+pointed those out, and
+internally, my own staff has
+
+902
+00:53:05,550 --> 00:53:09,270
+actually stepped back and, and I
+do think you'll see us tweak
+
+903
+00:53:09,270 --> 00:53:12,660
+our, our mission and vision to
+emphasize that more. And there's
+
+904
+00:53:12,660 --> 00:53:16,170
+a lot of other robotics
+organizations out there. You
+
+905
+00:53:16,170 --> 00:53:19,320
+know, I joke that we're the
+largest, but we're not the best
+
+906
+00:53:19,320 --> 00:53:23,910
+known. But I would say that all
+the other robotics organizations
+
+907
+00:53:23,910 --> 00:53:27,450
+out there would all say that the
+STEM skills is what the students
+
+908
+00:53:27,450 --> 00:53:30,390
+get most from our program. I
+mean, literally, the data is in
+
+909
+00:53:30,390 --> 00:53:33,270
+the 90%. You know, you talk to
+coaches, you talk to parents,
+
+910
+00:53:33,270 --> 00:53:38,460
+you talk to employers, and, you
+know, 90% of our students have
+
+911
+00:53:38,460 --> 00:53:41,970
+good communication skills, you
+know, 97% demonstrate problem
+
+912
+00:53:41,970 --> 00:53:48,420
+solving. It's the data is
+remarkable. And we can teach a
+
+913
+00:53:48,420 --> 00:53:51,690
+lot of the skills, but we giving
+them that infrastructure, that
+
+914
+00:53:51,690 --> 00:53:54,660
+foundation of the good problem
+solving and communication skills
+
+915
+00:53:54,660 --> 00:53:58,680
+are so important. And again, I
+don't want to hand wave. You
+
+916
+00:53:58,680 --> 00:54:01,380
+know, I joke how many students
+in our program, learn about four
+
+917
+00:54:01,380 --> 00:54:04,740
+bar link systems and gear ratios
+and torque, they do learn
+
+918
+00:54:04,740 --> 00:54:08,760
+technical stuff, too. And, you
+know, and then if you do drones,
+
+919
+00:54:08,790 --> 00:54:10,950
+if you're in any one of our
+drones, programs, you're
+
+920
+00:54:10,950 --> 00:54:14,640
+learning a lot about physics and
+aerodynamics, and lift and stuff
+
+921
+00:54:14,640 --> 00:54:15,810
+like that, too. So
+
+922
+00:54:16,080 --> 00:54:19,860
+Audrow Nash: yeah, definitely.
+Not too. Well, kind of to play
+
+923
+00:54:19,860 --> 00:54:24,090
+devil's devil's advocate, but
+not to, I don't know, just just
+
+924
+00:54:24,090 --> 00:54:28,950
+out of curiosity, is robotics
+the best way to teach these soft
+
+925
+00:54:28,950 --> 00:54:32,490
+skills? Or why is it well suited
+for this? That's kind of like
+
+926
+00:54:32,490 --> 00:54:36,690
+one of the big underlying value
+adds of this kind of structure?
+
+927
+00:54:36,810 --> 00:54:39,060
+Dan Mantz: Yeah, you know, and I
+have been asked that question
+
+928
+00:54:39,060 --> 00:54:42,750
+before. And, first of all,
+you'll never hear me say
+
+929
+00:54:42,750 --> 00:54:45,330
+robotics is the only way to do
+it. I mean, if I would have felt
+
+930
+00:54:45,330 --> 00:54:47,760
+that way, we wouldn't have
+started drones programs, and we
+
+931
+00:54:47,760 --> 00:54:50,790
+wouldn't started our factory
+automation competition, right.
+
+932
+00:54:50,790 --> 00:54:54,420
+So there are other programs, but
+I think the reason that robotics
+
+933
+00:54:54,420 --> 00:54:57,600
+is so effective, and the reason
+that there's other robotics
+
+934
+00:54:57,600 --> 00:55:02,040
+programs out there, is because
+you Start with a concept. You
+
+935
+00:55:02,040 --> 00:55:04,170
+have a challenge that you're
+trying to meet, and you start
+
+936
+00:55:04,170 --> 00:55:08,430
+with a concept. So then you
+design and you build. But then
+
+937
+00:55:08,430 --> 00:55:11,880
+you start competing. And whether
+you're competing with somebody
+
+938
+00:55:11,880 --> 00:55:14,160
+to score points, or whether
+you're competing against
+
+939
+00:55:14,160 --> 00:55:18,030
+somebody to truly win and lose,
+the big brings up the fun part.
+
+940
+00:55:18,060 --> 00:55:21,030
+And I think sometimes we don't
+talk about the fun part. And
+
+941
+00:55:21,030 --> 00:55:24,000
+that's why robotics is so it's
+so effective at doing this,
+
+942
+00:55:24,000 --> 00:55:26,670
+because it's a lot of fun. If
+you go to a robotics
+
+943
+00:55:26,670 --> 00:55:30,030
+competition, kids are dancing
+and laughing and making friends
+
+944
+00:55:30,030 --> 00:55:33,840
+and stuff like that. So. So
+that's why I think robotics is
+
+945
+00:55:33,840 --> 00:55:37,260
+is one of the great platforms to
+teach these skills. It's not the
+
+946
+00:55:37,260 --> 00:55:39,960
+only one out there, though, I
+think people that tells you that
+
+947
+00:55:39,960 --> 00:55:43,170
+it is aren't being genuine. But
+I do think it's one of the good
+
+948
+00:55:43,170 --> 00:55:46,020
+ones. And honestly, with the REC
+Foundation, our price models
+
+949
+00:55:46,020 --> 00:55:50,310
+good too. And we offer all the
+educator resources for free. If
+
+950
+00:55:50,310 --> 00:55:53,490
+you go to our website, and you
+want to know how to teach gear
+
+951
+00:55:53,490 --> 00:55:57,060
+ratios, we have stem labs
+available for the teachers to
+
+952
+00:55:57,060 --> 00:56:00,540
+learn this. And really night.
+And so that's really, really
+
+953
+00:56:00,540 --> 00:56:03,570
+important is to make sure that
+the entry level I mean, we have
+
+954
+00:56:03,810 --> 00:56:07,560
+what we call educator training.
+And it's not to teach the
+
+955
+00:56:07,560 --> 00:56:12,390
+teachers to become roboticist.
+Right? It's to help them get
+
+956
+00:56:12,390 --> 00:56:16,080
+over the intimidation factor. So
+the not afraid of it, right. So,
+
+957
+00:56:16,680 --> 00:56:19,590
+you know, in our program, the
+teachers really just need to be
+
+958
+00:56:19,590 --> 00:56:22,650
+facilitators, because the
+students will embrace the
+
+959
+00:56:22,650 --> 00:56:26,790
+technology and, and students are
+a genius, right? They go on to
+
+960
+00:56:26,790 --> 00:56:30,570
+YouTube. So if there's an early
+season competition in China, or
+
+961
+00:56:30,570 --> 00:56:34,170
+Singapore and Australia, and
+when school starts in the US in
+
+962
+00:56:34,170 --> 00:56:37,200
+mid August or early September,
+these students have already
+
+963
+00:56:37,200 --> 00:56:40,170
+scoped out some of the good
+robots from other countries. And
+
+964
+00:56:40,380 --> 00:56:43,020
+And honestly, people say, well,
+don't you have a convergence of
+
+965
+00:56:43,020 --> 00:56:47,010
+design. And some of our games we
+do to get convergence of design,
+
+966
+00:56:47,010 --> 00:56:49,860
+right, at the end of the year, a
+lot of the robots look the same.
+
+967
+00:56:50,100 --> 00:56:52,980
+But that's real world, too. You
+know, I've spent 21 years at
+
+968
+00:56:52,980 --> 00:56:56,940
+FANUC robotics and a six axis
+robot that does palletizing, or
+
+969
+00:56:56,940 --> 00:56:59,700
+does welding or something like
+that, they kind of look the
+
+970
+00:56:59,700 --> 00:57:02,280
+same. I mean, they look a little
+bit different here and there.
+
+971
+00:57:02,520 --> 00:57:05,250
+It's what's behind the scenes.
+It's the kinematics, and it's
+
+972
+00:57:05,250 --> 00:57:09,420
+the sensors and the speed that
+really make the difference. So I
+
+973
+00:57:09,420 --> 00:57:11,880
+don't really care that much that
+the robots start looking the
+
+974
+00:57:11,880 --> 00:57:15,330
+same after a year, it's real
+life. But those students that
+
+975
+00:57:15,330 --> 00:57:18,090
+have figured out how to program
+better and how to utilize their
+
+976
+00:57:18,090 --> 00:57:21,090
+sensors better, they're gonna
+probably have the top performing
+
+977
+00:57:21,090 --> 00:57:21,900
+robots.
+
+978
+00:57:24,270 --> 00:57:27,780
+Audrow Nash: That's very
+interesting. Yeah. How do you so
+
+979
+00:57:28,200 --> 00:57:32,700
+can you tell me a bit about the
+pandemic, and like how you use
+
+980
+00:57:32,700 --> 00:57:35,880
+simulation, and all of this?
+Yeah, so
+
+981
+00:57:35,880 --> 00:57:40,260
+Dan Mantz: so we made a decision
+during the pandemic, that we
+
+982
+00:57:40,260 --> 00:57:43,710
+weren't just going to become
+virtual. Now Vex did an
+
+983
+00:57:43,710 --> 00:57:48,570
+incredible job, developing
+virtual resources, their Vex
+
+984
+00:57:48,570 --> 00:57:52,530
+code, and teaching kids how to
+program and their virtual
+
+985
+00:57:52,530 --> 00:57:55,530
+robotics that they gave to the
+community, we're free, we're
+
+986
+00:57:55,530 --> 00:57:59,970
+amazing. That was for so many
+teachers for, you know, hundreds
+
+987
+00:57:59,970 --> 00:58:03,330
+of 1000s of teachers out there.
+And for the millions of students
+
+988
+00:58:03,330 --> 00:58:06,030
+that learn how to program during
+the pandemic, because the
+
+989
+00:58:06,030 --> 00:58:11,190
+virtual, that was a lifesaver.
+But at the Rec Foundation, we
+
+990
+00:58:11,190 --> 00:58:15,510
+firmly believe that hands on as
+part of our program, it's not
+
+991
+00:58:15,510 --> 00:58:18,030
+just virtual. And there's a lot
+of companies out there that have
+
+992
+00:58:18,030 --> 00:58:20,640
+transitioned or like you can
+virtually build a robot or a
+
+993
+00:58:20,640 --> 00:58:24,390
+drone, and compete virtually,
+but we actually believe the
+
+994
+00:58:24,390 --> 00:58:27,720
+design process, which includes
+building a robot and includes
+
+995
+00:58:27,720 --> 00:58:31,470
+using the tools, using your
+hands, putting things together
+
+996
+00:58:31,470 --> 00:58:35,070
+things breaking is vital. So
+while we offered virtual
+
+997
+00:58:35,070 --> 00:58:38,970
+programs, we really went for a
+remote strategy. And since so
+
+998
+00:58:38,970 --> 00:58:42,000
+many, you know, we when you have
+a program as large as we do,
+
+999
+00:58:42,120 --> 00:58:46,080
+there's Vex parts all over the
+world, right? So teachers found
+
+1000
+00:58:46,080 --> 00:58:49,260
+a way to get the parts to their
+students, and they built robots,
+
+1001
+00:58:49,380 --> 00:58:52,290
+and we connected them, you know,
+you did have to have a field.
+
+1002
+00:58:52,500 --> 00:58:55,890
+But we also made it very simple
+Do It Yourself field that you
+
+1003
+00:58:55,890 --> 00:58:59,850
+could build with plywood, you
+know, and, and then you needed a
+
+1004
+00:58:59,850 --> 00:59:03,990
+camera. But most laptops have a
+camera and we basically develop
+
+1005
+00:59:03,990 --> 00:59:07,320
+the infrastructure to connect
+these. So one of my favorite
+
+1006
+00:59:07,320 --> 00:59:10,200
+things in my entire career.
+Definitely one of my favorite
+
+1007
+00:59:10,200 --> 00:59:16,140
+parts about 2021 was we had live
+remote Vex worlds. So we're
+
+1008
+00:59:16,140 --> 00:59:19,170
+still at the point of the
+pandemic where people couldn't
+
+1009
+00:59:19,170 --> 00:59:21,990
+get together and large. So we
+had a lot of in person state
+
+1010
+00:59:21,990 --> 00:59:25,050
+championships even during the
+pandemic, but we couldn't have
+
+1011
+00:59:25,050 --> 00:59:29,010
+effects worlds with 1000s and
+1000s of teams and 10s of 1000s
+
+1012
+00:59:29,010 --> 00:59:32,670
+of students, right. So we did
+this live remote technology. And
+
+1013
+00:59:32,670 --> 00:59:36,120
+one of my favorite days is I was
+watching a match. And we have
+
+1014
+00:59:36,120 --> 00:59:39,630
+this big screen setup and we had
+six divisions and in the
+
+1015
+00:59:39,630 --> 00:59:44,100
+divisions we had like I think it
+was 16 Different countries
+
+1016
+00:59:44,100 --> 00:59:48,540
+represented. So you saw a team
+in China playing a team in Texas
+
+1017
+00:59:48,540 --> 00:59:52,920
+and a team from Japan, a team
+from the UK, and where the
+
+1018
+00:59:52,920 --> 00:59:56,100
+fields were set up was amazing.
+We had field setup in bedrooms,
+
+1019
+00:59:56,100 --> 00:59:59,520
+we had field setup and empty
+libraries. We had field setup
+
+1020
+00:59:59,520 --> 01:00:02,910
+and Hall Ways we had a field set
+up in the outside tent, New
+
+1021
+01:00:02,910 --> 01:00:05,490
+England where they weren't
+allowed to have indoor events in
+
+1022
+01:00:05,490 --> 01:00:09,450
+basements and garages and in
+some traditional schools, too,
+
+1023
+01:00:09,450 --> 01:00:12,810
+right? So, and here we are all
+these teams were still playing
+
+1024
+01:00:12,810 --> 01:00:15,780
+with and against each other
+because we decided to do it
+
+1025
+01:00:15,780 --> 01:00:17,400
+remotely and not virtually.
+
+1026
+01:00:19,800 --> 01:00:21,840
+Audrow Nash: That's so cool.
+What do you so
+
+1027
+01:00:22,200 --> 01:00:23,130
+Dan Mantz: I agree with you, but
+
+1028
+01:00:23,160 --> 01:00:27,000
+Audrow Nash: why hands on? Like,
+what's the, what's the big
+
+1029
+01:00:27,000 --> 01:00:27,930
+reason for that?
+
+1030
+01:00:28,470 --> 01:00:32,190
+Dan Mantz: I, you know, that's,
+I probably need to get some data
+
+1031
+01:00:32,190 --> 01:00:34,620
+behind this too, although I know
+we have. And I just don't have
+
+1032
+01:00:34,620 --> 01:00:38,640
+it handy right here. But I think
+the hands on reinforces the
+
+1033
+01:00:38,640 --> 01:00:42,540
+learning. So it's easy to say,
+Okay, I'm going to put two
+
+1034
+01:00:42,540 --> 01:00:46,260
+different gears together for
+speed or torque or power, and
+
+1035
+01:00:46,260 --> 01:00:49,560
+you do it in software, or you do
+it in CAD and stuff like that.
+
+1036
+01:00:49,650 --> 01:00:52,740
+And you see it that way, versus
+when you actually do it on a
+
+1037
+01:00:52,740 --> 01:00:55,650
+real robot and you put them
+together, and then you change a
+
+1038
+01:00:55,650 --> 01:00:59,580
+gear, and it goes faster or
+slower, it's stronger. So I
+
+1039
+01:00:59,580 --> 01:01:02,190
+think it demonstrates what
+you're learning in the
+
+1040
+01:01:02,190 --> 01:01:05,790
+classroom. I don't think, you
+know, project based learning is
+
+1041
+01:01:05,790 --> 01:01:08,970
+fundamentally what I believe on
+hands on learning, because you
+
+1042
+01:01:08,970 --> 01:01:11,310
+can learn it in the classroom.
+And then when you do, it
+
+1043
+01:01:11,310 --> 01:01:12,750
+reinforces what you learn.
+
+1044
+01:01:13,590 --> 01:01:17,100
+Audrow Nash: Yeah, I totally
+agree. I think from from my
+
+1045
+01:01:17,100 --> 01:01:20,160
+perspective, like one of the
+reasons I really liked
+
+1046
+01:01:20,160 --> 01:01:23,130
+programming is because I can try
+things very quickly. And I can
+
+1047
+01:01:23,130 --> 01:01:27,360
+immediately see where my idea is
+not complete. But I think that
+
+1048
+01:01:27,360 --> 01:01:30,480
+that took a while of learning
+how to program. But if you're
+
+1049
+01:01:30,480 --> 01:01:32,820
+playing with gears and things,
+or you're trying different
+
+1050
+01:01:32,820 --> 01:01:36,150
+things, you can immediately see
+if the results are working. Like
+
+1051
+01:01:36,150 --> 01:01:38,790
+if it's doing what you expect,
+and if not, it's a great
+
+1052
+01:01:38,790 --> 01:01:42,180
+opportunity for learning. So
+intuitively, it seems to me that
+
+1053
+01:01:42,180 --> 01:01:45,960
+hands on is probably the best
+way for learning and probably
+
+1054
+01:01:46,260 --> 01:01:50,850
+the best way for getting
+everyone involved. Because the
+
+1055
+01:01:50,850 --> 01:01:53,280
+results kind of speak for
+themselves. And it's not that
+
+1056
+01:01:53,280 --> 01:01:57,090
+you have to follow an abstract
+programming language that is
+
+1057
+01:01:57,090 --> 01:02:01,320
+hard to understand for people
+who are beginning. So physical
+
+1058
+01:02:01,320 --> 01:02:02,190
+makes sense to me.
+
+1059
+01:02:02,220 --> 01:02:05,010
+Dan Mantz: Yeah, I absolutely
+agree with you. And, and, you
+
+1060
+01:02:05,010 --> 01:02:07,380
+know, coding is a great way
+because I actually started my
+
+1061
+01:02:07,380 --> 01:02:09,840
+career as a controls engineer.
+So I've done a lot of
+
+1062
+01:02:09,840 --> 01:02:14,760
+programming myself. And in our
+program, we have the autonomous
+
+1063
+01:02:14,760 --> 01:02:19,440
+so even in our, our elementary
+programs, we don't start the
+
+1064
+01:02:19,440 --> 01:02:23,010
+matches with autonomous but we
+have a programming factor like
+
+1065
+01:02:23,010 --> 01:02:27,030
+so one minute, it's 100%
+programming based, but what a
+
+1066
+01:02:27,030 --> 01:02:30,000
+great way to learn programming,
+you build your robot and say,
+
+1067
+01:02:30,180 --> 01:02:34,590
+You need to go, you know, shoot
+some balls without driving it,
+
+1068
+01:02:34,590 --> 01:02:37,740
+right. So you learn a sensor,
+you scoop up the ball, and you
+
+1069
+01:02:37,740 --> 01:02:43,200
+shoot it right. And the fact of
+a developing your mechanism is
+
+1070
+01:02:43,200 --> 01:02:46,620
+the mechanical spa. And the
+electrical is the sensor, but
+
+1071
+01:02:46,620 --> 01:02:50,040
+the programming is is how you
+make it all work together. And
+
+1072
+01:02:50,040 --> 01:02:53,790
+whether you just say, go forward
+for this distance or go forward
+
+1073
+01:02:53,790 --> 01:02:56,940
+at this or whether you actually
+use the sensors. It's an
+
+1074
+01:02:56,970 --> 01:03:01,500
+iterative programming, and I
+think the programming skill set
+
+1075
+01:03:01,500 --> 01:03:03,810
+from our students is the one
+area I've seen the most
+
+1076
+01:03:03,810 --> 01:03:08,220
+advancement, that the skill set
+of programming from four years
+
+1077
+01:03:08,220 --> 01:03:11,100
+ago when I first joined the REC
+Foundation, that's the biggest
+
+1078
+01:03:11,100 --> 01:03:12,540
+area of increase I've seen.
+
+1079
+01:03:13,110 --> 01:03:17,940
+Audrow Nash: That's so
+interesting. Yeah. So one thing
+
+1080
+01:03:17,940 --> 01:03:22,830
+that I haven't heard much in the
+whole program is any, like open
+
+1081
+01:03:22,830 --> 01:03:27,180
+source related things or use
+have, you mentioned that you
+
+1082
+01:03:27,180 --> 01:03:31,020
+have libraries involved with the
+coding, but I imagine that
+
+1083
+01:03:31,020 --> 01:03:34,500
+they're developed buybacks, or
+it's kind of like a closed
+
+1084
+01:03:34,500 --> 01:03:35,340
+source kind of.
+
+1085
+01:03:35,729 --> 01:03:39,119
+Dan Mantz: And so you know, our
+program tends to be a little bit
+
+1086
+01:03:39,119 --> 01:03:41,549
+more closed source. But that
+doesn't mean we don't have open
+
+1087
+01:03:41,549 --> 01:03:44,339
+source libraries is a good
+example, the community will,
+
+1088
+01:03:44,609 --> 01:03:48,659
+will develop libraries and share
+them. And that's a good example,
+
+1089
+01:03:49,199 --> 01:03:52,589
+open source on CAD designs, for
+example, and some things like
+
+1090
+01:03:52,589 --> 01:03:57,299
+that, but we're not giving out
+the the designs of the motor so
+
+1091
+01:03:57,299 --> 01:04:00,539
+that you can design your own
+motor, for example. And we do
+
+1092
+01:04:00,539 --> 01:04:06,539
+that for very practical reasons.
+One is level playing field. And
+
+1093
+01:04:06,539 --> 01:04:10,109
+so many stem competitions, the
+more money you have, the better
+
+1094
+01:04:10,109 --> 01:04:13,559
+you're going to do. And by
+everybody starting with the same
+
+1095
+01:04:13,559 --> 01:04:17,249
+parts, it does level the playing
+field. Now I'm not naive, if you
+
+1096
+01:04:17,249 --> 01:04:21,359
+have more funds, you can buy
+more motors, more sensors, build
+
+1097
+01:04:21,359 --> 01:04:24,209
+more iterative designs and stuff
+like that. And you're probably
+
+1098
+01:04:24,209 --> 01:04:26,849
+going to, at the end of the
+season, maybe have a better
+
+1099
+01:04:26,849 --> 01:04:32,039
+robot, but the concept of using
+one manufacturer's product
+
+1100
+01:04:32,039 --> 01:04:35,669
+really does level. The other
+thing is it keeps the cost. It
+
+1101
+01:04:35,669 --> 01:04:38,639
+really, really keeps the costs
+down because we're talking
+
+1102
+01:04:38,639 --> 01:04:43,079
+volume here, right? So if every
+robot out there is using eight
+
+1103
+01:04:43,079 --> 01:04:47,279
+of the same motor, and we have
+30,000 teams, you're mass
+
+1104
+01:04:47,279 --> 01:04:51,479
+producing those motors if it's
+open source, you know it's true,
+
+1105
+01:04:51,479 --> 01:04:54,809
+you might have somebody comes up
+with a lower cost motor for one
+
+1106
+01:04:54,809 --> 01:04:58,169
+application, but overall, it's
+going to be a more expensive
+
+1107
+01:04:58,169 --> 01:05:00,479
+product by the end of the season
+and there's a lot A lot of
+
+1108
+01:05:00,629 --> 01:05:03,629
+robotics competitions out there,
+they're, they're open source,
+
+1109
+01:05:03,629 --> 01:05:06,269
+and they say it's cheaper. But
+when you talk to the teams, they
+
+1110
+01:05:06,299 --> 01:05:08,249
+ultimately spend way more money
+in the
+
+1111
+01:05:09,360 --> 01:05:13,620
+Audrow Nash: interesting. I
+would wonder also, just, and
+
+1112
+01:05:13,620 --> 01:05:17,550
+maybe this is the students being
+a little too young for this kind
+
+1113
+01:05:17,550 --> 01:05:21,030
+of thing, but I feel free to
+really get a lot done, it's very
+
+1114
+01:05:21,090 --> 01:05:26,040
+useful to understand how to work
+in kind of, in the open source
+
+1115
+01:05:26,040 --> 01:05:29,670
+software world, where you can go
+and grab this one thing, learn
+
+1116
+01:05:29,670 --> 01:05:31,770
+about it quickly, and then
+integrate it into what you're
+
+1117
+01:05:31,770 --> 01:05:33,930
+doing, and then grow, but grab
+this other thing, and you can
+
+1118
+01:05:33,930 --> 01:05:40,950
+see the value of testing and all
+of the my Siri going off all of
+
+1119
+01:05:40,950 --> 01:05:46,170
+the, it's just there's a lot
+that is very useful to learn
+
+1120
+01:05:46,170 --> 01:05:49,410
+there. That's very practical, I
+think. And I wonder if that
+
+1121
+01:05:49,410 --> 01:05:51,720
+would be something that'd be
+useful to fold into the
+
+1122
+01:05:51,720 --> 01:05:53,280
+education for the students.
+
+1123
+01:05:53,940 --> 01:05:56,250
+Dan Mantz: And I think we have
+that with libraries already.
+
+1124
+01:05:56,250 --> 01:05:59,490
+Right. So, you know, a lot of
+times the people that are
+
+1125
+01:05:59,490 --> 01:06:02,400
+providing libraries are just
+providing a compiled version,
+
+1126
+01:06:02,400 --> 01:06:05,550
+and maybe not the open source,
+build on what to do, right. But
+
+1127
+01:06:05,820 --> 01:06:10,920
+at the end of the day, you know,
+with Vex code, you can develop
+
+1128
+01:06:10,920 --> 01:06:13,200
+in blocks, and then you can
+switch it, you can actually
+
+1129
+01:06:13,200 --> 01:06:16,410
+switch it over to text and see
+how the code works. And to me,
+
+1130
+01:06:16,590 --> 01:06:19,680
+there's no better way to learn
+programming, I wish I would have
+
+1131
+01:06:19,680 --> 01:06:23,100
+had that in the 90s when I got
+started, right? So back then it
+
+1132
+01:06:23,100 --> 01:06:25,920
+was pseudo code, right? You did
+pseudo code, and then you wrote
+
+1133
+01:06:25,920 --> 01:06:31,050
+code behind it? Well, you can
+pull in a library. And if the
+
+1134
+01:06:31,050 --> 01:06:35,220
+source code is available, that
+you can see how it works. And so
+
+1135
+01:06:35,220 --> 01:06:38,400
+yes, there's a practical reason
+to use the Vex code, but you're
+
+1136
+01:06:38,400 --> 01:06:41,550
+still learning C plus, plus,
+you're still learning the
+
+1137
+01:06:41,820 --> 01:06:45,270
+languages out there. Again, this
+goes back to because I have
+
+1138
+01:06:45,270 --> 01:06:48,420
+these discussions a lot. And I
+do understand both sides of the
+
+1139
+01:06:48,420 --> 01:06:51,780
+argument. But for our program,
+it's the bell curve. And I
+
+1140
+01:06:51,780 --> 01:06:56,190
+remind educators, I remind my
+staff all over again, it's like
+
+1141
+01:06:56,190 --> 01:06:59,760
+we're not appealing to the top
+10%, we're trying to appeal to
+
+1142
+01:06:59,760 --> 01:07:03,390
+the entire bell curve, and
+authority. I think the way the
+
+1143
+01:07:03,390 --> 01:07:06,750
+model of our program is actually
+the most approachable and
+
+1144
+01:07:06,750 --> 01:07:10,860
+sustainable model for most
+students. And, you know, my kids
+
+1145
+01:07:10,860 --> 01:07:13,350
+did robotics, I have four
+children, three of the four did
+
+1146
+01:07:13,350 --> 01:07:17,850
+robotics. Two of them did Vex
+and, and two of them did other
+
+1147
+01:07:18,120 --> 01:07:22,380
+programs, two that were had more
+machining involved, for example,
+
+1148
+01:07:22,380 --> 01:07:25,320
+and stuff like that. And they
+have the resources at their
+
+1149
+01:07:25,320 --> 01:07:28,740
+schools to do it. But they also
+had much, much larger budgets.
+
+1150
+01:07:28,830 --> 01:07:32,640
+They had engineering mentors,
+computer science mentors, our
+
+1151
+01:07:32,640 --> 01:07:35,790
+program is so that the teacher,
+the classroom educator, or the
+
+1152
+01:07:35,790 --> 01:07:40,350
+parent can be the coach, and the
+resources are free. So by having
+
+1153
+01:07:40,740 --> 01:07:43,980
+everybody start from the same
+level playing field that really
+
+1154
+01:07:43,980 --> 01:07:47,220
+works better for reaching more
+students, but I don't pretend
+
+1155
+01:07:47,220 --> 01:07:50,820
+that our program, you know, for
+some of those very advanced
+
+1156
+01:07:50,820 --> 01:07:54,450
+competitions out there, that
+we're offering that same level
+
+1157
+01:07:54,450 --> 01:07:57,900
+of engineering, I've never, you
+know, pretend that we do again,
+
+1158
+01:07:57,900 --> 01:08:01,560
+but when you look at the 1
+million students in our program,
+
+1159
+01:08:01,590 --> 01:08:03,750
+I think, reaching more students,
+
+1160
+01:08:04,440 --> 01:08:07,350
+Audrow Nash: definitely, yeah,
+it makes sense. Because you're
+
+1161
+01:08:07,350 --> 01:08:10,590
+trying to basically supply the
+most it's your it's your
+
+1162
+01:08:10,590 --> 01:08:13,200
+mission. You're trying to get
+the most people interested in
+
+1163
+01:08:13,200 --> 01:08:14,310
+STEM, correct?
+
+1164
+01:08:15,360 --> 01:08:17,520
+Dan Mantz: Yeah, you just said
+it for me. Thank you so much.
+
+1165
+01:08:17,520 --> 01:08:19,050
+Exactly. So it
+
+1166
+01:08:19,050 --> 01:08:21,690
+Audrow Nash: makes sense. Your
+approach makes complete sense,
+
+1167
+01:08:21,780 --> 01:08:24,960
+given that mission, and it's
+nice to see you guys be very
+
+1168
+01:08:24,960 --> 01:08:27,600
+mission driven. That that
+informs a lot of your decisions.
+
+1169
+01:08:27,750 --> 01:08:31,950
+Yeah. So now, tell me a bit
+about your background.
+
+1170
+01:08:32,430 --> 01:08:37,860
+Dan Mantz: Okay. Well, so I have
+a lot of passion for world and
+
+1171
+01:08:37,860 --> 01:08:41,040
+underserved communities, because
+I grew up in rural Pennsylvania.
+
+1172
+01:08:41,910 --> 01:08:45,660
+You know, I was, you know,
+definitely solid middle class,
+
+1173
+01:08:45,660 --> 01:08:48,570
+but I grew up we had 30 acres,
+you know, a lot of my neighbors
+
+1174
+01:08:48,570 --> 01:08:52,860
+had 10 Out 1520 acres, but I was
+a country boy, my school was,
+
+1175
+01:08:52,920 --> 01:08:57,030
+you know, 18 miles away. I was
+in a graduating class of 180.
+
+1176
+01:08:57,570 --> 01:09:01,350
+But I was really good at math
+and science. So I had a teacher
+
+1177
+01:09:01,350 --> 01:09:04,320
+that said, you should look at
+going into engineering. I'm from
+
+1178
+01:09:04,320 --> 01:09:07,260
+other parts of Pennsylvania,
+where Lee Iacocca and maybe much
+
+1179
+01:09:07,260 --> 01:09:10,470
+of your audience will know who
+he was, but he ran Chrysler, he
+
+1180
+01:09:10,470 --> 01:09:12,810
+was at Ford and he went to
+Chrysler, and he turned around
+
+1181
+01:09:12,810 --> 01:09:17,070
+Chrysler from bankruptcy. And,
+and, but a lot of my friends
+
+1182
+01:09:17,070 --> 01:09:19,860
+that I grew up with that we
+built dirt bikes, and tree forts
+
+1183
+01:09:19,860 --> 01:09:22,650
+and stuff like that. I went into
+skilled trades, right? They
+
+1184
+01:09:22,650 --> 01:09:26,760
+went, they became machine tool
+operators. They became HVAC
+
+1185
+01:09:26,760 --> 01:09:29,550
+technicians, they became diesel
+mechanics, and I was the only
+
+1186
+01:09:29,550 --> 01:09:34,170
+one that really went to college.
+So, at that point, I never felt
+
+1187
+01:09:34,170 --> 01:09:36,540
+that to have a successful
+career, you had to have a four
+
+1188
+01:09:36,540 --> 01:09:40,470
+year degree. It just was I had
+the aptitude and you know, my
+
+1189
+01:09:40,470 --> 01:09:43,680
+parents were able to help me out
+some and so I went to college in
+
+1190
+01:09:43,680 --> 01:09:47,400
+Michigan, I went to at the time,
+it was called GMI. It's now
+
+1191
+01:09:47,400 --> 01:09:50,040
+called Kettering University.
+It's in Flint, Michigan, but it
+
+1192
+01:09:50,040 --> 01:09:53,040
+was a co op school and to this
+day, it's the only full time Co
+
+1193
+01:09:53,040 --> 01:09:56,760
+Op university in the United what
+does that mean? So it means that
+
+1194
+01:09:56,760 --> 01:09:59,550
+you would go to school for three
+months and then you would work
+
+1195
+01:09:59,550 --> 01:10:04,230
+for or your sponsor, which in my
+case was General Motors. You
+
+1196
+01:10:04,230 --> 01:10:07,080
+worked for three months. So you
+did that for five years. So as a
+
+1197
+01:10:07,080 --> 01:10:10,350
+five year program, three months
+of school, three months of work,
+
+1198
+01:10:10,350 --> 01:10:12,810
+it was year round. We used to
+get a week off for Christmas and
+
+1199
+01:10:12,810 --> 01:10:17,160
+a week off in the summer. And so
+yeah, I've been working, working
+
+1200
+01:10:17,160 --> 01:10:21,660
+in industry since I was before I
+was 18 years old. But with the
+
+1201
+01:10:21,660 --> 01:10:25,740
+Co Op program, your freshman
+year, right out of school, you
+
+1202
+01:10:25,740 --> 01:10:28,320
+don't have a lot of skills, but
+you're already working with very
+
+1203
+01:10:28,320 --> 01:10:31,920
+professional engineers. And, and
+you're with I worked for General
+
+1204
+01:10:31,920 --> 01:10:35,520
+Motors, CPC, Chevrolet, Pontiac,
+the candidate division for my
+
+1205
+01:10:35,520 --> 01:10:39,900
+entire Co Op career, and I was
+doing very advanced projects by
+
+1206
+01:10:39,900 --> 01:10:44,730
+the time I was a junior, and so
+my junior senior and my thesis
+
+1207
+01:10:44,730 --> 01:10:48,060
+year, I was really, really
+working on that stuff. So when I
+
+1208
+01:10:48,060 --> 01:10:51,390
+graduated GMI Kettering
+graduates tend to get really
+
+1209
+01:10:51,390 --> 01:10:54,600
+good starting salaries because
+we have so much work experience.
+
+1210
+01:10:54,660 --> 01:10:59,640
+And so but I was at GM and a
+friend of mine was at FANUC. And
+
+1211
+01:10:59,640 --> 01:11:02,520
+he says fanic needs controls
+engineers. I'm like, well,
+
+1212
+01:11:02,520 --> 01:11:05,250
+that's not my background, you
+know? And he's like, Yeah, but
+
+1213
+01:11:05,250 --> 01:11:08,250
+you were like, the best coder in
+our fraternity right? here that
+
+1214
+01:11:08,250 --> 01:11:10,950
+what everybody answered it. So
+I'm like, Yeah, controls is a
+
+1215
+01:11:10,950 --> 01:11:14,010
+lot of coding. So I went to
+FANUC. As a controls engineer, I
+
+1216
+01:11:14,010 --> 01:11:18,090
+traveled the world. I went to
+factories and dozens of
+
+1217
+01:11:18,090 --> 01:11:21,690
+countries and learn control
+systems. And, you know, you do
+
+1218
+01:11:21,690 --> 01:11:24,540
+that for seven years, we started
+raising a family and my wife
+
+1219
+01:11:24,540 --> 01:11:28,590
+says, It's time to be home more.
+I went into project and program
+
+1220
+01:11:28,590 --> 01:11:31,560
+management and started
+developing the next generation
+
+1221
+01:11:31,560 --> 01:11:34,590
+of robotics. And I, you know, I
+was fortunate enough to be on a
+
+1222
+01:11:34,590 --> 01:11:38,220
+couple of patterns. My, my
+expertise was pneumatics,
+
+1223
+01:11:38,220 --> 01:11:41,070
+believe it or not, that was kind
+of where I really thrive,
+
+1224
+01:11:41,070 --> 01:11:45,060
+controls and pneumatics. But I
+did that for five years. And
+
+1225
+01:11:45,060 --> 01:11:47,670
+then I started doing the
+management training. And so by
+
+1226
+01:11:47,670 --> 01:11:51,450
+the by 20th, year at FANUC, I
+had been Director of Product
+
+1227
+01:11:51,450 --> 01:11:54,840
+Development for five years. So I
+had mechanical engineers, and
+
+1228
+01:11:54,870 --> 01:11:57,930
+electrical engineers, they all
+worked for me application
+
+1229
+01:11:57,930 --> 01:12:01,590
+engineers, and we're developing
+great, great things. And we were
+
+1230
+01:12:01,590 --> 01:12:05,550
+doing AI and we were learning
+about collaborative robots. And
+
+1231
+01:12:06,000 --> 01:12:08,100
+but I was getting really tired.
+You know, I did a lot of
+
+1232
+01:12:08,100 --> 01:12:11,550
+traveling, I've been to a lot of
+factories, and a friend of mine
+
+1233
+01:12:11,550 --> 01:12:14,970
+was down in Texas. He said that
+they were looking for a
+
+1234
+01:12:14,970 --> 01:12:17,520
+president of a company called
+rack solutions. He said he
+
+1235
+01:12:17,520 --> 01:12:20,940
+thought it'd be a good fit. I
+traveled to Texas, I got the
+
+1236
+01:12:20,940 --> 01:12:26,370
+job. And I went from high tech,
+very advanced robotics, to sheet
+
+1237
+01:12:26,370 --> 01:12:28,830
+metal design and manufacturing.
+But it was one of the best
+
+1238
+01:12:28,830 --> 01:12:31,410
+things that could have ever
+happened to me. Because I
+
+1239
+01:12:31,410 --> 01:12:33,840
+realized how important
+manufacturing, I mean, we always
+
+1240
+01:12:33,840 --> 01:12:36,780
+hear that impact, you know,
+manufacturing is important and
+
+1241
+01:12:36,780 --> 01:12:40,350
+FANUC had initiative called Save
+Our factory, that, you know, by
+
+1242
+01:12:40,350 --> 01:12:42,750
+using robots, you're actually
+keeping the factories
+
+1243
+01:12:42,750 --> 01:12:45,570
+competitive, so that we can
+compete against the, you know,
+
+1244
+01:12:45,570 --> 01:12:48,540
+the rest of the world. Well,
+here I was in a sheet metal
+
+1245
+01:12:48,570 --> 01:12:52,350
+company competing against China
+and Europe and stuff like that.
+
+1246
+01:12:52,950 --> 01:12:55,650
+So it was a great experience for
+me, I started learning the
+
+1247
+01:12:55,650 --> 01:12:59,070
+business side, you know, p&l and
+stuff like that. And I started
+
+1248
+01:12:59,070 --> 01:13:00,870
+coaching robotics. And
+
+1249
+01:13:02,190 --> 01:13:06,300
+so I started coaching robotics.
+And my good friend was the
+
+1250
+01:13:06,300 --> 01:13:09,180
+president of VEX robotics. And
+because people knew that we were
+
+1251
+01:13:09,180 --> 01:13:12,750
+friends, they started saying,
+hey, go tell Paul, this, go tell
+
+1252
+01:13:12,750 --> 01:13:16,020
+Tony, this, go tell Bob this,
+right. And so I kept going to
+
+1253
+01:13:16,020 --> 01:13:19,680
+those guys. And I kept saying
+that, hey, this is some of the
+
+1254
+01:13:19,680 --> 01:13:22,620
+feedback we're getting from the
+community. And finally, there
+
+1255
+01:13:22,620 --> 01:13:24,360
+were I think, I must have
+frustrated, like, you need to
+
+1256
+01:13:24,360 --> 01:13:27,750
+join our board. So I joined the
+board of the robotics education
+
+1257
+01:13:27,750 --> 01:13:31,860
+competition foundation, I dug in
+really hard for six months,
+
+1258
+01:13:31,860 --> 01:13:34,140
+because you know, I've been
+hearing with the community
+
+1259
+01:13:34,140 --> 01:13:36,840
+thought of it right. And I
+thought we could do better. So
+
+1260
+01:13:36,840 --> 01:13:40,260
+after a couple of months, like I
+gave a report to the board on
+
+1261
+01:13:40,260 --> 01:13:43,080
+things I thought we could do
+better financially, and
+
+1262
+01:13:43,080 --> 01:13:47,250
+organizationally and product
+wise. And the board asked if I
+
+1263
+01:13:47,250 --> 01:13:51,870
+would take over as CEO, and that
+was five years ago, in June, so
+
+1264
+01:13:51,870 --> 01:13:55,140
+the first week of June, five
+years ago. And it's been
+
+1265
+01:13:55,140 --> 01:14:00,000
+fantastic. And as I started the
+conversation, I was happy to
+
+1266
+01:14:00,000 --> 01:14:03,030
+take the job I had, you know, I
+had my doubts because I'd never
+
+1267
+01:14:03,030 --> 01:14:06,060
+been for not for profit. But I
+said I wanted to have the
+
+1268
+01:14:06,060 --> 01:14:09,630
+ability to work on workforce
+development, not just be stem.
+
+1269
+01:14:09,840 --> 01:14:13,290
+And I wanted the ability to to
+branch outside of just ground
+
+1270
+01:14:13,290 --> 01:14:17,670
+robots to and the board was kind
+enough to say, Sure, go for it.
+
+1271
+01:14:17,670 --> 01:14:19,860
+If you have time, go for it. I
+think they thought it'd be so
+
+1272
+01:14:19,860 --> 01:14:22,830
+busy with the VEX robotics
+competitions. I wouldn't have
+
+1273
+01:14:22,830 --> 01:14:26,850
+time. But we've built up a
+really good staff here and we've
+
+1274
+01:14:26,850 --> 01:14:31,290
+expanded so 21 years of
+industrial robotics from from
+
+1275
+01:14:31,290 --> 01:14:34,830
+the control side to product
+development. And I've gone full
+
+1276
+01:14:34,830 --> 01:14:38,850
+circle to now robotics,
+education and competitions.
+
+1277
+01:14:40,200 --> 01:14:48,090
+Audrow Nash: It's quite a path.
+Yeah. How did so how do you? How
+
+1278
+01:14:48,090 --> 01:14:55,200
+do you see programs like yours,
+like REC, helping, or how does
+
+1279
+01:14:55,200 --> 01:14:58,440
+it fit with the educational
+program? In your mind?
+
+1280
+01:14:58,830 --> 01:15:01,440
+Dan Mantz: Yeah, I think we're
+really Be very complimentary, I
+
+1281
+01:15:01,440 --> 01:15:06,930
+think, again, because of Vex,
+and for the win and Dell, and so
+
+1282
+01:15:06,930 --> 01:15:10,500
+many of our other partners, they
+developed curriculum content.
+
+1283
+01:15:10,860 --> 01:15:16,050
+But I firmly believe that to
+reinforce what teachers are
+
+1284
+01:15:16,050 --> 01:15:19,710
+teaching in the classroom,
+especially technology, pre
+
+1285
+01:15:19,710 --> 01:15:23,850
+engineering, physics, math, you
+know, you can teach it in the
+
+1286
+01:15:23,850 --> 01:15:25,980
+classroom, but like we talked
+about earlier, when you can
+
+1287
+01:15:25,980 --> 01:15:28,650
+demonstrate it and have hands
+on, it reinforces it, and it
+
+1288
+01:15:28,650 --> 01:15:31,980
+goes the same way. You can't
+just start a robotics program
+
+1289
+01:15:31,980 --> 01:15:36,780
+and just build robots. It's
+complementary to your math
+
+1290
+01:15:36,780 --> 01:15:39,600
+programs and stuff like that in
+the classroom. So I think we
+
+1291
+01:15:39,600 --> 01:15:42,540
+really, really work well. One of
+the things we can do at the Rec
+
+1292
+01:15:42,540 --> 01:15:47,820
+Foundation, one of the huge
+values that we have is, when I
+
+1293
+01:15:47,820 --> 01:15:50,250
+first started the REC
+Foundation, we gave out grants,
+
+1294
+01:15:50,250 --> 01:15:52,440
+but it was always equipment
+grant, that was the only grant
+
+1295
+01:15:52,440 --> 01:15:54,810
+that you got from the REC
+Foundation was a robot kit,
+
+1296
+01:15:54,810 --> 01:15:57,600
+right. But we've listened to the
+teaching community, the
+
+1297
+01:15:57,600 --> 01:16:00,900
+education community, and they
+need more than that they need
+
+1298
+01:16:00,900 --> 01:16:04,560
+resources. And the beauty of
+this position is we've been able
+
+1299
+01:16:04,560 --> 01:16:07,710
+to go to the north of Grumman
+and the Googles and the Tesla's
+
+1300
+01:16:07,890 --> 01:16:11,220
+and now we're able to get
+funding for them for stipends.
+
+1301
+01:16:11,310 --> 01:16:15,840
+And for other resources. So now
+we can go back to the teachers
+
+1302
+01:16:15,840 --> 01:16:17,640
+in the classroom. And we're
+going to like, if you're going
+
+1303
+01:16:17,640 --> 01:16:21,960
+to do a robotics team, we can
+give you $1,000 or $2,000. And
+
+1304
+01:16:21,960 --> 01:16:26,820
+we can give you other you know,
+continuing tech training and
+
+1305
+01:16:26,820 --> 01:16:29,880
+stuff like that. So we don't
+just give kits anymore, we still
+
+1306
+01:16:29,880 --> 01:16:32,940
+give a lot of robot kits out as
+grants, but we give out so much
+
+1307
+01:16:32,940 --> 01:16:36,030
+more. And that's where we
+really, really complement each
+
+1308
+01:16:36,030 --> 01:16:38,700
+other. Because let's face it in
+the United States, football
+
+1309
+01:16:38,700 --> 01:16:41,910
+coaches, basketball coaches,
+they all get paid stipends to be
+
+1310
+01:16:41,910 --> 01:16:46,500
+coaches, why not robotics
+coaches, and I think other
+
+1311
+01:16:46,500 --> 01:16:49,620
+organizations were really
+challenging that. And there's
+
+1312
+01:16:49,620 --> 01:16:54,420
+been a huge, huge increase in
+our sponsors and government
+
+1313
+01:16:54,420 --> 01:16:57,270
+grants, giving us money that we
+can give stipends to robotics
+
+1314
+01:16:57,270 --> 01:16:58,020
+teachers.
+
+1315
+01:16:58,770 --> 01:17:01,200
+Audrow Nash: That's really
+awesome. I like that idea a lot.
+
+1316
+01:17:01,590 --> 01:17:05,490
+It's, I mean, it definitely
+makes sense. Like, it's crazy,
+
+1317
+01:17:05,490 --> 01:17:08,850
+if it's basketball coaches, and
+football coaches getting
+
+1318
+01:17:08,850 --> 01:17:12,450
+stipends. And then the robotics
+team, I mean, especially if
+
+1319
+01:17:12,450 --> 01:17:15,240
+you're bringing in someone who's
+having to learn these things,
+
+1320
+01:17:15,240 --> 01:17:18,480
+and be very involved or, like,
+it's very nice if they can get a
+
+1321
+01:17:18,480 --> 01:17:22,620
+stipend to to just kind of help
+out with it. Because it might be
+
+1322
+01:17:22,620 --> 01:17:24,030
+at the expense of other areas in
+their
+
+1323
+01:17:24,030 --> 01:17:26,550
+Dan Mantz: life. Educators
+getting rich on their on their
+
+1324
+01:17:26,550 --> 01:17:29,190
+stipend, right. But the thing
+is, we don't want them to cost
+
+1325
+01:17:29,190 --> 01:17:32,490
+them money, right. So I'm sure
+most of our stipends just cover
+
+1326
+01:17:32,490 --> 01:17:37,980
+the gas and pizza and the spare
+parts that they buy. And
+
+1327
+01:17:38,010 --> 01:17:40,530
+nobody's actually increasing
+their net worth because of the
+
+1328
+01:17:40,530 --> 01:17:43,530
+stipends. But at least it's not
+costing them more money. And
+
+1329
+01:17:43,530 --> 01:17:46,740
+again, it just doesn't as the
+United States for us to continue
+
+1330
+01:17:46,740 --> 01:17:49,260
+to evolve. And of course, we're
+a global foundation. So all the
+
+1331
+01:17:49,260 --> 01:17:52,650
+worlds but particularly in the
+United States, you see a
+
+1332
+01:17:52,650 --> 01:17:55,950
+difference. People ask me
+geographically, what's different
+
+1333
+01:17:56,010 --> 01:17:59,220
+about teams in the Northeast or
+the south of the Pacific
+
+1334
+01:17:59,220 --> 01:18:02,100
+Northwest? Well, you know,
+there's a lot of programs in the
+
+1335
+01:18:02,100 --> 01:18:04,830
+Northeast that have been paying
+their robotics coaches and
+
+1336
+01:18:04,830 --> 01:18:08,160
+teachers for a long time, right.
+And they're very, very stable,
+
+1337
+01:18:08,160 --> 01:18:10,470
+and they have excellent
+students. And then you have
+
+1338
+01:18:10,470 --> 01:18:13,860
+emerging areas in the United
+States that never thought about
+
+1339
+01:18:14,040 --> 01:18:16,320
+paying a robotics coach, they
+never even thought about having
+
+1340
+01:18:16,320 --> 01:18:20,070
+a robotics team. In Alabama is a
+great example. When I joined the
+
+1341
+01:18:20,070 --> 01:18:23,640
+REC Foundation, there was
+probably 100 teams in Alabama.
+
+1342
+01:18:23,880 --> 01:18:28,440
+And it's almost at 1000. Now
+because our staff really did a
+
+1343
+01:18:28,440 --> 01:18:31,830
+great job of working with
+teachers and educators. And then
+
+1344
+01:18:32,070 --> 01:18:36,300
+the detail Alabama Department of
+Education started investing
+
+1345
+01:18:36,300 --> 01:18:40,380
+money. The first year was
+250,000, this past year 850,000.
+
+1346
+01:18:40,710 --> 01:18:44,670
+and other organizations in
+Alabama started, you know,
+
+1347
+01:18:44,670 --> 01:18:48,840
+Hyundai, again, not a sponsor to
+the REC foundation directly. But
+
+1348
+01:18:48,840 --> 01:18:52,710
+Hyundai is making sure that
+every elementary middle and high
+
+1349
+01:18:52,710 --> 01:18:56,040
+school in Montgomery, Alabama
+has a robotics team and you have
+
+1350
+01:18:56,040 --> 01:18:58,710
+score is making sure these
+teachers are getting their
+
+1351
+01:18:58,710 --> 01:19:01,860
+training and the Department of
+Education is giving stipends. So
+
+1352
+01:19:02,070 --> 01:19:05,880
+they all build together. And now
+Alabama, has got an incredible
+
+1353
+01:19:05,880 --> 01:19:08,700
+robotics program. And guess
+what, there's a lot of factories
+
+1354
+01:19:08,700 --> 01:19:11,220
+in Alabama, a lot of automotive
+and other factories, and they
+
+1355
+01:19:11,220 --> 01:19:15,300
+need the students. So some
+places have been committed to
+
+1356
+01:19:15,510 --> 01:19:18,660
+doing this for a lot longer. You
+know, and you know, Michigan is
+
+1357
+01:19:18,660 --> 01:19:23,220
+an example of a state that's had
+robotics programs for 25 years,
+
+1358
+01:19:23,220 --> 01:19:25,440
+and you have other parts of the
+country that are just starting
+
+1359
+01:19:25,440 --> 01:19:26,250
+to get into it.
+
+1360
+01:19:28,170 --> 01:19:30,990
+Audrow Nash: What do you So you
+mentioned that there were a few
+
+1361
+01:19:30,990 --> 01:19:33,930
+schools that were adding this
+into the main curriculum, not
+
+1362
+01:19:33,930 --> 01:19:36,630
+just as an as an
+extracurricular. Can you tell me
+
+1363
+01:19:36,630 --> 01:19:37,410
+a bit about that?
+
+1364
+01:19:37,739 --> 01:19:39,839
+Dan Mantz: Yeah, sure that I
+would say that pendulum is
+
+1365
+01:19:39,839 --> 01:19:43,859
+really increasing, you know,
+maybe five years ago 10%. And
+
+1366
+01:19:43,859 --> 01:19:48,749
+that's at least 30%. Now, I'm
+not talking condition panels
+
+1367
+01:19:48,779 --> 01:19:53,879
+you're at if schools or schools
+are actually whether they call
+
+1368
+01:19:53,879 --> 01:19:58,319
+it in manufacturing, or whether
+they call it engineering, or
+
+1369
+01:19:58,319 --> 01:20:01,379
+technology. I mean, I've heard
+all All right, so uh, technology
+
+1370
+01:20:01,379 --> 01:20:04,289
+clicking, but I was at a
+competition this past weekend,
+
+1371
+01:20:04,589 --> 01:20:09,509
+and the top teams there. If they
+start as freshmen, they can take
+
+1372
+01:20:09,509 --> 01:20:12,839
+technology. And then they take
+technology to then engineering
+
+1373
+01:20:12,839 --> 01:20:16,739
+one, and engineering two. And
+they meet every single day just
+
+1374
+01:20:16,739 --> 01:20:20,039
+like you do for History or
+English or whatever. But they
+
+1375
+01:20:20,039 --> 01:20:25,079
+have their technology class, and
+they use Vex and, and they start
+
+1376
+01:20:25,079 --> 01:20:27,929
+by building simple mechanisms.
+And then they learn about
+
+1377
+01:20:27,929 --> 01:20:30,719
+motors. And then next thing you
+know, you're a sophomore, and
+
+1378
+01:20:30,719 --> 01:20:33,839
+you're building more complex
+stuff, because they do it every
+
+1379
+01:20:33,839 --> 01:20:37,649
+single day for an hour a day. By
+the time they're senior, these
+
+1380
+01:20:37,649 --> 01:20:40,979
+kids are really, really good.
+And most of them are actually
+
+1381
+01:20:40,979 --> 01:20:43,919
+going and getting engineering
+degrees. But I have one student
+
+1382
+01:20:44,219 --> 01:20:46,979
+that has a job at John Deere
+lined up, he's going right to
+
+1383
+01:20:46,979 --> 01:20:49,559
+John Deere out of high school,
+right? He's going to get his
+
+1384
+01:20:49,589 --> 01:20:53,819
+industry certification and go
+and Tesla has similar programs,
+
+1385
+01:20:53,819 --> 01:20:57,209
+right? Where some of these
+students, why go into debt,
+
+1386
+01:20:57,209 --> 01:21:01,589
+right? Why go work for Tesla and
+John Deere and no pay for you to
+
+1387
+01:21:01,589 --> 01:21:04,379
+take classes at your community
+college or your four year
+
+1388
+01:21:04,589 --> 01:21:08,279
+university. So they're paying
+for you. They're paying you a
+
+1389
+01:21:08,279 --> 01:21:11,369
+salary to do the job, and
+they're paying you to get your
+
+1390
+01:21:11,369 --> 01:21:14,759
+certifications and your degree.
+And next thing you know, you
+
+1391
+01:21:14,759 --> 01:21:17,999
+have a two or four year degree
+but back to your original
+
+1392
+01:21:17,999 --> 01:21:23,279
+question. Schools themselves
+know that we need to do a better
+
+1393
+01:21:23,279 --> 01:21:25,499
+job for the students and make
+sure they're prepared for the
+
+1394
+01:21:25,499 --> 01:21:28,439
+workforce. So more and more
+students, more and more schools
+
+1395
+01:21:28,649 --> 01:21:32,009
+are investing in technology.
+It's kind of full circle. You
+
+1396
+01:21:32,009 --> 01:21:35,399
+know, when I was in high school,
+we had vocational programs, the
+
+1397
+01:21:35,399 --> 01:21:39,509
+HVAC, the machine shop, etc. And
+then we got away and then we
+
+1398
+01:21:39,509 --> 01:21:42,329
+said everybody needs to go to
+college. And now we're kind of
+
+1399
+01:21:42,329 --> 01:21:45,389
+going back and saying, Man, all
+these people that repaired our
+
+1400
+01:21:45,389 --> 01:21:48,239
+air conditioners, or did diesel
+mechanics, they're all getting
+
+1401
+01:21:48,239 --> 01:21:51,749
+ready to retire. We have nobody
+coming behind them. So these
+
+1402
+01:21:51,749 --> 01:21:54,119
+schools, the government's
+they're reinvesting in these
+
+1403
+01:21:54,119 --> 01:21:57,809
+programs. But now it's not just
+HVAC and diesel mechanics. Now
+
+1404
+01:21:57,809 --> 01:22:02,399
+it's robot technician, etcetera.
+Hmm, that's really what we at
+
+1405
+01:22:02,399 --> 01:22:05,219
+the RSC Foundation, we just work
+really, really closely with
+
+1406
+01:22:05,219 --> 01:22:09,299
+these educators so that they
+have the tools so that they can
+
+1407
+01:22:09,329 --> 01:22:11,579
+bring these programs to their
+classes.
+
+1408
+01:22:13,080 --> 01:22:16,230
+Audrow Nash: What do you think
+the so you think the future of
+
+1409
+01:22:16,230 --> 01:22:19,740
+education is, or a future of
+universities will be that fewer
+
+1410
+01:22:19,740 --> 01:22:24,720
+people go to actually get like a
+Bachelors of Science and
+
+1411
+01:22:25,020 --> 01:22:29,130
+something and maybe more people,
+it'll it would be more like,
+
+1412
+01:22:29,160 --> 01:22:33,600
+say, somewhere is some places in
+Europe that have more vocational
+
+1413
+01:22:33,600 --> 01:22:36,990
+schools and this kind of thing,
+you think that education will
+
+1414
+01:22:36,990 --> 01:22:38,700
+start to lean that way? Yeah, I
+
+1415
+01:22:38,700 --> 01:22:40,410
+Dan Mantz: think I think the
+data is trending that way, I'm
+
+1416
+01:22:40,410 --> 01:22:42,690
+going to be really careful here,
+because we have a lot of
+
+1417
+01:22:42,720 --> 01:22:45,990
+university partners, right. A
+lot of great universities we
+
+1418
+01:22:45,990 --> 01:22:49,860
+partner with, but I think we're
+already seeing declining
+
+1419
+01:22:49,860 --> 01:22:52,380
+enrollment in so many schools.
+And it's not a secret that they
+
+1420
+01:22:52,380 --> 01:22:55,830
+expect a lot of colleges and
+universities to fail in the
+
+1421
+01:22:55,830 --> 01:22:59,670
+future. Because it's just gotten
+so expensive, you know, for
+
+1422
+01:22:59,670 --> 01:23:02,460
+students to go. So I do think
+you're going to see these
+
+1423
+01:23:02,460 --> 01:23:06,900
+alternative career paths instead
+of, again, the internship, the
+
+1424
+01:23:06,900 --> 01:23:10,860
+externship program that Tesla
+did is a great model where the
+
+1425
+01:23:10,860 --> 01:23:13,470
+graduates start, you start the
+program, when you're in high
+
+1426
+01:23:13,470 --> 01:23:17,160
+school, and you get experience
+working on the factory floor,
+
+1427
+01:23:17,160 --> 01:23:22,110
+you're working in the shops, you
+get paid. And then again, if you
+
+1428
+01:23:22,110 --> 01:23:24,840
+want to go get an interesting
+certification, they pay for
+
+1429
+01:23:24,840 --> 01:23:27,960
+that, then you start taking
+classes at a two year school, I
+
+1430
+01:23:27,960 --> 01:23:31,470
+think you're going to see more
+and more organizations do that.
+
+1431
+01:23:31,680 --> 01:23:35,400
+And I think you're just going to
+see people make financial
+
+1432
+01:23:35,400 --> 01:23:37,740
+decisions that make sense. And I
+think you're gonna there is
+
+1433
+01:23:37,740 --> 01:23:40,620
+going to be some type of
+consolidation. And I think our
+
+1434
+01:23:40,740 --> 01:23:44,370
+universities will step up, and I
+think our community colleges are
+
+1435
+01:23:44,370 --> 01:23:47,220
+fantastic in this country. It's
+really one of those gems that we
+
+1436
+01:23:47,220 --> 01:23:50,070
+have, that the rest of the world
+doesn't, you know, because maybe
+
+1437
+01:23:50,070 --> 01:23:52,320
+we don't have tech programs in
+high school like they do in
+
+1438
+01:23:52,320 --> 01:23:56,430
+Europe. But we do have these
+community colleges, and we have
+
+1439
+01:23:56,430 --> 01:24:00,030
+a lot of programs, you know,
+that are supported in community
+
+1440
+01:24:00,030 --> 01:24:03,840
+colleges. And that's a good way
+for students to get the skill
+
+1441
+01:24:03,840 --> 01:24:04,290
+set.
+
+1442
+01:24:05,070 --> 01:24:08,490
+Audrow Nash: Interesting. I know
+very little about the community
+
+1443
+01:24:08,490 --> 01:24:11,850
+colleges and what kind of things
+they offer. But it you're saying
+
+1444
+01:24:11,850 --> 01:24:15,450
+it helps people get vocational
+skills or Yeah,
+
+1445
+01:24:15,540 --> 01:24:18,390
+Dan Mantz: I mean, you get you
+get your you know, and some pass
+
+1446
+01:24:18,390 --> 01:24:22,950
+you get your baseline to go to a
+four year university gets your
+
+1447
+01:24:22,950 --> 01:24:26,040
+your general classes out of the
+way you get your, your math,
+
+1448
+01:24:26,040 --> 01:24:29,730
+your sciences, your history, and
+like in Texas, if you go to what
+
+1449
+01:24:29,730 --> 01:24:33,030
+a accredited community college
+in Texas, the four year
+
+1450
+01:24:33,030 --> 01:24:35,340
+universities have to take those
+credits, right. And there's a
+
+1451
+01:24:35,340 --> 01:24:39,030
+lot of states that have similar
+programs. But so many community
+
+1452
+01:24:39,030 --> 01:24:44,970
+colleges that we work with now
+have industrial automation are
+
+1453
+01:24:45,000 --> 01:24:47,850
+our technology programs where
+they're literally teaching the
+
+1454
+01:24:47,850 --> 01:24:52,800
+skills and after two years, the
+students earn certifications and
+
+1455
+01:24:52,800 --> 01:24:56,310
+then they go get the jobs.
+Right. So community colleges are
+
+1456
+01:24:56,310 --> 01:24:59,070
+really the government you know,
+Department of Defense is
+
+1457
+01:24:59,070 --> 01:25:01,950
+investing in community ecologist
+because they know that's a
+
+1458
+01:25:01,950 --> 01:25:04,470
+really good way for us to train
+our workforce.
+
+1459
+01:25:05,220 --> 01:25:09,000
+Audrow Nash: Interesting. Yeah,
+it makes complete sense. What do
+
+1460
+01:25:09,000 --> 01:25:15,390
+you so we're beginning to wrap
+up? What do you think, for kind
+
+1461
+01:25:15,390 --> 01:25:20,040
+of the future of education and
+programs like wreck? Do you
+
+1462
+01:25:20,040 --> 01:25:25,200
+think it'll be enough? For all
+of the help? Like, will we be
+
+1463
+01:25:25,200 --> 01:25:29,700
+able to provide a good number of
+workers for the shortages? Or
+
+1464
+01:25:29,730 --> 01:25:32,250
+just how do you think of things
+going forward?
+
+1465
+01:25:32,819 --> 01:25:34,949
+Dan Mantz: Well, we're gonna
+make a debt, if nothing else,
+
+1466
+01:25:34,949 --> 01:25:38,519
+right, we're gonna make, we're
+gonna help and the REC
+
+1467
+01:25:38,519 --> 01:25:41,939
+foundation, you know, we have a
+lot of great programs, there's
+
+1468
+01:25:41,939 --> 01:25:45,029
+other great not for profits out
+there, too. And you have, like,
+
+1469
+01:25:45,029 --> 01:25:48,479
+you know, Apple is investing in
+their own education programs.
+
+1470
+01:25:48,479 --> 01:25:50,339
+And there's other companies that
+do it. So I think if
+
+1471
+01:25:50,369 --> 01:25:53,939
+collectively, we all work
+together, we are going to
+
+1472
+01:25:53,939 --> 01:25:56,759
+address the issue, but it's
+gonna take some time, it's gonna
+
+1473
+01:25:56,759 --> 01:26:02,309
+take some time to, to retrain
+our teachers, you know, so that
+
+1474
+01:26:02,309 --> 01:26:05,699
+they have the skill sets to
+teach this, it's going to take
+
+1475
+01:26:05,699 --> 01:26:11,099
+time for our industries to adapt
+to a different type of model,
+
+1476
+01:26:11,099 --> 01:26:15,599
+how they, how they employ their
+employees. Now, I don't want to
+
+1477
+01:26:15,599 --> 01:26:18,179
+get too philosophical here, but
+you know, students in this
+
+1478
+01:26:18,179 --> 01:26:22,019
+country, know prefer playing
+sports and prefer doing video
+
+1479
+01:26:22,019 --> 01:26:25,049
+games and stuff like that, you
+know, and, and I've traveled,
+
+1480
+01:26:25,049 --> 01:26:27,029
+I've been fortunate, I've
+traveled across the world, and
+
+1481
+01:26:27,029 --> 01:26:30,449
+then over 50 countries, and
+there's other cultures where
+
+1482
+01:26:30,449 --> 01:26:34,949
+they emphasize academics, and
+especially tech, and we're not
+
+1483
+01:26:34,949 --> 01:26:37,379
+there in this country yet. So
+it's going to be an entire
+
+1484
+01:26:37,619 --> 01:26:42,179
+cultural shift between education
+between the government, between
+
+1485
+01:26:42,179 --> 01:26:44,909
+private companies, public
+companies, and not for profits,
+
+1486
+01:26:44,909 --> 01:26:47,759
+we're all going to have to work
+together. And there's great,
+
+1487
+01:26:48,419 --> 01:26:50,669
+great organizations out there,
+like, you know, the REC
+
+1488
+01:26:50,669 --> 01:26:54,089
+foundation belongs to arm out of
+Pittsburgh, advanced robotics
+
+1489
+01:26:54,089 --> 01:26:58,289
+and manufacturing. And they do a
+great job of bringing government
+
+1490
+01:26:58,289 --> 01:27:01,559
+private industry for year to
+year and not for profits
+
+1491
+01:27:01,559 --> 01:27:03,089
+together to tackle this problem.
+
+1492
+01:27:04,440 --> 01:27:08,220
+Audrow Nash: Awesome. What do
+you have anything to share for
+
+1493
+01:27:08,220 --> 01:27:12,150
+people that are interested in
+either getting involved as like
+
+1494
+01:27:12,180 --> 01:27:15,990
+students or interested in
+getting involved, as someone who
+
+1495
+01:27:15,990 --> 01:27:19,950
+facilitates it or just learning
+more? Any resources?
+
+1496
+01:27:20,430 --> 01:27:22,830
+Dan Mantz: I mean, the best, the
+easiest thing to do is I always
+
+1497
+01:27:22,830 --> 01:27:27,270
+ask people go to our website,
+it's robotics, education.org,
+
+1498
+01:27:27,300 --> 01:27:31,290
+again, robotics education.org.
+And on the landing page, it's
+
+1499
+01:27:31,290 --> 01:27:33,930
+like, Are you new to robotics,
+and they need you just navigate
+
+1500
+01:27:33,930 --> 01:27:36,630
+the website, you know, VEX
+robotics, they also have a
+
+1501
+01:27:36,630 --> 01:27:39,000
+great, great website for
+educators. I mean, they just
+
+1502
+01:27:39,000 --> 01:27:43,500
+have so many amazing resources
+that are free. So go to VEX
+
+1503
+01:27:43,500 --> 01:27:46,920
+robotics, or go to robotics,
+education.org. Those are always
+
+1504
+01:27:46,920 --> 01:27:50,520
+good things. You can always
+Google, you know, how do I how
+
+1505
+01:27:50,520 --> 01:27:54,570
+do I start a robotics team, and
+our website has those responses.
+
+1506
+01:27:54,750 --> 01:27:58,290
+And that's the best way to do
+it. On our website, we have a
+
+1507
+01:27:58,290 --> 01:28:01,860
+map of the world. And literally,
+when you click the country, it
+
+1508
+01:28:01,860 --> 01:28:06,030
+tells you who the REC foundation
+person for that country is or if
+
+1509
+01:28:06,030 --> 01:28:09,060
+you click the state that tells
+you who the event site is and
+
+1510
+01:28:09,060 --> 01:28:13,350
+who the team site is. And then
+we have things like online
+
+1511
+01:28:13,350 --> 01:28:16,710
+challenges, too. So maybe this
+year one, you don't want to jump
+
+1512
+01:28:16,710 --> 01:28:19,770
+into starting a robotics team.
+But you can do online
+
+1513
+01:28:19,770 --> 01:28:23,910
+challenges. And some of them are
+like CAD based, some of them are
+
+1514
+01:28:23,910 --> 01:28:27,840
+about diversity and inclusion
+programs like girl powered, but
+
+1515
+01:28:27,840 --> 01:28:30,930
+there's different ways to do it
+there. And then there's also
+
+1516
+01:28:30,960 --> 01:28:35,160
+grants, you know, we know that
+cost is a barrier of entry. So
+
+1517
+01:28:35,160 --> 01:28:38,070
+we have an entire page on
+grants. And then for the
+
+1518
+01:28:38,070 --> 01:28:40,800
+students out there, you know,
+the Ric foundation gets close to
+
+1519
+01:28:40,800 --> 01:28:43,980
+60 million. Well, we don't give
+it directly, but our university
+
+1520
+01:28:43,980 --> 01:28:48,390
+partners give $60 million in
+scholarships for students. So
+
+1521
+01:28:48,570 --> 01:28:52,050
+all those resources available by
+the website. So if you're an
+
+1522
+01:28:52,050 --> 01:28:55,410
+educator, come to our site or go
+to the web site, if you're
+
+1523
+01:28:55,410 --> 01:28:59,730
+really wanting to learn about
+starting a team and how we can
+
+1524
+01:28:59,730 --> 01:29:01,680
+help you in the classroom, go to
+our website.
+
+1525
+01:29:03,149 --> 01:29:04,919
+Audrow Nash: Awesome. Alright,
+it's been a pleasure speaking
+
+1526
+01:29:04,919 --> 01:29:05,249
+with you.
+
+1527
+01:29:05,880 --> 01:29:09,600
+Dan Mantz: I've enjoyed it so
+much. And, again, if anybody
+
+1528
+01:29:09,600 --> 01:29:14,490
+here wants to reach out to me
+directly, my email was, Dan
+
+1529
+01:29:14,490 --> 01:29:20,070
+underscore man's robotics.
+education.com. And I take I
+
+1530
+01:29:20,070 --> 01:29:22,530
+always respond, sometimes they
+don't get to it in the first day
+
+1531
+01:29:22,530 --> 01:29:26,640
+or even the first couple of
+days. But I'm always, always,
+
+1532
+01:29:27,000 --> 01:29:31,380
+always happy to reach out. I'll
+see if I can share this on the
+
+1533
+01:29:31,380 --> 01:29:36,270
+camera real quick. I give this
+back and it's backwards, but
+
+1534
+01:29:36,270 --> 01:29:39,360
+it's robotics education.org I
+just realized I said calm. So
+
+1535
+01:29:39,360 --> 01:29:44,010
+Dan, underscore man's at
+robotics. education.org. And me
+
+1536
+01:29:44,010 --> 01:29:46,800
+or someone from my team will be
+happy to help you navigate,
+
+1537
+01:29:46,950 --> 01:29:50,520
+which I can at times can be
+terrifying. But I guarantee you
+
+1538
+01:29:50,520 --> 01:29:53,340
+it's rewarding. If you talk to
+the people that are involved in
+
+1539
+01:29:53,340 --> 01:29:56,070
+our program, they'll tell you,
+we're really making a difference
+
+1540
+01:29:56,070 --> 01:29:57,480
+and it's really rewarding for
+them.
+
+1541
+01:29:58,560 --> 01:30:02,580
+Audrow Nash: Awesome. Thank you,
+Dan. And everyone thank you for
+
+1542
+01:30:02,580 --> 01:30:07,680
+having me thanks for listening
+to this conversation with Dan
+
+1543
+01:30:07,680 --> 01:30:11,250
+Mance thank you again to our
+founding sponsor open robotics
+
+1544
+01:30:11,400 --> 01:30:12,330
+See you next time
+
