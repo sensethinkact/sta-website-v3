@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: 'https://sensethinkact.com/',
+  siteUrl: 'https://www.sensethinkact.com/',
   generateRobotsTxt: true,
 }
