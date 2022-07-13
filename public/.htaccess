@@ -24,8 +24,8 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 # Allow scripts from discourse for the comments
 <IfModule mod_headers.c>
-    Header set Content-Security-Policy " \
-    default-src 'self'; script-src 'self' https://discourse.ros.org https://www.googletagmanager.com https://youtube.com unsafe-inline; \
-    "
+    # Header set Content-Security-Policy " \
+    # default-src 'self'; script-src 'self' https://discourse.ros.org https://www.googletagmanager.com https://youtube.com unsafe-inline; \
+    # "
     Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
