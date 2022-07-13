@@ -20,6 +20,7 @@ const Comments = ({pageUrl}: Props) => {
             DiscourseEmbed = {
               discourseUrl: 'https://discourse.ros.org/',
               discourseEmbedUrl: '${pageUrl}',
+              discourseReferrerPolicy: 'strict-origin-when-cross-origin',
             };
 
             (function() {
