@@ -23,6 +23,10 @@ const Post = ({post, isDebug}: Props) => {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  // Used for the Discourse comments
+  const postUrlWithWww = post.url.replace(/https:\/\//, 'https://www.')
+
   return (
     <Layout title={`${post.title} | ${podcastConfig.name}`}>
       <div className="container">
@@ -73,7 +77,7 @@ const Post = ({post, isDebug}: Props) => {
                   </ul>
 
                   <h3 className="subtitle is-4">Comments</h3>
-                  <Comments pageUrl={post.url} />
+                  <Comments pageUrl={postUrlWithWww} />
 
                   {post.includes?.outline && (
                     <>
