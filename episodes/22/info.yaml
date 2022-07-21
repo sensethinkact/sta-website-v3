@@ -1,0 +1,41 @@
+guests: Ben Raanan
+title: Ocean Monitoring and Climate Change
+description: |
+  In this episode, Audrow Nash speaks to Ben Raana, who is a software engineer at the Monterey Bay Aquarium Research Institute (MBARI).
+  MBARI uses robots to monitor and explore the oceans to better understand climate change and other topics.
+  Ben speaks about how robotics is enabling ocean research, the challenges of putting a robot in the ocean, how their robot platform works, and how they are working towards long-term deployments.
+excerpt: Ben Raana is a software engineer at the Monterey Bay Aquarium Research Institute (MBARI).
+duration:
+  hours: 1
+  minutes: 36
+  seconds: 35
+tags:
+  - research
+  - ocean
+  - underwater
+  - environment
+  - climate change
+links:
+  - name: MBARI's website
+    url: https://www.mbari.org/
+  - name: MBARI's Github
+    url: https://github.com/mbari-org
+  - name: LRAUV Simulation Repository
+    url: https://github.com/osrf/lrauv
+  - name: Ben's LinkedIn
+    url: https://www.linkedin.com/in/ben-yair-raanan-76330a133/
+mp3SizeBytes: 188882775
+publishDate: 2022-07-21
+youtube:
+  mainContentId: DIEICAi4BCo
+  clips:
+    - title: Challenges Underwater
+      videoId: EkULewbCqXU
+    - title: Fleet Management Underwater
+      videoId: mZAVPtrKLsA
+    - title: Why Simulation
+      videoId: 6GcBYgvzerY
+    - title: Have To Want It
+      videoId: vyU4kD0LscE
+    - title: Robots Enabling Ocean Research
+      videoId: k5zmMAPGdXs

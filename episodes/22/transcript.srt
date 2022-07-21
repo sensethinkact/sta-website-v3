@@ -1,0 +1,7273 @@
+1
+00:00:02,610 --> 00:00:05,490
+Audrow Nash: This is a
+conversation with Ben Raanan who is
+
+2
+00:00:05,520 --> 00:00:09,450
+a software engineer at the
+Monterey Bay Aquarium Research
+
+3
+00:00:09,450 --> 00:00:13,530
+Institute, or MBARI, for short.
+MBARI uses robots to
+
+4
+00:00:13,530 --> 00:00:17,100
+monitor and explore the oceans
+to better understand climate
+
+5
+00:00:17,100 --> 00:00:21,540
+change, and other topics. In
+general, getting ocean data is
+
+6
+00:00:21,540 --> 00:00:25,440
+extremely expensive. Depending
+on how far the area of interest
+
+7
+00:00:25,440 --> 00:00:29,250
+is from the shore, it may
+require a large boat with a full
+
+8
+00:00:29,250 --> 00:00:33,090
+crew. MBARI is working to
+make this process easier and
+
+9
+00:00:33,090 --> 00:00:37,530
+much cheaper by having robots
+stay at sea for weeks at a time
+
+10
+00:00:37,530 --> 00:00:41,070
+getting data on different ocean
+events. This generates a lot
+
+11
+00:00:41,070 --> 00:00:43,410
+more data and will hopefully
+greatly improve our
+
+12
+00:00:43,410 --> 00:00:47,070
+understanding of our oceans. I
+found it exciting to talk with
+
+13
+00:00:47,070 --> 00:00:51,270
+Ben about how MBARI is looking
+into having robots stay at sea
+
+14
+00:00:51,300 --> 00:00:55,080
+almost indefinitely, charging
+their batteries and uploading
+
+15
+00:00:55,080 --> 00:00:58,740
+their data all while at sea.
+This could enable fleets of
+
+16
+00:00:58,740 --> 00:01:02,670
+robots to continuously be at sea
+giving us a much richer picture
+
+17
+00:01:03,060 --> 00:01:06,870
+of the health of our oceans. I'm
+Audrow Nash. This is the Sense
+
+18
+00:01:06,870 --> 00:01:10,260
+Think Act Podcast. Thank you to
+our founding sponsor Open
+
+19
+00:01:10,260 --> 00:01:14,010
+Robotics. And now here's my
+conversation with Ben Ron on.
+
+20
+00:01:15,750 --> 00:01:17,250
+Hi, Ben, would you introduce
+yourself?
+
+21
+00:01:18,030 --> 00:01:22,470
+Ben Raanan: Sure. Hi. My name is
+Ben Ron on a oceanographer and
+
+22
+00:01:22,530 --> 00:01:25,290
+robotics software engineers here
+at the Monterey Bay Aquarium
+
+23
+00:01:25,290 --> 00:01:28,530
+Research Institute. Or we're in
+MBARI, for sure. We're in
+
+24
+00:01:28,530 --> 00:01:33,720
+Barcelona, California. I've been
+here with the Institute for
+
+25
+00:01:34,020 --> 00:01:39,390
+probably coming on years now.
+Working as an engineer, a
+
+26
+00:01:39,390 --> 00:01:42,720
+bedroom about my background,
+actually, motion career about 20
+
+27
+00:01:42,720 --> 00:01:47,310
+years ago, I was a special
+warfare operator and a combat
+
+28
+00:01:47,310 --> 00:01:53,460
+diver in the Israeli Navy. And
+spent a good chunk of time with
+
+29
+00:01:53,460 --> 00:01:59,550
+the teams there. And later on,
+got my undergrad in r&d tax and
+
+30
+00:01:59,670 --> 00:02:02,880
+biotechnology back home in
+Israel. And then came here to
+
+31
+00:02:02,880 --> 00:02:06,840
+get my Master's in physical
+oceanography. At that point, I
+
+32
+00:02:06,840 --> 00:02:09,840
+got involved here with the
+Institute through an internship,
+
+33
+00:02:09,960 --> 00:02:17,220
+and then I just refused to
+leave. Yeah, so now mostly what
+
+34
+00:02:17,220 --> 00:02:21,900
+I do is I work development and
+operations with autonomous
+
+35
+00:02:21,900 --> 00:02:26,430
+underwater vehicles. And so I
+have a few projects running, but
+
+36
+00:02:26,550 --> 00:02:29,640
+I think you're interested in
+looking for talking about
+
+37
+00:02:30,389 --> 00:02:35,069
+Audrow Nash: awesome. So what
+kinds of projects do you guys do
+
+38
+00:02:35,069 --> 00:02:35,759
+at MBARI?
+
+39
+00:02:37,110 --> 00:02:40,080
+Ben Raanan: Yeah, so I guess
+maybe we before we dive into the
+
+40
+00:02:40,080 --> 00:02:43,650
+projects, can tell you a little
+more about embargo in general, I
+
+41
+00:02:43,650 --> 00:02:48,270
+think, sure, you may be
+familiar, but others may not. So
+
+42
+00:02:48,270 --> 00:02:50,400
+like I said, we're in Moss
+Landing Fornia in the Central
+
+43
+00:02:50,400 --> 00:02:55,650
+California, say probably about
+an hour south, from San Jose, on
+
+44
+00:02:55,650 --> 00:03:00,690
+the coastline, in the Monterey
+Bay. And in MBARI is actually a
+
+45
+00:03:00,690 --> 00:03:05,760
+pretty unique Ocean Research
+Institute, in the sense where
+
+46
+00:03:05,760 --> 00:03:11,850
+we're a private nonprofit. So
+the institute is not an academic
+
+47
+00:03:11,850 --> 00:03:16,140
+Institute, it's kind of been
+founded as an alternative to
+
+48
+00:03:16,140 --> 00:03:20,070
+what an academic Institute can
+be for ocean research, in bars
+
+49
+00:03:20,070 --> 00:03:23,850
+funded almost exclusively,
+through the David and Lucile
+
+50
+00:03:23,850 --> 00:03:29,280
+Packard Foundation. And David
+Packard, which is the P and HP
+
+51
+00:03:29,280 --> 00:03:33,000
+and Hewlett Packard, he founded
+this, yeah, he founded this
+
+52
+00:03:33,000 --> 00:03:38,310
+institute in 1987. So we just
+celebrated our 35th birthday.
+
+53
+00:03:38,760 --> 00:03:43,140
+And the mission back then was
+to, like I said, offer an
+
+54
+00:03:43,140 --> 00:03:45,900
+alternative to traditional
+academic research institutes,
+
+55
+00:03:46,350 --> 00:03:51,720
+and take on challenges that
+require development of
+
+56
+00:03:51,750 --> 00:03:55,170
+technology in order to, you
+know, answer some of the
+
+57
+00:03:55,170 --> 00:03:59,670
+scientific questions that marine
+scientists have. And so that's
+
+58
+00:03:59,760 --> 00:04:04,890
+kind of been the goal of
+Institute and also remove a lot
+
+59
+00:04:04,890 --> 00:04:08,160
+of the, I guess, barriers,
+especially when it comes to
+
+60
+00:04:08,160 --> 00:04:14,730
+funding. And so scientists and
+engineers here get to focus more
+
+61
+00:04:14,730 --> 00:04:17,790
+on the doing and less than
+they're proposing. And so we
+
+62
+00:04:17,790 --> 00:04:22,320
+have an internal proposal cycle,
+in which we, you know, for our
+
+63
+00:04:22,320 --> 00:04:24,990
+budget, and then we get funded
+through Packard Foundation,
+
+64
+00:04:24,990 --> 00:04:30,180
+which is phenomenal, it's
+absolutely great. And so, the
+
+65
+00:04:30,180 --> 00:04:34,020
+type of the way the institute is
+structured is we're actually
+
+66
+00:04:34,020 --> 00:04:39,720
+kind of like a three legged
+stool. And our trifecta, never
+
+67
+00:04:39,750 --> 00:04:46,530
+skip on an opportunity to say
+that word. And so, so, the
+
+68
+00:04:46,560 --> 00:04:52,410
+Institute has about 220
+employees. We are divided into
+
+69
+00:04:52,500 --> 00:04:58,260
+science, engineering, and Marine
+Operations. And we work very
+
+70
+00:04:58,260 --> 00:05:02,760
+closely together. So Though the
+barrier or the the boundaries
+
+71
+00:05:02,760 --> 00:05:05,550
+between the groups is very
+blurred, you know, you got a lot
+
+72
+00:05:05,550 --> 00:05:08,700
+of scientists that are very much
+engineers and engineers that are
+
+73
+00:05:08,700 --> 00:05:13,110
+scientists and they work
+together to find the questions
+
+74
+00:05:13,110 --> 00:05:16,860
+that need to be answered. And
+then develop the technology that
+
+75
+00:05:16,860 --> 00:05:20,580
+allows us to go out and get
+that. And then the Department of
+
+76
+00:05:20,580 --> 00:05:24,690
+Marine Operations has the
+specialty in the knowledge and
+
+77
+00:05:24,690 --> 00:05:29,820
+how to deploy the assets and
+manage, you know, so you know,
+
+78
+00:05:29,910 --> 00:05:33,120
+make sure everything comes back
+safely, to the best of their
+
+79
+00:05:33,120 --> 00:05:39,690
+ability. And so that together is
+what I think really makes the
+
+80
+00:05:39,720 --> 00:05:44,370
+institute special in its ability
+to come up with very challenging
+
+81
+00:05:44,370 --> 00:05:48,900
+questions, develop the
+technology to try and gather the
+
+82
+00:05:48,900 --> 00:05:51,450
+information that's required in
+order to answer those questions.
+
+83
+00:05:51,750 --> 00:05:56,430
+And then actually go in the
+field, gather the data, and and
+
+84
+00:05:56,460 --> 00:05:59,100
+you know, start working on the
+answers. And so that's kind of
+
+85
+00:05:59,100 --> 00:06:04,140
+like a cycle that we exercise
+here pretty regularly. And it's
+
+86
+00:06:04,170 --> 00:06:12,720
+it's all good fun. So I guess
+that's the institute is the
+
+87
+00:06:12,750 --> 00:06:14,700
+that's the answer to in in in a
+nutshell.
+
+88
+00:06:16,380 --> 00:06:19,590
+Audrow Nash: And what kind of
+problems are you guys typically
+
+89
+00:06:19,590 --> 00:06:25,470
+like also the in Hewlett
+Packard, so Packard set this
+
+90
+00:06:25,470 --> 00:06:30,240
+foundation, or set this up? So
+he received or he sends you guys
+
+91
+00:06:30,270 --> 00:06:34,500
+a good number, a good amount of
+money? To do the research? What
+
+92
+00:06:34,500 --> 00:06:40,440
+kinds of problems? Are you guys
+most interested in? Solving? Or,
+
+93
+00:06:40,560 --> 00:06:43,980
+like, what what kind of problems
+are you going after? I guess,
+
+94
+00:06:43,980 --> 00:06:44,310
+yeah.
+
+95
+00:06:44,730 --> 00:06:48,570
+Ben Raanan: So if you walk
+around the hall here, you'll
+
+96
+00:06:48,570 --> 00:06:53,520
+find scientists pretty much any
+ocean research discipline that
+
+97
+00:06:53,520 --> 00:06:57,660
+you can imagine. So we have
+geologists, geophysicist,
+
+98
+00:06:57,900 --> 00:07:02,880
+chemical oceanographers,
+biological oceanographers, any
+
+99
+00:07:02,880 --> 00:07:06,540
+kind of type of marine research
+really, that you can imagine, is
+
+100
+00:07:06,540 --> 00:07:13,380
+happening here. And so at the
+core, we're trying to describe
+
+101
+00:07:13,980 --> 00:07:18,120
+the ocean environment and go
+after questions that also have
+
+102
+00:07:18,120 --> 00:07:22,410
+to do with anthropogenic impact,
+that's driving change in the
+
+103
+00:07:22,410 --> 00:07:23,220
+ocean environment,
+
+104
+00:07:23,760 --> 00:07:27,510
+Audrow Nash: what does that
+mean? So generic, is that
+
+105
+00:07:28,050 --> 00:07:33,660
+Ben Raanan: is human generated?
+So, yeah, so that really relates
+
+106
+00:07:33,660 --> 00:07:38,820
+to some of the challenges that
+are faced with climate change,
+
+107
+00:07:39,090 --> 00:07:43,590
+and how emissions for example,
+impact our environment. And so,
+
+108
+00:07:43,620 --> 00:07:47,250
+the ocean is actually a really
+important piece and buffering
+
+109
+00:07:47,880 --> 00:07:52,140
+the heat on the planet. And so,
+in order to understand better
+
+110
+00:07:52,920 --> 00:07:57,780
+the processes that govern heat
+transfer, how carbon dioxide
+
+111
+00:07:57,780 --> 00:08:02,520
+that gets emitted into the
+atmosphere is gets absorbed and
+
+112
+00:08:02,640 --> 00:08:05,490
+back in the ocean and and buried
+in the in the ground, that's,
+
+113
+00:08:05,490 --> 00:08:09,780
+you know, the carbon cycle. So,
+the Institute is trying to
+
+114
+00:08:10,080 --> 00:08:14,670
+target research in order to
+acquire data and figure out how
+
+115
+00:08:14,700 --> 00:08:18,060
+what governs these processes,
+what are the rates, and then
+
+116
+00:08:18,180 --> 00:08:22,410
+through this research inform
+larger models that have to do
+
+117
+00:08:22,410 --> 00:08:28,380
+with you know, climate change
+and more of a global scale in
+
+118
+00:08:28,380 --> 00:08:35,730
+the global scale sense. So,
+those kinds of questions they
+
+119
+00:08:35,730 --> 00:08:39,660
+really drive research in all the
+layers of the ocean. So, from
+
+120
+00:08:39,690 --> 00:08:46,950
+the atmospheric to you know, the
+upper water column, where the
+
+121
+00:08:46,950 --> 00:08:52,440
+gases kind of mix and then how
+the biology interacts with the
+
+122
+00:08:52,440 --> 00:08:55,500
+different chemical properties of
+the water, different physical
+
+123
+00:08:55,500 --> 00:09:01,020
+properties of the water, they
+take in some of this carbon and
+
+124
+00:09:01,080 --> 00:09:04,350
+use it to build their bodies
+right through photosynthesis,
+
+125
+00:09:04,620 --> 00:09:12,510
+and that later on feeds the
+larger organisms and cascades
+
+126
+00:09:12,510 --> 00:09:18,630
+through the foodweb and
+eventually, those kind of fix
+
+127
+00:09:18,750 --> 00:09:24,360
+organic compounds are either
+pooped out or die and sink to
+
+128
+00:09:24,360 --> 00:09:28,320
+the bottom of the ocean right
+and get buried there. And so
+
+129
+00:09:29,610 --> 00:09:35,370
+that okay, is the carbon cycle
+in a nutshell and we focus on
+
+130
+00:09:35,370 --> 00:09:41,670
+research that tries to describe
+each of those sections in
+
+131
+00:09:41,670 --> 00:09:43,410
+detail, and then
+
+132
+00:09:46,260 --> 00:09:49,980
+Audrow Nash: yeah, gotcha. So,
+you have just to see if I
+
+133
+00:09:49,980 --> 00:09:54,030
+understand the carbon cycle, you
+have carbon in the environment,
+
+134
+00:09:54,390 --> 00:09:59,760
+then you have small like algae
+or something, some small things.
+
+135
+00:10:00,000 --> 00:10:04,680
+that will consume the carbon and
+sunlight in this kind of thing
+
+136
+00:10:04,680 --> 00:10:08,310
+and the photosynthesis happens,
+then they go through this whole
+
+137
+00:10:08,310 --> 00:10:13,290
+process where they're eaten by
+fish or something. And somehow,
+
+138
+00:10:13,530 --> 00:10:17,610
+they like eaten by one fish that
+small, a bigger fish eats that
+
+139
+00:10:17,610 --> 00:10:22,230
+whatever, eventually something
+dies in there. And then it sinks
+
+140
+00:10:22,230 --> 00:10:25,380
+to the bottom of the ocean. And
+what happens when it's at the
+
+141
+00:10:25,380 --> 00:10:28,110
+bottom of the ocean? It kind of
+just stays there for a while.
+
+142
+00:10:28,110 --> 00:10:31,470
+And you get kind of like, on the
+bottom of the ocean, or
+
+143
+00:10:31,500 --> 00:10:38,010
+Ben Raanan: Yeah, so it gets it
+gets vented is sediment, and
+
+144
+00:10:38,040 --> 00:10:43,830
+ocean sea floor, really is, I
+guess the storage of that
+
+145
+00:10:43,830 --> 00:10:48,660
+moment, until, you know, either
+gets, then you're starting to
+
+146
+00:10:48,660 --> 00:10:51,330
+look at geological processes on
+you know, what happens there?
+
+147
+00:10:51,990 --> 00:10:57,150
+How? Yeah, so how does the ocean
+seafloor evolve over time? And
+
+148
+00:10:57,450 --> 00:10:59,850
+when does that carbon make it
+back into the atmosphere? And so
+
+149
+00:11:00,810 --> 00:11:04,800
+I guess the point is, yeah, so
+we describe a lot. And I guess
+
+150
+00:11:04,800 --> 00:11:09,270
+the point to really kind of take
+away from this is that these are
+
+151
+00:11:09,270 --> 00:11:13,650
+processes that happen over many,
+many, many timescales and over
+
+152
+00:11:14,070 --> 00:11:17,940
+very different, yeah, are very
+different spatial scales as
+
+153
+00:11:17,940 --> 00:11:22,770
+well. And so at MBARI, we kind
+of talk about it in the sense
+
+154
+00:11:22,770 --> 00:11:26,310
+of, you know, going from
+molecules and atoms to
+
+155
+00:11:26,310 --> 00:11:30,840
+ecosystems and back. And so the
+type of science that we do hear
+
+156
+00:11:32,520 --> 00:11:37,260
+goes from, but understanding the
+microbial processes that you
+
+157
+00:11:37,260 --> 00:11:41,280
+know, what type of nutrients are
+required in the ocean in order
+
+158
+00:11:41,280 --> 00:11:48,720
+to make these biological
+plankton or bacteria flourish
+
+159
+00:11:48,750 --> 00:11:55,410
+and take in these gases, then,
+all the way up to how does it
+
+160
+00:11:55,410 --> 00:12:02,430
+later cascade into the food web?
+And what are the timescales that
+
+161
+00:12:02,430 --> 00:12:06,120
+are associated with those
+things, and so that, on its own
+
+162
+00:12:06,120 --> 00:12:11,940
+poses many challenges, because
+in order to collect relevant
+
+163
+00:12:11,940 --> 00:12:15,840
+information, to describe these
+processes, you really have to be
+
+164
+00:12:15,840 --> 00:12:21,780
+at sea a lot, and have to be
+there not only for the duration,
+
+165
+00:12:21,780 --> 00:12:28,080
+but also in the right place, and
+cover and span, you know, the
+
+166
+00:12:28,080 --> 00:12:32,160
+area that's required in order to
+to really capture those
+
+167
+00:12:32,160 --> 00:12:34,170
+fundamentals. So
+
+168
+00:12:35,190 --> 00:12:38,730
+Audrow Nash: if I understand
+correctly, it sounds like you
+
+169
+00:12:38,730 --> 00:12:42,480
+guys are basically trying to
+model so the carbon cycle and
+
+170
+00:12:42,480 --> 00:12:46,740
+what's occurring to accurately
+model that and have a better
+
+171
+00:12:46,740 --> 00:12:52,590
+idea for climate change, you
+need to be involved at something
+
+172
+00:12:52,590 --> 00:12:56,220
+through the whole spectrum,
+which is a massive process that
+
+173
+00:12:56,220 --> 00:13:00,090
+happens everywhere in the ocean,
+at all different times, with all
+
+174
+00:13:00,090 --> 00:13:03,930
+different creatures, there's
+lots of things involved. And so
+
+175
+00:13:03,930 --> 00:13:07,830
+because of this, this makes it
+so you guys have a very large
+
+176
+00:13:08,190 --> 00:13:11,580
+research mission. In a sense,
+like, there's a lot of things
+
+177
+00:13:11,580 --> 00:13:15,450
+that you need to understand, or
+there's a lot of monitoring that
+
+178
+00:13:15,450 --> 00:13:20,640
+needs to happen. So that you can
+begin to refine your model. So
+
+179
+00:13:20,640 --> 00:13:24,300
+you can have a good idea of this
+process, and maybe its impact,
+
+180
+00:13:24,300 --> 00:13:27,060
+or maybe its changes over time.
+And these kinds of things.
+
+181
+00:13:27,420 --> 00:13:31,350
+Ben Raanan: Exactly. And the
+idea is that eventually, those
+
+182
+00:13:31,350 --> 00:13:35,790
+type of this type of
+information, can cascade into
+
+183
+00:13:35,790 --> 00:13:42,060
+decision makers for conservation
+management, and other type of,
+
+184
+00:13:42,720 --> 00:13:45,120
+you know, decisions that impact
+our environment, but also can
+
+185
+00:13:45,120 --> 00:13:48,420
+affect some of the likelihood,
+for example, fishermen, and so
+
+186
+00:13:48,420 --> 00:13:48,570
+on.
+
+187
+00:13:49,530 --> 00:13:53,010
+Audrow Nash: So that sounds
+incredibly lofty as in a huge,
+
+188
+00:13:53,010 --> 00:13:58,530
+huge challenge to basically take
+on climate change. Is that
+
+189
+00:13:58,530 --> 00:14:02,400
+motivating everything at MBARI?
+Or are there other problems that
+
+190
+00:14:02,400 --> 00:14:06,270
+you guys are interested in to?
+Like, clearly enormous? And
+
+191
+00:14:06,270 --> 00:14:08,910
+that's is that everything under
+that umbrella? Or are there
+
+192
+00:14:08,910 --> 00:14:09,720
+other umbrellas?
+
+193
+00:14:09,929 --> 00:14:12,359
+Ben Raanan: Well, there are
+other themes as well. I mean,
+
+194
+00:14:12,359 --> 00:14:15,209
+you have researchers here, for
+example, that are behavioral
+
+195
+00:14:15,209 --> 00:14:16,889
+ecologists, and they're
+interested
+
+196
+00:14:16,889 --> 00:14:18,869
+Audrow Nash: in I don't even
+know what that means at all.
+
+197
+00:14:19,770 --> 00:14:23,070
+Ben Raanan: Oh, they're, they're
+interested in in describing, you
+
+198
+00:14:23,070 --> 00:14:28,920
+know, how certain species behave
+under underwater and so. Right?
+
+199
+00:14:28,920 --> 00:14:31,920
+So you can imagine, for example,
+if you're interested in studying
+
+200
+00:14:31,920 --> 00:14:36,870
+squids, especially if you're
+interested in studying DP
+
+201
+00:14:36,870 --> 00:14:44,700
+squids, then, again, getting
+access to to the environment
+
+202
+00:14:44,730 --> 00:14:48,450
+where those squids are, is an
+enormous challenge. And one
+
+203
+00:14:48,450 --> 00:14:51,930
+that's very suited for institute
+that is, you know, capable of
+
+204
+00:14:51,930 --> 00:14:55,200
+developing the technologies and
+also executing the operations
+
+205
+00:14:56,490 --> 00:15:01,170
+for getting the right
+information and so on. You know,
+
+206
+00:15:01,170 --> 00:15:05,430
+that's another type of research
+that we do here. We also have a
+
+207
+00:15:05,430 --> 00:15:12,420
+whole mapping division, we use
+vehicles to go in and do surveys
+
+208
+00:15:12,450 --> 00:15:15,690
+of the ocean seafloor and map
+the ocean seafloor, and then
+
+209
+00:15:15,690 --> 00:15:20,340
+return to see how it evolves
+over time. So that's a whole
+
+210
+00:15:20,370 --> 00:15:25,560
+kind of branch of geology that
+we host here. So really, it's
+
+211
+00:15:25,590 --> 00:15:28,650
+it's very hard to try to capture
+all the activities that go on
+
+212
+00:15:28,650 --> 00:15:32,580
+here and the Institute, I'd say,
+climate change has definitely
+
+213
+00:15:32,580 --> 00:15:37,200
+been one of the main themes and
+impacts of climate change on the
+
+214
+00:15:37,200 --> 00:15:40,590
+ocean environment has been one
+of the main themes that have
+
+215
+00:15:40,620 --> 00:15:43,620
+governed a lot of the proposals
+and the projects that have been
+
+216
+00:15:43,620 --> 00:15:49,050
+here. But it's not the only one,
+you know, they're there. Other
+
+217
+00:15:49,050 --> 00:15:51,990
+projects that, you know, maybe
+don't fall exactly under that
+
+218
+00:15:52,050 --> 00:15:54,660
+umbrella. But that is definitely
+the the lead theme.
+
+219
+00:15:55,260 --> 00:15:57,840
+Audrow Nash: Gotcha. And largely
+ocean related. I mean, well,
+
+220
+00:15:57,840 --> 00:16:01,740
+entirely ocean related, it
+sounds and then it's also, I
+
+221
+00:16:01,740 --> 00:16:04,350
+mean, if you have better ideas
+of how these creatures behave,
+
+222
+00:16:04,590 --> 00:16:07,500
+maybe you have a better idea of
+how they are as actors in the
+
+223
+00:16:07,500 --> 00:16:10,590
+system, which helps you model
+these things. And if you have
+
+224
+00:16:10,590 --> 00:16:14,130
+better maps of the environment,
+perhaps that also helps you in
+
+225
+00:16:14,130 --> 00:16:19,380
+environmental monitoring, I
+could imagine, which will go
+
+226
+00:16:19,380 --> 00:16:22,260
+back into climate change, in
+some sense, because it's such a
+
+227
+00:16:22,260 --> 00:16:25,860
+large problem, that having an
+accurate model has so many
+
+228
+00:16:25,860 --> 00:16:26,550
+pieces to
+
+229
+00:16:27,419 --> 00:16:30,569
+Ben Raanan: correct. And then I
+guess I'll add that embargo has
+
+230
+00:16:30,569 --> 00:16:36,299
+been a major player, you know,
+since the 80s, collecting this
+
+231
+00:16:36,569 --> 00:16:41,519
+information. And so at this
+point, we've gathered enormous
+
+232
+00:16:41,519 --> 00:16:47,039
+quantities of data. And we are
+working pretty hard to make this
+
+233
+00:16:47,039 --> 00:16:51,569
+data available for others to
+use, and also process it here
+
+234
+00:16:51,629 --> 00:16:55,379
+and have that multi-decadal
+perspective, in order to
+
+235
+00:16:55,379 --> 00:16:58,289
+quantify change in the
+environment. So in other words,
+
+236
+00:16:59,039 --> 00:17:02,699
+we are establishing a baseline
+starting, you know, from some
+
+237
+00:17:02,699 --> 00:17:08,819
+point, and looking and observing
+how the environment changes over
+
+238
+00:17:08,879 --> 00:17:12,869
+time. And so another big mission
+of embargo is to, you know,
+
+239
+00:17:13,619 --> 00:17:18,419
+safeguard this trove of data and
+make it accessible. And so I
+
+240
+00:17:18,419 --> 00:17:20,939
+think that's another thing that
+the Institute is unique in its
+
+241
+00:17:20,939 --> 00:17:23,939
+capacity to offer. So
+
+242
+00:17:23,969 --> 00:17:28,919
+Audrow Nash: that's really cool.
+Now, so that's awesome. What are
+
+243
+00:17:28,919 --> 00:17:31,589
+some of the ways that you guys
+have been using robots and these
+
+244
+00:17:31,589 --> 00:17:35,039
+different parts of kind of the
+mission of MBARI?
+
+245
+00:17:36,510 --> 00:17:40,140
+Ben Raanan: Right, so um, you
+know, we refer to oceanography
+
+246
+00:17:40,140 --> 00:17:43,920
+here as a contact sport, like I
+mentioned, in order to gather
+
+247
+00:17:43,920 --> 00:17:47,430
+the data, you have to be in the
+environment. And so as you know,
+
+248
+00:17:47,430 --> 00:17:54,720
+traditionally, oceanography for
+decades and has been done using
+
+249
+00:17:54,720 --> 00:18:01,230
+ships. And that's great. I think
+that ships and humans are always
+
+250
+00:18:01,230 --> 00:18:06,090
+going to be part of this type of
+research. And inquiry, indeed,
+
+251
+00:18:06,090 --> 00:18:11,100
+operates to large ships that go
+out and collect data and take
+
+252
+00:18:11,100 --> 00:18:15,120
+expeditions at the sea. But I
+think there's also a realization
+
+253
+00:18:15,120 --> 00:18:21,030
+that, you know, because of these
+temporal and spatial scales in
+
+254
+00:18:21,030 --> 00:18:24,180
+which the phenomenon that we're
+interested in studying happen,
+
+255
+00:18:26,580 --> 00:18:27,450
+we're just not able to
+
+256
+00:18:27,690 --> 00:18:29,880
+Audrow Nash: get all the clients
+to be everywhere all at once,
+
+257
+00:18:30,120 --> 00:18:33,090
+for sure. So it's much easier to
+have robots go do it, for
+
+258
+00:18:33,090 --> 00:18:34,950
+Ben Raanan: sure. Not
+impossible, but it is cost
+
+259
+00:18:34,950 --> 00:18:35,520
+prohibitive.
+
+260
+00:18:35,850 --> 00:18:40,440
+Audrow Nash: Yes. But that also
+human error and all sorts of
+
+261
+00:18:40,440 --> 00:18:41,310
+other things, too.
+
+262
+00:18:42,090 --> 00:18:46,290
+Ben Raanan: Sure. I mean, robots
+make mistakes, also, especially
+
+263
+00:18:46,290 --> 00:18:52,500
+people that operate them. So, in
+fact, because, you know,
+
+264
+00:18:52,770 --> 00:18:56,340
+traditionally, this type of
+research has been done using
+
+265
+00:18:56,340 --> 00:19:00,600
+chips. MBARIs also put a lot
+of resources into calibrating
+
+266
+00:19:00,600 --> 00:19:04,170
+the measurements. Okay. So
+you've done it collected data,
+
+267
+00:19:04,410 --> 00:19:07,770
+in a certain way, for a certain
+number of years, and now you're
+
+268
+00:19:07,770 --> 00:19:11,820
+switching into a more automated
+collection system. And so how
+
+269
+00:19:11,820 --> 00:19:15,960
+does that data compare? And what
+are the calibration factors that
+
+270
+00:19:15,960 --> 00:19:20,640
+you need to apply to go from,
+you know, manually collected
+
+271
+00:19:21,030 --> 00:19:25,140
+systems into using data that's
+collected by automated systems.
+
+272
+00:19:25,380 --> 00:19:27,120
+And so that's, so making
+
+273
+00:19:27,120 --> 00:19:31,140
+Audrow Nash: sure that we have
+consistency from humans taking
+
+274
+00:19:31,140 --> 00:19:34,050
+it too. Maybe if you can
+automate it and have a robot do
+
+275
+00:19:34,050 --> 00:19:36,450
+it, you want them to be apples
+to apples, not apples to
+
+276
+00:19:36,450 --> 00:19:40,710
+oranges. So you have this big
+break? where the data is, like,
+
+277
+00:19:40,920 --> 00:19:44,430
+completely different and hard to
+draw conclusions from?
+
+278
+00:19:44,970 --> 00:19:46,800
+Ben Raanan: Exactly. So you
+don't suddenly think that
+
+279
+00:19:46,800 --> 00:19:49,410
+there's, you know, some kind of
+climate crisis that happens to
+
+280
+00:19:49,410 --> 00:19:53,970
+coincide with the time you
+started using certain robots. So
+
+281
+00:19:54,810 --> 00:19:58,590
+so we've been seeing through
+this transition. Now, some of
+
+282
+00:19:58,590 --> 00:20:01,140
+the environments that we
+researched which are very hard
+
+283
+00:20:01,140 --> 00:20:06,750
+to get to. So, for example, kind
+of the average ocean depth here
+
+284
+00:20:06,750 --> 00:20:11,040
+in the Pacific is about four,
+four and a half kilometers. So,
+
+285
+00:20:11,070 --> 00:20:11,880
+so just those are
+
+286
+00:20:12,750 --> 00:20:17,250
+Audrow Nash: four and a half
+kilometers. That 45 football
+
+287
+00:20:17,250 --> 00:20:19,230
+fields deep, roughly or,
+
+288
+00:20:19,740 --> 00:20:23,580
+Ben Raanan: rightly so. Yeah.
+And a lot of weaker but yeah,
+
+289
+00:20:23,580 --> 00:20:28,140
+sorry. Yeah, so so so that's
+very deep. And when you think
+
+290
+00:20:28,140 --> 00:20:32,070
+about, for example, the type of
+pressure Vironment that we live
+
+291
+00:20:32,070 --> 00:20:37,050
+in. We live at one atmosphere of
+pressure, if you go to space,
+
+292
+00:20:37,380 --> 00:20:42,960
+you're almost at zero. But if
+you go about 30 feet down into
+
+293
+00:20:42,960 --> 00:20:47,250
+water, then you've already
+doubled the pressure. And every
+
+294
+00:20:47,250 --> 00:20:51,480
+30 feet, you add, you add a
+whole nother atmosphere. So
+
+295
+00:20:52,230 --> 00:20:54,270
+Audrow Nash: those many
+atmospheres are down there, then
+
+296
+00:20:55,470 --> 00:20:56,520
+Ben Raanan: we'll have to do the
+math.
+
+297
+00:20:59,160 --> 00:21:02,400
+Audrow Nash: So 4.5 kilometers
+down, correct.
+
+298
+00:21:02,430 --> 00:21:06,270
+Ben Raanan: It's one atmosphere
+per 10 meters. So if you have
+
+299
+00:21:08,490 --> 00:21:12,480
+4500 meters, then you'd be at
+
+300
+00:21:14,880 --> 00:21:18,270
+Audrow Nash: divided by 3030
+feet per or 10 meters is one
+
+301
+00:21:18,270 --> 00:21:19,770
+atmospheric, correct?
+
+302
+00:21:19,890 --> 00:21:22,380
+Ben Raanan: Yeah. So 450
+atmospheres, I believe is the
+
+303
+00:21:22,380 --> 00:21:22,710
+number.
+
+304
+00:21:23,249 --> 00:21:26,609
+Audrow Nash: Yeah, that's an
+easy one. Yeah, doing math
+
+305
+00:21:27,209 --> 00:21:27,809
+doesn't always
+
+306
+00:21:27,810 --> 00:21:30,510
+Ben Raanan: work. But especially
+not not. Well, you're being
+
+307
+00:21:30,510 --> 00:21:30,900
+recorded.
+
+308
+00:21:30,900 --> 00:21:35,280
+Audrow Nash: Not well, sir. So
+450 atmospheres?
+
+309
+00:21:35,610 --> 00:21:38,730
+Ben Raanan: Correct. So I guess
+the pressure is immense. And so
+
+310
+00:21:38,940 --> 00:21:42,060
+in order to take humans into
+those kinds of environments, and
+
+311
+00:21:42,060 --> 00:21:47,100
+support life, human life, in
+those environments, you know, it
+
+312
+00:21:47,100 --> 00:21:50,430
+comes with a huge overhead. And
+it's not risk free. And there
+
+313
+00:21:50,430 --> 00:21:53,940
+are systems that do that. You
+know, we have deep sea sobs.
+
+314
+00:21:55,110 --> 00:21:59,640
+Woods Hole Oceanographic, I
+believe, operates. Alvin, which
+
+315
+00:21:59,640 --> 00:22:03,090
+is a human submarine that's able
+to go to those kinds of depths
+
+316
+00:22:03,090 --> 00:22:07,470
+and and collecting through
+there. But it's really scalable.
+
+317
+00:22:07,860 --> 00:22:08,730
+And you say,
+
+318
+00:22:08,760 --> 00:22:11,520
+Audrow Nash: on average, just
+average depth is that much,
+
+319
+00:22:11,520 --> 00:22:15,030
+right? What's the what's the
+deepest? Like, I guess we
+
+320
+00:22:15,030 --> 00:22:19,050
+probably don't have a very clear
+idea. But what so we do. Okay,
+
+321
+00:22:19,080 --> 00:22:21,330
+yeah. So how far down does it
+go?
+
+322
+00:22:21,840 --> 00:22:26,400
+Ben Raanan: It's over 11
+kilometers. taller than the
+
+323
+00:22:26,400 --> 00:22:31,500
+mount, the tallest mountain,
+right? So and that's 1100.
+
+324
+00:22:31,500 --> 00:22:35,100
+atmospheres. Correct. And I
+believe that's the Mariana
+
+325
+00:22:35,100 --> 00:22:42,510
+Trench, off the coast of Japan,
+which is, so yeah, it's pretty
+
+326
+00:22:42,510 --> 00:22:46,050
+deep, but humans have reached
+there. And vehicles have gone
+
+327
+00:22:46,050 --> 00:22:49,500
+down there as well. And so it's
+not out of their reach. So it's
+
+328
+00:22:49,500 --> 00:22:53,760
+not very scalable. Right, I
+guess it's the point. And, like
+
+329
+00:22:53,760 --> 00:22:56,880
+I mentioned, again, a lot of the
+phenomenon that we're also
+
+330
+00:22:56,880 --> 00:23:01,470
+interested in, in studying are
+very patchy and episodic in
+
+331
+00:23:01,470 --> 00:23:04,830
+nature, meaning, you can imagine
+the wind blows a certain
+
+332
+00:23:04,830 --> 00:23:08,160
+direction, the currents do a
+certain thing, the nutrients
+
+333
+00:23:08,160 --> 00:23:11,910
+emerge, and then suddenly, boom,
+that creates an opportunity for
+
+334
+00:23:11,910 --> 00:23:16,830
+something to occur. And you're
+either there, or you're not. And
+
+335
+00:23:16,830 --> 00:23:19,110
+sometimes you can be, I'm sorry,
+
+336
+00:23:19,140 --> 00:23:21,690
+Audrow Nash: give me an example.
+Like what might an event that
+
+337
+00:23:21,690 --> 00:23:26,280
+you're trying to see occur be
+like an algae bloom of some
+
+338
+00:23:26,280 --> 00:23:27,150
+sort, or
+
+339
+00:23:27,180 --> 00:23:31,110
+Ben Raanan: Yeah, that'd be a
+classic example. And so
+
+340
+00:23:32,100 --> 00:23:36,540
+typically, the way this occurs
+is winds blow, they push coastal
+
+341
+00:23:36,540 --> 00:23:41,370
+waters away from shore, and pull
+in deeper waters that are much
+
+342
+00:23:41,460 --> 00:23:46,230
+richer in nutrients. And that
+allows for this community to
+
+343
+00:23:46,260 --> 00:23:52,260
+community of microorganisms,
+plankton, and phytoplankton, to
+
+344
+00:23:52,260 --> 00:23:57,810
+really flourish. And that mostly
+happens on the, you know, upper
+
+345
+00:23:57,840 --> 00:24:02,700
+part of the ocean where there's
+access to sunlight. And so when
+
+346
+00:24:02,700 --> 00:24:06,540
+those conditions come together,
+and those blue dunes are, you
+
+347
+00:24:06,540 --> 00:24:10,500
+know, you're either there to
+catch it, or you're not. And you
+
+348
+00:24:10,500 --> 00:24:14,040
+either have a platform that's
+able to go out and collect this
+
+349
+00:24:14,040 --> 00:24:19,320
+information, or you don't. And
+so, I guess, once that window of
+
+350
+00:24:19,320 --> 00:24:21,870
+opportunity closes, and
+typically that's on the order
+
+351
+00:24:21,870 --> 00:24:28,560
+of, yeah, weeks, spanning 10s of
+kilometers, at least in the
+
+352
+00:24:28,560 --> 00:24:33,270
+coastal environment. Yeah, that
+then your window of opportunity
+
+353
+00:24:33,270 --> 00:24:38,220
+is is gone and you've lost your
+chance to collect the relevant
+
+354
+00:24:38,250 --> 00:24:43,590
+data. And so having having
+autonomous platforms that are
+
+355
+00:24:43,590 --> 00:24:50,190
+able to persistently be in the
+ocean and collect information is
+
+356
+00:24:50,220 --> 00:24:55,950
+a huge advantage. And so we kind
+of segwayed away from the deep
+
+357
+00:24:55,950 --> 00:24:58,860
+ocean back, you know, to the
+upper water column and we
+
+358
+00:24:59,100 --> 00:25:03,000
+operate automated In automated
+systems in both, but you either
+
+359
+00:25:03,000 --> 00:25:09,570
+need a very a system that's
+capable of operating into depths
+
+360
+00:25:09,600 --> 00:25:13,890
+and in those deaths, or you need
+a system that can operate up in
+
+361
+00:25:13,890 --> 00:25:16,260
+the water and the upper water
+column that's, you know, capable
+
+362
+00:25:16,260 --> 00:25:20,580
+of having that persistence and
+endurance to cover, you know,
+
+363
+00:25:20,580 --> 00:25:26,190
+those, those those areas. And so
+in both cases, that those type
+
+364
+00:25:26,190 --> 00:25:30,660
+of problems lend themselves very
+well, for automation, and for
+
+365
+00:25:30,660 --> 00:25:36,720
+use of autonomous platforms. And
+so MBARI has developed. You
+
+366
+00:25:36,720 --> 00:25:40,440
+know, at the beginning, we were
+very focused on getting to those
+
+367
+00:25:40,440 --> 00:25:44,040
+steps. And so MBARI was one of
+the pioneers in developing
+
+368
+00:25:44,250 --> 00:25:47,820
+remotely operated vehicles,
+there was a big kind of cube
+
+369
+00:25:47,820 --> 00:25:52,770
+like, vehicles, remotely
+operated vehicles are over.
+
+370
+00:25:52,770 --> 00:25:58,260
+Okay. Which, yeah, and so, those
+are tethered vehicles, and
+
+371
+00:25:58,260 --> 00:26:02,160
+they're piloted remotely from a
+ship. So those still require a
+
+372
+00:26:02,160 --> 00:26:05,460
+ship to be in the area. And then
+bears
+
+373
+00:26:05,760 --> 00:26:08,940
+Audrow Nash: able, correct,
+yeah, going from the robot to
+
+374
+00:26:08,940 --> 00:26:11,430
+the ship. Yeah. Yeah, correct.
+
+375
+00:26:11,940 --> 00:26:15,480
+Ben Raanan: And so in borrowing
+has been invested heavily in
+
+376
+00:26:15,480 --> 00:26:19,680
+developing those kinds of debit
+technologies, and also coming up
+
+377
+00:26:19,680 --> 00:26:23,700
+with ways to manipulate, you
+know, the environment there with
+
+378
+00:26:24,330 --> 00:26:29,610
+robotic arms, and so on, so
+forth. And then more recently,
+
+379
+00:26:29,610 --> 00:26:35,220
+we focused on using autonomous
+vehicles to extend the duration.
+
+380
+00:26:35,670 --> 00:26:40,680
+So cutting the tether, focusing
+on platforms that can sustain
+
+381
+00:26:40,680 --> 00:26:45,570
+themselves in the environment,
+with a remote operator that only
+
+382
+00:26:45,600 --> 00:26:52,110
+supervises periodically. And
+that really gives you a ability
+
+383
+00:26:52,110 --> 00:26:57,810
+to design without counting on
+having a ship in the area. And
+
+384
+00:26:57,810 --> 00:27:03,930
+B, it also opens the window for
+scalability, right? So
+
+385
+00:27:04,710 --> 00:27:07,890
+Audrow Nash: because you don't
+need that big stack, to maintain
+
+386
+00:27:07,920 --> 00:27:10,980
+and be running, like you don't
+need a whole ship, going to the
+
+387
+00:27:10,980 --> 00:27:14,040
+one location because you just
+have a bunch of these making
+
+388
+00:27:14,040 --> 00:27:16,410
+their way around the ocean,
+monitoring things
+
+389
+00:27:16,740 --> 00:27:19,020
+Ben Raanan: correct. And you can
+also have an operator that
+
+390
+00:27:19,050 --> 00:27:22,200
+rather than being fully engaged
+in operating a machine is now
+
+391
+00:27:22,200 --> 00:27:24,690
+checking in periodically just to
+make sure things are happening
+
+392
+00:27:24,690 --> 00:27:27,240
+as they should, and maybe
+providing instructions for
+
+393
+00:27:27,240 --> 00:27:28,980
+correction. And so
+
+394
+00:27:29,010 --> 00:27:32,130
+Audrow Nash: the grocery store
+checkout model is everywhere,
+
+395
+00:27:32,130 --> 00:27:34,470
+these days, for this kind of
+thing, where you have like the
+
+396
+00:27:34,470 --> 00:27:38,520
+one person watching the 10
+machines that were it's just
+
+397
+00:27:38,520 --> 00:27:40,860
+it's so interesting to see it
+here to where you have one
+
+398
+00:27:40,860 --> 00:27:44,280
+person kind of supervising, but
+not paying attention all the
+
+399
+00:27:44,280 --> 00:27:50,100
+time to all of the robots in
+your groups, but just watching a
+
+400
+00:27:50,100 --> 00:27:52,680
+few that periodically come in
+and out of contact, and they
+
+401
+00:27:52,680 --> 00:27:55,710
+manage maybe giving high level
+directions or something like
+
+402
+00:27:55,710 --> 00:27:58,380
+this. It's so interesting, this
+is becoming everywhere, it
+
+403
+00:27:58,380 --> 00:27:58,890
+seems.
+
+404
+00:27:59,610 --> 00:28:05,400
+Ben Raanan: Yeah. And I guess
+the so there are some aspects of
+
+405
+00:28:05,820 --> 00:28:07,980
+doing marine robotics that I
+guess they're very different
+
+406
+00:28:08,430 --> 00:28:12,450
+from terrestrial robots, or
+aerial robots in a sense. So I
+
+407
+00:28:12,450 --> 00:28:14,940
+think, you know, the underwater
+environment is a communication
+
+408
+00:28:14,940 --> 00:28:18,450
+denied. Environment, meaning,
+you know, once you go on your,
+
+409
+00:28:18,930 --> 00:28:21,720
+the radio frequencies that we
+use for localization and radio
+
+410
+00:28:21,720 --> 00:28:27,060
+in between our vehicles
+diminishes, at that point, we're
+
+411
+00:28:27,060 --> 00:28:30,600
+only the only chance to our only
+option to communicate with the
+
+412
+00:28:30,600 --> 00:28:34,440
+vehicles mystically using sound
+underwater. And that presents a
+
+413
+00:28:34,440 --> 00:28:39,000
+whole nother set of challenges.
+And that technology has come a
+
+414
+00:28:39,000 --> 00:28:43,620
+long way. But it's still very
+limited, especially compared to
+
+415
+00:28:43,620 --> 00:28:44,580
+way lower bandwidth
+
+416
+00:28:44,610 --> 00:28:46,890
+Audrow Nash: I would imagine.
+Correct. So you're, you're
+
+417
+00:28:46,890 --> 00:28:48,840
+talking about far less
+information can be sent,
+
+418
+00:28:49,410 --> 00:28:52,170
+Ben Raanan: right bits per
+second, and then three limited
+
+419
+00:28:52,170 --> 00:28:56,070
+in range with typical range, you
+know, I'd say a few kilometers,
+
+420
+00:28:56,340 --> 00:29:00,510
+is kind of typical. Yeah, so So
+the vehicles really need to be
+
+421
+00:29:00,510 --> 00:29:04,710
+self sustained. And they need to
+know what to do and operate on
+
+422
+00:29:04,710 --> 00:29:09,540
+their own. And so that that's a
+challenge. But at the same time,
+
+423
+00:29:11,040 --> 00:29:13,950
+you know, as humans, we're not
+really able to be in that
+
+424
+00:29:13,950 --> 00:29:19,620
+environment, it's hostile for
+our bodies. So any kind of
+
+425
+00:29:19,620 --> 00:29:23,550
+system they can put out there
+and can execute a task that's
+
+426
+00:29:23,550 --> 00:29:26,550
+useful is going to be an
+improvement of what you know, on
+
+427
+00:29:26,550 --> 00:29:30,120
+top of what a person can do. And
+I feel here in terrestrial
+
+428
+00:29:30,120 --> 00:29:34,350
+robotics, we're always up to
+your challenge, because, you
+
+429
+00:29:34,350 --> 00:29:38,910
+know, you got to do as well as
+something that as well as a
+
+430
+00:29:38,910 --> 00:29:41,670
+human where you're already in an
+environment where humans can
+
+431
+00:29:41,670 --> 00:29:46,500
+function fairly well. So so we
+have it, you know, many
+
+432
+00:29:46,500 --> 00:29:51,030
+challenges of one one had but
+then, you know, in some, in some
+
+433
+00:29:51,030 --> 00:29:56,850
+ways, it's kind of easier to
+make fast progress and push the
+
+434
+00:29:56,850 --> 00:30:00,960
+needle further than what you
+would be able to Have you used
+
+435
+00:30:01,020 --> 00:30:04,410
+in environments where humans are
+capable?
+
+436
+00:30:05,310 --> 00:30:08,100
+Audrow Nash: Yeah, because it's
+so cheap. So I'm a little
+
+437
+00:30:08,100 --> 00:30:12,300
+confused. But it. So you're
+saying, because these
+
+438
+00:30:12,300 --> 00:30:16,110
+environments are so challenging
+to get people out there, and
+
+439
+00:30:16,110 --> 00:30:18,240
+there's budget restrictions and
+things because like, you can't
+
+440
+00:30:18,240 --> 00:30:21,690
+have a ship go to each location
+you need, or you're interested,
+
+441
+00:30:21,690 --> 00:30:25,200
+but you can have a robot that
+kind of manages itself much more
+
+442
+00:30:25,200 --> 00:30:29,880
+cheaply. And so because it's so
+hostile, and because of the
+
+443
+00:30:29,880 --> 00:30:34,320
+scalability problem, there's a
+lot of room for advancement with
+
+444
+00:30:34,350 --> 00:30:39,540
+these robots that are going at
+the kind of the shallow depths
+
+445
+00:30:39,540 --> 00:30:41,280
+and monitoring things
+autonomously.
+
+446
+00:30:42,600 --> 00:30:45,450
+Ben Raanan: Correct, or? No?
+Yeah, I mean, there's, there's
+
+447
+00:30:45,450 --> 00:30:49,890
+just pretty much any kind of, if
+you can get a system to execute
+
+448
+00:30:49,890 --> 00:30:54,540
+any kind of task out there at
+sea, you're already pushing the
+
+449
+00:30:54,540 --> 00:30:59,430
+needle forward, you're improving
+over what a human can do. And so
+
+450
+00:31:00,270 --> 00:31:02,100
+and so I guess that's one
+advantage of doing marine
+
+451
+00:31:02,100 --> 00:31:05,160
+robotics, but it might be the
+only one, because it really is
+
+452
+00:31:05,160 --> 00:31:08,190
+very hard. It really is.
+Environment.
+
+453
+00:31:09,330 --> 00:31:12,630
+Audrow Nash: Oh, yeah, totally.
+I imagined it's like, almost, if
+
+454
+00:31:12,630 --> 00:31:17,490
+not as difficult as like putting
+a robot in that, like, if you
+
+455
+00:31:17,490 --> 00:31:20,190
+put a robot in space, it's like
+tremendously difficult to get it
+
+456
+00:31:20,190 --> 00:31:23,250
+up there. But once it's there,
+and it's in a harsh environment,
+
+457
+00:31:23,250 --> 00:31:26,520
+it's that's a big challenge, for
+sure, like putting a rover on
+
+458
+00:31:26,520 --> 00:31:29,550
+the moon, or putting a rover on
+Mars or putting something in
+
+459
+00:31:29,550 --> 00:31:33,090
+space. Like that's tremendously
+challenging, given the harshness
+
+460
+00:31:33,090 --> 00:31:35,490
+of that environment, and that
+the remoteness of it. But this
+
+461
+00:31:35,490 --> 00:31:38,580
+is kind of similar in that the
+environments like water is
+
+462
+00:31:38,580 --> 00:31:43,590
+really powerful. It's very cold,
+it's very rough. There's like, I
+
+463
+00:31:43,590 --> 00:31:47,070
+don't know, bunch of creatures
+all around, I don't know, I'm
+
+464
+00:31:47,070 --> 00:31:47,610
+imagining like,
+
+465
+00:31:48,390 --> 00:31:52,380
+Ben Raanan: we did have vehicles
+in the past. So vehicles have
+
+466
+00:31:52,380 --> 00:31:54,840
+returned with shark bites in
+them and teeth embedded in
+
+467
+00:31:54,840 --> 00:32:01,440
+wirings. But that's actually a
+really good comparison. But I
+
+468
+00:32:01,440 --> 00:32:04,140
+guess I would argue that, you
+know, because of the pressure
+
+469
+00:32:04,140 --> 00:32:07,830
+and space versus pressure at
+sea, we've already talked about
+
+470
+00:32:07,830 --> 00:32:12,600
+that. So we call that yeah, you
+need to be able to sustain those
+
+471
+00:32:12,600 --> 00:32:15,570
+pressures, which, you know, is a
+challenge, but also, even a
+
+472
+00:32:15,570 --> 00:32:20,220
+vehicle on Mars. Sure, you have
+a 20 minutes to 20 minutes back
+
+473
+00:32:20,340 --> 00:32:23,190
+delay in your communication, but
+you're still able to communicate
+
+474
+00:32:23,190 --> 00:32:27,840
+with the vehicle at all times.
+Versus Right, exactly. Versus
+
+475
+00:32:28,200 --> 00:32:32,250
+underwater platform, where once
+the vehicle is under you
+
+476
+00:32:32,580 --> 00:32:35,430
+typically lose contact. So yeah,
+
+477
+00:32:36,240 --> 00:32:39,000
+Audrow Nash: that's very
+interesting for that. It's
+
+478
+00:32:39,000 --> 00:32:42,840
+definitely a very hard problem
+space. One thing just to give it
+
+479
+00:32:42,840 --> 00:32:46,800
+because this is one thing that I
+don't quite understand yet. What
+
+480
+00:32:46,800 --> 00:32:49,080
+kinds of things because these
+robots are out there, and
+
+481
+00:32:49,080 --> 00:32:52,230
+they're monitoring something.
+But what kinds of data are they
+
+482
+00:32:52,230 --> 00:32:55,710
+collecting? While they're out
+there? Like, specifically? And
+
+483
+00:32:55,710 --> 00:32:57,810
+I'm sure there's a lot of things
+you could look at, but like the
+
+484
+00:32:57,810 --> 00:33:01,440
+nature of the type of data,
+you're collecting, something I
+
+485
+00:33:01,440 --> 00:33:02,430
+don't yet understand?
+
+486
+00:33:02,880 --> 00:33:06,000
+Ben Raanan: Sure, yeah. So we
+have platforms, different
+
+487
+00:33:06,000 --> 00:33:08,460
+platforms are geared toward
+collecting different types of
+
+488
+00:33:08,460 --> 00:33:12,390
+information. And so if you're
+looking at an ROV, that's a
+
+489
+00:33:12,390 --> 00:33:15,990
+remotely operated vehicle that
+has the option to manipulate.
+
+490
+00:33:17,670 --> 00:33:22,470
+And so you little hands, right,
+exactly. Okay, so you can do
+
+491
+00:33:23,160 --> 00:33:26,430
+specimen collection, for
+example, at the deep sea. We
+
+492
+00:33:26,430 --> 00:33:32,310
+also use those type of platforms
+to do surveys of the seafloor
+
+493
+00:33:32,310 --> 00:33:40,410
+using video multibeam sonars.
+And also for mapping and also,
+
+494
+00:33:40,860 --> 00:33:43,410
+now, LIDAR. And
+
+495
+00:33:43,950 --> 00:33:45,690
+Audrow Nash: that works under I
+mean, I guess it makes sense
+
+496
+00:33:45,690 --> 00:33:47,700
+that it works underwater. I
+imagine there's a new set of
+
+497
+00:33:47,700 --> 00:33:49,470
+problems and challenges with
+that.
+
+498
+00:33:49,860 --> 00:33:52,320
+Ben Raanan: Yes, it's very
+challenging. I'm actually not
+
+499
+00:33:52,320 --> 00:33:56,160
+working on those projects. But
+we have a whole team here that's
+
+500
+00:33:56,190 --> 00:33:59,040
+developing that capability. And
+it's pretty cool, actually. Oh,
+
+501
+00:33:59,430 --> 00:34:01,890
+yeah. So so they've developed
+actually this really cool
+
+502
+00:34:01,890 --> 00:34:05,100
+device. It's, I can share a
+video later. But it's an
+
+503
+00:34:05,100 --> 00:34:09,090
+articulating sled that connects
+to the remotely operated
+
+504
+00:34:09,090 --> 00:34:12,810
+vehicle. And it allows the
+vehicle to conduct a survey. So
+
+505
+00:34:12,810 --> 00:34:16,590
+you can imagine it flies over a
+constant altitude. But then
+
+506
+00:34:16,590 --> 00:34:20,130
+regardless of how, with the
+bathymetry, that's what the
+
+507
+00:34:20,130 --> 00:34:22,110
+bottom of the ocean. So for
+example, now you're coming up
+
+508
+00:34:22,110 --> 00:34:25,980
+against the wall, the sled will
+articulate itself. So the
+
+509
+00:34:25,980 --> 00:34:32,100
+sensing is always pointed
+directly at the seafloor. And so
+
+510
+00:34:32,640 --> 00:34:35,700
+that allows you to get
+continuous surveys regardless of
+
+511
+00:34:35,700 --> 00:34:39,570
+what the topography is doing
+underwater. And with LIDAR
+
+512
+00:34:40,110 --> 00:34:44,100
+imagery and sonar, you get very
+high resolution data. And so you
+
+513
+00:34:44,100 --> 00:34:49,200
+can start describing species to
+the genius level using imagery.
+
+514
+00:34:49,200 --> 00:34:54,570
+Cool. And then by returning to
+those points, you're able to
+
+515
+00:34:54,570 --> 00:34:58,980
+track how you know things evolve
+over time. And so that's
+
+516
+00:34:58,980 --> 00:35:02,220
+something we do and Those,
+that's one type of information
+
+517
+00:35:02,220 --> 00:35:05,550
+that we gather and bury those
+images and videos that we
+
+518
+00:35:05,550 --> 00:35:11,580
+collect are one of the biggest,
+I guess, databases that we have
+
+519
+00:35:11,580 --> 00:35:16,710
+is those videos that these
+vehicles collect. And we have
+
+520
+00:35:17,220 --> 00:35:20,490
+also some projects going on here
+now to expose some of that
+
+521
+00:35:20,490 --> 00:35:23,970
+information and make it bring it
+to a format where you know, it's
+
+522
+00:35:23,970 --> 00:35:29,730
+right for automation. And so so
+that's one type of data, then we
+
+523
+00:35:29,730 --> 00:35:34,050
+have two autonomous vehicles
+that also carry those deep sea
+
+524
+00:35:34,110 --> 00:35:39,510
+vehicles. So also geared towards
+mapping as a primary task. And
+
+525
+00:35:39,510 --> 00:35:43,620
+they also carry these big
+sonars, and are able to do the
+
+526
+00:35:43,620 --> 00:35:48,810
+surveys along the sea bottom, at
+depth, and retrieve, you know,
+
+527
+00:35:48,810 --> 00:35:53,970
+high resolution maps of certain
+areas. And so that's another
+
+528
+00:35:53,970 --> 00:35:57,540
+type of data that we collect.
+And then, in addition to that,
+
+529
+00:35:57,540 --> 00:36:03,810
+we also have what we refer to as
+oceanographic sensors. So most
+
+530
+00:36:03,810 --> 00:36:07,800
+typically, there's going to be
+sensors that collect
+
+531
+00:36:07,830 --> 00:36:09,180
+temperature, salinity,
+
+532
+00:36:10,320 --> 00:36:13,050
+Audrow Nash: you know, that's
+how salty it is. Right? Correct.
+
+533
+00:36:13,050 --> 00:36:14,190
+Second one, salinity,
+
+534
+00:36:14,430 --> 00:36:17,550
+Ben Raanan: salinity, correct.
+And the way Yeah, so that's kind
+
+535
+00:36:17,550 --> 00:36:21,480
+of like your, your basic, but
+then you have also specialized
+
+536
+00:36:21,480 --> 00:36:24,450
+sensors that are able to tell
+you the concentration of certain
+
+537
+00:36:24,450 --> 00:36:27,810
+nutrients in the ocean water,
+for example, like nitrogen,
+
+538
+00:36:27,990 --> 00:36:34,620
+nitrates, sensors, things like
+that. And then we also have even
+
+539
+00:36:34,620 --> 00:36:39,330
+more specialized sensors that
+are able, for example, to sense
+
+540
+00:36:39,480 --> 00:36:44,250
+the type of bioluminescence. So
+they have a chamber that past
+
+541
+00:36:44,370 --> 00:36:48,750
+Yeah, so so you can see how much
+bioluminescence occurring in the
+
+542
+00:36:48,750 --> 00:36:52,230
+body of water that you're
+traveling through. And so that's
+
+543
+00:36:52,230 --> 00:36:53,070
+another type of
+
+544
+00:36:53,160 --> 00:36:56,790
+Audrow Nash: does that mean like
+an algae will produce light at
+
+545
+00:36:56,790 --> 00:36:59,310
+night? Or something? I said
+analogy, or would it be like
+
+546
+00:36:59,340 --> 00:37:02,700
+fish in a really deep ocean? Or
+both for?
+
+547
+00:37:02,970 --> 00:37:05,880
+Ben Raanan: Yeah, so they
+bioluminescence is light
+
+548
+00:37:05,880 --> 00:37:12,780
+emitting organisms. And so that
+actually happens in a very wide
+
+549
+00:37:12,780 --> 00:37:18,690
+range of species across the
+entire ocean. So it's pretty
+
+550
+00:37:18,690 --> 00:37:22,500
+ubiquitous. And we have a lab
+here that studies, you know, how
+
+551
+00:37:22,500 --> 00:37:25,530
+it happens. And what are the
+evolution pathways that lead to
+
+552
+00:37:25,830 --> 00:37:30,180
+different types? That's really
+cool. Yeah. So so that's another
+
+553
+00:37:30,180 --> 00:37:31,200
+type of, you know,
+
+554
+00:37:32,160 --> 00:37:35,250
+Audrow Nash: is it often in deep
+sea animals? Or do you see it in
+
+555
+00:37:35,250 --> 00:37:38,370
+like surface algae? Or like, I
+don't know if like the ocean
+
+556
+00:37:38,370 --> 00:37:41,580
+lights up at night? With algae?
+I could imagine that. But I
+
+557
+00:37:41,580 --> 00:37:42,930
+wonder if it's true. No,
+
+558
+00:37:42,930 --> 00:37:48,120
+Ben Raanan: it is true. So
+larger organisms that that have
+
+559
+00:37:48,120 --> 00:37:53,670
+bioluminescence are typically
+found deeper. And they use
+
+560
+00:37:53,970 --> 00:37:57,900
+bioluminescence for various
+reasons, it could be for
+
+561
+00:37:57,900 --> 00:38:01,770
+attracting a mate for trying to
+capture prey for deterring prey.
+
+562
+00:38:02,070 --> 00:38:05,130
+And you see different patterns
+and different colors being used
+
+563
+00:38:05,610 --> 00:38:10,890
+for different purposes. In the
+shallower water, there are many
+
+564
+00:38:10,890 --> 00:38:14,490
+types of algae that have
+bioluminescence, for different
+
+565
+00:38:14,490 --> 00:38:19,560
+reasons. And we actually have a
+project going on here to try and
+
+566
+00:38:19,560 --> 00:38:24,390
+identify what type of allergy
+you're observing just based on
+
+567
+00:38:24,390 --> 00:38:30,930
+the bioluminescence patterns. So
+yeah, so it's actually pretty
+
+568
+00:38:30,930 --> 00:38:34,230
+ubiquitous in the ocean and
+happens in all kinds of
+
+569
+00:38:36,420 --> 00:38:38,670
+Audrow Nash: just out of
+curiosity, like, I don't really
+
+570
+00:38:38,670 --> 00:38:42,810
+know anything about this, but
+why so I can understand animals
+
+571
+00:38:42,810 --> 00:38:47,940
+having bioluminescence? Because
+they are, like, as the main
+
+572
+00:38:47,970 --> 00:38:51,060
+reasons you've mentioned,
+hunting, or meeting or something
+
+573
+00:38:51,060 --> 00:38:55,050
+like this, like it's beneficial
+for those reasons. But plants. I
+
+574
+00:38:55,050 --> 00:38:59,220
+can't like algae is a plant to
+me. And I can't understand like
+
+575
+00:38:59,220 --> 00:39:01,590
+how that would affect like, if
+there's one algae and it has a
+
+576
+00:39:01,590 --> 00:39:05,280
+beautiful glow, it doesn't
+probably help that algae meeting
+
+577
+00:39:05,280 --> 00:39:08,460
+with the other one, or maybe
+it's some reactive. What's the
+
+578
+00:39:08,460 --> 00:39:12,450
+what's the reason why algae has
+bioluminescent glows?
+
+579
+00:39:13,110 --> 00:39:15,720
+Ben Raanan: Well, I don't have a
+straight answer. There's
+
+580
+00:39:15,720 --> 00:39:16,740
+Audrow Nash: many. Yeah,
+
+581
+00:39:16,770 --> 00:39:19,530
+Ben Raanan: there are probably a
+few. It could also be for
+
+582
+00:39:20,310 --> 00:39:24,480
+prediction avoidance. If they
+all fluoresce all at once,
+
+583
+00:39:24,510 --> 00:39:26,550
+Audrow Nash: I guess it looks
+like we are waste or something
+
+584
+00:39:26,550 --> 00:39:27,090
+at some stage.
+
+585
+00:39:29,010 --> 00:39:32,100
+Ben Raanan: If you try to
+imagine trying to capture one
+
+586
+00:39:32,160 --> 00:39:38,880
+little particle, but suddenly, a
+light show blows up in front of
+
+587
+00:39:38,880 --> 00:39:43,110
+you. I think it would be pretty
+hard to focus just on one single
+
+588
+00:39:43,110 --> 00:39:47,130
+cell. But I'm not sure that's
+really the reason I want to get
+
+589
+00:39:47,130 --> 00:39:47,730
+back into that
+
+590
+00:39:47,730 --> 00:39:50,130
+Audrow Nash: being some sort of
+thing. It's avoiding predators.
+
+591
+00:39:50,610 --> 00:39:53,820
+I just intuitively I don't I
+don't have a good model for why
+
+592
+00:39:53,820 --> 00:39:56,640
+that would be the case. And it's
+fascinating that that exists.
+
+593
+00:39:57,390 --> 00:40:01,350
+Ben Raanan: But right, yeah,
+yeah. And so Steve haddock, Dr.
+
+594
+00:40:01,350 --> 00:40:05,730
+Steve had a career in MBARI. He
+leads research here on
+
+595
+00:40:05,760 --> 00:40:10,170
+bioluminescence. And so we can
+go ahead and look up services
+
+596
+00:40:10,170 --> 00:40:13,860
+research and probably get some
+answers. But he's, he's great.
+
+597
+00:40:15,330 --> 00:40:18,900
+Audrow Nash: So, those sensors
+to your bioluminescence sensors,
+
+598
+00:40:18,930 --> 00:40:21,960
+and you mentioned a whole bunch
+of other ones so salty and
+
+599
+00:40:21,960 --> 00:40:27,810
+temperature and different
+nutrients correctly. So those
+
+600
+00:40:27,810 --> 00:40:30,840
+are the kinds of things you're
+collecting data about. And I
+
+601
+00:40:30,840 --> 00:40:35,670
+guess, also the video one. So if
+you if you see an algae bloom,
+
+602
+00:40:35,700 --> 00:40:39,150
+what kinds of things are you
+trying to sense about that, I
+
+603
+00:40:39,150 --> 00:40:43,860
+suppose the nutrients is how
+salty it is the temperature, but
+
+604
+00:40:43,860 --> 00:40:46,560
+then also maybe video of the
+event, and then or
+
+605
+00:40:46,590 --> 00:40:49,650
+Ben Raanan: Well, yes, for a
+biological shark for studying
+
+606
+00:40:49,680 --> 00:40:54,570
+those type of microscopic
+organisms, we do have some
+
+607
+00:40:54,780 --> 00:40:59,430
+imagery based payloads that we
+use in order to try and identify
+
+608
+00:40:59,430 --> 00:41:00,180
+species.
+
+609
+00:41:00,780 --> 00:41:04,890
+Audrow Nash: So you mean like
+various cameras, camera setup,
+
+610
+00:41:04,920 --> 00:41:07,500
+or something that you include on
+the robot. So you have your
+
+611
+00:41:07,500 --> 00:41:10,590
+various payloads that have
+various sensors that you might
+
+612
+00:41:10,590 --> 00:41:11,760
+include on your robots,
+
+613
+00:41:12,150 --> 00:41:14,970
+Ben Raanan: okay. And in
+addition to that, we also have
+
+614
+00:41:14,970 --> 00:41:19,170
+the ability to acquire water
+samples autonomously at sea. And
+
+615
+00:41:19,170 --> 00:41:22,560
+so we have a whole lab here,
+that's actually, that's their
+
+616
+00:41:22,560 --> 00:41:27,960
+focus, and they've developed a
+payload on the environmental
+
+617
+00:41:27,960 --> 00:41:32,100
+sample processor. And this is
+actually probably the most
+
+618
+00:41:32,100 --> 00:41:35,280
+advanced type of it's not really
+a sensor, but it's more like a
+
+619
+00:41:35,280 --> 00:41:40,200
+payload we refer to it, it's
+able to take in 60 water
+
+620
+00:41:40,200 --> 00:41:45,360
+samples. So you can imagine some
+kind of like, a system that has
+
+621
+00:41:45,360 --> 00:41:51,000
+an intake and is able to filter
+water, while the vehicles
+
+622
+00:41:51,000 --> 00:41:55,680
+deployed at sea. And then also
+has some automation that's built
+
+623
+00:41:55,710 --> 00:42:01,590
+in to this payload, to, you
+know, use the right reagents in
+
+624
+00:42:01,590 --> 00:42:06,900
+order to fix fixate that, that
+sample. So it doesn't continue
+
+625
+00:42:06,900 --> 00:42:11,460
+to change after you've filtered
+the water. And then that system
+
+626
+00:42:11,460 --> 00:42:12,210
+also how that would
+
+627
+00:42:12,210 --> 00:42:15,150
+Audrow Nash: be like if you had
+some sort of bacteria in it, or
+
+628
+00:42:15,150 --> 00:42:18,930
+something that were like
+continued to do, whatever. So it
+
+629
+00:42:18,930 --> 00:42:22,530
+like, you'll basically sterilize
+everything or kill everything in
+
+630
+00:42:22,530 --> 00:42:24,810
+it. So you can look at its
+components. And then you can
+
+631
+00:42:24,810 --> 00:42:30,750
+easily subtract that reagent out
+when you are doing your tests on
+
+632
+00:42:30,750 --> 00:42:34,590
+it. So you know, kind of your
+baseline, and you can see what
+
+633
+00:42:34,590 --> 00:42:36,240
+it was at the time. Ah,
+
+634
+00:42:36,750 --> 00:42:39,210
+Ben Raanan: exactly correct. And
+then these payloads also have
+
+635
+00:42:39,210 --> 00:42:45,840
+some analytical modules that are
+able to tell you things about
+
+636
+00:42:45,840 --> 00:42:49,920
+the sample that you just
+acquired at sea. Cool. And so at
+
+637
+00:42:49,920 --> 00:42:52,500
+the extreme case, and this is
+still hasn't been miniaturized
+
+638
+00:42:52,500 --> 00:42:57,330
+to the point where it runs on a
+vehicle, you can run this type
+
+639
+00:42:57,330 --> 00:43:02,580
+of sample and actually target
+specific genes. So do almost
+
+640
+00:43:02,580 --> 00:43:06,960
+like a genomic analysis on the
+sample that you just acquired,
+
+641
+00:43:07,350 --> 00:43:08,940
+and radio back to shore.
+
+642
+00:43:10,080 --> 00:43:13,830
+Audrow Nash: What are the genes
+of what is it literally genes of
+
+643
+00:43:13,830 --> 00:43:16,500
+something? Are you like getting
+an algae sample and looking at
+
+644
+00:43:16,500 --> 00:43:20,340
+it streams? Or what is it the
+what? Oh, it's okay. So it's an
+
+645
+00:43:20,340 --> 00:43:23,910
+algae that you're synchronizing
+effectively. That's super cool.
+
+646
+00:43:24,060 --> 00:43:26,520
+Ben Raanan: Yeah. And then that
+allows you over time and space
+
+647
+00:43:26,520 --> 00:43:30,990
+to see, you know, what was the?
+What was the community, the
+
+648
+00:43:30,990 --> 00:43:34,740
+microbial community? What was it
+looking like? And over time, how
+
+649
+00:43:34,740 --> 00:43:39,180
+is how has it evolved? And that,
+you know, is, is really useful
+
+650
+00:43:39,180 --> 00:43:42,480
+for research and understanding
+how things change over time and
+
+651
+00:43:42,510 --> 00:43:45,690
+with conditions. So as
+conditions change, how does the
+
+652
+00:43:45,690 --> 00:43:49,410
+microbial community react, but
+also, it's very useful for
+
+653
+00:43:49,410 --> 00:43:51,990
+monitoring. So you can example
+for example, you can have, you
+
+654
+00:43:51,990 --> 00:43:54,840
+can imagine seeing a system like
+this deployed somewhere, and
+
+655
+00:43:54,840 --> 00:43:57,870
+looking for a certain species of
+algae that's harmful for the
+
+656
+00:43:57,870 --> 00:44:01,530
+environment, because it produces
+some toxin. And that's kind of
+
+657
+00:44:01,530 --> 00:44:07,320
+like an early warning system. So
+again, geared toward not only
+
+658
+00:44:07,320 --> 00:44:10,980
+doing research, but also
+conservation and resource
+
+659
+00:44:10,980 --> 00:44:16,380
+management. So that's another
+another piece there. And so, you
+
+660
+00:44:16,380 --> 00:44:19,680
+know, that generally, that
+payload kind of personifies, I
+
+661
+00:44:19,680 --> 00:44:23,670
+guess, one of the major themes
+or research that have been going
+
+662
+00:44:23,670 --> 00:44:26,610
+on here at the Institute, which
+what we refer to as taking the
+
+663
+00:44:26,610 --> 00:44:32,970
+lab, to see, and being able to
+do sample processing, and do as
+
+664
+00:44:32,970 --> 00:44:38,460
+much of the analysis that we can
+at sea and inform the vehicle
+
+665
+00:44:38,820 --> 00:44:44,520
+autonomously, on how to proceed.
+And so, taking the lab to the
+
+666
+00:44:44,520 --> 00:44:48,570
+ocean to the sea is has been a
+major theme here. And the type
+
+667
+00:44:48,570 --> 00:44:52,920
+of development is also you know,
+it's always geared to if you if
+
+668
+00:44:52,920 --> 00:44:56,820
+you could do it here at sea or
+on a ship, how can we take that
+
+669
+00:44:57,210 --> 00:45:01,080
+same analysis and put it on a
+platform and so Oh, this, this
+
+670
+00:45:01,110 --> 00:45:04,140
+this water sampling code that it
+just described, for example, now
+
+671
+00:45:04,170 --> 00:45:06,750
+we're at the point where we're
+adding these modules that are
+
+672
+00:45:06,750 --> 00:45:11,070
+able to also analyze the samples
+and have the vehicle, do this
+
+673
+00:45:11,070 --> 00:45:14,400
+type of analysis at sea, and
+radio the results back to shore.
+
+674
+00:45:15,420 --> 00:45:18,960
+Audrow Nash: Gotcha. Okay, so
+they radio, the radio the
+
+675
+00:45:18,960 --> 00:45:23,850
+results back. So this is for
+like, one of those surface
+
+676
+00:45:24,210 --> 00:45:27,450
+monitoring robots. So it'll kind
+of like stay at some depth,
+
+677
+00:45:27,480 --> 00:45:31,920
+that's not very deep, collect
+some information. And then it
+
+678
+00:45:31,920 --> 00:45:36,270
+goes in chills at the very
+surface in the water, and it'll
+
+679
+00:45:36,300 --> 00:45:41,940
+radio back the information for
+you guys to analyze, or do
+
+680
+00:45:41,940 --> 00:45:44,610
+something with? And probably
+that's how you communicate with
+
+681
+00:45:44,610 --> 00:45:48,990
+it for like, send it commands or
+something, as well, right?
+
+682
+00:45:49,110 --> 00:45:53,850
+Ben Raanan: So yeah, so the
+vehicles actually, they can also
+
+683
+00:45:53,850 --> 00:45:57,420
+use on the sensory inputs to
+inform their, you know, actions.
+
+684
+00:45:57,990 --> 00:46:01,620
+So our planning algorithms, for
+example, that look at sensor
+
+685
+00:46:01,620 --> 00:46:04,740
+input, and decide how to steer
+the vehicle autonomously, for
+
+686
+00:46:04,740 --> 00:46:08,580
+example, in order to try to stay
+with some kind of maximum
+
+687
+00:46:08,580 --> 00:46:12,960
+concentration, where you know,
+you're sensing where most of the
+
+688
+00:46:12,960 --> 00:46:16,290
+algae is, or where the highest
+concentration of algae is. And
+
+689
+00:46:16,290 --> 00:46:21,750
+you can use optical sensors, to
+try to see how much chlorophyll
+
+690
+00:46:21,750 --> 00:46:25,320
+is in the water using
+fluorescence. And so then you
+
+691
+00:46:25,320 --> 00:46:29,100
+can use this information and
+driving the vehicle to do kind
+
+692
+00:46:29,100 --> 00:46:32,640
+of like, you can imagine a
+gradient climbing algorithm that
+
+693
+00:46:32,640 --> 00:46:36,600
+takes a vehicle from a, you
+know, an edge and drives it into
+
+694
+00:46:36,600 --> 00:46:39,060
+center of the patch. And then
+when it reaches the center of
+
+695
+00:46:39,060 --> 00:46:42,030
+patch, it will trigger a water
+sample. So that's something that
+
+696
+00:46:42,030 --> 00:46:47,400
+we do here pretty typically. And
+then, in addition to that, I
+
+697
+00:46:47,400 --> 00:46:49,230
+guess you mentioned
+communication. So yes, the
+
+698
+00:46:49,230 --> 00:46:53,400
+vehicle surface periodically to
+surface with shore. But those
+
+699
+00:46:53,400 --> 00:46:56,220
+type of applications, especially
+if you want to stay with a
+
+700
+00:46:56,220 --> 00:47:00,420
+certain part of the water mass,
+meaning, let's say, because
+
+701
+00:47:00,420 --> 00:47:02,820
+everything is moving in the
+ocean constantly, right, you've
+
+702
+00:47:02,820 --> 00:47:07,620
+got currents carrying carrying
+these microorganisms. And if you
+
+703
+00:47:07,650 --> 00:47:13,140
+lose that patch of water, and in
+order to go up to the surface
+
+704
+00:47:13,170 --> 00:47:16,410
+and communicate well, when you
+come back down, you might be
+
+705
+00:47:16,410 --> 00:47:20,310
+looking at our community. And so
+those type of applications
+
+706
+00:47:20,310 --> 00:47:24,810
+really lend themselves well to
+multi vehicle constellations.
+
+707
+00:47:25,470 --> 00:47:30,690
+And so that's been another focus
+here is this multi vehicle type
+
+708
+00:47:30,690 --> 00:47:36,420
+of operations. And so in the
+example that we just discussed,
+
+709
+00:47:37,110 --> 00:47:41,490
+you'll have one vehicle that is
+doing this graded climbing and
+
+710
+00:47:41,490 --> 00:47:45,300
+looking for a maxilla. And then
+once it finds the highest
+
+711
+00:47:45,300 --> 00:47:48,720
+concentration of chlorophyll, or
+whatever it is, it's looking
+
+712
+00:47:48,720 --> 00:47:54,390
+for, it kind of just parks it
+underwater, and stays with that
+
+713
+00:47:54,390 --> 00:48:00,180
+water mass and drifts. And the
+issue with that is, you know,
+
+714
+00:48:00,180 --> 00:48:03,180
+after a while, you're not going
+to know what a vehicle is, you
+
+715
+00:48:03,180 --> 00:48:06,090
+are not know you're not going to
+know what type of information
+
+716
+00:48:06,090 --> 00:48:10,740
+it's looking at. And so a second
+vehicle will typically track
+
+717
+00:48:11,460 --> 00:48:16,170
+this type of sampling vehicle,
+smart. And then one is at
+
+718
+00:48:16,170 --> 00:48:19,320
+Audrow Nash: the surface looking
+down and the other one is
+
+719
+00:48:19,350 --> 00:48:21,630
+drifting with this algae Max.
+
+720
+00:48:22,080 --> 00:48:25,020
+Ben Raanan: Well, so that's one
+way to do it. And we also use
+
+721
+00:48:25,050 --> 00:48:27,870
+autonomous surface vessels in
+order to track underwater
+
+722
+00:48:27,870 --> 00:48:32,220
+assets. But we typically also
+have a second underwater vehicle
+
+723
+00:48:32,640 --> 00:48:35,160
+that's profiling around it and
+tracking it, it's surfacing
+
+724
+00:48:35,160 --> 00:48:39,120
+periodically, and it can relay
+information from the diving
+
+725
+00:48:39,120 --> 00:48:44,190
+vehicle. And also, it gives the
+scientists more contextual data,
+
+726
+00:48:44,190 --> 00:48:48,750
+because usually the second
+vehicle is kind of parked at one
+
+727
+00:48:48,750 --> 00:48:53,580
+little part of the water column.
+And in order to get the full
+
+728
+00:48:53,580 --> 00:48:56,370
+contextual data of what's going
+on, you also need a second
+
+729
+00:48:56,370 --> 00:49:00,180
+vehicle in order to survey and
+get
+
+730
+00:49:00,480 --> 00:49:02,700
+Audrow Nash: the bird's eye view
+are the ones in the forest. And
+
+731
+00:49:02,700 --> 00:49:04,200
+one is that the trees kind of
+thing.
+
+732
+00:49:04,500 --> 00:49:07,650
+Ben Raanan: Exactly. And so
+multi vehicle applications have
+
+733
+00:49:07,650 --> 00:49:11,880
+been, you know, a main theme
+here. And I guess that kind of
+
+734
+00:49:11,880 --> 00:49:17,550
+leads us toward maybe talking a
+little bit about the sim. Yeah,
+
+735
+00:49:17,580 --> 00:49:20,670
+Audrow Nash: one sec. Just
+before we go into that, what are
+
+736
+00:49:20,670 --> 00:49:24,060
+these vehicles look like? So
+specifically talking about the
+
+737
+00:49:24,060 --> 00:49:28,530
+surface monitoring ones where
+we're looking at algae, right?
+
+738
+00:49:28,890 --> 00:49:30,480
+What are the what are the robots
+look like?
+
+739
+00:49:31,199 --> 00:49:35,099
+Ben Raanan: Yeah, so typically,
+they're kind of torpedo shaped
+
+740
+00:49:35,099 --> 00:49:40,259
+vehicles. That's the most
+efficient way. And the vehicles
+
+741
+00:49:40,259 --> 00:49:44,549
+that we work that I work with,
+specifically are kind of small
+
+742
+00:49:44,549 --> 00:49:49,289
+size, so they're probably two to
+two and a half meters long,
+
+743
+00:49:49,289 --> 00:49:53,429
+depending on the type of payload
+that they have. And the diameter
+
+744
+00:49:53,429 --> 00:49:58,829
+is about 12 inches. And there it
+basically looks like torpedoes,
+
+745
+00:49:59,279 --> 00:50:02,699
+I can show you A picture here
+maybe? Sure.
+
+746
+00:50:05,219 --> 00:50:07,109
+Audrow Nash: I'd love to talk a
+little bit about how they work
+
+747
+00:50:07,139 --> 00:50:10,439
+and then get into the SIM stuff.
+Because the sim stuff is very
+
+748
+00:50:10,439 --> 00:50:12,089
+interesting. For sure.
+
+749
+00:50:12,510 --> 00:50:15,780
+Ben Raanan: So this is a picture
+of one of our vehicles, those
+
+750
+00:50:15,780 --> 00:50:20,430
+are test class long range EVs.
+So, like I mentioned, these are
+
+751
+00:50:20,430 --> 00:50:23,790
+upper water column vehicles,
+they're pressure rated for about
+
+752
+00:50:23,790 --> 00:50:27,090
+300 meters. And what's special
+about them is really their
+
+753
+00:50:27,090 --> 00:50:29,430
+endurance, we decided to
+
+754
+00:50:29,610 --> 00:50:30,690
+Audrow Nash: fire extinguisher,
+
+755
+00:50:31,380 --> 00:50:34,740
+Ben Raanan: pretty much, yeah,
+if you ever seen a picture of it
+
+756
+00:50:34,740 --> 00:50:40,440
+there, then it looks pretty much
+like that with a bit with a mask
+
+757
+00:50:40,500 --> 00:50:46,830
+on top, and that's our
+communication antenna. Yeah, so
+
+758
+00:50:47,070 --> 00:50:53,310
+go ahead, stop sharing it. But
+so that's the long end up now. I
+
+759
+00:50:53,310 --> 00:50:57,120
+guess, like I mentioned, we
+embark has really been on the
+
+760
+00:50:57,120 --> 00:51:00,690
+forefront of development of
+these platforms. And so on that
+
+761
+00:51:00,690 --> 00:51:04,020
+vehicle that I just showed that
+this class long SUV has been
+
+762
+00:51:04,020 --> 00:51:06,990
+developed and borrowed from
+scratch. And it's also
+
+763
+00:51:06,990 --> 00:51:10,500
+manufactured here, and operated
+here. And so everything about
+
+764
+00:51:10,500 --> 00:51:15,570
+that vehicle was designed here
+in house, these vehicles are
+
+765
+00:51:15,570 --> 00:51:18,510
+special, they're special in
+their capacity for their high
+
+766
+00:51:18,510 --> 00:51:21,600
+endurance vehicles, meaning they
+can cover about 1500 kilometers.
+
+767
+00:51:22,530 --> 00:51:27,240
+And stay at sea for say, up to
+two to three weeks, which is
+
+768
+00:51:27,270 --> 00:51:32,550
+unusual for vehicles at that
+size. Especially for ones that
+
+769
+00:51:32,550 --> 00:51:37,620
+have propeller and they're able
+to thrust on their own. There
+
+770
+00:51:37,620 --> 00:51:41,280
+are other types of vehicles that
+don't have thrusters and have
+
+771
+00:51:41,310 --> 00:51:44,970
+longer endurance. But this
+vehicle is very special and
+
+772
+00:51:44,970 --> 00:51:48,810
+unique. And that's capacity to
+stay up there.
+
+773
+00:51:50,070 --> 00:51:52,470
+Audrow Nash: So it doesn't do
+any, it basically you have a
+
+774
+00:51:52,470 --> 00:51:57,900
+battery, and that battery will
+last for two to three weeks. And
+
+775
+00:51:57,900 --> 00:52:00,630
+that dictates how long you can
+do it doesn't do any power
+
+776
+00:52:00,630 --> 00:52:04,650
+generation or like go up to the
+surface and have solar panels
+
+777
+00:52:04,650 --> 00:52:05,520
+fold out or
+
+778
+00:52:05,940 --> 00:52:10,530
+Ben Raanan: something. But it
+does. I mean, the power
+
+779
+00:52:10,530 --> 00:52:15,420
+management system is very
+efficient, efficient. Yes, every
+
+780
+00:52:15,450 --> 00:52:17,970
+every aspect of that vehicle is
+designed is really geared toward
+
+781
+00:52:17,970 --> 00:52:22,350
+efficiency from the shape to the
+tail cone and how you know, the
+
+782
+00:52:22,380 --> 00:52:26,850
+the hydrodynamic flow, and how
+water passes around it. It's
+
+783
+00:52:26,850 --> 00:52:30,300
+going to set to minimize drag.
+And this vehicle specifically is
+
+784
+00:52:30,300 --> 00:52:34,920
+also special because it can
+change its buoyancy. Meaning it
+
+785
+00:52:34,950 --> 00:52:37,560
+most people that put very
+expensive pieces of equipment in
+
+786
+00:52:37,560 --> 00:52:42,000
+the ocean, they make them
+buoyant. So if the agent stops
+
+787
+00:52:42,000 --> 00:52:45,360
+working, we'll come back up.
+Well, this one is able to
+
+788
+00:52:45,390 --> 00:52:51,120
+actually change its buoyancy at
+sea and fly neutral. And that
+
+789
+00:52:51,120 --> 00:52:53,970
+actually gives you a huge
+efficiency boost, because you're
+
+790
+00:52:53,970 --> 00:53:01,710
+not pushing against. Yeah, this
+upward force. And so then, you
+
+791
+00:53:01,710 --> 00:53:04,140
+know, comes the question, okay,
+if something does go wrong, how
+
+792
+00:53:04,140 --> 00:53:07,530
+do you manage that, and so their
+safety and power management are
+
+793
+00:53:07,530 --> 00:53:13,590
+kind of the heart of this
+vehicle. And so both both have,
+
+794
+00:53:14,400 --> 00:53:16,440
+you know, systems that are
+designed specifically in order
+
+795
+00:53:16,440 --> 00:53:21,750
+to optimize the routers, the
+vehicle powers off systems
+
+796
+00:53:21,780 --> 00:53:25,080
+automatically when it doesn't
+need them, even including extra
+
+797
+00:53:25,080 --> 00:53:30,690
+readers. So it's very smart
+management on board. And, you
+
+798
+00:53:30,690 --> 00:53:33,780
+know, when you you know,
+insurance in general, it's kind
+
+799
+00:53:33,780 --> 00:53:38,700
+of death by 1000 cuts, right?
+Try to optimize around each
+
+800
+00:53:38,700 --> 00:53:41,880
+parameter, eventually, you get a
+system that is able to persist
+
+801
+00:53:41,880 --> 00:53:45,210
+and be out there for those type
+of durations. And again, the
+
+802
+00:53:45,210 --> 00:53:47,700
+requirements for those durations
+come back to the original
+
+803
+00:53:47,700 --> 00:53:51,540
+processes that we've discussed
+kind of in depth upon not
+
+804
+00:53:51,540 --> 00:53:51,870
+intended.
+
+805
+00:53:53,909 --> 00:53:59,969
+Audrow Nash: So many ocean ponds
+are possible for sure. So with
+
+806
+00:53:59,969 --> 00:54:02,819
+this, when it adjusts its
+buoyancy, the way it does that
+
+807
+00:54:02,819 --> 00:54:05,429
+is it takes on water, right,
+like so it will have little
+
+808
+00:54:05,429 --> 00:54:08,189
+cavities or something in it, or
+how does it work?
+
+809
+00:54:08,550 --> 00:54:12,810
+Ben Raanan: Yeah, well,
+actually. So our vehicle doesn't
+
+810
+00:54:13,800 --> 00:54:20,940
+take in water, it uses oil. And
+so it can pass oil into a
+
+811
+00:54:20,940 --> 00:54:26,910
+bladder that's external to the
+sealed compartment. And by doing
+
+812
+00:54:26,910 --> 00:54:29,970
+that, so if you're taking oil
+from the sealed compartment, and
+
+813
+00:54:29,970 --> 00:54:32,670
+pushing it out to a bladder that
+can inflate, you're actually
+
+814
+00:54:32,670 --> 00:54:35,670
+changing the volume of the
+vehicle without changing its
+
+815
+00:54:35,670 --> 00:54:39,690
+mass. And by definition, that
+makes it more buoyant. And when
+
+816
+00:54:39,690 --> 00:54:43,950
+you want to become less buoyant,
+you just push the oil back into
+
+817
+00:54:43,950 --> 00:54:48,240
+the seal compartments. And that
+deflates the bladder. And the
+
+818
+00:54:48,240 --> 00:54:48,930
+vehicle
+
+819
+00:54:49,469 --> 00:54:53,099
+Audrow Nash: then becomes less
+of a thing. The volume changes
+
+820
+00:54:53,099 --> 00:54:56,609
+in the mass stays constant and
+that changes the buoyancy of the
+
+821
+00:54:56,609 --> 00:54:59,969
+correct Is it is it a lot of
+energy to like compress the oil
+
+822
+00:54:59,999 --> 00:55:04,829
+Remove it inside to the oil.
+What?
+
+823
+00:55:05,100 --> 00:55:07,200
+Ben Raanan: It's not oil, it's
+not cool. It's non compressible
+
+824
+00:55:07,200 --> 00:55:07,590
+oil.
+
+825
+00:55:08,670 --> 00:55:10,890
+Audrow Nash: It's like some sort
+of vacuum thing to move it from
+
+826
+00:55:10,890 --> 00:55:12,030
+one spot to another.
+
+827
+00:55:12,510 --> 00:55:15,960
+Ben Raanan: Yeah, we have a
+valve that opens and then a pump
+
+828
+00:55:15,990 --> 00:55:19,260
+that sits inside the seal
+compartment and can push oil
+
+829
+00:55:19,710 --> 00:55:23,790
+outside. And it's designed in a
+way that, you know, it can push
+
+830
+00:55:23,790 --> 00:55:31,980
+against pressure, even at depth.
+And then there's a lot of also
+
+831
+00:55:32,040 --> 00:55:35,640
+some safety built in there, you
+know, what happens if suddenly
+
+832
+00:55:35,640 --> 00:55:38,100
+you can't push against the
+pressure. And so there are some
+
+833
+00:55:38,790 --> 00:55:41,580
+valves that are set to close
+automatically and make sure that
+
+834
+00:55:41,610 --> 00:55:46,980
+water never makes it back. In in
+case of a failure. So like I
+
+835
+00:55:46,980 --> 00:55:53,640
+said, failure management is one
+of the big things. Exactly. So
+
+836
+00:55:53,850 --> 00:55:57,510
+pretty much every aspect here.
+Yeah. Go ahead. So.
+
+837
+00:55:58,889 --> 00:56:01,019
+Audrow Nash: So you don't want
+it to fail, because you lose
+
+838
+00:56:01,019 --> 00:56:05,999
+your robot. How much does one of
+these robots actually cost? Like
+
+839
+00:56:05,999 --> 00:56:06,659
+ballpark?
+
+840
+00:56:08,640 --> 00:56:13,380
+Ben Raanan: Yeah, sure. So I
+guess these vehicles also, were
+
+841
+00:56:13,380 --> 00:56:18,990
+designed for what we refer to as
+science users. Okay. So if
+
+842
+00:56:18,990 --> 00:56:22,440
+you're a researcher at a lab,
+you should be able to buy one of
+
+843
+00:56:22,440 --> 00:56:26,610
+these and, and, and operate it
+on your own with a reasonable
+
+844
+00:56:26,610 --> 00:56:28,890
+budget. And so that was kind of
+the requirements going into
+
+845
+00:56:28,890 --> 00:56:35,280
+there. And so the vehicles, you
+know, they're well, actually,
+
+846
+00:56:35,520 --> 00:56:39,300
+not sure if it's a good idea for
+me to disclose the exact
+
+847
+00:56:39,690 --> 00:56:44,610
+Audrow Nash: like, like an order
+of magnitude $50,000 robot
+
+848
+00:56:44,610 --> 00:56:45,240
+platform, I'd
+
+849
+00:56:45,240 --> 00:56:46,860
+Ben Raanan: say probably an
+order of magnitude more.
+
+850
+00:56:47,969 --> 00:56:52,319
+Audrow Nash: Wow. So it's like
+ballpark 500,000. So half a
+
+851
+00:56:52,319 --> 00:56:56,699
+million almost for one of these.
+Yeah. And that's affordable for
+
+852
+00:56:56,699 --> 00:56:59,129
+large research institutions. I
+take it well, if
+
+853
+00:56:59,130 --> 00:57:05,460
+Ben Raanan: you consider what it
+costs to operate a ship. Yeah,
+
+854
+00:57:05,490 --> 00:57:05,790
+most of
+
+855
+00:57:06,060 --> 00:57:09,030
+Audrow Nash: it costs in order
+to do a ship, like right, so I
+
+856
+00:57:09,030 --> 00:57:13,320
+guess, sorry, go ahead, because
+it seems expensive. But I have
+
+857
+00:57:13,350 --> 00:57:17,490
+no experience in this. So no
+real ability to estimate this.
+
+858
+00:57:18,060 --> 00:57:19,860
+Ben Raanan: Right. So a big
+ship, especially one that can
+
+859
+00:57:19,860 --> 00:57:23,820
+operate an ROV, you're probably
+looking at a few tenths of
+
+860
+00:57:23,820 --> 00:57:30,030
+$1,000 per day. Wow. So if it's
+a bigger ship, you're around 50
+
+861
+00:57:30,030 --> 00:57:36,000
+to 60k. Easy per day of
+operation. And so half a
+
+862
+00:57:36,000 --> 00:57:40,230
+million. I mean, it might sound
+a lot, but when you think about
+
+863
+00:57:40,230 --> 00:57:45,390
+it, and ship. Exactly. And so
+that's the idea, then, once you
+
+864
+00:57:45,840 --> 00:57:50,580
+if you can get the costs in for
+the vehicle, the operational
+
+865
+00:57:50,580 --> 00:57:53,730
+costs are very, very cheap. You
+can deploy these vehicles with,
+
+866
+00:57:54,030 --> 00:57:58,980
+you know, tiny, little boats,
+and then you're stuck with the,
+
+867
+00:57:59,010 --> 00:58:01,650
+you know, whatever
+communications bill for radium
+
+868
+00:58:01,650 --> 00:58:07,380
+satellite communication, or you
+know, your, your 4g cell. So,
+
+869
+00:58:08,130 --> 00:58:11,250
+Audrow Nash: so they the
+operational origin is, so if
+
+870
+00:58:11,250 --> 00:58:15,960
+they're doing, like 4g cell
+service for transferring data,
+
+871
+00:58:16,890 --> 00:58:21,990
+does that mean that you have to
+stay close to coast with these?
+
+872
+00:58:21,990 --> 00:58:23,940
+And that's typically how you're
+using them? Because I would
+
+873
+00:58:23,940 --> 00:58:27,180
+imagine if you're in the middle
+of the ocean, like very far from
+
+874
+00:58:27,180 --> 00:58:29,580
+shore, you're in the middle of
+the Pacific. There's no cell
+
+875
+00:58:29,580 --> 00:58:31,890
+towers out there. There's no
+cell service, but you did
+
+876
+00:58:31,890 --> 00:58:34,980
+mention satellite. So I suppose
+you could use that?
+
+877
+00:58:35,460 --> 00:58:38,820
+Ben Raanan: Yeah. So we have, we
+refer to the we have two modes
+
+878
+00:58:38,820 --> 00:58:44,190
+of operation. We, when you're
+outside of cell range, we refer
+
+879
+00:58:44,190 --> 00:58:47,760
+to that as over the horizon.
+When you're within cell range,
+
+880
+00:58:47,790 --> 00:58:50,730
+you know, why not take advantage
+of cell communication and do big
+
+881
+00:58:50,730 --> 00:58:54,870
+data dumps when you can? I don't
+know if a region is very slow,
+
+882
+00:58:55,320 --> 00:58:57,210
+and bandwidth limited, and so
+
+883
+00:58:58,560 --> 00:59:00,600
+Audrow Nash: slow is really
+slow, like ballpark.
+
+884
+00:59:02,010 --> 00:59:05,760
+Ben Raanan: So let's see to read
+the impact it is 340 bytes. And
+
+885
+00:59:05,760 --> 00:59:09,420
+you get about I'd say if you're
+lucky, three to four per minute.
+
+886
+00:59:11,010 --> 00:59:15,450
+When the surface Yes, so it's
+tiny. And so we play a lot of
+
+887
+00:59:15,450 --> 00:59:19,470
+games on board system, with
+refreshing, and all sorts. Yeah,
+
+888
+00:59:19,500 --> 00:59:22,470
+and also not only compression,
+but also selecting what
+
+889
+00:59:22,500 --> 00:59:25,320
+information to send what's the
+most relevant piece of
+
+890
+00:59:25,320 --> 00:59:27,870
+information that needs to be
+sent? What needs to be sent
+
+891
+00:59:27,870 --> 00:59:31,380
+first versus, you know, if
+you're only able to get one SBD?
+
+892
+00:59:31,500 --> 00:59:34,230
+One ready, pack it out? You
+know, what is it going to be?
+
+893
+00:59:34,620 --> 00:59:38,580
+And so, we work a lot with the
+scientists in order to
+
+894
+00:59:38,580 --> 00:59:42,720
+understand the use case. You
+know, get what is the crucial
+
+895
+00:59:42,720 --> 00:59:44,640
+information that they need for
+decision making while the
+
+896
+00:59:44,640 --> 00:59:47,910
+vehicles deployed and then
+configure the vehicle
+
+897
+00:59:47,910 --> 00:59:52,620
+appropriately and send it over?
+And, you know, hopefully not
+
+898
+00:59:52,620 --> 00:59:56,190
+spend most of our time sitting
+on the surface sending packets
+
+899
+00:59:56,190 --> 01:00:01,080
+data. Exactly. So time on the
+surface is rescue vehicle
+
+900
+01:00:01,080 --> 01:00:04,710
+because it can get over. That's
+probably the biggest risk for
+
+901
+01:00:04,710 --> 01:00:06,060
+these autonomous platforms
+
+902
+01:00:06,300 --> 01:00:09,540
+Audrow Nash: getting run over.
+Not sharks. Yeah. All right.
+
+903
+01:00:10,200 --> 01:00:13,050
+Ben Raanan: But so it's time not
+doing science. So totally.
+
+904
+01:00:16,710 --> 01:00:21,960
+Audrow Nash: Okay, so you have
+these, what have you long range?
+
+905
+01:00:22,020 --> 01:00:26,340
+What was the next part?
+autonomous underwater vehicles?
+
+906
+01:00:26,340 --> 01:00:27,960
+Or what was the thing you were
+saying? Correct?
+
+907
+01:00:27,990 --> 01:00:31,230
+Ben Raanan: Yes, it's the long.
+So these, these vehicles are
+
+908
+01:00:31,800 --> 01:00:35,610
+long range autonomous underwater
+vehicles. So LR EVs for short.
+
+909
+01:00:36,570 --> 01:00:42,210
+Audrow Nash: LR UVs? LR LR UVs.
+Yeah. doesn't roll off the
+
+910
+01:00:42,210 --> 01:00:42,870
+tongue terribly.
+
+911
+01:00:44,700 --> 01:00:46,650
+Ben Raanan: You know, we've had
+other people try to come up with
+
+912
+01:00:46,650 --> 01:00:50,520
+different ways. We're kind of
+stuck with that one.
+
+913
+01:00:51,060 --> 01:00:53,130
+Audrow Nash: Okay, I'm just
+gonna say long range underwater
+
+914
+01:00:53,130 --> 01:00:57,660
+vehicles easier. Okay, so you
+have these, Whoa, you're
+
+915
+01:00:57,660 --> 01:01:01,080
+mentioning that you have a bunch
+of safety precautions on them?
+
+916
+01:01:01,800 --> 01:01:04,410
+Because so they're half a
+million dollar platforms. I'm
+
+917
+01:01:04,410 --> 01:01:07,800
+sure that with the cost of about
+you make the money back, but
+
+918
+01:01:07,800 --> 01:01:11,280
+it's still super expensive. So I
+think institutions probably
+
+919
+01:01:11,280 --> 01:01:14,940
+wouldn't like to be replacing
+them because they keep getting
+
+920
+01:01:14,940 --> 01:01:20,250
+lost at sea, literally. Right.
+Can you talk about about the
+
+921
+01:01:20,250 --> 01:01:20,670
+safety?
+
+922
+01:01:21,600 --> 01:01:25,050
+Ben Raanan: So I guess I'll say
+that we have eight of these
+
+923
+01:01:25,050 --> 01:01:29,340
+platforms here in MBARI. And
+there are others coming up
+
+924
+01:01:29,430 --> 01:01:33,660
+online. I was holding on other
+places where they're building at
+
+925
+01:01:33,660 --> 01:01:39,180
+the moment. And between the
+fleet, we have probably nearing
+
+926
+01:01:39,180 --> 01:01:45,690
+35,000 hours of sea time. And
+seems like that's a lot. That's
+
+927
+01:01:45,720 --> 01:01:46,230
+a lot.
+
+928
+01:01:47,460 --> 01:01:50,310
+Audrow Nash: Let's see, how many
+how many days at sea is that
+
+929
+01:01:50,310 --> 01:01:56,730
+between the eight? So that's
+1000 divided by 24. Right?
+
+930
+01:01:57,330 --> 01:02:01,560
+Ben Raanan: So So that's like,
+four years? Four years worth of?
+
+931
+01:02:01,950 --> 01:02:06,720
+Yeah, it's four years of sea
+time, which isn't crazy. That's
+
+932
+01:02:06,990 --> 01:02:12,420
+a lot. And dirt. Exactly. I was
+gonna go knock on wood. But
+
+933
+01:02:13,170 --> 01:02:18,600
+yeah, right. We've never lost
+one. Yeah. And so, again, the
+
+934
+01:02:18,600 --> 01:02:22,290
+reason is, because MBARI has a
+lot of experience. And we've
+
+935
+01:02:22,560 --> 01:02:24,750
+basically taken all of our
+experience and knowledge and
+
+936
+01:02:24,990 --> 01:02:28,290
+built it into the hardware level
+of these vehicles. So this
+
+937
+01:02:28,290 --> 01:02:32,850
+vehicle has so many safety
+features built into it. In the
+
+938
+01:02:32,850 --> 01:02:36,690
+hardware level, meaning the
+motherboard itself, if CPU
+
+939
+01:02:36,690 --> 01:02:42,150
+fries. The motherboard itself
+has the capacity to turn on the
+
+940
+01:02:42,150 --> 01:02:47,490
+radio and communicate, you know,
+so you know, fire up a device
+
+941
+01:02:47,490 --> 01:02:52,170
+that drops a weight to make the
+vehicle positively Oh stays and
+
+942
+01:02:52,170 --> 01:02:55,680
+we have an emergency, it's
+going? Well, no, it will come
+
+943
+01:02:55,680 --> 01:02:58,800
+back to the surface. The drop
+weight, attaches
+
+944
+01:02:58,830 --> 01:03:01,410
+Audrow Nash: reduces the weight.
+And so it goes exactly, yeah,
+
+945
+01:03:01,440 --> 01:03:03,690
+it's like cutting your weights
+when you're scuba diving. So
+
+946
+01:03:03,690 --> 01:03:05,190
+that exam you can start going
+on.
+
+947
+01:03:06,240 --> 01:03:08,670
+Ben Raanan: And that's exactly
+the idea. And then we have
+
+948
+01:03:08,730 --> 01:03:12,300
+transponders and all kinds of
+other acoustic devices onboard
+
+949
+01:03:12,300 --> 01:03:16,050
+the vehicle, and then emergency
+beacons, so we can, we can
+
+950
+01:03:16,080 --> 01:03:20,070
+always find them. So the vehicle
+will try as hard as it can to
+
+951
+01:03:20,070 --> 01:03:22,560
+come back to the surface because
+that's where it can be located.
+
+952
+01:03:22,920 --> 01:03:25,230
+And once it's on the surface,
+even if the battery is
+
+953
+01:03:25,230 --> 01:03:31,800
+completely depleted, their
+secondary radio, right, that
+
+954
+01:03:31,800 --> 01:03:35,370
+will that will communicate with
+shore and send its position. And
+
+955
+01:03:35,370 --> 01:03:41,700
+so that's one aspect. We also
+have very sophisticated ground
+
+956
+01:03:41,700 --> 01:03:44,760
+fault detection systems,
+meaning, you know, if, if
+
+957
+01:03:44,760 --> 01:03:46,620
+there's a cable or something
+like that that's exposed to
+
+958
+01:03:46,620 --> 01:03:50,160
+ocean water, that can cause
+corrosion, that can cause
+
+959
+01:03:50,160 --> 01:03:54,480
+corrosion, just because Victor
+city starts interacting with
+
+960
+01:03:54,810 --> 01:04:00,120
+different parks like the whole.
+And so we have a very strict
+
+961
+01:04:00,120 --> 01:04:04,740
+monitoring system for that. We
+also have, you know, in general,
+
+962
+01:04:04,740 --> 01:04:08,190
+you want the system to be
+reliable and fault tolerant. So
+
+963
+01:04:08,190 --> 01:04:10,800
+you can continue to do
+operations, if the vehicle has
+
+964
+01:04:10,800 --> 01:04:13,080
+to surface every 10 minutes,
+because if you've countered an
+
+965
+01:04:13,080 --> 01:04:16,230
+issue that it can't resolve on
+its own, well, operationally,
+
+966
+01:04:16,260 --> 01:04:19,770
+that doesn't scale. And so we
+have also a health monitoring
+
+967
+01:04:19,770 --> 01:04:24,390
+system on board that's able to
+power cycle different subsystems
+
+968
+01:04:24,420 --> 01:04:29,250
+and try to change balls. And so
+yeah, a lot of thought and
+
+969
+01:04:29,250 --> 01:04:32,400
+effort has gone into making sure
+that the system will keep doing
+
+970
+01:04:32,400 --> 01:04:35,970
+what it's supposed to do for as
+long as it can, and only come
+
+971
+01:04:35,970 --> 01:04:37,710
+back to the surface and
+communicate with sure when it
+
+972
+01:04:37,710 --> 01:04:38,550
+absolutely has to.
+
+973
+01:04:39,150 --> 01:04:41,610
+Audrow Nash: Gotcha Awesome.
+That's so funny that it power
+
+974
+01:04:41,610 --> 01:04:45,390
+cycle, all the things. It's just
+it's like that tried and true
+
+975
+01:04:45,390 --> 01:04:48,600
+wisdom of just like if it's not
+working, just power cycle it. I
+
+976
+01:04:48,600 --> 01:04:52,020
+love that you have the ability
+to do that, kind of remotely
+
+977
+01:04:52,650 --> 01:04:53,520
+with the robot, right?
+
+978
+01:04:53,580 --> 01:04:56,640
+Ben Raanan: Yeah, it'd be a step
+forward or it would flip RX and
+
+979
+01:04:56,640 --> 01:04:57,120
+TX.
+
+980
+01:05:00,000 --> 01:05:03,360
+Audrow Nash: And because of
+that, so just to explain, if
+
+981
+01:05:03,360 --> 01:05:06,690
+anyone didn't get it, it's the
+transmit and receive wires. So
+
+982
+01:05:06,690 --> 01:05:08,760
+like a lot of times when you're
+building stuff you mix up, which
+
+983
+01:05:08,760 --> 01:05:11,820
+is the transmitting and
+receiving the flip, it all works
+
+984
+01:05:11,820 --> 01:05:14,550
+magically. Right. So that would
+be so funny.
+
+985
+01:05:15,090 --> 01:05:17,280
+Ben Raanan: Yeah, that's kind of
+like the classic mistake. But
+
+986
+01:05:17,280 --> 01:05:21,090
+yeah. So with all that, and we I
+guess, I also say that we've
+
+987
+01:05:21,090 --> 01:05:24,630
+operated these vehicles now in
+both Pacific and Atlantic
+
+988
+01:05:24,630 --> 01:05:29,010
+oceans, and also in the Great
+Lakes. So their tried and true
+
+989
+01:05:29,340 --> 01:05:32,490
+vehicles. very persistent, very
+reliable.
+
+990
+01:05:33,360 --> 01:05:35,760
+Audrow Nash: So and you
+mentioned you have eight of
+
+991
+01:05:35,760 --> 01:05:40,260
+them. That's, I mean, that's
+that's in between them, they
+
+992
+01:05:40,260 --> 01:05:43,890
+have tons and tons of hours, is
+there a plan to like scale it
+
+993
+01:05:43,890 --> 01:05:48,660
+massively and get like 80 of
+them, or 800 of them? Or, like,
+
+994
+01:05:48,690 --> 01:05:51,780
+so these are all over monitoring
+everything all at once? Or?
+
+995
+01:05:52,740 --> 01:05:55,800
+Well? Yeah, where do you see
+this going in the future?
+
+996
+01:05:55,830 --> 01:06:00,660
+Ben Raanan: Right. And so I
+guess, you know, we're currently
+
+997
+01:06:00,690 --> 01:06:06,000
+I think doing multi Vehicle
+Operations, has still a lot of
+
+998
+01:06:06,000 --> 01:06:10,050
+overhead. And so figuring out, I
+guess, at first order how to
+
+999
+01:06:10,050 --> 01:06:14,400
+operate so many vehicles, in
+conjunction, and how to automate
+
+1000
+01:06:14,580 --> 01:06:17,850
+the processes, ongoing research
+on MBARI, and I think in a lot
+
+1001
+01:06:17,850 --> 01:06:24,480
+of other places, we've nailed
+down two to three fleets of two
+
+1002
+01:06:24,480 --> 01:06:27,300
+or three and doing
+collaborative, multi vehicle
+
+1003
+01:06:27,300 --> 01:06:31,200
+operations at sea. With you
+know, that many vehicles, more
+
+1004
+01:06:31,200 --> 01:06:34,350
+than that, you start running
+into bottlenecks. For example,
+
+1005
+01:06:34,350 --> 01:06:38,100
+if they're all using the same
+acoustic channel to communicate,
+
+1006
+01:06:38,370 --> 01:06:42,120
+well, that's kind of like a
+habit, right? Only one person
+
+1007
+01:06:42,120 --> 01:06:43,680
+can talk at any time. And so you
+get where
+
+1008
+01:06:43,680 --> 01:06:46,440
+Audrow Nash: you say, You're,
+like, I'm talking to this one,
+
+1009
+01:06:46,440 --> 01:06:48,450
+and then the message, but it's
+inefficient.
+
+1010
+01:06:49,050 --> 01:06:52,800
+Ben Raanan: Right, exactly. So
+so that's another piece where we
+
+1011
+01:06:52,800 --> 01:06:55,650
+have some ongoing research, to
+figure out how we can scale
+
+1012
+01:06:55,650 --> 01:07:00,150
+that. But then also, the
+logistics of operating a fleet
+
+1013
+01:07:00,150 --> 01:07:05,190
+like that is also you know, so
+you have two weeks of battery,
+
+1014
+01:07:05,460 --> 01:07:09,330
+and you need to if you have many
+of those, they really need to be
+
+1015
+01:07:09,420 --> 01:07:11,550
+self sustained. And XE is
+
+1016
+01:07:11,760 --> 01:07:14,160
+Audrow Nash: some sort of power
+generation method.
+
+1017
+01:07:15,510 --> 01:07:18,690
+Ben Raanan: Correct. And so
+Barbie has an ongoing project,
+
+1018
+01:07:18,990 --> 01:07:24,540
+we have a, what we call the
+energy booty to it's, it's a boy
+
+1019
+01:07:25,110 --> 01:07:31,920
+that uses energy from waves. And
+so that charges a battery, and
+
+1020
+01:07:31,920 --> 01:07:32,910
+then in conjunction with
+
+1021
+01:07:32,910 --> 01:07:35,340
+Audrow Nash: that, so is it kind
+of like it rides along like
+
+1022
+01:07:35,340 --> 01:07:39,000
+maybe six feet down, or
+something, and then there's the
+
+1023
+01:07:39,000 --> 01:07:42,540
+buoy moving up and down,
+creating motion, and then you're
+
+1024
+01:07:42,720 --> 01:07:44,700
+using metal icicle energy, this
+
+1025
+01:07:44,699 --> 01:07:48,059
+Ben Raanan: is a whole separate
+platform that generates power.
+
+1026
+01:07:48,059 --> 01:07:51,689
+And then I was gonna say, and
+then in addition to that
+
+1027
+01:07:51,689 --> 01:07:55,079
+platform, it also has what we
+refer to as a docking module.
+
+1028
+01:07:55,319 --> 01:07:58,949
+And so the idea is for the
+vehicles to be able to home back
+
+1029
+01:07:58,979 --> 01:08:04,049
+to this device, dock on it, and
+charge the battery. And we've
+
+1030
+01:08:04,049 --> 01:08:07,859
+made some really good progress.
+So we have a boy that, you know,
+
+1031
+01:08:07,889 --> 01:08:13,019
+manufactures energy from waves,
+and stores it. And now we've
+
+1032
+01:08:13,019 --> 01:08:16,199
+been, we, we've actually
+licensed some technology from
+
+1033
+01:08:16,379 --> 01:08:20,939
+Northrop Grumman. And they've
+developed this technology they
+
+1034
+01:08:20,939 --> 01:08:27,239
+call Niobe, calm, which is this
+metal that's based on niobium,
+
+1035
+01:08:27,269 --> 01:08:31,679
+that is self healing. So it can
+coat itself with a very thin
+
+1036
+01:08:31,679 --> 01:08:36,539
+layer that doesn't transfer
+electricity. And so it interacts
+
+1037
+01:08:36,569 --> 01:08:39,449
+when when you power it in
+interacts with seawater, and it
+
+1038
+01:08:39,449 --> 01:08:43,169
+creates this coat round the
+metal. And so that's kind of
+
+1039
+01:08:43,169 --> 01:08:45,089
+like a self sustained piece of
+equipment that you could leave
+
+1040
+01:08:45,089 --> 01:08:48,899
+in the ocean. And then when the
+vehicle comes in docks on it, it
+
+1041
+01:08:48,899 --> 01:08:53,279
+could expose and just peel off
+that tiny little thin layer, and
+
+1042
+01:08:54,329 --> 01:08:58,469
+in connect to the power source
+in charge its battery. And so
+
+1043
+01:08:58,469 --> 01:09:04,319
+we've been working very hard to,
+you know, see that through, and
+
+1044
+01:09:04,319 --> 01:09:06,989
+we've done some sea trials, and
+you know, it works, there's
+
+1045
+01:09:06,989 --> 01:09:09,809
+still a lot of kinks to iron,
+but that's for sure, no,
+
+1046
+01:09:09,809 --> 01:09:14,459
+eventually, the the dream is to
+be able to have a large number
+
+1047
+01:09:14,459 --> 01:09:18,209
+of these vehicles out at sea
+where they circulate in common,
+
+1048
+01:09:18,239 --> 01:09:20,699
+charge their battery, do data
+dumps and then go back out to
+
+1049
+01:09:20,699 --> 01:09:26,129
+sea. And then you can even
+imagine maybe that wave we is
+
+1050
+01:09:26,129 --> 01:09:28,709
+something that's mobile, and
+maybe you can direct that thing
+
+1051
+01:09:29,399 --> 01:09:34,199
+in ordinance. And so I think
+that type of constellation,
+
+1052
+01:09:34,199 --> 01:09:40,079
+where you have an energy source
+in a in a data sink, where you
+
+1053
+01:09:40,079 --> 01:09:42,659
+know, vehicles can come in and
+charge the battery and do big
+
+1054
+01:09:42,659 --> 01:09:47,669
+data off floats and then go back
+and do tasks. Is is kind of
+
+1055
+01:09:47,669 --> 01:09:50,069
+where we're headed with this,
+what we refer to as kind of like
+
+1056
+01:09:50,069 --> 01:09:51,749
+a mobile observation platform.
+
+1057
+01:09:54,270 --> 01:09:56,280
+Audrow Nash: And then once you
+have that, then scaling is a lot
+
+1058
+01:09:56,280 --> 01:09:59,490
+easier. It's like maybe the two
+hardest challenges for this
+
+1059
+01:09:59,490 --> 01:10:03,030
+would be the communication as
+part of this, where you're
+
+1060
+01:10:03,030 --> 01:10:08,070
+limited and how you can send to
+multiple ones. And also you're
+
+1061
+01:10:08,070 --> 01:10:10,800
+very limited by satellite radio,
+I wonder if like Starlink, or
+
+1062
+01:10:10,800 --> 01:10:14,430
+anything will help any of that.
+That'd be quite cool. No, no.
+
+1063
+01:10:15,809 --> 01:10:17,669
+Ben Raanan: Yeah, there are
+still other technologies that
+
+1064
+01:10:17,669 --> 01:10:22,349
+are coming up, that will speed
+up over the horizon.
+
+1065
+01:10:22,679 --> 01:10:26,129
+Communication. So we're excited
+to see how this technology is
+
+1066
+01:10:26,129 --> 01:10:26,489
+gonna play
+
+1067
+01:10:26,490 --> 01:10:28,620
+Audrow Nash: out, that'd be
+super cool. And then the second
+
+1068
+01:10:28,620 --> 01:10:32,340
+one would be power generation,
+because you have to retrieve it
+
+1069
+01:10:32,340 --> 01:10:36,330
+after the battery is nearly
+dead, or around the time that
+
+1070
+01:10:36,330 --> 01:10:40,110
+the battery's nearly dead. But
+if you could somehow charge with
+
+1071
+01:10:40,110 --> 01:10:42,930
+these systems, or whatever it
+might be, then you could just
+
+1072
+01:10:42,930 --> 01:10:46,500
+stay out and continuously
+revolve them. And then it's a
+
+1073
+01:10:46,500 --> 01:10:51,090
+lot less going out and grabbing
+it, which I assume is still
+
+1074
+01:10:51,090 --> 01:10:53,880
+quite expensive to do, because
+you need to take a ship. And the
+
+1075
+01:10:53,880 --> 01:10:56,640
+ship has to have like a big
+crane or something to grab it or
+
+1076
+01:10:56,640 --> 01:10:57,420
+whatever it might be.
+
+1077
+01:10:58,020 --> 01:11:00,810
+Ben Raanan: Sure. And I mean,
+you don't assume for these
+
+1078
+01:11:00,810 --> 01:11:03,990
+vehicles, you don't necessarily
+have to have it. Yeah, but But
+
+1079
+01:11:03,990 --> 01:11:06,240
+if they're far out, I mean, if
+you're in a coastal environment,
+
+1080
+01:11:06,240 --> 01:11:09,960
+that's great. But if, if it's
+happening, if you want to do
+
+1081
+01:11:09,960 --> 01:11:13,950
+research for that, or if it's
+really just really far away.
+
+1082
+01:11:15,210 --> 01:11:18,840
+That's an issue. Yeah. And so
+we're also looking into
+
+1083
+01:11:18,840 --> 01:11:22,680
+developing autonomous surface
+vessels that are able to do
+
+1084
+01:11:22,680 --> 01:11:26,520
+deployment and tow out, that'd
+be so cool. Yeah. So that's
+
+1085
+01:11:26,520 --> 01:11:30,420
+another kind of direction that
+some researchers here are
+
+1086
+01:11:30,420 --> 01:11:31,500
+looking at at the moment.
+
+1087
+01:11:32,820 --> 01:11:35,760
+Audrow Nash: You mentioned
+earlier that one human operator
+
+1088
+01:11:35,760 --> 01:11:38,910
+can work with a few different of
+these robots that are out how
+
+1089
+01:11:38,910 --> 01:11:39,540
+does that look?
+
+1090
+01:11:40,710 --> 01:11:45,810
+Ben Raanan: Yeah, so we've put a
+lot of effort into developing a
+
+1091
+01:11:45,840 --> 01:11:49,350
+user interface, that's a web
+based interface that allows you
+
+1092
+01:11:49,350 --> 01:11:53,280
+to control the fleet and
+interact with it. And so we
+
+1093
+01:11:53,280 --> 01:11:58,230
+basically have a website that
+gives you all the information
+
+1094
+01:11:58,230 --> 01:12:00,660
+you need in order to operate the
+vehicles tells you where they
+
+1095
+01:12:00,660 --> 01:12:04,770
+are to you on a map, to see what
+mission they're running, and
+
+1096
+01:12:04,770 --> 01:12:07,560
+you're able to interact and
+queue up commands and send them
+
+1097
+01:12:07,560 --> 01:12:13,020
+to the vehicles through that web
+interface. Like I said, the
+
+1098
+01:12:13,020 --> 01:12:17,430
+vehicles were, you know, really
+designed with the end user in
+
+1099
+01:12:17,430 --> 01:12:22,170
+mind. So when we have big
+expeditions and experiments out
+
+1100
+01:12:22,170 --> 01:12:25,470
+here, the scientists are the
+ones that are actually running
+
+1101
+01:12:25,500 --> 01:12:28,920
+the vehicles and not the
+engineers. And so we have a
+
+1102
+01:12:28,920 --> 01:12:32,550
+training program that we, you
+know, developed in order to
+
+1103
+01:12:32,580 --> 01:12:35,790
+train people to use them with
+our web interface. And we
+
+1104
+01:12:35,790 --> 01:12:39,780
+actually have a number of
+projects here that are geared
+
+1105
+01:12:39,780 --> 01:12:43,740
+toward, you know, improving the
+user experience, and, and
+
+1106
+01:12:43,770 --> 01:12:47,370
+rethinking a little bit how we
+can do these types of multi
+
+1107
+01:12:47,370 --> 01:12:51,240
+vehicle operations. With a
+single user kind of commanding
+
+1108
+01:12:51,240 --> 01:12:56,730
+the fleet, again, doing 234.
+That's definitely manageable
+
+1109
+01:12:56,730 --> 01:13:00,270
+with a single operator. But more
+than that, I think it'd be a bit
+
+1110
+01:13:00,270 --> 01:13:06,060
+of an overload. A lot of ends up
+being, you know, what we're
+
+1111
+01:13:06,060 --> 01:13:10,020
+identifying the bottleneck is
+the ability to predict what is
+
+1112
+01:13:10,020 --> 01:13:12,330
+going to happen next, the how
+the schedule is going to work
+
+1113
+01:13:12,330 --> 01:13:16,140
+together, how missions. So
+basically, look into the future
+
+1114
+01:13:16,140 --> 01:13:19,020
+and understand what what, what
+are the next few steps that the
+
+1115
+01:13:19,020 --> 01:13:22,770
+fleet is going to do? Currently,
+it's easy to understand what's
+
+1116
+01:13:22,770 --> 01:13:25,020
+happening at the moment, but
+it's a little harder to
+
+1117
+01:13:25,020 --> 01:13:28,650
+understand, you know, how things
+are going to evolve. And so
+
+1118
+01:13:29,400 --> 01:13:32,490
+that's another piece where we're
+trying to add in, you know,
+
+1119
+01:13:32,490 --> 01:13:37,740
+models that are maybe a way to
+extrapolate out into the near
+
+1120
+01:13:37,740 --> 01:13:40,650
+future, at least, and give the
+operator an idea of what the
+
+1121
+01:13:40,650 --> 01:13:43,920
+fleet's going to be doing, not
+only what it's doing at the
+
+1122
+01:13:43,920 --> 01:13:44,700
+moment. So,
+
+1123
+01:13:45,300 --> 01:13:49,020
+Audrow Nash: gotcha. Awesome.
+It's very interesting. It's
+
+1124
+01:13:49,020 --> 01:13:53,250
+cool. It's cool to imagine
+scaling this, I don't know, it's
+
+1125
+01:13:53,250 --> 01:13:56,220
+really neat to me to have an
+operator controlling these at a
+
+1126
+01:13:56,220 --> 01:14:00,600
+high level and making the plans
+and it's neat to consider how
+
+1127
+01:14:00,600 --> 01:14:03,540
+that interface might be and how
+it'll change over time as you
+
+1128
+01:14:03,540 --> 01:14:07,140
+increase the efficiency for an
+operator. Very cool.
+
+1129
+01:14:07,740 --> 01:14:12,360
+Ben Raanan: Yeah. And I guess,
+you know, because the timescales
+
+1130
+01:14:12,390 --> 01:14:14,940
+we're talking about, for these
+vehicles for their deployments,
+
+1131
+01:14:14,940 --> 01:14:17,790
+I mean, that's weeks
+potentially, doing development
+
+1132
+01:14:17,790 --> 01:14:21,000
+on the system is very difficult,
+because once they go to the,
+
+1133
+01:14:21,030 --> 01:14:24,750
+there's a lot of overhead,
+everything's very slow, and so
+
+1134
+01:14:25,200 --> 01:14:28,680
+fast. And then real time
+simulation really plays heavily
+
+1135
+01:14:28,710 --> 01:14:35,040
+into what we do. And so I feel
+like, you know, I think that
+
+1136
+01:14:35,040 --> 01:14:38,130
+having those capabilities also,
+especially in the fleet context,
+
+1137
+01:14:38,160 --> 01:14:41,670
+are going to be monumental into
+developing disabilities to not
+
+1138
+01:14:41,670 --> 01:14:44,760
+only do the multi vehicle
+operations at sea, but also how
+
+1139
+01:14:44,760 --> 01:14:47,100
+to control them. So
+
+1140
+01:14:47,790 --> 01:14:51,030
+Audrow Nash: that's tell me a
+bit about the simulation. Right.
+
+1141
+01:14:51,900 --> 01:14:56,010
+Ben Raanan: So this project is
+something that we jumped up a
+
+1142
+01:14:57,090 --> 01:15:01,920
+couple of years ago. It's The
+idea was, you know, we talked a
+
+1143
+01:15:01,920 --> 01:15:06,750
+lot about multi vehicles, and
+how difficult Axi operations are
+
+1144
+01:15:06,750 --> 01:15:10,950
+and risky. And so the idea was
+to develop in a development
+
+1145
+01:15:10,950 --> 01:15:17,400
+environment for these vehicles
+that will allow us to test and
+
+1146
+01:15:17,400 --> 01:15:20,070
+the closest way to the
+conditions that we experienced
+
+1147
+01:15:20,070 --> 01:15:24,480
+out at sea, you know, the, the
+challenges and the bottlenecks
+
+1148
+01:15:25,110 --> 01:15:30,360
+for these types of operations.
+And so, we had a simulator that
+
+1149
+01:15:30,360 --> 01:15:34,740
+was built in that we developed
+the system. But we felt like it
+
+1150
+01:15:34,740 --> 01:15:39,150
+was time for a facelift. So it
+wasn't really I mean, it's a
+
+1151
+01:15:39,150 --> 01:15:43,740
+command line tool. So it didn't
+really scale well, to the motor
+
+1152
+01:15:43,740 --> 01:15:48,450
+vehicle scenario. And so we
+looked at a few options of you
+
+1153
+01:15:48,450 --> 01:15:53,670
+know, what it would take to
+upgrade it. And eventually, we
+
+1154
+01:15:53,670 --> 01:15:56,730
+came up with this idea, maybe we
+should, you know, bring in an
+
+1155
+01:15:56,730 --> 01:15:59,790
+external platform, and we
+started looking around. And
+
+1156
+01:15:59,820 --> 01:16:04,050
+that's when we came across a
+gazebo and a condition. And we
+
+1157
+01:16:04,050 --> 01:16:09,540
+also had some folks who opened
+robotics come here and visit and
+
+1158
+01:16:09,540 --> 01:16:12,810
+started forming these
+relationships. And so from here
+
+1159
+01:16:12,810 --> 01:16:17,760
+to there, we decided to launch
+this project to build a multi
+
+1160
+01:16:17,760 --> 01:16:23,670
+vehicle underwater simulation
+environment for LR UV in gazebo,
+
+1161
+01:16:23,670 --> 01:16:26,820
+and ignition. And we got funded
+through the Institute in order
+
+1162
+01:16:26,820 --> 01:16:29,610
+to do exactly that. And we
+partnered with open robotics,
+
+1163
+01:16:30,540 --> 01:16:35,040
+and really contracted the
+engineering time to do the
+
+1164
+01:16:35,040 --> 01:16:39,660
+development for this purpose.
+And so it's been a fun ride,
+
+1165
+01:16:39,930 --> 01:16:47,550
+working with the team here at
+open robotics. You know, we had
+
+1166
+01:16:47,550 --> 01:16:50,910
+some, we weren't really sure how
+it was gonna work out, we
+
+1167
+01:16:51,150 --> 01:16:54,570
+absolutely had to have the
+framework work with the flight
+
+1168
+01:16:54,570 --> 01:16:58,470
+code of the vehicles themselves.
+Typically, ignition is geared
+
+1169
+01:16:58,470 --> 01:17:02,430
+more toward applications that
+use Ross, where our vehicles run
+
+1170
+01:17:02,430 --> 01:17:05,130
+such tiny embedded systems that
+at the time, it wasn't really
+
+1171
+01:17:05,130 --> 01:17:09,300
+possible to even get Ross loaded
+on it. And so the integration
+
+1172
+01:17:09,300 --> 01:17:13,350
+with our software was key. And
+so we focus on that. And then
+
+1173
+01:17:13,350 --> 01:17:15,720
+the second biggest requirement
+was the fast in real time
+
+1174
+01:17:15,720 --> 01:17:18,930
+capability. And so we also had
+concerns with that. And that was
+
+1175
+01:17:18,960 --> 01:17:21,450
+part of the reasons why. So we
+went to ignition or gazebo
+
+1176
+01:17:21,450 --> 01:17:24,690
+classic, is the runtime is much
+quicker, and you can change
+
+1177
+01:17:24,720 --> 01:17:30,060
+different aspects of the system
+to expedite the runtimes. And so
+
+1178
+01:17:30,090 --> 01:17:32,910
+we started with integration
+built the vehicle model for L or
+
+1179
+01:17:32,910 --> 01:17:37,950
+u v, which is now available to
+download an app fuel and we can
+
+1180
+01:17:38,010 --> 01:17:41,430
+incorporate the links maybe at
+the bottom here, when we're
+
+1181
+01:17:41,430 --> 01:17:47,820
+done. And, and so we slowly
+started building the the pieces
+
+1182
+01:17:47,820 --> 01:17:51,960
+and the different plugins that
+were required. A big piece that
+
+1183
+01:17:51,960 --> 01:17:55,230
+we recently completed was kind
+of like custom sensor
+
+1184
+01:17:55,230 --> 01:18:00,420
+environmental data. So your
+ability to take detailed
+
+1185
+01:18:00,420 --> 01:18:05,010
+information from, you know, very
+sophisticated models that model
+
+1186
+01:18:05,010 --> 01:18:07,890
+circulation and temperatures and
+you know, all the different
+
+1187
+01:18:07,920 --> 01:18:11,820
+ocean parameter, as well as the
+biological activity that that
+
+1188
+01:18:11,820 --> 01:18:16,560
+relates to those conditions, and
+inject those into the system and
+
+1189
+01:18:16,560 --> 01:18:20,970
+how the vehicles operate within
+that environment that not only
+
+1190
+01:18:20,970 --> 01:18:24,570
+has, you know, the water
+properties, and waves and wind
+
+1191
+01:18:24,570 --> 01:18:27,810
+and all those things, but it
+also has kind of scientific
+
+1192
+01:18:27,810 --> 01:18:31,890
+sensor data that the vehicle
+would encounter, as if it's in
+
+1193
+01:18:31,890 --> 01:18:35,760
+the field. And so that's a
+really nice aspect of the system
+
+1194
+01:18:36,150 --> 01:18:38,640
+that I feel we've done a little
+bit different from the way
+
+1195
+01:18:38,880 --> 01:18:42,330
+things are more traditionally
+done, where you have kind of
+
+1196
+01:18:42,330 --> 01:18:45,630
+like a lyrical model that
+describes how properties change
+
+1197
+01:18:46,050 --> 01:18:47,070
+using some function.
+
+1198
+01:18:48,600 --> 01:18:52,740
+And another piece that we
+incorporated was an acoustic
+
+1199
+01:18:52,740 --> 01:18:58,380
+model. And so vehicles can
+communicate acoustically in the
+
+1200
+01:18:58,380 --> 01:19:01,830
+simulated environment, in order
+to do these multi Vehicle
+
+1201
+01:19:01,830 --> 01:19:05,130
+Operations, like I mentioned
+before, acoustics and
+
+1202
+01:19:05,160 --> 01:19:09,870
+coordination is a big piece. And
+so we have that model with the
+
+1203
+01:19:09,870 --> 01:19:13,920
+kind of like standardized
+interface that allows the
+
+1204
+01:19:13,920 --> 01:19:18,480
+different vehicles to send
+tracking messages between each
+
+1205
+01:19:18,480 --> 01:19:25,740
+other, and also data. And so so
+that's modeled and you know, so
+
+1206
+01:19:25,740 --> 01:19:29,070
+all the different obviously, the
+vehicle model is very detailed.
+
+1207
+01:19:29,280 --> 01:19:33,030
+So the vehicle has, you know, we
+talked a little bit about the
+
+1208
+01:19:33,030 --> 01:19:36,210
+verbal buoyancy system that we
+have on board and so that pose
+
+1209
+01:19:36,210 --> 01:19:39,840
+some some modeling challenges
+because that's unusual,
+
+1210
+01:19:39,840 --> 01:19:41,940
+especially in a simulation
+environment a gazebo for
+
+1211
+01:19:42,210 --> 01:19:45,690
+something to change its buoyancy
+in that way, and so we had to
+
+1212
+01:19:45,720 --> 01:19:50,400
+build some infrastructure into
+ignition itself in so come up
+
+1213
+01:19:50,400 --> 01:19:53,490
+with the right plugins in order
+to support that type of
+
+1214
+01:19:53,490 --> 01:19:58,890
+performance for the vehicles.
+And, you know, it's it's pretty
+
+1215
+01:19:58,890 --> 01:20:03,540
+cool and works for Very well,
+we're able to achieve fast in
+
+1216
+01:20:03,540 --> 01:20:08,490
+real time. runtimes have about
+100x factor of time, which is
+
+1217
+01:20:08,490 --> 01:20:13,050
+great. Yes. And so even with a
+few vehicles in the simulation,
+
+1218
+01:20:13,980 --> 01:20:19,320
+you're still at, you know, 60 to
+80x. So, you know, 24 hours of
+
+1219
+01:20:19,320 --> 01:20:23,670
+simulation translate into 24
+minutes of runtime in the
+
+1220
+01:20:23,670 --> 01:20:27,180
+simulator, which is great. And
+it's something that, you know,
+
+1221
+01:20:27,210 --> 01:20:33,150
+it's it's a useful simulator,
+for sure. Yeah. And so that's
+
+1222
+01:20:33,150 --> 01:20:37,050
+been really good. We're still
+working on now, adding, you
+
+1223
+01:20:37,050 --> 01:20:40,140
+know, there's a whole nother
+part of the vehicle sensing
+
+1224
+01:20:40,140 --> 01:20:42,300
+capabilities that we haven't
+really touched on that has to do
+
+1225
+01:20:42,300 --> 01:20:47,040
+with how the vehicles navigate
+underwater. And so we're now
+
+1226
+01:20:47,070 --> 01:20:52,560
+more focusing on those aspects.
+And so we currently have the
+
+1227
+01:20:52,560 --> 01:20:55,260
+ability to simulate the type of
+experience that we've described
+
+1228
+01:20:55,260 --> 01:20:57,690
+earlier, where vehicles, you
+know, are searching around for
+
+1229
+01:20:57,690 --> 01:21:00,810
+different ocean properties and
+doing water samples and all that
+
+1230
+01:21:00,810 --> 01:21:05,580
+stuff. But now, okay, what about
+navigation. That's another use
+
+1231
+01:21:05,580 --> 01:21:08,550
+case that, you know, could
+benefit a lot from from this
+
+1232
+01:21:08,550 --> 01:21:13,410
+type of simulation. And so we've
+worked to add bathymetry using
+
+1233
+01:21:13,410 --> 01:21:17,670
+levels actually. So depending on
+the position of the vehicle in
+
+1234
+01:21:17,670 --> 01:21:21,270
+the simulation, it can load a
+chunk of seafloor. And so that
+
+1235
+01:21:21,270 --> 01:21:25,110
+makes it pretty scalable. And
+you can imagine titling huge
+
+1236
+01:21:25,110 --> 01:21:29,490
+regions, and have them, you
+know, loaded dynamically and
+
+1237
+01:21:29,490 --> 01:21:31,350
+have in a memory efficient way.
+
+1238
+01:21:32,190 --> 01:21:35,310
+Audrow Nash: So that you'll get
+what you need, or only what you
+
+1239
+01:21:35,310 --> 01:21:37,680
+need at the time. And that moves
+over to the next tile, and you
+
+1240
+01:21:37,680 --> 01:21:40,260
+load that tile and this kind of
+thing, or you load a few tiles
+
+1241
+01:21:40,260 --> 01:21:44,100
+around where it is, but it never
+sees the edge of the tile. Okay,
+
+1242
+01:21:44,100 --> 01:21:44,430
+yeah,
+
+1243
+01:21:44,460 --> 01:21:50,430
+Ben Raanan: we ran into that. So
+the tiles actually. Yeah, so So
+
+1244
+01:21:50,430 --> 01:21:53,790
+that's working great. And now
+we're working on some, some more
+
+1245
+01:21:53,820 --> 01:21:58,530
+acoustic sensors that have to do
+with sensing the bottom. So
+
+1246
+01:21:58,530 --> 01:22:02,430
+they're what's called Doppler
+velocity loggers, those are used
+
+1247
+01:22:02,430 --> 01:22:06,150
+for navigation, it can tell you
+how fast the vehicle is flying
+
+1248
+01:22:06,150 --> 01:22:09,420
+over the bottom. And then it
+becomes a question of odometry,
+
+1249
+01:22:10,380 --> 01:22:15,240
+you know, keeping track of
+integrating those velocities
+
+1250
+01:22:15,240 --> 01:22:19,680
+into position. So you're able to
+use those sensors for
+
+1251
+01:22:19,680 --> 01:22:22,620
+navigation. And so that's kind
+of the next big use case that
+
+1252
+01:22:22,620 --> 01:22:27,510
+we're aiming the sim at, is
+automated navigation, what we
+
+1253
+01:22:27,510 --> 01:22:31,530
+refer to. And we have Yeah, we
+have some cool use cases here at
+
+1254
+01:22:31,530 --> 01:22:35,430
+MBARI. There's a lab that's
+focused on doing terrain
+
+1255
+01:22:35,430 --> 01:22:38,310
+relative navigation that I think
+a lot of folks have heard of, in
+
+1256
+01:22:38,310 --> 01:22:42,000
+the context of, you know, the
+lander and Mars where they use
+
+1257
+01:22:42,000 --> 01:22:44,280
+during real time navigation to
+localize understand what they
+
+1258
+01:22:44,280 --> 01:22:48,390
+are before they landed. And so
+we do the same using the
+
+1259
+01:22:48,390 --> 01:22:52,620
+seafloor, using maps that were
+acquired with the really big,
+
+1260
+01:22:52,650 --> 01:22:55,860
+much more expensive vehicles
+later, you can load those in and
+
+1261
+01:22:55,860 --> 01:22:58,740
+use that in order to localize
+yourself based on a cemetery
+
+1262
+01:22:58,740 --> 01:23:04,050
+where you are going to like Sam
+says, and so. So that's another
+
+1263
+01:23:04,050 --> 01:23:11,520
+aspect. I guess one more cool
+piece in that is that together
+
+1264
+01:23:11,520 --> 01:23:16,770
+with the simulation plugins, and
+all the pieces that the folks
+
+1265
+01:23:16,770 --> 01:23:19,050
+that open robotics have working
+very hard and doing a tremendous
+
+1266
+01:23:19,050 --> 01:23:22,770
+job doing, those are all going
+to be open source and the RTR.
+
+1267
+01:23:22,950 --> 01:23:25,740
+And so that's going to be
+available for the community to
+
+1268
+01:23:25,740 --> 01:23:28,560
+use and leverage. And we're
+hoping that folks pick pieces
+
+1269
+01:23:28,560 --> 01:23:33,750
+up, you know, and use them and
+improve them. So pull requests
+
+1270
+01:23:33,750 --> 01:23:37,560
+are welcome, I guess, launch
+around open source community.
+
+1271
+01:23:38,160 --> 01:23:41,280
+But in addition to that, we're
+also going to be releasing a
+
+1272
+01:23:41,280 --> 01:23:45,750
+Docker image that has a version
+of the vehicles flight code. So
+
+1273
+01:23:45,750 --> 01:23:50,010
+folks can, you know, play around
+with both and operate the
+
+1274
+01:23:50,010 --> 01:23:54,870
+vehicles with the flight code in
+the loop. And in addition to
+
+1275
+01:23:54,870 --> 01:23:59,370
+that, we also have an interface
+to the vehicle that's a network
+
+1276
+01:23:59,370 --> 01:24:04,980
+based interface. And so the idea
+is, for folks that can't have
+
+1277
+01:24:04,980 --> 01:24:07,980
+access, for example, to the
+flight code, they're still able
+
+1278
+01:24:07,980 --> 01:24:12,570
+to send commands using this
+interface to the vehicle and
+
+1279
+01:24:12,570 --> 01:24:16,590
+derive it from their
+application. And so we refer to
+
+1280
+01:24:16,590 --> 01:24:20,640
+that as the backseat driver. And
+so the idea will be eventually
+
+1281
+01:24:20,640 --> 01:24:22,860
+that you level with those Docker
+images to create your own
+
+1282
+01:24:22,860 --> 01:24:26,370
+application that's able to get
+telemetry data from the main
+
+1283
+01:24:26,370 --> 01:24:30,390
+vehicle application, feed it
+into your app for processing,
+
+1284
+01:24:30,390 --> 01:24:33,360
+whatever your use case is, and
+issue commands back to the
+
+1285
+01:24:33,360 --> 01:24:37,950
+vehicle to you know, pilot
+within the the environment. And
+
+1286
+01:24:38,880 --> 01:24:41,520
+in theory, if everything's
+right, you should be able to
+
+1287
+01:24:41,520 --> 01:24:45,690
+take that backseat application
+that you've developed and put it
+
+1288
+01:24:45,690 --> 01:24:49,830
+on a Jetson or whatever that's
+mounted on board L or UV inside
+
+1289
+01:24:49,830 --> 01:24:54,060
+the home and have it pilot
+vehicle at sea. And so that's
+
+1290
+01:24:54,060 --> 01:24:57,750
+awesome. Yeah, so the idea is
+very much for this whole package
+
+1291
+01:24:57,750 --> 01:25:00,750
+to kind of be something that's
+deployable by single use. are so
+
+1292
+01:25:00,750 --> 01:25:03,600
+they can do development again
+for their back seat application
+
+1293
+01:25:03,600 --> 01:25:07,740
+or whatever using this interface
+that we've come up with. And
+
+1294
+01:25:08,010 --> 01:25:11,310
+later take the same application,
+put it on board and have it work
+
+1295
+01:25:11,310 --> 01:25:11,730
+at sea.
+
+1296
+01:25:13,889 --> 01:25:17,399
+Audrow Nash: That seems awesome.
+I like I like that. And it
+
+1297
+01:25:17,399 --> 01:25:20,699
+sounds like last, I haven't been
+very involved in this at all at
+
+1298
+01:25:20,699 --> 01:25:24,419
+open robotics. So just hearing
+about it is very cool. But it's,
+
+1299
+01:25:24,449 --> 01:25:27,119
+it sounds like you guys have
+done a tremendous amount of work
+
+1300
+01:25:27,239 --> 01:25:31,409
+to make it so that you have a
+realistic ocean environment, for
+
+1301
+01:25:31,409 --> 01:25:35,039
+your simulation for your robot
+in simulation to drive around
+
+1302
+01:25:35,579 --> 01:25:39,329
+and interact with. Very awesome.
+
+1303
+01:25:40,110 --> 01:25:44,160
+Ben Raanan: Yeah. Yeah, we I
+mean, there's always room for
+
+1304
+01:25:44,160 --> 01:25:50,010
+improvement. And, you know, we
+really focus on building, I
+
+1305
+01:25:50,010 --> 01:25:53,700
+wouldn't say it's the best ocean
+model, right? There are
+
+1306
+01:25:53,700 --> 01:25:56,910
+definitely ways to do things
+better. And we hope that over
+
+1307
+01:25:56,910 --> 01:26:00,930
+time, things will improve. But I
+think that goal was to kind of
+
+1308
+01:26:00,930 --> 01:26:05,580
+close the loop to get you to an
+environment that is close enough
+
+1309
+01:26:06,120 --> 01:26:10,260
+to the real thing that allows
+you to work on I'd say, kind of
+
+1310
+01:26:10,260 --> 01:26:15,450
+guidance level parts, right. So
+not so much the control, but
+
+1311
+01:26:15,450 --> 01:26:16,620
+maybe a layer above.
+
+1312
+01:26:18,000 --> 01:26:20,700
+Audrow Nash: And you wanted to
+do. Right, exactly,
+
+1313
+01:26:20,850 --> 01:26:23,370
+Ben Raanan: exactly. And debug
+and work in a multi vehicle
+
+1314
+01:26:23,610 --> 01:26:27,810
+setting. And so, like I said,
+per use case, I'm sure that will
+
+1315
+01:26:27,810 --> 01:26:32,520
+continue to improve the system.
+But at this point, it is it's
+
+1316
+01:26:32,520 --> 01:26:35,250
+pretty good. It's good enough to
+definitely be able to test out
+
+1317
+01:26:35,250 --> 01:26:38,250
+some of these scenarios. And
+much faster and real time
+
+1318
+01:26:38,250 --> 01:26:44,160
+capability is a godsend, really
+nice. Yeah. So so that's really
+
+1319
+01:26:44,160 --> 01:26:44,490
+cool.
+
+1320
+01:26:45,720 --> 01:26:49,050
+Audrow Nash: What do you so
+thinking forward? Where do you
+
+1321
+01:26:49,050 --> 01:26:53,160
+imagine this whole project? And
+kind of the work you're doing at
+
+1322
+01:26:53,160 --> 01:26:55,890
+MBARI? Going? So maybe like
+five years, 10 years in the
+
+1323
+01:26:55,890 --> 01:27:01,020
+future? Where Where do you think
+it will be? What do you hope it
+
+1324
+01:27:01,020 --> 01:27:01,410
+will be?
+
+1325
+01:27:02,070 --> 01:27:07,590
+Ben Raanan: Yeah, so I guess
+we're still at a point. So the
+
+1326
+01:27:07,590 --> 01:27:11,610
+way I think of it here is that
+we've done a tremendous job,
+
+1327
+01:27:12,300 --> 01:27:16,410
+getting a persistent platform
+that's reliable. And it's taken
+
+1328
+01:27:16,410 --> 01:27:22,050
+us the project for for LRE. V
+has been running since 2008. So
+
+1329
+01:27:22,050 --> 01:27:25,680
+even before I've just Institute,
+but it's taken a while to get to
+
+1330
+01:27:25,680 --> 01:27:29,190
+the point where the system is
+now stable, and very, very
+
+1331
+01:27:29,190 --> 01:27:38,940
+reliable. And so now, I guess,
+sensing and planning are the two
+
+1332
+01:27:38,940 --> 01:27:43,920
+big. Next, I guess challenges
+that we have, okay, so
+
+1333
+01:27:44,160 --> 01:27:47,040
+everything we do on the system
+is still pretty rudimentary. So
+
+1334
+01:27:47,040 --> 01:27:50,370
+we have really cool planning
+algorithms that, you know, climb
+
+1335
+01:27:50,370 --> 01:27:54,210
+gradients, but they use pretty
+rudimentary math, there's a lot
+
+1336
+01:27:54,210 --> 01:27:55,290
+more that we can do to
+
+1337
+01:27:55,290 --> 01:27:58,950
+Audrow Nash: improve, like, keep
+getting more algae, like if you
+
+1338
+01:27:58,950 --> 01:28:03,000
+keep seeing more, it's good. And
+if you don't, it's you've
+
+1339
+01:28:03,000 --> 01:28:04,350
+reached the center or something.
+
+1340
+01:28:04,800 --> 01:28:07,500
+Ben Raanan: Right. So
+boundaries, the algorithms that
+
+1341
+01:28:07,500 --> 01:28:11,580
+we're using are, I guess,
+there's room for improvement.
+
+1342
+01:28:12,540 --> 01:28:15,000
+They're great. Don't get me
+wrong, we do tree work. And
+
+1343
+01:28:15,000 --> 01:28:19,530
+yeah, but yeah, but but there's
+so so that's one piece where,
+
+1344
+01:28:19,530 --> 01:28:23,550
+you know, the autonomy piece
+where the vehicles can help plan
+
+1345
+01:28:23,610 --> 01:28:27,990
+and do and do things in
+conjunction together, is, I
+
+1346
+01:28:27,990 --> 01:28:31,440
+think, where we'll see big
+advancements, I'm hoping that,
+
+1347
+01:28:31,470 --> 01:28:35,280
+you know, the system that we
+described earlier, where we have
+
+1348
+01:28:35,280 --> 01:28:39,570
+kind of like a power system,
+yeah, observatory is something
+
+1349
+01:28:39,570 --> 01:28:43,950
+that, you know, will come into
+reality. And I think the same is
+
+1350
+01:28:43,950 --> 01:28:47,820
+also going to be paramount, and
+developing those type of
+
+1351
+01:28:47,820 --> 01:28:50,940
+systems. Because, like I
+mentioned, there are lots of
+
+1352
+01:28:50,940 --> 01:28:55,620
+challenges, communication, and
+other aspects that currently, we
+
+1353
+01:28:55,620 --> 01:29:01,620
+just aren't sure how we're going
+to solve. And, and being able to
+
+1354
+01:29:01,620 --> 01:29:03,690
+simulate everything, and much
+faster real time, it kind of
+
+1355
+01:29:03,690 --> 01:29:05,940
+lends itself to iterative
+methods and other other
+
+1356
+01:29:05,940 --> 01:29:09,600
+techniques that, you know, will
+hopefully help resolve and close
+
+1357
+01:29:09,600 --> 01:29:11,970
+some of these gaps without
+having to go to see every time
+
+1358
+01:29:11,970 --> 01:29:16,050
+and, and the overhead that goes
+into that. And so I think I
+
+1359
+01:29:16,050 --> 01:29:19,860
+think this mobile observatory,
+if we can be there in 10 years,
+
+1360
+01:29:20,010 --> 01:29:24,300
+I think that's going to be
+pretty amazing. So cool. Yeah.
+
+1361
+01:29:24,390 --> 01:29:27,750
+And then I guess another piece
+where I'm really hoping to see
+
+1362
+01:29:27,750 --> 01:29:31,050
+this project evolve into is, you
+know, we've put tremendous
+
+1363
+01:29:31,050 --> 01:29:34,230
+effort into building an
+infrastructure. That's, you
+
+1364
+01:29:34,230 --> 01:29:37,890
+know, making its way into
+upstream into gazebo and
+
+1365
+01:29:37,890 --> 01:29:42,060
+ignition at the core of it. And
+so I think, you know, what I
+
+1366
+01:29:42,060 --> 01:29:45,120
+would really like to see is
+ignition being adopted widely by
+
+1367
+01:29:45,150 --> 01:29:48,450
+the marine community, and other
+folks coming in and using this,
+
+1368
+01:29:48,660 --> 01:29:52,080
+you know, at MBARI. We're sure
+100% that we can make good use
+
+1369
+01:29:52,080 --> 01:29:56,670
+of this technology and this
+application, but we're really
+
+1370
+01:29:56,670 --> 01:30:00,870
+hoping that others also pick it
+up and use it and contribute
+
+1371
+01:30:00,870 --> 01:30:05,820
+back to it and forget or
+whatever it is. But use it use
+
+1372
+01:30:05,820 --> 01:30:08,760
+it, you know, we're also lucky
+in the capacity that we have
+
+1373
+01:30:08,760 --> 01:30:11,640
+access to the ocean. But there
+could be some brilliant minds
+
+1374
+01:30:11,640 --> 01:30:15,480
+out there that may not have that
+type of budget or just straight
+
+1375
+01:30:15,480 --> 01:30:18,750
+up, you know, don't have access
+to the ocean. And so we're
+
+1376
+01:30:18,750 --> 01:30:22,680
+hoping that that will increase
+exposure, people will be able to
+
+1377
+01:30:22,680 --> 01:30:26,400
+develop these types of
+applications, and perhaps even
+
+1378
+01:30:26,400 --> 01:30:28,620
+communicate with us and we can
+get them on the vehicles to run
+
+1379
+01:30:28,620 --> 01:30:32,340
+et Cie. So that's also very
+exciting aspect of this project
+
+1380
+01:30:32,340 --> 01:30:35,730
+they'd like to see evolve and
+curious to see what kind of
+
+1381
+01:30:35,760 --> 01:30:40,170
+collaborations and partnerships
+we form, with this sim kind of
+
+1382
+01:30:40,170 --> 01:30:44,850
+being as the is the platform
+that connects, you know, because
+
+1383
+01:30:44,850 --> 01:30:45,150
+it's out
+
+1384
+01:30:45,150 --> 01:30:47,610
+Audrow Nash: in the community.
+So yeah, you get a bunch of
+
+1385
+01:30:47,610 --> 01:30:51,420
+people that can try it out and
+start to get involved and see if
+
+1386
+01:30:51,420 --> 01:30:54,480
+they fit well. And if they
+really would want to do this,
+
+1387
+01:30:54,690 --> 01:30:55,650
+that seems wonderful.
+
+1388
+01:30:56,280 --> 01:30:58,860
+Ben Raanan: Yeah, yeah,
+hopefully. So and I mean, there
+
+1389
+01:30:58,860 --> 01:31:01,170
+are so you know, other
+Institute's that, you know,
+
+1390
+01:31:01,170 --> 01:31:05,520
+already are doing this type of
+work. There's very little
+
+1391
+01:31:05,520 --> 01:31:08,250
+overlap, even within MBARI,
+different platforms, different
+
+1392
+01:31:08,250 --> 01:31:11,250
+code bases. And so there's a lot
+that we could do for
+
+1393
+01:31:11,250 --> 01:31:14,640
+standardization, and then
+bringing, you know, putting out
+
+1394
+01:31:14,670 --> 01:31:18,270
+different parts of the software,
+or even just interfaces to make
+
+1395
+01:31:18,270 --> 01:31:24,420
+things, you know, a little more
+interchangeable. And if I work
+
+1396
+01:31:24,420 --> 01:31:27,810
+very hard developing a terrain
+relative navigation system, you
+
+1397
+01:31:27,810 --> 01:31:30,060
+know, I'm hoping that somebody
+else can pick it up and use it
+
+1398
+01:31:30,060 --> 01:31:33,810
+as well. Totally. So that's
+another piece.
+
+1399
+01:31:34,650 --> 01:31:36,960
+Audrow Nash: Yeah, it seems like
+this is the way things go.
+
+1400
+01:31:36,960 --> 01:31:40,650
+Typically, when it's a space,
+that's more exploratory, like,
+
+1401
+01:31:40,770 --> 01:31:43,950
+there are very few people or few
+organizations doing work, like
+
+1402
+01:31:43,950 --> 01:31:46,080
+you guys are doing. Therefore,
+there's very little
+
+1403
+01:31:46,080 --> 01:31:49,710
+standardization around it. But
+think, I think creating the sim
+
+1404
+01:31:49,710 --> 01:31:53,430
+is a wonderful thing, because
+now a bunch of people can try
+
+1405
+01:31:53,430 --> 01:31:56,040
+it, and they can run their code
+on your platforms in the
+
+1406
+01:31:56,040 --> 01:32:01,350
+simulation. And then there can
+start to be more buy in from the
+
+1407
+01:32:01,350 --> 01:32:05,220
+community around this and more
+investment in ways of doing
+
+1408
+01:32:05,220 --> 01:32:08,730
+things which leads to
+standardization. So I am
+
+1409
+01:32:08,730 --> 01:32:12,990
+optimistic for the future, and
+kind of seeing where this will
+
+1410
+01:32:12,990 --> 01:32:19,800
+go. I think that'll be awesome.
+Yeah, hopefully. Do you. So what
+
+1411
+01:32:19,800 --> 01:32:24,450
+advice do you have for people
+that are say, say, like a
+
+1412
+01:32:24,660 --> 01:32:28,740
+college student or something
+that would like to be involved
+
+1413
+01:32:28,740 --> 01:32:32,370
+in this line of work? What
+advice for them Do you have?
+
+1414
+01:32:33,660 --> 01:32:36,270
+Ben Raanan: Well, so I was very
+much in that, you know,
+
+1415
+01:32:36,300 --> 01:32:39,720
+position. When I first started
+here, like I mentioned, I
+
+1416
+01:32:39,720 --> 01:32:43,470
+started as an intern here at
+MBARI. And I actually don't
+
+1417
+01:32:43,470 --> 01:32:46,530
+have a formal engineering
+background, my background is in
+
+1418
+01:32:46,530 --> 01:32:51,090
+marine science. So you know, I
+think you just have to want it
+
+1419
+01:32:51,510 --> 01:32:56,820
+and be curious. And then seek
+out, be outspoken, don't wait
+
+1420
+01:32:56,820 --> 01:33:01,230
+for the opportunity to come to
+you. So your quick story that,
+
+1421
+01:33:01,260 --> 01:33:03,180
+you know, at the time, when I
+did my internship, there was
+
+1422
+01:33:03,180 --> 01:33:08,250
+actually wasn't budget for me to
+come here and be an intern. And
+
+1423
+01:33:08,250 --> 01:33:12,150
+I already had met with a pi. And
+we had discussed a potential
+
+1424
+01:33:12,150 --> 01:33:14,940
+project and was very excited for
+the opportunity. But then
+
+1425
+01:33:14,970 --> 01:33:20,370
+suddenly, there wasn't enough
+budget to host me. And so that
+
+1426
+01:33:20,370 --> 01:33:22,470
+was the point where I was like,
+Okay, I'm gonna make this
+
+1427
+01:33:22,470 --> 01:33:25,770
+happen. And I reached out and
+wrote some blogs and ended up
+
+1428
+01:33:25,770 --> 01:33:28,230
+raising enough money to be able
+to fund my own internship.
+
+1429
+01:33:29,100 --> 01:33:33,150
+Right, so, but I guess the the
+piece is beyond the money, it's
+
+1430
+01:33:33,150 --> 01:33:38,250
+being proactive, and, and really
+wanting to take part, I think,
+
+1431
+01:33:39,060 --> 01:33:42,600
+also, intellectually, we'd like
+to see more people from
+
+1432
+01:33:42,600 --> 01:33:46,260
+different disciplines,
+especially more can engineering
+
+1433
+01:33:46,260 --> 01:33:51,180
+based in computer science base,
+and come to do ocean research.
+
+1434
+01:33:51,360 --> 01:33:55,050
+Because there's a lot of room
+for that type of knowledge to
+
+1435
+01:33:55,050 --> 01:33:58,620
+make it into our community and
+contribute. So if you're looking
+
+1436
+01:33:58,620 --> 01:34:03,840
+to be very impactful, and help
+understand what the environment
+
+1437
+01:34:03,870 --> 01:34:06,120
+is doing, and how we're
+impacting the environment, and
+
+1438
+01:34:06,120 --> 01:34:09,480
+how it's changing, this is a
+really good field for you to
+
+1439
+01:34:09,480 --> 01:34:14,100
+come in, and apply expertise or
+your research or just develop
+
+1440
+01:34:14,100 --> 01:34:18,600
+your interests and in
+contribute, and so internships
+
+1441
+01:34:18,630 --> 01:34:22,440
+are a great way to start. But a
+lot of the people that work in
+
+1442
+01:34:22,440 --> 01:34:27,900
+this community, because they're
+so they believe, you know, they
+
+1443
+01:34:27,900 --> 01:34:33,210
+want to see progress. They're
+very friendly, and they're happy
+
+1444
+01:34:33,210 --> 01:34:39,150
+to help. So get on our website,
+poke around, send an email, you
+
+1445
+01:34:39,150 --> 01:34:43,470
+know, it's it's always great to
+hear from people. And if we can
+
+1446
+01:34:43,470 --> 01:34:48,930
+help we, we try to. So, yeah, I
+guess, being proactive and not
+
+1447
+01:34:48,930 --> 01:34:53,670
+being deterred. You know,
+there's all kinds of reasons why
+
+1448
+01:34:53,670 --> 01:34:57,210
+not to do things, but if you are
+curious, just go ahead and shoot
+
+1449
+01:34:57,210 --> 01:35:01,590
+or know or learn something new
+and Push forward, eventually you
+
+1450
+01:35:01,590 --> 01:35:06,630
+get there. I don't know. Maybe
+that's a really broad piece of
+
+1451
+01:35:06,630 --> 01:35:09,210
+advice. But that's what I got.
+It sounds
+
+1452
+01:35:09,209 --> 01:35:15,539
+Audrow Nash: wonderful. Lastly,
+do you have any contact info or
+
+1453
+01:35:15,659 --> 01:35:18,329
+links or anything you'd like to
+make sure that we share with
+
+1454
+01:35:18,329 --> 01:35:18,989
+this episode?
+
+1455
+01:35:19,860 --> 01:35:23,640
+Ben Raanan: Sure. So I guess,
+obviously, there are simulation
+
+1456
+01:35:23,640 --> 01:35:25,830
+framework that we're developing,
+which is already open and out
+
+1457
+01:35:25,830 --> 01:35:28,830
+there. And so we'll include the
+links, that's actually I know
+
+1458
+01:35:28,830 --> 01:35:36,510
+SRF repo or C, these days. And
+we'll go ahead and share that.
+
+1459
+01:35:37,380 --> 01:35:40,890
+My information can be found on
+the bar website, and I'll share
+
+1460
+01:35:40,890 --> 01:35:44,190
+that as well. I'm also on
+LinkedIn, Twitter, all those
+
+1461
+01:35:44,190 --> 01:35:48,060
+great platforms. So feel free to
+reach out if you're interested.
+
+1462
+01:35:48,840 --> 01:35:51,240
+Especially if you want to use
+the sim or if you have an idea
+
+1463
+01:35:51,240 --> 01:35:53,910
+for a vaccine application that
+you'd like to see running at C
+
+1464
+01:35:54,060 --> 01:36:00,690
+mon are taught this class
+longer. AGVs Let's talk. Yeah,
+
+1465
+01:36:00,720 --> 01:36:05,880
+that's, that's pretty much it. I
+MBARI has a wonderful website
+
+1466
+01:36:05,880 --> 01:36:09,060
+that's full with data in
+interesting stories. So feel
+
+1467
+01:36:09,060 --> 01:36:12,000
+free to visit there. But that's
+pretty much it.
+
+1468
+01:36:13,200 --> 01:36:15,390
+Audrow Nash: Okay, awesome. It's
+been wonderful talking to you.
+
+1469
+01:36:16,560 --> 01:36:17,610
+Ben Raanan: Thank you very much
+for having me.
+
+1470
+01:36:18,990 --> 01:36:25,860
+Audrow Nash: Hi, everyone. Thank
+you for listening to this
+
+1471
+01:36:25,860 --> 01:36:30,300
+conversation with Ben Ron on.
+Thank you again to our founding
+
+1472
+01:36:30,300 --> 01:36:32,910
+sponsor, open robotics. See you
+next time.
+
