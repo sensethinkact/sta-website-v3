@@ -25,7 +25,7 @@ const Post = ({post, isDebug}: Props) => {
   }
 
   // Used for the Discourse comments
-  const postUrlWithWww = post.url.replace(/https:\/\//, 'https://www.')
+  const postUrlWithWww = post.url.replace(/https:\/\//, 'www.')
 
   return (
     <Layout title={`${post.title} | ${podcastConfig.name}`}>
