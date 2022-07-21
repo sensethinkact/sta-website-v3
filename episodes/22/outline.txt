@@ -1,0 +1,15 @@
+0:00:00 - Start
+0:01:15 - Introducing Ben and MBARI
+0:06:16 - Understanding human impact on the ocean
+0:17:24 - Using robots for scalability
+0:32:38 - Collecting ocean data
+0:49:19 - Describing their ocean robots
+0:51:49 - Power management
+0:53:52 - Varying the buoyancy
+0:55:57 - Their robot’s cost
+0:58:09 - Communicating with the robot
+1:00:49 - Failure management + safety precautions
+1:05:32 - Growing the fleet
+1:14:06 - Simulation with Gazebo + open source
+1:26:42 - Future of missions
+1:32:12 - Advice for those looking to contribute to ocean research
