@@ -1,0 +1,45 @@
+guests: Vince Gaydarzhiev
+title: Scalable Access Control with AI
+description: |
+  In this episode, Audrow Nash speaks to Vince Gaydarzhiev, who is President and Founder of Alcatraz AI.
+  Alcatraz AI uses biometrics, including facial recognition, to make spaces more secure.
+  Vince speaks about facial recognition, the problem of access control, tailgating, how access control is a similar problem to self driving cars, how the work with actors to get training data, how they use AI, updating their hardware, Alcatraz AI's business model, and on the current economy for startups.
+excerpt: Vince Gaydarzhiev is the President and Founder of Alcatraz AI
+duration:
+  hours: 1
+  minutes: 32
+  seconds: 47
+tags:
+  - AI
+  - access control
+  - facial recognition
+  - machine learning
+  - startup
+links:
+  - name: Alcatraz AI's website
+    url: https://www.alcatraz.ai/
+  - name: Vince's LinkedIn
+    url: https://www.linkedin.com/in/gaydarzhiev/
+mp3SizeBytes: 180727720
+publishDate: 2022-08-18
+youtube:
+  mainContentId: leiYSw6HsO8
+  clips:
+    - title: Breaking into a Secret Base
+      videoId: a
+    - title: Don't Start Building Hardware
+      videoId: a
+    - title: Getting a Comprehensive Patent
+      videoId: a
+    - title: How to Tailgate
+      videoId: a
+    - title: Like Self-Driving Cars
+      videoId: a
+    - title: Navigating Security Standards
+      videoId: a
+    - title: No Perfect Solutions (Almost Perfect)
+      videoId: a
+    - title: Solving Corner Cases with Actors
+      videoId: a
+    - title: Updating Hardware and Keeping Old Data
+      videoId: a

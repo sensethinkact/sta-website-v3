@@ -1,0 +1,24 @@
+00:00:00 - Introducing the episode
+00:01:41 - Introducing Vince and Alcatraz AI
+00:02:21 - Understanding physical access control
+00:12:40 - Challenges in scaling
+00:15:50 - Multi factor authentication
+00:17:45 - Why facial recognition?
+00:23:11 - Protecting against spoofs
+00:30:30 - Using neural networks to stop tailgaters
+00:35:10 - Supplementing security guards
+00:40:01 - Neural networks in security
+00:47:05 - Exploring using simulation to create data
+00:49:43 - Hiring actors to get data on exceptions
+00:53:21 - Understanding intent
+00:55:37 - Business model + how to deploy
+01:02:54 - Scaling limits
+01:05:23 - Patents + open source
+01:11:10 - Updating hardware and keeping old training data
+01:14:27 - Feels like running many startups
+01:16:14 - Working with standards organizations
+01:24:26 - Future plans
+01:27:23 - Advice to your past self
+01:28:34 - Finding a product customers love
+01:29:28 - On the current economy for startups
+01:31:51 - Links + contact info
