@@ -1,0 +1,99 @@
+1
+00:00:03,500 --> 00:00:06,800
+Audrow Nash: I'm happy to announce
+this week is our one year anniversary
+
+2
+00:00:06,800 --> 00:00:08,540
+for the Sense Think Act Podcast.
+
+3
+00:00:09,020 --> 00:00:14,990
+During this year, we've had 23 episodes
+and had about 53,000 downloads.
+
+4
+00:00:15,440 --> 00:00:18,050
+I'm humbled and honored that
+we've reached so many people.
+
+5
+00:00:18,920 --> 00:00:23,210
+I've also loved the opportunity
+to have longer conversations with
+
+6
+00:00:23,210 --> 00:00:25,445
+great people through this podcast.
+
+7
+00:00:25,805 --> 00:00:30,005
+I love seeing how they think and
+what they're thinking about, which I
+
+8
+00:00:30,005 --> 00:00:31,955
+think this longer format lets me do.
+
+9
+00:00:32,825 --> 00:00:36,485
+And I'm happy that I get to share
+these conversations with you all
+
+10
+00:00:36,485 --> 00:00:40,055
+and hope that you enjoy them and
+find them valuable as much as I do.
+
+11
+00:00:41,485 --> 00:00:44,005
+All that to say, we're
+just getting started.
+
+12
+00:00:44,305 --> 00:00:47,485
+I'm excited about our upcoming
+episodes, including an interview
+
+13
+00:00:47,485 --> 00:00:52,270
+with Nvidia, on hardware acceleration
+and machine learning, Esper
+
+14
+00:00:52,270 --> 00:00:57,580
+Bionics on prosthetic devices, and
+Plus One Robotics, on exception
+
+15
+00:00:57,580 --> 00:00:59,530
+handling in the warehouse setting.
+
+16
+00:01:00,253 --> 00:01:02,113
+Look for these interviews
+in the coming months.
+
+17
+00:01:02,683 --> 00:01:05,863
+If you're enjoying this podcast,
+I'd be happy if you give it a thumbs
+
+18
+00:01:05,863 --> 00:01:08,743
+up or leave us a review depending
+on which platform you're on.
+
+19
+00:01:09,523 --> 00:01:13,603
+And a big thanks to Open Robotics
+who has been sponsoring this podcast.
+
+20
+00:01:13,683 --> 00:01:14,553
+That's all for now.
+
+21
+00:01:14,643 --> 00:01:16,083
+And I look forward to our next year.
+
