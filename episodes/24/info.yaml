@@ -1,0 +1,43 @@
+guests:
+  - Tony Baltovski
+  - Adrian Popielas
+title: 'Introducing the TurtleBot 4'
+description: |
+  In this episode, Audrow Nash speaks to Tony Baltovski and Adrian Popielas, from Clearpath Robotics, on the TurtleBot 4.
+  The TurtleBot 4 is an open source robotics platform for education and research.
+excerpt: |
+  Tony Baltovski and Adrian Popielas work at Clearpath Robotics.
+duration:
+  hours: 1
+  minutes: 10
+  seconds: 45
+tags:
+  - Education
+  - Research
+  - TurtleBot
+  - ROS
+  - Simulation
+links:
+  - name: TurtleBot 4 on Clearpath Robotics' website
+    url: https://clearpathrobotics.com/turtlebot-4/
+  - name: TurtleBot 4 on Github
+    url: https://github.com/turtlebot/turtlebot4
+  - name: TurtleBot 4 Simulation on Github
+    url: https://github.com/turtlebot/turtlebot4_simulator
+  - name: Clearpath Robotics' website
+    url: https://clearpathrobotics.com/
+  - name: Tony Baltovski's LinkedIn
+    url: https://www.linkedin.com/in/tonybaltovski/
+  - name: Adrian Popielas' LinkedIn
+    url: https://www.linkedin.com/in/adrianpopielas/
+mp3SizeBytes: 143356664
+publishDate: 2022-09-02
+youtube:
+  mainContentId: https://youtu.be/BrvGxpB6n40
+  clips:
+    - title: Adding a Screen to the TurtleBot 4
+      videoId: a
+    - title: Software Setup on the TurtleBot 4
+      videoId: a
+    - title: Hopes for the TurtleBot 4 Robot
+      videoId: a
