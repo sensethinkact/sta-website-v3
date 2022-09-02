@@ -1,0 +1,16 @@
+00:00:00 - Start
+00:01:31 - Introducing Adrian, Tony, and TurtleBot 4
+00:12:17 - Evolution of Turtlebot Platforms
+00:18:03 - Adding a screen to the Turtlebot 4
+00:21:43 - Picking hardware and budgeting features
+00:27:57 - How the software is organized
+00:29:38 - Designing for manufacturing
+00:38:13 - Simulation
+00:44:40 - Making examples
+00:46:45 - Using ROS 2
+00:50:15 - Choosing to use a Create 3
+00:51:46 - Other challenges and testing
+01:03:26 - Putting an arm on the TurtleBot 4
+01:04:49 - Marker 7
+01:07:47 - Hopes for the TurtleBot 4
+01:09:52 - Advice
