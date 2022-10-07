@@ -27,6 +27,9 @@ const Post = ({post, isDebug}: Props) => {
   // Used for the Discourse comments
   const postUrlWithWww = post.url.replace(/https:\/\//, 'http://www.')
 
+  const titleEndsWithPunctuation = /[.?!]$/.test(post.title)
+  const withStr = titleEndsWithPunctuation ? ' with' : ', with'
+
   return (
     <Layout title={`${post.title} | ${podcastConfig.name}`}>
       <div className="container">
@@ -42,7 +45,7 @@ const Post = ({post, isDebug}: Props) => {
                     {post.title}
                   </span>
                   <span className="subtitle is-3">
-                    {post.guests && `, with ${listToString(post.guests)}`}
+                    {post.guests && `${withStr} ${listToString(post.guests)}`}
                   </span>
                 </h2>
                 <div className="content is-small">

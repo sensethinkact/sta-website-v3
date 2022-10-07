@@ -13,6 +13,8 @@ type Props = {
 }
 
 const EpisodePreview = ({post, maxPreviewWords = 350, isDebug}: Props) => {
+  const titleEndsWithPunctuation = /[.?!]$/.test(post.title)
+  const withStr = titleEndsWithPunctuation ? ' with' : ', with'
   return (
     <div key={post.slug} className="column is-12">
       <article>
@@ -29,7 +31,7 @@ const EpisodePreview = ({post, maxPreviewWords = 350, isDebug}: Props) => {
                     {post.title}
                   </span>
                   <span className="subtitle is-5">
-                    {post.guests && `, with ${listToString(post.guests)}`}
+                    {post.guests && `${withStr} ${listToString(post.guests)}`}
                   </span>
                 </p>
               </a>
