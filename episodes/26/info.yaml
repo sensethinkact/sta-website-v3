@@ -1,0 +1,35 @@
+guests:
+  - Davide Faconti
+title: 'Can One Person Make Two Powerful Tools for the Robotics Community?'
+description: |
+  In this episode, Audrow Nash talks to Davide Faconti, the creator of BehaviorTree.CPP and Plotjuggler.
+  BehaviorTree.CPP helps you organize complex robot behaviors, and PlotJuggler makes it easier for you to understand and debug robotic applications.
+  The ROS community has widely adopted both BehaviorTree.CPP and PlotJuggler.
+
+  In this interview, you'll learn about these projects and how to use them to be more productive. You'll also know how Davide thinks about side projects so that you can build projects with more impact.
+excerpt: |
+  David Faconti is the creator of BehaviorTree.CPP and PlotJuggler.
+duration:
+  hours: 1
+  minutes: 45
+  seconds: 12
+tags:
+  - Side-project
+  - Data visualization
+  - Behavior trees
+links:
+  - name: Davide Faconti's LinkedIn
+    url: https://www.linkedin.com/in/facontidavide/?originalSubdomain=es
+  - name: BehaviorTree.CPP's website
+    url: https://behaviortree.github.io/BehaviorTree.CPP/
+  - name: BehaviorTree.CPP's Discourse
+    url: https://discourse.behaviortree.dev/
+  - name: PlotJuggler's website
+    url: https://www.plotjuggler.io/
+mp3SizeBytes: 205015972
+publishDate: 2022-10-07
+youtube:
+  mainContentId: NZwg-Z1lM7Q
+  clips:
+    - title: What do you do when GDB doesn't work for debugging broken robots?
+      videoId: a

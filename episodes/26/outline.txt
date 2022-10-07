@@ -1,0 +1,17 @@
+00:00:00 - Start
+00:01:44 - Introducing Davide Faconti
+00:06:34 - History of BehaviorTree.CPP
+00:19:51 - Explaining Behavior Trees
+00:51:04 - Orthogonality in Behavior trees
+00:54:01 - Handling events with behavior trees
+00:57:12 - Teasing BehaviorTree.CPP 4.0
+00:59:40 - PlotJuggler
+01:10:10 - Memes in PlotJuggler
+01:14:50 - Picking project scope
+01:19:57 - Business model + scaling
+01:22:18 - Thoughts on web technologies
+01:23:32 - Direction and ambitions
+01:28:51 - On having a side project
+01:32:32 - Lessons on starting open source project
+01:36:55 - Future of robotics
+01:44:21 - Links and contact info
