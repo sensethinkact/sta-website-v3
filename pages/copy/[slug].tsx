@@ -2,7 +2,7 @@ import type {SerializedPost} from '@sta-podcast/types'
 import endent from 'endent'
 import ErrorPage from 'next/error'
 import {useRouter} from 'next/router'
-import {ChangeEventHandler, useState} from 'react'
+import {ChangeEventHandler, useEffect, useState} from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import Layout from '../../components/layout'
 import {MAX_TITLE_LENGTH} from '../../lib/constants'
@@ -25,12 +25,27 @@ type Props = {
 
 const PostContentHelper = ({post}: Props) => {
   const router = useRouter()
+
+  const [errorMessage, setErrorMessage] = useState<string | undefined>()
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
 
-  const title = getTitle(podcastConfig, post)
-  checkYoutubeTitle(title, MAX_TITLE_LENGTH)
+  let title = getTitle(podcastConfig, post)
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    try {
+      checkYoutubeTitle(title, MAX_TITLE_LENGTH)
+    } catch (error) {
+      if (error instanceof Error) {
+        setErrorMessage(error.message)
+      } else {
+        throw error
+      }
+    }
+  }, [title])
 
   const fileName = post.mp3.url.replaceAll('%20', ' ').match(/[^/]*$/)
   if (!fileName) {
@@ -39,6 +54,11 @@ const PostContentHelper = ({post}: Props) => {
 
   return (
     <Layout title={`Copy Content for ${post.title}`}>
+      {errorMessage && (
+        <div className="notification is-danger">
+          <button className="delete"></button> {errorMessage}
+        </div>
+      )}
       <div className="container">
         <h1 className="title">{post.title} Content</h1>
         <h2 className="subtitle">Rsync command</h2>
