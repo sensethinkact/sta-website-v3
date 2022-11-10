@@ -24,17 +24,15 @@ const EpisodePreview = ({post, maxPreviewWords = 350, isDebug}: Props) => {
               href={`${EPISODES_URL}/[slug]`}
               as={`${EPISODES_URL}/${post.slug}`}
             >
-              <a>
-                <p className="is-5 is-marginless">
-                  <span className="title is-5">
-                    {post.number && post.number?.toString() + '. '}
-                    {post.title}
-                  </span>
-                  <span className="subtitle is-5">
-                    {post.guests && `${withStr} ${listToString(post.guests)}`}
-                  </span>
-                </p>
-              </a>
+              <p className="is-5 is-marginless">
+                <span className="title is-5">
+                  {post.number && post.number?.toString() + '. '}
+                  {post.title}
+                </span>
+                <span className="subtitle is-5">
+                  {post.guests && `${withStr} ${listToString(post.guests)}`}
+                </span>
+              </p>
             </Link>
             {isDebug && <CopyableContentLink slug={post.slug} />}
             <p className="content is-marginless">
