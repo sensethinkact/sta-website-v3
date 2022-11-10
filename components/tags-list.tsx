@@ -15,7 +15,7 @@ const TagsList = ({tags}: Props) => {
             href={`${TAG_PICKER_URL}/[tag]`}
             as={`${TAG_PICKER_URL}/${tag}`}
           >
-            <a className="button is-info is-outlined is-small m-1">{tag}</a>
+            <div className="button is-info is-outlined is-small m-1">{tag}</div>
           </Link>
         ))}
       </div>

@@ -10,15 +10,13 @@ const LogoNav = () => {
       <nav aria-label="main navigation">
         <div className="navbar-brand">
           <Link href="/">
-            <a>
-              <img
-                className="navbar-logo"
-                src={`${IMAGES_URL}/logo-with-name.png`}
-                width={1900 * scale}
-                height={400 * scale}
-                alt="STA Logo"
-              />
-            </a>
+            <img
+              className="navbar-logo"
+              src={`${IMAGES_URL}/logo-with-name.png`}
+              width={1900 * scale}
+              height={400 * scale}
+              alt="STA Logo"
+            />
           </Link>
         </div>
       </nav>
