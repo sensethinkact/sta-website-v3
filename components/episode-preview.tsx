@@ -33,7 +33,7 @@ const EpisodePreview = ({post, maxPreviewWords = 350, isDebug}: Props) => {
                   {post.guests && `${withStr} ${listToString(post.guests)}`}
                 </span>
               </p>
-          </Link>
+            </Link>
             {isDebug && <CopyableContentLink slug={post.slug} />}
             <p className="content is-marginless">
               {truncateWords(post.description, maxPreviewWords)}
