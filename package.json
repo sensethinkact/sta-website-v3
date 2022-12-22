@@ -30,7 +30,7 @@
     "react-dom": "18.2.0",
     "react-youtube": "^10.1.0",
     "sharp": "^0.31.3",
-    "yaml": "^2.1.3"
+    "yaml": "^2.2.0"
   },
   "devDependencies": {
     "@sta-podcast/types": "^1.0.7",
