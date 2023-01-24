@@ -14,12 +14,12 @@ tags:
   - open source
   - manufacturing
 links:
-- name: Ryan Gariepy's LinkedIn
-    url: https://www.linkedin.com/in/rgariepy/
-- name: Clearpath Robotics
-    url: https://clearpathrobotics.com/
-- name: OTTO Motors
-    url: https://www.ottomotors.com/
+  - name: Ryan Gariepy's LinkedIn
+      url: https://www.linkedin.com/in/rgariepy/
+  - name: Clearpath Robotics
+      url: https://clearpathrobotics.com/
+  - name: OTTO Motors
+      url: https://www.ottomotors.com/
 mp3SizeBytes: 132239900
 publishDate: 2021-09-20
 youtube:
