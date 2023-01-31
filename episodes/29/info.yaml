@@ -1,0 +1,29 @@
+guests:
+  - Ronald Katamba
+title: 'Improving Lives of People in Africa with Sensors to Monitor Disease in Livestock'
+description: |
+  In this episode, Audrow Nash talks to Ronald Katamba, CEO and founder of Jaguza Tech and Afrosoft IT Solutions.
+  Afrosoft IT Solutions helps train people in technology skills in Uganda and other countries.
+  Jaguza Tech makes a wearable device for cows to help understand when they are sick.
+excerpt: |
+  Ronald Katamba is the CEO and founder of Jaguza Tech and Afrosoft IT Solutions.
+duration:
+  hours: 1
+  minutes: 11
+  seconds: 56
+tags:
+  - agriculture
+  - livestock
+  - IoT
+links:
+  - name: Ronald Katamba's LinkedIn
+    url: https://www.linkedin.com/in/katamba-ronald-515303a9/?originalSubdomain=ug
+  - name: Jaguza's Website
+    url: https://jaguzafarm.com/
+mp3SizeBytes: 140080204
+publishDate: 2023-01-31
+youtube:
+  mainContentId: fRZC89yxcwc
+  clips:
+    - title: a
+      videoId: a
