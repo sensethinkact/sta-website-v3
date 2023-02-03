@@ -51,15 +51,16 @@ const Home = ({posts, tags, isDebug = false}: Props) => {
                         rel="noreferrer"
                       >
                         Audrow Nash
-                      </a>, led by Executive Producer{' '}
+                      </a>
+                      , led by Executive Producer{' '}
                       <a
-                        href='https://www.linkedin.com/in/tullyfoote/'
+                        href="https://www.linkedin.com/in/tullyfoote/"
                         target="_blank"
                         rel="noreferrer"
                       >
                         Tully Foote
-                      </a>, 
-                      and sponsored by{' '}
+                      </a>
+                      , and sponsored by{' '}
                       <a
                         href="https://www.openrobotics.org/"
                         target="_blank"
