@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import type {SerializedPost} from '@sta-podcast/types'
+import DonationIframe from '../components/donation-iframe'
 import EpisodePreview from '../components/episode-preview'
 import Layout from '../components/layout'
 import ReadMore from '../components/read-more'
@@ -35,6 +36,7 @@ const Home = ({posts, tags, isDebug = false}: Props) => {
                     height={logoSizePx}
                   />
                 </figure>
+                <DonationIframe />
               </div>
               <div className="column is-7-desktop is-6-widescreen">
                 <article className="block">

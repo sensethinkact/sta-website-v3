@@ -109,11 +109,14 @@ function getDescriptionWithLinks(args: {
   let text = endent`
     ${args.description}
 
+    If you're enjoying the podcast, please consider donating to help us keep it going:
+    https://donorbox.org/sense-think-act-podcast
+
     EPISODE LINKS:
-    ${getLinksHtml(args.episodeLinks)}
+    ${getBulletedLinksHtml(args.episodeLinks)}
 
     PODCAST INFO:
-    ${getLinksHtml(args.podcastLinks)}
+    ${getBulletedLinksHtml(args.podcastLinks)}
   `
   if (args.outline) {
     const outline = args.outline
@@ -130,7 +133,7 @@ function getDescriptionWithLinks(args: {
     ${text}
 
     SOCIAL:
-    ${getLinksHtml(args.socialLinks)}
+    ${getBulletedLinksHtml(args.socialLinks)}
     `
   return text
     .replace(/\n/g, '<br/>')
@@ -138,8 +141,10 @@ function getDescriptionWithLinks(args: {
     .replace(/'/g, '&#8217;')
 }
 
-function getLinksHtml(links: Link[]) {
-  return links
-    .map((link) => `- ${link.name}: <a href="${link.url}">${link.url}</a>`)
-    .join('\n')
+function getBulletedLinksHtml(links: Link[]) {
+  return links.map((link) => `- ${link.name}: ${getLinkHtml(link)}}`).join('\n')
+}
+
+function getLinkHtml(link: Link) {
+  return `<a href="${link.url}">${link.url}</a>`
 }

@@ -5,6 +5,7 @@ import {useRouter} from 'next/router'
 import YouTube from 'react-youtube'
 import Comments from '../../components/comments'
 import CopyableContentLink from '../../components/copyable-content-link'
+import DonationIframe from '../../components/donation-iframe'
 import Layout from '../../components/layout'
 import LogoNav from '../../components/logo-nav'
 import TagsList from '../../components/tags-list'
@@ -57,10 +58,27 @@ const Post = ({post, isDebug}: Props) => {
                 <div className="content">
                   <TagsList tags={post.tags} />
                 </div>
-                <YouTube videoId={post.youtube.mainContentId} />
+                <div>
+                  <style jsx>{`
+                    div {
+                      position: relative;
+                      padding-bottom: 56.25%; /* 16:9 */
+                      height: 0;
+                    }
+                    div :global(iframe) {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    }
+                  `}</style>
+                  <YouTube videoId={post.youtube.mainContentId} />
+                </div>
                 <br />
                 <p className="content">{post.description}</p>
                 <br />
+                <DonationIframe />
                 <div className="content">
                   <h3 className="subtitle is-4">Links</h3>
                   <ul>
