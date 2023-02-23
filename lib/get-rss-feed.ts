@@ -142,9 +142,7 @@ function getDescriptionWithLinks(args: {
 }
 
 function getBulletedLinksHtml(links: Link[]) {
-  return links
-    .map((link) => `- ${link.name}: ${getLinkHtml(link)}}`)
-    .join('\n')
+  return links.map((link) => `- ${link.name}: ${getLinkHtml(link)}}`).join('\n')
 }
 
 function getLinkHtml(link: Link) {

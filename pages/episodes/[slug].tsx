@@ -5,6 +5,7 @@ import {useRouter} from 'next/router'
 import YouTube from 'react-youtube'
 import Comments from '../../components/comments'
 import CopyableContentLink from '../../components/copyable-content-link'
+import DonationIframe from '../../components/donation-iframe'
 import Layout from '../../components/layout'
 import LogoNav from '../../components/logo-nav'
 import TagsList from '../../components/tags-list'
@@ -12,7 +13,6 @@ import {IS_DEBUG} from '../../lib/constants'
 import getPostLoader from '../../lib/get-post-loader'
 import {listToString} from '../../lib/utils'
 import podcastConfig from '../../podcast.config'
-import DonationIframe from '../../components/donation-iframe'
 
 type Props = {
   post: SerializedPost
@@ -78,7 +78,7 @@ const Post = ({post, isDebug}: Props) => {
                 <br />
                 <p className="content">{post.description}</p>
                 <br />
-                <DonationIframe/>
+                <DonationIframe />
                 <div className="content">
                   <h3 className="subtitle is-4">Links</h3>
                   <ul>
