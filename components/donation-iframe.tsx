@@ -1,4 +1,7 @@
+// @ts-nocheck
+
 import Script from 'next/script'
+
 
 function DonationIframe() {
     return (
