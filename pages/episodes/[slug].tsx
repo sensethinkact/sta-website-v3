@@ -12,6 +12,7 @@ import {IS_DEBUG} from '../../lib/constants'
 import getPostLoader from '../../lib/get-post-loader'
 import {listToString} from '../../lib/utils'
 import podcastConfig from '../../podcast.config'
+import DonationIframe from '../../components/donation-iframe'
 
 type Props = {
   post: SerializedPost
@@ -57,10 +58,27 @@ const Post = ({post, isDebug}: Props) => {
                 <div className="content">
                   <TagsList tags={post.tags} />
                 </div>
-                <YouTube videoId={post.youtube.mainContentId} />
+                <div>
+                  <style jsx>{`
+                    div {
+                      position: relative;
+                      padding-bottom: 56.25%; /* 16:9 */
+                      height: 0;
+                    }
+                    div :global(iframe) {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    }
+                  `}</style>
+                  <YouTube videoId={post.youtube.mainContentId} />
+                </div>
                 <br />
                 <p className="content">{post.description}</p>
                 <br />
+                <DonationIframe/>
                 <div className="content">
                   <h3 className="subtitle is-4">Links</h3>
                   <ul>

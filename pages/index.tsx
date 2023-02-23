@@ -8,6 +8,7 @@ import TagsList from '../components/tags-list'
 import {IMAGES_URL, IS_DEBUG} from '../lib/constants'
 import getPostLoader from '../lib/get-post-loader'
 import podcastConfig from '../podcast.config'
+import DonationIframe from '../components/donation-iframe'
 
 type Props = {
   posts: SerializedPost[]
@@ -35,6 +36,7 @@ const Home = ({posts, tags, isDebug = false}: Props) => {
                     height={logoSizePx}
                   />
                 </figure>
+                <DonationIframe/>
               </div>
               <div className="column is-7-desktop is-6-widescreen">
                 <article className="block">
