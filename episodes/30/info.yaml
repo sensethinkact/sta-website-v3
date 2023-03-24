@@ -1,0 +1,32 @@
+guests:
+  - Pablo Molina
+title: 'How to Have a Strong ROI for Customers: Lessons From a Floor Scrubbing Robot'
+description: |
+  In this insightful episode, we chat with Pablo Molina from Avidbots about their floor scrubbing robot, which is making a notable impact on the cleaning industry.
+  Discover how this autonomous machine offers enhanced efficiencies by navigating tight spaces without a human driver, while also providing an impressive 6-month ROI.
+  Pablo shares the thoughtful design approach that went into creating this advanced robot and explains the error-checking software that helps minimize failure time.
+  Join us for this engaging conversation as we explore how Avidbots is contributing to the evolution of cleaning operations with their floor scrubbing robot, offering a blend of cost-effectiveness and efficiency in facility maintenance.
+excerpt: |
+  Pablo Molina is the CTO, VP of Product, Chairman, Co-founder at Avidbots.
+duration:
+  hours: 1
+  minutes: 36
+  seconds: 30
+tags:
+  - cleaning
+  - autonomous
+  - startup
+links:
+  - name: Avidbots' website
+    url: https://avidbots.com/
+  - name: Pablo Molina's LinkedIn
+    url: https://www.linkedin.com/in/pablomolinacabrera/
+  - name: Pablo Molina's email
+    url: pablo@avidbots.com
+mp3SizeBytes: 188050923
+publishDate: 2023-03-24
+youtube:
+  mainContentId: WUnMO4B8Ahs
+  clips:
+    - title: a
+      videoId: a
