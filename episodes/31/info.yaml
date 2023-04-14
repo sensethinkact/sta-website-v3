@@ -1,0 +1,34 @@
+guests:
+  - Andreas Bihlmaier
+title: 'Production-ready Robotics: How to Move Fast and Not Destroy Your Robot'
+description: |
+  In this episode of the Sense Think Act Podcast, we are joined by Andreas Bihlmaier, Head of Robotics Software Architecture at Intrinsic, for an in-depth discussion on the future of robotics.
+  We explore a range of topics, including the development of adaptive robotics software, the potential of cloud robotics, the concept of robot app stores, and the challenges of testing robots in real-world production environments.
+  Throughout the conversation, Andreas shares his expert insights and sheds light on the innovative technologies that are shaping the next generation of robotics.
+  Tune in to gain valuable knowledge from one of the industry's foremost thought leaders.
+excerpt: |
+  Andreas Bihlmaier is the Head of Robotics Software Architecture at Intrinsic
+duration:
+  hours: 1
+  minutes: 48
+  seconds: 06
+tags:
+  - testing
+  - hardware
+  - industry
+links:
+  - name: Andreas Bihlmaier's LinkedIn
+    url: https://www.linkedin.com/in/andreas-bihlmaier/
+  - name: "Andreas Bihlmaier's new book: Robotics for Programmers"
+    url: https://www.manning.com/books/robotics-for-programmers
+  - name: Intrinsic's website
+    url: https://intrinsic.ai/
+  - name: ABB's website (Andreas' previous employer)
+    url: https://new.abb.com/products/robotics
+mp3SizeBytes: 211356407
+publishDate: 2023-04-14
+youtube:
+  mainContentId: NQnjVAyCvuw
+  clips:
+    - title: a
+      videoId: a

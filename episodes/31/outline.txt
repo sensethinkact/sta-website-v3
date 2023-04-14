@@ -1,0 +1,16 @@
+00:00:00 - Start
+00:01:19 - Introducing Andreas
+00:07:39 - What does a Chief Software Architect do?
+00:14:05 - Coming to ABB
+00:22:12 - Planning for new technology to advance
+00:30:10 - Serverless Robots?
+00:43:42 - Robotics and other technologies
+00:50:21 - Growth of the Robotics Community
+00:54:18 - Robot App store?
+01:01:43 - Tesla bot?
+01:06:45 - Human in the loop for startups?
+01:13:55 - Reinforcement Learning in Robotics
+01:22:56 - Testing Robots and how it’s different than other software
+01:43:22 - Learning about testing
+01:45:34 - Advice for those early in their career
+01:47:10 - Getting in touch
