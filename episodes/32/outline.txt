@@ -1,0 +1,14 @@
+00:00:00 - Start
+00:08:43 - Value of Business School
+00:11:01 - Being Leaders in Fundamental Technology
+00:20:19 - Nvidia’s Approach to Business
+00:24:26 - The Challenges and Promise of Robotics
+00:28:23 - Omniverse and Physics Simulation
+00:35:35 - Reinforcement Learning
+00:39:43 - Making a Bet on Reinforcement Learning for Control
+00:47:14 - GPUs
+00:51:40 - Working With the ROS 2 Community
+00:56:07 - Future of Robotics and Nvidia
+01:01:33 - Advice for Person Starting their Career
+01:04:35 - Where Should Early Adopters Start?
+01:07:14 - Links and Contact Info

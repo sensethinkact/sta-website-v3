@@ -1,0 +1,31 @@
+guests:
+  - Amit Goel
+title: 'How is Nvidia Betting Big on Reinforcement Learning for Robot Control?'
+description: |
+  In this episode of the Sense Think Act Podcast, we're joined by Amit Goel, Head of Embedded Edge AI Product Management and Robotics Ecosystem at Nvidia.
+  Amit shares his insights on the challenges and promise of robotics, Nvidia's approach to business, and the future of robotics and Nvidia.
+  Tune in to learn about the value of business school, reinforcement learning, and where early adopters should start.
+excerpt: |
+  Amit Goel is the Head of Embedded Edge AI Product Management and Robotics Ecosystem at Nvidia
+duration:
+  hours: 1
+  minutes: 9
+  seconds: 35
+tags:
+  - hardware
+  - gpu
+  - machine learning
+  - reinforcement learning
+  - fundamental technology
+links:
+  - name: Amit Goel's LinkedIn
+    url: https://www.linkedin.com/in/amit-goel-759146a/
+  - name: NVIDIA's website
+    url: https://www.nvidia.com/en-us/
+mp3SizeBytes: 134978678
+publishDate: 2023-05-08
+youtube:
+  mainContentId: re7cAfFxK8Q
+  clips:
+    - title: a
+      videoId: a
