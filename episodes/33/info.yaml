@@ -1,0 +1,34 @@
+guests:
+  - Louise Poubel
+title: "Simulate What You Want and Not What You Don't with Gazebo"
+description: |
+  In this episode of the Sense Think Act Podcast, host Audrow Nash interviews Louise Poubel, former lead of the Gazebo project and current Simulation Lead of Zipline.
+  The conversation covers a range of topics, including the role of Gazebo, an open-source 3D robotics simulator, its comparison to other simulators, and its efforts to be more accessible to beginners.
+  They also discuss the use of simulation in Machine Learning and Reinforcement Learning, the challenges in the field of simulation, and its application with physical robots.
+  Louise shares her insights on the future of robotics, the importance of open-source projects, and the lessons she's learned from her experiences.
+excerpt: |
+  Louise Poubel is the former lead of the Gazebo project and current Simulation Lead of Zipline.
+duration:
+  hours: 1
+  minutes: 36
+  seconds: 54
+tags:
+  - simulation
+  - gazebo
+  - open-source
+  - machine learning
+  - reinforcement learning
+links:
+  - name: Louise's LinkedIn
+    url: https://www.linkedin.com/in/louise-poubel/
+  - name: Gazebo's website
+    url: https://gazebosim.org/home
+  - name: Zipline's website
+    url: https://flyzipline.com/
+mp3SizeBytes: 188716069
+publishDate: 2023-06-09
+youtube:
+  mainContentId: 0aP5e2PX0wA
+  clips:
+    - title: a
+      videoId: a

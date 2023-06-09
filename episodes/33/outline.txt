@@ -1,0 +1,20 @@
+00:00:00 - Start
+00:01:29 - Introducing Louise Poubel
+00:04:06 - Introducing Gazebo
+00:06:11 - Clearing up Gazebo naming
+00:10:42 - Gazebo’s Garden release
+00:20:24 - Prioritizing what goes in a Gazebo release + working with the community
+00:26:17 - How does Gazebo compare to other simulators?
+00:30:37 - Gazebo’s plugin architecture
+00:36:19 - Making Gazebo beginner friendly
+00:40:11 - Gazebo as a “Generic simulator”
+00:46:55 - Simulation for Machine Learning and Reinforcement Learning
+00:52:42 - Gazebo and the web
+00:59:24 - Hard Challenges in simulation
+01:08:51 - How simulation can be used with physical robots
+01:10:49 - Lessons learned from leading Gazebo
+01:14:56 - Why Open Source?
+01:16:15 - Moving to Zipline
+01:24:21 - How to learning Gazebo
+01:31:47 - Future of robotics
+01:35:49 - Trying Gazebo
