@@ -1,0 +1,27 @@
+00:00:00 - Start
+00:00:44 - Introducing Doron, Amit, and Indoor Robotics
+00:04:00 - Docking on the ceiling
+00:08:04 - Why on the ceiling?
+00:11:21 - Charging and data
+00:15:51 - Why bring a drone inside?
+00:20:46 - Downsides of using a drone
+00:23:55 - Networking challenges
+00:25:44 - Dealing with changing environments
+00:29:08 - Dealing with doors
+00:30:17 - Price
+00:35:26 - Business model
+00:38:32 - Company size
+00:39:00 - Growing into different markets
+00:45:30 - Tech stack
+00:48:20 - Customers
+00:50:43 - More about the pricing model
+00:54:28 - Part shortages
+00:57:17 - Manufacturing
+01:00:47 - Choosing a manufacturer
+01:04:14 - Manufacturing in Israel
+01:08:53 - Funding
+01:14:07 - Deployments
+01:15:16 - Managing a growing team
+01:23:05 - Future plans
+01:29:32 - Advice for entrepreneurs
+01:34:52 - Links or contact info

@@ -1,0 +1,38 @@
+guests:
+  - Doron Ben David
+  - Amit Moran
+title: "Drones on the Ceiling: An Exciting New Era in Indoor Security?"
+description: |
+  In this episode of the Sense Think Act Podcast, we chat with Amit Moran and Doron Ben David from Indoor Robotics.
+  We discuss their unique approach to indoor drones, exploring topics like ceiling docking, indoor navigation, and the role of drones in indoor security and maintenance.
+  We also touch on the challenges they've faced, their business model, and their vision for the future.
+  It's a thoughtful conversation that offers a peek into the world of indoor robotics.
+excerpt: |
+  Doron Ben David and Amit Moran are cofounders of and the CEO and CTO of Indoor Robotics, respectively.
+duration:
+  hours: 1
+  minutes: 36
+  seconds: 29
+tags:
+  - indoor robotics
+  - drones
+  - indoor navigation
+  - security
+  - maintenance
+  - inspection
+links:
+  - name: Indoor Robotics' website
+    url: https://www.indoor-robotics.com/
+  - name: Doron Ben David's LinkedIn
+    url: https://www.linkedin.com/in/doronbd/
+  - name: Amit Moran's LinkedIn
+    url: https://www.linkedin.com/in/amitmoran/
+  - name: Indoor Robotics' LinkedIn
+    url: https://www.linkedin.com/company/indoorrobotics/
+mp3SizeBytes: 187924519
+publishDate: 2023-07-14
+youtube:
+  mainContentId: "9-0Lk9XQVg4"
+  clips:
+    - title: a
+      videoId: a
