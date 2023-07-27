@@ -37,7 +37,7 @@
     "@tsconfig/node16": "^16.1.0",
     "@types/node": "20.4.5",
     "@types/proper-url-join": "^2.1.1",
-    "@types/react": "18.2.16",
+    "@types/react": "18.2.17",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "endent": "^2.1.0",
     "eslint": "8.45.0",
