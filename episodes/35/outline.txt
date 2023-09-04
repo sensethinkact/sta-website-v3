@@ -1,0 +1,29 @@
+00:00:00 - Start
+00:03:02 - How does their system work?
+00:10:09 - Image processing to spray weeds
+00:17:27 - Discussion on labor
+00:21:48 - Herbicide resistance
+00:26:31 - Genetically modified crops
+00:27:50 - Monocrop cultures
+00:32:43 - Regenerative agriculture
+00:35:17 - Partnering with John Deere
+00:36:02 - Jim’s background in Blue River
+00:37:37 - Deep learning technology
+00:38:31 - Risks of deep learning
+00:41:29 - Labeling for deep learning
+00:41:54 - Autonomous tillage
+00:43:50 - Challenges in tillage
+00:45:10 - Why tillage is a nice problem
+00:46:55 - Mentions monitoring the job
+00:47:40 - Using cameras to determine normal function
+00:48:58 - How to use deep learning in tilling
+00:50:42 - Getting into other areas like construction at John Deere
+00:51:41 - Fully automated farms?
+00:55:36 - Harvesting will be the last task to be automated
+00:57:45 - What’s the progression of automating tasks on the farm?
+00:59:32 - Hydroponic farming?
+01:05:07 - Future at Blue River
+01:09:01 - Integrating with John Deere
+01:17:57 - Allocating space in new designs
+01:22:38 - Advice for a new graduate
+01:27:46 - Wrapping up

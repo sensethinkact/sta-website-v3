@@ -1,0 +1,31 @@
+guests:
+  - Jim Ostrowski
+title: 'How Can Robots Revolutionize Farming with See-and-Spray Technology?'
+description: |
+  In this episode you'll learn about robotics in agriculture.
+  We talk to Jim Ostrowski, CTO of Blue River Technology, about their See-and-Spray technology, Blue River's partnership with John Deere, deep learning, and the future of robotics in agriculture.
+  Don't miss this episode if you want to see a great example of a high impact problem that robots are well suited for.
+excerpt: |
+  Jim Ostrowski is the CTO of Blue River Technology.
+duration:
+  hours: 1
+  minutes: 29
+  seconds: 58
+tags:
+  - Agriculture
+  - See-and-spray
+  - Row crops
+links:
+  - name: Blue River Technology's Website
+    url: https://bluerivertechnology.com/
+  - name: Blue River Technology's LinkedIn
+    url: https://www.linkedin.com/company/bluerivertech/
+  - name: Jim Ostrowski's LinkedIn
+    url: https://www.linkedin.com/in/jim-ostrowski-9a8112/
+mp3SizeBytes: 174152153
+publishDate: 2023-09-05
+youtube:
+  mainContentId: '5mOEr82dWtQ'
+  clips:
+    - title: a
+      videoId: a
