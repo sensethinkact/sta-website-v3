@@ -36,7 +36,7 @@
     "@sta-podcast/types": "^1.0.7",
     "@tsconfig/node16": "^16.1.1",
     "@types/node": "20.6.5",
-    "@types/proper-url-join": "^2.1.1",
+    "@types/proper-url-join": "^2.1.2",
     "@types/react": "18.2.22",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "endent": "^2.1.0",
