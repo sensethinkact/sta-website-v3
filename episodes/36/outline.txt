@@ -1,0 +1,16 @@
+00:00:00 - Start
+00:01:10 - Introducing Bradley and Luxonis
+00:08:24 - Luxonis’s cameras
+00:15:20 - New Kickstarter
+00:17:24 - Introducing Rae robot
+00:23:09 - Price point + education robots
+00:30:27 - How they get 3D info: Active stereo
+00:36:36 - Programming Rae + RobotHub
+00:53:44 - How RobotHub works
+01:04:13 - Security on RobotHub
+01:10:13 - Future of Luxonis
+01:14:19 - Funding
+01:17:44 - Manufacturing + supply chain issues
+01:22:11 - Having a global team
+01:28:47 - Future of robotics
+01:31:59 - Links to share
