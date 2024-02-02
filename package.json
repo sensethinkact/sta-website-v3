@@ -35,7 +35,7 @@
   "devDependencies": {
     "@sta-podcast/types": "^1.0.7",
     "@tsconfig/node16": "^16.1.1",
-    "@types/node": "20.11.14",
+    "@types/node": "20.11.16",
     "@types/proper-url-join": "^2.1.4",
     "@types/react": "18.2.48",
     "@types/react-copy-to-clipboard": "^5.0.7",
