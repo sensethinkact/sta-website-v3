@@ -1,0 +1,37 @@
+guests:
+  - Tully Foote
+  - Geoff Biggs
+title: 'OSRA: Pioneering a Sustainable Open Source Ecosystem for Robotics'
+description: |
+  What is the Open Source Robotics Alliance (OSRA) and how is it pioneering a sustainable open source ecosystem for robotics?
+  You'll like this interview if you're interested in the open source robotics ecosystem and how it's evolving.
+  With Geoff Biggs from Open Robotics and Tully Foote from Open Robotics and Intrinsic.
+excerpt: |
+  Geoff Biggs is the CTO of Open Robotics and Tully Foote is the Community Advisor of Open Robotics and Open Source Lead at Intrinsic.
+duration:
+  hours: 1
+  minutes: 58
+  seconds: 11
+tags:
+  - Open Robotics
+  - OSRA
+  - Open Source
+  - Willow Garage
+links:
+  - name: OSRA's website
+    url: https://osralliance.org/
+  - name: Open Robotics' LinkedIn
+    url: https://www.linkedin.com/company/open-source-robotics-foundation/
+  - name: Open Robotics' website
+    url: https://www.openrobotics.org/
+  - name: Geoff Biggs' LinkedIn
+    url: https://www.linkedin.com/in/geoffrey-biggs/
+  - name: Tully Foote's LinkedIn
+    url: https://www.linkedin.com/in/tullyfoote/
+mp3SizeBytes: 113474725
+publishDate: 2024-03-19
+youtube:
+  mainContentId: 'vo-zpQ8DhaE'
+  clips:
+    - title: a
+      videoId: a

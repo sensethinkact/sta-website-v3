@@ -1,0 +1,31 @@
+00:00:00 Episode intro
+00:02:47 Willow Garage and Open Robotics Lore
+00:05:38 Player and ROS  lore
+00:09:06 Willow Garage and the Birth of Open Robotics
+00:13:17 Tully and Geoff's roles in Open Robotics
+00:22:13 Why make ROS 2
+00:24:39 Player and ROS 2
+00:25:42 Towards a robot revolution
+00:29:16 Gazebo for robot simulation
+00:34:39 OpenRMF project at Open Rob
+00:38:22 Important, but often forgotten: Open Robotics' infrastructure
+00:44:42 Open Robotics before the Intrinsic Acquisition
+00:47:38 Big steps for the ROS community we can take because of Intrinsic (Zenoh)
+00:51:41 Rust for robotics
+00:53:27 Intrinsic's acquisition of Open Robotics
+00:58:31 OSRF since the Intrinsic acquisition of OSRC
+01:01:33 How former OSRC folks contribute to OSRF now
+01:04:28 Announcing OSRA!
+01:07:27 Motivation for OSRA
+01:15:20 Merit-based contributors
+01:18:06 OSRA Consortium
+01:20:23 Why companies might want to join the OSRA consortium
+01:23:55 OSRA membership types
+01:29:18 Meritocratic contributors + how to mentor and get involved
+01:32:26 Mentorship process
+01:34:25 The value of contributing to open source software
+01:39:19 OSRA's badging system for contributors
+01:42:52 Educating more people to be roboticists
+01:47:26 Robotics in the next 5 years
+01:52:10 Why open source?
+01:55:36 Final thoughts
