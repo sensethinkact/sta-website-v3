@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@sta-podcast/post-loader": "^1.4.1",
-    "bulma": "^1.0.1",
+    "bulma": "^1.0.2",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.12",
     "next": "13.5.6",
