@@ -1,0 +1,21 @@
+0:00 Start
+2:12 Introduction to Dexory
+3:26 How Dexory Landed Series B
+7:12 The Problem and the Robot’s Solution
+11:12 The Software Behind Dexory
+14:03 Advocating for More Testing When Management Prioritizes New Features
+17:20 Where Dexory Is Heading in the Next 2 to 5 Years
+19:25 Introduction to Asimovo
+21:20 Creating Solutions for Every Need
+23:59 Supporting Diverse Workflows Across Platforms
+29:42 How Clusters Run Across Platforms
+34:11 Company Progress and Adoption
+40:09 One Year Projections and Goals
+43:09 Where To Learn More
+44:37 Introduction to ZettaScale
+49:56 How Distributed Queries Work
+53:15 Breaking Down Routing and Synchronization
+1:01:23 Solving DDS Challenges and ROS 2 Impact
+1:05:34 The Story Behind the Company Name
+1:07:56 Why ROS and How It’s Integrated
+1:13:16 Future Plans for the Next 1 to 3 Years
