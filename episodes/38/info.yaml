@@ -1,0 +1,38 @@
+guests:
+  - Marcus Scheunemann
+  - Christine Fraser
+  - Angelo Corsaro
+title: 'ROSCon 2024 Highlights: Conversations with Dexory, Asimovo, and ZettaScale'
+description: |
+  Join us for three conversations from ROSCon 2024 in Denmark with leaders building the future of robotics.
+  We talk with Marcus Scheunemann from Dexory about scaling warehouse robotics, Christine Fraser from Asimovo about their developer collaboration platform, and Angelo Corsaro from ZettaScale about Zenoh - the future middleware for ROS 2.
+  You'll like these interviews if you're interested in scaling robotics companies, developer tools, ROS 2 middleware, and building successful robotics businesses.
+excerpt: |
+  Featuring Marcus Scheunemann (Head of Autonomy at Dexory), Christine Fraser (CEO of Asimovo), and Angelo Corsaro (CEO/CTO of ZettaScale Technologies) discussing robotics scaling, developer tools, and next-gen ROS 2 middleware.
+duration:
+  hours: 1
+  minutes: 15
+  seconds: 17
+tags:
+  - ROSCon
+  - Dexory
+  - Asimovo
+  - ZettaScale
+links:
+  - name: ROSCon 2024
+    url: https://roscon.ros.org/2024/
+  - name: Dexory
+    url: https://www.dexory.com/
+  - name: Asimovo
+    url: https://asimovo.com/
+  - name: ZettaScale
+    url: https://www.zettascale.tech/
+  - name: Episode Transcript
+    url: https://audrownashpodcast.com/posts/16-roscon/transcript
+mp3SizeBytes: 108429112
+publishDate: 2025-01-07
+youtube:
+  mainContentId: '4tinhRMZIEA'
+  clips:
+    - title: a
+      videoId: a
